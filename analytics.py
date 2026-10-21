@@ -1,5 +1,6 @@
 import sqlite3
 import pandas as pd
+import numpy as np
 import os
 
 DB_PATH = os.path.join(os.path.dirname(__file__), "genech_performance.db")
@@ -14,148 +15,121 @@ def generate_analytics():
     df_classement = pd.read_sql_query("SELECT * FROM classement_poule ORDER BY rang ASC", conn)
     df_lineups = pd.read_sql_query("SELECT * FROM match_lineups", conn)
 
-    # 1. Enrichissement DIM_MATCHS
-    def enrich_match(row):
-        dom = str(row['equipe_domicile']).upper()
-        ext = str(row['equipe_exterieur']).upper()
-        statut = str(row['statut'])
-        s_dom = row['score_domicile']
-        s_ext = row['score_exterieur']
+    # 1. Enrichissement DIM_MATCHS (Robuste & Vectorisé)
+    if not df_matchs.empty:
+        dom = df_matchs['equipe_domicile'].astype(str).str.upper()
+        ext = df_matchs['equipe_exterieur'].astype(str).str.upper()
+        statut = df_matchs['statut'].astype(str)
+        s_dom = pd.to_numeric(df_matchs['score_domicile'], errors='coerce')
+        s_ext = pd.to_numeric(df_matchs['score_exterieur'], errors='coerce')
 
-        is_genech_dom = 'GENECH' in dom
-        is_genech_ext = 'GENECH' in ext
+        is_genech_dom = dom.str.contains('GENECH', na=False)
+        is_genech_ext = ext.str.contains('GENECH', na=False)
 
-        lieu = "Domicile" if is_genech_dom else ("Extérieur" if is_genech_ext else "Neutre")
-        adversaire = row['equipe_exterieur'] if is_genech_dom else (row['equipe_domicile'] if is_genech_ext else "Autre")
+        df_matchs['competition_nom'] = np.where(df_matchs['competition_id'] == 'cdf_2026', "Coupe de France", "Régional 3 (Poule D)")
+        df_matchs['lieu_genech'] = np.where(is_genech_dom, "Domicile", np.where(is_genech_ext, "Extérieur", "Neutre"))
+        df_matchs['adversaire'] = np.where(is_genech_dom, df_matchs['equipe_exterieur'], np.where(is_genech_ext, df_matchs['equipe_domicile'], "Autre"))
 
         # Clean sheet
-        clean_sheet = 0
-        if statut == 'TERMINE':
-            if is_genech_dom and s_ext == 0: clean_sheet = 1
-            elif is_genech_ext and s_dom == 0: clean_sheet = 1
+        cs_dom = (statut == 'TERMINE') & is_genech_dom & (s_ext == 0)
+        cs_ext = (statut == 'TERMINE') & is_genech_ext & (s_dom == 0)
+        df_matchs['is_clean_sheet'] = np.where(cs_dom | cs_ext, 1, 0)
 
         # Résultat & Points
-        points = 0
-        if statut != 'TERMINE' or pd.isna(s_dom) or pd.isna(s_ext):
-            resultat = "À venir"
-            score_str = "À venir"
-        else:
-            score_str = f"{int(s_dom)} - {int(s_ext)}"
-            if is_genech_dom:
-                if s_dom > s_ext: 
-                    resultat = "Victoire"
-                    points = 3
-                elif s_dom < s_ext: 
-                    resultat = "Défaite"
-                    points = 0
-                else: 
-                    resultat = "Nul"
-                    points = 1
-            elif is_genech_ext:
-                if s_ext > s_dom: 
-                    resultat = "Victoire"
-                    points = 3
-                elif s_ext < s_dom: 
-                    resultat = "Défaite"
-                    points = 0
-                else: 
-                    resultat = "Nul"
-                    points = 1
-            else:
-                resultat = "Autre"
+        cond_victoire = (is_genech_dom & (s_dom > s_ext)) | (is_genech_ext & (s_ext > s_dom))
+        cond_defaite = (is_genech_dom & (s_dom < s_ext)) | (is_genech_ext & (s_ext < s_dom))
+        cond_nul = (s_dom == s_ext) & (statut == 'TERMINE')
 
-        comp_nom = "Coupe de France" if row['competition_id'] == 'cdf_2026' else "Régional 3 (Poule D)"
+        df_matchs['resultat_genech'] = np.where(
+            statut != 'TERMINE', "À venir",
+            np.where(cond_victoire, "Victoire", np.where(cond_nul, "Nul", np.where(cond_defaite, "Défaite", "Autre")))
+        )
+        df_matchs['points_obtenus'] = np.where(cond_victoire, 3, np.where(cond_nul, 1, 0))
+        df_matchs['score_affiche'] = np.where(
+            statut == 'TERMINE', s_dom.fillna(0).astype(int).astype(str) + " - " + s_ext.fillna(0).astype(int).astype(str), "À venir"
+        )
+    else:
+        for col in ['competition_nom', 'lieu_genech', 'adversaire', 'is_clean_sheet', 'resultat_genech', 'score_affiche', 'points_obtenus']:
+            df_matchs[col] = []
 
-        return pd.Series([comp_nom, lieu, adversaire, clean_sheet, resultat, score_str, points])
+    # 2. Enrichissement FACT_EVENTS (Robuste & Vectorisé)
+    if not df_events.empty:
+        is_genech = df_events['equipe'].astype(str).str.upper().str.contains('GENECH', na=False)
+        t_event = df_events['type_event'].astype(str)
+        minute = pd.to_numeric(df_events['minute'], errors='coerce').fillna(0)
 
-    df_matchs[['competition_nom', 'lieu_genech', 'adversaire', 'is_clean_sheet', 'resultat_genech', 'score_affiche', 'points_obtenus']] = df_matchs.apply(enrich_match, axis=1)
-    df_matchs['score_domicile'] = df_matchs['score_domicile'].fillna(-1).astype(int)
-    df_matchs['score_exterieur'] = df_matchs['score_exterieur'].fillna(-1).astype(int)
+        df_events['camp_event'] = np.where(is_genech, "ES Genech", "Adversaire")
+        df_events['is_but_genech'] = np.where((t_event == 'BUT') & is_genech, 1, 0)
+        df_events['is_but_adverse'] = np.where((t_event == 'BUT') & (~is_genech), 1, 0)
+        df_events['is_carton_genech'] = np.where(t_event.isin(['AVERTISSEMENT', 'EXPULSION']) & is_genech, 1, 0)
+        df_events['is_carton_adverse'] = np.where(t_event.isin(['AVERTISSEMENT', 'EXPULSION']) & (~is_genech), 1, 0)
+        df_events['mi_temps'] = np.where(minute <= 45, "1ère Mi-Temps", "2nde Mi-Temps")
+        df_events['is_money_time'] = np.where(minute >= 75, 1, 0)
+    else:
+        for col in ['camp_event', 'is_but_genech', 'is_but_adverse', 'is_carton_genech', 'is_carton_adverse', 'mi_temps', 'is_money_time']:
+            df_events[col] = []
 
-    # 2. Enrichissement FACT_EVENTS
-    def enrich_event(row):
-        is_genech = 'GENECH' in str(row['equipe']).upper()
-        camp = "ES Genech" if is_genech else "Adversaire"
-        t_event = str(row['type_event'])
-        
-        is_but_genech = 1 if (t_event == 'BUT' and is_genech) else 0
-        is_but_adverse = 1 if (t_event == 'BUT' and not is_genech) else 0
-        is_carton_genech = 1 if (t_event in ['AVERTISSEMENT', 'EXPULSION'] and is_genech) else 0
-        is_carton_adverse = 1 if (t_event in ['AVERTISSEMENT', 'EXPULSION'] and not is_genech) else 0
-        mi_temps = "1ère Mi-Temps" if row['minute'] <= 45 else "2nde Mi-Temps"
-
-        # Moment clé (ex: Money time 75-90')
-        is_money_time = 1 if row['minute'] >= 75 else 0
-
-        return pd.Series([camp, is_but_genech, is_but_adverse, is_carton_genech, is_carton_adverse, mi_temps, is_money_time])
-
-    df_events[['camp_event', 'is_but_genech', 'is_but_adverse', 'is_carton_genech', 'is_carton_adverse', 'mi_temps', 'is_money_time']] = df_events.apply(enrich_event, axis=1)
-
-    # 3. NOUVELLE TABLE : STATS INDIVIDUELLES JOUEURS ES GENECH
-    genech_lineups = df_lineups[df_lineups['equipe'].str.contains('GENECH', case=False, na=False)].copy()
-    
-    # Événements Genech
-    genech_events = df_events[df_events['equipe'].str.contains('GENECH', case=False, na=False)].copy()
-
+    # 3. STATS INDIVIDUELLES JOUEURS
     joueurs_stats = []
-    unique_players = genech_lineups['joueur_nom'].dropna().unique()
+    if not df_lineups.empty:
+        genech_lineups = df_lineups[df_lineups['equipe'].str.contains('GENECH', case=False, na=False)].copy()
+        genech_events = df_events[df_events['equipe'].str.contains('GENECH', case=False, na=False)].copy() if not df_events.empty else pd.DataFrame()
+        unique_players = genech_lineups['joueur_nom'].dropna().unique()
 
-    for joueur in unique_players:
-        j_lines = genech_lineups[genech_lineups['joueur_nom'] == joueur]
-        nb_titulaire = len(j_lines[j_lines['role'] == 'TITULAIRE'])
-        nb_remplacant = len(j_lines[j_lines['role'] == 'REMPLACANT'])
-        
-        # Buts
-        j_buts = len(genech_events[(genech_events['type_event'] == 'BUT') & (genech_events['acteur_principal'].str.contains(joueur, case=False, na=False))])
-        
-        # Cartons
-        j_cartons_j = len(genech_events[(genech_events['type_event'] == 'AVERTISSEMENT') & (genech_events['acteur_principal'].str.contains(joueur, case=False, na=False))])
-        j_cartons_r = len(genech_events[(genech_events['type_event'] == 'EXPULSION') & (genech_events['acteur_principal'].str.contains(joueur, case=False, na=False))])
+        for joueur in unique_players:
+            j_lines = genech_lineups[genech_lineups['joueur_nom'] == joueur]
+            nb_titulaire = len(j_lines[j_lines['role'] == 'TITULAIRE'])
+            nb_remplacant = len(j_lines[j_lines['role'] == 'REMPLACANT'])
+            
+            j_buts = 0
+            j_cartons_j = 0
+            j_cartons_r = 0
+            subs_in_count = 0
+            temps_jeu = nb_titulaire * 90
 
-        # Remplacements (minutes)
-        subs_in = genech_events[(genech_events['type_event'] == 'CHANGEMENT') & (genech_events['acteur_principal'].str.contains(joueur, case=False, na=False))]
-        subs_out = genech_events[(genech_events['type_event'] == 'CHANGEMENT') & (genech_events['acteur_secondaire'].str.contains(joueur, case=False, na=False))]
-        
-        # Estimation temps de jeu
-        temps_jeu = (nb_titulaire * 90)
-        for _, s in subs_out.iterrows():
-            temps_jeu -= (90 - s['minute'])
-        for _, s in subs_in.iterrows():
-            temps_jeu += (90 - s['minute'])
+            if not genech_events.empty:
+                j_buts = len(genech_events[(genech_events['type_event'] == 'BUT') & (genech_events['acteur_principal'].str.contains(joueur, case=False, na=False))])
+                j_cartons_j = len(genech_events[(genech_events['type_event'] == 'AVERTISSEMENT') & (genech_events['acteur_principal'].str.contains(joueur, case=False, na=False))])
+                j_cartons_r = len(genech_events[(genech_events['type_event'] == 'EXPULSION') & (genech_events['acteur_principal'].str.contains(joueur, case=False, na=False))])
+                
+                subs_in = genech_events[(genech_events['type_event'] == 'CHANGEMENT') & (genech_events['acteur_principal'].str.contains(joueur, case=False, na=False))]
+                subs_out = genech_events[(genech_events['type_event'] == 'CHANGEMENT') & (genech_events['acteur_secondaire'].str.contains(joueur, case=False, na=False))]
+                subs_in_count = len(subs_in)
 
-        # Rôle tactique
-        if nb_titulaire >= 4:
-            statut = "Pilier / Titulaire indiscutable"
-        elif nb_titulaire > 0:
-            statut = "Rotation / Titulaire régulier"
-        elif len(subs_in) > 0:
-            statut = "Impact Player (Super-Sub)"
-        else:
-            statut = "Groupe élargi"
+                for _, s in subs_out.iterrows(): temps_jeu -= (90 - s['minute'])
+                for _, s in subs_in.iterrows(): temps_jeu += (90 - s['minute'])
 
-        joueurs_stats.append({
-            "joueur_nom": joueur,
-            "statut_tactique": statut,
-            "titularisations": nb_titulaire,
-            "entrees_en_jeu": len(subs_in),
-            "matchs_feuille": nb_titulaire + nb_remplacant,
-            "minutes_jouees_estimees": max(temps_jeu, 0),
-            "buts": j_buts,
-            "cartons_jaunes": j_cartons_j,
-            "cartons_rouges": j_cartons_r
-        })
+            if nb_titulaire >= 4: statut_t = "Pilier / Titulaire indiscutable"
+            elif nb_titulaire > 0: statut_t = "Rotation / Titulaire régulier"
+            elif subs_in_count > 0: statut_t = "Impact Player (Super-Sub)"
+            else: statut_t = "Groupe élargi"
 
-    df_joueurs = pd.DataFrame(joueurs_stats).sort_values(by=["buts", "titularisations", "minutes_jouees_estimees"], ascending=False)
+            joueurs_stats.append({
+                "joueur_nom": joueur,
+                "statut_tactique": statut_t,
+                "titularisations": nb_titulaire,
+                "entrees_en_jeu": subs_in_count,
+                "matchs_feuille": nb_titulaire + nb_remplacant,
+                "minutes_jouees_estimees": max(temps_jeu, 0),
+                "buts": j_buts,
+                "cartons_jaunes": j_cartons_j,
+                "cartons_rouges": j_cartons_r
+            })
 
-    # 4. Exports CSV complets
+    df_joueurs = pd.DataFrame(joueurs_stats) if joueurs_stats else pd.DataFrame(columns=[
+        "joueur_nom", "statut_tactique", "titularisations", "entrees_en_jeu", "matchs_feuille", "minutes_jouees_estimees", "buts", "cartons_jaunes", "cartons_rouges"
+    ])
+    if not df_joueurs.empty:
+        df_joueurs = df_joueurs.sort_values(by=["buts", "titularisations", "minutes_jouees_estimees"], ascending=False)
+
+    # 4. Exports CSV
     df_matchs.to_csv(os.path.join(OUTPUT_DIR, "dim_matchs.csv"), index=False, encoding="utf-8-sig")
     df_events.to_csv(os.path.join(OUTPUT_DIR, "fact_events.csv"), index=False, encoding="utf-8-sig")
     df_classement.to_csv(os.path.join(OUTPUT_DIR, "dim_classement.csv"), index=False, encoding="utf-8-sig")
     df_lineups.to_csv(os.path.join(OUTPUT_DIR, "dim_lineups.csv"), index=False, encoding="utf-8-sig")
     df_joueurs.to_csv(os.path.join(OUTPUT_DIR, "dim_joueurs_stats.csv"), index=False, encoding="utf-8-sig")
 
-    print(f"Exports terminés ! Nouvelle table dim_joueurs_stats.csv générée avec {len(df_joueurs)} joueurs.")
-
+    print(f"Calculs terminés avec succès !")
     conn.close()
 
 if __name__ == "__main__":
