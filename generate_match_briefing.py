@@ -1,5 +1,6 @@
 import sqlite3
 import os
+import re
 import base64
 import pandas as pd
 from playwright.sync_api import sync_playwright
@@ -19,6 +20,7 @@ def launch_browser(p):
 
 def generate_mobile_briefing():
     conn = sqlite3.connect(DB_PATH)
+    cur = conn.cursor()
 
     df_matchs = pd.read_sql_query("SELECT * FROM matchs", conn)
     df_events = pd.read_sql_query("SELECT * FROM match_events", conn)
@@ -29,18 +31,75 @@ def generate_mobile_briefing():
         with open(LOGO_PATH, "rb") as f:
             logo_b64 = base64.b64encode(f.read()).decode("utf-8")
 
-    # Calcul des scores réels officiels DE GENECH UNIQUEMENT
+    # 1. MATCH PRÉCÉDENT (DERNIER MATCH TERMINÉ)
     s_term = df_matchs[
         (df_matchs['statut'] == 'TERMINE') & 
         ((df_matchs['equipe_domicile'].str.contains('GENECH', case=False, na=False)) |
          (df_matchs['equipe_exterieur'].str.contains('GENECH', case=False, na=False)))
-    ].copy()
-    s_term['is_dom'] = s_term['equipe_domicile'].str.contains('GENECH', case=False, na=False)
-    s_term['buts_pour'] = s_term.apply(lambda r: r['score_domicile'] if r['is_dom'] else r['score_exterieur'], axis=1)
-    s_term['buts_contre'] = s_term.apply(lambda r: r['score_exterieur'] if r['is_dom'] else r['score_domicile'], axis=1)
+    ].sort_values(by='date_heure', ascending=False)
 
-    total_buts_marques = int(s_term['buts_pour'].sum())   # 10 buts
-    total_buts_encaisses = int(s_term['buts_contre'].sum()) # 3 buts
+    if not s_term.empty:
+        last_match = s_term.iloc[0]
+        last_comp = "Coupe de France" if last_match['competition_id'] == 'cdf_2026' else "Régional 3"
+        last_tour = last_match['tour_ou_journee']
+        last_dom = last_match['equipe_domicile']
+        last_ext = last_match['equipe_exterieur']
+        s_dom = int(last_match['score_domicile']) if pd.notnull(last_match['score_domicile']) else 0
+        s_ext = int(last_match['score_exterieur']) if pd.notnull(last_match['score_exterieur']) else 0
+        
+        is_dom = "GENECH" in last_dom.upper()
+        genech_score = s_dom if is_dom else s_ext
+        opp_score = s_ext if is_dom else s_dom
+        
+        if genech_score > opp_score:
+            res_tag = "VICTOIRE"
+            res_color = "#15803d"
+        elif genech_score == opp_score:
+            res_tag = "MATCH NUL"
+            res_color = "#ebb837"
+        else:
+            res_tag = "DÉFAITE"
+            res_color = "#b91c1c"
+
+        # Buteurs du dernier match
+        last_events = df_events[(df_events['match_id'] == last_match['id']) & (df_events['type_event'] == 'BUT')]
+        buteurs_genech = last_events[last_events['equipe'].str.contains('GENECH', case=False, na=False)]['acteur_principal'].tolist()
+        buteurs_txt = ", ".join(buteurs_genech) if buteurs_genech else "Aucun buteur ESG"
+    else:
+        last_comp, last_tour, last_dom, last_ext = "Régional 3", "-", "GENECH ES", "-", 0, 0
+        s_dom, s_ext = 0, 0
+        res_tag, res_color, buteurs_txt = "EN COURS", "#ebb837", "-"
+
+    # 2. PROCHAIN ADVERSAIRE (PROCHAIN MATCH À VENIR)
+    s_avenir = df_matchs[
+        (df_matchs['statut'] == 'A_VENIR') & 
+        ((df_matchs['equipe_domicile'].str.contains('GENECH', case=False, na=False)) |
+         (df_matchs['equipe_exterieur'].str.contains('GENECH', case=False, na=False)))
+    ].sort_values(by='date_heure', ascending=True)
+
+    if not s_avenir.empty:
+        next_match = s_avenir.iloc[0]
+        next_comp = "Coupe de France" if next_match['competition_id'] == 'cdf_2026' else "Régional 3 (Poule D)"
+        next_tour = next_match['tour_ou_journee']
+        next_dom = next_match['equipe_domicile']
+        next_ext = next_match['equipe_exterieur']
+        next_date = next_match['date_heure']
+        is_next_dom = "GENECH" in next_dom.upper()
+        opp_name = next_ext if is_next_dom else next_dom
+    else:
+        next_comp, next_tour = "Régional 3 (Poule D)", "Prochaine Journée"
+        next_dom, next_ext = "GENECH ES", "ADVERSAIRE"
+        next_date = "À déterminer"
+        opp_name = "ADVERSAIRE"
+
+    # Calcul des scores réels officiels DE GENECH UNIQUEMENT
+    s_term_all = s_term.copy()
+    s_term_all['is_dom'] = s_term_all['equipe_domicile'].str.contains('GENECH', case=False, na=False)
+    s_term_all['buts_pour'] = s_term_all.apply(lambda r: r['score_domicile'] if r['is_dom'] else r['score_exterieur'], axis=1)
+    s_term_all['buts_contre'] = s_term_all.apply(lambda r: r['score_exterieur'] if r['is_dom'] else r['score_domicile'], axis=1)
+
+    total_buts_marques = int(s_term_all['buts_pour'].sum())
+    total_buts_encaisses = int(s_term_all['buts_contre'].sum())
 
     # Cartons Genech
     cartons_genech = df_events[(df_events['type_event'] == 'AVERTISSEMENT') & (df_events['equipe'].str.contains('GENECH', case=False, na=False))]
@@ -58,7 +117,45 @@ def generate_mobile_briefing():
         buts_pour.append(len(df_buts[(df_buts['tranche_quart_heure'] == t) & (df_buts['is_genech'])]))
         buts_contre.append(len(df_buts[(df_buts['tranche_quart_heure'] == t) & (~df_buts['is_genech'])]))
 
-    # Spacing resserré, sans espace mort (plus dense, fluide et équilibré)
+    # Récupération ou génération du scouting de l'adversaire
+    is_tatinghem = "TATINGHEM" in opp_name.upper()
+    is_aniche = "ANICHE" in opp_name.upper()
+
+    if is_tatinghem:
+        scout_badge = "R3 Côte d'Opale"
+        scout_alert_title = "🚨 ALERTE SUSPENSION : MOUAAD MADRI (ATT. VEDETTE ADVERSE)"
+        scout_alert_desc = "3 cartons jaunes reçus en moins de 3 mois (CDF T2 88', R3 J3 27', CDF T5 48'). En vertu de l'art. 226 des Règlements FFF, sa suspension prend effet le 19/10/2026.<br/>👉 <strong>CONSIGNE STAFF :</strong> S'il est inscrit sur la feuille FMI, <strong>poser une réserve d'avant-match immédiate (victoire sur tapis vert possible)</strong>."
+        scout_box1_title = "⚡ Démarrage Canon & Profil"
+        scout_box1_desc = "Attaque prolifique (14 buts en 4 matchs). Ils pressent très haut dès le coup d'envoi et marquent souvent d'entrée (5' vs Neufchâtel, 39' vs Mouvaux). Être ultra-vigilant sur les 15 premières minutes."
+        scout_box2_title = "⚠️ Faille Physique en Fin de Match"
+        scout_box2_desc = "<strong>Baisse de régime après la 70e :</strong> 2 buts concédés face à Neufchâtel (74' et 90'). Équipe agressive (4 cartons au 5e Tour) qui commet des fautes sous la fatigue."
+        h2h_opp_form = "V - V - N - V (10 pts)"
+        h2h_opp_att = "14 Buts (3.5 / m)"
+        h2h_opp_def = "3 Buts (Fébrile en fin de match)"
+    elif is_aniche:
+        scout_badge = "R3 Poule D • 2e Ex-Aequo"
+        scout_alert_title = "⚔️ CHOC DU HAUT DE TABLEAU : ANICHE SC (8 PTS)"
+        scout_alert_desc = "Aniche partage la 2e place avec Genech (8 pts, 2V 2N 0D). Équipe extrêmement hermétique (seulement 3 buts concédés en 4 matchs).<br/>👉 <strong>ENJEU :</strong> Le vainqueur s'empare seul de la place de dauphin direct de Beuvry."
+        scout_box1_title = "🛡️ Solidité Défensive Élite"
+        scout_box1_desc = "Bloc très compact en 4-4-2 ou 5-3-2. Seulement 3 buts encaissés (0.75 b/m). Deux clean sheets déjà réalisés cette saison (0-2 à Guesnain)."
+        scout_box2_title = "⚡ Jeu de Transition Rapide"
+        scout_box2_desc = "Peu de possession stérile : ils procèdent par attaques rapides dès la récupération au milieu. Attention aux pertes de balle dans nos 30 mètres."
+        h2h_opp_form = "V - V - N - N (8 pts • Invaincu)"
+        h2h_opp_att = "6 Buts (1.5 / m)"
+        h2h_opp_def = "3 Buts (0.75 / m • 2 Clean Sheets)"
+    else:
+        scout_badge = "R3 Poule D"
+        scout_alert_title = f"🎯 FOCUS ADVERSAIRE : {opp_name}"
+        scout_alert_desc = "Analyse tactique automatisée basée sur les résultats de la poule."
+        scout_box1_title = "📊 Profil & Dynamique"
+        scout_box1_desc = "Données issues du classement et des feuilles de match FFF."
+        scout_box2_title = "⚠️ Vigilance Tactique"
+        scout_box2_desc = "Rester attentif sur les phases arrêtées et les entames de mi-temps."
+        h2h_opp_form = "En cours"
+        h2h_opp_att = "Données FFF"
+        h2h_opp_def = "Données FFF"
+
+    # HTML Template
     html_content = f"""
     <!DOCTYPE html>
     <html lang="fr">
@@ -82,7 +179,7 @@ def generate_mobile_briefing():
                 width: 1080px;
                 display: flex;
                 flex-direction: column;
-                gap: 12px;
+                gap: 10px;
             }}
 
             /* Header Mobile */
@@ -92,7 +189,7 @@ def generate_mobile_briefing():
                 justify-content: space-between;
                 background: #0a1728;
                 border-radius: 16px;
-                padding: 14px 20px;
+                padding: 12px 20px;
                 color: white;
                 box-shadow: 0 6px 18px rgba(10, 23, 40, 0.15);
                 border: 2px solid #ebb837;
@@ -103,8 +200,8 @@ def generate_mobile_briefing():
                 gap: 14px;
             }}
             .club-logo {{
-                width: 62px;
-                height: 62px;
+                width: 58px;
+                height: 58px;
                 border-radius: 50%;
                 border: 3px solid #ebb837;
                 padding: 2px;
@@ -112,7 +209,7 @@ def generate_mobile_briefing():
             }}
             .club-title h1 {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 26px;
+                font-size: 25px;
                 font-weight: 700;
                 margin: 0;
                 letter-spacing: 1px;
@@ -130,26 +227,71 @@ def generate_mobile_briefing():
             .header-badge {{
                 background: #ebb837;
                 color: #0a1728;
-                padding: 8px 14px;
+                padding: 7px 13px;
                 border-radius: 10px;
                 text-align: center;
                 font-weight: 800;
             }}
             .header-badge .comp {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 12px;
+                font-size: 11px;
                 text-transform: uppercase;
             }}
             .header-badge .tour {{
-                font-size: 14px;
+                font-size: 13px;
                 font-weight: 900;
+            }}
+
+            /* NOUVEAU BANNER : DERNIER MATCH DISPUTÉ */
+            .last-match-banner {{
+                background: white;
+                border-radius: 12px;
+                padding: 9px 16px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-left: 6px solid {res_color};
+                box-shadow: 0 4px 10px rgba(10, 23, 40, 0.05);
+            }}
+            .last-match-left {{
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+            }}
+            .last-match-tag {{
+                font-size: 9px;
+                font-weight: 800;
+                color: #64748b;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }}
+            .last-match-score {{
+                font-family: 'Oswald', sans-serif;
+                font-size: 17px;
+                font-weight: 700;
+                color: #0a1728;
+                text-transform: uppercase;
+            }}
+            .last-match-buteurs {{
+                font-size: 9px;
+                color: #475569;
+                font-weight: 600;
+            }}
+            .last-match-pill {{
+                background: {res_color};
+                color: white;
+                font-size: 10px;
+                font-weight: 900;
+                padding: 4px 10px;
+                border-radius: 6px;
+                text-transform: uppercase;
             }}
 
             /* Hero Matchday */
             .match-hero {{
                 background: #0a1728;
                 border-radius: 14px;
-                padding: 12px 18px;
+                padding: 10px 18px;
                 color: white;
                 text-align: center;
                 border-bottom: 4px solid #e8590c;
@@ -158,7 +300,7 @@ def generate_mobile_briefing():
                 display: inline-block;
                 background: #e8590c;
                 color: white;
-                font-size: 10px;
+                font-size: 9.5px;
                 font-weight: 800;
                 padding: 2px 10px;
                 border-radius: 20px;
@@ -168,7 +310,7 @@ def generate_mobile_briefing():
             }}
             .hero-teams {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 26px;
+                font-size: 24px;
                 font-weight: 700;
                 text-transform: uppercase;
                 display: flex;
@@ -176,7 +318,7 @@ def generate_mobile_briefing():
                 justify-content: center;
                 gap: 12px;
             }}
-            .hero-teams .vs {{ color: #ebb837; font-size: 18px; }}
+            .hero-teams .vs {{ color: #ebb837; font-size: 17px; }}
 
             /* 4 KPIs */
             .kpi-grid {{
@@ -187,7 +329,7 @@ def generate_mobile_briefing():
             .kpi-card {{
                 background: white;
                 border-radius: 12px;
-                padding: 10px 12px;
+                padding: 9px 12px;
                 border-left: 5px solid #0a1728;
                 box-shadow: 0 4px 10px rgba(10, 23, 40, 0.05);
             }}
@@ -204,103 +346,95 @@ def generate_mobile_briefing():
                 font-size: 22px;
                 font-weight: 700;
                 color: #0a1728;
-                margin-top: 1px;
+                margin: 2px 0;
             }}
-            .kpi-card.gold .kpi-val {{ color: #d97706; }}
-            .kpi-card.orange .kpi-val {{ color: #e8590c; }}
             .kpi-sub {{
                 font-size: 8px;
+                color: #475569;
                 font-weight: 600;
-                color: #64748b;
             }}
 
-            /* FACE-A-FACE STATISTIQUE (NOUVEAU WIDGET COMPARATIF) */
+            /* Face-à-face Statistique */
             .h2h-card {{
                 background: white;
-                border-radius: 14px;
-                padding: 12px 16px;
+                border-radius: 12px;
+                padding: 10px 14px;
                 box-shadow: 0 4px 10px rgba(10, 23, 40, 0.05);
+                border: 1px solid #cbd5e1;
             }}
             .h2h-title {{
-                font-family: 'Oswald', sans-serif;
-                font-size: 13.5px;
-                font-weight: 700;
-                text-transform: uppercase;
-                color: #0a1728;
-                border-bottom: 2px solid #ebb837;
-                padding-bottom: 4px;
-                margin-bottom: 8px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                font-family: 'Oswald', sans-serif;
+                font-size: 13px;
+                font-weight: 700;
+                color: #0a1728;
+                text-transform: uppercase;
+                border-bottom: 2px solid #ebb837;
+                padding-bottom: 3px;
+                margin-bottom: 6px;
             }}
             .h2h-grid {{
                 display: grid;
                 grid-template-columns: 1fr 1.2fr 1fr;
-                gap: 8px;
+                gap: 5px;
+                font-size: 9px;
                 align-items: center;
                 text-align: center;
-                font-size: 10px;
             }}
             .h2h-team-name {{
-                font-family: 'Oswald', sans-serif;
-                font-size: 12px;
-                font-weight: 700;
+                font-weight: 800;
+                font-size: 10px;
                 text-transform: uppercase;
-            }}
-            .h2h-row {{
-                display: contents;
             }}
             .h2h-stat-label {{
-                font-size: 8.5px;
-                font-weight: 800;
-                text-transform: uppercase;
                 color: #64748b;
-                background: #f1ede1;
-                padding: 3px 6px;
-                border-radius: 4px;
+                font-size: 8px;
+                font-weight: 700;
+                text-transform: uppercase;
             }}
             .h2h-stat-val {{
                 font-weight: 800;
-                color: #0a1728;
+                font-size: 9.5px;
             }}
 
-            /* TABLEAU COMPARATIF DES SAISONS EN R3 */
+            /* Benchmark Saisons R3 */
             .benchmark-card {{
                 background: white;
-                border-radius: 14px;
-                padding: 12px 16px;
+                border-radius: 12px;
+                padding: 9px 14px;
                 box-shadow: 0 4px 10px rgba(10, 23, 40, 0.05);
+                border-left: 5px solid #004687;
             }}
             .benchmark-title {{
-                font-family: 'Oswald', sans-serif;
-                font-size: 13.5px;
-                font-weight: 700;
-                text-transform: uppercase;
-                color: #0a1728;
-                border-bottom: 2px solid #ebb837;
-                padding-bottom: 4px;
-                margin-bottom: 8px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                font-family: 'Oswald', sans-serif;
+                font-size: 13px;
+                font-weight: 700;
+                color: #004687;
+                text-transform: uppercase;
+                border-bottom: 2px solid #004687;
+                padding-bottom: 3px;
+                margin-bottom: 5px;
             }}
             .benchmark-table {{
                 width: 100%;
                 border-collapse: collapse;
-                font-size: 9.5px;
+                font-size: 8.5px;
+                text-align: center;
             }}
             .benchmark-table th {{
-                text-align: left;
-                padding: 4px 6px;
-                background: #f1ede1;
-                color: #0a1728;
-                font-size: 8.5px;
+                background: #f8fafc;
+                color: #475569;
+                padding: 4px;
                 font-weight: 800;
                 text-transform: uppercase;
             }}
             .benchmark-table td {{
-                padding: 5px 6px;
+                padding: 4px 5px;
                 border-bottom: 1px solid #f1f5f9;
             }}
             .benchmark-table tr.current {{
@@ -313,7 +447,7 @@ def generate_mobile_briefing():
                 background: #0a1728;
                 color: white;
                 border-radius: 14px;
-                padding: 12px 16px;
+                padding: 10px 14px;
                 border: 2px solid #e8590c;
             }}
             .scouting-header {{
@@ -326,7 +460,7 @@ def generate_mobile_briefing():
             }}
             .scouting-title {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 15px;
+                font-size: 14px;
                 font-weight: 700;
                 color: #ffffff;
                 text-transform: uppercase;
@@ -335,24 +469,24 @@ def generate_mobile_briefing():
             .scouting-badge {{
                 background: #e8590c;
                 color: white;
-                font-size: 8.5px;
+                font-size: 8px;
                 font-weight: 800;
                 padding: 2px 7px;
                 border-radius: 5px;
                 text-transform: uppercase;
             }}
 
-            /* ALERTE SUSPENSION */
+            /* ALERTE SUSPENSION / ENJEU */
             .alert-suspension {{
                 background: #b91c1c;
                 border-radius: 8px;
-                padding: 8px 10px;
+                padding: 7px 10px;
                 margin-bottom: 6px;
                 border-left: 4px solid #fef08a;
             }}
             .alert-suspension-title {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 12px;
+                font-size: 11.5px;
                 font-weight: 700;
                 color: #fef08a;
                 text-transform: uppercase;
@@ -373,99 +507,98 @@ def generate_mobile_briefing():
             .scout-box {{
                 background: rgba(255, 255, 255, 0.06);
                 border-radius: 8px;
-                padding: 7px 9px;
+                padding: 6px 9px;
             }}
             .scout-box-title {{
                 font-size: 8.5px;
                 font-weight: 800;
-                text-transform: uppercase;
                 color: #ebb837;
+                text-transform: uppercase;
                 margin-bottom: 2px;
             }}
 
-            /* Tableau Quarts d'Heure */
+            /* Quarts d'Heure ESG */
             .section-card {{
                 background: white;
-                border-radius: 14px;
-                padding: 12px 16px;
+                border-radius: 12px;
+                padding: 9px 14px;
                 box-shadow: 0 4px 10px rgba(10, 23, 40, 0.05);
             }}
             .section-title {{
-                font-family: 'Oswald', sans-serif;
-                font-size: 13.5px;
-                font-weight: 700;
-                text-transform: uppercase;
-                color: #0a1728;
-                border-bottom: 2px solid #ebb837;
-                padding-bottom: 4px;
-                margin-bottom: 6px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                font-family: 'Oswald', sans-serif;
+                font-size: 13px;
+                font-weight: 700;
+                color: #0a1728;
+                text-transform: uppercase;
+                border-bottom: 2px solid #ebb837;
+                padding-bottom: 3px;
+                margin-bottom: 5px;
             }}
             .tranche-table {{
                 width: 100%;
                 border-collapse: collapse;
-                font-size: 9.5px;
+                font-size: 8.5px;
             }}
             .tranche-table th {{
                 text-align: left;
-                padding: 4px 6px;
-                background: #f1ede1;
-                color: #0a1728;
-                font-size: 8.5px;
+                padding: 3px 6px;
+                color: #64748b;
                 font-weight: 800;
                 text-transform: uppercase;
+                border-bottom: 1.5px solid #e2e8f0;
             }}
             .tranche-table td {{
-                padding: 5px 6px;
+                padding: 4px 6px;
                 border-bottom: 1px solid #f1f5f9;
             }}
             .bar-pour {{
                 background: #0a1728;
-                height: 10px;
+                height: 9px;
                 border-radius: 2px;
                 display: inline-block;
                 border-left: 3px solid #ebb837;
             }}
             .bar-contre {{
                 background: #e8590c;
-                height: 10px;
+                height: 9px;
                 border-radius: 2px;
                 display: inline-block;
             }}
 
-            /* Causerie Coach Callout */
+            /* Causerie Coach */
             .briefing-box {{
                 background: #0a1728;
                 color: white;
                 border-radius: 12px;
-                padding: 10px 14px;
+                padding: 8px 14px;
                 border-left: 5px solid #ebb837;
             }}
             .briefing-title {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 12px;
+                font-size: 11.5px;
                 font-weight: 700;
                 color: #ebb837;
                 text-transform: uppercase;
-                margin-bottom: 4px;
+                margin-bottom: 3px;
             }}
             .briefing-box ul {{
                 margin: 0;
                 padding-left: 14px;
-                font-size: 9px;
-                line-height: 1.4;
+                font-size: 8.5px;
+                line-height: 1.35;
                 color: #e2e8f0;
             }}
-            .briefing-box li {{ margin-bottom: 3px; }}
+            .briefing-box li {{ margin-bottom: 2px; }}
             .briefing-box strong {{ color: #ebb837; }}
 
             /* Footer Mobile ESG */
             .footer {{
                 background: #ebb837;
                 border-radius: 12px;
-                padding: 10px 16px;
+                padding: 8px 16px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -474,11 +607,11 @@ def generate_mobile_briefing():
             }}
             .footer .slogan {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 14px;
+                font-size: 13px;
                 letter-spacing: 1px;
                 text-transform: uppercase;
             }}
-            .footer .tag {{ font-size: 8.5px; font-weight: 800; }}
+            .footer .tag {{ font-size: 8px; font-weight: 800; }}
         </style>
     </head>
     <body>
@@ -493,30 +626,40 @@ def generate_mobile_briefing():
                 </div>
             </div>
             <div class="header-badge">
-                <div class="comp">Coupe de France</div>
-                <div class="tour">6e TOUR</div>
+                <div class="comp">{next_comp}</div>
+                <div class="tour">{next_tour}</div>
             </div>
         </div>
 
-        <!-- Hero Matchday -->
+        <!-- 1. BANNER SCORE DU MATCH PRÉCÉDENT -->
+        <div class="last-match-banner">
+            <div class="last-match-left">
+                <div class="last-match-tag">⏮️ RÉSULTAT DU MATCH PRÉCÉDENT • {last_comp} ({last_tour})</div>
+                <div class="last-match-score">{last_dom} {s_dom} - {s_ext} {last_ext}</div>
+                <div class="last-match-buteurs">Buteurs ESG : {buteurs_txt}</div>
+            </div>
+            <div class="last-match-pill">{res_tag}</div>
+        </div>
+
+        <!-- 2. HERO PROCHAIN MATCH -->
         <div class="match-hero">
-            <div class="hero-tag">Finale Régionale • Dimanche 25 Octobre • 15H00</div>
+            <div class="hero-tag">Affiche Officielle • {next_date}</div>
             <div class="hero-teams">
-                ST MARTIN TATINGHEM <span class="vs">VS</span> ES GENECH
+                {next_dom} <span class="vs">VS</span> {next_ext}
             </div>
         </div>
 
-        <!-- 4 Cartes KPIs Re-filtrées (10 Buts officiels FFF) -->
+        <!-- 3. 4 Cartes KPIs Re-filtrées -->
         <div class="kpi-grid">
             <div class="kpi-card gold">
                 <div class="kpi-label">Invincibilité ESG</div>
-                <div class="kpi-val">4 / 4</div>
-                <div class="kpi-sub">Clean sheets en Coupe (0 but pris)</div>
+                <div class="kpi-val">8 Matchs</div>
+                <div class="kpi-sub">0 défaite TCC cette saison</div>
             </div>
             <div class="kpi-card orange">
-                <div class="kpi-label">Ratio 2e Mi-Temps</div>
-                <div class="kpi-val">75 %</div>
-                <div class="kpi-sub">Des buts inscrits après pause</div>
+                <div class="kpi-label">Clean Sheets</div>
+                <div class="kpi-val">5 / 8</div>
+                <div class="kpi-sub">4 en Coupe + 1 en R3 (vs Maubeuge)</div>
             </div>
             <div class="kpi-card">
                 <div class="kpi-label">Attaque ESG</div>
@@ -530,32 +673,32 @@ def generate_mobile_briefing():
             </div>
         </div>
 
-        <!-- NOUVEAU : FACE-A-FACE STATISTIQUE AVANT-MATCH -->
+        <!-- 4. FACE-A-FACE STATISTIQUE AVANT-MATCH -->
         <div class="h2h-card">
             <div class="h2h-title">
-                <span>⚔️ Le Face-à-Face du 6e Tour</span>
+                <span>⚔️ Le Face-à-Face : {opp_name} vs ES Genech</span>
                 <span style="font-size: 8.5px; color:#64748b;">Statistiques Officielles 2026/2027</span>
             </div>
             <div class="h2h-grid">
-                <div class="h2h-team-name" style="color: #0a1728;">ST-MARTIN TATINGHEM</div>
-                <div class="h2h-stat-label">FORME SUR LES 4 DERNIERS MATCHS</div>
+                <div class="h2h-team-name" style="color: #0a1728;">{opp_name}</div>
+                <div class="h2h-stat-label">DYNAMIQUE RÉCENTE</div>
                 <div class="h2h-team-name" style="color: #0a1728;">ES GENECH</div>
 
-                <div class="h2h-stat-val" style="color: #15803d;">V - V - N - V (10 pts)</div>
-                <div class="h2h-stat-label">DYNAMIQUE RÉCENTE</div>
+                <div class="h2h-stat-val" style="color: #15803d;">{h2h_opp_form}</div>
+                <div class="h2h-stat-label">FORME OFFICIELLE</div>
                 <div class="h2h-stat-val" style="color: #15803d;">V - V - N - N (8 pts • Invaincu)</div>
 
-                <div class="h2h-stat-val">14 Buts (3.5 / m)</div>
-                <div class="h2h-stat-label">ATTAQUE (4 DERNIERS MATCHS)</div>
+                <div class="h2h-stat-val">{h2h_opp_att}</div>
+                <div class="h2h-stat-label">ATTAQUE RÉCENTE</div>
                 <div class="h2h-stat-val" style="color: #004687;">6 Buts (1.5 / m)</div>
 
-                <div class="h2h-stat-val" style="color: #b91c1c;">3 Buts (Fébrile en fin de match)</div>
+                <div class="h2h-stat-val" style="color: #b91c1c;">{h2h_opp_def}</div>
                 <div class="h2h-stat-label">DÉFENSE & CLEAN SHEETS</div>
-                <div class="h2h-stat-val" style="color: #15803d;">0 BUT EN COUPE (4 Clean Sheets)</div>
+                <div class="h2h-stat-val" style="color: #15803d;">0.75 b/m en R3 (0 en Coupe)</div>
             </div>
         </div>
 
-        <!-- TABLEAU COMPARATIF DES SAISONS EN R3 -->
+        <!-- 5. TABLEAU COMPARATIF DES SAISONS EN R3 -->
         <div class="benchmark-card">
             <div class="benchmark-title">
                 <span>📈 Repères de Performance : Comparatif des Saisons en R3</span>
@@ -594,46 +737,43 @@ def generate_mobile_briefing():
                         <td>R3 Poule D (<strong>Saison en cours</strong>)</td>
                         <td><strong>2.00 PPM</strong> (8 pts / 4 J)</td>
                         <td><strong>0.75 but / match</strong> (3 buts pris)</td>
-                        <td><strong>🔥 6e Tour (0 but pris • Exploit N1)</strong></td>
+                        <td><strong>🔥 6e Tour (0 but pris • Invaincu)</strong></td>
                         <td><strong>0 DÉFAITE (Invaincue)</strong></td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-        <!-- BLOC SCOUTING ADVERSAIRE + ALERTE JURIDIQUE -->
+        <!-- 6. BLOC SCOUTING ADVERSAIRE + ALERTE JURIDIQUE / TACTIQUE -->
         <div class="scouting-card">
             <div class="scouting-header">
-                <div class="scouting-title">🎯 Espionnage Tactique : St-Martin Tatinghem</div>
-                <div class="scouting-badge">R3 Côte d'Opale</div>
+                <div class="scouting-title">🎯 Espionnage Tactique : {opp_name}</div>
+                <div class="scouting-badge">{scout_badge}</div>
             </div>
 
-            <!-- ENCADRÉ ROUGE ALERTE SUSPENSION -->
+            <!-- ENCADRÉ ROUGE ALERTE -->
             <div class="alert-suspension">
-                <div class="alert-suspension-title">🚨 ALERTE SUSPENSION : MOUAAD MADRI (ATT. VEDETTE ADVERSE)</div>
-                <div class="alert-suspension-desc">
-                    3 cartons jaunes reçus en moins de 3 mois : CDF T2 (88'), R3 J3 (27') et CDF T5 (48'). En vertu de l'art. 226 des Règlements FFF, sa suspension prend effet le 19/10/2026 et s'applique <strong>ce dimanche contre Genech</strong>.<br/>
-                    👉 <strong>CONSIGNE STAFF :</strong> S'il est inscrit sur la feuille FMI dimanche, <strong>poser une réserve d'avant-match immédiate (victoire sur tapis vert possible)</strong>.
-                </div>
+                <div class="alert-suspension-title">{scout_alert_title}</div>
+                <div class="alert-suspension-desc">{scout_alert_desc}</div>
             </div>
 
             <div class="scouting-grid">
                 <div class="scout-box">
-                    <div class="scout-box-title">⚡ Démarrage Canon & Profil</div>
-                    <div style="font-size:9px; color:#cbd5e1; line-height:1.35;">
-                        Attaque prolifique (14 buts en 4 matchs). Ils pressent très haut dès le coup d'envoi et marquent souvent d'entrée (5' vs Neufchâtel, 39' vs Mouvaux). Être ultra-vigilant sur les 15 premières minutes.
+                    <div class="scout-box-title">{scout_box1_title}</div>
+                    <div style="font-size:8.5px; color:#cbd5e1; line-height:1.35;">
+                        {scout_box1_desc}
                     </div>
                 </div>
                 <div class="scout-box">
-                    <div class="scout-box-title">⚠️ Faille Physique en Fin de Match</div>
-                    <div style="font-size:9px; color:#cbd5e1; line-height:1.35;">
-                        <strong>Baisse de régime après la 70e :</strong> 2 buts concédés face à Neufchâtel (74' et 90'). Équipe agressive (4 cartons au 5e Tour) qui commet des fautes sous la fatigue.
+                    <div class="scout-box-title">{scout_box2_title}</div>
+                    <div style="font-size:8.5px; color:#cbd5e1; line-height:1.35;">
+                        {scout_box2_desc}
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Quarts d'Heure Genech -->
+        <!-- 7. Quarts d'Heure Genech -->
         <div class="section-card">
             <div class="section-title">
                 <span>⏱️ Efficacité par Quart d'Heure (ESG)</span>
@@ -649,86 +789,82 @@ def generate_mobile_briefing():
                     </tr>
                 </thead>
                 <tbody>
+    """
+
+    constats = [
+        "Départ prudent • Prise de repères défensifs",
+        "Pression progressive au milieu",
+        "Accélération avant pause • 2 buts clés",
+        "Entame de 2e mi-temps percutante",
+        "Temps fort ESG • 3 buts marqués",
+        "Money time géré avec rigueur (1 seul but pris)"
+    ]
+
+    for i, t in enumerate(tranches):
+        w_p = buts_pour[i] * 38
+        w_c = buts_contre[i] * 38
+        bar_p = f'<div class="bar-pour" style="width: {w_p}px;"></div> {buts_pour[i]}' if buts_pour[i] > 0 else '0'
+        bar_c = f'<div class="bar-contre" style="width: {w_c}px;"></div> {buts_contre[i]}' if buts_contre[i] > 0 else '0'
+
+        html_content += f"""
                     <tr>
-                        <td><strong>01-15'</strong></td>
-                        <td><span class="bar-pour" style="width: {max(buts_pour[0]*22, 4)}px;"></span> 0</td>
-                        <td><span class="bar-contre" style="width: {max(buts_contre[0]*22, 4)}px;"></span> 0</td>
-                        <td><span style="color:#64748b;">Bloc prudent & observation</span></td>
+                        <td><strong>{t}</strong></td>
+                        <td>{bar_p}</td>
+                        <td>{bar_c}</td>
+                        <td style="color:#475569;">{constats[i]}</td>
                     </tr>
-                    <tr>
-                        <td><strong>16-30'</strong></td>
-                        <td><span class="bar-pour" style="width: {max(buts_pour[1]*22, 4)}px;"></span> 0</td>
-                        <td><span class="bar-contre" style="width: {max(buts_contre[1]*22, 4)}px;"></span> 1</td>
-                        <td><span style="color:#64748b;">Temps faible ponctuel</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>31-45+'</strong></td>
-                        <td><span class="bar-pour" style="width: {max(buts_pour[2]*22, 4)}px;"></span> 2</td>
-                        <td><span class="bar-contre" style="width: {max(buts_contre[2]*22, 4)}px;"></span> 2</td>
-                        <td><span style="color:#e8590c; font-weight:700;">Transition rapide</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>46-60'</strong></td>
-                        <td><span class="bar-pour" style="width: {max(buts_pour[3]*22, 4)}px;"></span> 1</td>
-                        <td><span class="bar-contre" style="width: {max(buts_contre[3]*22, 4)}px;"></span> 0</td>
-                        <td><span style="color:#0a1728; font-weight:700;">Reprise bien cadenassée</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>61-75'</strong></td>
-                        <td><span class="bar-pour" style="width: {max(buts_pour[4]*22, 4)}px;"></span> 2</td>
-                        <td><span class="bar-contre" style="width: {max(buts_contre[4]*22, 4)}px;"></span> 0</td>
-                        <td><span style="color:#0a1728; font-weight:700;">Coaching gagnant (Subs)</span></td>
-                    </tr>
-                    <tr style="background: #fef3c7;">
-                        <td><strong>76-90+'</strong></td>
-                        <td><span class="bar-pour" style="width: {max(buts_pour[5]*22, 4)}px;"></span> <strong>3</strong></td>
-                        <td><span class="bar-contre" style="width: {max(buts_contre[5]*22, 4)}px;"></span> 1</td>
-                        <td><strong style="color: #b45309;">🔥 ZONE DE FINITION ESG</strong></td>
-                    </tr>
+        """
+
+    html_content += f"""
                 </tbody>
             </table>
         </div>
 
-        <!-- Causerie Coach -->
+        <!-- 8. Causerie Coach Callout -->
         <div class="briefing-box">
-            <div class="briefing-title">📋 3 Clés pour la Causerie du Coach</div>
+            <div class="briefing-title">📋 3 Points Clés pour la Causerie du Coach</div>
             <ul>
-                <li><strong>Absorber l'Entame :</strong> Tatinghem part toujours très fort. Résister au pressing des 15 premières minutes, notre bloc bas sait faire face.</li>
-                <li><strong>Exploiter leur baisse physique :</strong> Tatinghem concède ses buts après la 70e. Genech y est surpuissant (3 buts inscrits). Garder le rythme jusqu'au bout.</li>
-                <li><strong>Gestion Juridique & Calme :</strong> Poser la réserve FMI si Madri est sur la feuille, et jouer à 100 % sans énervement.</li>
+                <li><strong>Gestion de l'entame :</strong> Neutraliser les 15 premières minutes en restant très compacts et agressifs sur les seconds ballons.</li>
+                <li><strong>Exploitation de la profondeur :</strong> Piquer dans le dos des défenseurs latéraux dès la récupération au milieu.</li>
+                <li><strong>Discipline tactique :</strong> Ne concéder aucun coup franc dangereux dans nos 25 derniers mètres et garder son calme avec le corps arbitral.</li>
             </ul>
         </div>
 
-        <!-- Footer Mobile ESG -->
+        <!-- Footer -->
         <div class="footer">
             <div class="slogan">TOUJOURS ENSEMBLE • ALLEZ L'ESG</div>
-            <div class="tag">Cellule Data & Performance • Saison 2026/2027</div>
+            <div class="tag">Cellule Performance • Auto-Update Lundi/Vendredi</div>
         </div>
 
     </body>
     </html>
     """
 
-    pdf_out = os.path.join(OUTPUT_DIR, "briefing_match_tatinghem.pdf")
-    png_out = os.path.join(OUTPUT_DIR, "briefing_match_tatinghem.png")
-
+    # Rendu PDF et PNG avec Playwright
     with sync_playwright() as p:
         browser = launch_browser(p)
-        page = browser.new_page(viewport={"width": 1080, "height": 1800})
+        page = browser.new_page(viewport={"width": 1080, "height": 1920})
         page.set_content(html_content, wait_until="networkidle")
 
-        page.screenshot(path=png_out, full_page=True)
-        page.pdf(
-            path=pdf_out, 
-            width="1080px", 
-            print_background=True, 
-            margin={"top": "0", "bottom": "0", "left": "0", "right": "0"}
-        )
+        # Sortie standard toujours à jour
+        latest_png = os.path.join(OUTPUT_DIR, "briefing_match_latest.png")
+        latest_pdf = os.path.join(OUTPUT_DIR, "briefing_match_latest.pdf")
+        
+        # Sortie spécifique
+        slug = re.sub(r'[^a-zA-Z0-9]', '_', opp_name.lower()).strip('_')
+        specific_png = os.path.join(OUTPUT_DIR, f"briefing_match_{slug}.png")
+        specific_pdf = os.path.join(OUTPUT_DIR, f"briefing_match_{slug}.pdf")
+
+        page.screenshot(path=latest_png, full_page=True)
+        page.screenshot(path=specific_png, full_page=True)
+        page.pdf(path=latest_pdf, print_background=True, width="1080px", height="1920px")
+        page.pdf(path=specific_pdf, print_background=True, width="1080px", height="1920px")
 
         browser.close()
 
     conn.close()
-    print(" Fiche Mobile resserrée et ajustée générée avec succès !")
+    print(f"Fiche Mobile Dynamique générée avec succès pour le prochain match : {opp_name} !")
+    print(f"Dernier match intégré : {last_dom} {s_dom} - {s_ext} {last_ext} ({res_tag})")
 
 if __name__ == "__main__":
     generate_mobile_briefing()

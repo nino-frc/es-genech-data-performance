@@ -36,9 +36,23 @@ def parse_match_details(page, match_url: str):
 
     events = []
     lineups = []
+    score_dom = None
+    score_ext = None
+    statut = "A_VENIR"
+
+    # Détection automatique du score et du statut (TERMINE ou A_VENIR)
+    for idx, l in enumerate(lines[:35]):
+        if any(team in l.upper() for team in ['GENECH', 'TATINGHEM', 'ANICHE', 'MAUBEUGE', 'GUESNAIN', 'BONDUES', 'CHANTILLY']) and idx + 3 < len(lines):
+            if lines[idx+1].isdigit() and lines[idx+2].isdigit():
+                score_dom = int(lines[idx+1])
+                score_ext = int(lines[idx+2])
+                statut = "TERMINE"
+                break
+            elif re.match(r"^\d{1,2}:\d{2}$", lines[idx+1]):
+                statut = "A_VENIR"
+                break
     
     current_section = "RESUME"
-    current_team = ""
     current_role = "TITULAIRE"
     
     i = 0
@@ -129,34 +143,33 @@ def parse_match_details(page, match_url: str):
                         })
 
         elif current_section == "COMPOSITION":
-            if line.isupper() and len(line) > 3 and not line.isdigit() and line not in ["TITULAIRES", "REMPLAÇANTS", "REMPLACANTS", "STAFF"]:
-                current_team = line
-
             if line.isdigit() and i + 1 < len(lines):
                 num = int(line)
-                player_name = lines[i + 1]
-                if not player_name.isdigit() and player_name not in ["TITULAIRES", "REMPLAÇANTS", "STAFF"]:
+                name = lines[i + 1]
+                if not name.isdigit() and name not in ["TITULAIRES", "REMPLAÇANTS", "REMPLACANTS", "DIRIGEANTS", "OFFICIELS", "ARBITRES"]:
+                    team = "GENECH ES"
                     lineups.append({
-                        "equipe": current_team,
+                        "equipe": team,
                         "numero": num,
-                        "joueur_nom": player_name,
+                        "joueur_nom": name,
                         "role": current_role
                     })
                     i += 1
 
         i += 1
 
-    return events, lineups
+    return events, lineups, score_dom, score_ext, statut
 
-def run_pipeline():
+def scrape_fff():
     conn = sqlite3.connect(DB_PATH)
     cur = conn.cursor()
 
+    # Initialisation des compétitions
     cur.execute("""
     INSERT OR REPLACE INTO competitions (id, nom, type, saison, url)
     VALUES 
-        ('r3_poule_d', 'Seniors Régional 3 - Poule D', 'CHAMPIONNAT', '2026/2027', 'https://epreuves.fff.fr/competition/engagement/452056-seniors-regional-3/phase/1/4'),
-        ('cdf_2026', 'Coupe de France Crédit Agricole', 'COUPE_DE_FRANCE', '2026/2027', 'https://epreuves.fff.fr/competition/engagement/12-coupe-de-france-credit-agricole/phase/1/9');
+    ('r3_poule_d', 'Seniors Régional 3 (Poule D)', 'CHAMPIONNAT', '2026-2027', 'https://epreuves.fff.fr/competition/engagement/452056-seniors-regional-3/phase/1/4'),
+    ('cdf_2026', 'Coupe de France', 'COUPE_DE_FRANCE', '2026-2027', 'https://epreuves.fff.fr/competition/engagement/451733-coupe-de-france/phase/1');
     """)
     conn.commit()
 
@@ -199,33 +212,45 @@ def run_pipeline():
         except Exception as e:
             print(f"Erreur scraping classement : {e}")
 
-        # Liste des matchs clés
+        # Liste complète et ordonnée des matchs clés (Passés et Futurs)
         matches_to_scrape = [
+            {"id": "r3_j1_bondues_genech", "competition_id": "r3_poule_d", "tour_ou_journee": "Journée 1", "date_heure": "2026-09-06 15:00", "equipe_domicile": "BONDUES FC 2", "equipe_exterieur": "GENECH ES", "score_domicile": 1, "score_exterieur": 2, "statut": "TERMINE", "url": "https://epreuves.fff.fr/competition/match/56216887-bondues-football-club-ent-s-de-genech"},
+            {"id": "r3_j2_genech_maubeuge", "competition_id": "r3_poule_d", "tour_ou_journee": "Journée 2", "date_heure": "2026-09-20 15:00", "equipe_domicile": "GENECH ES", "equipe_exterieur": "MAUBEUGE US 2", "score_domicile": 2, "score_exterieur": 0, "statut": "TERMINE", "url": "https://epreuves.fff.fr/competition/match/56216893-ent-s-de-genech-u-s-maubeuge"},
+            {"id": "r3_j3_guesnain_genech", "competition_id": "r3_poule_d", "tour_ou_journee": "Journée 3", "date_heure": "2026-10-04 15:00", "equipe_domicile": "GUESNAIN SC", "equipe_exterieur": "GENECH ES", "score_domicile": 1, "score_exterieur": 1, "statut": "TERMINE", "url": "https://epreuves.fff.fr/competition/match/56216902-s-c-guesnain-ent-s-de-genech"},
             {"id": "r3_j4_genech_anstaing", "competition_id": "r3_poule_d", "tour_ou_journee": "Journée 4", "date_heure": "2026-10-18 15:00", "equipe_domicile": "GENECH ES", "equipe_exterieur": "ANSTAING CHERENG EC", "score_domicile": 1, "score_exterieur": 1, "statut": "TERMINE", "url": "https://epreuves.fff.fr/competition/match/56216904-ent-s-de-genech-et-c-anstaing-chereng"},
             {"id": "r3_j4_bavay_aniche", "competition_id": "r3_poule_d", "tour_ou_journee": "Journée 4", "date_heure": "2026-10-18 15:00", "equipe_domicile": "BAVAY US", "equipe_exterieur": "ANICHE SC", "score_domicile": 1, "score_exterieur": 1, "statut": "TERMINE", "url": "https://epreuves.fff.fr/competition/match/56216903-u-s-bavay-s-c-aniche"},
             {"id": "r3_j4_beuvry_guesnain", "competition_id": "r3_poule_d", "tour_ou_journee": "Journée 4", "date_heure": "2026-10-18 15:00", "equipe_domicile": "BEUVRY LA FORET AS", "equipe_exterieur": "GUESNAIN SC", "score_domicile": 2, "score_exterieur": 1, "statut": "TERMINE", "url": "https://epreuves.fff.fr/competition/match/56216905-a-s-beuvry-la-foret-s-c-guesnain"},
-            {"id": "r3_j3_guesnain_genech", "competition_id": "r3_poule_d", "tour_ou_journee": "Journée 3", "date_heure": "2026-10-04 15:00", "equipe_domicile": "GUESNAIN SC", "equipe_exterieur": "GENECH ES", "score_domicile": 1, "score_exterieur": 1, "statut": "TERMINE", "url": "https://epreuves.fff.fr/competition/match/56216902-s-c-guesnain-ent-s-de-genech"},
-            {"id": "r3_j2_genech_maubeuge", "competition_id": "r3_poule_d", "tour_ou_journee": "Journée 2", "date_heure": "2026-09-20 15:00", "equipe_domicile": "GENECH ES", "equipe_exterieur": "MAUBEUGE US 2", "score_domicile": 2, "score_exterieur": 0, "statut": "TERMINE", "url": "https://epreuves.fff.fr/competition/match/56216893-ent-s-de-genech-u-s-maubeuge"},
-            {"id": "r3_j1_bondues_genech", "competition_id": "r3_poule_d", "tour_ou_journee": "Journée 1", "date_heure": "2026-09-06 15:00", "equipe_domicile": "BONDUES FC 2", "equipe_exterieur": "GENECH ES", "score_domicile": 1, "score_exterieur": 2, "statut": "TERMINE", "url": "https://epreuves.fff.fr/competition/match/56216887-bondues-football-club-ent-s-de-genech"},
             {"id": "cdf_t2_lys_genech", "competition_id": "cdf_2026", "tour_ou_journee": "Tour 2", "date_heure": "2026-08-30 15:00", "equipe_domicile": "LYS L/LANNOY STELLA", "equipe_exterieur": "GENECH ES", "score_domicile": 0, "score_exterieur": 0, "statut": "TERMINE", "url": "https://epreuves.fff.fr/competition/match/79044919-lys-lez-lannoy-stella-ent-s-de-genech"},
             {"id": "cdf_t3_sainghin_genech", "competition_id": "cdf_2026", "tour_ou_journee": "Tour 3", "date_heure": "2026-09-13 15:00", "equipe_domicile": "SAINGHIN WEPPES AO", "equipe_exterieur": "GENECH ES", "score_domicile": 0, "score_exterieur": 1, "statut": "TERMINE", "url": "https://epreuves.fff.fr/competition/match/79190037-a-o-sainghin-en-weppes-ent-s-de-genech"},
             {"id": "cdf_t4_genech_dunkerque", "competition_id": "cdf_2026", "tour_ou_journee": "Tour 4", "date_heure": "2026-09-27 15:00", "equipe_domicile": "GENECH ES", "equipe_exterieur": "DUNKERQUE MALO FC", "score_domicile": 2, "score_exterieur": 0, "statut": "TERMINE", "url": "https://epreuves.fff.fr/competition/match/79646320-ent-s-de-genech-f-c-dunkerque-malo-plage"},
             {"id": "cdf_t5_genech_chantilly", "competition_id": "cdf_2026", "tour_ou_journee": "Tour 5", "date_heure": "2026-10-11 15:00", "equipe_domicile": "GENECH ES", "equipe_exterieur": "CHANTILLY US", "score_domicile": 1, "score_exterieur": 0, "statut": "TERMINE", "url": "https://epreuves.fff.fr/competition/match/79813375-ent-s-de-genech-u-s-de-chantilly"},
-            {"id": "cdf_t6_tatinghem_genech", "competition_id": "cdf_2026", "tour_ou_journee": "Tour 6 (Finale Régionale)", "date_heure": "2026-10-25 15:00", "equipe_domicile": "ST MARTIN TATINGHEM", "equipe_exterieur": "GENECH ES", "score_domicile": None, "score_exterieur": None, "statut": "A_VENIR", "url": "https://epreuves.fff.fr/competition/match/80499782-football-club-saint-martin-lez-tatinghem-ent-s-de-genech"}
+            {"id": "cdf_t6_tatinghem_genech", "competition_id": "cdf_2026", "tour_ou_journee": "Tour 6 (Finale Régionale)", "date_heure": "2026-10-25 15:00", "equipe_domicile": "ST MARTIN TATINGHEM", "equipe_exterieur": "GENECH ES", "score_domicile": None, "score_exterieur": None, "statut": "A_VENIR", "url": "https://epreuves.fff.fr/competition/match/80499782-football-club-saint-martin-lez-tatinghem-ent-s-de-genech"},
+            {"id": "r3_j5_aniche_genech", "competition_id": "r3_poule_d", "tour_ou_journee": "Journée 5", "date_heure": "2026-11-08 14:30", "equipe_domicile": "ANICHE SC", "equipe_exterieur": "GENECH ES", "score_domicile": None, "score_exterieur": None, "statut": "A_VENIR", "url": "https://epreuves.fff.fr/competition/match/56216911-s-c-aniche-ent-s-de-genech"}
         ]
 
         cur.execute("DELETE FROM match_events;")
         cur.execute("DELETE FROM match_lineups;")
 
         for m in matches_to_scrape:
-            cur.execute("""
-            INSERT OR REPLACE INTO matchs (id, competition_id, tour_ou_journee, date_heure, equipe_domicile, equipe_exterieur, score_domicile, score_exterieur, statut, url)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            """, (m["id"], m["competition_id"], m["tour_ou_journee"], m["date_heure"], m["equipe_domicile"], m["equipe_exterieur"], m["score_domicile"], m["score_exterieur"], m["statut"], m["url"]))
+            # Vérification dynamique sur la page FFF si le match est joué ou à venir
+            s_dom = m["score_domicile"]
+            s_ext = m["score_exterieur"]
+            statut = m["statut"]
+            
+            try:
+                events, lineups, parsed_s_dom, parsed_s_ext, parsed_statut = parse_match_details(page, m["url"])
+                # Si la FFF affiche désormais un score final, on met à jour automatiquement
+                if parsed_statut == "TERMINE" and parsed_s_dom is not None:
+                    s_dom = parsed_s_dom
+                    s_ext = parsed_s_ext
+                    statut = "TERMINE"
+                
+                cur.execute("""
+                INSERT OR REPLACE INTO matchs (id, competition_id, tour_ou_journee, date_heure, equipe_domicile, equipe_exterieur, score_domicile, score_exterieur, statut, url)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """, (m["id"], m["competition_id"], m["tour_ou_journee"], m["date_heure"], m["equipe_domicile"], m["equipe_exterieur"], s_dom, s_ext, statut, m["url"]))
 
-            if m["statut"] == "TERMINE":
-                try:
-                    events, lineups = parse_match_details(page, m["url"])
+                if statut == "TERMINE":
                     for ev in events:
                         cur.execute("""
                         INSERT INTO match_events (match_id, minute, temps_additionnel, tranche_quart_heure, type_event, equipe, acteur_principal, acteur_secondaire, detail)
@@ -237,8 +262,8 @@ def run_pipeline():
                         INSERT INTO match_lineups (match_id, equipe, numero, joueur_nom, role)
                         VALUES (?, ?, ?, ?, ?)
                         """, (m["id"], lp["equipe"], lp["numero"], lp["joueur_nom"], lp["role"]))
-                except Exception as e:
-                    print(f"Erreur scraping {m['id']}: {e}")
+            except Exception as e:
+                print(f"Erreur scraping {m['id']}: {e}")
 
         conn.commit()
         browser.close()
@@ -249,4 +274,4 @@ def run_pipeline():
 if __name__ == "__main__":
     from database import init_db
     init_db()
-    run_pipeline()
+    scrape_fff()
