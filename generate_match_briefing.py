@@ -22,7 +22,6 @@ def generate_mobile_briefing():
 
     df_matchs = pd.read_sql_query("SELECT * FROM matchs", conn)
     df_events = pd.read_sql_query("SELECT * FROM match_events", conn)
-    df_scouting = pd.read_sql_query("SELECT * FROM scouting_adversaire", conn) if 'scouting_adversaire' in [t[0] for t in conn.cursor().execute("SELECT name FROM sqlite_master WHERE type='table'")] else pd.DataFrame()
 
     # Encode logo
     logo_b64 = ""
@@ -43,7 +42,7 @@ def generate_mobile_briefing():
 
     cartons_count = len(df_events[(df_events['type_event'].isin(['AVERTISSEMENT', 'EXPULSION'])) & (df_events['equipe'].str.contains('GENECH', case=False, na=False))])
 
-    # HTML Template Mobile avec Encart Scouting Opposant
+    # HTML Template Mobile avec Encart Alerte Suspension & FMI
     html_content = f"""
     <!DOCTYPE html>
     <html lang="fr">
@@ -61,7 +60,7 @@ def generate_mobile_briefing():
             body {{
                 font-family: 'Montserrat', sans-serif;
                 margin: 0;
-                padding: 28px 32px 32px 32px;
+                padding: 26px 30px 30px 30px;
                 background-color: #ede8d8;
                 color: #0a1728;
                 width: 1080px;
@@ -71,14 +70,14 @@ def generate_mobile_briefing():
                 justify-content: space-between;
             }}
 
-            /* Header Mobile avec Logo */
+            /* Header Mobile */
             .header {{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 background: #0a1728;
                 border-radius: 18px;
-                padding: 18px 24px;
+                padding: 16px 22px;
                 color: white;
                 box-shadow: 0 8px 20px rgba(10, 23, 40, 0.15);
                 border: 2px solid #ebb837;
@@ -89,8 +88,8 @@ def generate_mobile_briefing():
                 gap: 16px;
             }}
             .club-logo {{
-                width: 74px;
-                height: 74px;
+                width: 70px;
+                height: 70px;
                 border-radius: 50%;
                 border: 3px solid #ebb837;
                 padding: 2px;
@@ -98,7 +97,7 @@ def generate_mobile_briefing():
             }}
             .club-title h1 {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 28px;
+                font-size: 27px;
                 font-weight: 700;
                 margin: 0;
                 letter-spacing: 1px;
@@ -107,8 +106,8 @@ def generate_mobile_briefing():
             }}
             .club-title h1 span {{ color: #ebb837; }}
             .club-title p {{
-                margin: 3px 0 0 0;
-                font-size: 12px;
+                margin: 2px 0 0 0;
+                font-size: 11.5px;
                 font-weight: 700;
                 color: #cbd5e1;
                 text-transform: uppercase;
@@ -116,7 +115,7 @@ def generate_mobile_briefing():
             .header-badge {{
                 background: #ebb837;
                 color: #0a1728;
-                padding: 10px 16px;
+                padding: 9px 15px;
                 border-radius: 12px;
                 text-align: center;
                 font-weight: 800;
@@ -134,9 +133,9 @@ def generate_mobile_briefing():
             /* Hero Matchday */
             .match-hero {{
                 background: #0a1728;
-                border-radius: 18px;
-                padding: 18px 24px;
-                margin-top: 16px;
+                border-radius: 16px;
+                padding: 16px 22px;
+                margin-top: 14px;
                 color: white;
                 text-align: center;
                 border-bottom: 5px solid #e8590c;
@@ -145,17 +144,17 @@ def generate_mobile_briefing():
                 display: inline-block;
                 background: #e8590c;
                 color: white;
-                font-size: 11px;
+                font-size: 10.5px;
                 font-weight: 800;
                 padding: 3px 12px;
                 border-radius: 20px;
                 text-transform: uppercase;
                 letter-spacing: 1px;
-                margin-bottom: 8px;
+                margin-bottom: 6px;
             }}
             .hero-teams {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 32px;
+                font-size: 30px;
                 font-weight: 700;
                 text-transform: uppercase;
                 display: flex;
@@ -163,66 +162,66 @@ def generate_mobile_briefing():
                 justify-content: center;
                 gap: 14px;
             }}
-            .hero-teams .vs {{ color: #ebb837; font-size: 20px; }}
+            .hero-teams .vs {{ color: #ebb837; font-size: 18px; }}
 
             /* 4 KPIs */
             .kpi-grid {{
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 gap: 10px;
-                margin-top: 14px;
+                margin-top: 12px;
             }}
             .kpi-card {{
                 background: white;
                 border-radius: 12px;
-                padding: 12px 14px;
+                padding: 10px 12px;
                 border-left: 5px solid #0a1728;
                 box-shadow: 0 4px 10px rgba(10, 23, 40, 0.05);
             }}
             .kpi-card.gold {{ border-left-color: #ebb837; }}
             .kpi-card.orange {{ border-left-color: #e8590c; }}
             .kpi-label {{
-                font-size: 9px;
+                font-size: 8.5px;
                 font-weight: 800;
                 text-transform: uppercase;
                 color: #64748b;
             }}
             .kpi-val {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 24px;
+                font-size: 22px;
                 font-weight: 700;
                 color: #0a1728;
-                margin-top: 2px;
+                margin-top: 1px;
             }}
             .kpi-card.gold .kpi-val {{ color: #d97706; }}
             .kpi-card.orange .kpi-val {{ color: #e8590c; }}
             .kpi-sub {{
-                font-size: 8.5px;
+                font-size: 8px;
                 font-weight: 600;
                 color: #64748b;
             }}
 
-            /* Scouting Opposant Card (Brique Pro) */
+            /* Scouting Opposant Card */
             .scouting-card {{
                 background: #0a1728;
                 color: white;
-                border-radius: 18px;
-                padding: 18px 24px;
-                margin-top: 16px;
+                border-radius: 16px;
+                padding: 16px 20px;
+                margin-top: 14px;
                 border: 2px solid #e8590c;
-                box-shadow: 0 6px 18px rgba(232, 89, 12, 0.2);
+                box-shadow: 0 6px 18px rgba(232, 89, 12, 0.15);
             }}
             .scouting-header {{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 border-bottom: 2px solid #e8590c;
-                padding-bottom: 8px;
-                margin-bottom: 12px;
+                padding-bottom: 6px;
+                margin-bottom: 10px;
             }}
             .scouting-title {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 19px;
+                font-size: 18px;
                 font-weight: 700;
                 color: #ffffff;
                 text-transform: uppercase;
@@ -231,67 +230,78 @@ def generate_mobile_briefing():
             .scouting-badge {{
                 background: #e8590c;
                 color: white;
-                font-size: 10px;
+                font-size: 9.5px;
                 font-weight: 800;
-                padding: 3px 10px;
+                padding: 3px 8px;
                 border-radius: 6px;
                 text-transform: uppercase;
             }}
+
+            /* ALERTE SUSPENSION SPÉCIALE */
+            .alert-suspension {{
+                background: #b91c1c;
+                border-radius: 10px;
+                padding: 10px 14px;
+                margin-bottom: 10px;
+                border-left: 6px solid #fef08a;
+            }}
+            .alert-suspension-title {{
+                font-family: 'Oswald', sans-serif;
+                font-size: 14px;
+                font-weight: 700;
+                color: #fef08a;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }}
+            .alert-suspension-desc {{
+                font-size: 9.5px;
+                line-height: 1.45;
+                color: #fef2f2;
+                margin-top: 4px;
+            }}
+            .alert-suspension-desc strong {{
+                color: #ffffff;
+                text-decoration: underline;
+            }}
+
             .scouting-grid {{
                 display: grid;
-                grid-template-columns: 1.1fr 0.9fr;
-                gap: 16px;
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
             }}
             .scout-box {{
                 background: rgba(255, 255, 255, 0.06);
                 border-radius: 10px;
-                padding: 12px 14px;
+                padding: 10px 12px;
             }}
             .scout-box-title {{
-                font-size: 10px;
+                font-size: 9.5px;
                 font-weight: 800;
                 text-transform: uppercase;
                 color: #ebb837;
-                margin-bottom: 6px;
-            }}
-            .danger-player {{
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                background: rgba(232, 89, 12, 0.2);
-                border-left: 3px solid #e8590c;
-                padding: 8px 10px;
-                border-radius: 6px;
-                margin-top: 6px;
-            }}
-            .danger-name {{
-                font-family: 'Oswald', sans-serif;
-                font-size: 15px;
-                font-weight: 700;
-                color: #f97316;
-            }}
-            .danger-desc {{
-                font-size: 9.5px;
-                color: #cbd5e1;
+                margin-bottom: 4px;
             }}
 
             /* Tableau Quarts d'Heure */
             .section-card {{
                 background: white;
-                border-radius: 18px;
-                padding: 18px 22px;
-                margin-top: 14px;
+                border-radius: 16px;
+                padding: 16px 20px;
+                margin-top: 12px;
                 box-shadow: 0 4px 15px rgba(10, 23, 40, 0.05);
             }}
             .section-title {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 17px;
+                font-size: 16px;
                 font-weight: 700;
                 text-transform: uppercase;
                 color: #0a1728;
                 border-bottom: 2px solid #ebb837;
-                padding-bottom: 6px;
-                margin-bottom: 10px;
+                padding-bottom: 5px;
+                margin-bottom: 8px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -299,31 +309,31 @@ def generate_mobile_briefing():
             .tranche-table {{
                 width: 100%;
                 border-collapse: collapse;
-                font-size: 11px;
+                font-size: 10.5px;
             }}
             .tranche-table th {{
                 text-align: left;
-                padding: 6px 8px;
+                padding: 5px 6px;
                 background: #f1ede1;
                 color: #0a1728;
-                font-size: 9.5px;
+                font-size: 9px;
                 font-weight: 800;
                 text-transform: uppercase;
             }}
             .tranche-table td {{
-                padding: 7px 8px;
+                padding: 6px;
                 border-bottom: 1px solid #f1f5f9;
             }}
             .bar-pour {{
                 background: #0a1728;
-                height: 12px;
+                height: 11px;
                 border-radius: 3px;
                 display: inline-block;
                 border-left: 3px solid #ebb837;
             }}
             .bar-contre {{
                 background: #e8590c;
-                height: 12px;
+                height: 11px;
                 border-radius: 3px;
                 display: inline-block;
             }}
@@ -333,34 +343,34 @@ def generate_mobile_briefing():
                 background: #0a1728;
                 color: white;
                 border-radius: 14px;
-                padding: 14px 18px;
-                margin-top: 14px;
+                padding: 12px 16px;
+                margin-top: 12px;
                 border-left: 5px solid #ebb837;
             }}
             .briefing-title {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 14px;
+                font-size: 13.5px;
                 font-weight: 700;
                 color: #ebb837;
                 text-transform: uppercase;
-                margin-bottom: 6px;
+                margin-bottom: 5px;
             }}
             .briefing-box ul {{
                 margin: 0;
-                padding-left: 18px;
-                font-size: 11px;
-                line-height: 1.45;
+                padding-left: 16px;
+                font-size: 10px;
+                line-height: 1.4;
                 color: #e2e8f0;
             }}
-            .briefing-box li {{ margin-bottom: 4px; }}
+            .briefing-box li {{ margin-bottom: 3px; }}
             .briefing-box strong {{ color: #ebb837; }}
 
             /* Footer Mobile ESG */
             .footer {{
                 background: #ebb837;
-                border-radius: 14px;
-                padding: 12px 20px;
-                margin-top: 16px;
+                border-radius: 12px;
+                padding: 10px 18px;
+                margin-top: 14px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -369,11 +379,11 @@ def generate_mobile_briefing():
             }}
             .footer .slogan {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 16px;
+                font-size: 15px;
                 letter-spacing: 1px;
                 text-transform: uppercase;
             }}
-            .footer .tag {{ font-size: 10px; font-weight: 800; }}
+            .footer .tag {{ font-size: 9.5px; font-weight: 800; }}
         </style>
     </head>
     <body>
@@ -425,28 +435,34 @@ def generate_mobile_briefing():
             </div>
         </div>
 
-        <!-- NOUVEAU BLOC : SCOUTING ADVERSAIRE OFFICIEL -->
+        <!-- BLOC SCOUTING ADVERSAIRE + ALERTE JURIDIQUE OFFICIELLE -->
         <div class="scouting-card">
             <div class="scouting-header">
                 <div class="scouting-title">🎯 Espionnage Tactique : St-Martin Tatinghem</div>
-                <div class="scouting-badge">Régional 3 (District Côte d'Opale)</div>
+                <div class="scouting-badge">R3 Côte d'Opale</div>
             </div>
+
+            <!-- ENCADRÉ ROUGE ALERTE SUSPENSION -->
+            <div class="alert-suspension">
+                <div class="alert-suspension-title">🚨 ALERTE SUSPENSION : MOUAAD MADRI (ATT. VEDETTE ADVERSE)</div>
+                <div class="alert-suspension-desc">
+                    L'attaquant vedette adverse a reçu <strong>3 cartons jaunes en moins de 3 mois</strong> : CDF T2 (88'), R3 J3 (27') et CDF T5 (48'). En vertu de l'art. 226 des Règlements FFF, sa suspension automatique prend effet le 19/10/2026 et s'applique <strong>ce dimanche contre Genech</strong>.<br/>
+                    👉 <strong>CONSIGNE STAFF :</strong> Vérifier la liste des suspendus sur Footclubs. S'il est aligné dimanche sur la feuille FMI, <strong>poser une réserve d'avant-match immédiate (victoire sur tapis vert possible)</strong>.
+                </div>
+            </div>
+
             <div class="scouting-grid">
                 <div class="scout-box">
-                    <div class="scout-box-title">🔥 Danger n°1 Identifié</div>
-                    <div class="danger-player">
-                        <div>
-                            <div class="danger-name">MOUAAD MADRI</div>
-                            <div class="danger-desc">Attaquant vedette (Ex-Pro L2/National). Auteur de 3 buts lors des 2 derniers matchs (doublé au Tour 5, but en J4). À marquer de très près dès la relance.</div>
-                        </div>
+                    <div class="scout-box-title">🔥 Danger n°1 Sportif</div>
+                    <div style="font-size:10px; color:#cbd5e1; line-height:1.4;">
+                        Ex-pro L2/National. Auteur de 3 buts sur ses 2 derniers matchs (doublé au Tour 5, but en J4). S'il joue, marquage strict à deux dès la relance.
                     </div>
                 </div>
                 <div class="scout-box">
-                    <div class="scout-box-title">⚠️ Vulnérabilités Détectées</div>
-                    <ul style="margin:0; padding-left:14px; font-size:10px; color:#cbd5e1; line-height:1.45;">
-                        <li><strong>Défense friable :</strong> 2 buts encaissés au Tour 5 face à Neufchâtel dans le dernier quart d'heure (74' et 90').</li>
-                        <li><strong>Nervosité :</strong> 4 cartons jaunes reçus au 5e tour sous pression adverse.</li>
-                    </ul>
+                    <div class="scout-box-title">⚠️ Faille Majeure Détectée</div>
+                    <div style="font-size:10px; color:#cbd5e1; line-height:1.4;">
+                        <strong>Défense friable en fin de match :</strong> 2 buts encaissés face à Neufchâtel à la 74' et 90' au Tour 5. Équipe nerveuse (4 cartons jaunes reçus).
+                    </div>
                 </div>
             </div>
         </div>
@@ -455,7 +471,7 @@ def generate_mobile_briefing():
         <div class="section-card">
             <div class="section-title">
                 <span>⏱️ Efficacité par Quart d'Heure (ESG)</span>
-                <span style="font-size: 10px; color:#64748b;">ESG (Bleu) vs Adv (Orange)</span>
+                <span style="font-size: 9.5px; color:#64748b;">ESG (Bleu) vs Adv (Orange)</span>
             </div>
             <table class="tranche-table">
                 <thead>
@@ -469,38 +485,38 @@ def generate_mobile_briefing():
                 <tbody>
                     <tr>
                         <td><strong>01-15'</strong></td>
-                        <td><span class="bar-pour" style="width: {max(buts_pour[0]*25, 4)}px;"></span> 0</td>
-                        <td><span class="bar-contre" style="width: {max(buts_contre[0]*25, 4)}px;"></span> 0</td>
+                        <td><span class="bar-pour" style="width: {max(buts_pour[0]*22, 4)}px;"></span> 0</td>
+                        <td><span class="bar-contre" style="width: {max(buts_contre[0]*22, 4)}px;"></span> 0</td>
                         <td><span style="color:#64748b;">Observation & bloc serré</span></td>
                     </tr>
                     <tr>
                         <td><strong>16-30'</strong></td>
-                        <td><span class="bar-pour" style="width: {max(buts_pour[1]*25, 4)}px;"></span> 0</td>
-                        <td><span class="bar-contre" style="width: {max(buts_contre[1]*25, 4)}px;"></span> 1</td>
+                        <td><span class="bar-pour" style="width: {max(buts_pour[1]*22, 4)}px;"></span> 0</td>
+                        <td><span class="bar-contre" style="width: {max(buts_contre[1]*22, 4)}px;"></span> 1</td>
                         <td><span style="color:#64748b;">Temps faible ponctuel</span></td>
                     </tr>
                     <tr>
                         <td><strong>31-45+'</strong></td>
-                        <td><span class="bar-pour" style="width: {max(buts_pour[2]*25, 4)}px;"></span> 2</td>
-                        <td><span class="bar-contre" style="width: {max(buts_contre[2]*25, 4)}px;"></span> 2</td>
+                        <td><span class="bar-pour" style="width: {max(buts_pour[2]*22, 4)}px;"></span> 2</td>
+                        <td><span class="bar-contre" style="width: {max(buts_contre[2]*22, 4)}px;"></span> 2</td>
                         <td><span style="color:#e8590c; font-weight:700;">Transition rapide</span></td>
                     </tr>
                     <tr>
                         <td><strong>46-60'</strong></td>
-                        <td><span class="bar-pour" style="width: {max(buts_pour[3]*25, 4)}px;"></span> 1</td>
-                        <td><span class="bar-contre" style="width: {max(buts_contre[3]*25, 4)}px;"></span> 0</td>
+                        <td><span class="bar-pour" style="width: {max(buts_pour[3]*22, 4)}px;"></span> 1</td>
+                        <td><span class="bar-contre" style="width: {max(buts_contre[3]*22, 4)}px;"></span> 0</td>
                         <td><span style="color:#0a1728; font-weight:700;">Reprise bien cadenassée</span></td>
                     </tr>
                     <tr>
                         <td><strong>61-75'</strong></td>
-                        <td><span class="bar-pour" style="width: {max(buts_pour[4]*25, 4)}px;"></span> 2</td>
-                        <td><span class="bar-contre" style="width: {max(buts_contre[4]*25, 4)}px;"></span> 0</td>
+                        <td><span class="bar-pour" style="width: {max(buts_pour[4]*22, 4)}px;"></span> 2</td>
+                        <td><span class="bar-contre" style="width: {max(buts_contre[4]*22, 4)}px;"></span> 0</td>
                         <td><span style="color:#0a1728; font-weight:700;">Coaching gagnant (Subs)</span></td>
                     </tr>
                     <tr style="background: #fef3c7;">
                         <td><strong>76-90+'</strong></td>
-                        <td><span class="bar-pour" style="width: {max(buts_pour[5]*25, 4)}px;"></span> <strong>3</strong></td>
-                        <td><span class="bar-contre" style="width: {max(buts_contre[5]*25, 4)}px;"></span> 1</td>
+                        <td><span class="bar-pour" style="width: {max(buts_pour[5]*22, 4)}px;"></span> <strong>3</strong></td>
+                        <td><span class="bar-contre" style="width: {max(buts_contre[5]*22, 4)}px;"></span> 1</td>
                         <td><strong style="color: #b45309;">🔥 ZONE DE FINITION ESG</strong></td>
                     </tr>
                 </tbody>
@@ -509,11 +525,11 @@ def generate_mobile_briefing():
 
         <!-- Causerie Coach -->
         <div class="briefing-box">
-            <div class="briefing-title">📋 Plan de Jeu Recommandé pour la Causerie</div>
+            <div class="briefing-title">📋 3 Clés pour la Causerie du Coach</div>
             <ul>
-                <li><strong>Neutraliser Madri :</strong> Couper impérativement les lignes de passe vers Mouaad Madri, véritable métronome offensif adverse.</li>
-                <li><strong>Tirer profit du dernier quart d'heure :</strong> Tatinghem a concédé 2 buts à la 74' et 90' au Tour 5. C'est exactement là que Genech est le plus dangereux (3 buts inscrits).</li>
-                <li><strong>Discipline totale :</strong> L'arbitre sanctionnera la moindre faute de frustration. Rester calme à 11 contre 11.</li>
+                <li><strong>Gestion de Madri :</strong> S'il est sur le terrain, couper les transmissions. Si la réserve FMI est posée, jouer sans panique : le match se gagne aussi sur le terrain juridique.</li>
+                <li><strong>Exploiter leur baisse physique :</strong> Tatinghem concède ses buts après la 70e. Genech y est surpuissant (3 buts inscrits). Garder le rythme.</li>
+                <li><strong>Zéro contestation :</strong> Rester irréprochable auprès du corps arbitral. Qualification historique en jeu pour le 7e Tour National.</li>
             </ul>
         </div>
 
@@ -547,7 +563,7 @@ def generate_mobile_briefing():
         browser.close()
 
     conn.close()
-    print(" Fiche Mobile avec Bloc Scouting Adversaire générée avec succès !")
+    print(" Fiche Mobile avec Alerte Suspension générée avec succès !")
 
 if __name__ == "__main__":
     generate_mobile_briefing()
