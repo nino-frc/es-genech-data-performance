@@ -39,8 +39,8 @@ def generate_mobile_briefing():
     s_term['buts_pour'] = s_term.apply(lambda r: r['score_domicile'] if r['is_dom'] else r['score_exterieur'], axis=1)
     s_term['buts_contre'] = s_term.apply(lambda r: r['score_exterieur'] if r['is_dom'] else r['score_domicile'], axis=1)
 
-    total_buts_marques = int(s_term['buts_pour'].sum())   # Exactement 10 buts
-    total_buts_encaisses = int(s_term['buts_contre'].sum()) # Exactement 3 buts
+    total_buts_marques = int(s_term['buts_pour'].sum())   # 10 buts
+    total_buts_encaisses = int(s_term['buts_contre'].sum()) # 3 buts
 
     # Cartons Genech
     cartons_genech = df_events[(df_events['type_event'] == 'AVERTISSEMENT') & (df_events['equipe'].str.contains('GENECH', case=False, na=False))]
@@ -58,6 +58,7 @@ def generate_mobile_briefing():
         buts_pour.append(len(df_buts[(df_buts['tranche_quart_heure'] == t) & (df_buts['is_genech'])]))
         buts_contre.append(len(df_buts[(df_buts['tranche_quart_heure'] == t) & (~df_buts['is_genech'])]))
 
+    # Spacing resserré, sans espace mort (plus dense, fluide et équilibré)
     html_content = f"""
     <!DOCTYPE html>
     <html lang="fr">
@@ -75,14 +76,13 @@ def generate_mobile_briefing():
             body {{
                 font-family: 'Montserrat', sans-serif;
                 margin: 0;
-                padding: 22px 26px 26px 26px;
+                padding: 24px 28px;
                 background-color: #ede8d8;
                 color: #0a1728;
                 width: 1080px;
-                min-height: 1920px;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                gap: 12px;
             }}
 
             /* Header Mobile */
@@ -94,7 +94,7 @@ def generate_mobile_briefing():
                 border-radius: 16px;
                 padding: 14px 20px;
                 color: white;
-                box-shadow: 0 8px 20px rgba(10, 23, 40, 0.15);
+                box-shadow: 0 6px 18px rgba(10, 23, 40, 0.15);
                 border: 2px solid #ebb837;
             }}
             .header-left {{
@@ -103,8 +103,8 @@ def generate_mobile_briefing():
                 gap: 14px;
             }}
             .club-logo {{
-                width: 64px;
-                height: 64px;
+                width: 62px;
+                height: 62px;
                 border-radius: 50%;
                 border: 3px solid #ebb837;
                 padding: 2px;
@@ -150,7 +150,6 @@ def generate_mobile_briefing():
                 background: #0a1728;
                 border-radius: 14px;
                 padding: 12px 18px;
-                margin-top: 10px;
                 color: white;
                 text-align: center;
                 border-bottom: 4px solid #e8590c;
@@ -169,7 +168,7 @@ def generate_mobile_briefing():
             }}
             .hero-teams {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 27px;
+                font-size: 26px;
                 font-weight: 700;
                 text-transform: uppercase;
                 display: flex;
@@ -183,27 +182,26 @@ def generate_mobile_briefing():
             .kpi-grid {{
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                gap: 8px;
-                margin-top: 8px;
+                gap: 10px;
             }}
             .kpi-card {{
                 background: white;
-                border-radius: 10px;
-                padding: 8px 10px;
-                border-left: 4px solid #0a1728;
+                border-radius: 12px;
+                padding: 10px 12px;
+                border-left: 5px solid #0a1728;
                 box-shadow: 0 4px 10px rgba(10, 23, 40, 0.05);
             }}
             .kpi-card.gold {{ border-left-color: #ebb837; }}
             .kpi-card.orange {{ border-left-color: #e8590c; }}
             .kpi-label {{
-                font-size: 7.5px;
+                font-size: 8.5px;
                 font-weight: 800;
                 text-transform: uppercase;
                 color: #64748b;
             }}
             .kpi-val {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 20px;
+                font-size: 22px;
                 font-weight: 700;
                 color: #0a1728;
                 margin-top: 1px;
@@ -211,29 +209,78 @@ def generate_mobile_briefing():
             .kpi-card.gold .kpi-val {{ color: #d97706; }}
             .kpi-card.orange .kpi-val {{ color: #e8590c; }}
             .kpi-sub {{
-                font-size: 7px;
+                font-size: 8px;
                 font-weight: 600;
                 color: #64748b;
             }}
 
-            /* TABLEAU COMPARATIF MULTI-SAISONS R3 (NOUVEAU) */
-            .benchmark-card {{
+            /* FACE-A-FACE STATISTIQUE (NOUVEAU WIDGET COMPARATIF) */
+            .h2h-card {{
                 background: white;
-                border-radius: 12px;
-                padding: 10px 14px;
-                margin-top: 8px;
+                border-radius: 14px;
+                padding: 12px 16px;
                 box-shadow: 0 4px 10px rgba(10, 23, 40, 0.05);
-                border: 1px solid #e5e0d3;
             }}
-            .benchmark-title {{
+            .h2h-title {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 13px;
+                font-size: 13.5px;
                 font-weight: 700;
                 text-transform: uppercase;
                 color: #0a1728;
                 border-bottom: 2px solid #ebb837;
                 padding-bottom: 4px;
-                margin-bottom: 6px;
+                margin-bottom: 8px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }}
+            .h2h-grid {{
+                display: grid;
+                grid-template-columns: 1fr 1.2fr 1fr;
+                gap: 8px;
+                align-items: center;
+                text-align: center;
+                font-size: 10px;
+            }}
+            .h2h-team-name {{
+                font-family: 'Oswald', sans-serif;
+                font-size: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }}
+            .h2h-row {{
+                display: contents;
+            }}
+            .h2h-stat-label {{
+                font-size: 8.5px;
+                font-weight: 800;
+                text-transform: uppercase;
+                color: #64748b;
+                background: #f1ede1;
+                padding: 3px 6px;
+                border-radius: 4px;
+            }}
+            .h2h-stat-val {{
+                font-weight: 800;
+                color: #0a1728;
+            }}
+
+            /* TABLEAU COMPARATIF DES SAISONS EN R3 */
+            .benchmark-card {{
+                background: white;
+                border-radius: 14px;
+                padding: 12px 16px;
+                box-shadow: 0 4px 10px rgba(10, 23, 40, 0.05);
+            }}
+            .benchmark-title {{
+                font-family: 'Oswald', sans-serif;
+                font-size: 13.5px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #0a1728;
+                border-bottom: 2px solid #ebb837;
+                padding-bottom: 4px;
+                margin-bottom: 8px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -241,19 +288,19 @@ def generate_mobile_briefing():
             .benchmark-table {{
                 width: 100%;
                 border-collapse: collapse;
-                font-size: 9px;
+                font-size: 9.5px;
             }}
             .benchmark-table th {{
                 text-align: left;
                 padding: 4px 6px;
                 background: #f1ede1;
                 color: #0a1728;
-                font-size: 8px;
+                font-size: 8.5px;
                 font-weight: 800;
                 text-transform: uppercase;
             }}
             .benchmark-table td {{
-                padding: 4px 6px;
+                padding: 5px 6px;
                 border-bottom: 1px solid #f1f5f9;
             }}
             .benchmark-table tr.current {{
@@ -267,7 +314,6 @@ def generate_mobile_briefing():
                 color: white;
                 border-radius: 14px;
                 padding: 12px 16px;
-                margin-top: 8px;
                 border: 2px solid #e8590c;
             }}
             .scouting-header {{
@@ -327,7 +373,7 @@ def generate_mobile_briefing():
             .scout-box {{
                 background: rgba(255, 255, 255, 0.06);
                 border-radius: 8px;
-                padding: 6px 8px;
+                padding: 7px 9px;
             }}
             .scout-box-title {{
                 font-size: 8.5px;
@@ -340,20 +386,19 @@ def generate_mobile_briefing():
             /* Tableau Quarts d'Heure */
             .section-card {{
                 background: white;
-                border-radius: 12px;
-                padding: 10px 14px;
-                margin-top: 8px;
+                border-radius: 14px;
+                padding: 12px 16px;
                 box-shadow: 0 4px 10px rgba(10, 23, 40, 0.05);
             }}
             .section-title {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 13px;
+                font-size: 13.5px;
                 font-weight: 700;
                 text-transform: uppercase;
                 color: #0a1728;
                 border-bottom: 2px solid #ebb837;
-                padding-bottom: 3px;
-                margin-bottom: 5px;
+                padding-bottom: 4px;
+                margin-bottom: 6px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -361,31 +406,31 @@ def generate_mobile_briefing():
             .tranche-table {{
                 width: 100%;
                 border-collapse: collapse;
-                font-size: 9px;
+                font-size: 9.5px;
             }}
             .tranche-table th {{
                 text-align: left;
-                padding: 3px 5px;
+                padding: 4px 6px;
                 background: #f1ede1;
                 color: #0a1728;
-                font-size: 8px;
+                font-size: 8.5px;
                 font-weight: 800;
                 text-transform: uppercase;
             }}
             .tranche-table td {{
-                padding: 4px 5px;
+                padding: 5px 6px;
                 border-bottom: 1px solid #f1f5f9;
             }}
             .bar-pour {{
                 background: #0a1728;
-                height: 9px;
+                height: 10px;
                 border-radius: 2px;
                 display: inline-block;
-                border-left: 2px solid #ebb837;
+                border-left: 3px solid #ebb837;
             }}
             .bar-contre {{
                 background: #e8590c;
-                height: 9px;
+                height: 10px;
                 border-radius: 2px;
                 display: inline-block;
             }}
@@ -394,35 +439,33 @@ def generate_mobile_briefing():
             .briefing-box {{
                 background: #0a1728;
                 color: white;
-                border-radius: 10px;
-                padding: 8px 12px;
-                margin-top: 8px;
-                border-left: 4px solid #ebb837;
+                border-radius: 12px;
+                padding: 10px 14px;
+                border-left: 5px solid #ebb837;
             }}
             .briefing-title {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 11.5px;
+                font-size: 12px;
                 font-weight: 700;
                 color: #ebb837;
                 text-transform: uppercase;
-                margin-bottom: 3px;
+                margin-bottom: 4px;
             }}
             .briefing-box ul {{
                 margin: 0;
                 padding-left: 14px;
-                font-size: 8.5px;
-                line-height: 1.35;
+                font-size: 9px;
+                line-height: 1.4;
                 color: #e2e8f0;
             }}
-            .briefing-box li {{ margin-bottom: 2px; }}
+            .briefing-box li {{ margin-bottom: 3px; }}
             .briefing-box strong {{ color: #ebb837; }}
 
             /* Footer Mobile ESG */
             .footer {{
                 background: #ebb837;
-                border-radius: 10px;
-                padding: 8px 14px;
-                margin-top: 8px;
+                border-radius: 12px;
+                padding: 10px 16px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -431,11 +474,11 @@ def generate_mobile_briefing():
             }}
             .footer .slogan {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 13px;
+                font-size: 14px;
                 letter-spacing: 1px;
                 text-transform: uppercase;
             }}
-            .footer .tag {{ font-size: 8px; font-weight: 800; }}
+            .footer .tag {{ font-size: 8.5px; font-weight: 800; }}
         </style>
     </head>
     <body>
@@ -487,11 +530,36 @@ def generate_mobile_briefing():
             </div>
         </div>
 
+        <!-- NOUVEAU : FACE-A-FACE STATISTIQUE AVANT-MATCH -->
+        <div class="h2h-card">
+            <div class="h2h-title">
+                <span>⚔️ Le Face-à-Face du 6e Tour</span>
+                <span style="font-size: 8.5px; color:#64748b;">Statistiques Officielles 2026/2027</span>
+            </div>
+            <div class="h2h-grid">
+                <div class="h2h-team-name" style="color: #0a1728;">ST-MARTIN TATINGHEM</div>
+                <div class="h2h-stat-label">FORME SUR LES 4 DERNIERS MATCHS</div>
+                <div class="h2h-team-name" style="color: #0a1728;">ES GENECH</div>
+
+                <div class="h2h-stat-val" style="color: #15803d;">V - V - N - V (10 pts)</div>
+                <div class="h2h-stat-label">DYNAMIQUE RÉCENTE</div>
+                <div class="h2h-stat-val" style="color: #15803d;">V - V - N - N (8 pts • Invaincu)</div>
+
+                <div class="h2h-stat-val">14 Buts (3.5 / m)</div>
+                <div class="h2h-stat-label">ATTAQUE (4 DERNIERS MATCHS)</div>
+                <div class="h2h-stat-val" style="color: #004687;">6 Buts (1.5 / m)</div>
+
+                <div class="h2h-stat-val" style="color: #b91c1c;">3 Buts (Fébrile en fin de match)</div>
+                <div class="h2h-stat-label">DÉFENSE & CLEAN SHEETS</div>
+                <div class="h2h-stat-val" style="color: #15803d;">0 BUT EN COUPE (4 Clean Sheets)</div>
+            </div>
+        </div>
+
         <!-- TABLEAU COMPARATIF DES SAISONS EN R3 -->
         <div class="benchmark-card">
             <div class="benchmark-title">
                 <span>📈 Repères de Performance : Comparatif des Saisons en R3</span>
-                <span style="font-size: 8px; color: #64748b;">Source : Archives Officielles LFHF</span>
+                <span style="font-size: 8.5px; color: #64748b;">Source : Archives LFHF</span>
             </div>
             <table class="benchmark-table">
                 <thead>
@@ -646,14 +714,13 @@ def generate_mobile_briefing():
 
     with sync_playwright() as p:
         browser = launch_browser(p)
-        page = browser.new_page(viewport={"width": 1080, "height": 1920})
+        page = browser.new_page(viewport={"width": 1080, "height": 1800})
         page.set_content(html_content, wait_until="networkidle")
 
         page.screenshot(path=png_out, full_page=True)
         page.pdf(
             path=pdf_out, 
             width="1080px", 
-            height="1920px", 
             print_background=True, 
             margin={"top": "0", "bottom": "0", "left": "0", "right": "0"}
         )
@@ -661,7 +728,7 @@ def generate_mobile_briefing():
         browser.close()
 
     conn.close()
-    print(f" Fiche Mobile mise à jour : Total Buts = {total_buts_marques} !")
+    print(" Fiche Mobile resserrée et ajustée générée avec succès !")
 
 if __name__ == "__main__":
     generate_mobile_briefing()
