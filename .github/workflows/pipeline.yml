@@ -1,14 +1,9 @@
 name: ES Genech - Data & Performance Pipeline
 
 on:
-  # Exécution manuelle possible à tout moment depuis l'interface GitHub
   workflow_dispatch:
-
-  # Exécution automatique programmée
   schedule:
-    # Tous les lundis à 06h00 UTC (après les matchs du dimanche)
     - cron: '0 6 * * 1'
-    # Tous les vendredis à 17h00 UTC (pour préparer la fiche du week-end)
     - cron: '0 17 * * 5'
 
 jobs:
@@ -36,25 +31,29 @@ jobs:
         run: |
           playwright install chromium --with-deps
 
-      - name: ⚽ 1. Scraping des résultats & feuilles de match
+      - name: ⚽ 1. Scraping des résultats & feuilles de match ES Genech
         run: |
           python scraper.py
 
-      - name: 📊 2. Calculs statistiques & exports Power BI
+      - name: 🕵️ 2. Espionnage & Scouting tactique de l'adversaire
+        run: |
+          python scout_opponent.py
+
+      - name: 📊 3. Calculs statistiques & exports Power BI
         run: |
           python analytics.py
 
-      - name: 📱 3. Génération de la fiche d'avant-match mobile
+      - name: 📱 4. Génération de la fiche d'avant-match mobile
         run: |
           python generate_match_briefing.py
 
-      - name: 💾 4. Sauvegarde automatique des données sur GitHub
+      - name: 💾 5. Sauvegarde automatique des données sur GitHub
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "🤖 Auto-Update : Données et Fiche de Match ES Genech actualisées"
+          commit_message: "🤖 Auto-Update : Données, Scouting Adversaire et Fiche de Match actualisés"
           file_pattern: "genech_performance.db exports_powerbi/* briefings_coach/*"
 
-      - name: 📤 5. Mise à disposition du briefing (PNG & PDF)
+      - name: 📤 6. Mise à disposition du briefing (PNG & PDF)
         uses: actions/upload-artifact@v4
         with:
           name: briefing-matchday-es-genech
