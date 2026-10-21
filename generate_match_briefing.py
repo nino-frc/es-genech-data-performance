@@ -29,7 +29,21 @@ def generate_mobile_briefing():
         with open(LOGO_PATH, "rb") as f:
             logo_b64 = base64.b64encode(f.read()).decode("utf-8")
 
-    # Calculs Quarts d'Heure Genech
+    # Calcul des scores réels officiels
+    s_term = df_matchs[df_matchs['statut'] == 'TERMINE'].copy()
+    s_term['is_dom'] = s_term['equipe_domicile'].str.contains('GENECH', case=False, na=False)
+    s_term['buts_pour'] = s_term.apply(lambda r: r['score_domicile'] if r['is_dom'] else r['score_exterieur'], axis=1)
+    s_term['buts_contre'] = s_term.apply(lambda r: r['score_exterieur'] if r['is_dom'] else r['score_domicile'], axis=1)
+
+    total_buts_marques = int(s_term['buts_pour'].sum())   # 10 buts
+    total_buts_encaisses = int(s_term['buts_contre'].sum()) # 3 buts
+
+    # Cartons
+    cartons_genech = df_events[(df_events['type_event'] == 'AVERTISSEMENT') & (df_events['equipe'].str.contains('GENECH', case=False, na=False))]
+    cartons_count = len(cartons_genech)
+    cartons_anstaing_derby = len(cartons_genech[cartons_genech['match_id'].str.contains('anstaing', case=False, na=False)])
+
+    # Quarts d'Heure
     df_buts = df_events[df_events['type_event'] == 'BUT'].copy()
     df_buts['is_genech'] = df_buts['equipe'].str.contains('GENECH', case=False, na=False)
 
@@ -40,9 +54,6 @@ def generate_mobile_briefing():
         buts_pour.append(len(df_buts[(df_buts['tranche_quart_heure'] == t) & (df_buts['is_genech'])]))
         buts_contre.append(len(df_buts[(df_buts['tranche_quart_heure'] == t) & (~df_buts['is_genech'])]))
 
-    cartons_count = len(df_events[(df_events['type_event'].isin(['AVERTISSEMENT', 'EXPULSION'])) & (df_events['equipe'].str.contains('GENECH', case=False, na=False))])
-
-    # HTML Template Mobile avec Encart Alerte Suspension & FMI
     html_content = f"""
     <!DOCTYPE html>
     <html lang="fr">
@@ -60,7 +71,7 @@ def generate_mobile_briefing():
             body {{
                 font-family: 'Montserrat', sans-serif;
                 margin: 0;
-                padding: 26px 30px 30px 30px;
+                padding: 24px 28px 28px 28px;
                 background-color: #ede8d8;
                 color: #0a1728;
                 width: 1080px;
@@ -76,8 +87,8 @@ def generate_mobile_briefing():
                 align-items: center;
                 justify-content: space-between;
                 background: #0a1728;
-                border-radius: 18px;
-                padding: 16px 22px;
+                border-radius: 16px;
+                padding: 14px 20px;
                 color: white;
                 box-shadow: 0 8px 20px rgba(10, 23, 40, 0.15);
                 border: 2px solid #ebb837;
@@ -85,11 +96,11 @@ def generate_mobile_briefing():
             .header-left {{
                 display: flex;
                 align-items: center;
-                gap: 16px;
+                gap: 14px;
             }}
             .club-logo {{
-                width: 70px;
-                height: 70px;
+                width: 66px;
+                height: 66px;
                 border-radius: 50%;
                 border: 3px solid #ebb837;
                 padding: 2px;
@@ -97,7 +108,7 @@ def generate_mobile_briefing():
             }}
             .club-title h1 {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 27px;
+                font-size: 26px;
                 font-weight: 700;
                 margin: 0;
                 letter-spacing: 1px;
@@ -107,7 +118,7 @@ def generate_mobile_briefing():
             .club-title h1 span {{ color: #ebb837; }}
             .club-title p {{
                 margin: 2px 0 0 0;
-                font-size: 11.5px;
+                font-size: 11px;
                 font-weight: 700;
                 color: #cbd5e1;
                 text-transform: uppercase;
@@ -115,18 +126,18 @@ def generate_mobile_briefing():
             .header-badge {{
                 background: #ebb837;
                 color: #0a1728;
-                padding: 9px 15px;
-                border-radius: 12px;
+                padding: 8px 14px;
+                border-radius: 10px;
                 text-align: center;
                 font-weight: 800;
             }}
             .header-badge .comp {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 13px;
+                font-size: 12px;
                 text-transform: uppercase;
             }}
             .header-badge .tour {{
-                font-size: 15px;
+                font-size: 14px;
                 font-weight: 900;
             }}
 
@@ -134,8 +145,8 @@ def generate_mobile_briefing():
             .match-hero {{
                 background: #0a1728;
                 border-radius: 16px;
-                padding: 16px 22px;
-                margin-top: 14px;
+                padding: 14px 20px;
+                margin-top: 12px;
                 color: white;
                 text-align: center;
                 border-bottom: 5px solid #e8590c;
@@ -144,9 +155,9 @@ def generate_mobile_briefing():
                 display: inline-block;
                 background: #e8590c;
                 color: white;
-                font-size: 10.5px;
+                font-size: 10px;
                 font-weight: 800;
-                padding: 3px 12px;
+                padding: 3px 10px;
                 border-radius: 20px;
                 text-transform: uppercase;
                 letter-spacing: 1px;
@@ -154,13 +165,13 @@ def generate_mobile_briefing():
             }}
             .hero-teams {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 30px;
+                font-size: 28px;
                 font-weight: 700;
                 text-transform: uppercase;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 14px;
+                gap: 12px;
             }}
             .hero-teams .vs {{ color: #ebb837; font-size: 18px; }}
 
@@ -169,7 +180,7 @@ def generate_mobile_briefing():
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 gap: 10px;
-                margin-top: 12px;
+                margin-top: 10px;
             }}
             .kpi-card {{
                 background: white;
@@ -181,7 +192,7 @@ def generate_mobile_briefing():
             .kpi-card.gold {{ border-left-color: #ebb837; }}
             .kpi-card.orange {{ border-left-color: #e8590c; }}
             .kpi-label {{
-                font-size: 8.5px;
+                font-size: 8px;
                 font-weight: 800;
                 text-transform: uppercase;
                 color: #64748b;
@@ -196,9 +207,32 @@ def generate_mobile_briefing():
             .kpi-card.gold .kpi-val {{ color: #d97706; }}
             .kpi-card.orange .kpi-val {{ color: #e8590c; }}
             .kpi-sub {{
-                font-size: 8px;
+                font-size: 7.5px;
                 font-weight: 600;
                 color: #64748b;
+            }}
+
+            /* Encart Benchmark Historique R3 */
+            .history-card {{
+                background: #f1ede1;
+                border-radius: 12px;
+                padding: 8px 14px;
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 9.5px;
+                border: 1px solid #e2dcce;
+            }}
+            .history-badge {{
+                font-family: 'Oswald', sans-serif;
+                font-size: 11px;
+                font-weight: 700;
+                background: #0a1728;
+                color: #ebb837;
+                padding: 2px 8px;
+                border-radius: 4px;
+                text-transform: uppercase;
             }}
 
             /* Scouting Opposant Card */
@@ -206,8 +240,8 @@ def generate_mobile_briefing():
                 background: #0a1728;
                 color: white;
                 border-radius: 16px;
-                padding: 16px 20px;
-                margin-top: 14px;
+                padding: 14px 18px;
+                margin-top: 10px;
                 border: 2px solid #e8590c;
                 box-shadow: 0 6px 18px rgba(232, 89, 12, 0.15);
             }}
@@ -216,12 +250,12 @@ def generate_mobile_briefing():
                 justify-content: space-between;
                 align-items: center;
                 border-bottom: 2px solid #e8590c;
-                padding-bottom: 6px;
-                margin-bottom: 10px;
+                padding-bottom: 5px;
+                margin-bottom: 8px;
             }}
             .scouting-title {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 700;
                 color: #ffffff;
                 text-transform: uppercase;
@@ -230,9 +264,9 @@ def generate_mobile_briefing():
             .scouting-badge {{
                 background: #e8590c;
                 color: white;
-                font-size: 9.5px;
+                font-size: 9px;
                 font-weight: 800;
-                padding: 3px 8px;
+                padding: 2px 8px;
                 border-radius: 6px;
                 text-transform: uppercase;
             }}
@@ -241,67 +275,60 @@ def generate_mobile_briefing():
             .alert-suspension {{
                 background: #b91c1c;
                 border-radius: 10px;
-                padding: 10px 14px;
-                margin-bottom: 10px;
-                border-left: 6px solid #fef08a;
+                padding: 9px 12px;
+                margin-bottom: 8px;
+                border-left: 5px solid #fef08a;
             }}
             .alert-suspension-title {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 14px;
+                font-size: 13px;
                 font-weight: 700;
                 color: #fef08a;
                 text-transform: uppercase;
                 letter-spacing: 0.5px;
-                display: flex;
-                align-items: center;
-                gap: 8px;
             }}
             .alert-suspension-desc {{
-                font-size: 9.5px;
-                line-height: 1.45;
+                font-size: 9px;
+                line-height: 1.4;
                 color: #fef2f2;
-                margin-top: 4px;
-            }}
-            .alert-suspension-desc strong {{
-                color: #ffffff;
-                text-decoration: underline;
+                margin-top: 3px;
             }}
 
             .scouting-grid {{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                gap: 12px;
+                gap: 10px;
             }}
             .scout-box {{
                 background: rgba(255, 255, 255, 0.06);
                 border-radius: 10px;
-                padding: 10px 12px;
+                padding: 8px 10px;
             }}
             .scout-box-title {{
-                font-size: 9.5px;
+                font-size: 9px;
                 font-weight: 800;
                 text-transform: uppercase;
                 color: #ebb837;
-                margin-bottom: 4px;
+                margin-bottom: 3px;
             }}
 
             /* Tableau Quarts d'Heure */
             .section-card {{
                 background: white;
-                border-radius: 16px;
-                padding: 16px 20px;
-                margin-top: 12px;
+                border-radius: 14px;
+                padding: 12px 16px;
+                margin-top: 10px;
                 box-shadow: 0 4px 15px rgba(10, 23, 40, 0.05);
             }}
             .section-title {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 16px;
+                font-size: 14.5px;
                 font-weight: 700;
                 text-transform: uppercase;
                 color: #0a1728;
                 border-bottom: 2px solid #ebb837;
-                padding-bottom: 5px;
-                margin-bottom: 8px;
+                padding-bottom: 4px;
+                margin-bottom: 6px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -309,31 +336,31 @@ def generate_mobile_briefing():
             .tranche-table {{
                 width: 100%;
                 border-collapse: collapse;
-                font-size: 10.5px;
+                font-size: 10px;
             }}
             .tranche-table th {{
                 text-align: left;
-                padding: 5px 6px;
+                padding: 4px 6px;
                 background: #f1ede1;
                 color: #0a1728;
-                font-size: 9px;
+                font-size: 8.5px;
                 font-weight: 800;
                 text-transform: uppercase;
             }}
             .tranche-table td {{
-                padding: 6px;
+                padding: 5px 6px;
                 border-bottom: 1px solid #f1f5f9;
             }}
             .bar-pour {{
                 background: #0a1728;
-                height: 11px;
+                height: 10px;
                 border-radius: 3px;
                 display: inline-block;
                 border-left: 3px solid #ebb837;
             }}
             .bar-contre {{
                 background: #e8590c;
-                height: 11px;
+                height: 10px;
                 border-radius: 3px;
                 display: inline-block;
             }}
@@ -342,24 +369,24 @@ def generate_mobile_briefing():
             .briefing-box {{
                 background: #0a1728;
                 color: white;
-                border-radius: 14px;
-                padding: 12px 16px;
-                margin-top: 12px;
+                border-radius: 12px;
+                padding: 10px 14px;
+                margin-top: 10px;
                 border-left: 5px solid #ebb837;
             }}
             .briefing-title {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 13.5px;
+                font-size: 12.5px;
                 font-weight: 700;
                 color: #ebb837;
                 text-transform: uppercase;
-                margin-bottom: 5px;
+                margin-bottom: 4px;
             }}
             .briefing-box ul {{
                 margin: 0;
-                padding-left: 16px;
-                font-size: 10px;
-                line-height: 1.4;
+                padding-left: 15px;
+                font-size: 9.5px;
+                line-height: 1.35;
                 color: #e2e8f0;
             }}
             .briefing-box li {{ margin-bottom: 3px; }}
@@ -368,9 +395,9 @@ def generate_mobile_briefing():
             /* Footer Mobile ESG */
             .footer {{
                 background: #ebb837;
-                border-radius: 12px;
-                padding: 10px 18px;
-                margin-top: 14px;
+                border-radius: 10px;
+                padding: 9px 16px;
+                margin-top: 10px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -379,11 +406,11 @@ def generate_mobile_briefing():
             }}
             .footer .slogan {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 15px;
+                font-size: 14px;
                 letter-spacing: 1px;
                 text-transform: uppercase;
             }}
-            .footer .tag {{ font-size: 9.5px; font-weight: 800; }}
+            .footer .tag {{ font-size: 9px; font-weight: 800; }}
         </style>
     </head>
     <body>
@@ -411,31 +438,43 @@ def generate_mobile_briefing():
             </div>
         </div>
 
-        <!-- 4 Cartes KPIs -->
+        <!-- 4 Cartes KPIs Re-vérifiées -->
         <div class="kpi-grid">
             <div class="kpi-card gold">
                 <div class="kpi-label">Invincibilité ESG</div>
                 <div class="kpi-val">4 / 4</div>
-                <div class="kpi-sub">Clean sheets en Coupe</div>
+                <div class="kpi-sub">Clean sheets en Coupe (0 but pris)</div>
             </div>
             <div class="kpi-card orange">
                 <div class="kpi-label">Ratio 2e Mi-Temps</div>
                 <div class="kpi-val">75 %</div>
-                <div class="kpi-sub">Buts marqués après pause</div>
+                <div class="kpi-sub">Des buts inscrits après pause</div>
             </div>
             <div class="kpi-card">
                 <div class="kpi-label">Attaque ESG</div>
-                <div class="kpi-val">8 Buts</div>
-                <div class="kpi-sub">Moyenne 1.6 / match</div>
+                <div class="kpi-val">{total_buts_marques} Buts</div>
+                <div class="kpi-sub">Scores FFF : 6 en R3 + 4 en CDF</div>
             </div>
             <div class="kpi-card orange">
-                <div class="kpi-label">Cartons Pris (R3)</div>
-                <div class="kpi-val">{cartons_count} Jaunes</div>
-                <div class="kpi-sub">Alerte (76-90+')</div>
+                <div class="kpi-label">Cartons Jaunes</div>
+                <div class="kpi-val">{cartons_count} J</div>
+                <div class="kpi-sub">Dont {cartons_anstaing_derby} lors du derby vs Anstaing</div>
             </div>
         </div>
 
-        <!-- BLOC SCOUTING ADVERSAIRE + ALERTE JURIDIQUE OFFICIELLE -->
+        <!-- Repère Historique Progression R3 -->
+        <div class="history-card">
+            <div>
+                <span class="history-badge">Repère Historique R3</span>
+                <span style="font-weight: 700; color: #0a1728; margin-left: 6px;">Saison 2024-2025 :</span>
+                <span>Champion R3 Poule E avec seulement 15 buts concédés en 22 matchs (0.68 b/m).</span>
+            </div>
+            <div style="font-weight: 800; color: #d97706;">
+                2026/2027 : Forteresse retrouvée (0.75 b/m en R3, 0 en CDF)
+            </div>
+        </div>
+
+        <!-- BLOC SCOUTING ADVERSAIRE + ALERTE JURIDIQUE -->
         <div class="scouting-card">
             <div class="scouting-header">
                 <div class="scouting-title">🎯 Espionnage Tactique : St-Martin Tatinghem</div>
@@ -446,22 +485,22 @@ def generate_mobile_briefing():
             <div class="alert-suspension">
                 <div class="alert-suspension-title">🚨 ALERTE SUSPENSION : MOUAAD MADRI (ATT. VEDETTE ADVERSE)</div>
                 <div class="alert-suspension-desc">
-                    L'attaquant vedette adverse a reçu <strong>3 cartons jaunes en moins de 3 mois</strong> : CDF T2 (88'), R3 J3 (27') et CDF T5 (48'). En vertu de l'art. 226 des Règlements FFF, sa suspension automatique prend effet le 19/10/2026 et s'applique <strong>ce dimanche contre Genech</strong>.<br/>
-                    👉 <strong>CONSIGNE STAFF :</strong> Vérifier la liste des suspendus sur Footclubs. S'il est aligné dimanche sur la feuille FMI, <strong>poser une réserve d'avant-match immédiate (victoire sur tapis vert possible)</strong>.
+                    3 cartons jaunes reçus en moins de 3 mois : CDF T2 (88'), R3 J3 (27') et CDF T5 (48'). En vertu de l'art. 226 des Règlements FFF, sa suspension prend effet le 19/10/2026 et s'applique <strong>ce dimanche contre Genech</strong>.<br/>
+                    👉 <strong>CONSIGNE STAFF :</strong> S'il est inscrit sur la feuille FMI dimanche, <strong>poser une réserve d'avant-match immédiate (victoire sur tapis vert possible)</strong>.
                 </div>
             </div>
 
             <div class="scouting-grid">
                 <div class="scout-box">
-                    <div class="scout-box-title">🔥 Danger n°1 Sportif</div>
-                    <div style="font-size:10px; color:#cbd5e1; line-height:1.4;">
-                        Ex-pro L2/National. Auteur de 3 buts sur ses 2 derniers matchs (doublé au Tour 5, but en J4). S'il joue, marquage strict à deux dès la relance.
+                    <div class="scout-box-title">⚡ Démarrage Canon & Profil</div>
+                    <div style="font-size:9.5px; color:#cbd5e1; line-height:1.35;">
+                        Attaque prolifique (14 buts en 4 matchs). Ils pressent très haut dès le coup d'envoi et marquent souvent d'entrée (5' vs Neufchâtel, 39' vs Mouvaux). Être ultra-vigilant sur les 15 premières minutes.
                     </div>
                 </div>
                 <div class="scout-box">
-                    <div class="scout-box-title">⚠️ Faille Majeure Détectée</div>
-                    <div style="font-size:10px; color:#cbd5e1; line-height:1.4;">
-                        <strong>Défense friable en fin de match :</strong> 2 buts encaissés face à Neufchâtel à la 74' et 90' au Tour 5. Équipe nerveuse (4 cartons jaunes reçus).
+                    <div class="scout-box-title">⚠️ Faille Physique en Fin de Match</div>
+                    <div style="font-size:9.5px; color:#cbd5e1; line-height:1.35;">
+                        <strong>Baisse de régime après la 70e :</strong> 2 buts concédés face à Neufchâtel (74' et 90'). Équipe agressive (4 cartons au 5e Tour) qui commet des fautes sous la fatigue.
                     </div>
                 </div>
             </div>
@@ -471,7 +510,7 @@ def generate_mobile_briefing():
         <div class="section-card">
             <div class="section-title">
                 <span>⏱️ Efficacité par Quart d'Heure (ESG)</span>
-                <span style="font-size: 9.5px; color:#64748b;">ESG (Bleu) vs Adv (Orange)</span>
+                <span style="font-size: 9px; color:#64748b;">ESG (Bleu) vs Adv (Orange)</span>
             </div>
             <table class="tranche-table">
                 <thead>
@@ -487,7 +526,7 @@ def generate_mobile_briefing():
                         <td><strong>01-15'</strong></td>
                         <td><span class="bar-pour" style="width: {max(buts_pour[0]*22, 4)}px;"></span> 0</td>
                         <td><span class="bar-contre" style="width: {max(buts_contre[0]*22, 4)}px;"></span> 0</td>
-                        <td><span style="color:#64748b;">Observation & bloc serré</span></td>
+                        <td><span style="color:#64748b;">Bloc prudent & observation</span></td>
                     </tr>
                     <tr>
                         <td><strong>16-30'</strong></td>
@@ -527,13 +566,13 @@ def generate_mobile_briefing():
         <div class="briefing-box">
             <div class="briefing-title">📋 3 Clés pour la Causerie du Coach</div>
             <ul>
-                <li><strong>Gestion de Madri :</strong> S'il est sur le terrain, couper les transmissions. Si la réserve FMI est posée, jouer sans panique : le match se gagne aussi sur le terrain juridique.</li>
-                <li><strong>Exploiter leur baisse physique :</strong> Tatinghem concède ses buts après la 70e. Genech y est surpuissant (3 buts inscrits). Garder le rythme.</li>
-                <li><strong>Zéro contestation :</strong> Rester irréprochable auprès du corps arbitral. Qualification historique en jeu pour le 7e Tour National.</li>
+                <li><strong>Absorber l'Entame :</strong> Tatinghem part toujours très fort. Résister au pressing des 15 premières minutes, notre bloc bas sait faire face.</li>
+                <li><strong>Exploiter leur baisse physique :</strong> Tatinghem concède ses buts après la 70e. Genech y est surpuissant (3 buts inscrits). Garder le rythme jusqu'au bout.</li>
+                <li><strong>Gestion Juridique & Calme :</strong> Poser la réserve FMI si Madri est sur la feuille, et jouer à 100 % sans énervement.</li>
             </ul>
         </div>
 
-        <!-- Footer -->
+        <!-- Footer Mobile ESG -->
         <div class="footer">
             <div class="slogan">TOUJOURS ENSEMBLE • ALLEZ L'ESG</div>
             <div class="tag">Cellule Data & Performance • Saison 2026/2027</div>
@@ -563,7 +602,7 @@ def generate_mobile_briefing():
         browser.close()
 
     conn.close()
-    print(" Fiche Mobile avec Alerte Suspension générée avec succès !")
+    print(" Fiche Mobile ajustée et recalculée avec succès !")
 
 if __name__ == "__main__":
     generate_mobile_briefing()

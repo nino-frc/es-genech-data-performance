@@ -1,1 +1,13 @@
 ﻿id,competition_id,rang,equipe_nom,points,joues,victoires,nuls,defaites,buts_pour,buts_contre,diff
+1,r3_poule_d,1,BEUVRY LA FORET AS,10,4,0,0,0,0,0,0
+2,r3_poule_d,2,ANICHE SC,8,4,0,0,0,0,0,0
+3,r3_poule_d,3,GENECH ES,8,4,0,0,0,0,0,0
+4,r3_poule_d,4,HENIN BEAUMONT O.,7,4,0,0,0,0,0,0
+5,r3_poule_d,5,ANSTAING CHERENG EC,6,4,0,0,0,0,0,0
+6,r3_poule_d,6,BONDUES FC 2,6,4,0,0,0,0,0,0
+7,r3_poule_d,7,VALENCIENNES SUMMER,6,4,0,0,0,0,0,0
+8,r3_poule_d,8,MAUBEUGE US 2,5,4,0,0,0,0,0,0
+9,r3_poule_d,9,BAVAY US,3,4,0,0,0,0,0,0
+10,r3_poule_d,10,GUESNAIN SC,2,4,0,0,0,0,0,0
+11,r3_poule_d,11,CYSOING WB EAC,1,4,0,0,0,0,0,0
+12,r3_poule_d,12,AUBY US,0,4,0,0,0,0,0,0
