@@ -111,7 +111,8 @@ def generate_mobile_briefing():
     cartons_anstaing_derby = len(cartons_genech[cartons_genech['match_id'].str.contains('anstaing', case=False, na=False)])
 
     weather_info = get_match_weather(next_dom, next_date)
-    referee_info = scout_referee("LOUIS LAURENT")
+    ref_target = "LOUIS LAURENT" if is_tatinghem else "Désignation FFF"
+    referee_info = scout_referee(ref_target)
 
     _, alerts_disc = analyze_discipline()
     alert_sursis_txt = alerts_disc[0] if alerts_disc else "Aucun joueur sous le coup d'une suspension immédiate. Discipline maîtrisée."
