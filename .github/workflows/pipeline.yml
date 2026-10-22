@@ -37,6 +37,10 @@ jobs:
         run: |
           python scraper.py
 
+      - name: 🌐 1bis. Scraping Global Club (16 Équipes ES Genech)
+        run: |
+          python scrape_club_multi.py
+
       - name: 🕵️ 2. Espionnage & Scouting tactique de l'adversaire
         run: |
           python scout_opponent.py
