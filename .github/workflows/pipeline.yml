@@ -3,8 +3,8 @@ name: ES Genech - Data & Performance Pipeline
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * 1'
-    - cron: '0 17 * * 5'
+    - cron: '0 6 * * 1'   # Lundi à 06h00 UTC : Débrief Post-Match & Prédictions
+    - cron: '0 17 * * 5'  # Vendredi à 17h00 UTC : Briefing d'Avant-Match & Scouting
 
 jobs:
   run-pipeline:
@@ -31,7 +31,7 @@ jobs:
         run: |
           playwright install chromium --with-deps
 
-      - name: ⚽ 1. Scraping des résultats & feuilles de match ES Genech
+      - name: ⚽ 1. Scraping des résultats & feuilles de match FFF
         run: |
           python scraper.py
 
@@ -39,28 +39,44 @@ jobs:
         run: |
           python scout_opponent.py
 
-      - name: 📊 3. Calculs statistiques & exports Power BI
+      - name: 📊 3. Calculs statistiques & Analytics
         run: |
           python analytics.py
 
-      - name: 🎲 4. Simulation Monte-Carlo & Projections R3
+      - name: ⚖️ 4. Veille Disciplinaire Interne (Art. 226 FFF & Gestion Sursis)
+        run: |
+          python discipline_monitor.py
+
+      - name: 🏆 5. Notation Joueur & ESG Impact Scores (0-100)
+        run: |
+          python player_rating.py
+
+      - name: 📈 6. Analyse des Facteurs Clés de Victoire
+        run: |
+          python performance_drivers.py
+
+      - name: 🎲 7. Simulation Monte-Carlo & Projections R3 (20 000 itérations)
         run: |
           python simulateur_monte_carlo.py
 
-      - name: 📱 5. Génération automatique de la fiche d'avant-match mobile (PNG & PDF)
+      - name: 📱 8. Génération du Briefing d'Avant-Match (PNG & PDF)
         run: |
           python generate_match_briefing.py
 
-      - name: 💾 6. Sauvegarde automatique des données & livrables sur GitHub
+      - name: 📋 9. Génération du Débrief Post-Match du Lundi (Timeline 90')
+        run: |
+          python generate_postmatch_debrief.py
+
+      - name: 💾 10. Sauvegarde automatique sur GitHub
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "🤖 Auto-Update : Données, Scouting Adversaire, Monte-Carlo et Briefing actualisés"
+          commit_message: "🤖 Auto-Update : Données, Scouting, Ratings, Débrief & Briefings actualisés"
           file_pattern: "genech_performance.db exports_powerbi/* briefings_coach/*"
 
-      - name: 📤 7. Archivage sécurisé du briefing (Téléchargeable, aucun envoi externe)
+      - name: 📤 11. Archivage sécurisé des livrables (Téléchargeable, aucun envoi externe)
         uses: actions/upload-artifact@v4
         with:
-          name: briefing-matchday-es-genech
+          name: livrables-es-genech
           path: |
             briefings_coach/*.png
             briefings_coach/*.pdf
