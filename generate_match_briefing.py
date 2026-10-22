@@ -118,7 +118,7 @@ def generate_mobile_briefing():
     referee_info = scout_referee(ref_target)
 
     _, alerts_disc = analyze_discipline()
-    alert_sursis_txt = alerts_disc[0] if alerts_disc else "Aucun joueur sous le coup d'une suspension immédiate. Discipline maîtrisée."
+    alert_sursis_txt = "<br/>".join([f"{a}" for a in alerts_disc]) if alerts_disc else "Aucun joueur sous le coup d'une suspension immédiate. Discipline maîtrisée."
 
     # Quarts d'Heure Genech
     df_buts = df_events[df_events['type_event'] == 'BUT'].copy()
