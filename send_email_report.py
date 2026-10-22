@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(__file__)
 DB_PATH = os.path.join(BASE_DIR, "genech_performance.db")
 OUTPUT_DIR = os.path.join(BASE_DIR, "briefings_coach")
 
-GMAIL_USER = os.getenv("GMAIL_USER")
-GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
-RECIPIENT_EMAIL = os.getenv("RECIPIENT_EMAIL", GMAIL_USER)
+GMAIL_USER = os.getenv("GMAIL_USER", "").strip()
+GMAIL_APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD", "").replace(" ", "").strip()
+RECIPIENT_EMAIL = os.getenv("RECIPIENT_EMAIL", "").strip() or GMAIL_USER
 
 def send_report_email(mode: str = None):
     # Mode auto-détecté si non renseigné (lundi = debrief, autres = briefing)
@@ -34,11 +34,15 @@ def send_report_email(mode: str = None):
         mode = "monday" if weekday == 0 else "friday"
 
     print(f"--- PRÉPARATION DE L'ENVOI E-MAIL (MODE : {mode.upper()}) ---")
+    print(f"  Configuration : GMAIL_USER={'Configuré (' + GMAIL_USER + ')' if GMAIL_USER else 'NON DÉFINI'}")
+    print(f"  Configuration : GMAIL_APP_PASSWORD={'Configuré (longueur: ' + str(len(GMAIL_APP_PASSWORD)) + ' chars)' if GMAIL_APP_PASSWORD else 'NON DÉFINI'}")
+    print(f"  Configuration : RECIPIENT_EMAIL={RECIPIENT_EMAIL if RECIPIENT_EMAIL else 'NON DÉFINI'}")
 
     if not GMAIL_USER or not GMAIL_APP_PASSWORD:
-        print("⚠️ Les secrets GMAIL_USER ou GMAIL_APP_PASSWORD ne sont pas configurés.")
-        print("L'étape d'envoi d'e-mail est ignorée pour l'instant (configurer les secrets dans GitHub Repository Settings).")
-        return
+        raise ValueError(
+            "⚠️ Les secrets GMAIL_USER ou GMAIL_APP_PASSWORD ne sont pas configurés dans GitHub Secrets !\n"
+            "Vérifiez dans GitHub Settings > Secrets and variables > Actions que GMAIL_USER et GMAIL_APP_PASSWORD existent exactement avec ces noms."
+        )
 
     # Connexion DB pour enrichir le sujet et le corps du mail
     conn = sqlite3.connect(DB_PATH)
@@ -188,7 +192,7 @@ def send_report_email(mode: str = None):
 
     # Envoi sécurisé via Gmail SMTP (port 465 SSL ou 587 TLS)
     try:
-        print(f"Connexion au serveur SMTP Gmail (smtp.gmail.com) pour {RECIPIENT_EMAIL}...")
+        print(f"Connexion au serveur SMTP Gmail (smtp.gmail.com) pour envoyer à {RECIPIENT_EMAIL}...")
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.ehlo()
         server.starttls()
@@ -198,6 +202,7 @@ def send_report_email(mode: str = None):
         print(f"✅ E-mail envoyé avec succès à {RECIPIENT_EMAIL} avec {len(attachments)} pièce(s) jointe(s) !")
     except Exception as e:
         print(f"❌ Erreur lors de l'envoi de l'e-mail : {e}")
+        raise e
 
 if __name__ == "__main__":
     mode_arg = sys.argv[1].lower() if len(sys.argv) > 1 else None
