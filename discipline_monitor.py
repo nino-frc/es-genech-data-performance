@@ -21,6 +21,7 @@ OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "exports_powerbi")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 NAME_MAPPING = {
+    "ELIO D.": "ELIO DELCROIX",
     "MATHYS H.": "MATHYS HERVE",
     "GASPARD D.": "GASPARD DROUPSY",
     "AUGUSTIN D.": "AUGUSTIN DROUPSY",
@@ -28,11 +29,22 @@ NAME_MAPPING = {
     "JULIEN D.": "JULIEN DEVERNAY",
     "JULIEN N.": "JULIEN NISSE",
     "MAXIME P.": "MAXIME PETIT",
+    "MAXIME PETITPREZ": "MAXIME PETIT",
     "REMI D.": "REMI DELOBEL",
-    "GIOVANY C.": "GIOVANY CLERY",
-    "CLEMENT D.": "CLEMENT DELELIS",
-    "TIM L.": "TIM LECLERCQ",
-    "THOMAS L.": "THOMAS LEONARD"
+    "GIOVANY C.": "GIOVANY CALON",
+    "GIOVANY CLERY": "GIOVANY CALON",
+    "CLEMENT D.": "CLEMENT DURIEZ",
+    "CLEMENT DELELIS": "CLEMENT DURIEZ",
+    "TIM L.": "TIM LACOTE",
+    "TIM LECLERCQ": "TIM LACOTE",
+    "THOMAS L.": "THOMAS LEONARD",
+    "ARTHUR C.": "ARTHUR CLIQUE",
+    "JEAN PAUL B.": "JEAN PAUL BANGALA TOFIFI",
+    "DANY D.": "DANY DE FREITAS",
+    "JULES D.": "JULES DIVERCHY",
+    "MATEO S.": "MATEO SURMONT",
+    "ROMAIN R.": "ROMAIN RAPAILLE",
+    "CORENTIN D.": "CORENTIN DELOOR"
 }
 
 def normalize_player_name(raw_name: str) -> str:

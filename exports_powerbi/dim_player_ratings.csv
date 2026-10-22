@@ -1,192 +1,22 @@
 ﻿joueur,esg_impact_score,badge_tactique,matchs_joues,titularisations,minutes_estimees,clean_sheets_participees,buts,cartons_jaunes,cartons_rouges
-JULIEN DEVERNAY,69.3,🎯 Buteur d'Élite,8,7,620,5,2,2,0
-JULIEN NISSE,53.0,🛡️ Roc Défensif,8,6,604,4,1,1,0
-MATHYS HERVE,52.8,🛡️ Roc Défensif,8,8,720,5,1,3,0
-AUGUSTIN DROUPSY,49.6,🛡️ Roc Défensif,8,8,644,5,0,0,0
-GASPARD DROUPSY,47.8,🎯 Buteur d'Élite,8,6,523,5,2,4,1
-GIOVANY CALON,46.0,🛡️ Roc Défensif,4,3,265,3,1,0,0
-HUGO HERVE,41.2,🛡️ Roc Défensif,7,7,615,4,1,1,1
-MAXIME PETITPREZ,39.4,🛡️ Roc Défensif,4,4,360,4,0,0,0
-TIM LACOTE,39.4,🛡️ Roc Défensif,4,4,360,4,0,0,0
-JEAN PAUL BANGALA TOFIFI,31.1,🛡️ Roc Défensif,4,3,205,3,0,0,0
-CLEMENT DURIEZ,29.2,🛡️ Roc Défensif,3,3,246,3,0,0,0
-REMI DEFENIN,24.9,⚡ Super-Sub / Impact Player,4,2,195,2,0,0,0
-ARTHUR CLIQUE,22.5,🔄 Rotation Effectif,3,2,198,2,0,0,0
-TIM LECLERCQ,21.4,⚙️ Régulateur / Titulaire Cadre,4,4,360,1,0,0,0
-MATHIS P.,17.8,🔄 Rotation Effectif,1,1,90,0,1,0,0
-NOAM L.,17.8,🔄 Rotation Effectif,1,1,90,0,1,0,0
-REMI DELOBEL,17.4,⚙️ Régulateur / Titulaire Cadre,4,4,360,1,0,1,0
-YANN B.,17.4,🔄 Rotation Effectif,1,1,63,0,1,0,0
-AXEL C.,16.8,🔄 Rotation Effectif,1,0,20,0,1,0,0
-ELIO D.,15.3,⚡ Super-Sub / Impact Player,3,1,122,1,0,0,0
-GIOVANY CLERY,14.6,⚙️ Régulateur / Titulaire Cadre,4,3,176,1,0,1,0
-CLEMENT DELELIS,13.6,⚙️ Régulateur / Titulaire Cadre,4,3,238,0,0,0,0
-MAXIME PETIT,13.4,⚙️ Régulateur / Titulaire Cadre,4,4,360,1,0,2,0
+JULIEN DEVERNAY,69.6,🎯 Buteur d'Élite,8,7,620,5,2,2,0
+JULIEN NISSE,53.4,🛡️ Roc Défensif,8,6,604,4,1,1,0
+MATHYS HERVE,53.2,🛡️ Roc Défensif,8,8,720,5,1,3,0
+GIOVANY CALON,50.9,🛡️ Roc Défensif,8,6,441,4,1,1,0
+AUGUSTIN DROUPSY,50.0,🛡️ Roc Défensif,8,8,644,5,0,0,0
+GASPARD DROUPSY,48.1,🎯 Buteur d'Élite,8,6,523,5,2,4,1
+TIM LACOTE,43.8,🛡️ Roc Défensif,7,7,630,4,0,0,0
+MAXIME PETIT,43.2,🛡️ Roc Défensif,8,8,720,5,0,2,0
+HUGO HERVE,41.6,🛡️ Roc Défensif,7,7,615,4,1,1,1
+CLEMENT DURIEZ,35.5,🛡️ Roc Défensif,7,6,484,3,0,0,0
+JEAN PAUL BANGALA TOFIFI,33.6,🛡️ Roc Défensif,7,5,361,3,0,0,0
+ARTHUR CLIQUE,26.4,⚡ Super-Sub / Impact Player,5,2,286,2,0,0,0
+REMI DEFENIN,25.0,⚡ Super-Sub / Impact Player,4,2,195,2,0,0,0
+ELIO DELCROIX,18.6,⚡ Super-Sub / Impact Player,6,1,170,1,0,0,0
+REMI DELOBEL,17.6,⚙️ Régulateur / Titulaire Cadre,4,4,360,1,0,1,0
+DANY DE FREITAS,12.3,⚡ Super-Sub / Impact Player,4,1,146,0,0,0,0
 ROMAIN RAPAILLE,10.0,🔄 Rotation Effectif,4,0,0,0,0,0,0
-AMINE B.,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-MEHDI E.,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-NAIM B.,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-SELYANE Z.,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-ISSAM M.,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-JEAN PAUL B.,9.8,🔄 Rotation Effectif,3,2,156,0,0,0,0
-MAXENCE M.,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-CORENTIN DELOOR,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-THIERRY QUIQUE,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-LOIC LESTAVEL,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-KEVIN FAY,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-CORENTHIN FOLLET,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-ROMEO DACHEVILLE,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-NOE FOLLET,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-SIMON VANDAMME,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-QUENTIN HERMARY,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-GUILLAUME DELAUTRE,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-STEVEN MELSEN,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-ELIOT VERBEKE,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-ALIXE BARON,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-LUCA DELACRE,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-GABIN DELCOURT,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-PAPE SENE,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-ALEXANDRE DUGOULET,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-GREGORY SEYNAVE,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-DYLAN GOUDIAMY,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-SOULEYMANE DIARRA,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-LUCAS PELTIER,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-LOUIS P.,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-QUENTIN R.,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-CEDRIC MAMBO,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-GABRIEL DUBOIS,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-OZKAN CETINER,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-ERWAN DRAIS,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-CHRISTOPHER BOUSSEMART,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-MEIZY ISSIFOU,9.8,🔄 Rotation Effectif,1,1,90,1,0,0,0
-SAYYIDOUL MOUHAMED SADJO,9.5,🔄 Rotation Effectif,1,1,70,1,0,0,0
-MOHAND LAIB,9.4,🔄 Rotation Effectif,1,1,59,1,0,0,0
-BATISTE POUCHELE,9.4,🔄 Rotation Effectif,1,0,62,1,0,0,0
-KELIAN HALBOT,9.4,🔄 Rotation Effectif,1,1,60,1,0,0,0
-CAMERON POZUELOS,9.4,🔄 Rotation Effectif,1,1,60,1,0,0,0
-YANIS LEQUELLENEC,9.4,🔄 Rotation Effectif,1,1,60,1,0,0,0
-MATIAS FERREIRA,9.4,🔄 Rotation Effectif,1,0,60,1,0,0,0
-RAYAN A.,9.3,🔄 Rotation Effectif,1,1,56,1,0,0,0
-NOE MASEVO MUANDA,9.3,🔄 Rotation Effectif,1,1,55,1,0,0,0
-LUCAS D.,9.2,🔄 Rotation Effectif,1,1,46,1,0,0,0
-ELIO DELCROIX,8.2,🔄 Rotation Effectif,3,0,48,0,0,0,0
+CORENTIN DELOOR,9.9,🔄 Rotation Effectif,1,1,90,1,0,0,0
 JULES DIVERCHY,8.1,🔄 Rotation Effectif,3,0,38,0,0,0,0
-ANDY M.,7.7,🔄 Rotation Effectif,2,2,180,0,0,0,0
-RAYANE M.,7.7,🔄 Rotation Effectif,2,2,180,0,0,0,0
-ANONYME,7.7,🔄 Rotation Effectif,2,2,180,0,0,0,0
-AURELIEN M.,7.7,🔄 Rotation Effectif,2,2,180,0,0,0,0
-DJIBRYL M.,7.7,🔄 Rotation Effectif,2,2,180,0,0,0,0
-MOHAMMED C.,7.2,🔄 Rotation Effectif,2,2,146,0,0,0,0
-JASON L.,6.6,🔄 Rotation Effectif,2,2,104,0,0,0,0
-NAHIL B.,6.5,⚡ Super-Sub / Impact Player,2,0,100,0,0,0,0
-DANY D.,6.4,🔄 Rotation Effectif,2,1,96,0,0,0,0
-ARTHUR C.,6.3,⚡ Super-Sub / Impact Player,2,0,88,0,0,0,0
-HABIB S.,6.2,🔄 Rotation Effectif,2,2,80,0,0,0,0
-SOULEYMANE COULIBALY,5.8,🔄 Rotation Effectif,1,1,90,1,0,1,0
-OUMAR N'DIAYE,5.8,🔄 Rotation Effectif,1,1,90,1,0,1,0
-SIDIA JAITEH,5.8,🔄 Rotation Effectif,1,1,90,1,0,1,0
-ISMAEL AIDAOUI,5.8,🔄 Rotation Effectif,1,1,90,1,0,1,0
-ANTOINE C.,5.8,🔄 Rotation Effectif,1,1,90,1,0,1,0
-DANY DE FREITAS,5.7,🔄 Rotation Effectif,2,0,50,0,0,0,0
-JORDAN DAKOUGNA,5.5,🔄 Rotation Effectif,1,1,70,1,0,1,0
-GAETAN DJEHA,5.5,🔄 Rotation Effectif,1,1,66,1,0,1,0
-NICOLAS ROMAO,5.5,🔄 Rotation Effectif,1,1,70,1,0,1,0
-OUMAR CAMARA,5.2,🔄 Rotation Effectif,1,1,46,1,0,1,0
-HUGO M.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-ROMAIN C.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-THEO C.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-BALTAZAR H.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-ANTHONY B.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-SASHA B.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-PATRIK M.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-ROMAIN V.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-NAEL B.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-MAEL W.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-ROBIN D.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-VIRGILE S.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-ZINEDINE B.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-NOAH S.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-MATHIEU B.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-JULES H.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-AYOUB M.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-ETHAN M.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-ANTONINO T.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-CAMILLE A.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-WILLIAM M.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-AURELIEN V.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-NICOLAS P.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-ARTHUR L.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-NOAH G.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-TANGUY D.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-LOYD O.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-LUCAS P.,3.8,🔄 Rotation Effectif,1,1,90,0,0,0,0
-MORGAN A.,3.7,🔄 Rotation Effectif,2,2,180,0,0,1,0
-SOFIANE B.,3.7,🔄 Rotation Effectif,2,2,180,0,0,1,0
-BASTIEN P.,3.7,🔄 Rotation Effectif,1,1,80,0,0,0,0
-NOA B.,3.6,🔄 Rotation Effectif,1,1,72,0,0,0,0
-ANTHONY C.,3.6,🔄 Rotation Effectif,1,1,72,0,0,0,0
-MATEO S.,3.5,🔄 Rotation Effectif,1,1,67,0,0,0,0
-SOFIANE W.,3.4,🔄 Rotation Effectif,1,0,63,0,0,0,0
-LUC C.,3.4,🔄 Rotation Effectif,1,1,63,0,0,0,0
-LILIAN T.,3.4,🔄 Rotation Effectif,1,1,60,0,0,0,0
-EMILIEN L.,3.4,🔄 Rotation Effectif,1,1,59,0,0,0,0
-MARTIN M.,3.4,🔄 Rotation Effectif,1,1,59,0,0,0,0
-TILL P.,3.3,🔄 Rotation Effectif,1,1,52,0,0,0,0
-LUCA T.,3.3,🔄 Rotation Effectif,1,1,51,0,0,0,0
-MARTIN B.,3.2,🔄 Rotation Effectif,1,0,45,0,0,0,0
-CAMERON D.,3.2,🔄 Rotation Effectif,1,0,44,0,0,0,0
-ANTOINE S.,3.2,🔄 Rotation Effectif,1,1,45,0,0,0,0
-YANICE B.,3.2,🔄 Rotation Effectif,1,0,45,0,0,0,0
-DYLAN DUQUESNES,3.2,🔄 Rotation Effectif,1,0,44,0,0,0,0
-BASILE C.,3.1,🔄 Rotation Effectif,1,0,39,0,0,0,0
-NOA L.,3.1,🔄 Rotation Effectif,1,0,38,0,0,0,0
-SOFIANE G.,3.1,🔄 Rotation Effectif,2,1,143,0,0,1,0
-LEO B.,3.0,🔄 Rotation Effectif,1,0,31,0,0,0,0
-LOIC A.,3.0,🔄 Rotation Effectif,1,0,31,0,0,0,0
-CORENTIN LEMAIRE,3.0,🔄 Rotation Effectif,1,0,35,0,0,0,0
-UGO VANNESTE,3.0,🔄 Rotation Effectif,1,0,31,0,0,0,0
-NADIR M.,3.0,🔄 Rotation Effectif,2,2,135,0,0,1,0
-LANCINE T.,3.0,🔄 Rotation Effectif,1,0,34,0,0,0,0
-TOM L.,3.0,🔄 Rotation Effectif,1,0,34,0,0,0,0
-SAID E.,2.9,🔄 Rotation Effectif,1,1,27,0,0,0,0
-MATYS DEMAZIERES,2.9,🔄 Rotation Effectif,1,0,30,0,0,0,0
-ELYAZ C.,2.9,🔄 Rotation Effectif,1,0,27,0,0,0,0
-ADRIEN PAGERIE,2.9,🔄 Rotation Effectif,1,1,30,0,0,0,0
-SAMY FEDDI,2.9,🔄 Rotation Effectif,1,0,30,0,0,0,0
-JULIEN M.,2.9,🔄 Rotation Effectif,1,0,30,0,0,0,0
-MEHDI S.,2.9,🔄 Rotation Effectif,1,0,30,0,0,0,0
-JULES LEBEGUE,2.9,🔄 Rotation Effectif,1,0,30,0,0,0,0
-ENZO C.,2.9,🔄 Rotation Effectif,1,0,27,0,0,0,0
-FARHANE GUENOUNE,2.9,🔄 Rotation Effectif,1,0,24,0,0,0,0
-LUIS ORFAIT,2.9,🔄 Rotation Effectif,1,1,28,0,0,0,0
-ANTHONY D.,2.8,🔄 Rotation Effectif,1,0,18,0,0,0,0
-ILYESS EL HADDAD,2.8,🔄 Rotation Effectif,1,0,20,0,0,0,0
-AYOUB A.,2.8,🔄 Rotation Effectif,1,0,20,0,0,0,0
-JULIEN S.,2.8,🔄 Rotation Effectif,1,0,18,0,0,0,0
-JULIEN TOURBIER,2.8,🔄 Rotation Effectif,1,0,20,0,0,0,0
-RODRIGUE DEWAELE,2.8,🔄 Rotation Effectif,1,0,20,0,0,0,0
-FABIO DECARO,2.7,🔄 Rotation Effectif,1,0,16,0,0,0,0
-QUENTIN V.,2.6,🔄 Rotation Effectif,1,0,10,0,0,0,0
-THOMAS STRICANNE,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-GABRIEL LEPLAT,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-YOUNES BAKHTI,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-KEVIN DYCKE,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-THEO CHATELAIN,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-YENE GEORGES LAURENT,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-THOMAS LEONARD,2.2,🔄 Rotation Effectif,2,1,83,0,0,1,0
-MEHDI B.,0.0,🔄 Rotation Effectif,1,0,23,0,0,2,0
-ABEL D.,0.0,🔄 Rotation Effectif,1,1,90,0,0,1,0
-NATHAN D.,0.0,🔄 Rotation Effectif,1,1,90,0,0,2,1
-HAKIM G.,0.0,🔄 Rotation Effectif,1,1,90,0,0,1,0
-KEVIN B.,0.0,🔄 Rotation Effectif,1,1,90,0,0,1,0
-ADRIEN S.,0.0,🔄 Rotation Effectif,1,1,60,0,0,1,0
-MATTEO M.,0.0,🔄 Rotation Effectif,1,1,90,0,0,1,0
-FLORENT H.,0.0,🔄 Rotation Effectif,1,1,90,0,0,1,0
-LENNY O.,0.0,🔄 Rotation Effectif,1,1,70,0,0,1,0
-AMAURY VANSTRAESSELLE,0.0,🔄 Rotation Effectif,1,1,74,1,0,0,1
-ABDELAZIZ A.,0.0,🔄 Rotation Effectif,1,1,90,0,0,1,0
-ANTOINE G.,0.0,🔄 Rotation Effectif,1,1,90,0,0,1,0
-MATEO SURMONT,0.0,🔄 Rotation Effectif,1,0,33,0,0,2,1
-DAVID LEMAIRE,0.0,🔄 Rotation Effectif,1,1,90,1,0,0,1
-ERWAN G.,0.0,🔄 Rotation Effectif,1,1,90,0,0,1,0
-MOHAMED SAIDOU B.,0.0,🔄 Rotation Effectif,1,1,90,0,0,1,0
+THOMAS LEONARD,2.3,🔄 Rotation Effectif,2,1,83,0,0,1,0
+MATEO SURMONT,0.0,🔄 Rotation Effectif,2,1,100,0,0,2,1
