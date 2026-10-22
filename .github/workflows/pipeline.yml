@@ -3,8 +3,8 @@ name: ES Genech - Data & Performance Pipeline
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * 1'   # Lundi à 06h00 UTC : Débrief Post-Match & Prédictions
-    - cron: '0 17 * * 5'  # Vendredi à 17h00 UTC : Briefing d'Avant-Match & Scouting
+    - cron: '0 6 * * 1'   # Lundi à 06h00 UTC : Débrief Post-Match, Cartes Joueurs & Prédictions
+    - cron: '0 17 * * 5'  # Vendredi à 17h00 UTC : Briefing d'Avant-Match, Météo & Scouting
 
 jobs:
   run-pipeline:
@@ -55,25 +55,33 @@ jobs:
         run: |
           python performance_drivers.py
 
-      - name: 🎲 7. Simulation Monte-Carlo & Projections R3 (20 000 itérations)
+      - name: 🔄 7. Matrice d'Impact des Remplaçants (Plus/Minus +/-)
+        run: |
+          python substitutions_impact.py
+
+      - name: 🎲 8. Simulation Monte-Carlo & Projections R3 (20 000 itérations)
         run: |
           python simulateur_monte_carlo.py
 
-      - name: 📱 8. Génération du Briefing d'Avant-Match (PNG & PDF)
+      - name: 📱 9. Génération du Briefing d'Avant-Match (Météo, Arbitre, Scouting)
         run: |
           python generate_match_briefing.py
 
-      - name: 📋 9. Génération du Débrief Post-Match du Lundi (Timeline 90')
+      - name: 📋 10. Génération du Débrief Post-Match du Lundi (Timeline 90')
         run: |
           python generate_postmatch_debrief.py
 
-      - name: 💾 10. Sauvegarde automatique sur GitHub
+      - name: 📇 11. Génération des Cartes Profil Joueurs (FM / FIFA)
+        run: |
+          python generate_player_cards.py
+
+      - name: 💾 12. Sauvegarde automatique sur GitHub
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "🤖 Auto-Update : Données, Scouting, Ratings, Débrief & Briefings actualisés"
+          commit_message: "🤖 Auto-Update : Données, Scouting, Météo, Arbitre, Ratings & Briefings actualisés"
           file_pattern: "genech_performance.db exports_powerbi/* briefings_coach/*"
 
-      - name: 📤 11. Archivage sécurisé des livrables (Téléchargeable, aucun envoi externe)
+      - name: 📤 13. Archivage sécurisé des livrables (Téléchargeable, aucun envoi externe)
         uses: actions/upload-artifact@v4
         with:
           name: livrables-es-genech

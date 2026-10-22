@@ -12,6 +12,8 @@ LOGO_PATH = os.path.join(BASE_DIR, "logo_genech_transparent.png")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 from discipline_monitor import analyze_discipline
+from weather_pitch import get_match_weather
+from referee_scout import scout_referee
 
 def launch_browser(p):
     args = ['--disable-blink-features=AutomationControlled', '--no-sandbox']
@@ -107,6 +109,9 @@ def generate_mobile_briefing():
     cartons_genech = df_events[(df_events['type_event'] == 'AVERTISSEMENT') & (df_events['equipe'].str.contains('GENECH', case=False, na=False))]
     cartons_count = len(cartons_genech)
     cartons_anstaing_derby = len(cartons_genech[cartons_genech['match_id'].str.contains('anstaing', case=False, na=False)])
+
+    weather_info = get_match_weather(next_dom, next_date)
+    referee_info = scout_referee("LOUIS LAURENT")
 
     _, alerts_disc = analyze_discipline()
     alert_sursis_txt = alerts_disc[0] if alerts_disc else "Aucun joueur sous le coup d'une suspension immédiate. Discipline maîtrisée."
@@ -324,6 +329,39 @@ def generate_mobile_briefing():
                 gap: 12px;
             }}
             .hero-teams .vs {{ color: #ebb837; font-size: 17px; }}
+
+            /* Conditions Météo & Arbitre */
+            .env-grid {{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }}
+            .env-box {{
+                background: #0a1728;
+                border-radius: 10px;
+                padding: 7px 11px;
+                color: white;
+                border-left: 4px solid #ebb837;
+            }}
+            .env-box.referee {{
+                border-left-color: #e8590c;
+            }}
+            .env-box-title {{
+                font-family: 'Oswald', sans-serif;
+                font-size: 11px;
+                font-weight: 700;
+                color: #ebb837;
+                text-transform: uppercase;
+                margin-bottom: 2px;
+            }}
+            .env-box.referee .env-box-title {{
+                color: #f87171;
+            }}
+            .env-box-body {{
+                font-size: 8px;
+                line-height: 1.35;
+                color: #e2e8f0;
+            }}
 
             /* 4 KPIs */
             .kpi-grid {{
@@ -671,6 +709,24 @@ def generate_mobile_briefing():
             <div class="hero-tag">Affiche Officielle • {next_date}</div>
             <div class="hero-teams">
                 {next_dom} <span class="vs">VS</span> {next_ext}
+            </div>
+        </div>
+
+        <!-- Conditions Météo & Arbitre Officiel -->
+        <div class="env-grid">
+            <div class="env-box">
+                <div class="env-box-title">🌦️ Météo & Terrain • {weather_info['lieu']}</div>
+                <div class="env-box-body">
+                    <strong>{weather_info['temperature']}</strong> • Vent : {weather_info['vent']} • Pluie : {weather_info['pluie']}<br/>
+                    <span style="color:#cbd5e1;">Surface : {weather_info['surface']} — {weather_info['consigne_tactique']}</span>
+                </div>
+            </div>
+            <div class="env-box referee">
+                <div class="env-box-title">👨‍⚖️ Arbitre Officiel • {referee_info['nom_arbitre']}</div>
+                <div class="env-box-body">
+                    Sévérité : <strong style="color:#f87171;">{referee_info['severite']}</strong> ({referee_info['moyenne_jaunes']} J / match)<br/>
+                    <span style="color:#cbd5e1;">{referee_info['consigne_coach']}</span>
+                </div>
             </div>
         </div>
 
