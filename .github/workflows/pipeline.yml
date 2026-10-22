@@ -3,8 +3,8 @@ name: ES Genech - Data & Performance Pipeline
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * 1'   # Lundi à 06h00 UTC : Débrief Post-Match, Cartes Joueurs, Rapport Board & Prédictions
-    - cron: '0 17 * * 5'  # Vendredi à 17h00 UTC : Briefing d'Avant-Match, Météo & Scouting
+    - cron: '0 8 * * 1'   # Lundi à 08h00 UTC (10h00 Paris) : Débrief Post-Match, Cartes Joueurs, Rapport Board & Prédictions
+    - cron: '0 16 * * 5'  # Vendredi à 16h00 UTC (18h00 Paris) : Briefing d'Avant-Match, Météo & Scouting
 
 jobs:
   run-pipeline:
@@ -92,3 +92,11 @@ jobs:
           path: |
             briefings_coach/*.png
             briefings_coach/*.pdf
+
+      - name: 📧 15. Envoi automatique des livrables par e-mail
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
+        run: |
+          python send_email_report.py
