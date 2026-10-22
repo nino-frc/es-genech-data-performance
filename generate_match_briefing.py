@@ -110,6 +110,9 @@ def generate_mobile_briefing():
     cartons_count = len(cartons_genech)
     cartons_anstaing_derby = len(cartons_genech[cartons_genech['match_id'].str.contains('anstaing', case=False, na=False)])
 
+    is_tatinghem = "TATINGHEM" in opp_name.upper()
+    is_aniche = "ANICHE" in opp_name.upper()
+
     weather_info = get_match_weather(next_dom, next_date)
     ref_target = "LOUIS LAURENT" if is_tatinghem else "Désignation FFF"
     referee_info = scout_referee(ref_target)

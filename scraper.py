@@ -175,7 +175,7 @@ def scrape_fff():
 
     with sync_playwright() as p:
         browser = launch_browser(p)
-        context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
+        context = browser.new_context(user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36", viewport={"width": 1280, "height": 800})
         page = context.new_page()
 
         print("--- Scraping Classement R3 Poule D ---")
@@ -228,9 +228,7 @@ def scrape_fff():
             {"id": "r3_j5_aniche_genech", "competition_id": "r3_poule_d", "tour_ou_journee": "Journée 5", "date_heure": "2026-11-08 14:30", "equipe_domicile": "ANICHE SC", "equipe_exterieur": "GENECH ES", "score_domicile": None, "score_exterieur": None, "statut": "A_VENIR", "url": "https://epreuves.fff.fr/competition/match/56216911-s-c-aniche-ent-s-de-genech"}
         ]
 
-        cur.execute("DELETE FROM match_events;")
-        cur.execute("DELETE FROM match_lineups;")
-
+        
         for m in matches_to_scrape:
             # Vérification dynamique sur la page FFF si le match est joué ou à venir
             s_dom = m["score_domicile"]
@@ -250,13 +248,16 @@ def scrape_fff():
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """, (m["id"], m["competition_id"], m["tour_ou_journee"], m["date_heure"], m["equipe_domicile"], m["equipe_exterieur"], s_dom, s_ext, statut, m["url"]))
 
-                if statut == "TERMINE":
+                if statut == "TERMINE" and len(events) > 0:
+                    cur.execute("DELETE FROM match_events WHERE match_id = ?", (m["id"],))
                     for ev in events:
                         cur.execute("""
                         INSERT INTO match_events (match_id, minute, temps_additionnel, tranche_quart_heure, type_event, equipe, acteur_principal, acteur_secondaire, detail)
                         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
                         """, (m["id"], ev["minute"], ev["temps_additionnel"], ev["tranche_quart_heure"], ev["type_event"], ev["equipe"], ev["acteur_principal"], ev["acteur_secondaire"], ev["detail"]))
 
+                if len(lineups) > 0:
+                    cur.execute("DELETE FROM match_lineups WHERE match_id = ?", (m["id"],))
                     for lp in lineups:
                         cur.execute("""
                         INSERT INTO match_lineups (match_id, equipe, numero, joueur_nom, role)
