@@ -3,7 +3,7 @@ name: ES Genech - Data & Performance Pipeline
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * 1'   # Lundi à 06h00 UTC : Débrief Post-Match, Cartes Joueurs & Prédictions
+    - cron: '0 6 * * 1'   # Lundi à 06h00 UTC : Débrief Post-Match, Cartes Joueurs, Rapport Board & Prédictions
     - cron: '0 17 * * 5'  # Vendredi à 17h00 UTC : Briefing d'Avant-Match, Météo & Scouting
 
 jobs:
@@ -75,13 +75,17 @@ jobs:
         run: |
           python generate_player_cards.py
 
-      - name: 💾 12. Sauvegarde automatique sur GitHub
+      - name: 👔 12. Génération du Rapport Exécutif Mensuel (Président & Comité)
+        run: |
+          python generate_executive_report.py
+
+      - name: 💾 13. Sauvegarde automatique sur GitHub
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "🤖 Auto-Update : Données, Scouting, Météo, Arbitre, Ratings & Briefings actualisés"
+          commit_message: "🤖 Auto-Update : Données, Scouting, Météo, Arbitre, Ratings & Rapports Comité actualisés"
           file_pattern: "genech_performance.db exports_powerbi/* briefings_coach/*"
 
-      - name: 📤 13. Archivage sécurisé des livrables (Téléchargeable, aucun envoi externe)
+      - name: 📤 14. Archivage sécurisé des livrables (Téléchargeable, aucun envoi externe)
         uses: actions/upload-artifact@v4
         with:
           name: livrables-es-genech
