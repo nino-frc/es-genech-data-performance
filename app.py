@@ -95,7 +95,7 @@ st.markdown("""
 def get_db_data():
     conn = sqlite3.connect(DB_PATH)
     equipes_df = pd.read_sql_query("SELECT * FROM equipes_club ORDER BY id ASC", conn)
-    matchs_df = pd.read_sql_query("SELECT * FROM matchs ORDER BY date_heure DESC", conn)
+    matchs_df = pd.read_sql_query("SELECT * FROM matchs WHERE equipe_club_id != 'SCOUTING' AND (equipe_domicile LIKE '%GENECH%' OR equipe_exterieur LIKE '%GENECH%') ORDER BY date_heure DESC", conn)
     events_df = pd.read_sql_query("SELECT * FROM match_events", conn)
     classement_df = pd.read_sql_query("SELECT * FROM classement_poule ORDER BY rang ASC", conn)
     conn.close()
@@ -171,6 +171,7 @@ for _, r in matchs_termines.iterrows():
 
 total_joues = victoires + nuls + defaites
 win_pct = (victoires / total_joues * 100) if total_joues > 0 else 0
+avg_buts = (buts_pour / total_joues) if total_joues > 0 else 0.0
 diff = buts_pour - buts_contre
 
 c1, c2, c3, c4 = st.columns(4)
@@ -197,7 +198,7 @@ with c3:
     <div class="metric-card blue">
         <div class="metric-label">Attaque (Buts Marqués)</div>
         <div class="metric-value">{buts_pour}</div>
-        <div class="metric-sub">{(buts_pour / total_joues):.1f} b/m si joués else 0</div>
+        <div class="metric-sub">{avg_buts:.1f} b/m en moyenne</div>
     </div>
     """, unsafe_allow_html=True)
 

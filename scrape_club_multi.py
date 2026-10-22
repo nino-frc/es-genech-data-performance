@@ -105,7 +105,19 @@ def scrape_all_club_teams():
                 champ = lines[i + 1]
                 dom = lines[i + 2]
                 
+                # Ignorer les matchs qui ne concernent pas l'ES Genech
+                if "GENECH" not in dom.upper() and "GENECH" not in ext.upper():
+                    i += 1
+                    continue
+
                 eq_club_id = detect_equipe_club(champ)
+
+                # Éviter d'insérer des doublons sur Senior 1 (déjà gérée par le scraper détaillé)
+                if eq_club_id == "SENIOR_M1":
+                    cur.execute("SELECT count(*) FROM matchs WHERE date_heure LIKE ? AND (equipe_domicile LIKE '%GENECH%' OR equipe_exterieur LIKE '%GENECH%')", (f"{iso_date[:10]}%",))
+                    if cur.fetchone()[0] > 0:
+                        i += 5
+                        continue
 
                 # Cas 1: Match terminé
                 if lines[i + 3].isdigit() and i + 5 < len(lines) and lines[i + 4].isdigit():
