@@ -11,6 +11,8 @@ OUTPUT_DIR = os.path.join(BASE_DIR, "briefings_coach")
 LOGO_PATH = os.path.join(BASE_DIR, "logo_genech_transparent.png")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
+from discipline_monitor import analyze_discipline
+
 def launch_browser(p):
     args = ['--disable-blink-features=AutomationControlled', '--no-sandbox']
     try:
@@ -105,6 +107,9 @@ def generate_mobile_briefing():
     cartons_genech = df_events[(df_events['type_event'] == 'AVERTISSEMENT') & (df_events['equipe'].str.contains('GENECH', case=False, na=False))]
     cartons_count = len(cartons_genech)
     cartons_anstaing_derby = len(cartons_genech[cartons_genech['match_id'].str.contains('anstaing', case=False, na=False)])
+
+    _, alerts_disc = analyze_discipline()
+    alert_sursis_txt = alerts_disc[0] if alerts_disc else "Aucun joueur sous le coup d'une suspension immédiate. Discipline maîtrisée."
 
     # Quarts d'Heure Genech
     df_buts = df_events[df_events['type_event'] == 'BUT'].copy()
@@ -517,7 +522,27 @@ def generate_mobile_briefing():
                 margin-bottom: 2px;
             }}
 
-            /* Quarts d'Heure ESG */
+            /* Alerte Discipline Interne ESG */
+            .esg-disc-card {{
+                background: white;
+                border-radius: 10px;
+                padding: 8px 12px;
+                border-left: 5px solid #e8590c;
+                box-shadow: 0 4px 10px rgba(10, 23, 40, 0.05);
+            }}
+            .esg-disc-header {{
+                font-family: 'Oswald', sans-serif;
+                font-size: 11px;
+                font-weight: 700;
+                color: #b91c1c;
+                text-transform: uppercase;
+                margin-bottom: 2px;
+            }}
+            .esg-disc-text {{
+                font-size: 8.5px;
+                color: #334155;
+                line-height: 1.35;
+            }}
             .section-card {{
                 background: white;
                 border-radius: 12px;
@@ -820,13 +845,19 @@ def generate_mobile_briefing():
             </table>
         </div>
 
-        <!-- 8. Causerie Coach Callout -->
+        <!-- Veille Disciplinaire Interne ESG -->
+        <div class="esg-disc-card">
+            <div class="esg-disc-header">⚖️ Veille Disciplinaire Interne (Règle FFF Art. 226)</div>
+            <div class="esg-disc-text">{alert_sursis_txt}</div>
+        </div>
+
+        <!-- 8. Causerie Coach Callout & Facteurs Clés -->
         <div class="briefing-box">
-            <div class="briefing-title">📋 3 Points Clés pour la Causerie du Coach</div>
+            <div class="briefing-title">📋 3 Facteurs Clés de Victoire pour le Match</div>
             <ul>
-                <li><strong>Gestion de l'entame :</strong> Neutraliser les 15 premières minutes en restant très compacts et agressifs sur les seconds ballons.</li>
-                <li><strong>Exploitation de la profondeur :</strong> Piquer dans le dos des défenseurs latéraux dès la récupération au milieu.</li>
-                <li><strong>Discipline tactique :</strong> Ne concéder aucun coup franc dangereux dans nos 25 derniers mètres et garder son calme avec le corps arbitral.</li>
+                <li><strong>Premier But Capital (100 % Victoires) :</strong> Dès que Genech ouvre le score (3/3), l'équipe gagne systématiquement. Imposer un pressing haut d'entrée.</li>
+                <li><strong>Puissance en 2nde Mi-Temps :</strong> 75 % de nos buts sont inscrits après la pause. Maintenir une intensité maximale pour faire craquer l'adversaire après la 60e.</li>
+                <li><strong>Maîtrise & Sang-Froid (+1 pt / match) :</strong> Genech tourne à 2.60 PPM avec ≤ 1 carton vs 1.67 PPM avec ≥ 2 cartons. Zéro contestation avec le corps arbitral.</li>
             </ul>
         </div>
 
