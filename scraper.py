@@ -25,12 +25,12 @@ def launch_browser(p):
         return p.chromium.launch(headless=True, args=args)
 
 def parse_match_details(page, match_url: str):
-    page.goto(match_url, wait_until="networkidle", timeout=25000)
+    page.goto(match_url, wait_until="domcontentloaded", timeout=25000)
     try:
         page.locator("#didomi-notice-agree-button").click(timeout=1500)
     except Exception:
         pass
-    page.wait_for_timeout(1000)
+    page.wait_for_timeout(2000)
 
     lines = [l.strip() for l in page.inner_text("body").split("\n") if l.strip()]
 
@@ -112,9 +112,9 @@ def parse_match_details(page, match_url: str):
                             "acteur_secondaire": "",
                             "detail": "Carton jaune"
                         })
-                    elif "Expulsion pour" in desc:
+                    elif "Expulsion pour" in desc or "Exclusion pour" in desc:
                         type_event = "EXPULSION"
-                        equipe = desc.replace("Expulsion pour", "").strip()
+                        equipe = desc.replace("Expulsion pour", "").replace("Exclusion pour", "").strip()
                         actor = lines[i + 2] if i + 2 < len(lines) else ""
                         events.append({
                             "minute": min_val,

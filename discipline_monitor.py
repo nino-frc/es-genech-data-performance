@@ -78,26 +78,45 @@ def analyze_discipline(reference_date=None):
     for player in unique_players:
         p_cards = df_cards[df_cards['player_norm'] == player].sort_values(by='date_match')
         
-        # Cartons dans les 90 derniers jours
-        recent_yellows = p_cards[(p_cards['date_match'] >= window_start) & (p_cards['type_event'] == 'AVERTISSEMENT')]
-        total_recent_j = len(recent_yellows)
-        total_recent_r = len(p_cards[(p_cards['date_match'] >= window_start) & (p_cards['type_event'] == 'EXPULSION')])
+        # Identifier les matchs où le joueur a reçu une EXPULSION (carton rouge)
+        matches_with_red = p_cards[p_cards['type_event'] == 'EXPULSION']['match_id'].unique()
 
-        dates_cartons = [d.strftime('%d/%m') for d in recent_yellows['date_match']]
+        # Règle FFF : les cartons jaunes d'un match ayant abouti à une expulsion sont absorbés par le rouge
+        isolated_yellows = p_cards[
+            (p_cards['date_match'] >= window_start) & 
+            (p_cards['type_event'] == 'AVERTISSEMENT') & 
+            (~p_cards['match_id'].isin(matches_with_red))
+        ]
+        
+        recent_reds = p_cards[
+            (p_cards['date_match'] >= window_start) & 
+            (p_cards['type_event'] == 'EXPULSION')
+        ]
+
+        total_recent_j = len(isolated_yellows)
+        total_recent_r = len(recent_reds)
+
+        dates_cartons = [d.strftime('%d/%m') for d in isolated_yellows['date_match']]
         dates_str = ", ".join(dates_cartons) if dates_cartons else "-"
 
         # Évaluation du statut juridique FFF
-        if total_recent_r > 0 or total_recent_j >= 3:
-            statut_disciplinaire = "SUSPENDU / COMMISSION FFF"
+        if total_recent_r > 0:
+            statut_disciplinaire = "SUSPENDU (CARTON ROUGE)"
             gravite = "ROUGE"
             expiration_sursis = "-"
-            alerte_staff = f"🚨 {player} : 3e carton reçu ({dates_str}). Suspension automatique active ou en cours d'application."
+            last_red = recent_reds.iloc[-1]
+            alerte_staff = f"🚨 {player} : Carton rouge / Exclusion le {last_red['date_match'].strftime('%d/%m')} (90'). Suspendu 1 match automatique ferme."
+            alerts.append(alerte_staff)
+        elif total_recent_j >= 3:
+            statut_disciplinaire = "SUSPENDU (3 JAUNES)"
+            gravite = "ROUGE"
+            expiration_sursis = "-"
+            alerte_staff = f"🚨 {player} : 3e carton jaune reçu ({dates_str}). Suspension automatique de 1 match ferme."
             alerts.append(alerte_staff)
         elif total_recent_j == 2:
             statut_disciplinaire = "SOUS SURSIS IMMÉDIAT"
             gravite = "ORANGE"
-            # Date d'expiration = 90 jours après le 1er carton du cycle
-            first_card_date = recent_yellows['date_match'].iloc[0]
+            first_card_date = isolated_yellows['date_match'].iloc[0]
             exp_date = first_card_date + timedelta(days=90)
             expiration_sursis = exp_date.strftime('%d/%m/%Y')
             alerte_staff = f"⚠️ {player} : 2 cartons ({dates_str}). Prochain carton jaune = 1 match de suspension automatique ! (Sursis jusqu'au {expiration_sursis})."
@@ -105,7 +124,7 @@ def analyze_discipline(reference_date=None):
         elif total_recent_j == 1:
             statut_disciplinaire = "AVERTI (1 JAUNE)"
             gravite = "JAUNE"
-            first_card_date = recent_yellows['date_match'].iloc[0]
+            first_card_date = isolated_yellows['date_match'].iloc[0]
             exp_date = first_card_date + timedelta(days=90)
             expiration_sursis = exp_date.strftime('%d/%m/%Y')
         else:
