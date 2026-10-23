@@ -5,6 +5,7 @@ Application Web & Mobile (PWA) de la cellule Performance de l'ES Genech (FFF #52
 
 import os
 import sys
+import base64
 import sqlite3
 import importlib
 import pandas as pd
@@ -159,15 +160,34 @@ def get_db_data():
 
 equipes_df, matchs_df, events_df, classement_df = get_db_data()
 
+# Logo Base64
+logo_b64 = ""
+if os.path.exists(LOGO_PATH):
+    with open(LOGO_PATH, "rb") as f:
+        logo_b64 = base64.b64encode(f.read()).decode("utf-8")
+
+# Sidebar avec Logo & Identité Club
+with st.sidebar:
+    if os.path.exists(LOGO_PATH):
+        st.image(LOGO_PATH, width=120)
+    st.markdown("### **ES GENECH**")
+    st.caption("Cellule Performance & Analytics • FFF #525674")
+    st.markdown("---")
+    st.markdown("🟡⚫ **Club Partenaire Régional**")
+    st.caption("Régional 3 Poule D • Ligue des Hauts-de-France")
+
 # HEADER
-st.markdown("""
+st.markdown(f"""
 <div class="club-header">
-    <div>
-        <h1>ES <span>GENECH</span> • HUB DATA PERFORMANCE</h1>
-        <p>Plateforme Tactique & Analytics Officielle • Club FFF #525674</p>
+    <div style="display: flex; align-items: center; gap: 18px;">
+        <img src="data:image/png;base64,{logo_b64}" alt="Logo ES Genech" style="height: 64px; width: auto; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.35));">
+        <div>
+            <h1>ES <span>GENECH</span> • HUB DATA PERFORMANCE</h1>
+            <p>Plateforme Tactique & Analytics Officielle • Club FFF #525674</p>
+        </div>
     </div>
-    <div style="background: rgba(235, 184, 55, 0.2); border: 1px solid #ebb837; color: #ebb837; padding: 6px 14px; border-radius: 20px; font-weight: 800; font-size: 12px;">
-        16 ÉQUIPES ENGAGÉES
+    <div style="background: rgba(235, 184, 55, 0.2); border: 1px solid #ebb837; color: #ebb837; padding: 8px 16px; border-radius: 20px; font-weight: 800; font-size: 12px; text-transform: uppercase;">
+        16 Équipes Engagées
     </div>
 </div>
 """, unsafe_allow_html=True)

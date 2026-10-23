@@ -1,19 +1,8 @@
-"""
-Générateur de Fiches & Cartes Individuelles Joueurs ("Profil Football Manager / FIFA")
-Rendu mobile haute résolution (1080x1920) : Jauges de compétences, Impact Scores & État de Sursis
-Projet ES Genech Data Performance - Portfolio SportTech
-"""
-
 import os
 import sys
 import base64
 import pandas as pd
 from playwright.sync_api import sync_playwright
-
-try:
-    sys.stdout.reconfigure(encoding='utf-8')
-except Exception:
-    pass
 
 BASE_DIR = os.path.dirname(__file__)
 OUTPUT_DIR = os.path.join(BASE_DIR, "briefings_coach")
@@ -40,7 +29,6 @@ def generate_player_cards():
         print("Aucune donnée joueur.")
         return
 
-    # Fusion avec la discipline et les remplacements
     df_merged = df_ratings.merge(df_discipline[['joueur', 'statut_juridique_fff', 'niveau_alerte', 'expiration_sursis']], on='joueur', how='left')
     df_merged = df_merged.merge(df_subs[['joueur', 'plus_minus_total', 'impact_banc']], on='joueur', how='left')
 
@@ -49,8 +37,13 @@ def generate_player_cards():
         with open(LOGO_PATH, "rb") as f:
             logo_b64 = base64.b64encode(f.read()).decode("utf-8")
 
-    # Sélection des 6 joueurs les plus représentatifs de l'effectif
-    top_players = df_merged.head(6)
+    # Sélection des 12 joueurs clés de l'effectif (Titulaires + Impact Players dont Elio Delcroix)
+    # S'il y a plus de 12 joueurs, on s'assure qu'Elio est inclus s'il fait partie du groupe
+    top_players = df_merged.head(12)
+    if 'ELIO DELCROIX' not in top_players['joueur'].values:
+        elio_row = df_merged[df_merged['joueur'] == 'ELIO DELCROIX']
+        if not elio_row.empty:
+            top_players = pd.concat([df_merged.head(11), elio_row]).reset_index(drop=True)
 
     html = f"""
     <!DOCTYPE html>
@@ -66,16 +59,19 @@ def generate_player_cards():
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }}
-            body {{
+            html, body {{
                 font-family: 'Montserrat', sans-serif;
                 margin: 0;
-                padding: 22px 26px;
+                padding: 24px 28px;
                 background-color: #ede8d8;
                 color: #0a1728;
                 width: 1080px;
+                height: 1920px;
+                max-height: 1920px;
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                justify-content: space-between;
+                overflow: hidden;
             }}
 
             /* Header */
@@ -123,7 +119,7 @@ def generate_player_cards():
             .header-badge {{
                 background: #ebb837;
                 color: #0a1728;
-                padding: 7px 13px;
+                padding: 7px 14px;
                 border-radius: 10px;
                 text-align: center;
                 font-weight: 800;
@@ -138,23 +134,26 @@ def generate_player_cards():
                 font-weight: 900;
             }}
 
-            /* Grille de 6 Cartes Joueurs */
+            /* Grille de 12 Cartes Joueurs (3 colonnes x 4 rangées) */
             .cards-grid {{
                 display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 10px;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                gap: 12px;
+                flex: 1;
+                margin: 14px 0;
             }}
 
             .player-card {{
                 background: white;
                 border-radius: 14px;
-                padding: 12px 14px;
+                padding: 14px 16px;
                 box-shadow: 0 4px 12px rgba(10, 23, 40, 0.06);
                 border: 1px solid #cbd5e1;
-                border-top: 4px solid #004687;
+                border-top: 5px solid #004687;
                 display: flex;
                 flex-direction: column;
-                gap: 6px;
+                justify-content: space-between;
             }}
             .player-card.gold {{ border-top-color: #ebb837; }}
             .player-card.orange {{ border-top-color: #e8590c; }}
@@ -162,7 +161,8 @@ def generate_player_cards():
             .card-header {{
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
+                align-items: flex-start;
+                margin-bottom: 4px;
             }}
             .player-name {{
                 font-family: 'Oswald', sans-serif;
@@ -170,45 +170,49 @@ def generate_player_cards():
                 font-weight: 700;
                 text-transform: uppercase;
                 color: #0a1728;
+                line-height: 1.15;
             }}
             .player-score {{
                 background: #0a1728;
                 color: #ebb837;
                 font-family: 'Oswald', sans-serif;
-                font-size: 16px;
+                font-size: 18px;
                 font-weight: 900;
-                padding: 2px 9px;
+                padding: 3px 10px;
                 border-radius: 8px;
+                line-height: 1;
             }}
             .badge-tactique {{
-                font-size: 8.5px;
+                font-size: 9px;
                 font-weight: 800;
                 color: #475569;
                 text-transform: uppercase;
+                margin-top: 2px;
             }}
 
             /* Jauges */
             .gauge-group {{
                 display: flex;
                 flex-direction: column;
-                gap: 4px;
-                margin: 4px 0;
+                gap: 5px;
+                margin: 6px 0;
             }}
             .gauge-item {{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                font-size: 8px;
+                font-size: 9px;
                 font-weight: 700;
             }}
             .gauge-label {{
-                width: 85px;
+                width: 75px;
                 color: #64748b;
                 text-transform: uppercase;
+                font-size: 8.5px;
             }}
             .gauge-bar-bg {{
                 flex: 1;
-                height: 7px;
+                height: 8px;
                 background: #e2e8f0;
                 border-radius: 4px;
                 margin: 0 8px;
@@ -222,17 +226,42 @@ def generate_player_cards():
             .gauge-bar-fill.gold {{ background: #ebb837; }}
             .gauge-bar-fill.orange {{ background: #e8590c; }}
             .gauge-val {{
-                width: 32px;
+                width: 38px;
                 text-align: right;
                 font-weight: 800;
+                color: #0a1728;
+                font-size: 9px;
+            }}
+
+            /* Ligne Stats Clés */
+            .stats-row {{
+                display: flex;
+                justify-content: space-between;
+                background: #f8fafc;
+                border-radius: 8px;
+                padding: 6px 10px;
+                font-size: 8.5px;
+                font-weight: 700;
+                color: #334155;
+                margin: 4px 0;
+            }}
+            .stat-cell {{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }}
+            .stat-val {{
+                font-family: 'Oswald', sans-serif;
+                font-size: 13px;
+                font-weight: 700;
                 color: #0a1728;
             }}
 
             /* Statut Juridique FFF */
             .status-pill {{
-                font-size: 8px;
+                font-size: 8.5px;
                 font-weight: 800;
-                padding: 4px 8px;
+                padding: 5px 8px;
                 border-radius: 6px;
                 text-align: center;
                 text-transform: uppercase;
@@ -247,7 +276,7 @@ def generate_player_cards():
             .footer {{
                 background: #ebb837;
                 border-radius: 12px;
-                padding: 8px 16px;
+                padding: 10px 18px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -256,11 +285,11 @@ def generate_player_cards():
             }}
             .footer .slogan {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 13px;
+                font-size: 14px;
                 letter-spacing: 1px;
                 text-transform: uppercase;
             }}
-            .footer .tag {{ font-size: 8px; font-weight: 800; }}
+            .footer .tag {{ font-size: 9px; font-weight: 800; }}
         </style>
     </head>
     <body>
@@ -271,37 +300,39 @@ def generate_player_cards():
                 <img class="club-logo" src="data:image/png;base64,{logo_b64}" alt="Logo ES Genech">
                 <div class="club-title">
                     <h1>ES <span>GENECH</span></h1>
-                    <p>Cellule Performance • Fiches Individuelles Joueurs</p>
+                    <p>Cellule Performance • Fiches Profil Joueurs Football Manager</p>
                 </div>
             </div>
             <div class="header-badge">
                 <div class="comp">Saison 2026-2027</div>
-                <div class="tour">EFFECTIF CADRE</div>
+                <div class="tour">12 JOUEURS CLÉS</div>
             </div>
         </div>
 
-        <!-- Grille 6 Cartes Joueurs -->
+        <!-- Grille de 12 Cartes Joueurs -->
         <div class="cards-grid">
     """
 
-    for idx, p in top_players.iterrows():
-        name = p['joueur']
-        score = p['esg_impact_score']
-        badge = p['badge_tactique']
-        mins = p['minutes_estimees']
-        cs = p['clean_sheets_participees']
-        buts = p['buts']
-        cj = p['cartons_jaunes']
-        statut_fff = p['statut_juridique_fff'] if pd.notnull(p['statut_juridique_fff']) else "CASIER VIERGE"
-        gravite = p['niveau_alerte'] if pd.notnull(p['niveau_alerte']) else "VERT"
-        
-        # Jauges normalisées sur 100
+    for _, row in top_players.iterrows():
+        name = row['joueur']
+        score = f"{row['esg_impact_score']:.1f}"
+        badge = row['badge_tactique']
+        mins = int(row['minutes_estimees'])
+        cs = int(row['clean_sheets_participees'])
+        buts = int(row['buts'])
+        cj = int(row['cartons_jaunes'])
+        matchs = int(row['matchs_joues'])
+        tits = int(row['titularisations'])
+
+        statut_fff = row['statut_juridique_fff'] if pd.notnull(row['statut_juridique_fff']) else "CASIER VIERGE"
+        gravite = row['niveau_alerte'] if pd.notnull(row['niveau_alerte']) else "VERT"
+
         vol_pct = min(100, int((mins / 720) * 100))
         def_pct = min(100, int((cs / 5) * 100))
         att_pct = min(100, int((buts / 2) * 100)) if buts > 0 else 10
         disc_pct = max(10, 100 - (cj * 25))
 
-        top_color_class = "gold" if score >= 80 else ("orange" if "Buteur" in badge else "")
+        top_color_class = "gold" if float(score) >= 50 else ("orange" if "Buteur" in badge or "Super-Sub" in badge else "")
 
         html += f"""
             <div class="player-card {top_color_class}">
@@ -315,17 +346,17 @@ def generate_player_cards():
 
                 <div class="gauge-group">
                     <div class="gauge-item">
-                        <span class="gauge-label">Volume (Mins)</span>
+                        <span class="gauge-label">Temps Jeu</span>
                         <div class="gauge-bar-bg"><div class="gauge-bar-fill gold" style="width: {vol_pct}%;"></div></div>
                         <span class="gauge-val">{mins}'</span>
                     </div>
                     <div class="gauge-item">
-                        <span class="gauge-label">Défense (CS)</span>
+                        <span class="gauge-label">Défense</span>
                         <div class="gauge-bar-bg"><div class="gauge-bar-fill" style="width: {def_pct}%;"></div></div>
                         <span class="gauge-val">{cs} CS</span>
                     </div>
                     <div class="gauge-item">
-                        <span class="gauge-label">Attaque (Buts)</span>
+                        <span class="gauge-label">Attaque</span>
                         <div class="gauge-bar-bg"><div class="gauge-bar-fill orange" style="width: {att_pct}%;"></div></div>
                         <span class="gauge-val">{buts} B</span>
                     </div>
@@ -334,6 +365,13 @@ def generate_player_cards():
                         <div class="gauge-bar-bg"><div class="gauge-bar-fill" style="width: {disc_pct}%; background:#15803d;"></div></div>
                         <span class="gauge-val">{cj} J</span>
                     </div>
+                </div>
+
+                <div class="stats-row">
+                    <div class="stat-cell"><span class="stat-val">{matchs}</span>Matchs</div>
+                    <div class="stat-cell"><span class="stat-val">{tits}</span>Tit.</div>
+                    <div class="stat-cell"><span class="stat-val">{mins}'</span>Temps</div>
+                    <div class="stat-cell"><span class="stat-val">{buts}</span>Buts</div>
                 </div>
 
                 <div class="status-pill {gravite}">
@@ -367,7 +405,7 @@ def generate_player_cards():
         page.pdf(path=out_pdf, print_background=True, width="1080px", height="1920px")
         browser.close()
 
-    print("Cartes de profil joueurs générées avec succès (PNG & PDF) !")
+    print("Cartes de profil joueurs régénérées avec succès (PNG & PDF) !")
 
 if __name__ == "__main__":
     generate_player_cards()

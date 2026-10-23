@@ -184,16 +184,19 @@ def generate_mobile_briefing():
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }}
-            body {{
+            html, body {{
                 font-family: 'Montserrat', sans-serif;
                 margin: 0;
-                padding: 24px 28px;
+                padding: 26px 30px;
                 background-color: #ede8d8;
                 color: #0a1728;
                 width: 1080px;
+                height: 1920px;
+                max-height: 1920px;
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                justify-content: space-between;
+                overflow: hidden;
             }}
 
             /* Header Mobile */
@@ -903,6 +906,28 @@ def generate_mobile_briefing():
     html_content += f"""
                 </tbody>
             </table>
+        </div>
+
+        <!-- Dispositif & Consignes Clés Genech -->
+        <div style="background: white; border-radius: 12px; padding: 14px 18px; box-shadow: 0 4px 10px rgba(10,23,40,0.05); border: 1px solid #cbd5e1; margin: 8px 0;">
+            <div style="display:flex; justify-content:space-between; align-items:center; font-family:'Oswald',sans-serif; font-size:14px; font-weight:700; color:#0a1728; text-transform:uppercase; border-bottom:2px solid #ebb837; padding-bottom:4px; margin-bottom:8px;">
+                <span>🛡️ Plan de Jeu & Dispositif Anticipé ES Genech</span>
+                <span style="font-size:8.5px; color:#64748b;">Organisation Tactique Référente 4-3-3</span>
+            </div>
+            <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; font-size:10px;">
+                <div style="background:#f8fafc; border-radius:8px; padding:10px; border-left:4px solid #004687;">
+                    <strong style="color:#0a1728; font-size:11px;">Bloc Bas / Médian</strong><br/>
+                    Densité axiale maximale, couverture des seconds ballons et verrouillage des couloirs sur attaques rapides adverses.
+                </div>
+                <div style="background:#f8fafc; border-radius:8px; padding:10px; border-left:4px solid #ebb837;">
+                    <strong style="color:#0a1728; font-size:11px;">Milieu de Régulation</strong><br/>
+                    Orientation rapide dès la récupération, sortie de balle propre vers les ailiers sans prise de risque dans l'axe.
+                </div>
+                <div style="background:#f8fafc; border-radius:8px; padding:10px; border-left:4px solid #e8590c;">
+                    <strong style="color:#0a1728; font-size:11px;">Attaque en Rupture</strong><br/>
+                    Exploitation de la profondeur dans le dos des latéraux adverses et efficacité clinique sur coups de pied arrêtés.
+                </div>
+            </div>
         </div>
 
         <!-- Veille Disciplinaire Interne ESG -->

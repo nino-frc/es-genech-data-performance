@@ -25,6 +25,7 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 from player_rating import calculate_player_ratings
 from discipline_monitor import analyze_discipline
 from performance_drivers import analyze_performance_drivers
+from substitutions_impact import calculate_substitutions_impact
 
 def launch_browser(p):
     args = ['--disable-blink-features=AutomationControlled', '--no-sandbox']
@@ -50,6 +51,7 @@ def generate_executive_report():
     # Données analytiques
     df_ratings = calculate_player_ratings()
     df_discipline, alerts = analyze_discipline()
+    df_subs = calculate_substitutions_impact()
 
     # 1. Bilan sportif officiel
     genech_matches = df_matchs[
@@ -57,9 +59,6 @@ def generate_executive_report():
         (df_matchs['equipe_exterieur'].str.contains('GENECH', case=False, na=False))
     ]
     total_played = len(genech_matches)
-    
-    r3_matches = genech_matches[genech_matches['competition_id'] == 'r3_poule_d']
-    cdf_matches = genech_matches[genech_matches['competition_id'] == 'cdf_2026']
 
     victoires = 0
     nuls = 0
@@ -80,15 +79,14 @@ def generate_executive_report():
     invincibilite_pct = 100.0 if defaites == 0 else round((victoires + nuls) / total_played * 100, 1)
 
     # 2. Estimation financière & Discipline (Barème LFHF)
-    # En R3, coût d'un carton jaune ~18 €, carton rouge ~50 €, amende joueur suspendu aligné ~200 € + perte match
     total_cartons_j = len(df_events[(df_events['type_event'] == 'AVERTISSEMENT') & (df_events['equipe'].str.contains('GENECH', case=False, na=False))])
     total_cartons_r = len(df_events[(df_events['type_event'] == 'EXPULSION') & (df_events['equipe'].str.contains('GENECH', case=False, na=False))])
     cout_disciplinaire_estime = (total_cartons_j * 18) + (total_cartons_r * 50)
-    economie_amendes_evitees = 250  # Économie directe grâce à l'alerte sur les suspensions actives
+    economie_amendes_evitees = 250
 
     # 3. Revue d'effectif
     nb_joueurs_utilises = len(df_ratings)
-    top_3_joueurs = df_ratings.head(3)
+    top_5_joueurs = df_ratings.head(5)
 
     # Export des KPIs exécutifs
     kpis_exec = pd.DataFrame([{
@@ -100,8 +98,8 @@ def generate_executive_report():
         "buts_marques": buts_marques,
         "buts_encaisses": buts_encaisses,
         "invincibilite_pct": invincibilite_pct,
-        "cout_disciplinaire_eur": cout_disciplinaire_estime,
-        "economie_litiges_eur": economie_amendes_evitees,
+        "economie_disciplinaire_eur": economie_amendes_evitees,
+        "cout_disciplinaire_estime_eur": cout_disciplinaire_estime,
         "effectif_utilise": nb_joueurs_utilises
     }])
     kpis_exec.to_csv(os.path.join(OUTPUT_DIR, "dim_executive_kpis.csv"), index=False, encoding="utf-8-sig")
@@ -120,16 +118,19 @@ def generate_executive_report():
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }}
-            body {{
+            html, body {{
                 font-family: 'Montserrat', sans-serif;
                 margin: 0;
-                padding: 24px 28px;
+                padding: 26px 30px;
                 background-color: #ede8d8;
                 color: #0a1728;
                 width: 1080px;
+                height: 1920px;
+                max-height: 1920px;
                 display: flex;
                 flex-direction: column;
-                gap: 10px;
+                justify-content: space-between;
+                overflow: hidden;
             }}
 
             /* Header Exécutif */
@@ -147,7 +148,7 @@ def generate_executive_report():
             .header-left {{
                 display: flex;
                 align-items: center;
-                gap: 14px;
+                gap: 16px;
             }}
             .club-logo {{
                 width: 60px;
@@ -177,7 +178,7 @@ def generate_executive_report():
             .header-badge {{
                 background: #ebb837;
                 color: #0a1728;
-                padding: 8px 14px;
+                padding: 8px 16px;
                 border-radius: 10px;
                 text-align: center;
                 font-weight: 800;
@@ -188,166 +189,211 @@ def generate_executive_report():
                 text-transform: uppercase;
             }}
             .header-badge .tour {{
-                font-size: 13px;
+                font-size: 14px;
                 font-weight: 900;
             }}
 
-            /* Hero Titre Exécutif */
+            /* Hero Board */
             .hero-board {{
-                background: #0a1728;
+                background: white;
                 border-radius: 14px;
-                padding: 12px 20px;
-                color: white;
+                padding: 16px 22px;
+                box-shadow: 0 4px 12px rgba(10, 23, 40, 0.05);
                 border-left: 6px solid #ebb837;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                margin: 10px 0;
             }}
             .hero-board-left h2 {{
                 font-family: 'Oswald', sans-serif;
                 font-size: 20px;
-                margin: 0;
+                font-weight: 700;
+                margin: 0 0 4px 0;
+                color: #0a1728;
                 text-transform: uppercase;
-                color: #ffffff;
             }}
             .hero-board-left p {{
-                margin: 3px 0 0 0;
-                font-size: 9.5px;
-                color: #cbd5e1;
+                margin: 0;
+                font-size: 11px;
+                color: #64748b;
+                font-weight: 600;
             }}
             .hero-board-badge {{
-                background: #15803d;
-                color: white;
-                font-family: 'Oswald', sans-serif;
-                font-size: 13px;
-                font-weight: 700;
-                padding: 6px 14px;
+                background: #dcfce7;
+                color: #15803d;
+                font-size: 11px;
+                font-weight: 900;
+                padding: 7px 16px;
                 border-radius: 20px;
                 text-transform: uppercase;
+                border: 1px solid #86efac;
             }}
 
-            /* 4 Piliers Stratégiques */
+            /* 4 Grands KPIs Exécutifs */
             .kpi-grid {{
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                gap: 10px;
+                gap: 12px;
+                margin: 8px 0;
             }}
             .kpi-card {{
                 background: white;
-                border-radius: 12px;
-                padding: 10px 12px;
-                border-left: 5px solid #004687;
-                box-shadow: 0 4px 10px rgba(10, 23, 40, 0.05);
+                border-radius: 14px;
+                padding: 14px 16px;
+                box-shadow: 0 4px 12px rgba(10, 23, 40, 0.05);
+                border-top: 5px solid #004687;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
             }}
-            .kpi-card.gold {{ border-left-color: #ebb837; }}
-            .kpi-card.green {{ border-left-color: #15803d; }}
-            .kpi-card.orange {{ border-left-color: #e8590c; }}
+            .kpi-card.gold {{ border-top-color: #ebb837; }}
+            .kpi-card.green {{ border-top-color: #15803d; }}
+            .kpi-card.orange {{ border-top-color: #e8590c; }}
             .kpi-label {{
-                font-size: 8.5px;
+                font-size: 9.5px;
                 font-weight: 800;
                 text-transform: uppercase;
                 color: #64748b;
             }}
             .kpi-val {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 24px;
+                font-size: 26px;
                 font-weight: 700;
                 color: #0a1728;
-                margin: 2px 0;
+                margin: 4px 0;
             }}
             .kpi-sub {{
-                font-size: 8px;
+                font-size: 9px;
                 color: #475569;
                 font-weight: 600;
+                line-height: 1.25;
             }}
 
-            /* Section 2 Colonnes */
+            /* Split Grid : Sport & Gouvernance */
             .split-grid {{
                 display: grid;
-                grid-template-columns: 1.1fr 0.9fr;
-                gap: 10px;
+                grid-template-columns: 1fr 1fr;
+                gap: 14px;
+                margin: 8px 0;
             }}
             .board-card {{
                 background: white;
-                border-radius: 12px;
-                padding: 12px 16px;
-                box-shadow: 0 4px 10px rgba(10, 23, 40, 0.05);
-                border: 1px solid #cbd5e1;
+                border-radius: 14px;
+                padding: 16px 18px;
+                box-shadow: 0 4px 12px rgba(10, 23, 40, 0.05);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
             }}
             .card-title {{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 font-family: 'Oswald', sans-serif;
-                font-size: 13px;
+                font-size: 14px;
                 font-weight: 700;
                 color: #0a1728;
                 text-transform: uppercase;
                 border-bottom: 2px solid #ebb837;
-                padding-bottom: 3px;
-                margin-bottom: 8px;
+                padding-bottom: 5px;
+                margin-bottom: 10px;
             }}
 
-            /* Tableau Trajectoire */
+            /* Table Trajectoire */
             .traj-table {{
                 width: 100%;
                 border-collapse: collapse;
-                font-size: 9px;
+                font-size: 10.5px;
             }}
             .traj-table th {{
                 text-align: left;
-                padding: 4px 6px;
-                background: #f8fafc;
+                padding: 7px 8px;
+                background: #f1f5f9;
                 color: #475569;
                 font-weight: 800;
                 text-transform: uppercase;
+                font-size: 9px;
             }}
             .traj-table td {{
-                padding: 5px 6px;
-                border-bottom: 1px solid #f1f5f9;
+                padding: 8px 8px;
+                border-bottom: 1px solid #e2e8f0;
             }}
 
-            /* Encart Financier */
+            /* Boîtes Finances & Risques */
             .finance-box {{
-                background: #eff6ff;
-                border-radius: 8px;
-                padding: 8px 10px;
-                border-left: 4px solid #004687;
-                margin-bottom: 6px;
-                font-size: 8.5px;
+                background: #f8fafc;
+                border-radius: 10px;
+                padding: 11px 14px;
+                font-size: 10px;
+                line-height: 1.35;
+                border-left: 4px solid #15803d;
+                margin-bottom: 8px;
             }}
-            .finance-box strong {{ color: #004687; }}
+
+            /* Leaderboard Top 5 Performers */
+            .performers-box {{
+                background: white;
+                border-radius: 14px;
+                padding: 16px 20px;
+                box-shadow: 0 4px 12px rgba(10, 23, 40, 0.05);
+                margin: 8px 0;
+            }}
+            .performers-table {{
+                width: 100%;
+                border-collapse: collapse;
+                font-size: 11px;
+                margin-top: 6px;
+            }}
+            .performers-table th {{
+                text-align: left;
+                padding: 7px 10px;
+                background: #f8fafc;
+                color: #64748b;
+                font-size: 9px;
+                font-weight: 800;
+                text-transform: uppercase;
+            }}
+            .performers-table td {{
+                padding: 8px 10px;
+                border-bottom: 1px solid #f1f5f9;
+                font-weight: 600;
+            }}
 
             /* Recommandations Stratégiques */
             .reco-box {{
                 background: #0a1728;
                 color: white;
-                border-radius: 12px;
-                padding: 10px 16px;
-                border-left: 5px solid #ebb837;
+                border-radius: 14px;
+                padding: 16px 22px;
+                border-left: 6px solid #ebb837;
+                margin: 10px 0;
             }}
             .reco-title {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 12px;
+                font-size: 15px;
                 font-weight: 700;
                 color: #ebb837;
                 text-transform: uppercase;
-                margin-bottom: 4px;
+                letter-spacing: 0.5px;
+                margin-bottom: 8px;
             }}
             .reco-list {{
                 margin: 0;
-                padding-left: 14px;
-                font-size: 8.5px;
-                line-height: 1.4;
+                padding-left: 18px;
+                font-size: 10.5px;
+                line-height: 1.45;
                 color: #e2e8f0;
             }}
-            .reco-list li {{ margin-bottom: 3px; }}
+            .reco-list li {{
+                margin-bottom: 6px;
+            }}
 
             /* Footer */
             .footer {{
                 background: #ebb837;
                 border-radius: 12px;
-                padding: 8px 16px;
+                padding: 10px 18px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -356,11 +402,11 @@ def generate_executive_report():
             }}
             .footer .slogan {{
                 font-family: 'Oswald', sans-serif;
-                font-size: 13px;
+                font-size: 14px;
                 letter-spacing: 1px;
                 text-transform: uppercase;
             }}
-            .footer .tag {{ font-size: 8px; font-weight: 800; }}
+            .footer .tag {{ font-size: 9px; font-weight: 800; }}
         </style>
     </head>
     <body>
@@ -375,7 +421,7 @@ def generate_executive_report():
                 </div>
             </div>
             <div class="header-badge">
-                <div class="comp">Bilan Mensuel</div>
+                <div class="comp">Bilan Mensuel Stratégique</div>
                 <div class="tour">OCTOBRE 2026</div>
             </div>
         </div>
@@ -384,7 +430,7 @@ def generate_executive_report():
         <div class="hero-board">
             <div class="hero-board-left">
                 <h2>Synthèse Stratégique & Performance de l'Équipe Première</h2>
-                <p>Document exécutif d'aide à la décision pour le Président et le Comité Directeur</p>
+                <p>Document exécutif d'aide à la décision pour le Président, le Trésorier et le Comité Directeur</p>
             </div>
             <div class="hero-board-badge">Bilan Positif • 100 % Invaincu</div>
         </div>
@@ -419,8 +465,8 @@ def generate_executive_report():
             <!-- Colonne Gauche : Trajectoire Sportive vs Monte-Carlo -->
             <div class="board-card">
                 <div class="card-title">
-                    <span>🏆 Trajectoire Sportive & Objectif Montée R2</span>
-                    <span style="font-size: 8px; color:#64748b;">Simulation Monte-Carlo (20 000 runs)</span>
+                    <span>🏆 Trajectoire Sportive & Montée R2</span>
+                    <span style="font-size: 8.5px; color:#64748b;">Monte-Carlo (20 000 runs)</span>
                 </div>
                 <table class="traj-table">
                     <thead>
@@ -459,7 +505,7 @@ def generate_executive_report():
                     </tbody>
                 </table>
 
-                <div style="margin-top: 10px; font-size: 8.5px; color:#475569; line-height: 1.35;">
+                <div style="margin-top: 10px; font-size: 9.5px; color:#475569; line-height: 1.35;">
                     💡 <strong>Constat Data :</strong> Genech réalise le meilleur démarrage de saison de son histoire récente. La solidité défensive (5 clean sheets sur 8 matchs) compense une efficacité offensive mesurée (1.5 b/m).
                 </div>
             </div>
@@ -468,11 +514,11 @@ def generate_executive_report():
             <div class="board-card">
                 <div class="card-title">
                     <span>⚖️ Gouvernance, Effectif & Économies FFF</span>
-                    <span style="font-size: 8px; color:#64748b;">Règlements Généraux FFF</span>
+                    <span style="font-size: 8.5px; color:#64748b;">Règlements FFF Art. 226</span>
                 </div>
 
                 <div class="finance-box">
-                    <strong>🛡️ Sécurisation Administrative :</strong><br/>
+                    <strong>🛡️ Sécurisation Administrative & Juridique :</strong><br/>
                     Grâce à la détection automatique du sursis et de l'exclusion de Gaspard Droupsy, le club a évité un risque de match perdu par pénalité et une amende FFF de <strong>~250 €</strong>.
                 </div>
 
@@ -482,11 +528,50 @@ def generate_executive_report():
                     • Coût estimé des cartons du mois : <strong>~{cout_disciplinaire_estime} €</strong> (à maîtriser lors des prochains derbys).
                 </div>
 
-                <div style="font-size: 8.5px; color:#334155; margin-top: 6px;">
-                    <strong>👥 Utilisation de l'effectif :</strong> {nb_joueurs_utilises} joueurs mobilisés en Senior 1. Aucun conflit de vestiaire : 100 % des remplaçants affichent un ratio Plus/Minus positif.
+                <div style="font-size: 9.5px; color:#334155; margin-top: 4px;">
+                    <strong>👥 Mobilisation de l'effectif :</strong> {nb_joueurs_utilises} joueurs qualifiés en Senior 1. 100 % des remplaçants affichent un ratio Plus/Minus positif.
                 </div>
             </div>
 
+        </div>
+
+        <!-- Leaderboard Top 5 Performers de l'Équipe Première -->
+        <div class="performers-box">
+            <div class="card-title">
+                <span>⭐ Top 5 Performers & Capital Sportif (ESG Impact Scores)</span>
+                <span style="font-size: 8.5px; color:#64748b;">Algorithme Propriétaire R3 Foot Amateur</span>
+            </div>
+            <table class="performers-table">
+                <thead>
+                    <tr>
+                        <th>Rang</th>
+                        <th>Joueur</th>
+                        <th>Score ESG</th>
+                        <th>Rôle Tactique</th>
+                        <th>Temps de Jeu</th>
+                        <th>Statistiques Clés</th>
+                        <th>Statut FFF</th>
+                    </tr>
+                </thead>
+                <tbody>
+    """
+
+    for i, (_, row) in enumerate(top_5_joueurs.iterrows(), 1):
+        html += f"""
+                    <tr>
+                        <td><strong style="color:#0a1728;">#{i}</strong></td>
+                        <td><strong>{row['joueur']}</strong></td>
+                        <td><span style="background:#0a1728; color:#ebb837; padding:2px 7px; border-radius:5px; font-weight:800;">{row['esg_impact_score']:.1f} pts</span></td>
+                        <td>{row['badge_tactique']}</td>
+                        <td>{int(row['minutes_estimees'])} min ({int(row['titularisations'])} tit.)</td>
+                        <td>{int(row['buts'])} buts • {int(row['clean_sheets_participees'])} CS</td>
+                        <td><span style="color:{'#15803d' if row['cartons_rouges'] == 0 and row['cartons_jaunes'] <= 1 else '#c2410c'}; font-weight:700;">{int(row['cartons_jaunes'])} J • {int(row['cartons_rouges'])} R</span></td>
+                    </tr>
+        """
+
+    html += f"""
+                </tbody>
+            </table>
         </div>
 
         <!-- 3 Recommandations Stratégiques pour le Comité Directeur -->
@@ -521,7 +606,7 @@ def generate_executive_report():
         page.pdf(path=out_pdf, print_background=True, width="1080px", height="1920px")
         browser.close()
 
-    print("Rapport Exécutif Mensuel (Président & Comité Directeur) généré avec succès en PNG et PDF !")
+    print("Rapport Exécutif Mensuel (Président & Comité Directeur) régénéré avec succès en PNG et PDF !")
 
 if __name__ == "__main__":
     generate_executive_report()
