@@ -408,7 +408,55 @@ else:
                 }
             )
         else:
-            st.info(f"Les feuilles de match individuelles détaillées (minutes/joueur) sont principalement actives pour l'équipe Senior A. Résultats d'équipe affichés dans l'onglet Calendrier.")
+            conn = sqlite3.connect(DB_PATH)
+            team_players_df = pd.read_sql_query("""
+                SELECT ml.joueur_nom, 
+                       count(DISTINCT ml.match_id) as matchs_joues,
+                       sum(case when ml.role = 'TITULAIRE' then 1 else 0 end) as titularisations,
+                       sum(case when ml.role = 'REMPLACANT' then 1 else 0 end) as remplacements
+                FROM match_lineups ml
+                JOIN matchs m ON ml.match_id = m.id
+                WHERE m.equipe_club_id = ? AND ml.equipe LIKE '%GENECH%'
+                GROUP BY ml.joueur_nom
+                ORDER BY matchs_joues DESC, titularisations DESC
+            """, conn, params=(selected_option,))
+            
+            team_scorers_df = pd.read_sql_query("""
+                SELECT me.acteur_principal as buteur, count(*) as buts
+                FROM match_events me
+                JOIN matchs m ON me.match_id = m.id
+                WHERE m.equipe_club_id = ? AND me.type_event = 'BUT' AND me.equipe LIKE '%GENECH%'
+                GROUP BY me.acteur_principal
+                ORDER BY buts DESC
+            """, conn, params=(selected_option,))
+            conn.close()
+
+            if not team_players_df.empty:
+                st.markdown(f"#### 👥 Effectif Officiel & Temps de Jeu ({len(team_players_df)} Joueurs Convoqués)")
+                st.caption(f"Données officielles feuilles de match FFF • {current_title}")
+
+                if not team_scorers_df.empty:
+                    team_players_df = team_players_df.merge(team_scorers_df, left_on="joueur_nom", right_on="buteur", how="left")
+                    team_players_df["buts"] = team_players_df["buts"].fillna(0).astype(int)
+                else:
+                    team_players_df["buts"] = 0
+
+                team_players_df.insert(0, "rang", range(1, len(team_players_df) + 1))
+                st.dataframe(
+                    team_players_df[["rang", "joueur_nom", "matchs_joues", "titularisations", "remplacements", "buts"]],
+                    use_container_width=True,
+                    hide_index=True,
+                    column_config={
+                        "rang": st.column_config.NumberColumn("#", format="%d", width="small"),
+                        "joueur_nom": st.column_config.TextColumn("Joueur"),
+                        "matchs_joues": st.column_config.NumberColumn("Convocations", format="%d"),
+                        "titularisations": st.column_config.NumberColumn("Titularisations", format="%d"),
+                        "remplacements": st.column_config.NumberColumn("Entrées en Jeu", format="%d"),
+                        "buts": st.column_config.NumberColumn("Buts Marqués ⚽", format="%d")
+                    }
+                )
+            else:
+                st.info(f"Pour la catégorie {current_title}, les feuilles de match nominatives informatisées (FMI) sont en cours de saisie par le District. Les résultats d'équipe et scores sont consultables dans l'onglet 'Calendrier & Résultats'.")
 
     with tab_disc:
         if selected_option in ["SENIOR_M1", "SENIOR_M3"]:
@@ -422,9 +470,24 @@ else:
 
             if selected_option == "SENIOR_M3":
                 st.markdown("#### 🔒 Contrôle du Brûlage pour la Réserve (Art. 167 FFF)")
-                st.info("Vérification des joueurs de l'équipe première autorisés à descendre en équipe réserve (D2).")
+                st.info("Vérification réglementaire FFF : les joueurs de l'équipe première ayant disputé plus de 10 matchs officiels en R3 sont 'brûlés' et ne peuvent plus descendre en D2.")
         else:
-            st.info("Aucune alerte disciplinaire signalée pour cette catégorie.")
+            conn = sqlite3.connect(DB_PATH)
+            team_cards = pd.read_sql_query("""
+                SELECT me.acteur_principal as joueur, me.type_event as sanction, count(*) as total,
+                       group_concat(m.date_heure, ', ') as dates
+                FROM match_events me
+                JOIN matchs m ON me.match_id = m.id
+                WHERE m.equipe_club_id = ? AND me.type_event IN ('AVERTISSEMENT', 'EXPULSION') AND me.equipe LIKE '%GENECH%'
+                GROUP BY me.acteur_principal, me.type_event
+            """, conn, params=(selected_option,))
+            conn.close()
+
+            if not team_cards.empty:
+                st.markdown("#### ⚖️ Discipline Officielle de la Catégorie")
+                st.dataframe(team_cards, use_container_width=True, hide_index=True)
+            else:
+                st.success(f"✅ Aucun carton officiel enregistré pour {current_title} sur les feuilles FFF. Fair-play parfait !")
 
     with tab_docs:
         if selected_option == "SENIOR_M1":
