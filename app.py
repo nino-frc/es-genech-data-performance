@@ -4,10 +4,18 @@ Application Web & Mobile (PWA) de la cellule Performance de l'ES Genech (FFF #52
 """
 
 import os
+import sys
 import sqlite3
+import importlib
 import pandas as pd
 import streamlit as st
 from datetime import datetime
+
+# Rechargement dynamique des modules de scoring
+import player_rating
+import discipline_monitor
+importlib.reload(discipline_monitor)
+importlib.reload(player_rating)
 
 st.set_page_config(
     page_title="ES Genech • Hub Performance",
@@ -21,22 +29,22 @@ DB_PATH = os.path.join(BASE_DIR, "genech_performance.db")
 LOGO_PATH = os.path.join(BASE_DIR, "logo_genech_transparent.png")
 OUTPUT_DIR = os.path.join(BASE_DIR, "briefings_coach")
 
-# Style CSS Club
+# Style CSS Club avec contraste garanti (mode clair & sombre)
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Oswald:wght@600;700&display=swap');
 
-    html, body, [class*="css"] {
+    html, body, [class*="css"], .stApp {
         font-family: 'Montserrat', sans-serif;
+        background-color: #f8fafc !important;
+        color: #0a1728 !important;
     }
-    .stApp {
-        background-color: #f8fafc;
-    }
+
+    /* En-tête Club Genech */
     .club-header {
         background: linear-gradient(135deg, #0a1728 0%, #152744 100%);
         border-radius: 14px;
         padding: 16px 22px;
-        color: white;
         margin-bottom: 20px;
         border-bottom: 4px solid #ebb837;
         box-shadow: 0 6px 16px rgba(10, 23, 40, 0.12);
@@ -45,20 +53,60 @@ st.markdown("""
         justify-content: space-between;
     }
     .club-header h1 {
-        font-family: 'Oswald', sans-serif;
-        font-size: 26px;
-        font-weight: 700;
-        margin: 0;
+        font-family: 'Oswald', sans-serif !important;
+        font-size: 26px !important;
+        font-weight: 700 !important;
+        margin: 0 !important;
         text-transform: uppercase;
         letter-spacing: 1px;
+        color: white !important;
     }
-    .club-header h1 span { color: #ebb837; }
+    .club-header h1 span { color: #ebb837 !important; }
     .club-header p {
-        margin: 3px 0 0 0;
-        font-size: 12px;
-        color: #cbd5e1;
-        font-weight: 600;
+        margin: 3px 0 0 0 !important;
+        font-size: 12px !important;
+        color: #cbd5e1 !important;
+        font-weight: 600 !important;
     }
+
+    /* FORCER LE CONTRASTE DE TOUS LES TEXTES ET TITRES STREAMLIT */
+    h1, h2, h3, h4, h5, h6, .stMarkdown p, .stMarkdown span, .stMarkdown strong {
+        color: #0a1728 !important;
+    }
+    .stCaption, [data-testid="stCaptionContainer"] p {
+        color: #475569 !important;
+        font-weight: 600 !important;
+    }
+
+    /* ONGLETS STREAMLIT : TEXTE CLAIREMENT LISIBLE À CÔTÉ DES EMOJIS */
+    button[data-baseweb="tab"] {
+        padding: 10px 18px !important;
+        background-color: #ffffff !important;
+        border-radius: 8px 8px 0 0 !important;
+        margin-right: 4px !important;
+        border: 1px solid #e2e8f0 !important;
+        border-bottom: none !important;
+    }
+    button[data-baseweb="tab"] div,
+    button[data-baseweb="tab"] p,
+    button[data-baseweb="tab"] span {
+        color: #334155 !important;
+        font-size: 14px !important;
+        font-weight: 700 !important;
+        opacity: 1 !important;
+    }
+    button[data-baseweb="tab"][aria-selected="true"] {
+        background-color: #0a1728 !important;
+        border-bottom: 3px solid #ebb837 !important;
+    }
+    button[data-baseweb="tab"][aria-selected="true"] div,
+    button[data-baseweb="tab"][aria-selected="true"] p,
+    button[data-baseweb="tab"][aria-selected="true"] span {
+        color: #ebb837 !important;
+        font-weight: 900 !important;
+    }
+
+    /* Cartes Métriques */
     .metric-card {
         background: white;
         border-radius: 12px;
@@ -74,19 +122,27 @@ st.markdown("""
         font-size: 11px;
         font-weight: 800;
         text-transform: uppercase;
-        color: #64748b;
+        color: #64748b !important;
     }
     .metric-value {
         font-family: 'Oswald', sans-serif;
         font-size: 26px;
         font-weight: 700;
-        color: #0a1728;
+        color: #0a1728 !important;
         margin: 3px 0;
     }
     .metric-sub {
         font-size: 11px;
-        color: #475569;
+        color: #475569 !important;
         font-weight: 600;
+    }
+
+    /* Tableaux Streamlit : index masqué, design moderne */
+    [data-testid="stDataFrame"] {
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid #cbd5e1;
+        box-shadow: 0 4px 12px rgba(10, 23, 40, 0.05);
     }
 </style>
 """, unsafe_allow_html=True)
@@ -110,7 +166,7 @@ st.markdown("""
         <h1>ES <span>GENECH</span> • HUB DATA PERFORMANCE</h1>
         <p>Plateforme Tactique & Analytics Officielle • Club FFF #525674</p>
     </div>
-    <div style="background: rgba(235, 184, 55, 0.15); border: 1px solid #ebb837; color: #ebb837; padding: 6px 14px; border-radius: 20px; font-weight: 800; font-size: 12px;">
+    <div style="background: rgba(235, 184, 55, 0.2); border: 1px solid #ebb837; color: #ebb837; padding: 6px 14px; border-radius: 20px; font-weight: 800; font-size: 12px;">
         16 ÉQUIPES ENGAGÉES
     </div>
 </div>
@@ -241,13 +297,13 @@ if is_global:
                 "Score": score_txt,
                 "Statut": row["statut"]
             })
-        st.dataframe(pd.DataFrame(table_rows), use_container_width=True)
+        st.dataframe(pd.DataFrame(table_rows), use_container_width=True, hide_index=True)
 
     with tab_about:
         st.markdown("#### ℹ️ Club FFF : Entente Sportive de Genech")
         st.write("Numéro d'affiliation officiel FFF : **#525674**")
         st.write("Nombre total d'équipes enregistrées : **16 catégories**")
-        st.dataframe(equipes_df[["nom_affiche", "pole", "championnat", "format_jeu"]], use_container_width=True)
+        st.dataframe(equipes_df[["nom_affiche", "pole", "championnat", "format_jeu"]], use_container_width=True, hide_index=True)
 
 else:
     # VUE FOCUS ÉQUIPE
@@ -298,26 +354,51 @@ else:
                 st.info("Aucun match à venir programmé.")
 
         st.markdown("##### 📅 Calendrier Officiel de la Saison")
-        st.dataframe(current_matchs[["date_heure", "competition_id", "equipe_domicile", "score_domicile", "score_exterieur", "equipe_exterieur", "statut"]], use_container_width=True)
+        st.dataframe(current_matchs[["date_heure", "competition_id", "equipe_domicile", "score_domicile", "score_exterieur", "equipe_exterieur", "statut"]], use_container_width=True, hide_index=True)
 
     with tab_perf:
         if selected_option == "SENIOR_M1":
-            from player_rating import calculate_player_ratings
-            ratings_df = calculate_player_ratings()
-            st.markdown("#### 🏆 Ratings FM / FIFA & ESG Impact Scores (Senior A)")
-            st.dataframe(ratings_df[["joueur", "esg_impact_score", "badge_tactique", "matchs_joues", "titularisations", "minutes_estimees", "buts", "clean_sheets_participees", "cartons_jaunes", "cartons_rouges"]], use_container_width=True)
+            importlib.reload(player_rating)
+            ratings_df = player_rating.calculate_player_ratings()
+            
+            st.markdown(f"#### 🏆 Classement ESG Impact Score • Effectif Senior A ({len(ratings_df)} Joueurs)")
+            st.caption("Données certifiées feuilles de match officielles FFF (Régional 3 Poule D & Coupe de France)")
+
+            search_query = st.text_input("🔍 Rechercher un joueur (ex: Elio, Devernay, Herve...)", key="search_player")
+            df_display = ratings_df.copy()
+            if search_query:
+                df_display = df_display[df_display["joueur"].str.contains(search_query.strip(), case=False, na=False)]
+
+            st.dataframe(
+                df_display[["rang", "joueur", "esg_impact_score", "badge_tactique", "matchs_joues", "titularisations", "minutes_estimees", "buts", "clean_sheets_participees", "cartons_jaunes", "cartons_rouges"]],
+                use_container_width=True,
+                hide_index=True,
+                column_config={
+                    "rang": st.column_config.NumberColumn("#", format="%d", width="small"),
+                    "joueur": st.column_config.TextColumn("Joueur", width="medium"),
+                    "esg_impact_score": st.column_config.NumberColumn("Score ESG", format="%.1f pts"),
+                    "badge_tactique": st.column_config.TextColumn("Rôle Tactique"),
+                    "matchs_joues": st.column_config.NumberColumn("Matchs", format="%d"),
+                    "titularisations": st.column_config.NumberColumn("Tit.", format="%d"),
+                    "minutes_estimees": st.column_config.NumberColumn("Minutes", format="%d'"),
+                    "buts": st.column_config.NumberColumn("Buts", format="%d"),
+                    "clean_sheets_participees": st.column_config.NumberColumn("Clean Sheets", format="%d"),
+                    "cartons_jaunes": st.column_config.NumberColumn("🟨", format="%d"),
+                    "cartons_rouges": st.column_config.NumberColumn("🟥", format="%d")
+                }
+            )
         else:
             st.info(f"Les feuilles de match individuelles détaillées (minutes/joueur) sont principalement actives pour l'équipe Senior A. Résultats d'équipe affichés dans l'onglet Calendrier.")
 
     with tab_disc:
         if selected_option in ["SENIOR_M1", "SENIOR_M3"]:
-            from discipline_monitor import analyze_discipline
-            df_disc, alerts_disc = analyze_discipline()
+            importlib.reload(discipline_monitor)
+            df_disc, alerts_disc = discipline_monitor.analyze_discipline()
             st.markdown("#### 🚨 Alertes de Suspension Active (Art. 226 FFF)")
             for a in alerts_disc:
                 st.warning(a)
             st.markdown("#### 📋 Casier Disciplinaire")
-            st.dataframe(df_disc, use_container_width=True)
+            st.dataframe(df_disc, use_container_width=True, hide_index=True)
 
             if selected_option == "SENIOR_M3":
                 st.markdown("#### 🔒 Contrôle du Brûlage pour la Réserve (Art. 167 FFF)")
@@ -328,23 +409,32 @@ else:
     with tab_docs:
         if selected_option == "SENIOR_M1":
             st.markdown("#### 📄 Téléchargement des Livrables Staff (Senior A)")
-            col_d1, col_d2 = st.columns(2)
+            col_d1, col_d2, col_d3 = st.columns(3)
             with col_d1:
                 b_pdf = os.path.join(OUTPUT_DIR, "briefing_match_latest.pdf")
                 if os.path.exists(b_pdf):
                     with open(b_pdf, "rb") as f:
-                        st.download_button("📥 Télécharger le Briefing PDF (Avant-Match)", f, file_name="briefing_es_genech.pdf", mime="application/pdf")
+                        st.download_button("📥 Briefing Avant-Match (PDF)", f, file_name="briefing_es_genech.pdf", mime="application/pdf")
                 b_png = os.path.join(OUTPUT_DIR, "briefing_match_latest.png")
                 if os.path.exists(b_png):
-                    st.image(b_png, caption="Aperçu du Briefing d'Avant-Match", width=380)
+                    st.image(b_png, caption="Aperçu Briefing Tactique", use_container_width=True)
 
             with col_d2:
                 d_pdf = os.path.join(OUTPUT_DIR, "debrief_match_latest.pdf")
                 if os.path.exists(d_pdf):
                     with open(d_pdf, "rb") as f:
-                        st.download_button("📥 Télécharger le Débrief 90' PDF (Post-Match)", f, file_name="debrief_postmatch_genech.pdf", mime="application/pdf")
+                        st.download_button("📥 Débrief 90' Post-Match (PDF)", f, file_name="debrief_postmatch_genech.pdf", mime="application/pdf")
                 d_png = os.path.join(OUTPUT_DIR, "debrief_match_latest.png")
                 if os.path.exists(d_png):
-                    st.image(d_png, caption="Aperçu du Débrief Post-Match", width=380)
+                    st.image(d_png, caption="Aperçu Débrief 90'", use_container_width=True)
+
+            with col_d3:
+                c_pdf = os.path.join(OUTPUT_DIR, "cartes_profil_joueurs.pdf")
+                if os.path.exists(c_pdf):
+                    with open(c_pdf, "rb") as f:
+                        st.download_button("📥 Cartes Profil Joueurs (PDF)", f, file_name="cartes_profil_joueurs.pdf", mime="application/pdf")
+                c_png = os.path.join(OUTPUT_DIR, "cartes_profil_joueurs.png")
+                if os.path.exists(c_png):
+                    st.image(c_png, caption="Aperçu Cartes FM / FIFA", use_container_width=True)
         else:
             st.info(f"Les fiches tactiques PDF d'avant-match et de débriefing hebdomadaire sont générées pour l'équipe fanion (Senior 1).")

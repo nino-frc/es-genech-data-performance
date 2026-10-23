@@ -143,15 +143,22 @@ def parse_match_details(page, match_url: str):
                         })
 
         elif current_section == "COMPOSITION":
+            if line in ["LIEU DE LA RENCONTRE", "DÉTAIL DE L'INSTALLATION", "DETAIL DE L'INSTALLATION", "OFFICIELS", "ARBITRES", "LA FÉDÉRATION", "LA FEDERATION"]:
+                current_section = "FIN"
+            elif line not in ["TITULAIRES", "TITULAIRE", "REMPLAÇANTS", "REMPLACANTS", "COMPOSITION"] and not line.isdigit() and len(line) > 3:
+                if i + 1 < len(lines) and lines[i + 1] in ["TITULAIRES", "TITULAIRE", "REMPLAÇANTS", "REMPLACANTS"]:
+                    current_team = line.strip().upper()
+            
             if line.isdigit() and i + 1 < len(lines):
                 num = int(line)
                 name = lines[i + 1]
                 if not name.isdigit() and name not in ["TITULAIRES", "REMPLAÇANTS", "REMPLACANTS", "DIRIGEANTS", "OFFICIELS", "ARBITRES"]:
-                    team = "GENECH ES"
+                    team = current_team if 'current_team' in locals() and current_team else "GENECH ES"
+                    from discipline_monitor import normalize_player_name
                     lineups.append({
                         "equipe": team,
                         "numero": num,
-                        "joueur_nom": name,
+                        "joueur_nom": normalize_player_name(name),
                         "role": current_role
                     })
                     i += 1

@@ -122,7 +122,8 @@ def generate_analytics():
     df_matchs.to_csv(os.path.join(OUTPUT_DIR, "dim_matchs.csv"), index=False, encoding="utf-8-sig")
     df_events.to_csv(os.path.join(OUTPUT_DIR, "fact_events.csv"), index=False, encoding="utf-8-sig")
     df_classement.to_csv(os.path.join(OUTPUT_DIR, "dim_classement.csv"), index=False, encoding="utf-8-sig")
-    df_lineups.to_csv(os.path.join(OUTPUT_DIR, "dim_lineups.csv"), index=False, encoding="utf-8-sig")
+    df_lineups.to_csv(os.path.join(OUTPUT_DIR, "dim_lineups_tous_clubs.csv"), index=False, encoding="utf-8-sig")
+    df_lineups[df_lineups["equipe"].str.contains("GENECH", case=False, na=False)].to_csv(os.path.join(OUTPUT_DIR, "dim_lineups.csv"), index=False, encoding="utf-8-sig")
     df_joueurs.to_csv(os.path.join(OUTPUT_DIR, "dim_joueurs_stats.csv"), index=False, encoding="utf-8-sig")
 
     total_buts_reels = int(df_matchs[df_matchs['statut'] == 'TERMINE']['buts_marques_genech'].sum())

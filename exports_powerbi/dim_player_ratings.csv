@@ -1,22 +1,21 @@
-﻿joueur,esg_impact_score,badge_tactique,matchs_joues,titularisations,minutes_estimees,clean_sheets_participees,buts,cartons_jaunes,cartons_rouges
-JULIEN DEVERNAY,69.6,🎯 Buteur d'Élite,8,7,620,5,2,2,0
-JULIEN NISSE,53.4,🛡️ Roc Défensif,8,6,604,4,1,1,0
-MATHYS HERVE,53.2,🛡️ Roc Défensif,8,8,720,5,1,3,0
-GIOVANY CALON,50.9,🛡️ Roc Défensif,8,6,441,4,1,1,0
-AUGUSTIN DROUPSY,50.0,🛡️ Roc Défensif,8,8,644,5,0,0,0
-GASPARD DROUPSY,48.1,🎯 Buteur d'Élite,8,6,523,5,2,4,1
-TIM LACOTE,43.8,🛡️ Roc Défensif,7,7,630,4,0,0,0
-MAXIME PETIT,43.2,🛡️ Roc Défensif,8,8,720,5,0,2,0
-HUGO HERVE,41.6,🛡️ Roc Défensif,7,7,615,4,1,1,1
-CLEMENT DURIEZ,35.5,🛡️ Roc Défensif,7,6,484,3,0,0,0
-JEAN PAUL BANGALA TOFIFI,33.6,🛡️ Roc Défensif,7,5,361,3,0,0,0
-ARTHUR CLIQUE,26.4,⚡ Super-Sub / Impact Player,5,2,286,2,0,0,0
-REMI DEFENIN,25.0,⚡ Super-Sub / Impact Player,4,2,195,2,0,0,0
-ELIO DELCROIX,18.6,⚡ Super-Sub / Impact Player,6,1,170,1,0,0,0
-REMI DELOBEL,17.6,⚙️ Régulateur / Titulaire Cadre,4,4,360,1,0,1,0
-DANY DE FREITAS,12.3,⚡ Super-Sub / Impact Player,4,1,146,0,0,0,0
-ROMAIN RAPAILLE,10.0,🔄 Rotation Effectif,4,0,0,0,0,0,0
-CORENTIN DELOOR,9.9,🔄 Rotation Effectif,1,1,90,1,0,0,0
-JULES DIVERCHY,8.1,🔄 Rotation Effectif,3,0,38,0,0,0,0
-THOMAS LEONARD,2.3,🔄 Rotation Effectif,2,1,83,0,0,1,0
-MATEO SURMONT,0.0,🔄 Rotation Effectif,2,1,100,0,0,2,1
+﻿rang,joueur,esg_impact_score,badge_tactique,matchs_joues,titularisations,minutes_estimees,clean_sheets_participees,buts,cartons_jaunes,cartons_rouges
+1,JULIEN DEVERNAY,69.6,🎯 Buteur d'Élite,8,7,620,5,2,2,0
+2,JULIEN NISSE,53.4,🛡️ Roc Défensif,8,6,604,4,1,1,0
+3,MATHYS HERVE,53.2,🛡️ Roc Défensif,8,8,720,5,1,3,0
+4,GIOVANY CALON,50.9,🛡️ Roc Défensif,8,6,441,4,1,1,0
+5,AUGUSTIN DROUPSY,50.0,🛡️ Roc Défensif,8,8,644,5,0,0,0
+6,GASPARD DROUPSY,48.1,🎯 Buteur d'Élite,8,6,523,5,2,4,1
+7,TIM LACOTE,43.8,🛡️ Roc Défensif,7,7,630,4,0,0,0
+8,MAXIME PETIT,43.2,🛡️ Roc Défensif,8,8,720,5,0,2,0
+9,HUGO HERVE,41.6,🛡️ Roc Défensif,7,7,615,4,1,1,1
+10,CLEMENT DURIEZ,35.5,🛡️ Roc Défensif,7,6,484,3,0,0,0
+11,JEAN PAUL BANGALA TOFIFI,33.6,🛡️ Roc Défensif,7,5,361,3,0,0,0
+12,REMI DEFENIN,32.6,🛡️ Roc Défensif,8,6,555,3,0,1,0
+13,ARTHUR CLIQUE,26.4,⚡ Super-Sub / Impact Player,5,2,286,2,0,0,0
+14,ELIO DELCROIX,18.6,⚡ Super-Sub / Impact Player,6,1,170,1,0,0,0
+15,DANY DE FREITAS,12.3,⚡ Super-Sub / Impact Player,4,1,146,0,0,0,0
+16,ROMAIN RAPAILLE,10.0,🔄 Rotation Effectif,4,0,0,0,0,0,0
+17,CORENTIN DELOOR,9.9,🔄 Rotation Effectif,1,1,90,1,0,0,0
+18,JULES DIVERCHY,8.1,🔄 Rotation Effectif,3,0,38,0,0,0,0
+19,THOMAS LEONARD,2.3,🔄 Rotation Effectif,2,1,83,0,0,1,0
+20,MATEO SURMONT,0.0,🔄 Rotation Effectif,2,1,100,0,0,2,1

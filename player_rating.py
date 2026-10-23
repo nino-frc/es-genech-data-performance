@@ -142,7 +142,8 @@ def calculate_player_ratings():
             "cartons_rouges": cartons_r
         })
 
-    df_ratings = pd.DataFrame(ratings_list).sort_values(by="esg_impact_score", ascending=False)
+    df_ratings = pd.DataFrame(ratings_list).sort_values(by="esg_impact_score", ascending=False).reset_index(drop=True)
+    df_ratings.insert(0, "rang", range(1, len(df_ratings) + 1))
 
     # Export CSV pour Power BI
     output_csv = os.path.join(OUTPUT_DIR, "dim_player_ratings.csv")

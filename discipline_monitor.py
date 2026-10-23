@@ -30,7 +30,8 @@ NAME_MAPPING = {
     "JULIEN N.": "JULIEN NISSE",
     "MAXIME P.": "MAXIME PETIT",
     "MAXIME PETITPREZ": "MAXIME PETIT",
-    "REMI D.": "REMI DELOBEL",
+    "REMI D.": "REMI DEFENIN",
+    "REMI DELOBEL": "REMI DEFENIN",
     "GIOVANY C.": "GIOVANY CALON",
     "GIOVANY CLERY": "GIOVANY CALON",
     "CLEMENT D.": "CLEMENT DURIEZ",
@@ -181,7 +182,7 @@ def analyze_discipline(reference_date=None):
     df_discipline = pd.DataFrame(discipline_records)
     sort_order = {"ROUGE": 0, "ORANGE": 1, "JAUNE": 2, "VERT": 3}
     df_discipline['sort_key'] = df_discipline['niveau_alerte'].map(sort_order)
-    df_discipline = df_discipline.sort_values(by=['sort_key', 'cartons_jaunes_90j'], ascending=[True, False]).drop(columns=['sort_key'])
+    df_discipline = df_discipline.sort_values(by=['sort_key', 'cartons_jaunes_90j'], ascending=[True, False]).drop(columns=['sort_key']).reset_index(drop=True)
 
     output_csv = os.path.join(OUTPUT_DIR, "dim_discipline_genech.csv")
     df_discipline.to_csv(output_csv, index=False, encoding="utf-8-sig")

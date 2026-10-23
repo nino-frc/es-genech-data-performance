@@ -1,199 +1,21 @@
 ﻿joueur_nom,statut_tactique,titularisations,entrees_en_jeu,matchs_feuille,minutes_jouees_estimees,buts,cartons_jaunes,cartons_rouges
-JULIEN D.,Rotation / Titulaire régulier,3,1,4,260,2,2,0
-GASPARD D.,Rotation / Titulaire régulier,2,2,4,163,2,4,1
-MATHYS H.,Pilier / Titulaire indiscutable,4,0,4,360,1,3,0
-HUGO H.,Pilier / Titulaire indiscutable,4,0,4,345,1,1,1
-JULIEN DEVERNAY,Pilier / Titulaire indiscutable,4,0,4,327,1,1,0
-JULIEN N.,Rotation / Titulaire régulier,3,2,4,334,1,1,0
-JULIEN NISSE,Rotation / Titulaire régulier,3,1,4,296,1,1,0
-GIOVANY CALON,Rotation / Titulaire régulier,3,1,4,265,1,0,0
-GIOVANY C.,Rotation / Titulaire régulier,3,2,4,171,1,1,0
-REMI D.,Pilier / Titulaire indiscutable,4,1,4,375,0,1,0
-TIM L.,Pilier / Titulaire indiscutable,4,0,4,360,0,0,0
-MAXIME P.,Pilier / Titulaire indiscutable,4,0,4,360,0,2,0
-TIM LACOTE,Pilier / Titulaire indiscutable,4,0,4,360,0,0,0
-MAXIME PETITPREZ,Pilier / Titulaire indiscutable,4,0,4,360,0,0,0
-MATHYS HERVE,Pilier / Titulaire indiscutable,4,0,4,360,0,1,0
-AUGUSTIN DROUPSY,Pilier / Titulaire indiscutable,4,0,4,328,0,0,0
-AUGUSTIN D.,Pilier / Titulaire indiscutable,4,0,4,284,0,0,0
-GASPARD DROUPSY,Pilier / Titulaire indiscutable,4,0,4,275,0,0,0
-HUGO HERVE,Rotation / Titulaire régulier,3,0,3,255,0,1,0
-CLEMENT DURIEZ,Rotation / Titulaire régulier,3,0,3,246,0,0,0
-CLEMENT D.,Rotation / Titulaire régulier,3,1,4,214,0,0,0
-JEAN PAUL BANGALA TOFIFI,Rotation / Titulaire régulier,3,1,4,205,0,0,0
-ARTHUR CLIQUE,Rotation / Titulaire régulier,2,1,3,198,0,0,0
-REMI DEFENIN,Rotation / Titulaire régulier,2,1,4,195,0,0,0
-ANONYME,Rotation / Titulaire régulier,2,0,2,180,0,0,0
-AURELIEN M.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
-DJIBRYL M.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
-MORGAN A.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
-ANDY M.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
-SOFIANE B.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
-HABIB S.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
-JASON L.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
-NADIR M.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
-RAYANE M.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
-MOHAMMED C.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
-JEAN PAUL B.,Rotation / Titulaire régulier,2,2,3,91,0,0,0
-ELIO D.,Rotation / Titulaire régulier,1,5,3,170,0,0,0
-DANY D.,Rotation / Titulaire régulier,1,3,2,146,0,0,0
-MATEO S.,Rotation / Titulaire régulier,1,1,1,100,0,2,1
-NICOLAS P.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-MARTIN M.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ARTHUR L.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-NOAH G.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ABEL D.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-TANGUY D.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-NATHAN D.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-MATHIS P.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-TILL P.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-EMILIEN L.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ISSAM M.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-MAXENCE M.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-AMINE B.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-QUENTIN R.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ANTOINE C.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-RAYAN A.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-LUCAS D.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-SELYANE Z.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-LOUIS P.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-MEHDI E.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-NAIM B.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-SOFIANE G.,Rotation / Titulaire régulier,1,0,2,90,0,0,0
-ROMAIN C.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-AURELIEN V.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-SAID E.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ANTONINO T.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-HUGO M.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ETHAN M.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-AYOUB M.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ANTOINE G.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-NOAM L.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-THEO C.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-LUCA T.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-NOAH S.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ABDELAZIZ A.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-BALTAZAR H.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ANTHONY B.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-LOYD O.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-LILIAN T.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-LENNY O.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-KEVIN B.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ZINEDINE B.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ADRIEN S.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-VIRGILE S.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-MATTEO M.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ANTHONY C.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-CAMILLE A.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-FLORENT H.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-JULES H.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-WILLIAM M.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ANTOINE S.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-LUC C.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-MATHIEU B.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-LUCAS P.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-HAKIM G.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-THIERRY QUIQUE,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ISMAEL AIDAOUI,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-LUCAS PELTIER,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-SOULEYMANE DIARRA,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-DYLAN GOUDIAMY,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-GREGORY SEYNAVE,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-MOHAND LAIB,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-SIDIA JAITEH,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-GAETAN DJEHA,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ALEXANDRE DUGOULET,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-AMAURY VANSTRAESSELLE,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+JULIEN DEVERNAY,Pilier / Titulaire indiscutable,7,1,8,620,2,2,0
+GASPARD DROUPSY,Pilier / Titulaire indiscutable,6,2,8,523,2,4,1
+MATHYS HERVE,Pilier / Titulaire indiscutable,8,0,8,720,1,3,0
+HUGO HERVE,Pilier / Titulaire indiscutable,7,0,7,615,1,1,1
+JULIEN NISSE,Pilier / Titulaire indiscutable,6,2,8,604,1,1,0
+GIOVANY CALON,Pilier / Titulaire indiscutable,6,2,8,441,1,1,0
+MAXIME PETIT,Pilier / Titulaire indiscutable,8,0,8,720,0,2,0
+AUGUSTIN DROUPSY,Pilier / Titulaire indiscutable,8,0,8,644,0,0,0
+TIM LACOTE,Pilier / Titulaire indiscutable,7,0,7,630,0,0,0
+REMI DEFENIN,Pilier / Titulaire indiscutable,6,1,8,555,0,1,0
+CLEMENT DURIEZ,Pilier / Titulaire indiscutable,6,1,7,484,0,0,0
+JEAN PAUL BANGALA TOFIFI,Pilier / Titulaire indiscutable,5,2,7,361,0,0,0
+ARTHUR CLIQUE,Rotation / Titulaire régulier,2,3,5,286,0,0,0
+ELIO DELCROIX,Rotation / Titulaire régulier,1,5,6,170,0,0,0
+DANY DE FREITAS,Rotation / Titulaire régulier,1,3,4,146,0,0,0
+MATEO SURMONT,Rotation / Titulaire régulier,1,1,2,100,0,2,1
 CORENTIN DELOOR,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-PAPE SENE,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-KEVIN FAY,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-KELIAN HALBOT,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-DAVID LEMAIRE,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-NICOLAS ROMAO,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-CEDRIC MAMBO,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-LOIC LESTAVEL,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-SIMON VANDAMME,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-CORENTHIN FOLLET,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-NOE FOLLET,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ROMEO DACHEVILLE,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-LUIS ORFAIT,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-GABIN DELCOURT,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ALIXE BARON,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-YANIS LEQUELLENEC,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-LUCA DELACRE,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-JORDAN DAKOUGNA,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-QUENTIN HERMARY,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-GUILLAUME DELAUTRE,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-STEVEN MELSEN,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ELIOT VERBEKE,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-CAMERON POZUELOS,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ERWAN DRAIS,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-GABRIEL DUBOIS,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-OUMAR CAMARA,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-SOULEYMANE COULIBALY,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ADRIEN PAGERIE,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-OZKAN CETINER,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-OUMAR N'DIAYE,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-SAYYIDOUL MOUHAMED SADJO,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-CHRISTOPHER BOUSSEMART,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-MEIZY ISSIFOU,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-NOE MASEVO MUANDA,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ROMAIN V.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-NAEL B.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-SASHA B.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-MAEL W.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-PATRIK M.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ERWAN G.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-NOA B.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-MOHAMED SAIDOU B.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-BASTIEN P.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-YANN B.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-ROBIN D.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
-THOMAS L.,Rotation / Titulaire régulier,1,1,1,83,0,1,0
-ARTHUR C.,Impact Player (Super-Sub),0,3,2,106,0,0,0
-DANY DE FREITAS,Impact Player (Super-Sub),0,2,2,50,0,0,0
-ELIO DELCROIX,Impact Player (Super-Sub),0,3,3,48,0,0,0
+THOMAS LEONARD,Rotation / Titulaire régulier,1,1,2,83,0,1,0
 JULES DIVERCHY,Impact Player (Super-Sub),0,3,3,38,0,0,0
-MATEO SURMONT,Impact Player (Super-Sub),0,1,1,33,0,2,1
-THOMAS LEONARD,Impact Player (Super-Sub),0,1,1,31,0,1,0
-NOA L.,Groupe élargi,0,0,1,0,0,0,0
-LOIC A.,Groupe élargi,0,0,1,0,0,0,0
-LEO B.,Groupe élargi,0,0,1,0,0,0,0
-CAMERON D.,Groupe élargi,0,0,1,0,0,0,0
-LANCINE T.,Groupe élargi,0,0,1,0,0,0,0
-AYOUB A.,Groupe élargi,0,0,1,0,0,0,0
-NAHIL B.,Groupe élargi,0,0,2,0,0,0,0
-MEHDI B.,Groupe élargi,0,0,1,0,0,0,0
-TOM L.,Groupe élargi,0,0,1,0,0,0,0
-SOFIANE W.,Groupe élargi,0,0,1,0,0,0,0
-BASILE C.,Groupe élargi,0,0,1,0,0,0,0
-MEHDI S.,Groupe élargi,0,0,1,0,0,0,0
-AXEL C.,Groupe élargi,0,0,1,0,0,0,0
-JULIEN M.,Groupe élargi,0,0,1,0,0,0,0
-ENZO C.,Groupe élargi,0,0,1,0,0,0,0
-MARTIN B.,Groupe élargi,0,0,1,0,0,0,0
-ANTHONY D.,Groupe élargi,0,0,1,0,0,0,0
-YANICE B.,Groupe élargi,0,0,1,0,0,0,0
-FABIO DECARO,Groupe élargi,0,0,1,0,0,0,0
-GABRIEL LEPLAT,Groupe élargi,0,0,1,0,0,0,0
-UGO VANNESTE,Groupe élargi,0,0,1,0,0,0,0
-FARHANE GUENOUNE,Groupe élargi,0,0,1,0,0,0,0
-YENE GEORGES LAURENT,Groupe élargi,0,0,1,0,0,0,0
 ROMAIN RAPAILLE,Groupe élargi,0,0,4,0,0,0,0
-JULES LEBEGUE,Groupe élargi,0,0,1,0,0,0,0
-JULIEN TOURBIER,Groupe élargi,0,0,1,0,0,0,0
-THOMAS STRICANNE,Groupe élargi,0,0,1,0,0,0,0
-KEVIN DYCKE,Groupe élargi,0,0,1,0,0,0,0
-SAMY FEDDI,Groupe élargi,0,0,1,0,0,0,0
-MATYS DEMAZIERES,Groupe élargi,0,0,1,0,0,0,0
-YOUNES BAKHTI,Groupe élargi,0,0,1,0,0,0,0
-RODRIGUE DEWAELE,Groupe élargi,0,0,1,0,0,0,0
-BATISTE POUCHELE,Groupe élargi,0,0,1,0,0,0,0
-CORENTIN LEMAIRE,Groupe élargi,0,0,1,0,0,0,0
-MATIAS FERREIRA,Groupe élargi,0,0,1,0,0,0,0
-ILYESS EL HADDAD,Groupe élargi,0,0,1,0,0,0,0
-DYLAN DUQUESNES,Groupe élargi,0,0,1,0,0,0,0
-THEO CHATELAIN,Groupe élargi,0,0,1,0,0,0,0
-ELYAZ C.,Groupe élargi,0,0,1,0,0,0,0
-JULIEN S.,Groupe élargi,0,0,1,0,0,0,0
-QUENTIN V.,Groupe élargi,0,0,1,0,0,0,0
