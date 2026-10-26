@@ -1,21 +1,159 @@
 ﻿joueur_nom,statut_tactique,titularisations,entrees_en_jeu,matchs_feuille,minutes_jouees_estimees,buts,cartons_jaunes,cartons_rouges
+DAVID D.,Pilier / Titulaire indiscutable,4,0,4,360,5,0,0
 JULIEN DEVERNAY,Pilier / Titulaire indiscutable,7,1,8,620,2,2,0
 GASPARD DROUPSY,Pilier / Titulaire indiscutable,6,2,8,523,2,4,1
+ROBIN CASTELAIN,Pilier / Titulaire indiscutable,5,0,5,450,2,2,0
+ALISON L.,Rotation / Titulaire régulier,2,0,2,180,2,0,0
 MATHYS HERVE,Pilier / Titulaire indiscutable,8,0,8,720,1,3,0
 HUGO HERVE,Pilier / Titulaire indiscutable,7,0,7,615,1,1,1
 JULIEN NISSE,Pilier / Titulaire indiscutable,6,2,8,604,1,1,0
 GIOVANY CALON,Pilier / Titulaire indiscutable,6,2,8,441,1,1,0
+ANTOINE MERVAILLE,Pilier / Titulaire indiscutable,5,0,5,450,1,1,0
+NATANAEL BUFFART,Pilier / Titulaire indiscutable,5,0,5,450,1,1,0
+RAPHAEL DEVAUX,Pilier / Titulaire indiscutable,5,0,5,450,1,0,0
+RUBENS SUNNOMAN,Pilier / Titulaire indiscutable,4,0,4,360,1,0,0
+ANGELIQUE B.,Rotation / Titulaire régulier,3,0,3,270,1,0,0
+BAPTISTE DESCARPENTRIES,Rotation / Titulaire régulier,3,0,3,270,1,0,0
+MARCEAU URBANIAK,Rotation / Titulaire régulier,3,0,3,270,1,0,0
+BAPTISTE D.,Rotation / Titulaire régulier,2,0,2,180,1,0,0
+AXELLE D.,Rotation / Titulaire régulier,2,0,2,180,1,0,0
+NAEL REDJEMI,Rotation / Titulaire régulier,2,0,3,180,1,0,0
+MAXIME M.,Rotation / Titulaire régulier,1,0,1,90,1,0,0
+MARCEAU U.,Rotation / Titulaire régulier,1,0,1,90,1,0,0
+LENY D.,Rotation / Titulaire régulier,1,0,2,90,1,0,0
+THOMAS L.,Rotation / Titulaire régulier,1,1,1,83,1,1,0
+NATHAN LANGLET,Groupe élargi,0,0,2,0,1,0,0
 MAXIME PETIT,Pilier / Titulaire indiscutable,8,0,8,720,0,2,0
 AUGUSTIN DROUPSY,Pilier / Titulaire indiscutable,8,0,8,644,0,0,0
 TIM LACOTE,Pilier / Titulaire indiscutable,7,0,7,630,0,0,0
 REMI DEFENIN,Pilier / Titulaire indiscutable,6,1,8,555,0,1,0
 CLEMENT DURIEZ,Pilier / Titulaire indiscutable,6,1,7,484,0,0,0
+RAPHAEL LEFEBVRE,Pilier / Titulaire indiscutable,5,0,5,450,0,0,0
 JEAN PAUL BANGALA TOFIFI,Pilier / Titulaire indiscutable,5,2,7,361,0,0,0
+BAPTISTE M.,Pilier / Titulaire indiscutable,4,0,4,360,0,0,0
+LOUIS L.,Rotation / Titulaire régulier,3,0,3,270,0,0,0
+LUCIE M.,Rotation / Titulaire régulier,3,0,3,270,0,0,0
+ZOE D.,Rotation / Titulaire régulier,3,0,3,270,0,0,0
+LUDIVINE D.,Rotation / Titulaire régulier,3,0,3,270,0,0,0
+LUCIE H.,Rotation / Titulaire régulier,3,0,3,270,0,0,0
+SINEAD C.,Rotation / Titulaire régulier,3,0,3,270,0,0,0
+ADELINE A.,Rotation / Titulaire régulier,3,0,3,270,0,0,0
+MARINE C.,Rotation / Titulaire régulier,3,0,3,270,0,0,0
+MAURANE C.,Rotation / Titulaire régulier,3,0,3,270,0,0,0
+CLEMENT B.,Rotation / Titulaire régulier,3,0,3,270,0,0,0
+NAIM M.,Rotation / Titulaire régulier,3,0,3,270,0,0,0
 ARTHUR CLIQUE,Rotation / Titulaire régulier,2,3,5,286,0,0,0
-ELIO DELCROIX,Rotation / Titulaire régulier,1,5,6,170,0,0,0
+NAEL E.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+THEO D.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+BENJAMIN V.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+NUNZIO A.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+CHRISTIAN C.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+STELIO A.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+HUGO B.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+MARCUS J.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+ZAKIEL S.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+NOA L.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+TOM W.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+ERIC P.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+LEANDRO M.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+SIDY L.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+MARCEAU D.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+MARIUS B.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+NOHAM M.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+VALENTIN T.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+SIMON K.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+LUBIN M.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+GABRIEL M.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+ETIENNE G.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+PAOLO F.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+JULES V.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+ADAM M.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+LILIAN E.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+BAPTISTE H.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+AXEL W.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+TOM B.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+LEON G.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+LOUIS P.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+SOLAN B.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+GREGORY L.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+PAVEL H.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+SIMON T.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+ALIX D.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+INES D.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+LOUIS D.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+ELIO BOTTIN,Rotation / Titulaire régulier,2,0,4,180,0,2,0
+CHARLES G.,Rotation / Titulaire régulier,2,0,2,180,0,0,0
+ARTHUR C.,Rotation / Titulaire régulier,1,3,1,196,0,0,0
+ELIO DELCROIX,Rotation / Titulaire régulier,1,5,6,170,0,1,0
 DANY DE FREITAS,Rotation / Titulaire régulier,1,3,4,146,0,0,0
 MATEO SURMONT,Rotation / Titulaire régulier,1,1,2,100,0,2,1
 CORENTIN DELOOR,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+OSCAR S.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+GASPARD L.,Rotation / Titulaire régulier,1,0,2,90,0,0,0
+MALO Q.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+DYVIESH L.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+BAPTISTE B.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+NATHEO C.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+MARTIN D.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+MAXENCE D.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+LOAN V.,Rotation / Titulaire régulier,1,0,2,90,0,0,0
+PAUL G.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+ARTHUR M.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+LEO B.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+GUSTAV B.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+GABRIEL S.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+OCTAVE G.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+XOAN F.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+SACHA M.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+MARIUS D.,Rotation / Titulaire régulier,1,0,2,90,0,0,0
+ADRIEN C.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+FRANCIS D.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+MICHAEL C.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+FRANCOIS XAVIER D.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+ROMAIN V.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+RAMIRO L.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+ESTEBAN P.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+AYMERIC K.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+EDOUARD B.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+CONSTANT M.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+ROMAIN R.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+MATHIAS V.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+EVAN P.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+GABYN D.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+BENJAMIN P.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+NAYL C.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+HUGO D.,Rotation / Titulaire régulier,1,0,1,90,0,1,0
+JEAN ALVIN A.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+LUCIEN D.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+AARON H.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+KAIS B.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+MIA C.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+ROBIN D.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+JULES A.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+NOAH D.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+LALIE B.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+ESTHER R.,Rotation / Titulaire régulier,1,0,1,90,0,0,0
+HUGO GOSSART,Rotation / Titulaire régulier,1,0,1,90,0,0,0
 THOMAS LEONARD,Rotation / Titulaire régulier,1,1,2,83,0,1,0
 JULES DIVERCHY,Impact Player (Super-Sub),0,3,3,38,0,0,0
+REMI D.,Impact Player (Super-Sub),0,1,1,15,0,1,0
 ROMAIN RAPAILLE,Groupe élargi,0,0,4,0,0,0,0
+AXEL B.,Groupe élargi,0,0,2,0,0,0,0
+ALEXANDRE D.,Groupe élargi,0,0,2,0,0,0,0
+JUSTIN L.,Groupe élargi,0,0,2,0,0,0,0
+ADRIEN D.,Groupe élargi,0,0,1,0,0,0,0
+JASON V.,Groupe élargi,0,0,1,0,0,0,0
+THIAGO V.,Groupe élargi,0,0,1,0,0,0,0
+MILAN M.,Groupe élargi,0,0,1,0,0,0,0
+CORENTIN B.,Groupe élargi,0,0,1,0,0,0,0
+ALEXANDRE B.,Groupe élargi,0,0,1,0,0,0,0
+YANIS A.,Groupe élargi,0,0,1,0,0,0,0
+LOUIS B.,Groupe élargi,0,0,1,0,0,0,0
+IMRAN D.,Groupe élargi,0,0,1,0,0,0,0
+SELYAN C.,Groupe élargi,0,0,1,0,0,0,0
+THIBAULT G.,Groupe élargi,0,0,1,0,0,0,0
+MATTEO B.,Groupe élargi,0,0,1,0,0,0,0
+HENRY M.,Groupe élargi,0,0,1,0,0,0,0
+EDGAR S.,Groupe élargi,0,0,3,0,0,0,0
+PAUL P.,Groupe élargi,0,0,3,0,0,0,0
+VIANNEY DESMARESCAUX,Groupe élargi,0,0,2,0,0,0,0
