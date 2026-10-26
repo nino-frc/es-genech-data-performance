@@ -35,8 +35,9 @@ def generate_mobile_briefing():
         with open(LOGO_PATH, "rb") as f:
             logo_b64 = base64.b64encode(f.read()).decode("utf-8")
 
-    # 1. MATCH PRÉCÉDENT (DERNIER MATCH TERMINÉ)
+    # 1. MATCH PRÉCÉDENT (DERNIER MATCH TERMINÉ SENIOR A)
     s_term = df_matchs[
+        (df_matchs['equipe_club_id'] == 'SENIOR_M1') &
         (df_matchs['statut'] == 'TERMINE') & 
         ((df_matchs['equipe_domicile'].str.contains('GENECH', case=False, na=False)) |
          (df_matchs['equipe_exterieur'].str.contains('GENECH', case=False, na=False)))
@@ -74,8 +75,9 @@ def generate_mobile_briefing():
         s_dom, s_ext = 0, 0
         res_tag, res_color, buteurs_txt = "EN COURS", "#ebb837", "-"
 
-    # 2. PROCHAIN ADVERSAIRE (PROCHAIN MATCH À VENIR)
+    # 2. PROCHAIN ADVERSAIRE (PROCHAIN MATCH À VENIR SENIOR A)
     s_avenir = df_matchs[
+        (df_matchs['equipe_club_id'] == 'SENIOR_M1') &
         (df_matchs['statut'] == 'A_VENIR') & 
         ((df_matchs['equipe_domicile'].str.contains('GENECH', case=False, na=False)) |
          (df_matchs['equipe_exterieur'].str.contains('GENECH', case=False, na=False)))

@@ -50,14 +50,14 @@ def send_report_email(mode: str = None):
 
     cur.execute("""
     SELECT tour_ou_journee, date_heure, equipe_domicile, equipe_exterieur, score_domicile, score_exterieur 
-    FROM matchs WHERE statut = 'TERMINE' AND (equipe_domicile LIKE '%GENECH%' OR equipe_exterieur LIKE '%GENECH%')
+    FROM matchs WHERE statut = 'TERMINE' AND equipe_club_id = 'SENIOR_M1' AND (equipe_domicile LIKE '%GENECH%' OR equipe_exterieur LIKE '%GENECH%')
     ORDER BY date_heure DESC LIMIT 1;
     """)
     last_match = cur.fetchone()
 
     cur.execute("""
     SELECT tour_ou_journee, date_heure, equipe_domicile, equipe_exterieur 
-    FROM matchs WHERE statut = 'A_VENIR' AND (equipe_domicile LIKE '%GENECH%' OR equipe_exterieur LIKE '%GENECH%')
+    FROM matchs WHERE statut = 'A_VENIR' AND equipe_club_id = 'SENIOR_M1' AND date_heure >= date('now', '-1 day') AND (equipe_domicile LIKE '%GENECH%' OR equipe_exterieur LIKE '%GENECH%')
     ORDER BY date_heure ASC LIMIT 1;
     """)
     next_match = cur.fetchone()

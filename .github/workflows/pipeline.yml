@@ -3,8 +3,15 @@ name: ES Genech - Data & Performance Pipeline
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 8 * * 1'   # Lundi à 08h00 UTC (10h00 Paris) : Débrief Post-Match, Cartes Joueurs, Rapport Board & Prédictions
-    - cron: '0 16 * * 5'  # Vendredi à 16h00 UTC (18h00 Paris) : Briefing d'Avant-Match, Météo & Scouting
+    # Lundi : Déclenchement à 05h25 UTC (06h25 heure de Paris)
+    # Minute atypique (:25) pour contourner la congestion des files d'attente GitHub
+    # Garantit une réception par e-mail au staff dès le réveil (07h00 - 08h00)
+    - cron: '25 5 * * 1'
+
+    # Vendredi : Déclenchement à 10h20 UTC (11h20 heure de Paris)
+    # Permet au coach de recevoir le briefing tactique pour le déjeuner (12h00)
+    # bien avant la séance et la causerie du vendredi soir
+    - cron: '20 10 * * 5'
 
 jobs:
   run-pipeline:
@@ -33,13 +40,9 @@ jobs:
         run: |
           playwright install chromium --with-deps
 
-      - name: ⚽ 1. Scraping des résultats & feuilles de match FFF
+      - name: ⚽ 1. Scraping des résultats & feuilles de match FFF (Senior A)
         run: |
           python scraper.py
-
-      - name: 🌐 1bis. Scraping Global Club (16 Équipes ES Genech)
-        run: |
-          python scrape_club_multi.py
 
       - name: 🕵️ 2. Espionnage & Scouting tactique de l'adversaire
         run: |
@@ -69,11 +72,11 @@ jobs:
         run: |
           python simulateur_monte_carlo.py
 
-      - name: 📱 9. Génération du Briefing d'Avant-Match (Météo, Arbitre, Scouting)
+      - name: 📱 9. Génération du Briefing d'Avant-Match (Senior A)
         run: |
           python generate_match_briefing.py
 
-      - name: 📋 10. Génération du Débrief Post-Match du Lundi (Timeline 90')
+      - name: 📋 10. Génération du Débrief Post-Match du Lundi (Senior A)
         run: |
           python generate_postmatch_debrief.py
 
@@ -93,23 +96,19 @@ jobs:
         run: |
           python send_email_report.py
 
-      - name: 📤 14. Archivage sécurisé des livrables (Téléchargeable, aucun envoi externe)
+      - name: 📤 14. Archivage sécurisé des livrables (Artifacts GitHub)
         uses: actions/upload-artifact@v4
         with:
           name: livrables-es-genech
           path: |
-            briefings_coach/*.png
             briefings_coach/*.pdf
+            briefings_coach/*.png
+          retention-days: 14
 
-      - name: 💾 15. Sauvegarde automatique sur GitHub
+      - name: 💾 15. Sauvegarde & Commit automatique de la Base de Données
         run: |
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add genech_performance.db exports_powerbi/* briefings_coach/*
-          if ! git diff --staged --quiet; then
-            git commit -m "🤖 Auto-Update : Données, Scouting, Météo, Arbitre, Ratings & Rapports Comité actualisés"
-            git pull --rebase origin main
-            git push origin main
-          else
-            echo "Aucune modification à sauvegarder."
-          fi
+          git config user.name "Genech Analytics Bot"
+          git config user.email "bot@esgenech.fr"
+          git add genech_performance.db exports_powerbi/ briefings_coach/
+          git diff-index --quiet HEAD || git commit -m "chore(auto): mise à jour hebdomadaire des données et livrables FFF [skip ci]"
+          git push origin main

@@ -37,7 +37,7 @@ def launch_browser(p):
 def generate_postmatch_debrief():
     conn = sqlite3.connect(DB_PATH)
 
-    df_matchs = pd.read_sql_query("SELECT * FROM matchs WHERE statut = 'TERMINE' ORDER BY date_heure DESC", conn)
+    df_matchs = pd.read_sql_query("SELECT * FROM matchs WHERE statut = 'TERMINE' AND equipe_club_id = 'SENIOR_M1' ORDER BY date_heure DESC", conn)
     df_events = pd.read_sql_query("SELECT * FROM match_events", conn)
     df_lineups = pd.read_sql_query("SELECT * FROM match_lineups", conn)
     conn.close()
