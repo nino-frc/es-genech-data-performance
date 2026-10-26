@@ -962,7 +962,8 @@ def generate_mobile_briefing():
     with sync_playwright() as p:
         browser = launch_browser(p)
         page = browser.new_page(viewport={"width": 1080, "height": 1920})
-        page.set_content(html_content, wait_until="networkidle")
+        page.set_content(html_content, wait_until="domcontentloaded")
+        page.wait_for_timeout(1200)
 
         # Sortie standard toujours à jour
         latest_png = os.path.join(OUTPUT_DIR, "briefing_match_latest.png")

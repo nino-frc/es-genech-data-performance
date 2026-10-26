@@ -646,7 +646,8 @@ def generate_postmatch_debrief():
     with sync_playwright() as p:
         browser = launch_browser(p)
         page = browser.new_page(viewport={"width": 1080, "height": 1920})
-        page.set_content(html, wait_until="networkidle")
+        page.set_content(html, wait_until="domcontentloaded")
+        page.wait_for_timeout(1200)
 
         latest_png = os.path.join(OUTPUT_DIR, "debrief_match_latest.png")
         latest_pdf = os.path.join(OUTPUT_DIR, "debrief_match_latest.pdf")
