@@ -158,8 +158,8 @@ async function fetchMatchDayFromApi() {
     }
 
   } catch (error) {
-    console.warn("[PWA Front-end] Impossible de contacter MongoDB Atlas en direct :", error.message);
-    showNotification("Mode hors-ligne actif : affichage des données locales certifiées.", false);
+    // Mode discret sans pop-up gênante : conservation des données certifiées
+    console.log("[PWA Front-end] Synchronisation distante différée : données locales actives.");
   }
 }
 
