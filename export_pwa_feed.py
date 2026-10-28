@@ -473,10 +473,10 @@ def build_seclin_pwa_payload(base_dir: str):
 
     next_match = {
         "competition": "Régional 2 (Poule B) • Journée 5",
-        "date_heure": "08/11/2026 à 15:00",
-        "lieu": "Stade Henri Desbuquois (Seclin)",
-        "domicile": "SECLIN FC",
-        "exterieur": "ARQUES ES",
+        "date_heure": "01/11/2026 à 14:30",
+        "lieu": "Stade Henri Seigneur (Croix)",
+        "domicile": "CROIX IC 2",
+        "exterieur": "SECLIN FC",
         "stats_comparatives": {
             "genech": {
                 "points": 8,
@@ -607,11 +607,11 @@ def build_seclin_pwa_payload(base_dir: str):
         "evenements_dernier_match": last_events,
         "prochain_match": next_match,
         "arbitre_prochain_match": {
-            "nom_arbitre": "Désignation CRA en attente",
-            "severite": "MODÉRÉE",
-            "moyenne_jaunes": 3.1,
+            "nom_arbitre": "Désignation CRA Ligue Hauts-de-France",
+            "severite": "RIGUEUR ÉLEVÉE",
+            "moyenne_jaunes": 3.8,
             "badge_color": "#0284c7",
-            "consigne_coach": "Gérer les temps forts et imposer notre pressing."
+            "consigne_coach": "Choc au sommet face au leader Croix (10 pts). Rigueur défensive et transition rapide."
         },
         "historique_matchs": historique_matchs,
         "kpis_saison": {
