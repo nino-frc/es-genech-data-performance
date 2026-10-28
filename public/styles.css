@@ -168,6 +168,41 @@ body {
   border: 2px solid var(--bg-header);
 }
 
+.logout-header-btn {
+  background: rgba(239, 68, 68, 0.16);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #fca5a5;
+  height: 30px;
+  padding: 0 9px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.logout-header-btn:hover {
+  background: rgba(239, 68, 68, 0.32);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+.logout-header-btn:active {
+  transform: scale(0.94);
+}
+
+@media (max-width: 480px) {
+  .logout-btn-text {
+    display: none;
+  }
+  .logout-header-btn {
+    padding: 0 6px;
+    width: 30px;
+    justify-content: center;
+  }
+}
+
 /* --------------------------------------------------------------------------
    Conteneur Principal
    -------------------------------------------------------------------------- */

@@ -992,6 +992,12 @@ function revokeDeviceAction(deviceId) {
   }
 }
 
+function confirmLogout() {
+  if (confirm("Voulez-vous vraiment vous déconnecter de cet espace club ?")) {
+    logoutClub();
+  }
+}
+
 function logoutClub(silent) {
   try {
     localStorage.removeItem('matchday_club_key');
@@ -1005,6 +1011,9 @@ function logoutClub(silent) {
   currentStaffRole = null;
   closeDeviceModal();
   closeQrModal();
+
+  const trialBanner = document.getElementById('trialBanner');
+  if (trialBanner) trialBanner.style.display = 'none';
 
   const headerLogo = document.getElementById('headerClubLogo');
   const headerDiv = document.getElementById('headerClubDivider');

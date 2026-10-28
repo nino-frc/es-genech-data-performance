@@ -69,6 +69,10 @@
         🔔
         <span class="notif-badge-dot" id="notifDot"></span>
       </button>
+      <button class="logout-header-btn" id="logoutHeaderBtn" onclick="confirmLogout()" title="Se déconnecter / Changer de club">
+        <span>🚪</span>
+        <span class="logout-btn-text">Quitter</span>
+      </button>
     </div>
   </header>
 
@@ -480,6 +484,8 @@
       <div class="footer-copy">MatchDay Analytics SaaS • Direction Technique & Performance</div>
       <div class="footer-links">
         <button type="button" class="btn-legal-link" onclick="openLegalModal()">⚖️ Mentions Légales & Confidentialité (RGPD)</button>
+        <span style="opacity: 0.35;">•</span>
+        <button type="button" class="btn-legal-link" onclick="confirmLogout()">🚪 Déconnexion du club</button>
       </div>
     </footer>
 
@@ -797,25 +803,6 @@
             <span class="btn-arrow">→</span>
           </button>
         </form>
-
-        <div class="license-divider">
-          <span>OU SÉLECTION RAPIDE DE TEST</span>
-        </div>
-
-        <div class="demo-keys-grid">
-          <button type="button" class="demo-key-chip master-chip" onclick="quickFillLicense('MD-MASTER-NINO-2026', 'Nino F. (Super-Admin Master)')">
-            <span class="chip-club">🛡️ Super-Admin Master (Nino)</span>
-            <span class="chip-code">MD-MASTER-NINO-2026</span>
-          </button>
-          <button type="button" class="demo-key-chip" onclick="quickFillLicense('MD-GNCH-88F4-A92B', 'Coach Principal')">
-            <span class="chip-club">ES Genech (R3/D2/Fém/U19)</span>
-            <span class="chip-code">MD-GNCH-88F4-A92B</span>
-          </button>
-          <button type="button" class="demo-key-chip" onclick="quickFillLicense('MD-SCLN-74C2-91E3', 'Coach Seclin R2')">
-            <span class="chip-club">FC Seclin (Régional 2)</span>
-            <span class="chip-code">MD-SCLN-74C2-91E3</span>
-          </button>
-        </div>
 
         <div class="license-privacy-note">
           🔒 <strong>Confidentialité & RGPD</strong> : Zéro collecte de données personnelles. L'accès individuel est sécurisé par un identifiant anonyme propre à cet appareil.
