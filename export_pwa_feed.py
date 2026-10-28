@@ -21,6 +21,7 @@ from discipline_monitor import analyze_discipline
 BASE_DIR = os.path.dirname(__file__)
 DB_PATH = os.path.join(BASE_DIR, "genech_performance.db")
 OUTPUT_JSON = os.path.join(BASE_DIR, "public", "data_feed.json")
+OUTPUT_JS = os.path.join(BASE_DIR, "public", "data.js")
 
 def export_real_pwa_feed():
     conn = sqlite3.connect(DB_PATH)
@@ -161,8 +162,11 @@ def export_real_pwa_feed():
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
+    with open(OUTPUT_JS, "w", encoding="utf-8") as f:
+        f.write("window.MATCHDAY_DATA = " + json.dumps(payload, ensure_ascii=False, indent=2) + ";\n")
+
     print(f"Export certifié terminé : {len(players_list)} joueurs, {len(standings)} équipes en poule.")
-    print(f"Fichier généré : {OUTPUT_JSON}")
+    print(f"Fichiers générés : {OUTPUT_JSON} et {OUTPUT_JS}")
 
 if __name__ == "__main__":
     export_real_pwa_feed()
