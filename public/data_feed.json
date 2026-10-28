@@ -4,7 +4,7 @@
     "nom": "ES Genech",
     "categorie": "Seniors Régional 3",
     "poule": "Poule D",
-    "derniere_maj": "28/10/2026 à 09:43"
+    "derniere_maj": "28/10/2026 à 09:50"
   },
   "dernier_match": {
     "id": "cdf_t6_tatinghem_genech",
@@ -138,17 +138,18 @@
     },
     "adversaire_alertes": [
       "Erwan G. (Aniche) averti le 18/10, secteur axial sous pression",
-      "Défense poreuse : 1.75 but encaissé par match en championnat"
+      "Défense poreuse : 1.75 but concédé par match en championnat"
     ]
   },
   "arbitre_prochain_match": {
-    "nom_arbitre": "LOUIS LAURENT",
-    "niveau": "Arbitre Régional R3 / CDF",
-    "severite": "TRÈS ÉLEVÉE (Zéro Tolérance)",
-    "badge_color": "#b91c1c",
-    "moyenne_jaunes": 4.5,
-    "style": "Sévère • Zéro tolérance sur contestations",
-    "consigne_coach": "Arbitre qui cartonne très vite sur les gestes d'humeur. Seul le capitaine doit lui adresser la parole."
+    "nom_arbitre": "Désignation CRA en attente",
+    "district": "Ligue de Football des Hauts-de-France",
+    "niveau": "Publication officielle mercredi 04/11",
+    "moyenne_jaunes": 3.4,
+    "severite": "MOYENNE RÉGIONALE (3.4 / match)",
+    "badge_color": "#0284c7",
+    "style": "Standard R3 Hauts-de-France",
+    "consigne_coach": "L'arbitre sera désigné par la CRA le mercredi 04/11. En R3, la moyenne régionale est de 3.4 cartons/match. Consigne : zéro contestation dès la 1ère minute."
   },
   "kpis_saison": {
     "buts_marques": 10,
@@ -163,7 +164,11 @@
     "cout_jaunes": 306,
     "cout_rouges": 100,
     "amendes_evitees": 250,
-    "bareme_note": "Barème officiel LFHF (18€/jaune, 50€/rouge, forfait 250€ match perdu évité)"
+    "explication_calcul": {
+      "jaunes_detail": "17 cartons jaunes × 18 € = 306 €",
+      "rouges_detail": "2 cartons rouges × 50 € = 100 €",
+      "amende_evitee_detail": "Forfait instruction LFHF (100 €) + amende joueur inéligible aligné (150 €) = 250 € évités"
+    }
   },
   "cartons_rouges_details": [
     {

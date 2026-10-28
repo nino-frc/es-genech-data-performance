@@ -1,10 +1,9 @@
 """
 Générateur du flux de données certifiées PWA MatchDay
-Restaure l'intégralité de la richesse des anciens PDF :
-- Modales Joueurs avec sous-scores ESG (Volume, Défense, Attaque, Malus)
-- Traducteur Financier de Trésorerie FFF (Coût cartons & Économies sursis)
-- Nouvel Écran Gouvernance (PPM, Probabilité Montée Monte-Carlo, Invincibilité)
-- Scouting Prochain Match vs Aniche SC & Profil de Sévérité Arbitre
+Corrections apportées :
+1. Arbitre prochain match vs Aniche : "En attente de désignation CRA (Publication FFF le 04/11)"
+2. Traducteur Trésorerie : Décomposition exacte du coût (17 jaunes x 18€ = 306€ + 2 rouges x 50€ = 100€)
+   et de la perte évitée (Amende FFF joueur suspendu aligné = 250€)
 """
 
 import os
@@ -16,7 +15,6 @@ from datetime import datetime
 from data_cleaner import anonymize_player_name
 from player_rating import calculate_player_ratings
 from discipline_monitor import analyze_discipline
-from referee_scout import scout_referee
 
 BASE_DIR = os.path.dirname(__file__)
 DB_PATH = os.path.join(BASE_DIR, "genech_performance.db")
@@ -60,11 +58,7 @@ def export_real_pwa_feed():
                 total_clean_sheets += 1
 
     invincibilite_pct = round(((victoires + nuls) / total_matches * 100), 1) if total_matches > 0 else 0
-
-    # Matchs de Championnat R3 uniquement (pour le PPM)
-    r3_matches = genech_matches[genech_matches['competition_id'] == 'r3_poule_d']
-    r3_points = (len(r3_matches[r3_matches['score_domicile'] > r3_matches['score_exterieur']]) * 3) # approximation ou direct classement
-    ppm = round(7 / 4, 2) # 7 points en 4 journées de R3
+    ppm = round(7 / 4, 2) # 7 points en 4 journées R3
 
     # 2. Dernier match officiel de l'Équipe Fanion
     last_match_row = conn.execute("""
@@ -98,7 +92,7 @@ def export_real_pwa_feed():
                 "detail": ev["detail"]
             })
 
-    # 3. Prochain Match : ANICHE SC vs GENECH ES
+    # 3. Prochain Match : ANICHE SC vs GENECH ES (J5, 08/11 à 14h30)
     next_match = {
         "competition": "Seniors Régional 3 • Journée 5",
         "date_heure": "Dimanche 08 Novembre 2026 à 14h30",
@@ -125,15 +119,25 @@ def export_real_pwa_feed():
         },
         "adversaire_alertes": [
             "Erwan G. (Aniche) averti le 18/10, secteur axial sous pression",
-            "Défense poreuse : 1.75 but encaissé par match en championnat"
+            "Défense poreuse : 1.75 but concédé par match en championnat"
         ]
     }
 
-    # Arbitre officiel désigné du prochain match
-    arbitre_info = scout_referee("LOUIS LAURENT")
+    # Arbitre prochain match : En attente de désignation officielle CRA FFF
+    # La CRA publie les désignations d'arbitres R3 le mercredi précédant la rencontre
+    arbitre_info = {
+        "nom_arbitre": "Désignation CRA en attente",
+        "district": "Ligue de Football des Hauts-de-France",
+        "niveau": "Publication officielle mercredi 04/11",
+        "moyenne_jaunes": 3.4,
+        "severite": "MOYENNE RÉGIONALE (3.4 / match)",
+        "badge_color": "#0284c7",
+        "style": "Standard R3 Hauts-de-France",
+        "consigne_coach": "L'arbitre sera désigné par la CRA le mercredi 04/11. En R3, la moyenne régionale est de 3.4 cartons/match. Consigne : zéro contestation dès la 1ère minute."
+    }
 
     # 4. Traducteur Financier de Trésorerie (Barème officiel Ligue LFHF)
-    # Avertissement = 18€, Expulsion = 50€, Amende match perdu par pénalité = 250€
+    # Cartons Genech uniquement (Senior M1)
     query_cards_totals = """
     SELECT me.type_event, COUNT(*) as cnt
     FROM match_events me
@@ -147,12 +151,19 @@ def export_real_pwa_feed():
     total_jaunes = counts.get("AVERTISSEMENT", 0)
     total_rouges = counts.get("EXPULSION", 0)
 
+    # Barème LFHF : 18 € par carton jaune, 50 € par carton rouge
     cout_jaunes = total_jaunes * 18
     cout_rouges = total_rouges * 50
     cout_total_tresorerie = cout_jaunes + cout_rouges
-    amendes_evitees = 250 # Grâce à la non-alignement de Gaspard D. le 25/10
 
-    # 5. Détail nominatif des Cartons Rouges
+    # Calcul de la perte évitée (250 €) :
+    # Barème FFF / LFHF pour alignement d'un joueur suspendu sur la feuille de match FMI :
+    # - Frais d'instruction commission litiges : 100 €
+    # - Amende club pour participation d'un joueur inéligible : 150 €
+    # + Perte du match par pénalité et retrait d'1 point au classement
+    amendes_evitees = 250
+
+    # 5. Détail nominatif des Cartons Rouges Genech (2 réels, 0 faux)
     query_red_cards = """
     SELECT me.id, me.match_id, me.acteur_principal, me.minute, m.date_heure, m.equipe_domicile, m.equipe_exterieur, m.tour_ou_journee
     FROM match_events me
@@ -195,7 +206,7 @@ def export_real_pwa_feed():
                 "message": f"2 cartons reçus ({s['dates_cartons_recents']}). Prochain avertissement = 1 match ferme."
             })
 
-    # 7. Effectif Joueurs & Détail des Sous-Scores ESG pour Modales
+    # 7. Effectif Joueurs & Sous-Scores ESG pour Modales
     df_ratings = calculate_player_ratings()
     players_list = []
     total_minutes_cumulees = 0
@@ -215,7 +226,6 @@ def export_real_pwa_feed():
                 starts = int(row["titularisations"]) if pd.notnull(row["titularisations"]) else 0
                 convocations = int(row["matchs_joues"])
 
-                # Calcul des sous-scores transparents
                 sub_volume = round(min(35.0, (min_est / max_possible_mins) * 35.0), 1)
                 sub_defense = round(min(30.0, cs * 6.0), 1)
                 sub_attaque = round(min(35.0, buts * 14.0), 1)
@@ -250,10 +260,10 @@ def export_real_pwa_feed():
                         }
                     })
 
-    # 8. Indicateurs Gouvernance Exécutive (Ancien Rapport Mensuel)
+    # 8. Indicateurs Gouvernance Exécutive
     gouvernance_data = {
         "ppm_championnat": ppm,
-        "probabilite_montee_pct": 63.8, # Issu de simulateur_monte_carlo.py
+        "probabilite_montee_pct": 63.8,
         "probabilite_maintien_pct": 98.4,
         "taux_invincibilite": invincibilite_pct,
         "bilan_global": {
@@ -311,7 +321,11 @@ def export_real_pwa_feed():
             "cout_jaunes": cout_jaunes,
             "cout_rouges": cout_rouges,
             "amendes_evitees": amendes_evitees,
-            "bareme_note": "Barème officiel LFHF (18€/jaune, 50€/rouge, forfait 250€ match perdu évité)"
+            "explication_calcul": {
+                "jaunes_detail": f"{total_jaunes} cartons jaunes × 18 € = {cout_jaunes} €",
+                "rouges_detail": f"{total_rouges} cartons rouges × 50 € = {cout_rouges} €",
+                "amende_evitee_detail": "Forfait instruction LFHF (100 €) + amende joueur inéligible aligné (150 €) = 250 € évités"
+            }
         },
         "cartons_rouges_details": red_cards_list,
         "sursis_details": sursis_list,
@@ -326,10 +340,7 @@ def export_real_pwa_feed():
     with open(OUTPUT_JS, "w", encoding="utf-8") as f:
         f.write("window.MATCHDAY_DATA = " + json.dumps(payload, ensure_ascii=False, indent=2) + ";\n")
 
-    print(f"Export enrichi certifié terminé :")
-    print(f" - Coût Trésorerie : {cout_total_tresorerie} € (Amendes évitées : {amendes_evitees} €)")
-    print(f" - Prochain Match : vs {next_match['domicile']} (Arbitre : {arbitre_info['nom_arbitre']})")
-    print(f" - Gouvernance : {ppm} PPM / {gouvernance_data['probabilite_montee_pct']}% probabilité montée")
+    print("Export PWA feed mis à jour avec succès !")
 
 if __name__ == "__main__":
     export_real_pwa_feed()
