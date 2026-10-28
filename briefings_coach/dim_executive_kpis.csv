@@ -1,2 +1,2 @@
-﻿saison,matchs_joues,victoires,nuls,defaites,buts_marques,buts_encaisses,invincibilite_pct,economie_disciplinaire_eur,cout_disciplinaire_estime_eur,effectif_utilise
-2026-2027,33,15,5,13,94,84,60.6,250,636,154
+﻿date_rapport,matchs_joues,victoires,nuls,defaites,buts_marques,buts_encaisses,clean_sheets,ppm_tcc,taux_invincibilite_pct,cartons_jaunes,cartons_rouges,economie_disciplinaire_eur,cout_disciplinaire_estime_eur,effectif_utilise
+2026-10-28,41,21,7,13,99,110,11,1.71,68.3,69,5,250,1492,20

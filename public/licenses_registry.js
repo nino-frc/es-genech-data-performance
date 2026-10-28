@@ -33,17 +33,22 @@ window.MATCHDAY_LICENSES = {
         "id": "500934_SENIOR_M1",
         "nom": "FC Seclin - Séniors A (R2)",
         "club_code": "SCLN"
+      },
+      {
+        "id": "500426_SENIOR_M1",
+        "nom": "US Lesquin - Séniors A (R2)",
+        "club_code": "LSQN"
       }
     ],
     "default_team": "SENIOR_M1",
     "devices": [
       {
-        "device_id": "dev_master_nino",
+        "device_id": "session-pc-windows-nino-01",
         "support_code": "#ROOT-01",
-        "role_titulaire": "Nino F. (Super-Admin / Direction SaaS)",
+        "role_titulaire": "PC Windows (Session Principale)",
         "statut": "Actif",
-        "premiere_connexion": "2026-10-28 09:00",
-        "derniere_activite": "2026-10-28 13:30"
+        "premiere_connexion": "28/10/2026 à 09:00",
+        "derniere_activite": "28/10/2026 à 18:10"
       }
     ]
   },
@@ -74,32 +79,7 @@ window.MATCHDAY_LICENSES = {
       }
     ],
     "default_team": "SENIOR_M1",
-    "devices": [
-      {
-        "device_id": "dev_gnch_c1",
-        "support_code": "#GN-01",
-        "role_titulaire": "Entraîneur Principal - Séniors A",
-        "statut": "Actif",
-        "premiere_connexion": "2026-10-28 10:15",
-        "derniere_activite": "2026-10-28 13:10"
-      },
-      {
-        "device_id": "dev_gnch_c2",
-        "support_code": "#GN-02",
-        "role_titulaire": "Entraîneur Adjoint & Préparateur",
-        "statut": "Actif",
-        "premiere_connexion": "2026-10-28 10:30",
-        "derniere_activite": "2026-10-28 12:45"
-      },
-      {
-        "device_id": "dev_gnch_c3",
-        "support_code": "#GN-03",
-        "role_titulaire": "Président & Comité Directeur",
-        "statut": "Actif",
-        "premiere_connexion": "2026-10-28 11:00",
-        "derniere_activite": "2026-10-28 12:30"
-      }
-    ]
+    "devices": []
   },
   "MD-SCLN-74C2-91E3": {
     "club_id": "500934",
@@ -116,16 +96,24 @@ window.MATCHDAY_LICENSES = {
       }
     ],
     "default_team": "500934_SENIOR_M1",
-    "devices": [
+    "devices": []
+  },
+  "MD-LSQN-92D3-71B8": {
+    "club_id": "500426",
+    "club_code": "LSQN",
+    "nom": "US Lesquin",
+    "logo_url": "./logos/logo_lesquin.jpg",
+    "statut": "Version d'Évaluation (Bridée)",
+    "plan": "TRIAL_BRIDEE",
+    "is_master": false,
+    "equipes_autorisees": [
       {
-        "device_id": "dev_scln_c1",
-        "support_code": "#SC-01",
-        "role_titulaire": "Coach Séniors A (Staff R2)",
-        "statut": "Actif",
-        "premiere_connexion": "2026-10-28 11:10",
-        "derniere_activite": "2026-10-28 12:55"
+        "id": "500426_SENIOR_M1",
+        "nom": "Séniors A (R2)"
       }
-    ]
+    ],
+    "default_team": "500426_SENIOR_M1",
+    "devices": []
   },
   "MD-BNDS-55D1-82A4": {
     "club_id": "500123",

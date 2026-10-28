@@ -171,14 +171,18 @@ async function enablePushNotifications() {
 }
 
 function testStaffNotification(isWelcome = false) {
-  const isSeclin = (activeClub?.code === 'seclin' || activeClub?.club_code === 'SCLN');
-  const clubNom = isSeclin ? 'FC Seclin' : 'ES Genech';
+  const clubCode = activeClub?.club_code || activeClub?.code || '';
+  const isSeclin = (clubCode === 'SCLN');
+  const isLesquin = (clubCode === 'LSQN');
+  const clubNom = isSeclin ? 'FC Seclin' : (isLesquin ? 'US Lesquin' : 'ES Genech');
   const title = isWelcome ? 'MatchDay - Notifications Activées 🎉' : `MatchDay - Alerte Staff ${clubNom} 🚨`;
   const body = isWelcome
     ? 'Vous recevrez les alertes de suspension FFF, briefings et debriefings en direct sur cet appareil.'
     : (isSeclin
         ? 'Choc au sommet R2 : Déplacement chez le leader Croix IC 2. Bilan 22 buts marqués cette saison.'
-        : 'Commission FFF : 4 joueurs sous sursis avant le déplacement à Aniche SC (Art. 226). 250 € préservés.');
+        : (isLesquin
+            ? 'Duel capital R2 : Déplacement chez Courcelles US. Bilan 38 buts marqués en compétition officielle.'
+            : 'Commission FFF : 4 joueurs sous sursis avant le déplacement à Aniche SC (Art. 226). 250 € préservés.'));
 
   if (!('Notification' in window) || Notification.permission !== 'granted') {
     if ('Notification' in window && Notification.permission !== 'denied') {
@@ -303,10 +307,18 @@ function openMatchDetailModal(matchIndex) {
 
   // Compositions
   const lineups = m.compositions || {};
-  const isSeclin = (activeClub?.code === 'seclin' || activeClub?.club_code === 'SCLN');
-  const clubDisplay = isSeclin ? 'FC SECLIN' : 'ES GENECH';
-  const clubBadge = isSeclin ? '🔵⚪' : '🟡🔵';
-  const clubLineup = lineups.club || (isSeclin ? (lineups.seclin || lineups.genech) : (lineups.genech || lineups.seclin)) || {};
+  const clubCodeComp = activeClub?.club_code || activeClub?.code || '';
+  const clubIdComp = activeClub?.club_id || '';
+  let clubDisplay = 'ES GENECH';
+  let clubBadge = '🟡🔵';
+  if (clubCodeComp === 'SCLN' || clubIdComp === '500934') {
+    clubDisplay = 'FC SECLIN';
+    clubBadge = '🔵⚪';
+  } else if (clubCodeComp === 'LSQN' || clubIdComp === '500426') {
+    clubDisplay = 'US LESQUIN';
+    clubBadge = '🟢⚪';
+  }
+  const clubLineup = lineups.club || (clubCodeComp === 'LSQN' ? lineups.lesquin : (clubCodeComp === 'SCLN' ? lineups.seclin : lineups.genech)) || lineups.genech || {};
   const opp = lineups.adversaire || {};
   const lineupContentEl = document.getElementById('detailLineupContent');
 
@@ -657,6 +669,26 @@ function authenticateClub(key, declaredRole, isFormSubmit) {
   const myCodeEl = document.getElementById('mySupportCodeDisplay');
   if (myCodeEl) myCodeEl.textContent = currentSupportCode;
 
+  // Enregistrement de l'appareil réel actuel
+  if (!Array.isArray(activeClub.devices)) activeClub.devices = [];
+  const existingDev = activeClub.devices.find(d => d.device_id === currentDeviceId);
+  const platformName = getDevicePlatform();
+  const actualRole = (declaredRole && declaredRole !== "Membre Staff") 
+    ? declaredRole 
+    : (currentStaffRole && currentStaffRole !== "Membre Staff" ? currentStaffRole : `${platformName} (${currentSupportCode})`);
+
+  if (!existingDev) {
+    const nowStr = new Date().toLocaleDateString('fr-FR') + ' ' + new Date().toLocaleTimeString('fr-FR', {hour: '2-digit', minute: '2-digit'});
+    activeClub.devices.push({
+      device_id: currentDeviceId,
+      support_code: currentSupportCode,
+      role_titulaire: actualRole,
+      statut: "Actif",
+      premiere_connexion: nowStr,
+      derniere_activite: nowStr
+    });
+  }
+
   // 2. Mise à jour dynamique du Splash Screen (Logo du Club ou Logo Master)
   const splashClubLogo = document.getElementById('splashClubLogo');
   const splashDivider = document.getElementById('splashDivider');
@@ -701,7 +733,7 @@ function authenticateClub(key, declaredRole, isFormSubmit) {
     if (headerDiv) headerDiv.style.display = 'block';
     if (roleBadge) {
       roleBadge.textContent = activeClub.nom.toUpperCase();
-      roleBadge.style.background = activeClub.club_code === 'SCLN' ? '#0284c7' : '#15803d';
+      roleBadge.style.background = activeClub.club_code === 'SCLN' ? '#0284c7' : (activeClub.club_code === 'LSQN' ? '#059669' : '#15803d');
     }
   }
 
@@ -827,18 +859,42 @@ function switchMasterClub(clubId) {
     }
     changeActiveTeam('500934_SENIOR_M1');
     showNotification("Mode Master : Basculé sur l'espace FC Seclin");
+  } else if (clubId === '500426') {
+    // Mode Super-Admin : Basculement sur Lesquin
+    if (headerLogo) {
+      headerLogo.src = './logos/logo_lesquin.jpg';
+      headerLogo.style.display = 'block';
+    }
+    if (headerDiv) headerDiv.style.display = 'block';
+    const roleBadge = document.getElementById('appRoleBadge');
+    if (roleBadge) {
+      roleBadge.textContent = 'LESQUIN (ADMIN)';
+      roleBadge.style.background = '#059669';
+    }
+    if (teamSelector) {
+      teamSelector.innerHTML = `
+        <option value="500426_SENIOR_M1" selected>Séniors A (R2)</option>
+      `;
+    }
+    changeActiveTeam('500426_SENIOR_M1');
+    showNotification("Mode Master : Basculé sur l'espace US Lesquin");
   }
 }
 
 function syncDeviceWithBackend(licenseKey, declaredRole) {
   if (!navigator.onLine) return;
+  const platformName = getDevicePlatform();
+  const roleToSend = (declaredRole && declaredRole !== "Membre Staff") 
+    ? declaredRole 
+    : (currentStaffRole && currentStaffRole !== "Membre Staff" ? currentStaffRole : `${platformName} (${currentSupportCode})`);
+
   fetch('/api/validate_license', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       key: licenseKey,
       device_id: currentDeviceId,
-      role_titulaire: declaredRole || currentStaffRole,
+      role_titulaire: roleToSend,
       support_code: currentSupportCode,
       action: 'validate'
     })
@@ -1027,6 +1083,24 @@ function revokeDeviceAction(deviceId) {
     }
     showNotification("Accès révoqué avec succès.");
   }
+}
+
+function downloadDeviceRegistryCSV() {
+  if (!activeClub) return;
+  const devs = Array.isArray(activeClub.devices) ? activeClub.devices : [];
+  let csv = "Club;Code_Support;Role_Titulaire;Statut;Premiere_Connexion;Derniere_Activite\n";
+  devs.forEach(d => {
+    csv += `"${activeClub.nom}";"${d.support_code || '--'}";"${d.role_titulaire || '--'}";"${d.statut || 'Actif'}";"${d.premiere_connexion || '--'}";"${d.derniere_activite || '--'}"\n`;
+  });
+  const blob = new Blob(["\uFEFF" + csv], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `registre_appareils_${activeClub.club_code || 'club'}.csv`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
 }
 
 function confirmLogout() {
@@ -1229,7 +1303,7 @@ function renderInterface(data) {
   const currentTeam = data.equipe_active || {};
   const clubNameEl = document.getElementById('activeClubName');
   if (clubNameEl) {
-    clubNameEl.textContent = `${currentTeam.nom || 'ES Genech'} (${currentTeam.poule || 'R3'})`;
+    clubNameEl.textContent = `${currentTeam.nom || (activeClub?.nom || 'Club')} (${currentTeam.poule || currentTeam.categorie || ''})`;
   }
 
   // B. Dernier Match Officiel
@@ -1362,7 +1436,7 @@ function renderInterface(data) {
     const diffStr = diffVal > 0 ? `+${diffVal}` : `${diffVal}`;
     histHeroBox.innerHTML = `
       <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; opacity: 0.85; margin-bottom: 4px;">
-        Bilan Officiel Saison • ${data.equipe_active.nom_affiche || 'ES Genech'}
+        Bilan Officiel Saison • ${data.equipe_active.nom_affiche || (activeClub?.nom || 'Équipe Fanion')}
       </div>
       <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
         <div style="font-size: 20px; font-weight: 900; font-family: var(--font-mono);">
@@ -1440,9 +1514,9 @@ function renderInterface(data) {
           tagClass = 'loss';
         }
 
-        const clubToken = (activeClub?.club_code === 'SCLN') ? 'SECLIN' : 'GENECH';
-        const isHomeClub = m.domicile.toUpperCase().includes(clubToken);
-        const isAwayClub = m.exterieur.toUpperCase().includes(clubToken);
+        const clubSearch = (activeClub?.club_code === 'SCLN') ? 'SECLIN' : ((activeClub?.club_code === 'GNCH') ? 'GENECH' : (activeClub?.nom ? activeClub.nom.toUpperCase().replace(/^(ES|FC|AS|SC|OSC|US)\s+/, '') : ''));
+        const isHomeClub = clubSearch ? m.domicile.toUpperCase().includes(clubSearch) : false;
+        const isAwayClub = clubSearch ? m.exterieur.toUpperCase().includes(clubSearch) : false;
 
         historyHtml += `
           <div class="match-history-card" data-comp-type="${m.comp_type}" onclick="openMatchDetailModal(${idx})">
@@ -1667,16 +1741,19 @@ function renderInterface(data) {
     const matrixClubNameEl = document.getElementById('matrixLegendClubName');
     if (matrixClubNameEl) {
       const isSeclin = (activeClub?.code === 'seclin' || activeClub?.club_code === 'SCLN');
-      matrixClubNameEl.textContent = `Buts Marqués (${isSeclin ? 'FC Seclin' : 'ES Genech'})`;
+      const isLesquin = (activeClub?.club_code === 'LSQN' || activeClub?.club_id === '500426');
+      const clubNomMatrix = isSeclin ? 'FC Seclin' : (isLesquin ? 'US Lesquin' : 'ES Genech');
+      matrixClubNameEl.textContent = `Buts Marqués (${clubNomMatrix})`;
     }
   }
 
   // I. Classement Officiel & Isolation Club
   const isSeclinClub = (activeClub?.code === 'seclin' || activeClub?.club_code === 'SCLN');
+  const isLesquinClub = (activeClub?.club_code === 'LSQN' || activeClub?.club_id === '500426');
   const standingsCardTitleEl = document.getElementById('standingsCardTitle');
   if (standingsCardTitleEl) {
     const currentTeam = (window.MATCHDAY_TEAMS && window.MATCHDAY_TEAMS[currentTeamId]) || {};
-    standingsCardTitleEl.textContent = isSeclinClub 
+    standingsCardTitleEl.textContent = (isSeclinClub || isLesquinClub) 
       ? "Régional 2 • Poule B" 
       : (currentTeam.categorie ? `${currentTeam.categorie} • ${currentTeam.poule || 'Poule D'}` : "Seniors R3 • Poule D");
   }
@@ -1698,9 +1775,8 @@ function renderInterface(data) {
           <tbody>
       `;
       standings.forEach(st => {
-        const isClub = isSeclinClub 
-          ? st.equipe.toUpperCase().includes('SECLIN') 
-          : st.equipe.toUpperCase().includes('GENECH');
+        const clubSearch = isSeclinClub ? 'SECLIN' : (isLesquinClub ? 'LESQUIN' : ((activeClub?.club_code === 'GNCH') ? 'GENECH' : (activeClub?.nom ? activeClub.nom.toUpperCase().replace(/^(ES|FC|AS|SC|OSC|US)\s+/, '') : '')));
+        const isClub = clubSearch ? st.equipe.toUpperCase().includes(clubSearch) : false;
         tableHtml += `
           <tr class="${isClub ? 'highlight-team' : ''}">
             <td>${st.rang}</td>
@@ -1760,6 +1836,39 @@ function renderInterface(data) {
           <div class="notif-item-title">Suivi Régional 2 Poule B FFF</div>
           <div class="notif-item-body">
             Plateforme configurée pour l'équipe fanion Senior A du FC Seclin. Consultation exclusive staff technique.
+          </div>
+        </div>
+      `;
+    } else if (isLesquinClub) {
+      notifFeedEl.innerHTML = `
+        <div class="notif-item alert-urgent">
+          <div class="notif-item-header">
+            <span class="notif-item-tag tag-primary">CHAMPIONNAT R2</span>
+            <span class="notif-item-time">Aujourd'hui 10:00</span>
+          </div>
+          <div class="notif-item-title">J-4 : Déplacement capital chez Courcelles US</div>
+          <div class="notif-item-body">
+            Concurrent direct pour le maintien en R2. Victoire impérative pour creuser l'écart avec la zone de relégation.
+          </div>
+        </div>
+        <div class="notif-item alert-urgent">
+          <div class="notif-item-header">
+            <span class="notif-item-tag tag-danger">DISCIPLINE FFF</span>
+            <span class="notif-item-time">Hier 18:00</span>
+          </div>
+          <div class="notif-item-title">Alex M. suspendu & 2 joueurs sous sursis</div>
+          <div class="notif-item-body">
+            Alex M. suspendu (Art. 226). Martin C. et Raphael D. sous sursis immédiat (2 cartons). 250 € préservés.
+          </div>
+        </div>
+        <div class="notif-item alert-info">
+          <div class="notif-item-header">
+            <span class="notif-item-tag tag-primary">VEILLE TECHNIQUE</span>
+            <span class="notif-item-time">22/10 14:00</span>
+          </div>
+          <div class="notif-item-title">Suivi US Lesquin Seniors R2 Poule B</div>
+          <div class="notif-item-body">
+            Effectif de 25 joueurs certifiés FFF, 12 matchs officiels analysés et algorithme ESG calibré.
           </div>
         </div>
       `;

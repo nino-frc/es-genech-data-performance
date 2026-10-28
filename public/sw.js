@@ -1,5 +1,5 @@
 // Service Worker - MatchDay PWA
-const CACHE_NAME = 'matchday-cache-v12';
+const CACHE_NAME = 'matchday-cache-v14';
 const ASSETS = [
   './',
   './index.html',
@@ -11,8 +11,10 @@ const ASSETS = [
   './logo.png',
   './logos/logo_genech.png',
   './logos/logo_seclin.jpg',
+  './logos/logo_lesquin.jpg',
   './qr_codes/qr_gnch.png',
   './qr_codes/qr_scln.png',
+  './qr_codes/qr_lsqn.png',
   './qr_codes/qr_root.png'
 ];
 

@@ -48,6 +48,7 @@
         <select id="masterClubSelector" class="club-dropdown-select" onchange="switchMasterClub(this.value)" title="Changer de club (Super-Admin Master)">
           <option value="525674" selected>ES Genech</option>
           <option value="500934">FC Seclin</option>
+          <option value="500426">US Lesquin</option>
         </select>
         <span class="selector-arrow">▾</span>
       </div>
@@ -798,7 +799,7 @@
         </div>
         <div class="summary-bottom">
           <div class="stat-item">
-            <span class="stat-num" id="deviceModalActiveCount">3</span>
+            <span class="stat-num" id="deviceModalActiveCount">--</span>
             <span class="stat-text">Comptes Staff</span>
           </div>
           <div class="stat-divider"></div>
@@ -828,6 +829,9 @@
 
       <!-- Actions de pied de page -->
       <div class="device-modal-footer">
+        <button type="button" class="btn-export-devices" onclick="downloadDeviceRegistryCSV()" style="width: 100%; margin-bottom: 8px; background: #0f172a; color: white; border: none; padding: 10px 14px; border-radius: 8px; font-weight: 700; font-size: 12px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
+          <span>📥 Exporter le Registre des Appareils (.csv)</span>
+        </button>
         <button class="btn-logout-license" onclick="logoutClub()">
           <span>🚪 Changer de club / Déconnexion</span>
         </button>
