@@ -406,9 +406,13 @@ function switchMatchDetailSubTab(subTab) {
 
 // 3. quater Export Rapport Direction (PDF & Impression)
 function exportExecutivePdf() {
+  if (activeClub && activeClub.plan === 'TRIAL_BRIDEE') {
+    openProModal();
+    return;
+  }
   const link = document.createElement('a');
   link.href = './rapport_executif_mensuel.pdf';
-  link.download = 'MatchDay_Rapport_Executif_ES_Genech.pdf';
+  link.download = `MatchDay_Rapport_Executif_${activeClub?.nom ? activeClub.nom.replace(/\s+/g, '_') : 'Club'}.pdf`;
   link.target = '_blank';
   document.body.appendChild(link);
   link.click();
@@ -417,6 +421,10 @@ function exportExecutivePdf() {
 }
 
 function printExecutiveReport() {
+  if (activeClub && activeClub.plan === 'TRIAL_BRIDEE') {
+    openProModal();
+    return;
+  }
   showNotification('Génération de l\'aperçu avant impression...');
   setTimeout(() => {
     window.print();
@@ -499,6 +507,610 @@ async function fetchMatchDayFromApi() {
 // 6. Gestion Multi-Équipes & Initialisation de l'Application
 let currentTeamId = 'SENIOR_M1';
 
+// ==========================================================================
+// MODULE D'AUTHENTIFICATION B2B & GESTION DES ACCÈS STAFF (ZÉRO DONNÉE INTRUSIVE)
+// ==========================================================================
+
+let activeClub = null;
+let currentDeviceId = null;
+let currentPlatform = null;
+let currentSupportCode = null;
+let currentStaffRole = null;
+
+function getOrCreateDeviceId() {
+  let devId = null;
+  try {
+    devId = localStorage.getItem('matchday_device_id');
+  } catch (e) {}
+
+  if (!devId) {
+    const randPart = (typeof crypto !== 'undefined' && crypto.randomUUID) 
+      ? crypto.randomUUID().replace(/-/g, '').slice(0, 14)
+      : Math.random().toString(36).substring(2, 10) + Date.now().toString(36);
+    devId = 'dev_' + randPart;
+    try {
+      localStorage.setItem('matchday_device_id', devId);
+    } catch (e) {}
+  }
+  currentDeviceId = devId;
+  return devId;
+}
+
+function getDevicePlatform() {
+  if (currentPlatform) return currentPlatform;
+  const ua = navigator.userAgent || '';
+  let p = "Navigateur Web";
+
+  if (/iPad|Macintosh/i.test(ua) && 'ontouchend' in document) {
+    p = "iPad (iPadOS)";
+  } else if (/iPhone/i.test(ua)) {
+    p = "iPhone (iOS)";
+  } else if (/Android/i.test(ua)) {
+    p = "Smartphone Android";
+  } else if (/Windows/i.test(ua)) {
+    p = "PC Windows";
+  } else if (/Mac/i.test(ua)) {
+    p = "Mac (macOS)";
+  } else if (/Linux/i.test(ua)) {
+    p = "Poste Linux";
+  }
+
+  currentPlatform = p;
+  return p;
+}
+
+function selectRolePreset(role) {
+  const input = document.getElementById('staffRoleInput');
+  if (input) input.value = role;
+}
+
+function showLicenseModal(errorMsg) {
+  const modal = document.getElementById('licenseModal');
+  const errEl = document.getElementById('licenseErrorMsg');
+  if (errEl) {
+    if (errorMsg) {
+      errEl.textContent = errorMsg;
+      errEl.classList.remove('hidden');
+    } else {
+      errEl.classList.add('hidden');
+    }
+  }
+  if (modal) {
+    modal.classList.remove('hidden');
+  }
+  const splash = document.getElementById('splashScreen');
+  if (splash) {
+    splash.classList.add('hidden');
+    setTimeout(() => { splash.style.display = 'none'; }, 400);
+  }
+}
+
+function hideLicenseModal() {
+  const modal = document.getElementById('licenseModal');
+  if (modal) modal.classList.add('hidden');
+}
+
+function handleLicenseSubmit(e) {
+  if (e && e.preventDefault) e.preventDefault();
+  const input = document.getElementById('licenseKeyInput');
+  const roleInput = document.getElementById('staffRoleInput');
+  if (!input) return;
+  const key = input.value.trim().toUpperCase();
+  const role = roleInput ? roleInput.value.trim() : '';
+  if (!key) return;
+  authenticateClub(key, role, true);
+}
+
+function quickFillLicense(key, defaultRole) {
+  const input = document.getElementById('licenseKeyInput');
+  if (input) input.value = key;
+  const roleInput = document.getElementById('staffRoleInput');
+  if (roleInput && defaultRole) roleInput.value = defaultRole;
+  authenticateClub(key, defaultRole, true);
+}
+
+function authenticateClub(key, declaredRole, isFormSubmit) {
+  const cleanKey = (key || '').trim().toUpperCase();
+  getOrCreateDeviceId();
+  getDevicePlatform();
+
+  // 1. Validation immédiate via le Registre Local (Offline First)
+  const registry = window.MATCHDAY_LICENSES || {};
+  let clubData = registry[cleanKey];
+
+  if (!clubData) {
+    showLicenseModal("Clé de licence invalide ou non reconnue. Vérifiez votre saisie.");
+    return;
+  }
+
+  // Clé valide ! Mémorisation permanente de l'appareil
+  try {
+    localStorage.setItem('matchday_club_key', cleanKey);
+    if (declaredRole) {
+      localStorage.setItem('matchday_staff_role', declaredRole);
+    }
+  } catch (e) {}
+
+  currentStaffRole = declaredRole || localStorage.getItem('matchday_staff_role') || "Membre Staff";
+  activeClub = { ...clubData, license_key: cleanKey };
+  const isMaster = Boolean(activeClub.is_master || cleanKey === "MD-MASTER-NINO-2026");
+  activeClub.is_master = isMaster;
+
+  // Calcul du Code Support Unique (ex: #GN-01, #SC-01, #ROOT-01)
+  let savedCode = null;
+  try { savedCode = localStorage.getItem('matchday_support_code'); } catch(e) {}
+  if (!savedCode) {
+    const pfx = isMaster ? "ROOT" : (activeClub.club_code || "STAFF");
+    const count = (activeClub.devices ? activeClub.devices.length : 0) + 1;
+    savedCode = `#${pfx}-${count < 10 ? '0' + count : count}`;
+    try { localStorage.setItem('matchday_support_code', savedCode); } catch(e) {}
+  }
+  currentSupportCode = savedCode;
+
+  const myCodeEl = document.getElementById('mySupportCodeDisplay');
+  if (myCodeEl) myCodeEl.textContent = currentSupportCode;
+
+  // 2. Mise à jour dynamique du Splash Screen (Logo du Club ou Logo Master)
+  const splashClubLogo = document.getElementById('splashClubLogo');
+  const splashDivider = document.getElementById('splashDivider');
+  const splashSub = document.getElementById('splashSubtitle');
+
+  if (splashClubLogo) {
+    if (isMaster) {
+      splashClubLogo.style.display = 'none';
+      if (splashDivider) splashDivider.style.display = 'none';
+      if (splashSub) splashSub.textContent = "Super-Admin • Contrôle Global Tous Clubs";
+    } else if (activeClub.logo_url) {
+      splashClubLogo.src = activeClub.logo_url;
+      splashClubLogo.style.display = 'block';
+      if (splashDivider) splashDivider.style.display = 'block';
+      if (splashSub) splashSub.textContent = `Espace Officiel • ${activeClub.nom}`;
+    }
+  }
+
+  // 3. Mise à jour du Header Institutionnel (Logo, Sélecteur Master & Blason Club)
+  const headerLogo = document.getElementById('headerClubLogo');
+  const headerDiv = document.getElementById('headerClubDivider');
+  const roleBadge = document.getElementById('appRoleBadge');
+  const masterContainer = document.getElementById('masterClubContainer');
+
+  if (isMaster) {
+    if (headerLogo) {
+      headerLogo.src = './logos/logo_genech.png';
+      headerLogo.style.display = 'block';
+    }
+    if (headerDiv) headerDiv.style.display = 'block';
+    if (roleBadge) {
+      roleBadge.textContent = 'SUPER ADMIN';
+      roleBadge.style.background = '#b45309';
+    }
+    if (masterContainer) masterContainer.style.display = 'flex';
+  } else {
+    if (masterContainer) masterContainer.style.display = 'none';
+    if (headerLogo && activeClub.logo_url) {
+      headerLogo.src = activeClub.logo_url;
+      headerLogo.style.display = 'block';
+    }
+    if (headerDiv) headerDiv.style.display = 'block';
+    if (roleBadge) {
+      roleBadge.textContent = activeClub.nom.toUpperCase();
+      roleBadge.style.background = activeClub.club_code === 'SCLN' ? '#0284c7' : '#15803d';
+    }
+  }
+
+  // 4. Configuration exclusive du Sélecteur d'équipes (Cloisonnement étanche !)
+  const teamSelector = document.getElementById('teamSelector');
+  if (teamSelector) {
+    teamSelector.innerHTML = '';
+    if (isMaster) {
+      const defaultGenechTeams = [
+        { id: "SENIOR_M1", nom: "Séniors A (R3)" },
+        { id: "SENIOR_M3", nom: "Séniors B (D2)" },
+        { id: "SENIOR_F2", nom: "Féminines (Interdistrict)" },
+        { id: "U18_M1", nom: "U19 / U18 (D1)" }
+      ];
+      defaultGenechTeams.forEach(eq => {
+        const opt = document.createElement('option');
+        opt.value = eq.id;
+        opt.textContent = eq.nom;
+        teamSelector.appendChild(opt);
+      });
+    } else if (activeClub.equipes_autorisees) {
+      activeClub.equipes_autorisees.forEach(eq => {
+        const opt = document.createElement('option');
+        opt.value = eq.id;
+        opt.textContent = eq.nom;
+        teamSelector.appendChild(opt);
+      });
+    }
+  }
+
+  // 5. Sélection de l'équipe active
+  let targetTeam = activeClub.default_team || activeClub.equipes_autorisees[0].id;
+  try {
+    const saved = localStorage.getItem('matchday_active_team');
+    const isAllowed = activeClub.equipes_autorisees.some(eq => eq.id === saved);
+    if (isAllowed) targetTeam = saved;
+  } catch (e) {}
+
+  currentTeamId = targetTeam;
+  if (teamSelector) teamSelector.value = targetTeam;
+
+  // 6. Chargement et affichage des données de l'équipe
+  if (window.MATCHDAY_TEAMS && window.MATCHDAY_TEAMS[targetTeam]) {
+    globalData = window.MATCHDAY_TEAMS[targetTeam];
+    renderInterface(globalData);
+  } else if (window.MATCHDAY_DATA) {
+    globalData = window.MATCHDAY_DATA;
+    renderInterface(globalData);
+  }
+
+  // 7. Mise à jour du compteur d'appareils
+  const activeCount = Array.isArray(activeClub.devices) 
+    ? activeClub.devices.filter(d => d.statut === 'Actif').length 
+    : 1;
+  const countBadge = document.getElementById('activeDeviceCountBadge');
+  if (countBadge) countBadge.textContent = activeCount;
+
+  // 8. Fermeture de la modale de licence
+  hideLicenseModal();
+
+  // 9. Dismiss du Splash Screen après transition fluide
+  dismissSplashScreen();
+
+  if (isFormSubmit) {
+    const welcomeMsg = isMaster 
+      ? "Bienvenue Nino ! Clé Super-Admin activée : accès total à tous les clubs."
+      : `Bienvenue ${currentStaffRole} sur l'espace officiel ${activeClub.nom} !`;
+    showNotification(welcomeMsg);
+  }
+
+  // 10. Synchronisation Asynchrone en arrière-plan avec MongoDB Atlas
+  syncDeviceWithBackend(cleanKey, currentStaffRole);
+}
+
+function switchMasterClub(clubId) {
+  if (!activeClub || !activeClub.is_master) return;
+  const teamSelector = document.getElementById('teamSelector');
+  const headerLogo = document.getElementById('headerClubLogo');
+  const headerDiv = document.getElementById('headerClubDivider');
+
+  if (clubId === '525674') {
+    // Mode Super-Admin : Basculement sur Genech
+    if (headerLogo) {
+      headerLogo.src = './logos/logo_genech.png';
+      headerLogo.style.display = 'block';
+    }
+    if (headerDiv) headerDiv.style.display = 'block';
+    if (teamSelector) {
+      teamSelector.innerHTML = `
+        <option value="SENIOR_M1" selected>Séniors A (R3)</option>
+        <option value="U18_M1">U19 / U18 (D1)</option>
+        <option value="SENIOR_F2">Féminines (Interdistrict)</option>
+        <option value="SENIOR_M3">Séniors B (D2)</option>
+      `;
+    }
+    const roleBadge = document.getElementById('appRoleBadge');
+    if (roleBadge) {
+      roleBadge.textContent = 'GENECH (ADMIN)';
+      roleBadge.style.background = '#b45309';
+    }
+    changeActiveTeam('SENIOR_M1');
+    showNotification("Mode Master : Basculé sur l'espace ES Genech");
+  } else if (clubId === '500934') {
+    // Mode Super-Admin : Basculement sur Seclin
+    if (headerLogo) {
+      headerLogo.src = './logos/logo_seclin.jpg';
+      headerLogo.style.display = 'block';
+    }
+    if (headerDiv) headerDiv.style.display = 'block';
+    const roleBadge = document.getElementById('appRoleBadge');
+    if (roleBadge) {
+      roleBadge.textContent = 'SECLIN (ADMIN)';
+      roleBadge.style.background = '#0284c7';
+    }
+    if (teamSelector) {
+      teamSelector.innerHTML = `
+        <option value="500934_SENIOR_M1" selected>Séniors A (R2)</option>
+      `;
+    }
+    changeActiveTeam('500934_SENIOR_M1');
+    showNotification("Mode Master : Basculé sur l'espace FC Seclin");
+  }
+}
+
+function syncDeviceWithBackend(licenseKey, declaredRole) {
+  if (!navigator.onLine) return;
+  fetch('/api/validate_license', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      key: licenseKey,
+      device_id: currentDeviceId,
+      role_titulaire: declaredRole || currentStaffRole,
+      support_code: currentSupportCode,
+      action: 'validate'
+    })
+  })
+  .then(res => {
+    if (!res.ok && res.status === 403) {
+      return res.json().then(data => {
+        if (data.revoked) {
+          alert("🚫 Cet accès a été révoqué par la direction.");
+          logoutClub(true);
+        }
+      });
+    }
+    return res.json();
+  })
+  .then(data => {
+    if (data && data.valid && data.devices) {
+      if (activeClub) {
+        activeClub.devices = data.devices;
+        const count = data.devices.filter(d => d.statut === 'Actif').length;
+        const countBadge = document.getElementById('activeDeviceCountBadge');
+        if (countBadge) countBadge.textContent = count;
+      }
+    }
+  })
+  .catch(() => {});
+}
+
+// --------------------------------------------------------------------------
+// GESTION DES MODALES ACCÈS STAFF & QR CODE
+// --------------------------------------------------------------------------
+function openDeviceModal() {
+  if (!activeClub) return;
+  const modal = document.getElementById('deviceManagerModal');
+  if (!modal) return;
+
+  document.getElementById('deviceModalClubTag').textContent = activeClub.is_master ? "SUPER ADMIN" : activeClub.nom.toUpperCase();
+  document.getElementById('deviceModalKeyDisplay').textContent = activeClub.license_key;
+  document.getElementById('deviceModalStatusBadge').textContent = activeClub.statut;
+
+  const myCodeEl = document.getElementById('mySupportCodeDisplay');
+  if (myCodeEl) myCodeEl.textContent = currentSupportCode || "#GN-01";
+
+  const devices = Array.isArray(activeClub.devices) ? activeClub.devices : [];
+  const activeCount = devices.filter(d => d.statut === 'Actif').length;
+  document.getElementById('deviceModalActiveCount').textContent = activeCount;
+
+  const listContainer = document.getElementById('deviceListContent');
+  if (listContainer) {
+    let html = '';
+    devices.forEach((dev, idx) => {
+      const isCurrent = dev.device_id === currentDeviceId;
+      const isRevoked = dev.statut === 'Révoqué';
+      const supportCode = dev.support_code || (`#${activeClub.club_code || 'STAFF'}-0${idx+1}`);
+      const roleName = dev.role_titulaire || dev.alias || `Membre Staff ${supportCode}`;
+
+      html += `
+        <div class="device-card-item ${isCurrent ? 'current-device' : ''} ${isRevoked ? 'revoked-device' : ''}">
+          <div class="device-left">
+            <div class="device-icon-box" style="font-family: var(--font-mono); font-size: 11px; font-weight: 800; color: var(--color-primary);">
+              ${supportCode}
+            </div>
+            <div>
+              <div class="device-alias-title">
+                <span>${roleName}</span>
+                ${isCurrent ? '<span style="font-size: 10px; color: #16a34a; font-weight: 700;">(Votre session)</span>' : ''}
+                <button type="button" class="btn-edit-alias" onclick="renameDevicePrompt('${dev.device_id}', '${roleName.replace(/'/g, "\\'")}')" title="Modifier le titre / rôle">✏️</button>
+              </div>
+              <div class="device-dates-meta" style="margin-top: 2px;">
+                Code Support : <strong>${supportCode}</strong> • Connecté le: ${dev.premiere_connexion || '--'}
+              </div>
+              <div class="device-dates-meta" style="color: var(--text-muted);">
+                Dernière activité : ${dev.derniere_activite || '--'}
+              </div>
+            </div>
+          </div>
+          <div class="device-right-actions">
+            <span class="device-status-badge ${isRevoked ? 'revoked' : 'active'}">${dev.statut}</span>
+            ${!isRevoked ? `
+              <button type="button" class="btn-revoke-device" onclick="revokeDeviceAction('${dev.device_id}')">
+                Révoquer
+              </button>
+            ` : ''}
+          </div>
+        </div>
+      `;
+    });
+    listContainer.innerHTML = html;
+  }
+
+  modal.classList.remove('hidden');
+}
+
+function closeDeviceModal() {
+  const modal = document.getElementById('deviceManagerModal');
+  if (modal) modal.classList.add('hidden');
+}
+
+function handleDeviceModalOverlay(e) {
+  if (e.target.id === 'deviceManagerModal') closeDeviceModal();
+}
+
+function renameDevicePrompt(deviceId, currentAlias) {
+  const newAlias = prompt("Saisissez le rôle / nom du titulaire de cet accès (ex: Coach Principal, Adjoint, Préparateur...) :", currentAlias);
+  if (!newAlias || !newAlias.trim()) return;
+
+  if (activeClub && activeClub.devices) {
+    activeClub.devices = activeClub.devices.map(d => {
+      if (d.device_id === deviceId) return { ...d, role_titulaire: newAlias.trim(), alias: newAlias.trim() };
+      return d;
+    });
+  }
+  openDeviceModal();
+
+  fetch('/api/validate_license', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      key: activeClub.license_key,
+      action: 'rename_device',
+      target_device_id: deviceId,
+      new_alias: newAlias.trim()
+    })
+  }).catch(() => {});
+}
+
+function revokeDeviceAction(deviceId) {
+  const isSelf = deviceId === currentDeviceId;
+  const msg = isSelf 
+    ? "⚠️ Attention : vous allez révoquer votre propre accès actuel. Vous serez immédiatement déconnecté. Confirmer ?"
+    : "Voulez-vous vraiment révoquer l'accès de ce membre du staff ? Il sera immédiatement déconnecté de l'espace club.";
+
+  if (!confirm(msg)) return;
+
+  if (activeClub && activeClub.devices) {
+    activeClub.devices = activeClub.devices.map(d => {
+      if (d.device_id === deviceId) return { ...d, statut: 'Révoqué' };
+      return d;
+    });
+  }
+
+  fetch('/api/validate_license', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      key: activeClub.license_key,
+      action: 'revoke_device',
+      target_device_id: deviceId
+    })
+  }).catch(() => {});
+
+  if (isSelf) {
+    logoutClub(true);
+  } else {
+    openDeviceModal();
+    const countBadge = document.getElementById('activeDeviceCountBadge');
+    if (countBadge) {
+      const activeCount = activeClub.devices.filter(d => d.statut === 'Actif').length;
+      countBadge.textContent = activeCount;
+    }
+    showNotification("Accès révoqué avec succès.");
+  }
+}
+
+function logoutClub(silent) {
+  try {
+    localStorage.removeItem('matchday_club_key');
+    localStorage.removeItem('matchday_active_team');
+    localStorage.removeItem('matchday_staff_role');
+    localStorage.removeItem('matchday_support_code');
+  } catch (e) {}
+
+  activeClub = null;
+  currentSupportCode = null;
+  currentStaffRole = null;
+  closeDeviceModal();
+  closeQrModal();
+
+  const headerLogo = document.getElementById('headerClubLogo');
+  const headerDiv = document.getElementById('headerClubDivider');
+  const roleBadge = document.getElementById('appRoleBadge');
+  const masterContainer = document.getElementById('masterClubContainer');
+
+  if (masterContainer) masterContainer.style.display = 'none';
+  if (headerLogo) headerLogo.style.display = 'none';
+  if (headerDiv) headerDiv.style.display = 'none';
+  if (roleBadge) {
+    roleBadge.textContent = 'SAAS';
+    roleBadge.style.background = '#0a1728';
+  }
+
+  showLicenseModal(silent ? "Votre session sur cet appareil a été révoquée." : null);
+}
+
+// --------------------------------------------------------------------------
+// GESTION DU QR CODE CLUB
+// --------------------------------------------------------------------------
+function openQrModal() {
+  if (!activeClub) return;
+  const modal = document.getElementById('qrCodeModal');
+  if (!modal) return;
+
+  const qrTag = document.getElementById('qrModalClubTag');
+  const qrKey = document.getElementById('qrModalKeyDisplay');
+  const qrImg = document.getElementById('qrModalImage');
+  const qrUrlInput = document.getElementById('qrModalUrlInput');
+
+  if (qrTag) qrTag.textContent = activeClub.nom.toUpperCase();
+  if (qrKey) qrKey.textContent = activeClub.license_key;
+  if (qrImg) qrImg.src = `./qr_codes/qr_${activeClub.club_code.toLowerCase()}.png`;
+  
+  const fullUrl = `https://match-day-app.netlify.app/?key=${activeClub.license_key}`;
+  if (qrUrlInput) qrUrlInput.value = fullUrl;
+
+  modal.classList.remove('hidden');
+}
+
+function closeQrModal() {
+  const modal = document.getElementById('qrCodeModal');
+  if (modal) modal.classList.add('hidden');
+}
+
+function handleQrModalOverlay(e) {
+  if (e.target.id === 'qrCodeModal') closeQrModal();
+}
+
+function copyActivationUrl() {
+  const input = document.getElementById('qrModalUrlInput');
+  const btn = document.getElementById('btnCopyUrl');
+  if (input) {
+    input.select();
+    input.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(input.value).then(() => {
+      if (btn) {
+        const orig = btn.textContent;
+        btn.textContent = "✓ Copié !";
+        btn.style.background = "#15803d";
+        setTimeout(() => {
+          btn.textContent = orig;
+          btn.style.background = "";
+        }, 2000);
+      }
+    }).catch(() => {
+      document.execCommand('copy');
+      if (btn) btn.textContent = "✓ Copié !";
+    });
+  }
+}
+
+// --------------------------------------------------------------------------
+// GESTION DE LA MODALE MENTIONS LÉGALES & CONFIDENTIALITÉ (RGPD)
+// --------------------------------------------------------------------------
+function openLegalModal() {
+  const modal = document.getElementById('legalModal');
+  if (modal) modal.classList.remove('hidden');
+}
+
+function closeLegalModal() {
+  const modal = document.getElementById('legalModal');
+  if (modal) modal.classList.add('hidden');
+}
+
+function handleLegalModalOverlay(e) {
+  if (e.target.id === 'legalModal') closeLegalModal();
+}
+
+// --------------------------------------------------------------------------
+// GESTION DE LA MODALE MATCHDAY PRO (OFFRE B2B & BRIDAGE TRIAL)
+// --------------------------------------------------------------------------
+function openProModal() {
+  const modal = document.getElementById('proUpgradeModal');
+  if (modal) modal.classList.remove('hidden');
+}
+
+function closeProModal() {
+  const modal = document.getElementById('proUpgradeModal');
+  if (modal) modal.classList.add('hidden');
+}
+
+function handleProModalOverlay(e) {
+  if (e.target.id === 'proUpgradeModal') closeProModal();
+}
+
 function changeActiveTeam(teamId) {
   if (!window.MATCHDAY_TEAMS || !window.MATCHDAY_TEAMS[teamId]) {
     console.warn(`Équipe ${teamId} non disponible dans le flux local.`);
@@ -523,28 +1135,35 @@ function changeActiveTeam(teamId) {
 }
 
 function initApp() {
-  // A. Récupération de l'équipe sélectionnée (Persistance localStorage)
-  let savedTeam = 'SENIOR_M1';
+  getOrCreateDeviceId();
+  getDevicePlatform();
+
+  // 1. Détection automatique via QR Code (?key=MD-XXXX-...)
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlKey = urlParams.get('key');
+
+  if (urlKey) {
+    const cleanKey = urlKey.trim().toUpperCase();
+    try {
+      localStorage.setItem('matchday_club_key', cleanKey);
+      window.history.replaceState({}, document.title, window.location.pathname);
+    } catch (e) {}
+  }
+
+  // 2. Lecture de la clé mémorisée
+  let storedKey = null;
   try {
-    savedTeam = localStorage.getItem('matchday_active_team') || 'SENIOR_M1';
+    storedKey = localStorage.getItem('matchday_club_key');
   } catch (e) {}
-  currentTeamId = savedTeam;
 
-  const sel = document.getElementById('teamSelector');
-  if (sel) {
-    sel.value = savedTeam;
+  if (!storedKey) {
+    showLicenseModal();
+    return;
   }
 
-  if (window.MATCHDAY_TEAMS && window.MATCHDAY_TEAMS[savedTeam]) {
-    globalData = window.MATCHDAY_TEAMS[savedTeam];
-    renderInterface(globalData);
-  } else if (window.MATCHDAY_DATA) {
-    globalData = window.MATCHDAY_DATA;
-    renderInterface(window.MATCHDAY_DATA);
-  }
-
-  dismissSplashScreen();
-  fetchMatchDayFromApi();
+  // 3. Authentification & Démarrage
+  const savedRole = localStorage.getItem('matchday_staff_role') || null;
+  authenticateClub(storedKey, savedRole, false);
   updateNotifUI();
 }
 
@@ -552,11 +1171,19 @@ function initApp() {
 function renderInterface(data) {
   if (!data) return;
 
+  const isTrial = Boolean(activeClub && activeClub.plan === 'TRIAL_BRIDEE');
+
+  // Bandeau Démo Bridée (Uniquement pour les clubs en essai commercial comme Seclin)
+  const trialBanner = document.getElementById('trialBanner');
+  if (trialBanner) {
+    trialBanner.style.display = isTrial ? 'block' : 'none';
+  }
+
   // A. Header
-  const activeClub = data.equipe_active || {};
+  const currentTeam = data.equipe_active || {};
   const clubNameEl = document.getElementById('activeClubName');
   if (clubNameEl) {
-    clubNameEl.textContent = `${activeClub.nom || 'ES Genech'} (${activeClub.poule || 'R3'})`;
+    clubNameEl.textContent = `${currentTeam.nom || 'ES Genech'} (${currentTeam.poule || 'R3'})`;
   }
 
   // B. Dernier Match Officiel
@@ -702,7 +1329,8 @@ function renderInterface(data) {
   if (historyContainer) {
     if (historyList.length > 0) {
       let historyHtml = '';
-      historyList.forEach((m, idx) => {
+      const displayMatches = isTrial ? historyList.slice(0, 3) : historyList;
+      displayMatches.forEach((m, idx) => {
         let pillClass = 'score-pill-win';
         let tagClass = 'win';
         if (m.resultat === 'N') {
@@ -741,6 +1369,22 @@ function renderInterface(data) {
           </div>
         `;
       });
+
+      // Bloc Verrouillé Démo (Affiché si club en version d'essai)
+      if (isTrial && historyList.length > 3) {
+        const lockedCount = historyList.length - 3;
+        historyHtml += `
+          <div class="trial-lock-card" onclick="openProModal()">
+            <div class="trial-lock-icon">🔒</div>
+            <div class="trial-lock-info">
+              <div class="trial-lock-title">Historique Matchs Verrouillé (${lockedCount} matchs restants)</div>
+              <div class="trial-lock-desc">L'accès à l'intégralité de la saison et aux feuilles de match officielles est réservé à la version Premium.</div>
+            </div>
+            <button type="button" class="btn-trial-unlock" onclick="event.stopPropagation(); openProModal()">Version Premium →</button>
+          </div>
+        `;
+      }
+
       historyContainer.innerHTML = historyHtml;
       historyContainer.classList.remove('skeleton');
     } else {
@@ -755,7 +1399,8 @@ function renderInterface(data) {
   if (playersContainer) {
     if (players.length > 0) {
       let playersHtml = '';
-      players.forEach((p, idx) => {
+      const displayPlayers = isTrial ? players.slice(0, 5) : players;
+      displayPlayers.forEach((p, idx) => {
         const hasRed = p.cartons_r > 0 ? `<span>🟥 ${p.cartons_r}</span>` : '';
         playersHtml += `
           <div class="player-row" onclick="openPlayerModal(${idx})">
@@ -780,6 +1425,22 @@ function renderInterface(data) {
           </div>
         `;
       });
+
+      // Bloc Verrouillé Démo Effectif (Affiché si club en version d'essai)
+      if (isTrial && players.length > 5) {
+        const lockedPlayers = players.length - 5;
+        playersHtml += `
+          <div class="trial-lock-card" onclick="openProModal()">
+            <div class="trial-lock-icon">🔒</div>
+            <div class="trial-lock-info">
+              <div class="trial-lock-title">Effectif Restant Verrouillé (${lockedPlayers} joueurs)</div>
+              <div class="trial-lock-desc">Les fiches individuelles, profils physiques et scores d'impact ESG du reste du groupe sont réservés à la version Premium.</div>
+            </div>
+            <button type="button" class="btn-trial-unlock" onclick="event.stopPropagation(); openProModal()">Version Premium →</button>
+          </div>
+        `;
+      }
+
       playersContainer.innerHTML = playersHtml;
       playersContainer.classList.remove('skeleton');
     }

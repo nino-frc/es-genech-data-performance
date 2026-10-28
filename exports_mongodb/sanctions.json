@@ -1,0 +1,722 @@
+[
+  {
+    "_id": "a11d3f6e5024bd22db6462fd",
+    "licencie_id": "fb3fd9bfbdc459bc138524bc",
+    "nom_affiche": "Hugo H.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "r3_j1_bondues_genech",
+    "date_match": "2026-09-06 15:00",
+    "minute": 33,
+    "type_sanction": "EXPULSION",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Seniors Régional 3 (Poule D)",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.600976"
+  },
+  {
+    "_id": "3081b3efc74dc4aeafe22ee9",
+    "licencie_id": "da8b8c8b205d8fa2bdecdccf",
+    "nom_affiche": "Maxime P.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "r3_j1_bondues_genech",
+    "date_match": "2026-09-06 15:00",
+    "minute": 53,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Seniors Régional 3 (Poule D)",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601012"
+  },
+  {
+    "_id": "630d45d4f1eb5174d320feed",
+    "licencie_id": "0afcfb962ddd408a30a7b0ad",
+    "nom_affiche": "Gaspard D.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "r3_j1_bondues_genech",
+    "date_match": "2026-09-06 15:00",
+    "minute": 80,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Seniors Régional 3 (Poule D)",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601034"
+  },
+  {
+    "_id": "12429b318b381e8933b54f53",
+    "licencie_id": "cf15bc7757fbbf24ff2ae3d8",
+    "nom_affiche": "Mathys H.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "r3_j1_bondues_genech",
+    "date_match": "2026-09-06 15:00",
+    "minute": 90,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Seniors Régional 3 (Poule D)",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601052"
+  },
+  {
+    "_id": "8022e75ac240ad6eae85940a",
+    "licencie_id": "0afcfb962ddd408a30a7b0ad",
+    "nom_affiche": "Gaspard D.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "r3_j2_genech_maubeuge",
+    "date_match": "2026-09-20 15:00",
+    "minute": 83,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Seniors Régional 3 (Poule D)",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601068"
+  },
+  {
+    "_id": "1e9dccb784e480226aeb6038",
+    "licencie_id": "69ed81e80814cffe21b3817a",
+    "nom_affiche": "Remi D.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "r3_j3_guesnain_genech",
+    "date_match": "2026-10-04 15:00",
+    "minute": 90,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Seniors Régional 3 (Poule D)",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601088"
+  },
+  {
+    "_id": "b83bd6db485b27c007cc6e50",
+    "licencie_id": "fb3fd9bfbdc459bc138524bc",
+    "nom_affiche": "Hugo H.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "cdf_t2_lys_genech",
+    "date_match": "2026-08-30 15:00",
+    "minute": 83,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Coupe de France",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601103"
+  },
+  {
+    "_id": "e0499eecd02050b9827c1a9f",
+    "licencie_id": "69f92fb181e11a5f565c7ed7",
+    "nom_affiche": "Thomas L.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "cdf_t2_lys_genech",
+    "date_match": "2026-08-30 15:00",
+    "minute": 88,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Coupe de France",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601117"
+  },
+  {
+    "_id": "a853ee94db40de384205d967",
+    "licencie_id": "63cb257b725a064f3cfe7b8c",
+    "nom_affiche": "Julien N.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "cdf_t2_lys_genech",
+    "date_match": "2026-08-30 15:00",
+    "minute": 90,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Coupe de France",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601132"
+  },
+  {
+    "_id": "c8d63fa1efb6b0045e5d5161",
+    "licencie_id": "46771cf4f6f70afbd0609fc0",
+    "nom_affiche": "Julien D.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "cdf_t3_sainghin_genech",
+    "date_match": "2026-09-13 15:00",
+    "minute": 40,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Coupe de France",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601146"
+  },
+  {
+    "_id": "c4fd2b098ef62caf7b51793b",
+    "licencie_id": "c3e1e2f7966c56cd096fa437",
+    "nom_affiche": "Mateo S.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "cdf_t3_sainghin_genech",
+    "date_match": "2026-09-13 15:00",
+    "minute": 79,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Coupe de France",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601160"
+  },
+  {
+    "_id": "39f28132977b22bbb892ccfb",
+    "licencie_id": "c3e1e2f7966c56cd096fa437",
+    "nom_affiche": "Mateo S.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "cdf_t3_sainghin_genech",
+    "date_match": "2026-09-13 15:00",
+    "minute": 82,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Coupe de France",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601175"
+  },
+  {
+    "_id": "27423e81474d016aba0ff00a",
+    "licencie_id": "c3e1e2f7966c56cd096fa437",
+    "nom_affiche": "Mateo S.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "cdf_t3_sainghin_genech",
+    "date_match": "2026-09-13 15:00",
+    "minute": 82,
+    "type_sanction": "EXPULSION",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Coupe de France",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601189"
+  },
+  {
+    "_id": "aaaae67f730bd5ed0b4b2c7a",
+    "licencie_id": "cf15bc7757fbbf24ff2ae3d8",
+    "nom_affiche": "Mathys H.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "cdf_t4_genech_dunkerque",
+    "date_match": "2026-09-27 15:00",
+    "minute": 60,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Coupe de France",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601204"
+  },
+  {
+    "_id": "a13e617baa81ff692ddad8f4",
+    "licencie_id": "5134ba09df1bc3e6dfed5dcb",
+    "nom_affiche": "Giovany C.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "r3_j4_genech_anstaing",
+    "date_match": "2026-10-18 15:00",
+    "minute": 61,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Seniors Régional 3 (Poule D)",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601219"
+  },
+  {
+    "_id": "71bdf6b9b0f65844bb8e85c5",
+    "licencie_id": "da8b8c8b205d8fa2bdecdccf",
+    "nom_affiche": "Maxime P.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "r3_j4_genech_anstaing",
+    "date_match": "2026-10-18 15:00",
+    "minute": 74,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Seniors Régional 3 (Poule D)",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601237"
+  },
+  {
+    "_id": "dfd73929b5c28d3c611cb7a4",
+    "licencie_id": "46771cf4f6f70afbd0609fc0",
+    "nom_affiche": "Julien D.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "r3_j4_genech_anstaing",
+    "date_match": "2026-10-18 15:00",
+    "minute": 79,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Seniors Régional 3 (Poule D)",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601251"
+  },
+  {
+    "_id": "ac854cc5170175d91ca209eb",
+    "licencie_id": "cf15bc7757fbbf24ff2ae3d8",
+    "nom_affiche": "Mathys H.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "r3_j4_genech_anstaing",
+    "date_match": "2026-10-18 15:00",
+    "minute": 79,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Seniors Régional 3 (Poule D)",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601266"
+  },
+  {
+    "_id": "265efe09888b4c7d1fd842bc",
+    "licencie_id": "0afcfb962ddd408a30a7b0ad",
+    "nom_affiche": "Gaspard D.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "r3_j4_genech_anstaing",
+    "date_match": "2026-10-18 15:00",
+    "minute": 90,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Seniors Régional 3 (Poule D)",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601282"
+  },
+  {
+    "_id": "0802fa4467b72e019fa5480f",
+    "licencie_id": "0afcfb962ddd408a30a7b0ad",
+    "nom_affiche": "Gaspard D.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "r3_j4_genech_anstaing",
+    "date_match": "2026-10-18 15:00",
+    "minute": 90,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Seniors Régional 3 (Poule D)",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601296"
+  },
+  {
+    "_id": "ae7f02589f966b13e57dfdcd",
+    "licencie_id": "0afcfb962ddd408a30a7b0ad",
+    "nom_affiche": "Gaspard D.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "r3_j4_genech_anstaing",
+    "date_match": "2026-10-18 15:00",
+    "minute": 90,
+    "type_sanction": "EXPULSION",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Seniors Régional 3 (Poule D)",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601310"
+  },
+  {
+    "_id": "41024c53743ed6d9cb751af9",
+    "licencie_id": "a3acf92aa655ff70a0ae7caf",
+    "nom_affiche": "Robin C.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "m_u18_m1_79496282-et-c-anstai",
+    "date_match": "2026-10-10 14:30",
+    "minute": 69,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Compétition Régionale",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601325"
+  },
+  {
+    "_id": "3b237dbee5c8d42268affafb",
+    "licencie_id": "f5b0d9a747b1a1c7e162d3c0",
+    "nom_affiche": "Antoine M.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "m_u18_m1_79494364-u-s-antilla",
+    "date_match": "2026-09-26 18:00",
+    "minute": 68,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Compétition Régionale",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601339"
+  },
+  {
+    "_id": "9f23d4593dbd388deb50663c",
+    "licencie_id": "1da7cdc3d66128bc2c34f267",
+    "nom_affiche": "Victorien C.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "m_u18_m1_79494364-u-s-antilla",
+    "date_match": "2026-09-26 18:00",
+    "minute": 69,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Compétition Régionale",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601353"
+  },
+  {
+    "_id": "ef42aa489d82bb6db6a89614",
+    "licencie_id": "5561db43f6e12822925277c2",
+    "nom_affiche": "Hugo D.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "m_u18_m1_79494364-u-s-antilla",
+    "date_match": "2026-09-26 18:00",
+    "minute": 83,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Compétition Régionale",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601366"
+  },
+  {
+    "_id": "3c2b73f225047028f69623bc",
+    "licencie_id": "908527ffa3399a6e014d8bcc",
+    "nom_affiche": "Natanael B.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "m_u18_m1_56697624-ent-s-de-ge",
+    "date_match": "2026-09-28 15:30",
+    "minute": 66,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Compétition Régionale",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601383"
+  },
+  {
+    "_id": "dfd576dc34cc0f316bf58a76",
+    "licencie_id": "1af2f41fda678e9567535d1c",
+    "nom_affiche": "Elio B.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "m_u18_m1_56697624-ent-s-de-ge",
+    "date_match": "2026-09-28 15:30",
+    "minute": 75,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Compétition Régionale",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601399"
+  },
+  {
+    "_id": "9b0e89b7c693d0fdac237bd7",
+    "licencie_id": "a3acf92aa655ff70a0ae7caf",
+    "nom_affiche": "Robin C.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "m_u18_m1_56697624-ent-s-de-ge",
+    "date_match": "2026-09-28 15:30",
+    "minute": 78,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Compétition Régionale",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601415"
+  },
+  {
+    "_id": "485c6c3a71c38aa2d479b4c3",
+    "licencie_id": "1af2f41fda678e9567535d1c",
+    "nom_affiche": "Elio B.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "m_u18_m1_56697624-ent-s-de-ge",
+    "date_match": "2026-09-28 15:30",
+    "minute": 90,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Compétition Régionale",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601429"
+  },
+  {
+    "_id": "c5375a2a285dc4c2aaf6ddfc",
+    "licencie_id": "b55b013f2833343935a61f34",
+    "nom_affiche": "Elio D.",
+    "equipe_id": "525674_SENIOR_M1",
+    "match_id": "m_u18_m1_56697624-ent-s-de-ge",
+    "date_match": "2026-09-28 15:30",
+    "minute": 90,
+    "type_sanction": "AVERTISSEMENT",
+    "role_au_moment_faute": "TITULAIRE",
+    "competition": {
+      "nom": "Compétition Régionale",
+      "categorie": "SENIOR"
+    },
+    "qualification_reglementaire": {
+      "est_joueur_actif": true,
+      "est_applicable_equipe_fanion": true,
+      "motif_exclusion": null
+    },
+    "cycle_discipline": {
+      "statut": "ACTIF"
+    },
+    "derniere_synchro": "2026-10-28T07:53:01.601442"
+  }
+]

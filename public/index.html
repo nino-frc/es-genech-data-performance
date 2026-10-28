@@ -20,22 +20,38 @@
   <!-- Écran de Chargement / Splash Screen -->
   <div id="splashScreen" class="splash-overlay">
     <div class="splash-content">
-      <img src="./logo.png" alt="MatchDay Logo" class="splash-logo">
+      <div class="splash-logos-row">
+        <img src="./logo.png" alt="MatchDay Logo" class="splash-logo" id="splashMatchdayLogo">
+        <div class="splash-divider" id="splashDivider" style="display: none;">×</div>
+        <img src="" alt="Club Logo" class="splash-club-logo" id="splashClubLogo" style="display: none;">
+      </div>
       <div class="splash-title">MatchDay</div>
-      <div class="splash-subtitle">Direction Technique & Performance</div>
+      <div class="splash-subtitle" id="splashSubtitle">Direction Technique & Performance</div>
       <div class="splash-spinner"></div>
     </div>
   </div>
 
-  <!-- Header Institutionnel Fixe avec Logo -->
+  <!-- Header Institutionnel Fixe avec Logo Dynamique -->
   <header class="app-header">
     <div class="brand-wrapper">
       <img src="./logo.png" alt="MatchDay" class="header-logo">
+      <div class="header-club-divider" id="headerClubDivider" style="display: none;"></div>
+      <img src="" alt="Logo Club" class="header-club-logo" id="headerClubLogo" style="display: none;">
       <div class="brand-title">
         MatchDay <span class="badge-tag" id="appRoleBadge">SAAS</span>
       </div>
     </div>
     <div class="header-actions">
+      <!-- Sélecteur Club Super-Admin Master (visible uniquement si Clé Master Nino) -->
+      <div class="master-club-container" id="masterClubContainer" style="display: none;">
+        <span class="status-dot master-dot"></span>
+        <select id="masterClubSelector" class="club-dropdown-select" onchange="switchMasterClub(this.value)" title="Changer de club (Super-Admin Master)">
+          <option value="525674" selected>ES Genech</option>
+          <option value="500934">FC Seclin</option>
+        </select>
+        <span class="selector-arrow">▾</span>
+      </div>
+
       <div class="team-selector-container">
         <span class="status-dot"></span>
         <select id="teamSelector" class="team-dropdown-select" onchange="changeActiveTeam(this.value)" title="Changer d'équipe">
@@ -46,12 +62,23 @@
         </select>
         <span class="selector-arrow">▾</span>
       </div>
+      <button class="device-pill-btn" id="deviceStatusBtn" onclick="openDeviceModal()" title="Accès Staff & Support">
+        👥 <span id="activeDeviceCountBadge">1</span>
+      </button>
       <button class="notif-bell-btn" id="notifBellBtn" onclick="openNotifModal()" title="Centre d'alertes staff">
         🔔
         <span class="notif-badge-dot" id="notifDot"></span>
       </button>
     </div>
   </header>
+
+  <!-- Bandeau Démo Bridée (Affiché uniquement pour les clubs en version d'essai) -->
+  <div id="trialBanner" class="trial-banner-bar" style="display: none;">
+    <div class="trial-banner-content">
+      <span>⏱️ <strong>Version d'Évaluation</strong> • Certaines fonctionnalités avancées sont réservées à la version Premium</span>
+      <button type="button" class="btn-trial-upgrade" onclick="openProModal()">Version Premium →</button>
+    </div>
+  </div>
 
   <!-- Contenu Principal -->
   <main class="app-container">
@@ -448,6 +475,14 @@
       </div>
     </section>
 
+    <!-- Footer Discret Institutionnel & Mentions Légales -->
+    <footer class="app-discreet-footer">
+      <div class="footer-copy">MatchDay Analytics SaaS • Direction Technique & Performance</div>
+      <div class="footer-links">
+        <button type="button" class="btn-legal-link" onclick="openLegalModal()">⚖️ Mentions Légales & Confidentialité (RGPD)</button>
+      </div>
+    </footer>
+
   </main>
 
   <!-- ====================================================================
@@ -696,6 +731,351 @@
     </div>
   </div>
 
+  <!-- ====================================================================
+       MODALE 4 : CONNEXION & VALIDATION DE LICENCE CLUB
+       ==================================================================== -->
+  <div id="licenseModal" class="modal-overlay hidden">
+    <div class="modal-sheet license-sheet">
+      <div class="license-modal-header">
+        <div class="license-shield-icon">🔐</div>
+        <h2 class="license-title">Espace Privatif Club</h2>
+        <p class="license-desc">Direction Technique & Bilan Analytique FFF</p>
+      </div>
+
+      <div class="license-body">
+        <div class="license-info-banner">
+          <span class="banner-icon">ℹ️</span>
+          <div>
+            <strong>Connexion unique & mémorisée</strong>
+            <p>Entrez votre clé de licence officielle ou scannez votre QR Code staff. Cet appareil sera automatiquement conservé en mémoire pour vos prochains accès.</p>
+          </div>
+        </div>
+
+        <form id="licenseForm" onsubmit="handleLicenseSubmit(event)">
+          <div class="form-group">
+            <label for="licenseKeyInput" class="form-label">CLÉ DE LICENCE DU CLUB OU CLÉ MASTER</label>
+            <div class="input-wrapper">
+              <input 
+                type="text" 
+                id="licenseKeyInput" 
+                class="license-input" 
+                placeholder="MD-GNCH-88F4-A92B" 
+                maxlength="22" 
+                autocomplete="off" 
+                autocorrect="off" 
+                autocapitalize="characters" 
+                spellcheck="false"
+                required
+              >
+            </div>
+            <div class="form-tip">Format standardisé : MD-XXXX-XXXX-XXXX</div>
+          </div>
+
+          <div class="form-group" style="margin-top: 10px;">
+            <label for="staffRoleInput" class="form-label">VOTRE RÔLE / TITULAIRE AU SEIN DU CLUB</label>
+            <div class="input-wrapper">
+              <input 
+                type="text" 
+                id="staffRoleInput" 
+                class="license-role-input" 
+                placeholder="Ex: Entraîneur Principal, Adjoint, Préparateur..." 
+                maxlength="50"
+              >
+            </div>
+            <div class="role-suggestions-row">
+              <button type="button" class="role-preset-btn" onclick="selectRolePreset('Entraîneur Principal')">Entraîneur Principal</button>
+              <button type="button" class="role-preset-btn" onclick="selectRolePreset('Entraîneur Adjoint')">Adjoint</button>
+              <button type="button" class="role-preset-btn" onclick="selectRolePreset('Dirigeant / Staff')">Dirigeant</button>
+            </div>
+            <div class="form-tip">Permet à Nino de vous identifier sans collecter vos données personnelles.</div>
+          </div>
+
+          <div id="licenseErrorMsg" class="license-error-msg hidden"></div>
+
+          <button type="submit" id="licenseSubmitBtn" class="btn-activate-license">
+            <span>Déverrouiller l'Espace Club</span>
+            <span class="btn-arrow">→</span>
+          </button>
+        </form>
+
+        <div class="license-divider">
+          <span>OU SÉLECTION RAPIDE DE TEST</span>
+        </div>
+
+        <div class="demo-keys-grid">
+          <button type="button" class="demo-key-chip master-chip" onclick="quickFillLicense('MD-MASTER-NINO-2026', 'Nino F. (Super-Admin Master)')">
+            <span class="chip-club">🛡️ Super-Admin Master (Nino)</span>
+            <span class="chip-code">MD-MASTER-NINO-2026</span>
+          </button>
+          <button type="button" class="demo-key-chip" onclick="quickFillLicense('MD-GNCH-88F4-A92B', 'Coach Principal')">
+            <span class="chip-club">ES Genech (R3/D2/Fém/U19)</span>
+            <span class="chip-code">MD-GNCH-88F4-A92B</span>
+          </button>
+          <button type="button" class="demo-key-chip" onclick="quickFillLicense('MD-SCLN-74C2-91E3', 'Coach Seclin R2')">
+            <span class="chip-club">FC Seclin (Régional 2)</span>
+            <span class="chip-code">MD-SCLN-74C2-91E3</span>
+          </button>
+        </div>
+
+        <div class="license-privacy-note">
+          🔒 <strong>Confidentialité & RGPD</strong> : Zéro collecte de données personnelles. L'accès individuel est sécurisé par un identifiant anonyme propre à cet appareil.
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+          <button type="button" class="btn-legal-sublink" onclick="openLegalModal()">Mentions légales & Politique de confidentialité</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODALE 5 : GESTIONNAIRE DES ACCÈS STAFF & SUPPORT TECHNIQUE NINO
+       ==================================================================== -->
+  <div id="deviceManagerModal" class="modal-overlay hidden" onclick="handleDeviceModalOverlay(event)">
+    <div class="modal-sheet device-sheet">
+      <div class="modal-close-bar">
+        <div>
+          <span class="tactical-role-pill" id="deviceModalClubTag">ES GENECH</span>
+          <h2 style="font-size: 17px; font-weight: 800; color: var(--text-main); margin-top: 4px;">Accès Staff & Support Technique</h2>
+          <div style="font-size: 11px; color: var(--text-light); margin-top: 2px;">Identification par rôle & Code Support (sans données intrusives)</div>
+        </div>
+        <button class="modal-close-btn" onclick="closeDeviceModal()">✕</button>
+      </div>
+
+      <!-- Mon Code Support Unique -->
+      <div class="my-support-code-box">
+        <div class="support-box-header">
+          <span class="support-box-label">VOTRE CODE SUPPORT PERSONNEL</span>
+          <span class="support-live-dot">● Connecté</span>
+        </div>
+        <div class="support-box-code" id="mySupportCodeDisplay">#GN-01</div>
+        <div class="support-box-hint">
+          En cas de problème technique ou de question, <strong>communiquez simplement ce code à Nino</strong> pour être dépanné instantanément.
+        </div>
+      </div>
+
+      <!-- Résumé Licence & Quota -->
+      <div class="device-summary-card">
+        <div class="summary-top">
+          <div>
+            <div class="summary-label">Clé de licence active</div>
+            <div class="summary-key" id="deviceModalKeyDisplay">MD-GNCH-88F4-A92B</div>
+          </div>
+          <div class="summary-badge" id="deviceModalStatusBadge">Active (Pro)</div>
+        </div>
+        <div class="summary-bottom">
+          <div class="stat-item">
+            <span class="stat-num" id="deviceModalActiveCount">3</span>
+            <span class="stat-text">Comptes Staff</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">0</span>
+            <span class="stat-text">Donnée intrusive</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <button class="btn-qr-shortcut" onclick="openQrModal()">
+              <span>📲 QR Code Club</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Liste des accès staff du club -->
+      <div class="device-list-container">
+        <div class="device-list-header">
+          <span>MEMBRES DU STAFF DU CLUB CONNECTÉS</span>
+          <span class="device-hint">Touchez ✏️ pour modifier votre rôle</span>
+        </div>
+        <div id="deviceListContent" class="device-list-cards">
+          <!-- Injecté dynamiquement -->
+        </div>
+      </div>
+
+      <!-- Actions de pied de page -->
+      <div class="device-modal-footer">
+        <button class="btn-logout-license" onclick="logoutClub()">
+          <span>🚪 Changer de club / Déconnexion</span>
+        </button>
+        <div style="text-align: center; margin-top: 10px;">
+          <button type="button" class="btn-legal-sublink" onclick="openLegalModal()">⚖️ Mentions Légales & Confidentialité (RGPD)</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODALE 6 : QR CODE OFFICIEL DU CLUB
+       ==================================================================== -->
+  <div id="qrCodeModal" class="modal-overlay hidden" onclick="handleQrModalOverlay(event)">
+    <div class="modal-sheet qr-sheet">
+      <div class="modal-close-bar">
+        <div>
+          <span class="tactical-role-pill" id="qrModalClubTag">ES GENECH</span>
+          <h2 style="font-size: 17px; font-weight: 800; color: var(--text-main); margin-top: 4px;">QR Code d'Activation Staff</h2>
+        </div>
+        <button class="modal-close-btn" onclick="closeQrModal()">✕</button>
+      </div>
+
+      <div class="qr-modal-body">
+        <div class="qr-card">
+          <img src="./qr_codes/qr_gnch.png" alt="QR Code Club" id="qrModalImage" class="qr-image-display">
+          <div class="qr-key-pill" id="qrModalKeyDisplay">MD-GNCH-88F4-A92B</div>
+        </div>
+
+        <p class="qr-instructions">
+          Présentez ce QR Code au staff ou aux éducateurs du club. En le scannant avec leur smartphone, l'espace club s'ouvre et s'enregistre automatiquement sans mot de passe.
+        </p>
+
+        <div class="qr-url-box">
+          <input type="text" id="qrModalUrlInput" readonly class="qr-url-input">
+          <button type="button" class="btn-copy-url" id="btnCopyUrl" onclick="copyActivationUrl()">Copier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODALE 7 : MENTIONS LÉGALES & POLITIQUE DE CONFIDENTIALITÉ (RGPD)
+       ==================================================================== -->
+  <div id="legalModal" class="modal-overlay hidden" onclick="handleLegalModalOverlay(event)">
+    <div class="modal-sheet legal-sheet">
+      <div class="modal-close-bar">
+        <div>
+          <span class="tactical-role-pill">CONFORMITÉ RGPD & LOI</span>
+          <h2 style="font-size: 17px; font-weight: 800; color: var(--text-main); margin-top: 4px;">Mentions Légales & Confidentialité</h2>
+          <div style="font-size: 11px; color: var(--text-light); margin-top: 2px;">Protection des données & cadre juridique MatchDay</div>
+        </div>
+        <button class="modal-close-btn" onclick="closeLegalModal()">✕</button>
+      </div>
+
+      <div class="legal-modal-content">
+        <!-- Section 1 : Édition & Conception -->
+        <div class="legal-card-block">
+          <div class="legal-block-title">🏢 1. Éditeur de la Plateforme</div>
+          <p class="legal-text">
+            La solution logicielle <strong>MatchDay Performance Analytics</strong> est une application Web / PWA développée et éditée par <strong>Nino François</strong>, analyste de performance sportive (Étudiant en BUT Science des Données & IA), au service des clubs et directions techniques de football.
+          </p>
+          <div class="legal-meta-row" style="margin-top: 6px; font-size: 10.5px; color: var(--text-muted);">
+            <span><strong>Contact Référent :</strong> Assistance technique directe MatchDay via le Code Support Staff (#GN-01...)</span>
+          </div>
+        </div>
+
+        <!-- Section 2 : Hébergement & Base de Données -->
+        <div class="legal-card-block">
+          <div class="legal-block-title">☁️ 2. Hébergement & Infrastructure Sécurisée</div>
+          <p class="legal-text">
+            • <strong>Application Web (Frontend & Serverless) :</strong> Hébergée par Netlify Inc., 512 2nd Street, San Francisco, CA 94107, USA (Réseau de distribution européen conforme RGPD).<br>
+            • <strong>Base de Données Cloud :</strong> Hébergée par MongoDB Atlas sur serveurs sécurisés chiffrés situés dans l'Union Européenne (Région Francfort / Allemagne - Certification SOC2 / ISO 27001).
+          </p>
+        </div>
+
+        <!-- Section 3 : Protection des Données & RGPD (Zéro Donnée Intrusive) -->
+        <div class="legal-card-block">
+          <div class="legal-block-title">🛡️ 3. Politique de Confidentialité & RGPD (Règlement UE 2016/679)</div>
+          <p class="legal-text">
+            MatchDay applique le principe de <strong>minimisation stricte des données</strong> (Privacy by Design) :
+          </p>
+          <ul class="legal-list">
+            <li><strong>Zéro donnée intrusive sur l'appareil :</strong> Aucune adresse IP n'est collectée ni enregistrée à des fins de pistage. Aucun traceur publicitaire tiers, cookie de ciblage ou identifiant matériel invasif n'est utilisé.</li>
+            <li><strong>Pseudonymisation des sportifs :</strong> Conformément aux recommandations de la CNIL pour les compétitions amateurs, les identités des joueurs sont pseudonymisées dans les interfaces publiques pour protéger la vie privée des licenciés mineurs et majeurs.</li>
+            <li><strong>Accès par Code Support :</strong> Les membres du staff sont identifiés uniquement par leur rôle déclaré et un Code Support interne (#GN-01, #SC-01...) destiné exclusivement à faciliter l'assistance technique.</li>
+            <li><strong>Stockage Local Sécurisé :</strong> La clé de licence est conservée exclusivement dans le stockage local (localStorage) de votre propre navigateur pour éviter toute ressaisie.</li>
+          </ul>
+        </div>
+
+        <!-- Section 4 : Données Sportives & Propriété Intellectuelle -->
+        <div class="legal-card-block">
+          <div class="legal-block-title">⚽ 4. Origine des Données & Propriété Intellectuelle</div>
+          <p class="legal-text">
+            Les données sportives brutes (résultats, scores, feuilles de match FMI, classements et sanctions) sont issues des publications officielles des compétitions de la <strong>Fédération Française de Football (FFF)</strong>, de la Ligue des Hauts-de-France et des Districts départementaux.<br>
+            Les algorithmes de calcul (<em>Score ESG</em>, matrice temporelle des temps forts/faibles, ratios d'impact et projections) ainsi que l'ensemble du code source constituent la propriété intellectuelle exclusive de <strong>MatchDay</strong>.
+          </p>
+        </div>
+
+        <!-- Section 5 : Vos Droits -->
+        <div class="legal-card-block">
+          <div class="legal-block-title">⚖️ 5. Exercice de Vos Droits</div>
+          <p class="legal-text">
+            Conformément à la réglementation RGPD, tout dirigeant, éducateur ou joueur peut demander l'accès, la rectification ou l'effacement des informations le concernant en s'adressant au référent technique MatchDay de son club.
+          </p>
+        </div>
+      </div>
+
+      <div style="margin-top: 14px; text-align: center;">
+        <button type="button" class="btn-close-legal" onclick="closeLegalModal()">
+          Fermer les Mentions Légales
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODALE 8 : FONCTIONNALITÉ RÉSERVÉE À LA VERSION PREMIUM
+       ==================================================================== -->
+  <div id="proUpgradeModal" class="modal-overlay hidden" onclick="handleProModalOverlay(event)">
+    <div class="modal-sheet pro-sheet">
+      <div class="modal-close-bar">
+        <div>
+          <span class="tactical-role-pill" style="background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff;">VERSION PREMIUM</span>
+          <h2 style="font-size: 17px; font-weight: 800; color: var(--text-main); margin-top: 4px;">Fonctionnalité Réservée</h2>
+          <div style="font-size: 11px; color: var(--text-light); margin-top: 2px;">Ce module est accessible uniquement avec la version Premium MatchDay</div>
+        </div>
+        <button class="modal-close-btn" onclick="closeProModal()">✕</button>
+      </div>
+
+      <div class="pro-modal-body">
+        <div class="pro-pitch-banner">
+          <div class="pro-pitch-badge">⭐ MATCHDAY PREMIUM</div>
+          <div class="pro-pitch-title">Module Avancé pour Clubs</div>
+          <p class="pro-pitch-text">
+            Cette fonctionnalité (exports exécutifs PDF, historique intégral des confrontations et effectif complet) fait partie des modules exclusifs réservés à la version Premium.
+          </p>
+        </div>
+
+        <div class="pro-features-grid">
+          <div class="pro-feature-card">
+            <span class="pro-feature-icon">📑</span>
+            <div>
+              <strong>Export Exécutif PDF HD</strong>
+              <p>Rapports mensuels de gouvernance et débriefs de match complets prêts à imprimer.</p>
+            </div>
+          </div>
+
+          <div class="pro-feature-card">
+            <span class="pro-feature-icon">⚽</span>
+            <div>
+              <strong>Effectif Intégral & Rangs</strong>
+              <p>Analyse de la totalité des joueurs (au lieu de 5 en démo), scores d'impact ESG et profils individuels.</p>
+            </div>
+          </div>
+
+          <div class="pro-feature-card">
+            <span class="pro-feature-icon">📅</span>
+            <div>
+              <strong>Historique de Saison Sans Limite</strong>
+              <p>Accès à tous les matchs de coupe et championnat, chronologies officielles et feuilles de match FMI.</p>
+            </div>
+          </div>
+
+          <div class="pro-feature-card">
+            <span class="pro-feature-icon">👥</span>
+            <div>
+              <strong>Accès Staff & Éducateurs Multi-Appareils</strong>
+              <p>Comptes dédiés pour le coach principal, adjoints, préparateur et dirigeants.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 16px; text-align: center;">
+        <button type="button" class="btn-close-legal" onclick="closeProModal()">
+          Compris, fermer
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- Barre de Navigation Basse Institutionnelle (6 Onglets) -->
   <nav class="bottom-nav">
     <div class="nav-item active" onclick="switchTab('tabMatch', this)">
@@ -725,6 +1105,7 @@
   </nav>
 
   <!-- Scripts -->
+  <script src="./licenses_registry.js"></script>
   <script src="./data.js"></script>
   <script src="./app.js"></script>
 </body>

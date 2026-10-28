@@ -11,3 +11,5 @@ Thumbs.db
 *.env
 test*.py
 test.pdf
+
+node_modules/

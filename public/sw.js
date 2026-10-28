@@ -1,13 +1,19 @@
 // Service Worker - MatchDay PWA
-const CACHE_NAME = 'matchday-cache-v7';
+const CACHE_NAME = 'matchday-cache-v8';
 const ASSETS = [
   './',
   './index.html',
   './styles.css',
   './app.js',
   './data.js',
+  './licenses_registry.js',
   './manifest.json',
-  './logo.png'
+  './logo.png',
+  './logos/logo_genech.png',
+  './logos/logo_seclin.jpg',
+  './qr_codes/qr_gnch.png',
+  './qr_codes/qr_scln.png',
+  './qr_codes/qr_root.png'
 ];
 
 self.addEventListener('install', (e) => {

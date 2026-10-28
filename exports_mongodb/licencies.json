@@ -1,0 +1,4507 @@
+[
+  {
+    "_id": "99c2a0f8b2f5e25cb7c3f51a",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Nicolas P.",
+      "prenom": "Nicolas",
+      "initiale_nom": "P.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598081"
+  },
+  {
+    "_id": "ff3298b3ef6bacdb2c9eabee",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Martin M.",
+      "prenom": "Martin",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598104"
+  },
+  {
+    "_id": "d4d4b8b4375c50f6723f219e",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Arthur L.",
+      "prenom": "Arthur",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598117"
+  },
+  {
+    "_id": "1c1641f5d0ba3d4e773be73a",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Noah G.",
+      "prenom": "Noah",
+      "initiale_nom": "G.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598126"
+  },
+  {
+    "_id": "af1c651cb1271ab8a31d0291",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Abel D.",
+      "prenom": "Abel",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598135"
+  },
+  {
+    "_id": "657a700b4bd1788f0a44657d",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Tanguy D.",
+      "prenom": "Tanguy",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598143"
+  },
+  {
+    "_id": "5546d42a91839eba74900b5f",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Anonyme X.",
+      "prenom": "Anonyme",
+      "initiale_nom": "X.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598151"
+  },
+  {
+    "_id": "a60550664524b03bc38e82ca",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Nathan D.",
+      "prenom": "Nathan",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598159"
+  },
+  {
+    "_id": "f582991ee316df57231dd8a1",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Mathis P.",
+      "prenom": "Mathis",
+      "initiale_nom": "P.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598166"
+  },
+  {
+    "_id": "a297b60e3b5624ee2c95274c",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Till P.",
+      "prenom": "Till",
+      "initiale_nom": "P.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598173"
+  },
+  {
+    "_id": "6d0a5ef222eee4c4e2539112",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Emilien L.",
+      "prenom": "Emilien",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598181"
+  },
+  {
+    "_id": "9716ae46ea5f5aedc786c807",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Noa L.",
+      "prenom": "Noa",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598189"
+  },
+  {
+    "_id": "0a14fe6d085f207885644f90",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Loic A.",
+      "prenom": "Loic",
+      "initiale_nom": "A.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598197"
+  },
+  {
+    "_id": "236dc9483d1f50af4ce4fa3c",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Leo B.",
+      "prenom": "Leo",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598206"
+  },
+  {
+    "_id": "caa6e65e9f9bbc755bc3ba8b",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Tim L.",
+      "prenom": "Tim",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598222"
+  },
+  {
+    "_id": "46771cf4f6f70afbd0609fc0",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Julien D.",
+      "prenom": "Julien",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598232"
+  },
+  {
+    "_id": "155349f53a808fa7c4e0c914",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Clement D.",
+      "prenom": "Clement",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598240"
+  },
+  {
+    "_id": "da8b8c8b205d8fa2bdecdccf",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Maxime P.",
+      "prenom": "Maxime",
+      "initiale_nom": "P.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598250"
+  },
+  {
+    "_id": "69ed81e80814cffe21b3817a",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Remi D.",
+      "prenom": "Remi",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598260"
+  },
+  {
+    "_id": "fb3fd9bfbdc459bc138524bc",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Hugo H.",
+      "prenom": "Hugo",
+      "initiale_nom": "H.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598269"
+  },
+  {
+    "_id": "685095fcfdc7bb883e03f32e",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Jean-Paul B.",
+      "prenom": "Jean-Paul",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598279"
+  },
+  {
+    "_id": "cf15bc7757fbbf24ff2ae3d8",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Mathys H.",
+      "prenom": "Mathys",
+      "initiale_nom": "H.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598287"
+  },
+  {
+    "_id": "63cb257b725a064f3cfe7b8c",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Julien N.",
+      "prenom": "Julien",
+      "initiale_nom": "N.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598296"
+  },
+  {
+    "_id": "5134ba09df1bc3e6dfed5dcb",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Giovany C.",
+      "prenom": "Giovany",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598304"
+  },
+  {
+    "_id": "eba9c53122861856ca860be9",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Augustin D.",
+      "prenom": "Augustin",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598312"
+  },
+  {
+    "_id": "0afcfb962ddd408a30a7b0ad",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Gaspard D.",
+      "prenom": "Gaspard",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598320"
+  },
+  {
+    "_id": "88afb9c8dd34bd2f6d0ca3fe",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Arthur C.",
+      "prenom": "Arthur",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598329"
+  },
+  {
+    "_id": "b55b013f2833343935a61f34",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Elio D.",
+      "prenom": "Elio",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598338"
+  },
+  {
+    "_id": "3bacfac9e972cd8b427395ea",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Issam M.",
+      "prenom": "Issam",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598365"
+  },
+  {
+    "_id": "764b63d290d3dc3f911c42f3",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Maxence M.",
+      "prenom": "Maxence",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598372"
+  },
+  {
+    "_id": "a0c99dae6f1ff0500dccfeef",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Amine B.",
+      "prenom": "Amine",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598381"
+  },
+  {
+    "_id": "66f6a7cc11d87482a88122ab",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Quentin R.",
+      "prenom": "Quentin",
+      "initiale_nom": "R.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598389"
+  },
+  {
+    "_id": "362bd809b8ee483e9378f3ff",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Antoine C.",
+      "prenom": "Antoine",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598396"
+  },
+  {
+    "_id": "014abdbd6112b70a07492dc9",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Rayan A.",
+      "prenom": "Rayan",
+      "initiale_nom": "A.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598405"
+  },
+  {
+    "_id": "27632e6ccd6e6d40675b5191",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Lucas D.",
+      "prenom": "Lucas",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598412"
+  },
+  {
+    "_id": "d3ae07851dac48c36ca79e28",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Selyane Z.",
+      "prenom": "Selyane",
+      "initiale_nom": "Z.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598420"
+  },
+  {
+    "_id": "0775d8c9463c93ec167b5327",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Louis P.",
+      "prenom": "Louis",
+      "initiale_nom": "P.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598427"
+  },
+  {
+    "_id": "cc658ab3d4c13822245fdea8",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Mehdi E.",
+      "prenom": "Mehdi",
+      "initiale_nom": "E.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598434"
+  },
+  {
+    "_id": "deea94b62424a528d2d4fcaa",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Naim B.",
+      "prenom": "Naim",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598443"
+  },
+  {
+    "_id": "a9904354ba992e4435922df5",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Cameron D.",
+      "prenom": "Cameron",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598451"
+  },
+  {
+    "_id": "1234d3fe249e5b5fc3f00293",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Lancine T.",
+      "prenom": "Lancine",
+      "initiale_nom": "T.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598458"
+  },
+  {
+    "_id": "507e202285b9902561d278ce",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Ayoub A.",
+      "prenom": "Ayoub",
+      "initiale_nom": "A.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598466"
+  },
+  {
+    "_id": "e143b8fbbd2ba3ab978554e8",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Aurelien M.",
+      "prenom": "Aurelien",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598475"
+  },
+  {
+    "_id": "0b3fc774959b09d7075b9d13",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Djibryl M.",
+      "prenom": "Djibryl",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598483"
+  },
+  {
+    "_id": "65d7368dac2f9b413193b0d5",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Sofiane G.",
+      "prenom": "Sofiane",
+      "initiale_nom": "G.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598491"
+  },
+  {
+    "_id": "029e8d274ebee59f17e11134",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Morgan A.",
+      "prenom": "Morgan",
+      "initiale_nom": "A.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598498"
+  },
+  {
+    "_id": "27764c18606dafcf892e3811",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Andy M.",
+      "prenom": "Andy",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598507"
+  },
+  {
+    "_id": "fab300272777b804d52b7844",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Sofiane B.",
+      "prenom": "Sofiane",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598515"
+  },
+  {
+    "_id": "ddadcfac8e4429acb9f8df99",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Habib S.",
+      "prenom": "Habib",
+      "initiale_nom": "S.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598522"
+  },
+  {
+    "_id": "e1fca176fa7d2a4d485af6cb",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Jason L.",
+      "prenom": "Jason",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598529"
+  },
+  {
+    "_id": "1bfaeb913187853573b0bd6a",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Nadir M.",
+      "prenom": "Nadir",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598537"
+  },
+  {
+    "_id": "3d834be5f5baa2b8c6b1941b",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Rayane M.",
+      "prenom": "Rayane",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598544"
+  },
+  {
+    "_id": "bfff746b1191310df268b47c",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Mohammed C.",
+      "prenom": "Mohammed",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598551"
+  },
+  {
+    "_id": "af8d628925bfdca79d4cdd09",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Nahil B.",
+      "prenom": "Nahil",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598560"
+  },
+  {
+    "_id": "ad3d328ef47e5468998f68ca",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Mehdi B.",
+      "prenom": "Mehdi",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598567"
+  },
+  {
+    "_id": "6507f06d2f168599d09a9838",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Tom L.",
+      "prenom": "Tom",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598575"
+  },
+  {
+    "_id": "c3e1e2f7966c56cd096fa437",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Mateo S.",
+      "prenom": "Mateo",
+      "initiale_nom": "S.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598583"
+  },
+  {
+    "_id": "f35bc963f901f7cf87613075",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Dany D.",
+      "prenom": "Dany",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598593"
+  },
+  {
+    "_id": "7a4bba27dd09fb39cc0d634a",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Thierry Q.",
+      "prenom": "Thierry",
+      "initiale_nom": "Q.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598607"
+  },
+  {
+    "_id": "492845b0cc7b4686648f7016",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Ismael A.",
+      "prenom": "Ismael",
+      "initiale_nom": "A.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598615"
+  },
+  {
+    "_id": "65d515a1f468f769a3c9be6c",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Lucas P.",
+      "prenom": "Lucas",
+      "initiale_nom": "P.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598623"
+  },
+  {
+    "_id": "6a383644eb34a1985b06c0c1",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Souleymane D.",
+      "prenom": "Souleymane",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598633"
+  },
+  {
+    "_id": "a0b5ad44d3f05d564cbea72a",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Dylan G.",
+      "prenom": "Dylan",
+      "initiale_nom": "G.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598641"
+  },
+  {
+    "_id": "6f3a6c0e77bcd4c9228a79f5",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Gregory S.",
+      "prenom": "Gregory",
+      "initiale_nom": "S.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598649"
+  },
+  {
+    "_id": "9bf96d5dd2488da13ce5e4b7",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Mohand L.",
+      "prenom": "Mohand",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598657"
+  },
+  {
+    "_id": "6eab233d0a87ad2e75a8ad5f",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Sidia J.",
+      "prenom": "Sidia",
+      "initiale_nom": "J.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598664"
+  },
+  {
+    "_id": "91c1fe2259a24df4d779a2f8",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Gaetan D.",
+      "prenom": "Gaetan",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598672"
+  },
+  {
+    "_id": "3e1e1e3d5cfcbd28a35508eb",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Alexandre D.",
+      "prenom": "Alexandre",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598680"
+  },
+  {
+    "_id": "5e021ef813703632d1ced9a4",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Amaury V.",
+      "prenom": "Amaury",
+      "initiale_nom": "V.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598690"
+  },
+  {
+    "_id": "679b42d0e1be85633aba8c36",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Fabio D.",
+      "prenom": "Fabio",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598698"
+  },
+  {
+    "_id": "9b8abbac32179564518323c9",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Gabriel L.",
+      "prenom": "Gabriel",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598706"
+  },
+  {
+    "_id": "86aed639ffd5fbf2f7dc3b39",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Ugo V.",
+      "prenom": "Ugo",
+      "initiale_nom": "V.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598714"
+  },
+  {
+    "_id": "f244d370c80ae140ae8753c5",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Farhane G.",
+      "prenom": "Farhane",
+      "initiale_nom": "G.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598723"
+  },
+  {
+    "_id": "c805cf5a876fb652989b235a",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Yene G.",
+      "prenom": "Yene",
+      "initiale_nom": "G.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598732"
+  },
+  {
+    "_id": "84ffed3f214fe284b93a595e",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Corentin D.",
+      "prenom": "Corentin",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598740"
+  },
+  {
+    "_id": "69f92fb181e11a5f565c7ed7",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Thomas L.",
+      "prenom": "Thomas",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598757"
+  },
+  {
+    "_id": "11392c9197578ec1724d2dd0",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Romain R.",
+      "prenom": "Romain",
+      "initiale_nom": "R.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598769"
+  },
+  {
+    "_id": "e9b5e98825e248e021ec230b",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Pape S.",
+      "prenom": "Pape",
+      "initiale_nom": "S.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598777"
+  },
+  {
+    "_id": "26f604df34debb1146c6c55c",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Kevin F.",
+      "prenom": "Kevin",
+      "initiale_nom": "F.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598786"
+  },
+  {
+    "_id": "692e00a4b55c36a602aaf484",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Kelian H.",
+      "prenom": "Kelian",
+      "initiale_nom": "H.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598795"
+  },
+  {
+    "_id": "1f9aaecd6cd4e698d815287e",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "David L.",
+      "prenom": "David",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598804"
+  },
+  {
+    "_id": "62e3f01841216b8c355faba2",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Nicolas R.",
+      "prenom": "Nicolas",
+      "initiale_nom": "R.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598812"
+  },
+  {
+    "_id": "b188c4bcfa3e56b60e20c46d",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Cedric M.",
+      "prenom": "Cedric",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598819"
+  },
+  {
+    "_id": "9d3c757c6e6bb7460eaf2cea",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Loic L.",
+      "prenom": "Loic",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598827"
+  },
+  {
+    "_id": "9a6d9445948c6095830642c9",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Simon V.",
+      "prenom": "Simon",
+      "initiale_nom": "V.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598835"
+  },
+  {
+    "_id": "511cb64f143adb81a55d7384",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Corenthin F.",
+      "prenom": "Corenthin",
+      "initiale_nom": "F.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598843"
+  },
+  {
+    "_id": "a75477c3dca11e7c6564ac5f",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Noe F.",
+      "prenom": "Noe",
+      "initiale_nom": "F.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598853"
+  },
+  {
+    "_id": "ac5c22eda8945687733d580e",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Romeo D.",
+      "prenom": "Romeo",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598861"
+  },
+  {
+    "_id": "5320da4364ac490a37b937af",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Jules L.",
+      "prenom": "Jules",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598868"
+  },
+  {
+    "_id": "7257de553ca8ed912318a850",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Julien T.",
+      "prenom": "Julien",
+      "initiale_nom": "T.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598878"
+  },
+  {
+    "_id": "4c7a81f85447c6c9e75cd503",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Thomas S.",
+      "prenom": "Thomas",
+      "initiale_nom": "S.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598886"
+  },
+  {
+    "_id": "3f1c89311454947ecef2172c",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Kevin D.",
+      "prenom": "Kevin",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598894"
+  },
+  {
+    "_id": "29164ee2f919369fab857e7f",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Jules D.",
+      "prenom": "Jules",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598909"
+  },
+  {
+    "_id": "8a1aaf849392bbccecd5a668",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Luis O.",
+      "prenom": "Luis",
+      "initiale_nom": "O.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598926"
+  },
+  {
+    "_id": "7a4638dc0079c9fc61e16ce2",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Gabin D.",
+      "prenom": "Gabin",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598935"
+  },
+  {
+    "_id": "be4587a11ab7299d802c92ed",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Alixe B.",
+      "prenom": "Alixe",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598943"
+  },
+  {
+    "_id": "9b4fe9438a0655f6f6ad097e",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Yanis L.",
+      "prenom": "Yanis",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598951"
+  },
+  {
+    "_id": "9cfb74ec8ae121aa7e910c37",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Luca D.",
+      "prenom": "Luca",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598958"
+  },
+  {
+    "_id": "742934bdd927eafbbe15bdf9",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Jordan D.",
+      "prenom": "Jordan",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598966"
+  },
+  {
+    "_id": "7f6084a74727f0a44c3f78c5",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Quentin H.",
+      "prenom": "Quentin",
+      "initiale_nom": "H.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598974"
+  },
+  {
+    "_id": "c51a1e5ddc5949292347009b",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Guillaume D.",
+      "prenom": "Guillaume",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598982"
+  },
+  {
+    "_id": "ec7f7124f9d17b7634953bf1",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Steven M.",
+      "prenom": "Steven",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598990"
+  },
+  {
+    "_id": "7642581d5417c73ebcef711c",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Eliot V.",
+      "prenom": "Eliot",
+      "initiale_nom": "V.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.598997"
+  },
+  {
+    "_id": "b26a9feb21600aeef4711039",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Cameron P.",
+      "prenom": "Cameron",
+      "initiale_nom": "P.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599005"
+  },
+  {
+    "_id": "d10c6b5650db4c579c5d32aa",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Samy F.",
+      "prenom": "Samy",
+      "initiale_nom": "F.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599013"
+  },
+  {
+    "_id": "4cba7c9d26c1bdcac8a21645",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Matys D.",
+      "prenom": "Matys",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599021"
+  },
+  {
+    "_id": "570e068116d4925b3960dffc",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Younes B.",
+      "prenom": "Younes",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599029"
+  },
+  {
+    "_id": "93ce8f88d3f79d70f1d9b650",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Rodrigue D.",
+      "prenom": "Rodrigue",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599037"
+  },
+  {
+    "_id": "ee608974da8cb6331b43df5f",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Batiste P.",
+      "prenom": "Batiste",
+      "initiale_nom": "P.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599044"
+  },
+  {
+    "_id": "dd74343281bccd1a05817a3b",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Erwan D.",
+      "prenom": "Erwan",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599055"
+  },
+  {
+    "_id": "915be57609813d955cc4e0fa",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Gabriel D.",
+      "prenom": "Gabriel",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599065"
+  },
+  {
+    "_id": "ce3866b2ec7b7d3132331c58",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Oumar C.",
+      "prenom": "Oumar",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599074"
+  },
+  {
+    "_id": "142653e7d83684628ed51f4c",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Souleymane C.",
+      "prenom": "Souleymane",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599082"
+  },
+  {
+    "_id": "1e87d90991cf7a6393b528b9",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Adrien P.",
+      "prenom": "Adrien",
+      "initiale_nom": "P.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599090"
+  },
+  {
+    "_id": "f2ae8e3d04bfab85a642b7c0",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Ozkan C.",
+      "prenom": "Ozkan",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599098"
+  },
+  {
+    "_id": "c03d33f2f64e96ecb1e0354f",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Oumar N.",
+      "prenom": "Oumar",
+      "initiale_nom": "N.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599106"
+  },
+  {
+    "_id": "5a31b6aae76798f8b8ab1a2a",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Sayyidoul M.",
+      "prenom": "Sayyidoul",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599114"
+  },
+  {
+    "_id": "03b5650ba4e1112c63d7c1db",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Christopher B.",
+      "prenom": "Christopher",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599123"
+  },
+  {
+    "_id": "4f991d4a5b201821a26301c5",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Meizy I.",
+      "prenom": "Meizy",
+      "initiale_nom": "I.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599130"
+  },
+  {
+    "_id": "58fcf329b7f0c5c137542a36",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Noe M.",
+      "prenom": "Noe",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599141"
+  },
+  {
+    "_id": "2398ddd5d917ea35bbbca330",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Corentin L.",
+      "prenom": "Corentin",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599150"
+  },
+  {
+    "_id": "1c6180673a9b1f8775c919e5",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Matias F.",
+      "prenom": "Matias",
+      "initiale_nom": "F.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599159"
+  },
+  {
+    "_id": "0413251d7c3ab00994fe9be4",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Ilyess E.",
+      "prenom": "Ilyess",
+      "initiale_nom": "E.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599168"
+  },
+  {
+    "_id": "543ac71e7bc3b550304dee2d",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Dylan D.",
+      "prenom": "Dylan",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599177"
+  },
+  {
+    "_id": "bd906a26b6eaf59214e88e4e",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Theo C.",
+      "prenom": "Theo",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599185"
+  },
+  {
+    "_id": "c47d103dac90dd34577a3035",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Romain V.",
+      "prenom": "Romain",
+      "initiale_nom": "V.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599203"
+  },
+  {
+    "_id": "54bfe174fc41267c450f6825",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Nael B.",
+      "prenom": "Nael",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599210"
+  },
+  {
+    "_id": "a8cd699731a20f7f9f08937d",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Sasha B.",
+      "prenom": "Sasha",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599218"
+  },
+  {
+    "_id": "c70a259616ec78648cd52105",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Mael W.",
+      "prenom": "Mael",
+      "initiale_nom": "W.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599225"
+  },
+  {
+    "_id": "dbd0e43044c6abb242b45c31",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Patrik M.",
+      "prenom": "Patrik",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599232"
+  },
+  {
+    "_id": "6eda1d5556a50960044c11e4",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Erwan G.",
+      "prenom": "Erwan",
+      "initiale_nom": "G.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599240"
+  },
+  {
+    "_id": "8ba19c0e02497293c9ccf175",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Noa B.",
+      "prenom": "Noa",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599248"
+  },
+  {
+    "_id": "ad4896d5d108719c601e91ad",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Mohamed S.",
+      "prenom": "Mohamed",
+      "initiale_nom": "S.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599257"
+  },
+  {
+    "_id": "7fd55db858308dd8ce9f946c",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Bastien P.",
+      "prenom": "Bastien",
+      "initiale_nom": "P.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599264"
+  },
+  {
+    "_id": "0b38d09701bdce46a691f119",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Yann B.",
+      "prenom": "Yann",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599272"
+  },
+  {
+    "_id": "9544d9671b8d164e81058401",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Robin D.",
+      "prenom": "Robin",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599279"
+  },
+  {
+    "_id": "71de4a4727fc0a7a74f28244",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Elyaz C.",
+      "prenom": "Elyaz",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599286"
+  },
+  {
+    "_id": "25110d7310c0dc6616d81199",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Julien S.",
+      "prenom": "Julien",
+      "initiale_nom": "S.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599294"
+  },
+  {
+    "_id": "c48c73c6570528f5ec949dd4",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Quentin V.",
+      "prenom": "Quentin",
+      "initiale_nom": "V.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599301"
+  },
+  {
+    "_id": "eb6c2c46f55b782ada90fc9d",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Baptiste D.",
+      "prenom": "Baptiste",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599309"
+  },
+  {
+    "_id": "7cc8737135c69e408ee966f9",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Nael E.",
+      "prenom": "Nael",
+      "initiale_nom": "E.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599316"
+  },
+  {
+    "_id": "0ea072c6a5ff64b6fe4c64c9",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Theo D.",
+      "prenom": "Theo",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599323"
+  },
+  {
+    "_id": "eb4ece764c51c600e052068d",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Oscar S.",
+      "prenom": "Oscar",
+      "initiale_nom": "S.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599330"
+  },
+  {
+    "_id": "4a26d5b5a9afbbc9e8361f5f",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Baptiste M.",
+      "prenom": "Baptiste",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599339"
+  },
+  {
+    "_id": "6a8ecfcd9bde94af02421415",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Benjamin V.",
+      "prenom": "Benjamin",
+      "initiale_nom": "V.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599348"
+  },
+  {
+    "_id": "8b1ecb8388f2e644984fe093",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Nunzio A.",
+      "prenom": "Nunzio",
+      "initiale_nom": "A.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599356"
+  },
+  {
+    "_id": "8f860fc5fdc8747fa9448c21",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Christian C.",
+      "prenom": "Christian",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599363"
+  },
+  {
+    "_id": "e64a6143537a5430b788d8f5",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Axel B.",
+      "prenom": "Axel",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599371"
+  },
+  {
+    "_id": "205ef44e5531ced3d960eefe",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Gaspard L.",
+      "prenom": "Gaspard",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599378"
+  },
+  {
+    "_id": "0cf2446f703190a777dca5fb",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Stelio A.",
+      "prenom": "Stelio",
+      "initiale_nom": "A.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599385"
+  },
+  {
+    "_id": "44928cc9703b2e9f8629c652",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Malo Q.",
+      "prenom": "Malo",
+      "initiale_nom": "Q.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599394"
+  },
+  {
+    "_id": "c9763c487b376eb12d971fa0",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Hugo B.",
+      "prenom": "Hugo",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599401"
+  },
+  {
+    "_id": "f0730950783db6c6b9a37995",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Marcus J.",
+      "prenom": "Marcus",
+      "initiale_nom": "J.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599409"
+  },
+  {
+    "_id": "506513d769dfd9ea968ee71a",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Zakiel S.",
+      "prenom": "Zakiel",
+      "initiale_nom": "S.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599417"
+  },
+  {
+    "_id": "de32ff1247dda97597d6bf5e",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Dyviesh L.",
+      "prenom": "Dyviesh",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599429"
+  },
+  {
+    "_id": "0a75daecd977d2c2df126126",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Tom W.",
+      "prenom": "Tom",
+      "initiale_nom": "W.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599436"
+  },
+  {
+    "_id": "2d7e8a0a391241d7e5979e16",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Eric P.",
+      "prenom": "Eric",
+      "initiale_nom": "P.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599444"
+  },
+  {
+    "_id": "492a695d04f80f4cf2aa6ac8",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Louis L.",
+      "prenom": "Louis",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599451"
+  },
+  {
+    "_id": "a8cf97f8e4ef2a5d9c489c6d",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Leandro M.",
+      "prenom": "Leandro",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599458"
+  },
+  {
+    "_id": "42aae267ad99006105e25755",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Baptiste B.",
+      "prenom": "Baptiste",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599467"
+  },
+  {
+    "_id": "a54319abc315979dbf6d6348",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Sidy L.",
+      "prenom": "Sidy",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599474"
+  },
+  {
+    "_id": "275d7be634eee53783cb8d75",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Marceau D.",
+      "prenom": "Marceau",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599482"
+  },
+  {
+    "_id": "df8b06db8f6d41d5559a60d3",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Marius B.",
+      "prenom": "Marius",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599491"
+  },
+  {
+    "_id": "8ac31cb592c00272d80ed33d",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Noham M.",
+      "prenom": "Noham",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599498"
+  },
+  {
+    "_id": "7ba01602d95a45fc3d885cf2",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Valentin T.",
+      "prenom": "Valentin",
+      "initiale_nom": "T.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599506"
+  },
+  {
+    "_id": "ceae520cf887d70c6cc75aaf",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Simon K.",
+      "prenom": "Simon",
+      "initiale_nom": "K.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599514"
+  },
+  {
+    "_id": "d0972e6cc371b80eae8ba7c5",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Natheo C.",
+      "prenom": "Natheo",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599521"
+  },
+  {
+    "_id": "c7631e5cdd93fa167aad0b4f",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Lubin M.",
+      "prenom": "Lubin",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599528"
+  },
+  {
+    "_id": "23b824dc13d6a43427b396a0",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Martin D.",
+      "prenom": "Martin",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599536"
+  },
+  {
+    "_id": "5ac79a97909c294e22ddf5e6",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Gabriel M.",
+      "prenom": "Gabriel",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599543"
+  },
+  {
+    "_id": "557df5e2b0cbc197597a54a3",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Etienne G.",
+      "prenom": "Etienne",
+      "initiale_nom": "G.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599553"
+  },
+  {
+    "_id": "3d1fc801394628e8c847bbe1",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Paolo F.",
+      "prenom": "Paolo",
+      "initiale_nom": "F.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599564"
+  },
+  {
+    "_id": "296725a18252528bf7cf5996",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Maxence D.",
+      "prenom": "Maxence",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599571"
+  },
+  {
+    "_id": "e16e9848ce1d341d46402411",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Jules V.",
+      "prenom": "Jules",
+      "initiale_nom": "V.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599578"
+  },
+  {
+    "_id": "f2e754de66970c4420ceb218",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Adam M.",
+      "prenom": "Adam",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599586"
+  },
+  {
+    "_id": "3fd2458fe2a550e957a074fb",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Loan V.",
+      "prenom": "Loan",
+      "initiale_nom": "V.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599593"
+  },
+  {
+    "_id": "da8c670800743fd4994df4bd",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Justin L.",
+      "prenom": "Justin",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599606"
+  },
+  {
+    "_id": "5c879a1bdcd8dfd7d626435e",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Lilian E.",
+      "prenom": "Lilian",
+      "initiale_nom": "E.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599614"
+  },
+  {
+    "_id": "1ac3559436b1a5808fd46f9a",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Paul G.",
+      "prenom": "Paul",
+      "initiale_nom": "G.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599621"
+  },
+  {
+    "_id": "179b80e6af68c21f6f089ed7",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Baptiste H.",
+      "prenom": "Baptiste",
+      "initiale_nom": "H.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599629"
+  },
+  {
+    "_id": "116e8ba4842d62c22e687683",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Arthur M.",
+      "prenom": "Arthur",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599636"
+  },
+  {
+    "_id": "dc0f788080b4f291f2d2aa9f",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Gustav B.",
+      "prenom": "Gustav",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599648"
+  },
+  {
+    "_id": "a8f324cda2a2722d8028c46e",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Gabriel S.",
+      "prenom": "Gabriel",
+      "initiale_nom": "S.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599655"
+  },
+  {
+    "_id": "f219d9da2082b9501ea3870b",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Octave G.",
+      "prenom": "Octave",
+      "initiale_nom": "G.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599662"
+  },
+  {
+    "_id": "494ac084826583202c58d4fe",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Adrien D.",
+      "prenom": "Adrien",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599670"
+  },
+  {
+    "_id": "d70b58c1c8974423e58a98a2",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Jason V.",
+      "prenom": "Jason",
+      "initiale_nom": "V.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599678"
+  },
+  {
+    "_id": "d3007de58caf20a85617db89",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Thiago V.",
+      "prenom": "Thiago",
+      "initiale_nom": "V.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599686"
+  },
+  {
+    "_id": "dcfda0ae9ea793038f816ae1",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Xoan F.",
+      "prenom": "Xoan",
+      "initiale_nom": "F.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599693"
+  },
+  {
+    "_id": "8d95adfbfe77e0a6c3bed8d4",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Axel W.",
+      "prenom": "Axel",
+      "initiale_nom": "W.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599700"
+  },
+  {
+    "_id": "27b694b9994cbe73b0e68022",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Tom B.",
+      "prenom": "Tom",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599709"
+  },
+  {
+    "_id": "4ac86c57ffee0e22ccea2255",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Leon G.",
+      "prenom": "Leon",
+      "initiale_nom": "G.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599717"
+  },
+  {
+    "_id": "57974675eca668cc8cfdff86",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Sacha M.",
+      "prenom": "Sacha",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599732"
+  },
+  {
+    "_id": "7acb0658cb159bc0408f2aab",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Solan B.",
+      "prenom": "Solan",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599739"
+  },
+  {
+    "_id": "3f4cc8e6b5c5931fc7b2eb8b",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Gregory L.",
+      "prenom": "Gregory",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599748"
+  },
+  {
+    "_id": "3dc44928f7b62d6feb5a1d3a",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Pavel H.",
+      "prenom": "Pavel",
+      "initiale_nom": "H.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599756"
+  },
+  {
+    "_id": "15a5954b9ab89c110118bacb",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Simon T.",
+      "prenom": "Simon",
+      "initiale_nom": "T.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599765"
+  },
+  {
+    "_id": "d19c4f5bb1d20900958eab9c",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Marius D.",
+      "prenom": "Marius",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599772"
+  },
+  {
+    "_id": "88ab67a31016ca8656b4bc88",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Milan M.",
+      "prenom": "Milan",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599780"
+  },
+  {
+    "_id": "2b800b16fee6b4df967df421",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Corentin B.",
+      "prenom": "Corentin",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599788"
+  },
+  {
+    "_id": "f7dbc290d70645e76fbe8c76",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Adrien C.",
+      "prenom": "Adrien",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599821"
+  },
+  {
+    "_id": "6b4c7404af5d559e4c64ce49",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Francis D.",
+      "prenom": "Francis",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599842"
+  },
+  {
+    "_id": "7f74d03c07463b462068f76c",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Michael C.",
+      "prenom": "Michael",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599852"
+  },
+  {
+    "_id": "0d9b2f8f0e40496f19374fb1",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Francois X.",
+      "prenom": "Francois",
+      "initiale_nom": "X.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599862"
+  },
+  {
+    "_id": "e9a13bfc7543427cd725c0de",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Ramiro L.",
+      "prenom": "Ramiro",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599878"
+  },
+  {
+    "_id": "63fc2f3e30d68a49035fa9ac",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Esteban P.",
+      "prenom": "Esteban",
+      "initiale_nom": "P.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599887"
+  },
+  {
+    "_id": "e3a837d5e0801f7b74dbd5ec",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Aymeric K.",
+      "prenom": "Aymeric",
+      "initiale_nom": "K.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599895"
+  },
+  {
+    "_id": "4964e832a53e7a1fb2cb3d0d",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Edouard B.",
+      "prenom": "Edouard",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599903"
+  },
+  {
+    "_id": "ea1bf38c045c3d8eb30684d5",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Constant M.",
+      "prenom": "Constant",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599910"
+  },
+  {
+    "_id": "b070f4d4ffef9adf47c2bdb9",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Alexandre B.",
+      "prenom": "Alexandre",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599923"
+  },
+  {
+    "_id": "f69ad617221ffa0150acb3d4",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Mathias V.",
+      "prenom": "Mathias",
+      "initiale_nom": "V.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599942"
+  },
+  {
+    "_id": "f812ea404157c1cfcdbbc4d4",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Evan P.",
+      "prenom": "Evan",
+      "initiale_nom": "P.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599949"
+  },
+  {
+    "_id": "9680a2dacfffa3a3fd509fdc",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Gabyn D.",
+      "prenom": "Gabyn",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599957"
+  },
+  {
+    "_id": "3a016870d09e18f968c9149e",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Benjamin P.",
+      "prenom": "Benjamin",
+      "initiale_nom": "P.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599964"
+  },
+  {
+    "_id": "b5aa2dd5429d28548454eccb",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Maxime M.",
+      "prenom": "Maxime",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599971"
+  },
+  {
+    "_id": "6b730d8ebd6c279004431e48",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Nayl C.",
+      "prenom": "Nayl",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599979"
+  },
+  {
+    "_id": "5561db43f6e12822925277c2",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Hugo D.",
+      "prenom": "Hugo",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599986"
+  },
+  {
+    "_id": "6d86bfe0d7078ed994d03e2a",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Marceau U.",
+      "prenom": "Marceau",
+      "initiale_nom": "U.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.599999"
+  },
+  {
+    "_id": "73244f81525e64b688f76b19",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Jean-Alvin A.",
+      "prenom": "Jean-Alvin",
+      "initiale_nom": "A.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600009"
+  },
+  {
+    "_id": "b7bce48f1f038903cdb6bf39",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Yanis A.",
+      "prenom": "Yanis",
+      "initiale_nom": "A.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600017"
+  },
+  {
+    "_id": "c114e0efd7dc85f5e4219ee8",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Louis B.",
+      "prenom": "Louis",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600024"
+  },
+  {
+    "_id": "681ae8d990a737f6d8176678",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Imran D.",
+      "prenom": "Imran",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600031"
+  },
+  {
+    "_id": "b67b02849ebdd67d6879cc37",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Lucien D.",
+      "prenom": "Lucien",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600041"
+  },
+  {
+    "_id": "1f994556ef3ef8ed5214c36a",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Aaron H.",
+      "prenom": "Aaron",
+      "initiale_nom": "H.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600048"
+  },
+  {
+    "_id": "d7e0d91c9a959c24b69c62cc",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Kais B.",
+      "prenom": "Kais",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600056"
+  },
+  {
+    "_id": "204953dbf2dfe346f3329f53",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Mia C.",
+      "prenom": "Mia",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600065"
+  },
+  {
+    "_id": "3bab426d9231e8c4fb6e150e",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Selyan C.",
+      "prenom": "Selyan",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600081"
+  },
+  {
+    "_id": "5cda32af3393abf76115abea",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Thibault G.",
+      "prenom": "Thibault",
+      "initiale_nom": "G.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600088"
+  },
+  {
+    "_id": "894f777c98805e2249588a91",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Matteo B.",
+      "prenom": "Matteo",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600095"
+  },
+  {
+    "_id": "6a8951822e5bf1b5f1de05d7",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Jules A.",
+      "prenom": "Jules",
+      "initiale_nom": "A.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600104"
+  },
+  {
+    "_id": "638da4e8b9111ef782c77d15",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Henry M.",
+      "prenom": "Henry",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600116"
+  },
+  {
+    "_id": "121873b2ac29b88b1f4ded71",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Noah D.",
+      "prenom": "Noah",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600124"
+  },
+  {
+    "_id": "3c51963bfc8da8dc8933e633",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Lucie M.",
+      "prenom": "Lucie",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600135"
+  },
+  {
+    "_id": "f3025f649cd34f0a529ed1f3",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Zoe D.",
+      "prenom": "Zoe",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600142"
+  },
+  {
+    "_id": "2a853eeac7dd01f42719787a",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Ludivine D.",
+      "prenom": "Ludivine",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600150"
+  },
+  {
+    "_id": "13609bd2141fee1dbf3ebe1c",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Lucie H.",
+      "prenom": "Lucie",
+      "initiale_nom": "H.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600157"
+  },
+  {
+    "_id": "e523aa54240799a5ea1aa17c",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Sinead C.",
+      "prenom": "Sinead",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600164"
+  },
+  {
+    "_id": "f9eea184520c5c56b815a465",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Angelique B.",
+      "prenom": "Angelique",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600172"
+  },
+  {
+    "_id": "bf2f4c30f244eeba178b091b",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Adeline A.",
+      "prenom": "Adeline",
+      "initiale_nom": "A.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600179"
+  },
+  {
+    "_id": "2a237625b3f00b3e683f797f",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Alix D.",
+      "prenom": "Alix",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600186"
+  },
+  {
+    "_id": "bc00a20c0fd25fe5a4ec9e9b",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Marine C.",
+      "prenom": "Marine",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600194"
+  },
+  {
+    "_id": "6f4e2bceae0bfe48b48726f9",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Maurane C.",
+      "prenom": "Maurane",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600203"
+  },
+  {
+    "_id": "3230d0e8a04d8fefa208c909",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Ines D.",
+      "prenom": "Ines",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600211"
+  },
+  {
+    "_id": "be6a450d01da8ae3fa2add60",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Axelle D.",
+      "prenom": "Axelle",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600218"
+  },
+  {
+    "_id": "0ab6a6d6af8bd6dece45c196",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Alison L.",
+      "prenom": "Alison",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600225"
+  },
+  {
+    "_id": "9422862d450dfbfacdafdea1",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Lalie B.",
+      "prenom": "Lalie",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600234"
+  },
+  {
+    "_id": "b21c3d7b0aeffad28462fc0a",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Esther R.",
+      "prenom": "Esther",
+      "initiale_nom": "R.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600242"
+  },
+  {
+    "_id": "233d2f289e81307516d8983d",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Raphael L.",
+      "prenom": "Raphael",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600252"
+  },
+  {
+    "_id": "19537e89362a49dfe0ef9784",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Clement B.",
+      "prenom": "Clement",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600260"
+  },
+  {
+    "_id": "f5b0d9a747b1a1c7e162d3c0",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Antoine M.",
+      "prenom": "Antoine",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600271"
+  },
+  {
+    "_id": "908527ffa3399a6e014d8bcc",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Natanael B.",
+      "prenom": "Natanael",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600280"
+  },
+  {
+    "_id": "dc66c982c3cee40a6802ce84",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Rubens S.",
+      "prenom": "Rubens",
+      "initiale_nom": "S.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600288"
+  },
+  {
+    "_id": "fb97747c6d0140f8d162779a",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Louis D.",
+      "prenom": "Louis",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600296"
+  },
+  {
+    "_id": "63ae26e2aff5b193327a7bb8",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Raphael D.",
+      "prenom": "Raphael",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600312"
+  },
+  {
+    "_id": "8da7f1fb331c403629ce8cc1",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "David D.",
+      "prenom": "David",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600325"
+  },
+  {
+    "_id": "a3acf92aa655ff70a0ae7caf",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Robin C.",
+      "prenom": "Robin",
+      "initiale_nom": "C.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600333"
+  },
+  {
+    "_id": "2f41d8b02263ff00ca4af041",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Naim M.",
+      "prenom": "Naim",
+      "initiale_nom": "M.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600341"
+  },
+  {
+    "_id": "18ae9e5a6a47da6c822dcc52",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Edgar S.",
+      "prenom": "Edgar",
+      "initiale_nom": "S.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600348"
+  },
+  {
+    "_id": "45e0b29ebe0347b086cf27db",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Paul P.",
+      "prenom": "Paul",
+      "initiale_nom": "P.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600357"
+  },
+  {
+    "_id": "1af2f41fda678e9567535d1c",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Elio B.",
+      "prenom": "Elio",
+      "initiale_nom": "B.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600366"
+  },
+  {
+    "_id": "15b9cb8e71fe99e93e95ccce",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Nael R.",
+      "prenom": "Nael",
+      "initiale_nom": "R.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600379"
+  },
+  {
+    "_id": "a743cedd9fdd87f39ec7ee62",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Charles G.",
+      "prenom": "Charles",
+      "initiale_nom": "G.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600392"
+  },
+  {
+    "_id": "cfab196ecb21f626cc1ce1dc",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Vianney D.",
+      "prenom": "Vianney",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600400"
+  },
+  {
+    "_id": "8cb247b1936de2c996a72344",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Leny D.",
+      "prenom": "Leny",
+      "initiale_nom": "D.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600409"
+  },
+  {
+    "_id": "645a97c4c8f13374c3c9bb64",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Nathan L.",
+      "prenom": "Nathan",
+      "initiale_nom": "L.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600421"
+  },
+  {
+    "_id": "c5fc428aeff5abc6812a5166",
+    "club_id": "525674",
+    "identite": {
+      "nom_affiche": "Hugo G.",
+      "prenom": "Hugo",
+      "initiale_nom": "G.",
+      "anonymise": true
+    },
+    "statut": "ACTIF",
+    "role_principal": "JOUEUR",
+    "categorie_age": "SENIOR",
+    "equipes_autorisees": [
+      "SENIOR_M1"
+    ],
+    "derniere_synchro": "2026-10-28T07:53:01.600434"
+  }
+]

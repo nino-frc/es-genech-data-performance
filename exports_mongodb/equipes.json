@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "525674_SENIOR_M1",
+    "club_id": "525674",
+    "code_equipe": "SENIOR_M1",
+    "nom_officiel": "GENECH E.S. 1",
+    "nom_affiche": "ES Genech (Équipe Fanion)",
+    "categorie": "SENIOR",
+    "rang": "FANION",
+    "competition_actuelle": {
+      "nom": "Seniors Régional 3",
+      "poule": "Poule D",
+      "saison": "2026-2027"
+    },
+    "actif": true,
+    "derniere_synchro": "2026-10-28T07:53:01.596685"
+  },
+  {
+    "_id": "525674_SENIOR_M2",
+    "club_id": "525674",
+    "code_equipe": "SENIOR_M2",
+    "nom_officiel": "GENECH E.S. 2",
+    "nom_affiche": "ES Genech (Séniors Réserve)",
+    "categorie": "SENIOR",
+    "rang": "RESERVE",
+    "competition_actuelle": {
+      "nom": "Seniors Départemental 2",
+      "poule": "Poule B",
+      "saison": "2026-2027"
+    },
+    "actif": true,
+    "derniere_synchro": "2026-10-28T07:53:01.596717"
+  },
+  {
+    "_id": "525674_U18_M1",
+    "club_id": "525674",
+    "code_equipe": "U18_M1",
+    "nom_officiel": "GENECH E.S. U18",
+    "nom_affiche": "ES Genech (U18 D1)",
+    "categorie": "U18",
+    "rang": "JEUNES",
+    "competition_actuelle": {
+      "nom": "U18 D1 / Gambardella",
+      "poule": "Poule Unique",
+      "saison": "2026-2027"
+    },
+    "actif": true,
+    "derniere_synchro": "2026-10-28T07:53:01.596736"
+  }
+]

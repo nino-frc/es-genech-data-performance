@@ -1,0 +1,5 @@
+﻿Club;Code_FFF;Cle_Licence;Statut;Nb_Comptes_Staff;Lien_Activation;Fichier_QR
+Master Direction (Nino);MASTER_NINO;MD-MASTER-NINO-2026;Super-Admin (Accès Global);1;https://match-day-app.netlify.app/?key=MD-MASTER-NINO-2026;qr_root.png
+ES Genech;525674;MD-GNCH-88F4-A92B;Partenaire Officiel VIP (Illimité);3;https://match-day-app.netlify.app/?key=MD-GNCH-88F4-A92B;qr_gnch.png
+FC Seclin;500934;MD-SCLN-74C2-91E3;Version d'Évaluation (Bridée);1;https://match-day-app.netlify.app/?key=MD-SCLN-74C2-91E3;qr_scln.png
+FC Bondues;500123;MD-BNDS-55D1-82A4;En attente (Devis Club);0;https://match-day-app.netlify.app/?key=MD-BNDS-55D1-82A4;qr_bnds.png
