@@ -451,13 +451,18 @@ def build_seclin_pwa_payload(base_dir: str):
     last_events = []
     if total_matches > 0:
         lm_row = finished.iloc[-1]
+        comp_name = lm_row["competition_id"] if "Coupe" in str(lm_row["competition_id"]) else f"Régional 2 (Poule B) • {lm_row['tour_ou_journee']}"
+        score_disp = f"{int(lm_row['score_domicile'])} - {int(lm_row['score_exterieur'])}"
+        if lm_row["id"] == "seclin_80464279":
+            score_disp += " (TAB)"
         last_match = {
             "id": lm_row["id"],
-            "competition": f"Régional 2 (Poule B) • {lm_row['tour_ou_journee']}",
+            "competition": comp_name,
             "domicile": lm_row["equipe_domicile"],
             "exterieur": lm_row["equipe_exterieur"],
             "score_domicile": int(lm_row["score_domicile"]) if pd.notnull(lm_row["score_domicile"]) else 0,
             "score_exterieur": int(lm_row["score_exterieur"]) if pd.notnull(lm_row["score_exterieur"]) else 0,
+            "score_display": score_disp,
             "date_heure": lm_row["date_heure"],
             "statut": lm_row["statut"]
         }
@@ -495,9 +500,18 @@ def build_seclin_pwa_payload(base_dir: str):
         s_opp = m["score_exterieur"] if is_dom else m["score_domicile"]
         if s_g is None or s_opp is None:
             continue
-        if s_g > s_opp: res, res_label = "V", "Victoire"
-        elif s_g == s_opp: res, res_label = "N", "Match Nul"
-        else: res, res_label = "D", "Défaite"
+        is_coupe = "COUPE" in str(m['competition_id']).upper()
+        if m_id == 'seclin_80464279':
+            res, res_label = "V", "Qualif. (TAB)"
+            score_disp = f"{int(m['score_domicile'])} - {int(m['score_exterieur'])} (TAB)"
+        elif m_id == 'seclin_79040479':
+            res, res_label = "V", "Qualif. (TAB)"
+            score_disp = f"{int(m['score_domicile'])} - {int(m['score_exterieur'])} (TAB)"
+        else:
+            if s_g > s_opp: res, res_label = "V", "Victoire"
+            elif s_g == s_opp: res, res_label = "N", "Match Nul"
+            else: res, res_label = "D", "Défaite"
+            score_disp = f"{int(m['score_domicile'])} - {int(m['score_exterieur'])}"
 
         date_str = m["date_heure"] or ""
         try:
@@ -529,15 +543,15 @@ def build_seclin_pwa_payload(base_dir: str):
 
         historique_matchs.append({
             "id": m_id,
-            "competition": f"R2 • {m['tour_ou_journee']}",
-            "comp_type": "CHAMPIONNAT",
+            "competition": m['competition_id'] if is_coupe else f"R2 • {m['tour_ou_journee']}",
+            "comp_type": "COUPE" if is_coupe else "CHAMPIONNAT",
             "date": date_fmt,
             "date_heure": m["date_heure"],
             "domicile": m["equipe_domicile"],
             "exterieur": m["equipe_exterieur"],
             "score_domicile": int(m["score_domicile"]),
             "score_exterieur": int(m["score_exterieur"]),
-            "score_display": f"{int(m['score_domicile'])} - {int(m['score_exterieur'])}",
+            "score_display": score_disp,
             "is_domicile": is_dom,
             "resultat": res,
             "resultat_label": res_label,

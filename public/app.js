@@ -1333,9 +1333,12 @@ function renderInterface(data) {
         <button class="history-filter-btn" onclick="filterMatchHistory('COUPE', this)">Coupe des Flandres (2)</button>
       `;
     } else if (currentTeamId === '500934_SENIOR_M1') {
+      const champCount = historyList.filter(m => m.comp_type === 'CHAMPIONNAT').length;
+      const coupeCount = historyList.filter(m => m.comp_type === 'COUPE').length;
       filterBar.innerHTML = `
         <button class="history-filter-btn active" onclick="filterMatchHistory('ALL', this)">Tous (${historyList.length})</button>
-        <button class="history-filter-btn" onclick="filterMatchHistory('CHAMPIONNAT', this)">Régional 2 (${historyList.length})</button>
+        <button class="history-filter-btn" onclick="filterMatchHistory('CHAMPIONNAT', this)">Régional 2 (${champCount})</button>
+        <button class="history-filter-btn" onclick="filterMatchHistory('COUPE', this)">Coupe (${coupeCount})</button>
       `;
     } else {
       filterBar.innerHTML = `

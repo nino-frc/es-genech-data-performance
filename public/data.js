@@ -8,7 +8,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "28/10/2026 à 15:20"
+      "derniere_maj": "28/10/2026 à 15:33"
     },
     "dernier_match": {
       "id": "cdf_t6_tatinghem_genech",
@@ -3381,7 +3381,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "28/10/2026 à 15:20"
+      "derniere_maj": "28/10/2026 à 15:33"
     },
     "dernier_match": {
       "id": "m_u18_m1_79496282-et-c-anstai",
@@ -4712,7 +4712,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "28/10/2026 à 15:20"
+      "derniere_maj": "28/10/2026 à 15:33"
     },
     "dernier_match": {
       "id": "m_senior_f2_78809066-lille-e-s-l",
@@ -5517,7 +5517,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "28/10/2026 à 15:20"
+      "derniere_maj": "28/10/2026 à 15:33"
     },
     "dernier_match": {
       "id": "m_senior_b_j4_loos",
@@ -6257,34 +6257,20 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "28/10/2026 à 15:20"
+      "derniere_maj": "28/10/2026 à 15:33"
     },
     "dernier_match": {
-      "id": "seclin_79040479",
-      "competition": "Régional 2 (Poule B) • Journée",
-      "domicile": "BAUVIN FC",
+      "id": "seclin_80464279",
+      "competition": "Coupe Hauts-de-France Seniors (3ème Tour)",
+      "domicile": "ARQUES ES",
       "exterieur": "SECLIN FC",
-      "score_domicile": 1,
-      "score_exterieur": 1,
-      "date_heure": "2026-10-30 15:00",
+      "score_domicile": 2,
+      "score_exterieur": 2,
+      "score_display": "2 - 2 (TAB)",
+      "date_heure": "2026-10-25 15:00",
       "statut": "TERMINE"
     },
-    "evenements_dernier_match": [
-      {
-        "minute": 33,
-        "type": "AVERTISSEMENT",
-        "equipe": "BAUVIN FC",
-        "acteur": "Valentin C.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 90,
-        "type": "AVERTISSEMENT",
-        "equipe": "BAUVIN FC",
-        "acteur": "Willy L.",
-        "detail": "Carton jaune"
-      }
-    ],
+    "evenements_dernier_match": [],
     "prochain_match": {
       "competition": "Régional 2 (Poule B) • Journée 5",
       "date_heure": "01/11/2026 à 14:30",
@@ -6294,9 +6280,9 @@ window.MATCHDAY_TEAMS = {
       "stats_comparatives": {
         "genech": {
           "points": 8,
-          "buts_marques": 24,
-          "buts_encaisses": 9,
-          "diff": "+15"
+          "buts_marques": 22,
+          "buts_encaisses": 6,
+          "diff": "+16"
         }
       }
     },
@@ -6309,152 +6295,19 @@ window.MATCHDAY_TEAMS = {
     },
     "historique_matchs": [
       {
-        "id": "seclin_79040479",
-        "competition": "R2 • Journée",
-        "comp_type": "CHAMPIONNAT",
-        "date": "30/10/2026",
-        "date_heure": "2026-10-30 15:00",
-        "domicile": "BAUVIN FC",
-        "exterieur": "SECLIN FC",
-        "score_domicile": 1,
-        "score_exterieur": 1,
-        "score_display": "1 - 1",
-        "is_domicile": false,
-        "resultat": "N",
-        "resultat_label": "Match Nul",
-        "evenements": [
-          {
-            "minute": 33,
-            "type": "AVERTISSEMENT",
-            "equipe": "BAUVIN FC",
-            "acteur": "Valentin C.",
-            "detail": "Carton jaune"
-          },
-          {
-            "minute": 90,
-            "type": "AVERTISSEMENT",
-            "equipe": "BAUVIN FC",
-            "acteur": "Willy L.",
-            "detail": "Carton jaune"
-          }
-        ],
-        "compositions": {
-          "genech": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Valentin L."
-              },
-              {
-                "numero": 2,
-                "nom": "Antoine O."
-              },
-              {
-                "numero": 3,
-                "nom": "Nicolas P."
-              },
-              {
-                "numero": 4,
-                "nom": "Yannis D."
-              },
-              {
-                "numero": 5,
-                "nom": "Nabil I."
-              },
-              {
-                "numero": 6,
-                "nom": "Lenny M."
-              },
-              {
-                "numero": 7,
-                "nom": "Ismaila C."
-              },
-              {
-                "numero": 8,
-                "nom": "Corentin L."
-              },
-              {
-                "numero": 9,
-                "nom": "Mouhamadou S."
-              },
-              {
-                "numero": 10,
-                "nom": "Benjamin D."
-              },
-              {
-                "numero": 11,
-                "nom": "Evan D."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Luther M."
-              },
-              {
-                "numero": 13,
-                "nom": "Tom D."
-              },
-              {
-                "numero": 14,
-                "nom": "Kylian D."
-              },
-              {
-                "numero": 15,
-                "nom": "Axel R."
-              },
-              {
-                "numero": 16,
-                "nom": "Hugo L."
-              }
-            ]
-          },
-          "adversaire": {
-            "equipe": "BAUVIN FC",
-            "titulaires": []
-          }
-        }
-      },
-      {
-        "id": "seclin_56619426",
-        "competition": "R2 • Journée",
-        "comp_type": "CHAMPIONNAT",
-        "date": "26/10/2026",
-        "date_heure": "2026-10-26 19:30",
-        "domicile": "ST ANDRE US",
-        "exterieur": "SECLIN FC",
-        "score_domicile": 5,
-        "score_exterieur": 2,
-        "score_display": "5 - 2",
-        "is_domicile": false,
-        "resultat": "D",
-        "resultat_label": "Défaite",
-        "evenements": [],
-        "compositions": {
-          "genech": {
-            "titulaires": [],
-            "remplacants": []
-          },
-          "adversaire": {
-            "equipe": "ST ANDRE US",
-            "titulaires": []
-          }
-        }
-      },
-      {
         "id": "seclin_80464279",
-        "competition": "R2 • Journée",
-        "comp_type": "CHAMPIONNAT",
+        "competition": "Coupe Hauts-de-France Seniors (3ème Tour)",
+        "comp_type": "COUPE",
         "date": "25/10/2026",
         "date_heure": "2026-10-25 15:00",
         "domicile": "ARQUES ES",
         "exterieur": "SECLIN FC",
-        "score_domicile": 0,
+        "score_domicile": 2,
         "score_exterieur": 2,
-        "score_display": "0 - 2",
+        "score_display": "2 - 2 (TAB)",
         "is_domicile": false,
         "resultat": "V",
-        "resultat_label": "Victoire",
+        "resultat_label": "Qualif. (TAB)",
         "evenements": [],
         "compositions": {
           "genech": {
@@ -6715,8 +6568,8 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "id": "seclin_79812470",
-        "competition": "R2 • Journée",
-        "comp_type": "CHAMPIONNAT",
+        "competition": "Coupe Hauts-de-France Seniors - Senior 2ème Tour",
+        "comp_type": "COUPE",
         "date": "11/10/2026",
         "date_heure": "2026-10-11 15:00",
         "domicile": "SECLIN FC",
@@ -7423,13 +7276,120 @@ window.MATCHDAY_TEAMS = {
             "titulaires": []
           }
         }
+      },
+      {
+        "id": "seclin_79040479",
+        "competition": "Coupe de France - 2ème Tour",
+        "comp_type": "COUPE",
+        "date": "30/08/2026",
+        "date_heure": "2026-08-30 15:00",
+        "domicile": "BAUVIN FC",
+        "exterieur": "SECLIN FC",
+        "score_domicile": 1,
+        "score_exterieur": 1,
+        "score_display": "1 - 1 (TAB)",
+        "is_domicile": false,
+        "resultat": "V",
+        "resultat_label": "Qualif. (TAB)",
+        "evenements": [
+          {
+            "minute": 33,
+            "type": "AVERTISSEMENT",
+            "equipe": "BAUVIN FC",
+            "acteur": "Valentin C.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "BAUVIN FC",
+            "acteur": "Willy L.",
+            "detail": "Carton jaune"
+          }
+        ],
+        "compositions": {
+          "genech": {
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Valentin L."
+              },
+              {
+                "numero": 2,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
+              },
+              {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
+                "numero": 5,
+                "nom": "Nabil I."
+              },
+              {
+                "numero": 6,
+                "nom": "Lenny M."
+              },
+              {
+                "numero": 7,
+                "nom": "Ismaila C."
+              },
+              {
+                "numero": 8,
+                "nom": "Corentin L."
+              },
+              {
+                "numero": 9,
+                "nom": "Mouhamadou S."
+              },
+              {
+                "numero": 10,
+                "nom": "Benjamin D."
+              },
+              {
+                "numero": 11,
+                "nom": "Evan D."
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Luther M."
+              },
+              {
+                "numero": 13,
+                "nom": "Tom D."
+              },
+              {
+                "numero": 14,
+                "nom": "Kylian D."
+              },
+              {
+                "numero": 15,
+                "nom": "Axel R."
+              },
+              {
+                "numero": 16,
+                "nom": "Hugo L."
+              }
+            ]
+          },
+          "adversaire": {
+            "equipe": "BAUVIN FC",
+            "titulaires": []
+          }
+        }
       }
     ],
     "kpis_saison": {
-      "buts_marques": 24,
-      "buts_encaisses": 9,
-      "clean_sheets": 4,
-      "minutes_cumulees": 7200,
+      "buts_marques": 22,
+      "buts_encaisses": 6,
+      "clean_sheets": 3,
+      "minutes_cumulees": 6300,
       "cartons_jaunes": 11,
       "cartons_rouges": 0
     },
@@ -7454,7 +7414,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 5,
         "minutes": 410,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 90.0,
@@ -7476,7 +7436,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 5,
         "minutes": 410,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 90.0,
@@ -7498,7 +7458,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 5,
         "minutes": 410,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 90.0,
@@ -7520,7 +7480,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 5,
         "minutes": 410,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 90.0,
@@ -7542,7 +7502,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 5,
         "minutes": 410,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 90.0,
@@ -7564,7 +7524,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 5,
         "minutes": 410,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 90.0,
@@ -7586,7 +7546,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 5,
         "minutes": 410,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 90.0,
@@ -7608,7 +7568,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 4,
         "minutes": 353,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 85.0,
@@ -7630,7 +7590,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 4,
         "minutes": 328,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 83.0,
@@ -7652,7 +7612,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 4,
         "minutes": 328,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 83.0,
@@ -7674,7 +7634,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 3,
         "minutes": 271,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 78.0,
@@ -7696,7 +7656,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 2,
         "minutes": 214,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 73.0,
@@ -7718,7 +7678,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 157,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 68.0,
@@ -7740,7 +7700,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 132,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 66.0,
@@ -7762,7 +7722,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -7784,7 +7744,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -7806,7 +7766,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -7828,7 +7788,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -7850,7 +7810,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -7872,7 +7832,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -7894,7 +7854,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -7916,7 +7876,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -7938,7 +7898,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -7960,7 +7920,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -7982,7 +7942,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8004,7 +7964,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8026,7 +7986,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8048,7 +8008,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8070,7 +8030,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8092,7 +8052,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8114,7 +8074,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8136,7 +8096,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8158,7 +8118,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8180,7 +8140,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8202,7 +8162,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8224,7 +8184,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8246,7 +8206,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8268,7 +8228,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8290,7 +8250,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8312,7 +8272,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8334,7 +8294,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8356,7 +8316,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8378,7 +8338,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8400,7 +8360,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8422,7 +8382,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8444,7 +8404,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8466,7 +8426,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8488,7 +8448,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8510,7 +8470,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8532,7 +8492,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8554,7 +8514,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8576,7 +8536,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8598,7 +8558,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8620,7 +8580,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8642,7 +8602,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8664,7 +8624,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8686,7 +8646,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8708,7 +8668,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -8730,7 +8690,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9124,18 +9084,18 @@ window.MATCHDAY_TEAMS = {
       "ppm_championnat": 2.0,
       "probabilite_montee_pct": 78.0,
       "probabilite_maintien_pct": 99.0,
-      "taux_invincibilite": 87.5,
+      "taux_invincibilite": 100.0,
       "bilan_global": {
-        "matchs": 8,
-        "victoires": 4,
-        "nuls": 3,
-        "defaites": 1,
-        "buts_pour": 24,
-        "buts_contre": 9,
-        "difference": 15
+        "matchs": 7,
+        "victoires": 3,
+        "nuls": 4,
+        "defaites": 0,
+        "buts_pour": 22,
+        "buts_contre": 6,
+        "difference": 16
       },
-      "ratio_clean_sheet_pct": 50.0,
-      "moyenne_buts_encaisses": 1.12,
+      "ratio_clean_sheet_pct": 42.9,
+      "moyenne_buts_encaisses": 0.86,
       "projection_saison": {
         "points_prevus": 44.0,
         "rang_final_estime": "Top 2 Régional 2 (Course à la montée en R1)"
@@ -9175,7 +9135,7 @@ window.MATCHDAY_TEAMS = {
       "analyse_temporelle": {
         "buts_2nde_mi_temps_pct": 57.0,
         "buts_money_time_pct": 28.0,
-        "clean_premiere_demi_heure": "4 clean sheets",
+        "clean_premiere_demi_heure": "3 clean sheets",
         "point_vigilance": "Excellente efficacité offensive (12-0 vs Montigny)"
       }
     },
@@ -9263,34 +9223,20 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "28/10/2026 à 15:20"
+      "derniere_maj": "28/10/2026 à 15:33"
     },
     "dernier_match": {
-      "id": "seclin_79040479",
-      "competition": "Régional 2 (Poule B) • Journée",
-      "domicile": "BAUVIN FC",
+      "id": "seclin_80464279",
+      "competition": "Coupe Hauts-de-France Seniors (3ème Tour)",
+      "domicile": "ARQUES ES",
       "exterieur": "SECLIN FC",
-      "score_domicile": 1,
-      "score_exterieur": 1,
-      "date_heure": "2026-10-30 15:00",
+      "score_domicile": 2,
+      "score_exterieur": 2,
+      "score_display": "2 - 2 (TAB)",
+      "date_heure": "2026-10-25 15:00",
       "statut": "TERMINE"
     },
-    "evenements_dernier_match": [
-      {
-        "minute": 33,
-        "type": "AVERTISSEMENT",
-        "equipe": "BAUVIN FC",
-        "acteur": "Valentin C.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 90,
-        "type": "AVERTISSEMENT",
-        "equipe": "BAUVIN FC",
-        "acteur": "Willy L.",
-        "detail": "Carton jaune"
-      }
-    ],
+    "evenements_dernier_match": [],
     "prochain_match": {
       "competition": "Régional 2 (Poule B) • Journée 5",
       "date_heure": "01/11/2026 à 14:30",
@@ -9300,9 +9246,9 @@ window.MATCHDAY_TEAMS = {
       "stats_comparatives": {
         "genech": {
           "points": 8,
-          "buts_marques": 24,
-          "buts_encaisses": 9,
-          "diff": "+15"
+          "buts_marques": 22,
+          "buts_encaisses": 6,
+          "diff": "+16"
         }
       }
     },
@@ -9315,152 +9261,19 @@ window.MATCHDAY_TEAMS = {
     },
     "historique_matchs": [
       {
-        "id": "seclin_79040479",
-        "competition": "R2 • Journée",
-        "comp_type": "CHAMPIONNAT",
-        "date": "30/10/2026",
-        "date_heure": "2026-10-30 15:00",
-        "domicile": "BAUVIN FC",
-        "exterieur": "SECLIN FC",
-        "score_domicile": 1,
-        "score_exterieur": 1,
-        "score_display": "1 - 1",
-        "is_domicile": false,
-        "resultat": "N",
-        "resultat_label": "Match Nul",
-        "evenements": [
-          {
-            "minute": 33,
-            "type": "AVERTISSEMENT",
-            "equipe": "BAUVIN FC",
-            "acteur": "Valentin C.",
-            "detail": "Carton jaune"
-          },
-          {
-            "minute": 90,
-            "type": "AVERTISSEMENT",
-            "equipe": "BAUVIN FC",
-            "acteur": "Willy L.",
-            "detail": "Carton jaune"
-          }
-        ],
-        "compositions": {
-          "genech": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Valentin L."
-              },
-              {
-                "numero": 2,
-                "nom": "Antoine O."
-              },
-              {
-                "numero": 3,
-                "nom": "Nicolas P."
-              },
-              {
-                "numero": 4,
-                "nom": "Yannis D."
-              },
-              {
-                "numero": 5,
-                "nom": "Nabil I."
-              },
-              {
-                "numero": 6,
-                "nom": "Lenny M."
-              },
-              {
-                "numero": 7,
-                "nom": "Ismaila C."
-              },
-              {
-                "numero": 8,
-                "nom": "Corentin L."
-              },
-              {
-                "numero": 9,
-                "nom": "Mouhamadou S."
-              },
-              {
-                "numero": 10,
-                "nom": "Benjamin D."
-              },
-              {
-                "numero": 11,
-                "nom": "Evan D."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Luther M."
-              },
-              {
-                "numero": 13,
-                "nom": "Tom D."
-              },
-              {
-                "numero": 14,
-                "nom": "Kylian D."
-              },
-              {
-                "numero": 15,
-                "nom": "Axel R."
-              },
-              {
-                "numero": 16,
-                "nom": "Hugo L."
-              }
-            ]
-          },
-          "adversaire": {
-            "equipe": "BAUVIN FC",
-            "titulaires": []
-          }
-        }
-      },
-      {
-        "id": "seclin_56619426",
-        "competition": "R2 • Journée",
-        "comp_type": "CHAMPIONNAT",
-        "date": "26/10/2026",
-        "date_heure": "2026-10-26 19:30",
-        "domicile": "ST ANDRE US",
-        "exterieur": "SECLIN FC",
-        "score_domicile": 5,
-        "score_exterieur": 2,
-        "score_display": "5 - 2",
-        "is_domicile": false,
-        "resultat": "D",
-        "resultat_label": "Défaite",
-        "evenements": [],
-        "compositions": {
-          "genech": {
-            "titulaires": [],
-            "remplacants": []
-          },
-          "adversaire": {
-            "equipe": "ST ANDRE US",
-            "titulaires": []
-          }
-        }
-      },
-      {
         "id": "seclin_80464279",
-        "competition": "R2 • Journée",
-        "comp_type": "CHAMPIONNAT",
+        "competition": "Coupe Hauts-de-France Seniors (3ème Tour)",
+        "comp_type": "COUPE",
         "date": "25/10/2026",
         "date_heure": "2026-10-25 15:00",
         "domicile": "ARQUES ES",
         "exterieur": "SECLIN FC",
-        "score_domicile": 0,
+        "score_domicile": 2,
         "score_exterieur": 2,
-        "score_display": "0 - 2",
+        "score_display": "2 - 2 (TAB)",
         "is_domicile": false,
         "resultat": "V",
-        "resultat_label": "Victoire",
+        "resultat_label": "Qualif. (TAB)",
         "evenements": [],
         "compositions": {
           "genech": {
@@ -9721,8 +9534,8 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "id": "seclin_79812470",
-        "competition": "R2 • Journée",
-        "comp_type": "CHAMPIONNAT",
+        "competition": "Coupe Hauts-de-France Seniors - Senior 2ème Tour",
+        "comp_type": "COUPE",
         "date": "11/10/2026",
         "date_heure": "2026-10-11 15:00",
         "domicile": "SECLIN FC",
@@ -10429,13 +10242,120 @@ window.MATCHDAY_TEAMS = {
             "titulaires": []
           }
         }
+      },
+      {
+        "id": "seclin_79040479",
+        "competition": "Coupe de France - 2ème Tour",
+        "comp_type": "COUPE",
+        "date": "30/08/2026",
+        "date_heure": "2026-08-30 15:00",
+        "domicile": "BAUVIN FC",
+        "exterieur": "SECLIN FC",
+        "score_domicile": 1,
+        "score_exterieur": 1,
+        "score_display": "1 - 1 (TAB)",
+        "is_domicile": false,
+        "resultat": "V",
+        "resultat_label": "Qualif. (TAB)",
+        "evenements": [
+          {
+            "minute": 33,
+            "type": "AVERTISSEMENT",
+            "equipe": "BAUVIN FC",
+            "acteur": "Valentin C.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "BAUVIN FC",
+            "acteur": "Willy L.",
+            "detail": "Carton jaune"
+          }
+        ],
+        "compositions": {
+          "genech": {
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Valentin L."
+              },
+              {
+                "numero": 2,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
+              },
+              {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
+                "numero": 5,
+                "nom": "Nabil I."
+              },
+              {
+                "numero": 6,
+                "nom": "Lenny M."
+              },
+              {
+                "numero": 7,
+                "nom": "Ismaila C."
+              },
+              {
+                "numero": 8,
+                "nom": "Corentin L."
+              },
+              {
+                "numero": 9,
+                "nom": "Mouhamadou S."
+              },
+              {
+                "numero": 10,
+                "nom": "Benjamin D."
+              },
+              {
+                "numero": 11,
+                "nom": "Evan D."
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Luther M."
+              },
+              {
+                "numero": 13,
+                "nom": "Tom D."
+              },
+              {
+                "numero": 14,
+                "nom": "Kylian D."
+              },
+              {
+                "numero": 15,
+                "nom": "Axel R."
+              },
+              {
+                "numero": 16,
+                "nom": "Hugo L."
+              }
+            ]
+          },
+          "adversaire": {
+            "equipe": "BAUVIN FC",
+            "titulaires": []
+          }
+        }
       }
     ],
     "kpis_saison": {
-      "buts_marques": 24,
-      "buts_encaisses": 9,
-      "clean_sheets": 4,
-      "minutes_cumulees": 7200,
+      "buts_marques": 22,
+      "buts_encaisses": 6,
+      "clean_sheets": 3,
+      "minutes_cumulees": 6300,
       "cartons_jaunes": 11,
       "cartons_rouges": 0
     },
@@ -10460,7 +10380,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 5,
         "minutes": 410,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 90.0,
@@ -10482,7 +10402,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 5,
         "minutes": 410,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 90.0,
@@ -10504,7 +10424,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 5,
         "minutes": 410,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 90.0,
@@ -10526,7 +10446,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 5,
         "minutes": 410,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 90.0,
@@ -10548,7 +10468,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 5,
         "minutes": 410,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 90.0,
@@ -10570,7 +10490,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 5,
         "minutes": 410,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 90.0,
@@ -10592,7 +10512,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 5,
         "minutes": 410,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 90.0,
@@ -10614,7 +10534,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 4,
         "minutes": 353,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 85.0,
@@ -10636,7 +10556,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 4,
         "minutes": 328,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 83.0,
@@ -10658,7 +10578,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 4,
         "minutes": 328,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 83.0,
@@ -10680,7 +10600,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 3,
         "minutes": 271,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 78.0,
@@ -10702,7 +10622,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 2,
         "minutes": 214,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 73.0,
@@ -10724,7 +10644,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 157,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 68.0,
@@ -10746,7 +10666,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 132,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 66.0,
@@ -10768,7 +10688,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -10790,7 +10710,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -10812,7 +10732,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -10834,7 +10754,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -10856,7 +10776,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -10878,7 +10798,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -10900,7 +10820,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -10922,7 +10842,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -10944,7 +10864,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -10966,7 +10886,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -10988,7 +10908,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11010,7 +10930,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11032,7 +10952,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11054,7 +10974,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11076,7 +10996,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11098,7 +11018,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11120,7 +11040,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11142,7 +11062,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11164,7 +11084,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11186,7 +11106,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11208,7 +11128,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11230,7 +11150,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11252,7 +11172,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11274,7 +11194,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11296,7 +11216,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11318,7 +11238,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11340,7 +11260,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11362,7 +11282,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11384,7 +11304,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11406,7 +11326,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11428,7 +11348,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11450,7 +11370,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11472,7 +11392,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11494,7 +11414,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11516,7 +11436,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11538,7 +11458,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11560,7 +11480,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11582,7 +11502,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11604,7 +11524,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11626,7 +11546,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11648,7 +11568,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11670,7 +11590,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11692,7 +11612,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11714,7 +11634,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -11736,7 +11656,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 4,
+        "clean_sheets": 3,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -12130,18 +12050,18 @@ window.MATCHDAY_TEAMS = {
       "ppm_championnat": 2.0,
       "probabilite_montee_pct": 78.0,
       "probabilite_maintien_pct": 99.0,
-      "taux_invincibilite": 87.5,
+      "taux_invincibilite": 100.0,
       "bilan_global": {
-        "matchs": 8,
-        "victoires": 4,
-        "nuls": 3,
-        "defaites": 1,
-        "buts_pour": 24,
-        "buts_contre": 9,
-        "difference": 15
+        "matchs": 7,
+        "victoires": 3,
+        "nuls": 4,
+        "defaites": 0,
+        "buts_pour": 22,
+        "buts_contre": 6,
+        "difference": 16
       },
-      "ratio_clean_sheet_pct": 50.0,
-      "moyenne_buts_encaisses": 1.12,
+      "ratio_clean_sheet_pct": 42.9,
+      "moyenne_buts_encaisses": 0.86,
       "projection_saison": {
         "points_prevus": 44.0,
         "rang_final_estime": "Top 2 Régional 2 (Course à la montée en R1)"
@@ -12181,7 +12101,7 @@ window.MATCHDAY_TEAMS = {
       "analyse_temporelle": {
         "buts_2nde_mi_temps_pct": 57.0,
         "buts_money_time_pct": 28.0,
-        "clean_premiere_demi_heure": "4 clean sheets",
+        "clean_premiere_demi_heure": "3 clean sheets",
         "point_vigilance": "Excellente efficacité offensive (12-0 vs Montigny)"
       }
     },
