@@ -1,17 +1,17 @@
-name: ES Genech - Data & Performance Pipeline
+name: MatchDay - Multi-Club Data & Performance Pipeline
 
 on:
   workflow_dispatch:
   schedule:
-    # Lundi : Déclenchement à 05h25 UTC (06h25 heure de Paris)
-    # Minute atypique (:25) pour contourner la congestion des files d'attente GitHub
-    # Garantit une réception par e-mail au staff dès le réveil (07h00 - 08h00)
-    - cron: '25 5 * * 1'
+    # Lundi : Déclenchement à 05h35 UTC (06h35 heure de Paris en hiver UTC+1)
+    # Minute atypique (:35) pour contourner la congestion des files d'attente GitHub
+    # Récupération des feuilles de match FFF du dimanche et débriefing prêt dès 07h00 pour le réveil du staff
+    - cron: '35 5 * * 1'
 
-    # Vendredi : Déclenchement à 10h20 UTC (11h20 heure de Paris)
-    # Permet au coach de recevoir le briefing tactique pour le déjeuner (12h00)
-    # bien avant la séance et la causerie du vendredi soir
-    - cron: '20 10 * * 5'
+    # Vendredi : Déclenchement à 10h14 UTC (11h14 heure de Paris en hiver UTC+1)
+    # Permet au coach de recevoir le briefing tactique & scouting adverse pour le déjeuner (12h00)
+    # bien avant la séance d'entraînement du vendredi soir
+    - cron: '14 10 * * 5'
 
 jobs:
   run-pipeline:
@@ -40,75 +40,108 @@ jobs:
         run: |
           playwright install chromium --with-deps
 
-      - name: ⚽ 1. Scraping des résultats & feuilles de match FFF (Senior A)
+      # --- 1. SCRAPING MULTI-CLUBS (FFF OFFICIEL) ---
+      - name: ⚽ 1a. Scraping FFF ES Genech (525674)
         run: |
           python scraper.py
+        continue-on-error: true
 
+      - name: ⚽ 1b. Scraping FFF FC Seclin (500934)
+        run: |
+          python scrape_seclin_r2.py
+        continue-on-error: true
+
+      - name: ⚽ 1c. Scraping FFF US Lesquin (500426)
+        run: |
+          python scrape_lesquin_r2.py
+        continue-on-error: true
+
+      # --- 2. ANALYTICS & VEILLE DISCIPLINAIRE ---
       - name: 🕵️ 2. Espionnage & Scouting tactique de l'adversaire
         run: |
           python scout_opponent.py
+        continue-on-error: true
 
       - name: 📊 3. Calculs statistiques & Analytics
         run: |
           python analytics.py
+        continue-on-error: true
 
       - name: ⚖️ 4. Veille Disciplinaire Interne (Art. 226 FFF & Gestion Sursis)
         run: |
           python discipline_monitor.py
+        continue-on-error: true
 
       - name: 🏆 5. Notation Joueur & ESG Impact Scores (0-100)
         run: |
           python player_rating.py
+        continue-on-error: true
 
       - name: 📈 6. Analyse des Facteurs Clés de Victoire
         run: |
           python performance_drivers.py
+        continue-on-error: true
 
       - name: 🔄 7. Matrice d'Impact des Remplaçants (Plus/Minus +/-)
         run: |
           python substitutions_impact.py
+        continue-on-error: true
 
       - name: 🎲 8. Simulation Monte-Carlo & Projections R3 (20 000 itérations)
         run: |
           python simulateur_monte_carlo.py
+        continue-on-error: true
 
+      # --- 3. GÉNÉRATION DES DOCUMENTS DEBRIEF & BRIEFINGS ---
       - name: 📱 9. Génération du Briefing d'Avant-Match (Senior A)
         run: |
           python generate_match_briefing.py
+        continue-on-error: true
 
       - name: 📋 10. Génération du Débrief Post-Match du Lundi (Senior A)
         run: |
           python generate_postmatch_debrief.py
+        continue-on-error: true
 
       - name: 📇 11. Génération des Cartes Profil Joueurs (FM / FIFA)
         run: |
           python generate_player_cards.py
+        continue-on-error: true
 
       - name: 👔 12. Génération du Rapport Exécutif Mensuel (Président & Comité)
         run: |
           python generate_executive_report.py
+        continue-on-error: true
 
-      - name: 📧 13. Envoi automatique des livrables par e-mail
+      # --- 4. EXPORT DES FLUX MULTI-CLUBS DE L'APPLICATION PWA ---
+      - name: 🚀 13. Compilation et Export du flux PWA MatchDay (Genech, Seclin, Lesquin)
+        run: |
+          python export_pwa_feed.py
+
+      # --- 5. ENVOI E-MAIL LIVRABLES ---
+      - name: 📧 14. Envoi automatique des livrables par e-mail
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
         run: |
           python send_email_report.py
+        continue-on-error: true
 
-      - name: 📤 14. Archivage sécurisé des livrables (Artifacts GitHub)
+      - name: 📤 15. Archivage sécurisé des livrables (Artifacts GitHub)
         uses: actions/upload-artifact@v4
         with:
-          name: livrables-es-genech
+          name: livrables-matchday
           path: |
             briefings_coach/*.pdf
             briefings_coach/*.png
           retention-days: 14
 
-      - name: 💾 15. Sauvegarde & Commit automatique de la Base de Données
+      # --- 6. SAUVEGARDE & DÉPLOIEMENT AUTOMATIQUE NETLIFY ---
+      - name: 💾 16. Sauvegarde & Commit automatique Multi-Clubs (Déclenche le build Netlify)
         run: |
-          git config user.name "Genech Analytics Bot"
-          git config user.email "bot@esgenech.fr"
-          git add genech_performance.db exports_powerbi/ briefings_coach/
-          git diff-index --quiet HEAD || git commit -m "chore(auto): mise à jour hebdomadaire des données et livrables FFF [skip ci]"
+          git config user.name "MatchDay Analytics Bot"
+          git config user.email "bot@matchday-app.fr"
+          git add genech_performance.db seclin_performance.db lesquin_performance.db public/data.js public/data_feed.json exports_powerbi/ briefings_coach/
+          git diff-index --quiet HEAD || git commit -m "chore(auto): mise à jour hebdomadaire multi-clubs FFF (Genech, Seclin, Lesquin) [skip ci]"
           git push origin main

@@ -8,7 +8,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "28/10/2026 à 17:53"
+      "derniere_maj": "28/10/2026 à 19:10"
     },
     "dernier_match": {
       "id": "cdf_t6_tatinghem_genech",
@@ -3398,7 +3398,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "28/10/2026 à 17:53"
+      "derniere_maj": "28/10/2026 à 19:10"
     },
     "dernier_match": {
       "id": "m_u18_m1_79496282-et-c-anstai",
@@ -4738,7 +4738,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "28/10/2026 à 17:53"
+      "derniere_maj": "28/10/2026 à 19:10"
     },
     "dernier_match": {
       "id": "m_senior_f2_78809066-lille-e-s-l",
@@ -5552,7 +5552,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "28/10/2026 à 17:53"
+      "derniere_maj": "28/10/2026 à 19:10"
     },
     "dernier_match": {
       "id": "m_senior_b_j4_loos",
@@ -6301,7 +6301,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "28/10/2026 à 17:53"
+      "derniere_maj": "28/10/2026 à 19:10"
     },
     "dernier_match": {
       "id": "seclin_80464279",
@@ -9828,7 +9828,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "28/10/2026 à 17:53"
+      "derniere_maj": "28/10/2026 à 19:10"
     },
     "dernier_match": {
       "id": "seclin_80464279",
@@ -13355,7 +13355,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "28/10/2026 à 17:53"
+      "derniere_maj": "28/10/2026 à 19:10"
     },
     "dernier_match": {
       "id": "lesquin_79040482",
@@ -16845,7 +16845,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "28/10/2026 à 17:53"
+      "derniere_maj": "28/10/2026 à 19:10"
     },
     "dernier_match": {
       "id": "lesquin_79040482",
