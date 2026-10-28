@@ -1,6 +1,7 @@
 /**
  * MatchDay PWA - Client Script & Alimentation Dynamique
  * Gestion des 5 Onglets, Modales Joueurs Interactives, Trésorerie & Gouvernance
+ * Pont sécurisé vers Netlify Serverless Function (/api/get_matchday_data)
  */
 
 let globalData = null;
@@ -52,7 +53,6 @@ function openPlayerModal(playerIndex) {
   document.getElementById('modalBadge').textContent = p.badge;
   document.getElementById('modalEsgScore').textContent = p.esg_score;
 
-  // Sous-Scores Piliers ESG
   const volPct = Math.min(100, Math.round((subs.volume / (subs.volume_max || 35)) * 100));
   const defPct = Math.min(100, Math.round((subs.defense / (subs.defense_max || 30)) * 100));
   const attPct = Math.min(100, Math.round((subs.attaque / (subs.attaque_max || 35)) * 100));
@@ -70,7 +70,6 @@ function openPlayerModal(playerIndex) {
   document.getElementById('subscoreMalusText').textContent = malusVal > 0 ? `-${malusVal} pts` : `0 pt (Discipline parfaite)`;
   document.getElementById('subscoreMalusBar').style.width = malusVal > 0 ? `${Math.min(100, malusVal * 5)}%` : `0%`;
 
-  // Stats individuelles
   document.getElementById('modalMinutes').textContent = `${p.minutes}m`;
   document.getElementById('modalStarts').textContent = `${p.titularisations} / ${p.matchs}`;
   document.getElementById('modalCleanSheets').textContent = `${p.clean_sheets} CS`;
@@ -91,33 +90,93 @@ function handleModalOverlayClick(e) {
   }
 }
 
-// 4. Initialisation de l'Application
+// 4. Notification d'État (Toast)
+function showNotification(message, isError = false) {
+  let toast = document.getElementById('appNotificationToast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'appNotificationToast';
+    toast.style.position = 'fixed';
+    toast.style.top = '58px';
+    toast.style.left = '50%';
+    toast.style.transform = 'translateX(-50%)';
+    toast.style.zIndex = '999';
+    toast.style.padding = '6px 14px';
+    toast.style.borderRadius = '20px';
+    toast.style.fontSize = '11px';
+    toast.style.fontWeight = '600';
+    toast.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+    toast.style.transition = 'opacity 0.3s ease';
+    document.body.appendChild(toast);
+  }
+
+  toast.style.background = isError ? '#fef2f2' : '#f0fdf4';
+  toast.style.color = isError ? '#991b1b' : '#166534';
+  toast.style.border = isError ? '1px solid #fecaca' : '1px solid #bbf7d0';
+  toast.textContent = message;
+  toast.style.opacity = '1';
+
+  setTimeout(() => {
+    toast.style.opacity = '0';
+  }, 3500);
+}
+
+// 5. Pont Fetch JavaScript : Appel de la Netlify Function avec gestion du Token et Try/Catch
+async function fetchMatchDayFromApi() {
+  // Extraction du paramètre d'URL (ex: ?team=genech-token123)
+  const urlParams = new URLSearchParams(window.location.search);
+  const teamToken = urlParams.get('team') || urlParams.get('token') || 'genech';
+
+  console.log(`[PWA Front-end] Requête Netlify Function pour le token : ${teamToken}`);
+
+  // En local direct (file://), pas d'appel réseau pour respecter la sécurité du navigateur
+  if (window.location.protocol === 'file:') {
+    return;
+  }
+
+  try {
+    const response = await fetch(`/api/get_matchday_data?team=${encodeURIComponent(teamToken)}`);
+
+    if (!response.ok) {
+      throw new Error(`Erreur réseau HTTP ${response.status} (Fonction Serverless non joignable)`);
+    }
+
+    const payload = await response.json();
+
+    if (payload.status === "error") {
+      throw new Error(payload.message || "Erreur de base de données retournée par la fonction.");
+    }
+
+    console.log("[PWA Front-end] Données MongoDB Atlas reçues avec succès :", payload);
+
+    // Si l'équipe est Seclin ou un autre club, adapter le header
+    if (payload.equipe && payload.equipe.nom_affiche) {
+      const activeEl = document.getElementById('activeClubName');
+      if (activeEl) {
+        activeEl.textContent = `${payload.equipe.nom_affiche} (${payload.equipe.categorie || 'R3'})`;
+      }
+    }
+
+  } catch (error) {
+    console.warn("[PWA Front-end] Impossible de contacter MongoDB Atlas en direct :", error.message);
+    showNotification("Mode hors-ligne actif : affichage des données locales certifiées.", false);
+  }
+}
+
+// 6. Initialisation de l'Application
 function initApp() {
+  // A. Rendu synchrone immédiat (Zéro latence)
   if (window.MATCHDAY_DATA) {
     globalData = window.MATCHDAY_DATA;
     renderInterface(window.MATCHDAY_DATA);
   }
   dismissSplashScreen();
-  refreshFromRemote();
+
+  // B. Appel de l'API Serverless en tâche de fond
+  fetchMatchDayFromApi();
 }
 
-async function refreshFromRemote() {
-  if (window.location.protocol === 'file:') return;
-
-  const urlParams = new URLSearchParams(window.location.search);
-  const teamToken = urlParams.get('team') || urlParams.get('token');
-
-  try {
-    const netlifyRes = await fetch(`/.netlify/functions/get_team_data?team=${teamToken || '525674_SENIOR_M1'}`);
-    if (netlifyRes.ok) {
-      const data = await netlifyRes.json();
-      globalData = data;
-      renderInterface(data);
-    }
-  } catch (e) {}
-}
-
-// 5. Rendu DOM Dynamique Complet
+// 7. Rendu DOM Dynamique Complet
 function renderInterface(data) {
   if (!data) return;
 
@@ -192,7 +251,7 @@ function renderInterface(data) {
     document.getElementById('nextMatchLieu').textContent = next.lieu;
   }
   if (ref.nom_arbitre) {
-    document.getElementById('refereeName').textContent = `👨‍⚖️ ${ref.nom_arbitre} (${ref.niveau})`;
+    document.getElementById('refereeName').textContent = `👨‍⚖️ ${ref.nom_arbitre}`;
     document.getElementById('refereeSeverityBadge').textContent = ref.severite;
     document.getElementById('refereeSeverityBadge').style.background = ref.badge_color ? `${ref.badge_color}22` : '#fee2e2';
     document.getElementById('refereeSeverityBadge').style.color = ref.badge_color || '#b91c1c';
@@ -347,7 +406,7 @@ function renderInterface(data) {
   }
 }
 
-// 6. Démarrage Synchrone
+// 8. Démarrage Synchrone
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initApp);
 } else {

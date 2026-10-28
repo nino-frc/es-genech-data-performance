@@ -2,6 +2,13 @@
   publish = "public"
   functions = "netlify/functions"
 
+# Redirection élégante pour l'API
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+# En-têtes de sécurité
 [[headers]]
   for = "/*"
   [headers.values]
@@ -9,7 +16,8 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
 
+# Pas de mise en cache agressive du Service Worker
 [[headers]]
   for = "/sw.js"
   [headers.values]
-    Cache-Control = "no-cache"
+    Cache-Control = "no-cache, no-store, must-revalidate"

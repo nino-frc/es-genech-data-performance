@@ -1,0 +1,12 @@
+{
+  "name": "matchday-pwa-backend",
+  "version": "1.0.0",
+  "description": "API Serverless Netlify et PWA MatchDay Analytics",
+  "main": "netlify/functions/get_matchday_data.js",
+  "scripts": {
+    "build": "echo 'Netlify build ready'"
+  },
+  "dependencies": {
+    "mongodb": "^6.5.0"
+  }
+}
