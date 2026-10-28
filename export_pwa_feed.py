@@ -68,10 +68,17 @@ def build_secondary_team_data(team_id: str, conn: sqlite3.Connection):
     buts_encaisses = 0
     clean_sheets = 0
 
+    champ_victoires = 0
+    champ_nuls = 0
+    champ_matchs = 0
+
     for _, m in finished_matches.iterrows():
         is_dom = "GENECH" in str(m['equipe_domicile']).upper()
         s_g = m['score_domicile'] if is_dom else m['score_exterieur']
         s_opp = m['score_exterieur'] if is_dom else m['score_domicile']
+        c_id = str(m['competition_id']).lower()
+        is_champ = ("d1" in c_id or "d2" in c_id or "interdistrict" in c_id) and not ("gambardella" in c_id or "coupe" in c_id)
+
         if pd.notnull(s_g) and pd.notnull(s_opp):
             s_g = int(s_g)
             s_opp = int(s_opp)
@@ -79,23 +86,39 @@ def build_secondary_team_data(team_id: str, conn: sqlite3.Connection):
             buts_encaisses += s_opp
             if s_g > s_opp:
                 victoires += 1
+                if is_champ: champ_victoires += 1
             elif s_g == s_opp:
                 nuls += 1
+                if is_champ: champ_nuls += 1
             else:
                 defaites += 1
+            if is_champ:
+                champ_matchs += 1
             if s_opp == 0:
                 clean_sheets += 1
 
     invincibilite_pct = round(((victoires + nuls) / total_matches * 100), 1) if total_matches > 0 else 0
-    ppm = round((victoires * 3 + nuls) / total_matches, 2) if total_matches > 0 else 0.0
+    # PPM de championnat strict
+    if champ_matchs > 0:
+        ppm = round((champ_victoires * 3 + champ_nuls) / champ_matchs, 2)
+    else:
+        ppm = round((victoires * 3 + nuls) / total_matches, 2) if total_matches > 0 else 0.0
 
     last_match = {}
     last_events = []
     if total_matches > 0:
         lm_row = finished_matches.iloc[-1]
+        c_id_last = str(lm_row["competition_id"]).lower()
+        if "gambardella" in c_id_last:
+            comp_last = f"Coupe Gambardella • {lm_row['tour_ou_journee']}"
+        elif "coupe" in c_id_last:
+            comp_last = f"Coupe des Flandres • {lm_row['tour_ou_journee']}"
+        else:
+            comp_last = f"{team_meta['poule']} • {lm_row['tour_ou_journee']}"
+
         last_match = {
             "id": lm_row["id"],
-            "competition": f"{team_meta['poule']} • {lm_row['tour_ou_journee']}",
+            "competition": comp_last,
             "domicile": lm_row["equipe_domicile"],
             "exterieur": lm_row["equipe_exterieur"],
             "score_domicile": int(lm_row["score_domicile"]) if pd.notnull(lm_row["score_domicile"]) else 0,
@@ -118,15 +141,21 @@ def build_secondary_team_data(team_id: str, conn: sqlite3.Connection):
 
     if len(upcoming_matches) > 0:
         nm_row = upcoming_matches.iloc[0]
+        c_id_next = str(nm_row["competition_id"]).lower()
+        if "coupe" in c_id_next:
+            comp_next = f"Coupe des Flandres • {nm_row['tour_ou_journee']}"
+        else:
+            comp_next = f"{team_meta['poule']} • {nm_row['tour_ou_journee']}"
+
         next_match = {
-            "competition": f"{team_meta['poule']} • {nm_row['tour_ou_journee']}",
+            "competition": comp_next,
             "date_heure": nm_row["date_heure"],
-            "lieu": "Terrain Officiel FFF",
+            "lieu": "Stade Léo Lagrange (Genech)" if "GENECH" in str(nm_row["equipe_domicile"]).upper() else "Terrain adverse",
             "domicile": nm_row["equipe_domicile"],
             "exterieur": nm_row["equipe_exterieur"],
             "stats_comparatives": {
                 "genech": {
-                    "points": victoires * 3 + nuls,
+                    "points": champ_victoires * 3 + champ_nuls,
                     "buts_marques": buts_marques,
                     "buts_encaisses": buts_encaisses,
                     "diff": f"+{buts_marques - buts_encaisses}" if (buts_marques - buts_encaisses) > 0 else str(buts_marques - buts_encaisses)
@@ -136,13 +165,13 @@ def build_secondary_team_data(team_id: str, conn: sqlite3.Connection):
     else:
         next_match = {
             "competition": f"{team_meta['poule']}",
-            "date_heure": "Prochaine journée FFF en attente",
+            "date_heure": "Prochaine journée FFF en cours de planification",
             "lieu": "Stade Léo Lagrange (Genech)",
             "domicile": "ES GENECH",
             "exterieur": "ADVERSAIRE",
             "stats_comparatives": {
                 "genech": {
-                    "points": victoires * 3 + nuls,
+                    "points": champ_victoires * 3 + champ_nuls,
                     "buts_marques": buts_marques,
                     "buts_encaisses": buts_encaisses,
                     "diff": f"+{buts_marques - buts_encaisses}" if (buts_marques - buts_encaisses) > 0 else str(buts_marques - buts_encaisses)
@@ -172,6 +201,26 @@ def build_secondary_team_data(team_id: str, conn: sqlite3.Connection):
         except:
             date_fmt = date_str[:10] if len(date_str) >= 10 else date_str
 
+        c_id = str(m["competition_id"]).lower()
+        if "gambardella" in c_id:
+            comp_name = f"Coupe Gambardella • {m['tour_ou_journee']}"
+            comp_type = "GAMBARDELLA"
+        elif "coupe" in c_id:
+            comp_name = f"Coupe des Flandres • {m['tour_ou_journee']}"
+            comp_type = "COUPE"
+        elif team_id == "U18_M1":
+            comp_name = f"18 19 D1 • {m['tour_ou_journee']}"
+            comp_type = "CHAMPIONNAT"
+        elif team_id == "SENIOR_M3":
+            comp_name = f"Seniors D2 • {m['tour_ou_journee']}"
+            comp_type = "CHAMPIONNAT"
+        elif team_id == "SENIOR_F2":
+            comp_name = f"Interdistricts Féminin • {m['tour_ou_journee']}"
+            comp_type = "CHAMPIONNAT"
+        else:
+            comp_name = f"{team_meta['poule']} • {m['tour_ou_journee']}"
+            comp_type = "CHAMPIONNAT"
+
         evs = []
         for ev in conn.execute("SELECT minute, type_event, equipe, acteur_principal, acteur_secondaire, detail FROM match_events WHERE match_id = ? ORDER BY minute ASC", (m_id,)).fetchall():
             evs.append({
@@ -196,8 +245,8 @@ def build_secondary_team_data(team_id: str, conn: sqlite3.Connection):
 
         historique_matchs.append({
             "id": m_id,
-            "competition": f"{team_meta['poule']} • {m['tour_ou_journee']}",
-            "comp_type": "COUPE" if "cdf" in m["competition_id"] else "CHAMP",
+            "competition": comp_name,
+            "comp_type": comp_type,
             "date": date_fmt,
             "date_heure": m["date_heure"],
             "domicile": m["equipe_domicile"],

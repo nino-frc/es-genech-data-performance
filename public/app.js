@@ -676,13 +676,26 @@ function renderInterface(data) {
   if (filterBar) {
     if (currentTeamId === 'SENIOR_M1') {
       filterBar.innerHTML = `
-        <button class="history-filter-btn active" onclick="filterMatchHistory('ALL', this)">Tous (9)</button>
+        <button class="history-filter-btn active" onclick="filterMatchHistory('ALL', this)">Tous (${historyList.length})</button>
         <button class="history-filter-btn" onclick="filterMatchHistory('R3', this)">Régional 3 (4)</button>
         <button class="history-filter-btn" onclick="filterMatchHistory('CDF', this)">Coupe de France (5)</button>
       `;
+    } else if (currentTeamId === 'U18_M1') {
+      filterBar.innerHTML = `
+        <button class="history-filter-btn active" onclick="filterMatchHistory('ALL', this)">Tous (${historyList.length})</button>
+        <button class="history-filter-btn" onclick="filterMatchHistory('CHAMPIONNAT', this)">18 19 D1 (5)</button>
+        <button class="history-filter-btn" onclick="filterMatchHistory('GAMBARDELLA', this)">Coupe Gambardella (1)</button>
+      `;
+    } else if (currentTeamId === 'SENIOR_M3') {
+      filterBar.innerHTML = `
+        <button class="history-filter-btn active" onclick="filterMatchHistory('ALL', this)">Tous (${historyList.length})</button>
+        <button class="history-filter-btn" onclick="filterMatchHistory('CHAMPIONNAT', this)">Seniors D2 (4)</button>
+        <button class="history-filter-btn" onclick="filterMatchHistory('COUPE', this)">Coupe des Flandres (2)</button>
+      `;
     } else {
       filterBar.innerHTML = `
-        <button class="history-filter-btn active" onclick="filterMatchHistory('ALL', this)">Tous les matchs (${historyList.length})</button>
+        <button class="history-filter-btn active" onclick="filterMatchHistory('ALL', this)">Tous (${historyList.length})</button>
+        <button class="history-filter-btn" onclick="filterMatchHistory('CHAMPIONNAT', this)">Interdistricts (4)</button>
       `;
     }
   }

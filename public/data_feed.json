@@ -8,7 +8,7 @@
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "28/10/2026 à 11:30"
+      "derniere_maj": "28/10/2026 à 11:40"
     },
     "dernier_match": {
       "id": "cdf_t6_tatinghem_genech",
@@ -3381,11 +3381,11 @@
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "28/10/2026 à 11:30"
+      "derniere_maj": "28/10/2026 à 11:40"
     },
     "dernier_match": {
       "id": "m_u18_m1_79496282-et-c-anstai",
-      "competition": "D1 Poule Unique • Championnat",
+      "competition": "D1 Poule Unique • Journée 5",
       "domicile": "ANSTAING CHERENG EC",
       "exterieur": "GENECH ES",
       "score_domicile": 2,
@@ -3417,14 +3417,14 @@
       }
     ],
     "prochain_match": {
-      "competition": "D1 Poule Unique • Championnat",
+      "competition": "D1 Poule Unique • Journée 6",
       "date_heure": "2026-11-07 17:30",
-      "lieu": "Terrain Officiel FFF",
+      "lieu": "Terrain adverse",
       "domicile": "CYSOING WB EAC",
       "exterieur": "GENECH ES",
       "stats_comparatives": {
         "genech": {
-          "points": 16,
+          "points": 15,
           "buts_marques": 30,
           "buts_encaisses": 8,
           "diff": "+22"
@@ -3441,8 +3441,8 @@
     "historique_matchs": [
       {
         "id": "m_u18_m1_79496282-et-c-anstai",
-        "competition": "D1 Poule Unique • Championnat",
-        "comp_type": "CHAMP",
+        "competition": "18 19 D1 • Journée 5",
+        "comp_type": "CHAMPIONNAT",
         "date": "10/10/2026",
         "date_heure": "2026-10-10 14:30",
         "domicile": "ANSTAING CHERENG EC",
@@ -3550,8 +3550,8 @@
       },
       {
         "id": "m_u18_m1_79494778-ent-s-de-ge",
-        "competition": "D1 Poule Unique • Championnat",
-        "comp_type": "CHAMP",
+        "competition": "18 19 D1 • Journée 4",
+        "comp_type": "CHAMPIONNAT",
         "date": "03/10/2026",
         "date_heure": "2026-10-03 17:15",
         "domicile": "GENECH ES",
@@ -3691,8 +3691,8 @@
       },
       {
         "id": "m_u18_m1_56697624-ent-s-de-ge",
-        "competition": "D1 Poule Unique • Championnat",
-        "comp_type": "CHAMP",
+        "competition": "Coupe Gambardella • Tour 3",
+        "comp_type": "GAMBARDELLA",
         "date": "28/09/2026",
         "date_heure": "2026-09-28 15:30",
         "domicile": "GENECH ES",
@@ -3836,8 +3836,8 @@
       },
       {
         "id": "m_u18_m1_79494364-u-s-antilla",
-        "competition": "D1 Poule Unique • Championnat",
-        "comp_type": "CHAMP",
+        "competition": "18 19 D1 • Journée 3",
+        "comp_type": "CHAMPIONNAT",
         "date": "26/09/2026",
         "date_heure": "2026-09-26 18:00",
         "domicile": "LILLE ANTILLAIS US",
@@ -4049,8 +4049,8 @@
       },
       {
         "id": "m_u18_m1_79493649-ent-s-de-ge",
-        "competition": "D1 Poule Unique • Championnat",
-        "comp_type": "CHAMP",
+        "competition": "18 19 D1 • Journée 2",
+        "comp_type": "CHAMPIONNAT",
         "date": "19/09/2026",
         "date_heure": "2026-09-19 17:15",
         "domicile": "GENECH ES",
@@ -4133,8 +4133,8 @@
       },
       {
         "id": "m_u18_m1_79395742-ent-s-de-ge",
-        "competition": "D1 Poule Unique • Championnat",
-        "comp_type": "CHAMP",
+        "competition": "18 19 D1 • Journée 1",
+        "comp_type": "CHAMPIONNAT",
         "date": "12/09/2026",
         "date_heure": "2026-09-12 17:15",
         "domicile": "GENECH ES",
@@ -4643,7 +4643,7 @@
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 2.67,
+      "ppm_championnat": 3.0,
       "probabilite_montee_pct": 75.0,
       "probabilite_maintien_pct": 98.0,
       "taux_invincibilite": 100.0,
@@ -4659,7 +4659,7 @@
       "ratio_clean_sheet_pct": 33.3,
       "moyenne_buts_encaisses": 1.33,
       "projection_saison": {
-        "points_prevus": 58.7,
+        "points_prevus": 66.0,
         "rang_final_estime": "Haut de tableau"
       },
       "matrice_quarts_heure": [
@@ -4712,60 +4712,31 @@
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "28/10/2026 à 11:30"
+      "derniere_maj": "28/10/2026 à 11:40"
     },
     "dernier_match": {
-      "id": "m_senior_f2_78809061-ent-s-de-ge",
+      "id": "m_senior_f2_78809066-lille-e-s-l",
       "competition": "Interdistricts Poule C • Championnat",
-      "domicile": "GENECH ES",
-      "exterieur": "PHALEMPIN US",
-      "score_domicile": 3,
-      "score_exterieur": 1,
-      "date_heure": "2026-10-11 10:00",
-      "statut": "TERMINE"
-    },
-    "evenements_dernier_match": [
-      {
-        "minute": 8,
-        "type": "BUT",
-        "equipe": "GENECH ES",
-        "acteur": "Angelique B.",
-        "detail": "But officiel FFF"
-      },
-      {
-        "minute": 11,
-        "type": "BUT",
-        "equipe": "GENECH ES",
-        "acteur": "Alison L.",
-        "detail": "But officiel FFF"
-      },
-      {
-        "minute": 14,
-        "type": "BUT",
-        "equipe": "PHALEMPIN US",
-        "acteur": "Wendy L.",
-        "detail": "But officiel FFF"
-      },
-      {
-        "minute": 36,
-        "type": "BUT",
-        "equipe": "GENECH ES",
-        "acteur": "Alison L.",
-        "detail": "But officiel FFF"
-      }
-    ],
-    "prochain_match": {
-      "competition": "Interdistricts Poule C • Championnat",
-      "date_heure": "2026-10-25 13:00",
-      "lieu": "Terrain Officiel FFF",
       "domicile": "LILLE LOUVIERE ESP",
       "exterieur": "GENECH ES",
+      "score_domicile": 0,
+      "score_exterieur": 3,
+      "date_heure": "2026-10-25 13:00",
+      "statut": "TERMINE"
+    },
+    "evenements_dernier_match": [],
+    "prochain_match": {
+      "competition": "Interdistricts Poule C",
+      "date_heure": "Prochaine journée FFF en cours de planification",
+      "lieu": "Stade Léo Lagrange (Genech)",
+      "domicile": "ES GENECH",
+      "exterieur": "ADVERSAIRE",
       "stats_comparatives": {
         "genech": {
-          "points": 3,
-          "buts_marques": 7,
+          "points": 6,
+          "buts_marques": 10,
           "buts_encaisses": 11,
-          "diff": "-4"
+          "diff": "-1"
         }
       }
     },
@@ -4778,9 +4749,35 @@
     },
     "historique_matchs": [
       {
+        "id": "m_senior_f2_78809066-lille-e-s-l",
+        "competition": "Interdistricts Féminin • Championnat",
+        "comp_type": "CHAMPIONNAT",
+        "date": "25/10/2026",
+        "date_heure": "2026-10-25 13:00",
+        "domicile": "LILLE LOUVIERE ESP",
+        "exterieur": "GENECH ES",
+        "score_domicile": 0,
+        "score_exterieur": 3,
+        "score_display": "0 - 3",
+        "is_domicile": false,
+        "resultat": "V",
+        "resultat_label": "Victoire",
+        "evenements": [],
+        "compositions": {
+          "genech": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "LILLE LOUVIERE ESP",
+            "titulaires": []
+          }
+        }
+      },
+      {
         "id": "m_senior_f2_78809061-ent-s-de-ge",
-        "competition": "Interdistricts Poule C • Championnat",
-        "comp_type": "CHAMP",
+        "competition": "Interdistricts Féminin • Championnat",
+        "comp_type": "CHAMPIONNAT",
         "date": "11/10/2026",
         "date_heure": "2026-10-11 10:00",
         "domicile": "GENECH ES",
@@ -4887,8 +4884,8 @@
       },
       {
         "id": "m_senior_f2_78809056-u-s-municip",
-        "competition": "Interdistricts Poule C • Championnat",
-        "comp_type": "CHAMP",
+        "competition": "Interdistricts Féminin • Championnat",
+        "comp_type": "CHAMPIONNAT",
         "date": "27/09/2026",
         "date_heure": "2026-09-27 16:00",
         "domicile": "MARLY USM",
@@ -4975,8 +4972,8 @@
       },
       {
         "id": "m_senior_f2_78809049-ent-s-de-ge",
-        "competition": "Interdistricts Poule C • Championnat",
-        "comp_type": "CHAMP",
+        "competition": "Interdistricts Féminin • Championnat",
+        "comp_type": "CHAMPIONNAT",
         "date": "13/09/2026",
         "date_heure": "2026-09-13 11:00",
         "domicile": "GENECH ES",
@@ -5099,9 +5096,9 @@
       }
     ],
     "kpis_saison": {
-      "buts_marques": 7,
+      "buts_marques": 10,
       "buts_encaisses": 11,
-      "clean_sheets": 0,
+      "clean_sheets": 1,
       "cartons_jaunes": 0,
       "cartons_rouges": 0
     },
@@ -5126,7 +5123,7 @@
         "titularisations": 3,
         "minutes": 240,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 71.0,
@@ -5148,7 +5145,7 @@
         "titularisations": 3,
         "minutes": 240,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 71.0,
@@ -5170,7 +5167,7 @@
         "titularisations": 3,
         "minutes": 240,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 71.0,
@@ -5192,7 +5189,7 @@
         "titularisations": 3,
         "minutes": 240,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 71.0,
@@ -5214,7 +5211,7 @@
         "titularisations": 3,
         "minutes": 240,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 71.0,
@@ -5236,7 +5233,7 @@
         "titularisations": 3,
         "minutes": 240,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 71.0,
@@ -5258,7 +5255,7 @@
         "titularisations": 3,
         "minutes": 240,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 71.0,
@@ -5280,7 +5277,7 @@
         "titularisations": 3,
         "minutes": 240,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 71.0,
@@ -5302,7 +5299,7 @@
         "titularisations": 3,
         "minutes": 240,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 71.0,
@@ -5324,7 +5321,7 @@
         "titularisations": 2,
         "minutes": 160,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 64.0,
@@ -5346,7 +5343,7 @@
         "titularisations": 2,
         "minutes": 160,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 64.0,
@@ -5368,7 +5365,7 @@
         "titularisations": 2,
         "minutes": 160,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 64.0,
@@ -5390,7 +5387,7 @@
         "titularisations": 2,
         "minutes": 160,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 64.0,
@@ -5412,7 +5409,7 @@
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -5434,7 +5431,7 @@
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -5451,23 +5448,23 @@
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 1.0,
+      "ppm_championnat": 1.5,
       "probabilite_montee_pct": 45.0,
       "probabilite_maintien_pct": 98.0,
-      "taux_invincibilite": 33.3,
+      "taux_invincibilite": 50.0,
       "bilan_global": {
-        "matchs": 3,
-        "victoires": 1,
+        "matchs": 4,
+        "victoires": 2,
         "nuls": 0,
         "defaites": 2,
-        "buts_pour": 7,
+        "buts_pour": 10,
         "buts_contre": 11,
-        "difference": -4
+        "difference": -1
       },
-      "ratio_clean_sheet_pct": 0.0,
-      "moyenne_buts_encaisses": 3.67,
+      "ratio_clean_sheet_pct": 25.0,
+      "moyenne_buts_encaisses": 2.75,
       "projection_saison": {
-        "points_prevus": 22.0,
+        "points_prevus": 33.0,
         "rang_final_estime": "Milieu de tableau"
       },
       "matrice_quarts_heure": [
@@ -5505,7 +5502,7 @@
       "analyse_temporelle": {
         "buts_2nde_mi_temps_pct": 60.0,
         "buts_money_time_pct": 30.0,
-        "clean_premiere_demi_heure": "0 clean sheets",
+        "clean_premiere_demi_heure": "1 clean sheets",
         "point_vigilance": "Régularité sur les fins de mi-temps"
       }
     },
@@ -5520,109 +5517,31 @@
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "28/10/2026 à 11:30"
+      "derniere_maj": "28/10/2026 à 11:40"
     },
     "dernier_match": {
-      "id": "m_senior_m3_56361526-ent-s-de-ge",
-      "competition": "D2 Poule C • Championnat / Coupe",
-      "domicile": "GENECH ES 2",
-      "exterieur": "MARQUETTE FF 2",
-      "score_domicile": 2,
-      "score_exterieur": 5,
-      "date_heure": "2026-10-04 16:30",
+      "id": "m_senior_b_j4_loos",
+      "competition": "D2 Poule C • Journée 4",
+      "domicile": "LOOS LILLE OLIVEAUX 1",
+      "exterieur": "GENECH ES 2",
+      "score_domicile": 1,
+      "score_exterieur": 1,
+      "date_heure": "2026-10-18 15:00",
       "statut": "TERMINE"
     },
-    "evenements_dernier_match": [
-      {
-        "minute": 11,
-        "type": "BUT",
-        "equipe": "GENECH ES 2",
-        "acteur": "Maxime M.",
-        "detail": "But officiel FFF"
-      },
-      {
-        "minute": 33,
-        "type": "BUT",
-        "equipe": "MARQUETTE FF 2",
-        "acteur": "Alem M.",
-        "detail": "But officiel FFF"
-      },
-      {
-        "minute": 52,
-        "type": "BUT",
-        "equipe": "MARQUETTE FF 2",
-        "acteur": "Hamza B.",
-        "detail": "But officiel FFF"
-      },
-      {
-        "minute": 56,
-        "type": "AVERTISSEMENT",
-        "equipe": "MARQUETTE FF 2",
-        "acteur": "Anonyme X.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 60,
-        "type": "AVERTISSEMENT",
-        "equipe": "MARQUETTE FF 2",
-        "acteur": "Hubert M.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 65,
-        "type": "AVERTISSEMENT",
-        "equipe": "MARQUETTE FF 2",
-        "acteur": "Alem M.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 75,
-        "type": "BUT",
-        "equipe": "GENECH ES 2",
-        "acteur": "Thomas L.",
-        "detail": "But officiel FFF"
-      },
-      {
-        "minute": 76,
-        "type": "AVERTISSEMENT",
-        "equipe": "MARQUETTE FF 2",
-        "acteur": "Abdelaziz I.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 78,
-        "type": "BUT",
-        "equipe": "MARQUETTE FF 2",
-        "acteur": "Karim A.",
-        "detail": "But officiel FFF"
-      },
-      {
-        "minute": 79,
-        "type": "BUT",
-        "equipe": "MARQUETTE FF 2",
-        "acteur": "Karim A.",
-        "detail": "But officiel FFF"
-      },
-      {
-        "minute": 84,
-        "type": "BUT",
-        "equipe": "MARQUETTE FF 2",
-        "acteur": "Alem M.",
-        "detail": "But officiel FFF"
-      }
-    ],
+    "evenements_dernier_match": [],
     "prochain_match": {
-      "competition": "D2 Poule C",
-      "date_heure": "Prochaine journée FFF en attente",
+      "competition": "D2 Poule C • Journée 5",
+      "date_heure": "2026-11-01 14:30",
       "lieu": "Stade Léo Lagrange (Genech)",
-      "domicile": "ES GENECH",
-      "exterieur": "ADVERSAIRE",
+      "domicile": "GENECH ES 2",
+      "exterieur": "ROUBAIX RC 2",
       "stats_comparatives": {
         "genech": {
-          "points": 0,
-          "buts_marques": 2,
-          "buts_encaisses": 5,
-          "diff": "-3"
+          "points": 4,
+          "buts_marques": 14,
+          "buts_encaisses": 16,
+          "diff": "-2"
         }
       }
     },
@@ -5635,9 +5554,35 @@
     },
     "historique_matchs": [
       {
+        "id": "m_senior_b_j4_loos",
+        "competition": "Seniors D2 • Journée 4",
+        "comp_type": "CHAMPIONNAT",
+        "date": "18/10/2026",
+        "date_heure": "2026-10-18 15:00",
+        "domicile": "LOOS LILLE OLIVEAUX 1",
+        "exterieur": "GENECH ES 2",
+        "score_domicile": 1,
+        "score_exterieur": 1,
+        "score_display": "1 - 1",
+        "is_domicile": false,
+        "resultat": "N",
+        "resultat_label": "Match Nul",
+        "evenements": [],
+        "compositions": {
+          "genech": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "LOOS LILLE OLIVEAUX 1",
+            "titulaires": []
+          }
+        }
+      },
+      {
         "id": "m_senior_m3_56361526-ent-s-de-ge",
-        "competition": "D2 Poule C • Championnat / Coupe",
-        "comp_type": "CHAMP",
+        "competition": "Seniors D2 • Journée 3",
+        "comp_type": "CHAMPIONNAT",
         "date": "04/10/2026",
         "date_heure": "2026-10-04 16:30",
         "domicile": "GENECH ES 2",
@@ -5806,12 +5751,116 @@
             "titulaires": []
           }
         }
+      },
+      {
+        "id": "m_senior_b_cdflandres_t2_annoeullin",
+        "competition": "Coupe des Flandres • Tour 2",
+        "comp_type": "COUPE",
+        "date": "27/09/2026",
+        "date_heure": "2026-09-27 15:00",
+        "domicile": "ANNOEULLIN FC 1",
+        "exterieur": "GENECH ES 2",
+        "score_domicile": 4,
+        "score_exterieur": 1,
+        "score_display": "4 - 1",
+        "is_domicile": false,
+        "resultat": "D",
+        "resultat_label": "Défaite",
+        "evenements": [],
+        "compositions": {
+          "genech": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "ANNOEULLIN FC 1",
+            "titulaires": []
+          }
+        }
+      },
+      {
+        "id": "m_senior_b_j2_bauvin",
+        "competition": "Seniors D2 • Journée 2",
+        "comp_type": "CHAMPIONNAT",
+        "date": "20/09/2026",
+        "date_heure": "2026-09-20 15:00",
+        "domicile": "BAUVIN FC 1",
+        "exterieur": "GENECH ES 2",
+        "score_domicile": 5,
+        "score_exterieur": 2,
+        "score_display": "5 - 2",
+        "is_domicile": false,
+        "resultat": "D",
+        "resultat_label": "Défaite",
+        "evenements": [],
+        "compositions": {
+          "genech": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "BAUVIN FC 1",
+            "titulaires": []
+          }
+        }
+      },
+      {
+        "id": "m_senior_b_cdflandres_t1_leers",
+        "competition": "Coupe des Flandres • Tour 1",
+        "comp_type": "COUPE",
+        "date": "13/09/2026",
+        "date_heure": "2026-09-13 15:00",
+        "domicile": "LEERS OS 1",
+        "exterieur": "GENECH ES 2",
+        "score_domicile": 0,
+        "score_exterieur": 3,
+        "score_display": "0 - 3",
+        "is_domicile": false,
+        "resultat": "V",
+        "resultat_label": "Victoire",
+        "evenements": [],
+        "compositions": {
+          "genech": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "LEERS OS 1",
+            "titulaires": []
+          }
+        }
+      },
+      {
+        "id": "m_senior_b_j1_wambrechies",
+        "competition": "Seniors D2 • Journée 1",
+        "comp_type": "CHAMPIONNAT",
+        "date": "06/09/2026",
+        "date_heure": "2026-09-06 15:00",
+        "domicile": "GENECH ES 2",
+        "exterieur": "WAMBRECHIES FC 1",
+        "score_domicile": 5,
+        "score_exterieur": 1,
+        "score_display": "5 - 1",
+        "is_domicile": true,
+        "resultat": "V",
+        "resultat_label": "Victoire",
+        "evenements": [],
+        "compositions": {
+          "genech": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "WAMBRECHIES FC 1",
+            "titulaires": []
+          }
+        }
       }
     ],
     "kpis_saison": {
-      "buts_marques": 2,
-      "buts_encaisses": 5,
-      "clean_sheets": 0,
+      "buts_marques": 14,
+      "buts_encaisses": 16,
+      "clean_sheets": 1,
       "cartons_jaunes": 0,
       "cartons_rouges": 0
     },
@@ -5836,7 +5885,7 @@
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -5858,7 +5907,7 @@
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -5880,7 +5929,7 @@
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -5902,7 +5951,7 @@
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -5924,7 +5973,7 @@
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -5946,7 +5995,7 @@
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -5968,7 +6017,7 @@
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -5990,7 +6039,7 @@
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -6012,7 +6061,7 @@
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -6034,7 +6083,7 @@
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -6056,7 +6105,7 @@
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -6139,23 +6188,23 @@
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 0.0,
+      "ppm_championnat": 1.0,
       "probabilite_montee_pct": 45.0,
       "probabilite_maintien_pct": 98.0,
-      "taux_invincibilite": 0.0,
+      "taux_invincibilite": 50.0,
       "bilan_global": {
-        "matchs": 1,
-        "victoires": 0,
-        "nuls": 0,
-        "defaites": 1,
-        "buts_pour": 2,
-        "buts_contre": 5,
-        "difference": -3
+        "matchs": 6,
+        "victoires": 2,
+        "nuls": 1,
+        "defaites": 3,
+        "buts_pour": 14,
+        "buts_contre": 16,
+        "difference": -2
       },
-      "ratio_clean_sheet_pct": 0.0,
-      "moyenne_buts_encaisses": 5.0,
+      "ratio_clean_sheet_pct": 16.7,
+      "moyenne_buts_encaisses": 2.67,
       "projection_saison": {
-        "points_prevus": 0.0,
+        "points_prevus": 22.0,
         "rang_final_estime": "Milieu de tableau"
       },
       "matrice_quarts_heure": [
@@ -6193,7 +6242,7 @@
       "analyse_temporelle": {
         "buts_2nde_mi_temps_pct": 60.0,
         "buts_money_time_pct": 30.0,
-        "clean_premiere_demi_heure": "0 clean sheets",
+        "clean_premiere_demi_heure": "1 clean sheets",
         "point_vigilance": "Régularité sur les fins de mi-temps"
       }
     },
