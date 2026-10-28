@@ -496,19 +496,55 @@ async function fetchMatchDayFromApi() {
   }
 }
 
-// 6. Initialisation de l'Application
+// 6. Gestion Multi-Équipes & Initialisation de l'Application
+let currentTeamId = 'SENIOR_M1';
+
+function changeActiveTeam(teamId) {
+  if (!window.MATCHDAY_TEAMS || !window.MATCHDAY_TEAMS[teamId]) {
+    console.warn(`Équipe ${teamId} non disponible dans le flux local.`);
+    return;
+  }
+
+  currentTeamId = teamId;
+  try {
+    localStorage.setItem('matchday_active_team', teamId);
+  } catch (e) {}
+
+  const teamData = window.MATCHDAY_TEAMS[teamId];
+  globalData = teamData;
+
+  const sel = document.getElementById('teamSelector');
+  if (sel && sel.value !== teamId) {
+    sel.value = teamId;
+  }
+
+  renderInterface(teamData);
+  showNotification(`Équipe active : ${teamData.equipe_active.nom_affiche}`);
+}
+
 function initApp() {
-  // A. Rendu synchrone immédiat (Zéro latence)
-  if (window.MATCHDAY_DATA) {
+  // A. Récupération de l'équipe sélectionnée (Persistance localStorage)
+  let savedTeam = 'SENIOR_M1';
+  try {
+    savedTeam = localStorage.getItem('matchday_active_team') || 'SENIOR_M1';
+  } catch (e) {}
+  currentTeamId = savedTeam;
+
+  const sel = document.getElementById('teamSelector');
+  if (sel) {
+    sel.value = savedTeam;
+  }
+
+  if (window.MATCHDAY_TEAMS && window.MATCHDAY_TEAMS[savedTeam]) {
+    globalData = window.MATCHDAY_TEAMS[savedTeam];
+    renderInterface(globalData);
+  } else if (window.MATCHDAY_DATA) {
     globalData = window.MATCHDAY_DATA;
     renderInterface(window.MATCHDAY_DATA);
   }
+
   dismissSplashScreen();
-
-  // B. Appel de l'API Serverless en tâche de fond
   fetchMatchDayFromApi();
-
-  // C. État des notifications PWA
   updateNotifUI();
 }
 
@@ -583,8 +619,8 @@ function renderInterface(data) {
   if (next.domicile) {
     document.getElementById('nextMatchFixture').textContent = `${next.domicile} vs ${next.exterieur}`;
     document.getElementById('nextMatchComp').textContent = next.competition;
-    document.getElementById('nextMatchDate').textContent = "08/11 à 14h30";
-    document.getElementById('nextMatchLieu').textContent = next.lieu;
+    document.getElementById('nextMatchDate').textContent = next.date_heure ? (next.date_heure.includes('T') || next.date_heure.includes(':') ? next.date_heure : next.date_heure) : "À programmer";
+    document.getElementById('nextMatchLieu').textContent = next.lieu || "Terrain Officiel";
   }
   if (ref.nom_arbitre) {
     document.getElementById('refereeName').textContent = `👨‍⚖️ ${ref.nom_arbitre}`;
@@ -598,6 +634,58 @@ function renderInterface(data) {
   // E bis. Historique Exhaustif des Matchs Passés (Saison 2026-2027)
   const historyContainer = document.getElementById('matchHistoryListContainer');
   const historyList = data.historique_matchs || [];
+
+  // Mise à jour dynamique du bandeau de bilan dans l'onglet Historique
+  const histGov = data.gouvernance || {};
+  const histBilan = histGov.bilan_global || {};
+  const histHeroBox = document.querySelector('#tabHistory .gov-hero-box');
+  if (histHeroBox && histBilan.matchs !== undefined) {
+    const diffVal = histBilan.difference ?? (histBilan.buts_pour - histBilan.buts_contre);
+    const diffStr = diffVal > 0 ? `+${diffVal}` : `${diffVal}`;
+    histHeroBox.innerHTML = `
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; opacity: 0.85; margin-bottom: 4px;">
+        Bilan Officiel Saison • ${data.equipe_active.nom_affiche || 'ES Genech'}
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
+        <div style="font-size: 20px; font-weight: 900; font-family: var(--font-mono);">
+          ${histBilan.matchs} Matchs <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(${histBilan.victoires}V - ${histBilan.nuls}N - ${histBilan.defaites}D)</span>
+        </div>
+        <div class="tactical-role-pill" style="background: rgba(255,255,255,0.2); color: #fff;">
+          ${data.kpis_saison ? data.kpis_saison.clean_sheets : 0} Clean Sheets
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; font-size: 11px; text-align: center; background: rgba(0,0,0,0.15); padding: 8px; border-radius: 6px;">
+        <div>
+          <div style="font-size: 9px; opacity: 0.75; text-transform: uppercase;">Buts Marqués</div>
+          <strong style="font-size: 14px; font-family: var(--font-mono); color: #86efac;">${histBilan.buts_pour ?? 0} buts</strong>
+        </div>
+        <div>
+          <div style="font-size: 9px; opacity: 0.75; text-transform: uppercase;">Buts Encaissés</div>
+          <strong style="font-size: 14px; font-family: var(--font-mono); color: #fca5a5;">${histBilan.buts_contre ?? 0} buts</strong>
+        </div>
+        <div>
+          <div style="font-size: 9px; opacity: 0.75; text-transform: uppercase;">Différence</div>
+          <strong style="font-size: 14px; font-family: var(--font-mono); color: #93c5fd;">${diffStr}</strong>
+        </div>
+      </div>
+    `;
+  }
+
+  // Filtres par compétition adaptés à l'équipe
+  const filterBar = document.querySelector('.history-filter-bar');
+  if (filterBar) {
+    if (currentTeamId === 'SENIOR_M1') {
+      filterBar.innerHTML = `
+        <button class="history-filter-btn active" onclick="filterMatchHistory('ALL', this)">Tous (9)</button>
+        <button class="history-filter-btn" onclick="filterMatchHistory('R3', this)">Régional 3 (4)</button>
+        <button class="history-filter-btn" onclick="filterMatchHistory('CDF', this)">Coupe de France (5)</button>
+      `;
+    } else {
+      filterBar.innerHTML = `
+        <button class="history-filter-btn active" onclick="filterMatchHistory('ALL', this)">Tous les matchs (${historyList.length})</button>
+      `;
+    }
+  }
   if (historyContainer) {
     if (historyList.length > 0) {
       let historyHtml = '';
@@ -830,6 +918,17 @@ function renderInterface(data) {
       });
       tableHtml += '</tbody></table>';
       standingsContainer.innerHTML = tableHtml;
+      standingsContainer.classList.remove('skeleton');
+    } else {
+      standingsContainer.innerHTML = `
+        <div style="text-align: center; color: var(--text-muted); font-size: 12px; padding: 24px 14px;">
+          <div style="font-size: 26px; margin-bottom: 6px;">🏆</div>
+          <strong style="color: var(--text-main);">Classement officiel en cours de synchronisation</strong>
+          <div style="font-size: 11px; color: var(--text-light); margin-top: 4px; line-height: 1.4;">
+            Les classements de cette division sont publiés et actualisés par le District après validation des feuilles de match FFF.
+          </div>
+        </div>
+      `;
       standingsContainer.classList.remove('skeleton');
     }
   }

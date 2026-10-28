@@ -1,5 +1,5 @@
 // Service Worker - MatchDay PWA
-const CACHE_NAME = 'matchday-cache-v5';
+const CACHE_NAME = 'matchday-cache-v6';
 const ASSETS = [
   './',
   './index.html',

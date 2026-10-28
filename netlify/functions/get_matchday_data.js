@@ -59,7 +59,14 @@ exports.handler = async (event, context) => {
   let teamId = "525674_SENIOR_M1";
   let clubId = "525674";
 
-  if (queryTeam.toLowerCase().includes("seclin")) {
+  const q = queryTeam.toLowerCase();
+  if (q.includes("u18") || q.includes("u19")) {
+    teamId = "525674_U18_M1";
+  } else if (q.includes("fem") || q.includes("f2")) {
+    teamId = "525674_SENIOR_F2";
+  } else if (q.includes("m2") || q.includes("m3") || q.includes("reserve") || q.includes("senior_b")) {
+    teamId = "525674_SENIOR_M2";
+  } else if (q.includes("seclin")) {
     teamId = "500934_SENIOR_M1";
     clubId = "500934";
   }

@@ -36,9 +36,15 @@
       </div>
     </div>
     <div class="header-actions">
-      <div class="team-pill">
+      <div class="team-selector-container">
         <span class="status-dot"></span>
-        <span id="activeClubName">Chargement...</span>
+        <select id="teamSelector" class="team-dropdown-select" onchange="changeActiveTeam(this.value)" title="Changer d'équipe">
+          <option value="SENIOR_M1" selected>Séniors A (R3)</option>
+          <option value="U18_M1">U19 / U18 (D1)</option>
+          <option value="SENIOR_F2">Féminines (Interdistrict)</option>
+          <option value="SENIOR_M3">Séniors B (D2)</option>
+        </select>
+        <span class="selector-arrow">▾</span>
       </div>
       <button class="notif-bell-btn" id="notifBellBtn" onclick="openNotifModal()" title="Centre d'alertes staff">
         🔔
