@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>MatchDay - Direction Technique</title>
   
-  <!-- Configuration PWA Standalone -->
   <link rel="manifest" href="./manifest.json">
   <meta name="theme-color" content="#0a1728">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -14,12 +13,11 @@
   <link rel="apple-touch-icon" href="./logo.png">
   <link rel="icon" type="image/png" href="./logo.png">
 
-  <!-- Thème Football Manager Institutionnel -->
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-  <!-- Écran de Chargement / Splash Screen (Mobile & Desktop) -->
+  <!-- Écran de Chargement / Splash Screen -->
   <div id="splashScreen" class="splash-overlay">
     <div class="splash-content">
       <img src="./logo.png" alt="MatchDay Logo" class="splash-logo">
@@ -43,15 +41,17 @@
     </div>
   </header>
 
-  <!-- Contenu Principal Scrollable -->
+  <!-- Contenu Principal -->
   <main class="app-container">
 
-    <!-- ONGLET 1 : DÉBRIEF DU DERNIER MATCH -->
+    <!-- ====================================================================
+         ONGLET 1 : MATCH & SCOUTING (Dernier Résultat + Prochain Match)
+         ==================================================================== -->
     <section id="tabMatch" class="tab-content active">
       
-      <!-- Encart Scoreboard Officiel -->
+      <!-- Encart Scoreboard Dernier Match -->
       <div class="score-hero">
-        <span class="score-badge-status" id="matchStatusBadge">RÉSULTAT OFFICIEL FFF</span>
+        <span class="score-badge-status" id="matchStatusBadge">DERNIER RÉSULTAT OFFICIEL</span>
         <div class="score-matchup">
           <div class="team-col home" id="homeTeamName">--</div>
           <div class="score-number-badge" id="matchScoreDisplay">- : -</div>
@@ -90,67 +90,341 @@
         </div>
       </div>
 
-      <!-- Chronologie des Événements Officiels FFF -->
+      <!-- Chronologie des Événements du Dernier Match -->
       <div class="card">
         <div class="card-header-bar">
-          <span class="card-title">Événements de la Rencontre</span>
+          <span class="card-title">Événements du Match</span>
           <span class="card-meta">Feuille FMI</span>
         </div>
-        <div id="matchEventsTimeline" class="skeleton">Chargement des événements...</div>
+        <div id="matchEventsTimeline" class="skeleton">Chargement...</div>
       </div>
+
+      <!-- PROCHAIN MATCH : SCOUTING ADVERSAIRE & ARBITRE DÉSIGNÉ -->
+      <div class="card">
+        <div class="card-header-bar">
+          <span class="card-title">Prochain Match • Scouting FFF</span>
+          <span class="card-meta" id="nextMatchDate">08/11 à 14h30</span>
+        </div>
+        
+        <div class="scouting-header" style="text-align: center;">
+          <div style="font-size: 11px; text-transform: uppercase; color: #94a3b8;" id="nextMatchComp">Seniors R3 • Journée 5</div>
+          <div style="font-size: 16px; font-weight: 800; margin: 4px 0;" id="nextMatchFixture">ANICHE SC vs ES GENECH</div>
+          <div style="font-size: 10.5px; color: #cbd5e1;" id="nextMatchLieu">Stade des Navarres (Aniche)</div>
+        </div>
+
+        <!-- Comparaison Directe des Stats -->
+        <div style="margin: 12px 0 6px 0;">
+          <div style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: var(--text-muted); margin-bottom: 6px;">
+            Comparatif de Performance (R3)
+          </div>
+          <div class="scouting-stat-bar">
+            <span>Classement en Poule D</span>
+            <strong><span style="color: #b45309;">Aniche (9e)</span> vs <span style="color: var(--color-green);">Genech (4e)</span></strong>
+          </div>
+          <div class="scouting-stat-bar">
+            <span>Points au Compteur</span>
+            <strong>3 pts vs 7 pts</strong>
+          </div>
+          <div class="scouting-stat-bar">
+            <span>Attaque (Buts marqués)</span>
+            <strong>4 buts vs 6 buts</strong>
+          </div>
+          <div class="scouting-stat-bar">
+            <span>Défense (Buts encaissés)</span>
+            <strong>7 encaissés vs 3 encaissés</strong>
+          </div>
+        </div>
+
+        <!-- Alertes de l'Adversaire -->
+        <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px; padding: 8px 10px; margin-top: 10px; font-size: 11.5px; color: #92400e;">
+          <strong>⚠️ Alertes Adversaire :</strong>
+          <ul style="margin-left: 18px; margin-top: 4px;" id="opponentAlertsList">
+            <li>Erwan G. (Aniche) averti le 18/10, secteur axial sous pression</li>
+            <li>Défense poreuse : 1.75 but concédé par match en championnat</li>
+          </ul>
+        </div>
+
+        <!-- Profil & Sévérité de l'Arbitre Désigné -->
+        <div class="referee-box">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <div style="font-size: 12px; font-weight: 800; color: var(--text-main);" id="refereeName">
+              👨‍⚖️ LOUIS LAURENT (Régional R3)
+            </div>
+            <span class="severity-pill" style="background: #fee2e2; color: #b91c1c;" id="refereeSeverityBadge">
+              SÉVÉRITÉ TRÈS ÉLEVÉE
+            </span>
+          </div>
+          <div style="font-size: 11px; color: var(--text-muted); line-height: 1.4;">
+            <strong>Moyenne :</strong> <span id="refereeCardsAvg">4.5 cartons jaunes / match</span>.<br>
+            <strong>Consigne Staff :</strong> <span id="refereeAdvice">Arbitre qui cartonne très vite sur les gestes d'humeur. Seul le capitaine doit lui adresser la parole.</span>
+          </div>
+        </div>
+
+      </div>
+
     </section>
 
-    <!-- ONGLET 2 : EFFECTIF JOUEURS & SCORE ESG -->
+    <!-- ====================================================================
+         ONGLET 2 : EFFECTIF JOUEURS & SCORE ESG (Modales Interactives)
+         ==================================================================== -->
     <section id="tabPlayers" class="tab-content" style="display: none;">
       <div class="card">
         <div class="card-header-bar">
           <span class="card-title">Effectif Fanion • Score ESG</span>
-          <span class="card-meta">Anonymisé RGPD</span>
+          <span class="card-meta">Toucher un joueur pour détails</span>
         </div>
-        <div id="playersListContainer" class="skeleton">Chargement de l'effectif...</div>
+        <div id="playersListContainer" class="skeleton">Chargement...</div>
       </div>
     </section>
 
-    <!-- ONGLET 3 : VEILLE DISCIPLINAIRE (ART. 226 FFF) -->
+    <!-- ====================================================================
+         ONGLET 3 : VEILLE DISCIPLINAIRE & IMPACT TRÉSORERIE
+         ==================================================================== -->
     <section id="tabDiscipline" class="tab-content" style="display: none;">
-      <div class="card">
+      
+      <!-- TRADUCTEUR FINANCIER DE TRÉSORERIE FFF -->
+      <div class="treasury-card">
+        <div style="font-size: 10.5px; font-weight: 800; text-transform: uppercase; color: #cbd5e1; letter-spacing: 0.5px;">
+          Impact Trésorerie & Amendes FFF
+        </div>
+        <div class="treasury-grid">
+          <div class="treasury-box">
+            <div class="treasury-sub">Coût Cartons Saison</div>
+            <div class="treasury-val" id="treasuryCost">-- €</div>
+            <div style="font-size: 9.5px; color: #94a3b8;">18€ / jaune • 50€ / rouge</div>
+          </div>
+          <div class="treasury-box" style="border-left: 3px solid #22c55e;">
+            <div class="treasury-sub">Pénalités Évitées</div>
+            <div class="treasury-val" style="color: #4ade80;" id="treasurySaved">-- €</div>
+            <div style="font-size: 9.5px; color: #cbd5e1;">Grâce aux alertes sursis</div>
+          </div>
+        </div>
+        <div style="font-size: 10px; color: #94a3b8; font-style: italic; margin-top: 4px;">
+          La purge rigoureuse des suspensions évite le match perdu par pénalité (~250€ et retrait de points).
+        </div>
+      </div>
+
+      <!-- Registre des Sanctions -->
+      <div class="card" style="margin-top: 12px;">
         <div class="card-header-bar">
-          <span class="card-title">Veille Disciplinaire Réglementaire</span>
-          <span class="card-meta">Règle FFF des 90 jours</span>
+          <span class="card-title">Registre Disciplinaire FFF</span>
+          <span class="card-meta">Fenêtre 90 jours</span>
         </div>
 
         <!-- Section A : Expulsions / Cartons Rouges Détaillés -->
-        <div class="discipline-section-title" style="color: var(--color-red);">
-          <span>🟥</span> Expulsions & Cartons Rouges Fanion
+        <div style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: var(--color-red); margin: 6px 0 8px 0; display: flex; align-items: center; gap: 6px;">
+          <span>🟥</span> Cartons Rouges Fanion
         </div>
-        <div id="redCardsContainer">
-          <!-- Injecté dynamiquement avec détail du joueur, match, minute et statut de purge -->
-        </div>
+        <div id="redCardsContainer"></div>
 
         <!-- Section B : Joueurs Sous Sursis (2 Cartons Jaunes) -->
-        <div class="discipline-section-title" style="color: var(--color-gold); margin-top: 16px;">
+        <div style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: var(--color-gold); margin: 16px 0 8px 0; display: flex; align-items: center; gap: 6px;">
           <span>⚠️</span> Joueurs Sous Sursis Immédiat (2 Jaunes)
         </div>
-        <div id="sursisContainer">
-          <!-- Injecté dynamiquement avec dates et échéance -->
-        </div>
+        <div id="sursisContainer"></div>
       </div>
     </section>
 
-    <!-- ONGLET 4 : CLASSEMENT POULE D -->
+    <!-- ====================================================================
+         ONGLET 4 : GOUVERNANCE EXÉCUTIVE (Rapport Direction)
+         ==================================================================== -->
+    <section id="tabGovernance" class="tab-content" style="display: none;">
+      
+      <!-- Carte Phare Cadence & Montée -->
+      <div class="gov-hero-box">
+        <div style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.8px; color: #93c5fd; font-weight: 700;">
+          Direction Sportive • Indicateurs Clés
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-top: 10px;">
+          <div>
+            <div style="font-size: 28px; font-weight: 900; font-family: var(--font-mono);" id="govPpm">
+              1.75 <span style="font-size: 13px; font-weight: 600;">PPM</span>
+            </div>
+            <div style="font-size: 10.5px; color: #bfdbfe;">Cadence championnat R3</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-size: 24px; font-weight: 900; color: #4ade80; font-family: var(--font-mono);" id="govMonteCarlo">
+              63.8%
+            </div>
+            <div style="font-size: 10.5px; color: #bfdbfe;">Probabilité Montée R2</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Métriques de Solidité & Invincibilité -->
+      <div class="card">
+        <div class="card-header-bar">
+          <span class="card-title">Solidité Globale (Toutes Compétitions)</span>
+          <span class="card-meta">9 matchs officiels</span>
+        </div>
+        <div class="kpi-grid">
+          <div class="kpi-box green">
+            <div class="kpi-title">Taux d'Invincibilité</div>
+            <div class="kpi-value" id="govInvincibilite">77.8%</div>
+            <div class="kpi-desc">7 matchs sans défaite sur 9</div>
+          </div>
+          <div class="kpi-box green">
+            <div class="kpi-title">Clean Sheets Ratio</div>
+            <div class="kpi-value" id="govCleanSheetRatio">55.6%</div>
+            <div class="kpi-desc">5 matchs sur 9 sans but pris</div>
+          </div>
+          <div class="kpi-box">
+            <div class="kpi-title">Moyenne Encaissée</div>
+            <div class="kpi-value" id="govMoyEncaisses">0.44</div>
+            <div class="kpi-desc">Buts pris par match</div>
+          </div>
+          <div class="kpi-box">
+            <div class="kpi-title">Projection Saison</div>
+            <div class="kpi-value" style="font-size: 16px;" id="govPointsPrevus">42.5 pts</div>
+            <div class="kpi-desc">Objectif podium atteint</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bilan Comptable Global -->
+      <div class="card">
+        <div class="card-header-bar">
+          <span class="card-title">Bilan Comptable Cumulé</span>
+          <span class="card-meta">Senior A</span>
+        </div>
+        <div style="display: flex; justify-content: space-around; text-align: center; padding: 6px 0;">
+          <div>
+            <div style="font-size: 18px; font-weight: 800; color: var(--color-green);" id="govVictoires">5</div>
+            <div style="font-size: 10px; color: var(--text-light); text-transform: uppercase;">Victoires</div>
+          </div>
+          <div>
+            <div style="font-size: 18px; font-weight: 800; color: var(--color-gold);" id="govNuls">2</div>
+            <div style="font-size: 10px; color: var(--text-light); text-transform: uppercase;">Nuls</div>
+          </div>
+          <div>
+            <div style="font-size: 18px; font-weight: 800; color: var(--color-red);" id="govDefaites">2</div>
+            <div style="font-size: 10px; color: var(--text-light); text-transform: uppercase;">Défaites</div>
+          </div>
+          <div>
+            <div style="font-size: 18px; font-weight: 800; color: var(--color-primary);" id="govDiffButs">+6</div>
+            <div style="font-size: 10px; color: var(--text-light); text-transform: uppercase;">Différence</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         ONGLET 5 : CLASSEMENT OFFICIEL R3 POULE D
+         ==================================================================== -->
     <section id="tabStandings" class="tab-content" style="display: none;">
       <div class="card">
         <div class="card-header-bar">
           <span class="card-title">Seniors R3 • Poule D</span>
-          <span class="card-meta">FFF</span>
+          <span class="card-meta">FFF Officiel</span>
         </div>
-        <div id="standingsTableContainer" class="skeleton">Chargement du classement...</div>
+        <div id="standingsTableContainer" class="skeleton">Chargement...</div>
       </div>
     </section>
 
   </main>
 
-  <!-- Barre de Navigation Basse Institutionnelle -->
+  <!-- ====================================================================
+       MODALE PROFIL JOUEUR (INTERACTIVE & COMPLÈTE)
+       ==================================================================== -->
+  <div id="playerModal" class="modal-overlay hidden" onclick="handleModalOverlayClick(event)">
+    <div class="modal-sheet">
+      <div class="modal-close-bar">
+        <div>
+          <span class="tactical-role-pill" id="modalBadge">--</span>
+          <h2 style="font-size: 18px; font-weight: 800; color: var(--text-main); margin-top: 4px;" id="modalName">--</h2>
+        </div>
+        <button class="modal-close-btn" onclick="closePlayerModal()">✕</button>
+      </div>
+
+      <!-- Note ESG Globale -->
+      <div style="display: flex; justify-content: space-between; align-items: center; background: var(--color-green-light); border: 1px solid #bbf7d0; border-radius: 8px; padding: 10px 14px; margin-bottom: 14px;">
+        <div>
+          <div style="font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--color-green);">Score d'Impact ESG</div>
+          <div style="font-size: 11px; color: #166534;">Algorithme certifié R3</div>
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 26px; font-weight: 900; color: var(--color-green);" id="modalEsgScore">--</div>
+      </div>
+
+      <!-- Décomposition des 4 Sous-Scores ESG -->
+      <div style="margin-bottom: 16px;">
+        <div style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px;">
+          Décomposition des Piliers ESG
+        </div>
+
+        <!-- 1. Volume & Régularité -->
+        <div class="subscore-row">
+          <div class="subscore-header">
+            <span>⏱️ Volume & Régularité</span>
+            <span id="subscoreVolumeText">-- / 35 pts</span>
+          </div>
+          <div class="subscore-bar-bg">
+            <div class="subscore-bar-fill" id="subscoreVolumeBar" style="background: #3b82f6; width: 0%;"></div>
+          </div>
+        </div>
+
+        <!-- 2. Solidité Défensive -->
+        <div class="subscore-row">
+          <div class="subscore-header">
+            <span>🛡️ Solidité Défensive (Clean Sheets)</span>
+            <span id="subscoreDefenseText">-- / 30 pts</span>
+          </div>
+          <div class="subscore-bar-bg">
+            <div class="subscore-bar-fill" id="subscoreDefenseBar" style="background: #15803d; width: 0%;"></div>
+          </div>
+        </div>
+
+        <!-- 3. Impact Buteur -->
+        <div class="subscore-row">
+          <div class="subscore-header">
+            <span>⚽ Impact Offensif & Buts</span>
+            <span id="subscoreAttaqueText">-- / 35 pts</span>
+          </div>
+          <div class="subscore-bar-bg">
+            <div class="subscore-bar-fill" id="subscoreAttaqueBar" style="background: #e8590c; width: 0%;"></div>
+          </div>
+        </div>
+
+        <!-- 4. Pénalité Disciplinaire -->
+        <div class="subscore-row">
+          <div class="subscore-header">
+            <span>⚖️ Malus Disciplinaire</span>
+            <span style="color: #b91c1c;" id="subscoreMalusText">-- pts</span>
+          </div>
+          <div class="subscore-bar-bg">
+            <div class="subscore-bar-fill" id="subscoreMalusBar" style="background: #b91c1c; width: 0%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Statistiques Complètes de Matchs -->
+      <div style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: var(--text-muted); margin-bottom: 6px;">
+        Statistiques Individuelles
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: center; font-size: 11px;">
+        <div style="background: var(--bg-subtle); padding: 8px; border-radius: 6px; border: 1px solid var(--border-light);">
+          <div style="font-size: 9px; color: var(--text-light); text-transform: uppercase;">Temps de Jeu</div>
+          <strong style="font-size: 14px; font-family: var(--font-mono);" id="modalMinutes">--m</strong>
+        </div>
+        <div style="background: var(--bg-subtle); padding: 8px; border-radius: 6px; border: 1px solid var(--border-light);">
+          <div style="font-size: 9px; color: var(--text-light); text-transform: uppercase;">Titularisations</div>
+          <strong style="font-size: 14px; font-family: var(--font-mono);" id="modalStarts">--</strong>
+        </div>
+        <div style="background: var(--bg-subtle); padding: 8px; border-radius: 6px; border: 1px solid var(--border-light);">
+          <div style="font-size: 9px; color: var(--text-light); text-transform: uppercase;">Clean Sheets</div>
+          <strong style="font-size: 14px; font-family: var(--font-mono);" id="modalCleanSheets">--</strong>
+        </div>
+      </div>
+
+      <div style="margin-top: 14px; text-align: center;">
+        <button style="width: 100%; padding: 10px; background: var(--color-primary); color: #fff; border: none; border-radius: 6px; font-weight: 700; cursor: pointer;" onclick="closePlayerModal()">
+          Fermer la Fiche
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Barre de Navigation Basse Institutionnelle (5 Onglets) -->
   <nav class="bottom-nav">
     <div class="nav-item active" onclick="switchTab('tabMatch', this)">
       <span class="nav-icon">⚽</span>
@@ -163,6 +437,10 @@
     <div class="nav-item" onclick="switchTab('tabDiscipline', this)">
       <span class="nav-icon">⚖️</span>
       <span>Discipline</span>
+    </div>
+    <div class="nav-item" onclick="switchTab('tabGovernance', this)">
+      <span class="nav-icon">📊</span>
+      <span>Direction</span>
     </div>
     <div class="nav-item" onclick="switchTab('tabStandings', this)">
       <span class="nav-icon">🏆</span>

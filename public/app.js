@@ -1,9 +1,11 @@
 /**
  * MatchDay PWA - Client Script & Alimentation Dynamique
- * Gestion du Splash Screen, Logo et Rendu Détaillé de la Discipline
+ * Gestion des 5 Onglets, Modales Joueurs Interactives, Trésorerie & Gouvernance
  */
 
-// 1. Navigation au Pouce (Bottom Nav)
+let globalData = null;
+
+// 1. Navigation au Pouce (Bottom Nav 5 Onglets)
 function switchTab(tabId, navElement) {
   document.querySelectorAll('.tab-content').forEach(tab => {
     tab.style.display = 'none';
@@ -24,7 +26,7 @@ function switchTab(tabId, navElement) {
   }
 }
 
-// 2. Gestion du Splash Screen (Écran de chargement)
+// 2. Gestion du Splash Screen
 function dismissSplashScreen() {
   const splash = document.getElementById('splashScreen');
   if (splash) {
@@ -32,22 +34,70 @@ function dismissSplashScreen() {
       splash.classList.add('hidden');
       setTimeout(() => {
         splash.style.display = 'none';
-      }, 500);
-    }, 900); // 900ms pour apprécier le logo et le nom
+      }, 400);
+    }, 800);
   }
 }
 
-// 3. Initialisation de l'Application
+// 3. Gestion de la Modale Joueur
+function openPlayerModal(playerIndex) {
+  if (!globalData || !globalData.effectif_esg) return;
+  const p = globalData.effectif_esg[playerIndex];
+  if (!p) return;
+
+  const modal = document.getElementById('playerModal');
+  const subs = p.sous_scores || {};
+
+  document.getElementById('modalName').textContent = p.nom;
+  document.getElementById('modalBadge').textContent = p.badge;
+  document.getElementById('modalEsgScore').textContent = p.esg_score;
+
+  // Sous-Scores Piliers ESG
+  const volPct = Math.min(100, Math.round((subs.volume / (subs.volume_max || 35)) * 100));
+  const defPct = Math.min(100, Math.round((subs.defense / (subs.defense_max || 30)) * 100));
+  const attPct = Math.min(100, Math.round((subs.attaque / (subs.attaque_max || 35)) * 100));
+  const malusVal = subs.malus_discipline || 0;
+
+  document.getElementById('subscoreVolumeText').textContent = `${subs.volume} / ${subs.volume_max || 35} pts`;
+  document.getElementById('subscoreVolumeBar').style.width = `${volPct}%`;
+
+  document.getElementById('subscoreDefenseText').textContent = `${subs.defense} / ${subs.defense_max || 30} pts`;
+  document.getElementById('subscoreDefenseBar').style.width = `${defPct}%`;
+
+  document.getElementById('subscoreAttaqueText').textContent = `${subs.attaque} / ${subs.attaque_max || 35} pts`;
+  document.getElementById('subscoreAttaqueBar').style.width = `${attPct}%`;
+
+  document.getElementById('subscoreMalusText').textContent = malusVal > 0 ? `-${malusVal} pts` : `0 pt (Discipline parfaite)`;
+  document.getElementById('subscoreMalusBar').style.width = malusVal > 0 ? `${Math.min(100, malusVal * 5)}%` : `0%`;
+
+  // Stats individuelles
+  document.getElementById('modalMinutes').textContent = `${p.minutes}m`;
+  document.getElementById('modalStarts').textContent = `${p.titularisations} / ${p.matchs}`;
+  document.getElementById('modalCleanSheets').textContent = `${p.clean_sheets} CS`;
+
+  modal.classList.remove('hidden');
+}
+
+function closePlayerModal() {
+  const modal = document.getElementById('playerModal');
+  if (modal) {
+    modal.classList.add('hidden');
+  }
+}
+
+function handleModalOverlayClick(e) {
+  if (e.target.id === 'playerModal') {
+    closePlayerModal();
+  }
+}
+
+// 4. Initialisation de l'Application
 function initApp() {
-  // A. Rendu immédiat des données
   if (window.MATCHDAY_DATA) {
+    globalData = window.MATCHDAY_DATA;
     renderInterface(window.MATCHDAY_DATA);
   }
-
-  // B. Masquer le splash screen
   dismissSplashScreen();
-
-  // C. Actualisation distante en arrière-plan (si hébergé sur Netlify)
   refreshFromRemote();
 }
 
@@ -61,18 +111,17 @@ async function refreshFromRemote() {
     const netlifyRes = await fetch(`/.netlify/functions/get_team_data?team=${teamToken || '525674_SENIOR_M1'}`);
     if (netlifyRes.ok) {
       const data = await netlifyRes.json();
+      globalData = data;
       renderInterface(data);
     }
-  } catch (e) {
-    // Si la fonction serverless n'est pas configurée, data.js est déjà affiché
-  }
+  } catch (e) {}
 }
 
-// 4. Rendu DOM Dynamique
+// 5. Rendu DOM Dynamique Complet
 function renderInterface(data) {
   if (!data) return;
 
-  // A. Header & Identité
+  // A. Header
   const activeClub = data.equipe_active || {};
   const clubNameEl = document.getElementById('activeClubName');
   if (clubNameEl) {
@@ -95,7 +144,7 @@ function renderInterface(data) {
     metaEl.textContent = `${match.competition || ''} • ${match.date_heure || ''}`;
   }
 
-  // C. Les 4 Vrais KPIs de Saison Fanion
+  // C. 4 KPIs de Saison
   const kpis = data.kpis_saison || {};
   const goalsEl = document.getElementById('kpiGoals');
   const csEl = document.getElementById('kpiCleanSheets');
@@ -107,7 +156,7 @@ function renderInterface(data) {
   if (minEl) minEl.textContent = kpis.minutes_cumulees ? `${kpis.minutes_cumulees.toLocaleString()}m` : '--';
   if (cardsEl) cardsEl.textContent = `${kpis.cartons_jaunes ?? 0} J. / ${kpis.cartons_rouges ?? 0} R.`;
 
-  // D. Chronologie des Événements
+  // D. Chronologie Dernier Match
   const timelineContainer = document.getElementById('matchEventsTimeline');
   const events = data.evenements_dernier_match || [];
   if (timelineContainer) {
@@ -128,25 +177,44 @@ function renderInterface(data) {
       timelineContainer.innerHTML = eventsHtml;
       timelineContainer.classList.remove('skeleton');
     } else {
-      timelineContainer.innerHTML = "<div style='color: var(--text-light); font-size: 11px; text-align: center; padding: 8px;'>Aucun événement officiel renseigné pour ce match.</div>";
+      timelineContainer.innerHTML = "<div style='color: var(--text-light); font-size: 11px; text-align: center; padding: 8px;'>Aucun événement officiel renseigné.</div>";
       timelineContainer.classList.remove('skeleton');
     }
   }
 
-  // E. Effectif Joueurs & Score ESG (0-100)
+  // E. Prochain Match & Arbitre Désigné
+  const next = data.prochain_match || {};
+  const ref = data.arbitre_prochain_match || {};
+  if (next.domicile) {
+    document.getElementById('nextMatchFixture').textContent = `${next.domicile} vs ${next.exterieur}`;
+    document.getElementById('nextMatchComp').textContent = next.competition;
+    document.getElementById('nextMatchDate').textContent = "08/11 à 14h30";
+    document.getElementById('nextMatchLieu').textContent = next.lieu;
+  }
+  if (ref.nom_arbitre) {
+    document.getElementById('refereeName').textContent = `👨‍⚖️ ${ref.nom_arbitre} (${ref.niveau})`;
+    document.getElementById('refereeSeverityBadge').textContent = ref.severite;
+    document.getElementById('refereeSeverityBadge').style.background = ref.badge_color ? `${ref.badge_color}22` : '#fee2e2';
+    document.getElementById('refereeSeverityBadge').style.color = ref.badge_color || '#b91c1c';
+    document.getElementById('refereeCardsAvg').textContent = `${ref.moyenne_jaunes} cartons jaunes / match`;
+    document.getElementById('refereeAdvice').textContent = ref.consigne_coach;
+  }
+
+  // F. Effectif Joueurs & Score ESG (Cliquables vers Modale)
   const playersContainer = document.getElementById('playersListContainer');
   const players = data.effectif_esg || [];
   if (playersContainer) {
     if (players.length > 0) {
       let playersHtml = '';
-      players.forEach(p => {
+      players.forEach((p, idx) => {
         const hasRed = p.cartons_r > 0 ? `<span>🟥 ${p.cartons_r}</span>` : '';
         playersHtml += `
-          <div class="player-row">
+          <div class="player-row" onclick="openPlayerModal(${idx})">
             <div class="player-left">
               <div class="player-rank">${p.rang}</div>
               <div>
                 <div class="player-name-text">${p.nom}</div>
+                <div class="tactical-role-pill">${p.badge}</div>
                 <div class="player-stats-mini">
                   <span>⏱️ ${p.minutes}m</span>
                   <span>⚽ ${p.buts}</span>
@@ -168,8 +236,14 @@ function renderInterface(data) {
     }
   }
 
-  // F. VEILLE DISCIPLINAIRE DÉTAILLÉE : Cartons Rouges & Sursis
-  // F1. Détail Nominatif des Cartons Rouges
+  // G. Discipline & Traducteur Financier
+  const treso = data.tresorerie_discipline || {};
+  const costEl = document.getElementById('treasuryCost');
+  const savedEl = document.getElementById('treasurySaved');
+  if (costEl) costEl.textContent = `${treso.cout_total_estime || 0} €`;
+  if (savedEl) savedEl.textContent = `+${treso.amendes_evitees || 250} €`;
+
+  // G1. Cartons Rouges Détaillés
   const redCardsContainer = document.getElementById('redCardsContainer');
   const redCards = data.cartons_rouges_details || [];
   if (redCardsContainer) {
@@ -178,12 +252,12 @@ function renderInterface(data) {
       redCards.forEach(rc => {
         const badgeCls = rc.est_suspendu ? 'status-active-red' : 'status-purged';
         redHtml += `
-          <div class="discipline-card-detail red-card">
-            <div class="discipline-row-header">
+          <div style="background: var(--color-red-light); border-left: 4px solid var(--color-red); border-radius: 6px; padding: 9px 12px; margin-bottom: 8px; font-size: 12px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-weight: 700; margin-bottom: 2px;">
               <span>🟥 <strong>${rc.joueur}</strong> (${rc.minute}')</span>
-              <span class="discipline-status-badge ${badgeCls}">${rc.statut_purge}</span>
+              <span style="font-size: 10px; font-weight: 800; padding: 1px 6px; border-radius: 3px; background: #e2e8f0; color: #475569;">${rc.statut_purge}</span>
             </div>
-            <div class="discipline-subline">
+            <div style="font-size: 11px; color: var(--text-muted);">
               Exclusion lors de : <strong>${rc.match_label}</strong> (le ${rc.date})
             </div>
           </div>
@@ -195,7 +269,7 @@ function renderInterface(data) {
     }
   }
 
-  // F2. Détail Nominatif des Sursis (2 Jaunes)
+  // G2. Sursis
   const sursisContainer = document.getElementById('sursisContainer');
   const sursis = data.sursis_details || [];
   if (sursisContainer) {
@@ -203,13 +277,13 @@ function renderInterface(data) {
       let sursisHtml = '';
       sursis.forEach(s => {
         sursisHtml += `
-          <div class="discipline-card-detail sursis-card">
-            <div class="discipline-row-header">
+          <div style="background: var(--color-gold-light); border-left: 4px solid var(--color-gold); border-radius: 6px; padding: 9px 12px; margin-bottom: 8px; font-size: 12px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-weight: 700; margin-bottom: 2px;">
               <span>⚠️ <strong>${s.joueur}</strong></span>
               <span style="font-size: 10px; color: #92400e; font-weight: 700;">Échéance : ${s.expiration}</span>
             </div>
-            <div class="discipline-subline">
-              2 cartons reçus (${s.dates}). Prochain avertissement = <strong>1 match ferme de suspension</strong>.
+            <div style="font-size: 11px; color: #78350f;">
+              2 cartons reçus (${s.dates}). Prochain jaune = <strong>1 match de suspension ferme</strong>.
             </div>
           </div>
         `;
@@ -220,7 +294,25 @@ function renderInterface(data) {
     }
   }
 
-  // G. Classement Poule D
+  // H. Onglet Gouvernance Exécutive
+  const gov = data.gouvernance || {};
+  if (gov.ppm_championnat !== undefined) {
+    document.getElementById('govPpm').innerHTML = `${gov.ppm_championnat} <span style="font-size: 13px; font-weight: 600;">PPM</span>`;
+    document.getElementById('govMonteCarlo').textContent = `${gov.probabilite_montee_pct}%`;
+    document.getElementById('govInvincibilite').textContent = `${gov.taux_invincibilite}%`;
+    document.getElementById('govCleanSheetRatio').textContent = `${gov.ratio_clean_sheet_pct}%`;
+    document.getElementById('govMoyEncaisses').textContent = `${gov.moyenne_buts_encaisses}`;
+    document.getElementById('govPointsPrevus').textContent = `${gov.projection_saison.points_prevus} pts`;
+
+    const bilan = gov.bilan_global || {};
+    document.getElementById('govVictoires').textContent = bilan.victoires ?? 5;
+    document.getElementById('govNuls').textContent = bilan.nuls ?? 2;
+    document.getElementById('govDefaites').textContent = bilan.defaites ?? 2;
+    const diff = (bilan.buts_pour ?? 10) - (bilan.buts_contre ?? 4);
+    document.getElementById('govDiffButs').textContent = diff > 0 ? `+${diff}` : diff;
+  }
+
+  // I. Classement Poule D
   const standingsContainer = document.getElementById('standingsTableContainer');
   const standings = data.classement || [];
   if (standingsContainer) {
@@ -255,14 +347,13 @@ function renderInterface(data) {
   }
 }
 
-// 5. Lancement Synchrone
+// 6. Démarrage Synchrone
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initApp);
 } else {
   initApp();
 }
 
-// Service Worker (PWA offline)
 if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('./sw.js').catch(() => {});
