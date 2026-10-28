@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>MatchDay - Performance Football</title>
+  
+  <!-- Configuration PWA (Progressive Web App) -->
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#0B130E">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="MatchDay">
+  <link rel="apple-touch-icon" href="./icon.png">
+  <link rel="icon" type="image/png" href="./icon.png">
+
+  <!-- Feuilles de style -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- En-tête Compact Fixe -->
+  <header class="app-header">
+    <div class="brand-wrapper">
+      <img src="./icon.png" alt="MatchDay Logo" class="app-logo">
+      <div class="brand-title">
+        MatchDay <span class="brand-badge" id="appRoleBadge">VIP</span>
+      </div>
+    </div>
+    <div class="team-pill" id="teamPill">
+      <span class="status-dot"></span>
+      <span id="activeClubName">ES Genech (R3)</span>
+    </div>
+  </header>
+
+  <!-- Contenu Principal Scrollable -->
+  <main class="app-container">
+
+    <!-- Onglet 1 : Match & Débriefing -->
+    <section id="tabMatch" class="tab-content active">
+      <!-- Carte Dernier Résultat -->
+      <div class="card match-card">
+        <div class="card-header-bar">
+          <span class="card-title">Dernier Match Officiel</span>
+          <span style="font-size: 11px; color: var(--text-dim);" id="matchCompetition">Coupe de France • Tour 6</span>
+        </div>
+        <div class="match-fixture">
+          <div class="team-block home">
+            <span class="team-name" id="homeTeamName">ST MARTIN TATINGHEM</span>
+            <span class="team-sub">Régional 3</span>
+          </div>
+          <div class="match-score-badge" id="matchScoreDisplay">
+            2 - 0
+          </div>
+          <div class="team-block away">
+            <span class="team-name" id="awayTeamName">ES GENECH</span>
+            <span class="team-sub">Régional 3</span>
+          </div>
+        </div>
+        <div style="font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 8px;" id="matchDateInfo">
+          Dimanche 25 Octobre 2026 • 15h00
+        </div>
+      </div>
+
+      <!-- Métriques Clés du Match -->
+      <div class="card">
+        <div class="card-header-bar">
+          <span class="card-title">Indicateurs de Performance</span>
+          <span style="font-size: 11px; color: var(--primary-emerald);">ESG Index : 68/100</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+          <div style="background: var(--bg-card-hover); padding: 10px; border-radius: 8px;">
+            <div style="font-size: 10px; color: var(--text-dim); text-transform: uppercase;">xG Estimés</div>
+            <div style="font-size: 18px; font-weight: 800; color: #fff;">1.15 <span style="font-size: 11px; color: var(--text-dim);">vs 1.84</span></div>
+          </div>
+          <div style="background: var(--bg-card-hover); padding: 10px; border-radius: 8px;">
+            <div style="font-size: 10px; color: var(--text-dim); text-transform: uppercase;">Tirs Cadrés</div>
+            <div style="font-size: 18px; font-weight: 800; color: #fff;">4 <span style="font-size: 11px; color: var(--text-dim);">/ 9 total</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Onglet 2 : Effectif & Scores ESG -->
+    <section id="tabPlayers" class="tab-content" style="display: none;">
+      <div class="card">
+        <div class="card-header-bar">
+          <span class="card-title">Joueurs Fanion • ESG Impact</span>
+          <span style="font-size: 11px; color: var(--text-dim);">Anonymisé RGPD</span>
+        </div>
+        <div class="players-grid" id="playersListContainer">
+          <!-- Injecté dynamiquement par app.js -->
+          <div class="player-card">
+            <div class="player-info">
+              <div class="player-number">9</div>
+              <div>
+                <div class="player-name">Julien D.</div>
+                <div class="player-meta">Attaquant • 4 buts</div>
+              </div>
+            </div>
+            <div class="esg-badge">
+              <span class="esg-score high">84</span>
+              <span class="esg-label">Score ESG</span>
+            </div>
+          </div>
+
+          <div class="player-card">
+            <div class="player-info">
+              <div class="player-number">10</div>
+              <div>
+                <div class="player-name">Elio D.</div>
+                <div class="player-meta">Milieu Offensif • 2 assists</div>
+              </div>
+            </div>
+            <div class="esg-badge">
+              <span class="esg-score high">81</span>
+              <span class="esg-label">Score ESG</span>
+            </div>
+          </div>
+
+          <div class="player-card">
+            <div class="player-info">
+              <div class="player-number">6</div>
+              <div>
+                <div class="player-name">Maxime P.</div>
+                <div class="player-meta">Milieu Défensif • 3 cartons</div>
+              </div>
+            </div>
+            <div class="esg-badge">
+              <span class="esg-score medium">68</span>
+              <span class="esg-label">Score ESG</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Onglet 3 : Veille Disciplinaire -->
+    <section id="tabDiscipline" class="tab-content" style="display: none;">
+      <div class="card">
+        <div class="card-header-bar">
+          <span class="card-title">État Disciplinaire (Art. 226 FFF)</span>
+          <span style="font-size: 11px; color: var(--accent-gold);">Règle des 90 jours</span>
+        </div>
+        <div id="disciplineAlertsContainer">
+          <div class="alert-row warning">
+            <span>⚠️</span>
+            <div>
+              <strong>Maxime P.</strong> : 2 cartons jaunes actifs. Prochain carton = suspension automatique de 1 match.
+            </div>
+          </div>
+          <div class="alert-row danger">
+            <span>🚨</span>
+            <div>
+              <strong>Mateo S.</strong> : Suspendu 1 match ferme suite à l'expulsion directe vs Sainghin.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Onglet 4 : Classement R3 -->
+    <section id="tabStandings" class="tab-content" style="display: none;">
+      <div class="card">
+        <div class="card-header-bar">
+          <span class="card-title">Seniors R3 • Poule D</span>
+          <span style="font-size: 11px; color: var(--text-dim);">Saison 2026-2027</span>
+        </div>
+        <div id="standingsTable" style="font-size: 12px;">
+          <div style="display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.05); color: var(--text-dim);">
+            <span># Équipe</span>
+            <span>Pts | J</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.03); color: var(--primary-emerald); font-weight: 700;">
+            <span>4. GENECH ES</span>
+            <span>7 pts | 4m</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.03);">
+            <span>1. ANSTAING CHERENG</span>
+            <span>10 pts | 4m</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.03);">
+            <span>2. BONDUES FC 2</span>
+            <span>9 pts | 4m</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Barre de Navigation Basse (Ergonomie Une Main) -->
+  <nav class="bottom-nav">
+    <div class="nav-item active" onclick="switchTab('tabMatch', this)">
+      <span class="nav-icon">⚽</span>
+      <span>Match</span>
+    </div>
+    <div class="nav-item" onclick="switchTab('tabPlayers', this)">
+      <span class="nav-icon">👤</span>
+      <span>Effectif</span>
+    </div>
+    <div class="nav-item" onclick="switchTab('tabDiscipline', this)">
+      <span class="nav-icon">⚖️</span>
+      <span>Discipline</span>
+    </div>
+    <div class="nav-item" onclick="switchTab('tabStandings', this)">
+      <span class="nav-icon">🏆</span>
+      <span>Classement</span>
+    </div>
+  </nav>
+
+  <!-- Script Client & Logique Token -->
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+/* MatchDay - Tactical Dark Theme (Football Manager Aesthetic) */
+:root {
+  --bg-main: #080D0A;
+  --bg-card: #101812;
+  --bg-card-hover: #16221A;
+  --bg-card-glass: rgba(16, 24, 18, 0.85);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-emerald: rgba(16, 185, 129, 0.3);
+  
+  --primary-emerald: #10B981;
+  --primary-emerald-hover: #059669;
+  --primary-glow: rgba(16, 185, 129, 0.15);
+  
+  --accent-gold: #F59E0B;
+  --accent-red: #EF4444;
+  --accent-blue: #3B82F6;
+  
+  --text-main: #F9FAFB;
+  --text-muted: #9CA3AF;
+  --text-dim: #6B7280;
+  
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 100vh;
+  padding-bottom: 85px; /* Pour la barre de navigation basse */
+  overflow-x: hidden;
+}
+
+/* Header Compact & Statut */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--bg-card-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid var(--border-emerald);
+}
+
+.brand-title {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.brand-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--primary-glow);
+  color: var(--primary-emerald);
+  border: 1px solid var(--border-emerald);
+  text-transform: uppercase;
+}
+
+.team-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--primary-emerald);
+  box-shadow: 0 0 8px var(--primary-emerald);
+}
+
+/* Container Principal Mobile First */
+.app-container {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Cartes Tactiques Football Manager */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card-title {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Bloc Match du Week-end */
+.match-card {
+  border-left: 3px solid var(--primary-emerald);
+}
+
+.match-fixture {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.team-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-block.home {
+  text-align: left;
+}
+
+.team-block.away {
+  text-align: right;
+}
+
+.team-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.team-sub {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.match-score-badge {
+  padding: 6px 14px;
+  background: #000;
+  border: 1px solid var(--border-emerald);
+  border-radius: var(--radius-sm);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--primary-emerald);
+}
+
+/* Cartes Joueurs & Scores ESG */
+.players-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.player-card {
+  background: var(--bg-card-hover);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-number {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.player-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.player-meta {
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.esg-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.esg-score {
+  font-size: 16px;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: var(--primary-emerald);
+}
+
+.esg-score.high { color: #10B981; }
+.esg-score.medium { color: #F59E0B; }
+.esg-score.alert { color: #EF4444; }
+
+.esg-label {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+/* Alertes Disciplinaires */
+.alert-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.alert-row.warning {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  color: #FCD34D;
+}
+
+.alert-row.danger {
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  color: #FCA5A5;
+}
+
+/* Barre de Navigation Basse (Ergonomie Une Main) */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 68px;
+  background: var(--bg-card-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 100;
+  padding-bottom: env(safe-area-inset-bottom, 6px);
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+}
+
+.nav-item.active {
+  color: var(--primary-emerald);
+}
+
+.nav-icon {
+  font-size: 18px;
+}
