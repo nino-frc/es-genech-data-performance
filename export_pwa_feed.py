@@ -1,11 +1,12 @@
 """
 Générateur du flux de données réelles pour la PWA MatchDay
-Exporte les calculs certifiés (sans aucune hallucination) :
-- Dernier match officiel FFF
-- KPIs réels de saison (Buts, Clean Sheets, Temps de jeu, Cartons)
+Strictement filtré sur l'équipe fanion (SENIOR_M1) :
+- Zéro mélange avec les jeunes (U18, U14...) ou vétérans
+- 10 buts marqués en 9 matchs officiels (R3 + Coupe de France)
+- 5 clean sheets
 - Notations Joueurs ESG réelles (player_rating.py)
 - Alertes disciplinaires réelles (discipline_monitor.py)
-- Classement officiel FFF
+- Classement officiel FFF (R3 Poule D)
 """
 
 import os
@@ -27,10 +28,10 @@ def export_real_pwa_feed():
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
 
-    # 1. Dernier match officiel joué
+    # 1. Dernier match officiel joué par l'Équipe Fanion (SENIOR_M1)
     query_last_match = """
     SELECT * FROM matchs 
-    WHERE statut = 'TERMINE' AND (equipe_domicile LIKE '%GENECH%' OR equipe_exterieur LIKE '%GENECH%')
+    WHERE statut = 'TERMINE' AND equipe_club_id = 'SENIOR_M1'
     ORDER BY date_heure DESC LIMIT 1;
     """
     last_match_row = conn.execute(query_last_match).fetchone()
@@ -61,12 +62,12 @@ def export_real_pwa_feed():
                 "detail": ev["detail"]
             })
 
-    # 3. KPIs réels de saison
-    df_all_matches = pd.read_sql_query("SELECT * FROM matchs WHERE statut = 'TERMINE'", conn)
-    genech_matches = df_all_matches[
-        (df_all_matches['equipe_domicile'].str.contains('GENECH', case=False, na=False)) |
-        (df_all_matches['equipe_exterieur'].str.contains('GENECH', case=False, na=False))
-    ]
+    # 3. KPIs réels de saison strictement pour l'Équipe Fanion (SENIOR_M1)
+    genech_matches = pd.read_sql_query("""
+        SELECT * FROM matchs 
+        WHERE statut = 'TERMINE' AND equipe_club_id = 'SENIOR_M1'
+        ORDER BY date_heure ASC
+    """, conn)
 
     total_buts_marques = 0
     total_clean_sheets = 0
@@ -79,7 +80,7 @@ def export_real_pwa_feed():
         if pd.notnull(s_opp) and int(s_opp) == 0:
             total_clean_sheets += 1
 
-    # 4. Ratings ESG Réels (depuis player_rating.py)
+    # 4. Ratings ESG Réels (depuis player_rating.py, filtré sur SENIOR_M1)
     df_ratings = calculate_player_ratings()
     players_list = []
     total_minutes_cumulees = 0
@@ -87,7 +88,6 @@ def export_real_pwa_feed():
     total_rouges = 0
 
     if not df_ratings.empty:
-        # Filtrage pour l'équipe fanion et tri par Score ESG
         top_players = df_ratings.sort_values(by="esg_impact_score", ascending=False)
         for rank, (_, row) in enumerate(top_players.iterrows(), start=1):
             if row["matchs_joues"] > 0:
@@ -99,7 +99,6 @@ def export_real_pwa_feed():
                 total_jaunes += j
                 total_rouges += r
 
-                # Ne conserver que les joueurs significatifs de l'équipe
                 if rank <= 25:
                     players_list.append({
                         "rang": rank,
@@ -118,7 +117,6 @@ def export_real_pwa_feed():
     _, alerts_disc = analyze_discipline()
     clean_alerts = []
     for a in alerts_disc:
-        # Anonymiser les noms dans les messages d'alerte
         clean_msg = a
         for p in players_list:
             clean_msg = clean_msg.replace(p["nom"].upper(), p["nom"])
@@ -165,8 +163,12 @@ def export_real_pwa_feed():
     with open(OUTPUT_JS, "w", encoding="utf-8") as f:
         f.write("window.MATCHDAY_DATA = " + json.dumps(payload, ensure_ascii=False, indent=2) + ";\n")
 
-    print(f"Export certifié terminé : {len(players_list)} joueurs, {len(standings)} équipes en poule.")
-    print(f"Fichiers générés : {OUTPUT_JSON} et {OUTPUT_JS}")
+    print(f"Export certifié SENIOR_M1 terminé :")
+    print(f" - Matchs analysés : {len(genech_matches)}")
+    print(f" - Buts inscrits Fanion : {total_buts_marques}")
+    print(f" - Clean sheets Fanion : {total_clean_sheets}")
+    print(f" - Cartons Fanion : {total_jaunes} Jaunes / {total_rouges} Rouges")
+    print(f" - Joueurs analysés : {len(players_list)}")
 
 if __name__ == "__main__":
     export_real_pwa_feed()

@@ -4,7 +4,7 @@
     "nom": "ES Genech",
     "categorie": "Seniors Régional 3",
     "poule": "Poule D",
-    "derniere_maj": "28/10/2026 à 09:14"
+    "derniere_maj": "28/10/2026 à 09:20"
   },
   "dernier_match": {
     "id": "cdf_t6_tatinghem_genech",
@@ -103,36 +103,36 @@
     }
   ],
   "kpis_saison": {
-    "buts_marques": 94,
-    "clean_sheets": 10,
-    "minutes_cumulees": 28440,
-    "cartons_jaunes": 27,
+    "buts_marques": 10,
+    "clean_sheets": 5,
+    "minutes_cumulees": 8820,
+    "cartons_jaunes": 18,
     "cartons_rouges": 3
   },
   "effectif_esg": [
     {
       "rang": 1,
       "nom": "Julien D.",
-      "badge": "🎯 Buteur d'Élite",
+      "badge": "⭐ MVP / Cadre Incontournable",
       "matchs": 9,
       "minutes": 710,
       "clean_sheets": 5,
       "buts": 2,
       "cartons_j": 2,
       "cartons_r": 0,
-      "esg_score": 68.4
+      "esg_score": 90.7
     },
     {
       "rang": 2,
-      "nom": "David D.",
-      "badge": "🎯 Buteur d'Élite",
-      "matchs": 4,
-      "minutes": 360,
-      "clean_sheets": 2,
-      "buts": 5,
-      "cartons_j": 0,
+      "nom": "Mathys H.",
+      "badge": "🛡️ Roc Défensif",
+      "matchs": 9,
+      "minutes": 810,
+      "clean_sheets": 5,
+      "buts": 1,
+      "cartons_j": 3,
       "cartons_r": 0,
-      "esg_score": 61.2
+      "esg_score": 77.0
     },
     {
       "rang": 3,
@@ -144,34 +144,10 @@
       "buts": 1,
       "cartons_j": 1,
       "cartons_r": 0,
-      "esg_score": 52.2
+      "esg_score": 74.0
     },
     {
       "rang": 4,
-      "nom": "Mathys H.",
-      "badge": "🛡️ Roc Défensif",
-      "matchs": 9,
-      "minutes": 810,
-      "clean_sheets": 5,
-      "buts": 1,
-      "cartons_j": 3,
-      "cartons_r": 0,
-      "esg_score": 51.5
-    },
-    {
-      "rang": 5,
-      "nom": "Giovany C.",
-      "badge": "🛡️ Roc Défensif",
-      "matchs": 9,
-      "minutes": 531,
-      "clean_sheets": 4,
-      "buts": 1,
-      "cartons_j": 1,
-      "cartons_r": 0,
-      "esg_score": 50.3
-    },
-    {
-      "rang": 6,
       "nom": "Augustin D.",
       "badge": "🛡️ Roc Défensif",
       "matchs": 9,
@@ -180,19 +156,43 @@
       "buts": 0,
       "cartons_j": 0,
       "cartons_r": 0,
-      "esg_score": 48.6
+      "esg_score": 71.7
+    },
+    {
+      "rang": 5,
+      "nom": "Maxime P.",
+      "badge": "🛡️ Roc Défensif",
+      "matchs": 9,
+      "minutes": 810,
+      "clean_sheets": 5,
+      "buts": 0,
+      "cartons_j": 2,
+      "cartons_r": 0,
+      "esg_score": 67.0
+    },
+    {
+      "rang": 6,
+      "nom": "Giovany C.",
+      "badge": "🛡️ Roc Défensif",
+      "matchs": 9,
+      "minutes": 531,
+      "clean_sheets": 4,
+      "buts": 1,
+      "cartons_j": 1,
+      "cartons_r": 0,
+      "esg_score": 66.9
     },
     {
       "rang": 7,
-      "nom": "Robin C.",
-      "badge": "🎯 Buteur d'Élite",
-      "matchs": 5,
-      "minutes": 450,
-      "clean_sheets": 2,
-      "buts": 2,
-      "cartons_j": 2,
+      "nom": "Tim L.",
+      "badge": "🛡️ Roc Défensif",
+      "matchs": 8,
+      "minutes": 720,
+      "clean_sheets": 4,
+      "buts": 0,
+      "cartons_j": 0,
       "cartons_r": 0,
-      "esg_score": 47.3
+      "esg_score": 65.1
     },
     {
       "rang": 8,
@@ -204,46 +204,10 @@
       "buts": 2,
       "cartons_j": 4,
       "cartons_r": 1,
-      "esg_score": 46.2
+      "esg_score": 62.6
     },
     {
       "rang": 9,
-      "nom": "Tim L.",
-      "badge": "🛡️ Roc Défensif",
-      "matchs": 8,
-      "minutes": 720,
-      "clean_sheets": 4,
-      "buts": 0,
-      "cartons_j": 0,
-      "cartons_r": 0,
-      "esg_score": 42.5
-    },
-    {
-      "rang": 10,
-      "nom": "Maxime P.",
-      "badge": "🛡️ Roc Défensif",
-      "matchs": 9,
-      "minutes": 810,
-      "clean_sheets": 5,
-      "buts": 0,
-      "cartons_j": 2,
-      "cartons_r": 0,
-      "esg_score": 41.5
-    },
-    {
-      "rang": 11,
-      "nom": "Raphael D.",
-      "badge": "⚙️ Régulateur / Titulaire Cadre",
-      "matchs": 5,
-      "minutes": 450,
-      "clean_sheets": 2,
-      "buts": 1,
-      "cartons_j": 0,
-      "cartons_r": 0,
-      "esg_score": 41.3
-    },
-    {
-      "rang": 12,
       "nom": "Hugo H.",
       "badge": "🛡️ Roc Défensif",
       "matchs": 8,
@@ -252,46 +216,10 @@
       "buts": 1,
       "cartons_j": 1,
       "cartons_r": 1,
-      "esg_score": 40.3
+      "esg_score": 62.5
     },
     {
-      "rang": 13,
-      "nom": "Antoine M.",
-      "badge": "⚙️ Régulateur / Titulaire Cadre",
-      "matchs": 5,
-      "minutes": 450,
-      "clean_sheets": 2,
-      "buts": 1,
-      "cartons_j": 1,
-      "cartons_r": 0,
-      "esg_score": 37.3
-    },
-    {
-      "rang": 14,
-      "nom": "Natanael B.",
-      "badge": "⚙️ Régulateur / Titulaire Cadre",
-      "matchs": 5,
-      "minutes": 450,
-      "clean_sheets": 2,
-      "buts": 1,
-      "cartons_j": 1,
-      "cartons_r": 0,
-      "esg_score": 37.3
-    },
-    {
-      "rang": 15,
-      "nom": "Alison L.",
-      "badge": "🎯 Buteur d'Élite",
-      "matchs": 2,
-      "minutes": 180,
-      "clean_sheets": 0,
-      "buts": 2,
-      "cartons_j": 0,
-      "cartons_r": 0,
-      "esg_score": 35.1
-    },
-    {
-      "rang": 16,
+      "rang": 10,
       "nom": "Clement D.",
       "badge": "🛡️ Roc Défensif",
       "matchs": 8,
@@ -300,22 +228,22 @@
       "buts": 0,
       "cartons_j": 0,
       "cartons_r": 0,
-      "esg_score": 34.8
+      "esg_score": 52.8
     },
     {
-      "rang": 17,
-      "nom": "Rubens S.",
-      "badge": "⚙️ Régulateur / Titulaire Cadre",
-      "matchs": 4,
-      "minutes": 360,
-      "clean_sheets": 1,
-      "buts": 1,
-      "cartons_j": 0,
+      "rang": 11,
+      "nom": "Remi D.",
+      "badge": "🛡️ Roc Défensif",
+      "matchs": 9,
+      "minutes": 645,
+      "clean_sheets": 3,
+      "buts": 0,
+      "cartons_j": 1,
       "cartons_r": 0,
-      "esg_score": 34.2
+      "esg_score": 51.9
     },
     {
-      "rang": 18,
+      "rang": 12,
       "nom": "Jean-Paul B.",
       "badge": "🛡️ Roc Défensif",
       "matchs": 8,
@@ -324,91 +252,103 @@
       "buts": 0,
       "cartons_j": 0,
       "cartons_r": 0,
-      "esg_score": 33.3
+      "esg_score": 47.5
+    },
+    {
+      "rang": 13,
+      "nom": "Arthur C.",
+      "badge": "⚡ Super-Sub / Impact Player",
+      "matchs": 5,
+      "minutes": 286,
+      "clean_sheets": 2,
+      "buts": 0,
+      "cartons_j": 0,
+      "cartons_r": 0,
+      "esg_score": 34.4
+    },
+    {
+      "rang": 14,
+      "nom": "Elio D.",
+      "badge": "⚡ Super-Sub / Impact Player",
+      "matchs": 7,
+      "minutes": 170,
+      "clean_sheets": 1,
+      "buts": 0,
+      "cartons_j": 0,
+      "cartons_r": 0,
+      "esg_score": 23.3
+    },
+    {
+      "rang": 15,
+      "nom": "Dany D.",
+      "badge": "⚡ Super-Sub / Impact Player",
+      "matchs": 5,
+      "minutes": 146,
+      "clean_sheets": 0,
+      "buts": 0,
+      "cartons_j": 0,
+      "cartons_r": 0,
+      "esg_score": 16.3
+    },
+    {
+      "rang": 16,
+      "nom": "Corentin D.",
+      "badge": "🔄 Rotation Effectif",
+      "matchs": 1,
+      "minutes": 90,
+      "clean_sheets": 1,
+      "buts": 0,
+      "cartons_j": 0,
+      "cartons_r": 0,
+      "esg_score": 12.4
+    },
+    {
+      "rang": 17,
+      "nom": "Jules D.",
+      "badge": "🔄 Rotation Effectif",
+      "matchs": 4,
+      "minutes": 38,
+      "clean_sheets": 0,
+      "buts": 0,
+      "cartons_j": 0,
+      "cartons_r": 0,
+      "esg_score": 11.6
+    },
+    {
+      "rang": 18,
+      "nom": "Romain R.",
+      "badge": "🔄 Rotation Effectif",
+      "matchs": 4,
+      "minutes": 0,
+      "clean_sheets": 0,
+      "buts": 0,
+      "cartons_j": 0,
+      "cartons_r": 0,
+      "esg_score": 10.0
     },
     {
       "rang": 19,
-      "nom": "Remi D.",
-      "badge": "🛡️ Roc Défensif",
-      "matchs": 10,
-      "minutes": 645,
-      "clean_sheets": 3,
+      "nom": "Thomas L.",
+      "badge": "⚡ Super-Sub / Impact Player",
+      "matchs": 3,
+      "minutes": 83,
+      "clean_sheets": 0,
       "buts": 0,
       "cartons_j": 1,
       "cartons_r": 0,
-      "esg_score": 31.6
+      "esg_score": 7.1
     },
     {
       "rang": 20,
-      "nom": "Baptiste D.",
-      "badge": "⚙️ Régulateur / Titulaire Cadre",
-      "matchs": 3,
-      "minutes": 270,
-      "clean_sheets": 1,
-      "buts": 1,
-      "cartons_j": 0,
-      "cartons_r": 0,
-      "esg_score": 30.7
-    },
-    {
-      "rang": 21,
-      "nom": "Marceau U.",
-      "badge": "⚙️ Régulateur / Titulaire Cadre",
-      "matchs": 3,
-      "minutes": 270,
-      "clean_sheets": 1,
-      "buts": 1,
-      "cartons_j": 0,
-      "cartons_r": 0,
-      "esg_score": 30.7
-    },
-    {
-      "rang": 22,
-      "nom": "Raphael L.",
-      "badge": "⚙️ Régulateur / Titulaire Cadre",
-      "matchs": 5,
-      "minutes": 450,
-      "clean_sheets": 2,
-      "buts": 0,
-      "cartons_j": 0,
-      "cartons_r": 0,
-      "esg_score": 27.3
-    },
-    {
-      "rang": 23,
-      "nom": "Arthur C.",
-      "badge": "⚙️ Régulateur / Titulaire Cadre",
-      "matchs": 6,
-      "minutes": 376,
-      "clean_sheets": 2,
-      "buts": 0,
-      "cartons_j": 0,
-      "cartons_r": 0,
-      "esg_score": 26.4
-    },
-    {
-      "rang": 24,
-      "nom": "Leny D.",
+      "nom": "Mateo S.",
       "badge": "🔄 Rotation Effectif",
       "matchs": 2,
-      "minutes": 90,
-      "clean_sheets": 1,
-      "buts": 1,
-      "cartons_j": 0,
-      "cartons_r": 0,
-      "esg_score": 26.1
-    },
-    {
-      "rang": 25,
-      "nom": "Angelique B.",
-      "badge": "⚙️ Régulateur / Titulaire Cadre",
-      "matchs": 3,
-      "minutes": 270,
+      "minutes": 100,
       "clean_sheets": 0,
-      "buts": 1,
-      "cartons_j": 0,
-      "cartons_r": 0,
-      "esg_score": 24.7
+      "buts": 0,
+      "cartons_j": 2,
+      "cartons_r": 1,
+      "esg_score": 0.0
     }
   ],
   "alertes_discipline": [

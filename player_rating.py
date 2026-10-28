@@ -24,9 +24,17 @@ from discipline_monitor import normalize_player_name
 def calculate_player_ratings():
     conn = sqlite3.connect(DB_PATH)
 
-    df_matchs = pd.read_sql_query("SELECT * FROM matchs WHERE statut = 'TERMINE'", conn)
-    df_lineups = pd.read_sql_query("SELECT * FROM match_lineups WHERE equipe LIKE '%GENECH%'", conn)
-    df_events = pd.read_sql_query("SELECT * FROM match_events", conn)
+    df_matchs = pd.read_sql_query("SELECT * FROM matchs WHERE statut = 'TERMINE' AND equipe_club_id = 'SENIOR_M1'", conn)
+    df_lineups = pd.read_sql_query("""
+        SELECT ml.* FROM match_lineups ml 
+        JOIN matchs m ON m.id = ml.match_id 
+        WHERE m.equipe_club_id = 'SENIOR_M1' AND ml.equipe LIKE '%GENECH%'
+    """, conn)
+    df_events = pd.read_sql_query("""
+        SELECT me.* FROM match_events me 
+        JOIN matchs m ON m.id = me.match_id 
+        WHERE m.equipe_club_id = 'SENIOR_M1'
+    """, conn)
     conn.close()
 
     if df_lineups.empty or df_matchs.empty:

@@ -1,155 +1,21 @@
 ﻿rang,joueur,esg_impact_score,badge_tactique,matchs_joues,titularisations,minutes_estimees,clean_sheets_participees,buts,cartons_jaunes,cartons_rouges
-1,JULIEN DEVERNAY,68.4,🎯 Buteur d'Élite,9,8,710,5,2,2,0
-2,DAVID D.,61.2,🎯 Buteur d'Élite,4,4,360,2,5,0,0
-3,JULIEN NISSE,52.2,🛡️ Roc Défensif,9,7,694,4,1,1,0
-4,MATHYS HERVE,51.5,🛡️ Roc Défensif,9,9,810,5,1,3,0
-5,GIOVANY CALON,50.3,🛡️ Roc Défensif,9,7,531,4,1,1,0
-6,AUGUSTIN DROUPSY,48.6,🛡️ Roc Défensif,9,9,734,5,0,0,0
-7,ROBIN CASTELAIN,47.3,🎯 Buteur d'Élite,5,5,450,2,2,2,0
-8,GASPARD DROUPSY,46.2,🎯 Buteur d'Élite,8,6,523,5,2,4,1
-9,TIM LACOTE,42.5,🛡️ Roc Défensif,8,8,720,4,0,0,0
-10,MAXIME PETIT,41.5,🛡️ Roc Défensif,9,9,810,5,0,2,0
-11,RAPHAEL DEVAUX,41.3,⚙️ Régulateur / Titulaire Cadre,5,5,450,2,1,0,0
-12,HUGO HERVE,40.3,🛡️ Roc Défensif,8,8,705,4,1,1,1
-13,ANTOINE MERVAILLE,37.3,⚙️ Régulateur / Titulaire Cadre,5,5,450,2,1,1,0
-14,NATANAEL BUFFART,37.3,⚙️ Régulateur / Titulaire Cadre,5,5,450,2,1,1,0
-15,ALISON L.,35.1,🎯 Buteur d'Élite,2,2,180,0,2,0,0
-16,CLEMENT DURIEZ,34.8,🛡️ Roc Défensif,8,7,574,3,0,0,0
-17,RUBENS SUNNOMAN,34.2,⚙️ Régulateur / Titulaire Cadre,4,4,360,1,1,0,0
-18,JEAN PAUL BANGALA TOFIFI,33.3,🛡️ Roc Défensif,8,6,451,3,0,0,0
-19,REMI DEFENIN,31.6,🛡️ Roc Défensif,10,7,645,3,0,1,0
-20,BAPTISTE DESCARPENTRIES,30.7,⚙️ Régulateur / Titulaire Cadre,3,3,270,1,1,0,0
-21,MARCEAU URBANIAK,30.7,⚙️ Régulateur / Titulaire Cadre,3,3,270,1,1,0,0
-22,RAPHAEL LEFEBVRE,27.3,⚙️ Régulateur / Titulaire Cadre,5,5,450,2,0,0,0
-23,ARTHUR CLIQUE,26.4,⚙️ Régulateur / Titulaire Cadre,6,3,376,2,0,0,0
-24,LENY D.,26.1,🔄 Rotation Effectif,2,1,90,1,1,0,0
-25,ANGELIQUE B.,24.7,⚙️ Régulateur / Titulaire Cadre,3,3,270,0,1,0,0
-26,NAEL REDJEMI,23.6,🔄 Rotation Effectif,3,2,180,0,1,0,0
-27,LOUIS L.,22.7,⚙️ Régulateur / Titulaire Cadre,3,3,270,2,0,0,0
-28,THOMAS LEONARD,22.0,⚡ Super-Sub / Impact Player,4,2,173,0,1,1,0
-29,AXELLE D.,21.1,🔄 Rotation Effectif,2,2,180,0,1,0,0
-30,BAPTISTE M.,20.2,⚙️ Régulateur / Titulaire Cadre,4,4,360,1,0,0,0
-31,CHARLES G.,19.1,🔄 Rotation Effectif,2,2,180,2,0,0,0
-32,NATHAN LANGLET,19.0,🔄 Rotation Effectif,2,0,0,0,1,0,0
-33,MAXIME M.,17.6,🔄 Rotation Effectif,1,1,90,0,1,0,0
-34,CLEMENT B.,16.7,⚙️ Régulateur / Titulaire Cadre,3,3,270,1,0,0,0
-35,NAIM M.,16.7,⚙️ Régulateur / Titulaire Cadre,3,3,270,1,0,0,0
-36,ELIO DELCROIX,14.0,⚡ Super-Sub / Impact Player,7,1,170,1,0,1,0
-37,THEO D.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-38,BAPTISTE D.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-39,LOUIS D.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-40,PAVEL H.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-41,AXEL W.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-42,BENJAMIN V.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-43,LEON G.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-44,LOUIS P.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-45,SOLAN B.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-46,TOM B.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-47,NOHAM M.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-48,NUNZIO A.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-49,LEANDRO M.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-50,CHRISTIAN C.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-51,SIMON K.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-52,LUBIN M.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-53,VALENTIN T.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-54,GREGORY L.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-55,SIMON T.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-56,MARIUS B.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-57,MARCEAU D.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-58,SIDY L.,13.1,🔄 Rotation Effectif,2,2,180,1,0,0,0
-59,MARIUS D.,12.1,🔄 Rotation Effectif,2,1,90,1,0,0,0
-60,GASPARD L.,12.1,🔄 Rotation Effectif,2,1,90,1,0,0,0
-61,DANY DE FREITAS,11.7,⚡ Super-Sub / Impact Player,5,1,146,0,0,0,0
-62,ROMAIN RAPAILLE,11.1,⚡ Super-Sub / Impact Player,5,1,90,0,0,0,0
-63,LUCIE M.,10.7,⚙️ Régulateur / Titulaire Cadre,3,3,270,0,0,0,0
-64,ZOE D.,10.7,⚙️ Régulateur / Titulaire Cadre,3,3,270,0,0,0,0
-65,LUDIVINE D.,10.7,⚙️ Régulateur / Titulaire Cadre,3,3,270,0,0,0,0
-66,LUCIE H.,10.7,⚙️ Régulateur / Titulaire Cadre,3,3,270,0,0,0,0
-67,MAURANE C.,10.7,⚙️ Régulateur / Titulaire Cadre,3,3,270,0,0,0,0
-68,MARINE C.,10.7,⚙️ Régulateur / Titulaire Cadre,3,3,270,0,0,0,0
-69,ADELINE A.,10.7,⚙️ Régulateur / Titulaire Cadre,3,3,270,0,0,0,0
-70,SINEAD C.,10.7,⚙️ Régulateur / Titulaire Cadre,3,3,270,0,0,0,0
-71,ELIO BOTTIN,10.1,⚡ Super-Sub / Impact Player,4,2,180,1,0,2,0
-72,CORENTIN DELOOR,9.6,🔄 Rotation Effectif,1,1,90,1,0,0,0
-73,ROBIN D.,9.6,🔄 Rotation Effectif,1,1,90,1,0,0,0
-74,JULES A.,9.6,🔄 Rotation Effectif,1,1,90,1,0,0,0
-75,BAPTISTE B.,9.6,🔄 Rotation Effectif,1,1,90,1,0,0,0
-76,NATHEO C.,9.6,🔄 Rotation Effectif,1,1,90,1,0,0,0
-77,PAUL P.,7.5,🔄 Rotation Effectif,3,0,0,0,0,0,0
-78,EDGAR S.,7.5,🔄 Rotation Effectif,3,0,0,0,0,0,0
-79,STELIO A.,7.1,🔄 Rotation Effectif,2,2,180,0,0,0,0
-80,ALIX D.,7.1,🔄 Rotation Effectif,2,2,180,0,0,0,0
-81,INES D.,7.1,🔄 Rotation Effectif,2,2,180,0,0,0,0
-82,NAEL E.,7.1,🔄 Rotation Effectif,2,2,180,0,0,0,0
-83,GABRIEL M.,7.1,🔄 Rotation Effectif,2,2,180,0,0,0,0
-84,ETIENNE G.,7.1,🔄 Rotation Effectif,2,2,180,0,0,0,0
-85,PAOLO F.,7.1,🔄 Rotation Effectif,2,2,180,0,0,0,0
-86,ERIC P.,7.1,🔄 Rotation Effectif,2,2,180,0,0,0,0
-87,ZAKIEL S.,7.1,🔄 Rotation Effectif,2,2,180,0,0,0,0
-88,HUGO B.,7.1,🔄 Rotation Effectif,2,2,180,0,0,0,0
-89,MARCUS J.,7.1,🔄 Rotation Effectif,2,2,180,0,0,0,0
-90,TOM W.,7.1,🔄 Rotation Effectif,2,2,180,0,0,0,0
-91,ADAM M.,7.1,🔄 Rotation Effectif,2,2,180,0,0,0,0
-92,BAPTISTE H.,7.1,🔄 Rotation Effectif,2,2,180,0,0,0,0
-93,LILIAN E.,7.1,🔄 Rotation Effectif,2,2,180,0,0,0,0
-94,JULES V.,7.1,🔄 Rotation Effectif,2,2,180,0,0,0,0
-95,NOA L.,7.1,🔄 Rotation Effectif,2,2,180,0,0,0,0
-96,JULES DIVERCHY,6.4,🔄 Rotation Effectif,4,0,38,0,0,1,0
-97,LOAN V.,6.1,🔄 Rotation Effectif,2,1,90,0,0,0,0
-98,AXEL B.,5.0,🔄 Rotation Effectif,2,0,0,0,0,0,0
-99,ALEXANDRE D.,5.0,🔄 Rotation Effectif,2,0,0,0,0,0,0
-100,VIANNEY DESMARESCAUX,5.0,🔄 Rotation Effectif,2,0,0,0,0,0,0
-101,JUSTIN L.,5.0,🔄 Rotation Effectif,2,0,0,0,0,0,0
-102,OSCAR S.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-103,LUCIEN D.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-104,CONSTANT M.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-105,RAMIRO L.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-106,MICHAEL C.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-107,ARTHUR M.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-108,PAUL G.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-109,GUSTAV B.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-110,MAXENCE D.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-111,DYVIESH L.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-112,MALO Q.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-113,MARTIN D.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-114,ROMAIN V.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-115,SACHA M.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-116,LEO B.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-117,GABRIEL S.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-118,OCTAVE G.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-119,XOAN F.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-120,FRANCOIS XAVIER D.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-121,ADRIEN C.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-122,FRANCIS D.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-123,HUGO GOSSART,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-124,KAIS B.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-125,NAYL C.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-126,MARCEAU U.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-127,LALIE B.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-128,EDOUARD B.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-129,BENJAMIN P.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-130,JEAN ALVIN A.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-131,ESTEBAN P.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-132,GABYN D.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-133,EVAN P.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-134,MATHIAS V.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-135,AYMERIC K.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-136,MIA C.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-137,NOAH D.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-138,AARON H.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-139,ESTHER R.,3.6,🔄 Rotation Effectif,1,1,90,0,0,0,0
-140,IMRAN D.,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-141,CORENTIN B.,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-142,THIAGO V.,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-143,ADRIEN D.,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-144,MILAN M.,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-145,JASON V.,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-146,ALEXANDRE B.,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-147,LOUIS B.,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-148,MATTEO B.,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-149,SELYAN C.,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-150,HENRY M.,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-151,THIBAULT G.,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-152,YANIS A.,2.5,🔄 Rotation Effectif,1,0,0,0,0,0,0
-153,MATEO SURMONT,0.0,🔄 Rotation Effectif,2,1,100,0,0,2,1
-154,HUGO D.,0.0,🔄 Rotation Effectif,1,1,90,0,0,1,0
+1,JULIEN DEVERNAY,90.7,⭐ MVP / Cadre Incontournable,9,8,710,5,2,2,0
+2,MATHYS HERVE,77.0,🛡️ Roc Défensif,9,9,810,5,1,3,0
+3,JULIEN NISSE,74.0,🛡️ Roc Défensif,9,7,694,4,1,1,0
+4,AUGUSTIN DROUPSY,71.7,🛡️ Roc Défensif,9,9,734,5,0,0,0
+5,MAXIME PETIT,67.0,🛡️ Roc Défensif,9,9,810,5,0,2,0
+6,GIOVANY CALON,66.9,🛡️ Roc Défensif,9,7,531,4,1,1,0
+7,TIM LACOTE,65.1,🛡️ Roc Défensif,8,8,720,4,0,0,0
+8,GASPARD DROUPSY,62.6,🎯 Buteur d'Élite,8,6,523,5,2,4,1
+9,HUGO HERVE,62.5,🛡️ Roc Défensif,8,8,705,4,1,1,1
+10,CLEMENT DURIEZ,52.8,🛡️ Roc Défensif,8,7,574,3,0,0,0
+11,REMI DEFENIN,51.9,🛡️ Roc Défensif,9,7,645,3,0,1,0
+12,JEAN PAUL BANGALA TOFIFI,47.5,🛡️ Roc Défensif,8,6,451,3,0,0,0
+13,ARTHUR CLIQUE,34.4,⚡ Super-Sub / Impact Player,5,2,286,2,0,0,0
+14,ELIO DELCROIX,23.3,⚡ Super-Sub / Impact Player,7,1,170,1,0,0,0
+15,DANY DE FREITAS,16.3,⚡ Super-Sub / Impact Player,5,1,146,0,0,0,0
+16,CORENTIN DELOOR,12.4,🔄 Rotation Effectif,1,1,90,1,0,0,0
+17,JULES DIVERCHY,11.6,🔄 Rotation Effectif,4,0,38,0,0,0,0
+18,ROMAIN RAPAILLE,10.0,🔄 Rotation Effectif,4,0,0,0,0,0,0
+19,THOMAS LEONARD,7.1,⚡ Super-Sub / Impact Player,3,1,83,0,0,1,0
+20,MATEO SURMONT,0.0,🔄 Rotation Effectif,2,1,100,0,0,2,1
