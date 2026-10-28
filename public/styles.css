@@ -82,6 +82,42 @@ body {
 .team-pill { display: flex; align-items: center; gap: 5px; background: rgba(255, 255, 255, 0.1); padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
 .status-dot { width: 7px; height: 7px; border-radius: 50%; background-color: #22c55e; }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notif-bell-btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.notif-bell-btn:active {
+  transform: scale(0.92);
+}
+
+.notif-badge-dot {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  background-color: #ef4444;
+  border-radius: 50%;
+  border: 2px solid var(--bg-header);
+}
+
 /* --------------------------------------------------------------------------
    Conteneur Principal
    -------------------------------------------------------------------------- */
@@ -406,4 +442,107 @@ netlify-drawer {
 
 .skeleton {
   color: #94a3b8; font-style: italic; font-size: 12px; text-align: center; padding: 14px;
+}
+
+/* --------------------------------------------------------------------------
+   Centre de Notifications & Alertes Staff
+   -------------------------------------------------------------------------- */
+.notif-auth-box {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+
+.notif-feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.notif-item {
+  background: #ffffff;
+  border: 1px solid var(--border-card);
+  border-left: 3px solid var(--text-light);
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.notif-item.alert-urgent {
+  border-left-color: #ef4444;
+  background: #fef2f2;
+}
+
+.notif-item.alert-info {
+  border-left-color: var(--color-primary);
+  background: #f8fafc;
+}
+
+.notif-item.alert-success {
+  border-left-color: var(--color-green);
+  background: #f0fdf4;
+}
+
+.notif-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.notif-item-tag {
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.notif-item-tag.tag-danger {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.notif-item-tag.tag-primary {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.notif-item-tag.tag-success {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.notif-item-time {
+  font-size: 10px;
+  color: var(--text-light);
+  font-family: var(--font-mono);
+}
+
+.notif-item-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 3px;
+}
+
+.notif-item-body {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+.notif-ios-hint {
+  margin-top: 12px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.35;
 }

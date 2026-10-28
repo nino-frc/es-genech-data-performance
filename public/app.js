@@ -90,6 +90,126 @@ function handleModalOverlayClick(e) {
   }
 }
 
+// 3. bis Gestion du Centre de Notifications & Alertes PWA
+function openNotifModal() {
+  const modal = document.getElementById('notifModal');
+  if (modal) {
+    modal.classList.remove('hidden');
+    updateNotifUI();
+    const dot = document.getElementById('notifDot');
+    if (dot) dot.style.display = 'none';
+  }
+}
+
+function closeNotifModal() {
+  const modal = document.getElementById('notifModal');
+  if (modal) {
+    modal.classList.add('hidden');
+  }
+}
+
+function handleNotifModalOverlay(e) {
+  if (e.target.id === 'notifModal') {
+    closeNotifModal();
+  }
+}
+
+function updateNotifUI() {
+  const statusBadge = document.getElementById('notifStatusBadge');
+  const enableBtn = document.getElementById('btnEnableNotif');
+  if (!statusBadge || !enableBtn) return;
+
+  if (!('Notification' in window)) {
+    statusBadge.textContent = 'Non supporté';
+    statusBadge.style.background = '#fef2f2';
+    statusBadge.style.color = '#991b1b';
+    enableBtn.disabled = true;
+    enableBtn.textContent = 'Non disponible';
+    return;
+  }
+
+  if (Notification.permission === 'granted') {
+    statusBadge.textContent = 'Activé ✅';
+    statusBadge.style.background = '#dcfce7';
+    statusBadge.style.color = '#15803d';
+    enableBtn.textContent = 'Notifications actives';
+    enableBtn.style.background = '#15803d';
+  } else if (Notification.permission === 'denied') {
+    statusBadge.textContent = 'Bloqué ❌';
+    statusBadge.style.background = '#fee2e2';
+    statusBadge.style.color = '#b91c1c';
+    enableBtn.textContent = 'Bloqué dans réglages';
+    enableBtn.disabled = true;
+  } else {
+    statusBadge.textContent = 'En attente';
+    statusBadge.style.background = '#f1f5f9';
+    statusBadge.style.color = 'var(--text-muted)';
+    enableBtn.textContent = 'Activer sur cet appareil';
+    enableBtn.style.background = 'var(--color-primary)';
+  }
+}
+
+async function enablePushNotifications() {
+  if (!('Notification' in window)) {
+    showNotification('Les notifications ne sont pas supportées par votre navigateur.', true);
+    return;
+  }
+
+  try {
+    const permission = await Notification.requestPermission();
+    updateNotifUI();
+
+    if (permission === 'granted') {
+      showNotification('Notifications MatchDay activées avec succès !');
+      testStaffNotification(true);
+    } else if (permission === 'denied') {
+      showNotification('Autorisation refusée dans le navigateur.', true);
+    }
+  } catch (err) {
+    console.error('Erreur demande permission notifications :', err);
+  }
+}
+
+function testStaffNotification(isWelcome = false) {
+  const title = isWelcome ? 'MatchDay - Notifications Activées 🎉' : 'MatchDay - Alerte Staff ES Genech 🚨';
+  const body = isWelcome
+    ? 'Vous recevrez les alertes de suspension FFF, briefings et debriefings en direct sur cet appareil.'
+    : 'Commission FFF : 4 joueurs sous sursis avant le déplacement à Aniche SC (Art. 226). 250 € préservés.';
+
+  if (!('Notification' in window) || Notification.permission !== 'granted') {
+    if ('Notification' in window && Notification.permission !== 'denied') {
+      enablePushNotifications();
+      return;
+    }
+    showNotification(body, false);
+    return;
+  }
+
+  if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+    navigator.serviceWorker.ready.then(reg => {
+      reg.showNotification(title, {
+        body: body,
+        icon: './logo.png',
+        badge: './logo.png',
+        vibrate: [200, 100, 200],
+        data: { url: './' }
+      }).catch(err => {
+        new Notification(title, { body, icon: './logo.png' });
+      });
+    }).catch(() => {
+      new Notification(title, { body, icon: './logo.png' });
+    });
+  } else {
+    try {
+      new Notification(title, { body, icon: './logo.png' });
+    } catch (e) {
+      showNotification(body, false);
+    }
+  }
+
+  showNotification('Alerte envoyée sur votre appareil !');
+}
+
 // 4. Notification d'État (Toast)
 function showNotification(message, isError = false) {
   let toast = document.getElementById('appNotificationToast');
@@ -174,6 +294,9 @@ function initApp() {
 
   // B. Appel de l'API Serverless en tâche de fond
   fetchMatchDayFromApi();
+
+  // C. État des notifications PWA
+  updateNotifUI();
 }
 
 // 7. Rendu DOM Dynamique Complet

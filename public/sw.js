@@ -1,12 +1,13 @@
 // Service Worker - MatchDay PWA
-const CACHE_NAME = 'matchday-cache-v1';
+const CACHE_NAME = 'matchday-cache-v2';
 const ASSETS = [
   './',
   './index.html',
   './styles.css',
   './app.js',
+  './data.js',
   './manifest.json',
-  './icon.png'
+  './logo.png'
 ];
 
 self.addEventListener('install', (e) => {
@@ -30,8 +31,57 @@ self.addEventListener('activate', (e) => {
 });
 
 self.addEventListener('fetch', (e) => {
-  // Stratégie Network-First avec fallback cache
   e.respondWith(
     fetch(e.request).catch(() => caches.match(e.request))
+  );
+});
+
+// -----------------------------------------------------------------------------
+// GESTION DES NOTIFICATIONS NATIVES (WEB PUSH & LOCAL NOTIFICATIONS)
+// -----------------------------------------------------------------------------
+
+self.addEventListener('push', (event) => {
+  let data = {
+    title: 'MatchDay - Alerte Staff',
+    body: 'Nouvelle information tactique ou disciplinaire FFF disponible.',
+    icon: './logo.png'
+  };
+
+  if (event.data) {
+    try {
+      data = event.data.json();
+    } catch (e) {
+      data.body = event.data.text();
+    }
+  }
+
+  const options = {
+    body: data.body,
+    icon: data.icon || './logo.png',
+    badge: './logo.png',
+    vibrate: [200, 100, 200],
+    data: {
+      url: data.url || './'
+    }
+  };
+
+  event.waitUntil(
+    self.registration.showNotification(data.title, options)
+  );
+});
+
+self.addEventListener('notificationclick', (event) => {
+  event.notification.close();
+  event.waitUntil(
+    clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clientList) => {
+      for (const client of clientList) {
+        if (client.url.includes('match-day') && 'focus' in client) {
+          return client.focus();
+        }
+      }
+      if (clients.openWindow) {
+        return clients.openWindow(event.notification.data.url || './');
+      }
+    })
   );
 });

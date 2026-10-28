@@ -35,9 +35,15 @@
         MatchDay <span class="badge-tag" id="appRoleBadge">SAAS</span>
       </div>
     </div>
-    <div class="team-pill">
-      <span class="status-dot"></span>
-      <span id="activeClubName">Chargement...</span>
+    <div class="header-actions">
+      <div class="team-pill">
+        <span class="status-dot"></span>
+        <span id="activeClubName">Chargement...</span>
+      </div>
+      <button class="notif-bell-btn" id="notifBellBtn" onclick="openNotifModal()" title="Centre d'alertes staff">
+        🔔
+        <span class="notif-badge-dot" id="notifDot"></span>
+      </button>
     </div>
   </header>
 
@@ -419,6 +425,97 @@
       <div style="margin-top: 14px; text-align: center;">
         <button style="width: 100%; padding: 10px; background: var(--color-primary); color: #fff; border: none; border-radius: 6px; font-weight: 700; cursor: pointer;" onclick="closePlayerModal()">
           Fermer la Fiche
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODALE CENTRE D'ALERTES & NOTIFICATIONS (STAFF PWA)
+       ==================================================================== -->
+  <div id="notifModal" class="modal-overlay hidden" onclick="handleNotifModalOverlay(event)">
+    <div class="modal-sheet">
+      <div class="modal-close-bar">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="font-size: 20px;">🔔</span>
+          <div>
+            <h2 style="font-size: 17px; font-weight: 800; color: var(--text-main); margin: 0;">Centre d'Alertes Staff</h2>
+            <div style="font-size: 11px; color: var(--text-light);">Notifications & Briefings FFF en temps réel</div>
+          </div>
+        </div>
+        <button class="modal-close-btn" onclick="closeNotifModal()">✕</button>
+      </div>
+
+      <!-- Statut d'autorisation et activation -->
+      <div class="notif-auth-box" id="notifAuthBox">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: var(--text-muted);">Statut Push PWA</span>
+          <span class="tactical-role-pill" id="notifStatusBadge" style="background: #f1f5f9; color: var(--text-muted);">Non activé</span>
+        </div>
+        <p style="font-size: 12px; color: var(--text-muted); margin: 0 0 10px 0; line-height: 1.4;">
+          Recevez directement les alertes de suspension FFF, les convocations et les debriefings de match sur votre téléphone.
+        </p>
+        <div style="display: flex; gap: 8px;">
+          <button id="btnEnableNotif" onclick="enablePushNotifications()" style="flex: 1; padding: 9px 12px; background: var(--color-primary); color: #fff; border: none; border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer;">
+            Activer sur cet appareil
+          </button>
+          <button id="btnTestNotif" onclick="testStaffNotification()" style="padding: 9px 12px; background: var(--bg-subtle); color: var(--text-main); border: 1px solid var(--border-light); border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer;">
+            ⚡ Tester
+          </button>
+        </div>
+      </div>
+
+      <!-- Flux des dernières alertes automatiques -->
+      <div style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: var(--text-muted); margin: 16px 0 8px 0;">
+        Dernières Alertes Émises
+      </div>
+
+      <div class="notif-feed-list">
+        <!-- Alerte 1: Suspension FFF -->
+        <div class="notif-item alert-urgent">
+          <div class="notif-item-header">
+            <span class="notif-item-tag tag-danger">DISCIPLINE FFF</span>
+            <span class="notif-item-time">Aujourd'hui 09:30</span>
+          </div>
+          <div class="notif-item-title">4 joueurs sous sursis (Art. 226 FFF)</div>
+          <div class="notif-item-body">
+            Mathis L., Antoine B., Julien D. et Paul B. sont à un carton jaune de la suspension automatique. Risque financier évité de 250 €.
+          </div>
+        </div>
+
+        <!-- Alerte 2: Briefing Tactique J-2 -->
+        <div class="notif-item alert-info">
+          <div class="notif-item-header">
+            <span class="notif-item-tag tag-primary">SCOUTING & CRA</span>
+            <span class="notif-item-time">Hier 18:00</span>
+          </div>
+          <div class="notif-item-title">J-2 : Rapport Aniche SC disponible</div>
+          <div class="notif-item-body">
+            Consultez les forces adverses et les points vulnérables. Désignation de l'arbitre CRA attendue mercredi 04/11.
+          </div>
+        </div>
+
+        <!-- Alerte 3: Débriefing Post-match -->
+        <div class="notif-item alert-success">
+          <div class="notif-item-header">
+            <span class="notif-item-tag tag-success">DÉBRIEFING MATCH</span>
+            <span class="notif-item-time">26/10 11:15</span>
+          </div>
+          <div class="notif-item-title">Tatinghem 0-1 Genech : 5ème Clean Sheet</div>
+          <div class="notif-item-body">
+            Victoire validée. Solidité défensive confirmée (0.44 but concédé/match). Cadence PPM consolidée à 1.75.
+          </div>
+        </div>
+      </div>
+
+      <!-- Astuce iOS si standalone non actif -->
+      <div class="notif-ios-hint" id="notifIosHint">
+        ℹ️ <strong>Sur iPhone</strong> : Pour recevoir les alertes même application fermée, ouvrez le site dans Safari, appuyez sur l'icône de partage puis <em>« Sur l'écran d'accueil »</em>.
+      </div>
+
+      <div style="margin-top: 14px; text-align: center;">
+        <button style="width: 100%; padding: 10px; background: var(--bg-subtle); color: var(--text-main); border: 1px solid var(--border-light); border-radius: 6px; font-weight: 700; cursor: pointer;" onclick="closeNotifModal()">
+          Fermer
         </button>
       </div>
     </div>
