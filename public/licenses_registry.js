@@ -111,11 +111,11 @@ window.MATCHDAY_LICENSES = {
     "is_master": false,
     "equipes_autorisees": [
       {
-        "id": "SENIOR_M1",
+        "id": "500934_SENIOR_M1",
         "nom": "Séniors A (R2)"
       }
     ],
-    "default_team": "SENIOR_M1",
+    "default_team": "500934_SENIOR_M1",
     "devices": [
       {
         "device_id": "dev_scln_c1",

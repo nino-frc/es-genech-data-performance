@@ -730,7 +730,11 @@ function authenticateClub(key, declaredRole, isFormSubmit) {
   try {
     const saved = localStorage.getItem('matchday_active_team');
     const isAllowed = activeClub.equipes_autorisees.some(eq => eq.id === saved);
-    if (isAllowed) targetTeam = saved;
+    if (isAllowed && !isFormSubmit) {
+      targetTeam = saved;
+    } else {
+      localStorage.setItem('matchday_active_team', targetTeam);
+    }
   } catch (e) {}
 
   currentTeamId = targetTeam;
@@ -1328,6 +1332,11 @@ function renderInterface(data) {
         <button class="history-filter-btn" onclick="filterMatchHistory('CHAMPIONNAT', this)">Seniors D2 (4)</button>
         <button class="history-filter-btn" onclick="filterMatchHistory('COUPE', this)">Coupe des Flandres (2)</button>
       `;
+    } else if (currentTeamId === '500934_SENIOR_M1') {
+      filterBar.innerHTML = `
+        <button class="history-filter-btn active" onclick="filterMatchHistory('ALL', this)">Tous (${historyList.length})</button>
+        <button class="history-filter-btn" onclick="filterMatchHistory('CHAMPIONNAT', this)">Régional 2 (${historyList.length})</button>
+      `;
     } else {
       filterBar.innerHTML = `
         <button class="history-filter-btn active" onclick="filterMatchHistory('ALL', this)">Tous (${historyList.length})</button>
@@ -1350,8 +1359,9 @@ function renderInterface(data) {
           tagClass = 'loss';
         }
 
-        const isHomeGenech = m.domicile.toUpperCase().includes('GENECH');
-        const isAwayGenech = m.exterieur.toUpperCase().includes('GENECH');
+        const clubToken = (activeClub?.club_code === 'SCLN') ? 'SECLIN' : 'GENECH';
+        const isHomeClub = m.domicile.toUpperCase().includes(clubToken);
+        const isAwayClub = m.exterieur.toUpperCase().includes(clubToken);
 
         historyHtml += `
           <div class="match-history-card" data-comp-type="${m.comp_type}" onclick="openMatchDetailModal(${idx})">
@@ -1360,14 +1370,17 @@ function renderInterface(data) {
               <span>${m.date}</span>
             </div>
             <div class="match-history-main">
-              <div class="match-history-team home ${isHomeGenech ? 'highlight-genech' : ''}">
+              <div class="match-history-team home ${isHomeClub ? 'highlight-genech' : ''}">
                 ${m.domicile}
               </div>
               <div class="match-history-score-wrapper">
                 <span class="score-pill ${pillClass}">${m.score_display}</span>
                 <span class="match-history-res-tag ${tagClass}">${m.resultat_label}</span>
               </div>
-              <div class="match-history-team away ${isAwayGenech ? 'highlight-genech' : ''}">
+              <div class="match-history-team away ${isAwayClub ? 'highlight-genech' : ''}">
+                ${m.exterieur}
+              </div>
+            </div>
                 ${m.exterieur}
               </div>
             </div>

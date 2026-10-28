@@ -121,9 +121,9 @@ CLUBS_DATA = [
         "contact_referent": "Commission Sportive FC Seclin",
         "logo_rel_path": "logos/logo_seclin.jpg",
         "equipes_autorisees": [
-            {"id": "SENIOR_M1", "nom": "Séniors A (R2)"}
+            {"id": "500934_SENIOR_M1", "nom": "Séniors A (R2)"}
         ],
-        "default_team": "SENIOR_M1",
+        "default_team": "500934_SENIOR_M1",
         "appareils_actifs": [
             {
                 "device_id": "dev_scln_c1",
