@@ -49,6 +49,8 @@ NAME_MAPPING = {
 }
 
 def normalize_player_name(raw_name: str) -> str:
+    if not raw_name or not isinstance(raw_name, str):
+        return ""
     name = raw_name.strip().upper()
     return NAME_MAPPING.get(name, name)
 

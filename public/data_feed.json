@@ -4,7 +4,7 @@
     "nom": "ES Genech",
     "categorie": "Seniors Régional 3",
     "poule": "Poule D",
-    "derniere_maj": "28/10/2026 à 09:24"
+    "derniere_maj": "28/10/2026 à 09:29"
   },
   "dernier_match": {
     "id": "cdf_t6_tatinghem_genech",
@@ -106,19 +106,10 @@
     "buts_marques": 10,
     "clean_sheets": 5,
     "minutes_cumulees": 8820,
-    "cartons_jaunes": 18,
-    "cartons_rouges": 3
+    "cartons_jaunes": 17,
+    "cartons_rouges": 2
   },
   "cartons_rouges_details": [
-    {
-      "joueur": "Gaspard D.",
-      "minute": 90,
-      "date": "2026-10-18",
-      "adversaire": "ANSTAING CHERENG EC",
-      "match_label": "Journée 4 vs ANSTAING CHERENG EC",
-      "statut_purge": "Purgé (Suspension effectuée)",
-      "est_suspendu": false
-    },
     {
       "joueur": "Mateo S.",
       "minute": 82,
@@ -145,13 +136,6 @@
       "dates": "06/09, 18/10",
       "expiration": "05/12/2026",
       "message": "2 cartons reçus (06/09, 18/10). Prochain jaune = 1 match de suspension ferme."
-    },
-    {
-      "joueur": "Gaspard D.",
-      "jaunes_90j": 2,
-      "dates": "06/09, 20/09",
-      "expiration": "05/12/2026",
-      "message": "2 cartons reçus (06/09, 20/09). Prochain jaune = 1 match de suspension ferme."
     },
     {
       "joueur": "Julien D.",
@@ -190,6 +174,18 @@
     },
     {
       "rang": 2,
+      "nom": "Gaspard D.",
+      "badge": "🎯 Buteur d'Élite",
+      "matchs": 8,
+      "minutes": 523,
+      "clean_sheets": 5,
+      "buts": 2,
+      "cartons_j": 3,
+      "cartons_r": 0,
+      "esg_score": 78.6
+    },
+    {
+      "rang": 3,
       "nom": "Mathys H.",
       "badge": "🛡️ Roc Défensif",
       "matchs": 9,
@@ -201,7 +197,7 @@
       "esg_score": 77.0
     },
     {
-      "rang": 3,
+      "rang": 4,
       "nom": "Julien N.",
       "badge": "🛡️ Roc Défensif",
       "matchs": 9,
@@ -213,7 +209,7 @@
       "esg_score": 74.0
     },
     {
-      "rang": 4,
+      "rang": 5,
       "nom": "Augustin D.",
       "badge": "🛡️ Roc Défensif",
       "matchs": 9,
@@ -225,7 +221,7 @@
       "esg_score": 71.7
     },
     {
-      "rang": 5,
+      "rang": 6,
       "nom": "Maxime P.",
       "badge": "🛡️ Roc Défensif",
       "matchs": 9,
@@ -237,7 +233,7 @@
       "esg_score": 67.0
     },
     {
-      "rang": 6,
+      "rang": 7,
       "nom": "Giovany C.",
       "badge": "🛡️ Roc Défensif",
       "matchs": 9,
@@ -249,7 +245,7 @@
       "esg_score": 66.9
     },
     {
-      "rang": 7,
+      "rang": 8,
       "nom": "Tim L.",
       "badge": "🛡️ Roc Défensif",
       "matchs": 8,
@@ -259,18 +255,6 @@
       "cartons_j": 0,
       "cartons_r": 0,
       "esg_score": 65.1
-    },
-    {
-      "rang": 8,
-      "nom": "Gaspard D.",
-      "badge": "🎯 Buteur d'Élite",
-      "matchs": 8,
-      "minutes": 523,
-      "clean_sheets": 5,
-      "buts": 2,
-      "cartons_j": 4,
-      "cartons_r": 1,
-      "esg_score": 62.6
     },
     {
       "rang": 9,
