@@ -1,6 +1,6 @@
 /**
  * MatchDay PWA - Client Script & Alimentation Dynamique
- * Rendu synchrone immédiat (0ms de chargement, fonctionne en local file:// et en ligne)
+ * Gestion du Splash Screen, Logo et Rendu Détaillé de la Discipline
  */
 
 // 1. Navigation au Pouce (Bottom Nav)
@@ -24,25 +24,38 @@ function switchTab(tabId, navElement) {
   }
 }
 
-// 2. Initialisation Synchrone Immédiate
+// 2. Gestion du Splash Screen (Écran de chargement)
+function dismissSplashScreen() {
+  const splash = document.getElementById('splashScreen');
+  if (splash) {
+    setTimeout(() => {
+      splash.classList.add('hidden');
+      setTimeout(() => {
+        splash.style.display = 'none';
+      }, 500);
+    }, 900); // 900ms pour apprécier le logo et le nom
+  }
+}
+
+// 3. Initialisation de l'Application
 function initApp() {
-  // A. Si les données réelles sont présentes via data.js (Synchrone, 0 délai, marche en file:// et en ligne)
+  // A. Rendu immédiat des données
   if (window.MATCHDAY_DATA) {
     renderInterface(window.MATCHDAY_DATA);
   }
 
-  // B. En arrière-plan (si hébergé sur Netlify avec Serverless Function)
+  // B. Masquer le splash screen
+  dismissSplashScreen();
+
+  // C. Actualisation distante en arrière-plan (si hébergé sur Netlify)
   refreshFromRemote();
 }
 
 async function refreshFromRemote() {
+  if (window.location.protocol === 'file:') return;
+
   const urlParams = new URLSearchParams(window.location.search);
   const teamToken = urlParams.get('team') || urlParams.get('token');
-
-  // Si ouvert en protocole file://, on ne fait pas de fetch pour éviter les erreurs CORS
-  if (window.location.protocol === 'file:') {
-    return;
-  }
 
   try {
     const netlifyRes = await fetch(`/.netlify/functions/get_team_data?team=${teamToken || '525674_SENIOR_M1'}`);
@@ -51,11 +64,11 @@ async function refreshFromRemote() {
       renderInterface(data);
     }
   } catch (e) {
-    // Si la fonction serverless n'est pas encore déployée, data.js a déjà rendu l'écran
+    // Si la fonction serverless n'est pas configurée, data.js est déjà affiché
   }
 }
 
-// 3. Rendu DOM Dynamique
+// 4. Rendu DOM Dynamique
 function renderInterface(data) {
   if (!data) return;
 
@@ -82,7 +95,7 @@ function renderInterface(data) {
     metaEl.textContent = `${match.competition || ''} • ${match.date_heure || ''}`;
   }
 
-  // C. Les 4 Vrais KPIs de Saison
+  // C. Les 4 Vrais KPIs de Saison Fanion
   const kpis = data.kpis_saison || {};
   const goalsEl = document.getElementById('kpiGoals');
   const csEl = document.getElementById('kpiCleanSheets');
@@ -127,6 +140,7 @@ function renderInterface(data) {
     if (players.length > 0) {
       let playersHtml = '';
       players.forEach(p => {
+        const hasRed = p.cartons_r > 0 ? `<span>🟥 ${p.cartons_r}</span>` : '';
         playersHtml += `
           <div class="player-row">
             <div class="player-left">
@@ -138,6 +152,7 @@ function renderInterface(data) {
                   <span>⚽ ${p.buts}</span>
                   <span>🛡️ ${p.clean_sheets} CS</span>
                   <span>🟨 ${p.cartons_j}</span>
+                  ${hasRed}
                 </div>
               </div>
             </div>
@@ -153,28 +168,55 @@ function renderInterface(data) {
     }
   }
 
-  // F. Alertes Disciplinaires (Art. 226 FFF)
-  const discContainer = document.getElementById('disciplineAlertsContainer');
-  const alerts = data.alertes_discipline || [];
-  if (discContainer) {
-    if (alerts.length > 0) {
-      let alertsHtml = '';
-      alerts.forEach(a => {
-        const isDanger = a.includes('Suspendu') || a.includes('3e carton');
-        const cls = isDanger ? 'suspendu' : 'sursis';
-        const icon = isDanger ? '🚨' : '⚠️';
-        alertsHtml += `
-          <div class="discipline-row ${cls}">
-            <span style="font-size: 16px;">${icon}</span>
-            <div>${a.replace('🚨', '').replace('⚠️', '').trim()}</div>
+  // F. VEILLE DISCIPLINAIRE DÉTAILLÉE : Cartons Rouges & Sursis
+  // F1. Détail Nominatif des Cartons Rouges
+  const redCardsContainer = document.getElementById('redCardsContainer');
+  const redCards = data.cartons_rouges_details || [];
+  if (redCardsContainer) {
+    if (redCards.length > 0) {
+      let redHtml = '';
+      redCards.forEach(rc => {
+        const badgeCls = rc.est_suspendu ? 'status-active-red' : 'status-purged';
+        redHtml += `
+          <div class="discipline-card-detail red-card">
+            <div class="discipline-row-header">
+              <span>🟥 <strong>${rc.joueur}</strong> (${rc.minute}')</span>
+              <span class="discipline-status-badge ${badgeCls}">${rc.statut_purge}</span>
+            </div>
+            <div class="discipline-subline">
+              Exclusion lors de : <strong>${rc.match_label}</strong> (le ${rc.date})
+            </div>
           </div>
         `;
       });
-      discContainer.innerHTML = alertsHtml;
-      discContainer.classList.remove('skeleton');
+      redCardsContainer.innerHTML = redHtml;
     } else {
-      discContainer.innerHTML = "<div class='discipline-row sursis' style='background: var(--color-green-light); border-color: #bbf7d0; color: var(--color-green);'>✅ Aucune suspension ni sursis en cours dans l'effectif.</div>";
-      discContainer.classList.remove('skeleton');
+      redCardsContainer.innerHTML = "<div style='font-size: 11px; color: var(--text-light); padding: 6px;'>Aucun carton rouge reçu cette saison.</div>";
+    }
+  }
+
+  // F2. Détail Nominatif des Sursis (2 Jaunes)
+  const sursisContainer = document.getElementById('sursisContainer');
+  const sursis = data.sursis_details || [];
+  if (sursisContainer) {
+    if (sursis.length > 0) {
+      let sursisHtml = '';
+      sursis.forEach(s => {
+        sursisHtml += `
+          <div class="discipline-card-detail sursis-card">
+            <div class="discipline-row-header">
+              <span>⚠️ <strong>${s.joueur}</strong></span>
+              <span style="font-size: 10px; color: #92400e; font-weight: 700;">Échéance : ${s.expiration}</span>
+            </div>
+            <div class="discipline-subline">
+              2 cartons reçus (${s.dates}). Prochain avertissement = <strong>1 match ferme de suspension</strong>.
+            </div>
+          </div>
+        `;
+      });
+      sursisContainer.innerHTML = sursisHtml;
+    } else {
+      sursisContainer.innerHTML = "<div style='font-size: 11px; color: var(--color-green); padding: 6px;'>✅ Aucun joueur sous le coup d'un sursis actuellement.</div>";
     }
   }
 
@@ -213,7 +255,7 @@ function renderInterface(data) {
   }
 }
 
-// 4. Initialisation Synchrone dès le chargement du DOM
+// 5. Lancement Synchrone
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initApp);
 } else {

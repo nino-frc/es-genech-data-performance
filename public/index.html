@@ -11,17 +11,28 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="MatchDay">
-  <link rel="apple-touch-icon" href="./icon.png">
-  <link rel="icon" type="image/png" href="./icon.png">
+  <link rel="apple-touch-icon" href="./logo.png">
+  <link rel="icon" type="image/png" href="./logo.png">
 
   <!-- Thème Football Manager Institutionnel -->
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-  <!-- Header Institutionnel Fixe -->
+  <!-- Écran de Chargement / Splash Screen (Mobile & Desktop) -->
+  <div id="splashScreen" class="splash-overlay">
+    <div class="splash-content">
+      <img src="./logo.png" alt="MatchDay Logo" class="splash-logo">
+      <div class="splash-title">MatchDay</div>
+      <div class="splash-subtitle">Direction Technique & Performance</div>
+      <div class="splash-spinner"></div>
+    </div>
+  </div>
+
+  <!-- Header Institutionnel Fixe avec Logo -->
   <header class="app-header">
     <div class="brand-wrapper">
+      <img src="./logo.png" alt="MatchDay" class="header-logo">
       <div class="brand-title">
         MatchDay <span class="badge-tag" id="appRoleBadge">SAAS</span>
       </div>
@@ -46,38 +57,31 @@
           <div class="score-number-badge" id="matchScoreDisplay">- : -</div>
           <div class="team-col away" id="awayTeamName">--</div>
         </div>
-        <div class="match-subtext" id="matchMetaInfo">Chargement des données FFF...</div>
+        <div class="match-subtext" id="matchMetaInfo">Chargement FFF...</div>
       </div>
 
-      <!-- Les 4 Vrais Indicateurs de Performance (Issus des PDF) -->
+      <!-- Les 4 Vrais KPIs de Saison -->
       <div class="card">
         <div class="card-header-bar">
-          <span class="card-title">Bilan Réel de la Saison</span>
-          <span class="card-meta" id="seasonSummaryComp">Équipe Fanion</span>
+          <span class="card-title">Bilan Réel de Saison</span>
+          <span class="card-meta">Équipe Fanion</span>
         </div>
         <div class="kpi-grid">
-          <!-- KPI 1 : Buts Inscrits -->
           <div class="kpi-box green">
             <div class="kpi-title">Buts Inscrits</div>
             <div class="kpi-value" id="kpiGoals">--</div>
             <div class="kpi-desc">Attaque officielle</div>
           </div>
-
-          <!-- KPI 2 : Clean Sheets -->
           <div class="kpi-box green">
             <div class="kpi-title">Clean Sheets</div>
             <div class="kpi-value" id="kpiCleanSheets">--</div>
             <div class="kpi-desc">Matchs sans encaisser</div>
           </div>
-
-          <!-- KPI 3 : Temps de Jeu Total -->
           <div class="kpi-box">
             <div class="kpi-title">Temps de Jeu</div>
             <div class="kpi-value" id="kpiTotalMinutes">--</div>
             <div class="kpi-desc">Minutes cumulées</div>
           </div>
-
-          <!-- KPI 4 : Cartons & Sanctions -->
           <div class="kpi-box gold">
             <div class="kpi-title">Discipline</div>
             <div class="kpi-value" id="kpiCardsSummary">--</div>
@@ -92,11 +96,8 @@
           <span class="card-title">Événements de la Rencontre</span>
           <span class="card-meta">Feuille FMI</span>
         </div>
-        <div id="matchEventsTimeline" class="skeleton">
-          Chargement de la chronologie officielle...
-        </div>
+        <div id="matchEventsTimeline" class="skeleton">Chargement des événements...</div>
       </div>
-
     </section>
 
     <!-- ONGLET 2 : EFFECTIF JOUEURS & SCORE ESG -->
@@ -106,9 +107,7 @@
           <span class="card-title">Effectif Fanion • Score ESG</span>
           <span class="card-meta">Anonymisé RGPD</span>
         </div>
-        <div id="playersListContainer" class="skeleton">
-          Chargement de l'effectif depuis MongoDB...
-        </div>
+        <div id="playersListContainer" class="skeleton">Chargement de l'effectif...</div>
       </div>
     </section>
 
@@ -117,30 +116,41 @@
       <div class="card">
         <div class="card-header-bar">
           <span class="card-title">Veille Disciplinaire Réglementaire</span>
-          <span class="card-meta">Règle des 90 jours</span>
+          <span class="card-meta">Règle FFF des 90 jours</span>
         </div>
-        <div id="disciplineAlertsContainer" class="skeleton">
-          Vérification des avertissements et suspensions...
+
+        <!-- Section A : Expulsions / Cartons Rouges Détaillés -->
+        <div class="discipline-section-title" style="color: var(--color-red);">
+          <span>🟥</span> Expulsions & Cartons Rouges Fanion
+        </div>
+        <div id="redCardsContainer">
+          <!-- Injecté dynamiquement avec détail du joueur, match, minute et statut de purge -->
+        </div>
+
+        <!-- Section B : Joueurs Sous Sursis (2 Cartons Jaunes) -->
+        <div class="discipline-section-title" style="color: var(--color-gold); margin-top: 16px;">
+          <span>⚠️</span> Joueurs Sous Sursis Immédiat (2 Jaunes)
+        </div>
+        <div id="sursisContainer">
+          <!-- Injecté dynamiquement avec dates et échéance -->
         </div>
       </div>
     </section>
 
-    <!-- ONGLET 4 : CLASSEMENT OFFICIEL -->
+    <!-- ONGLET 4 : CLASSEMENT POULE D -->
     <section id="tabStandings" class="tab-content" style="display: none;">
       <div class="card">
         <div class="card-header-bar">
-          <span class="card-title" id="standingsTitle">Classement Poule</span>
+          <span class="card-title">Seniors R3 • Poule D</span>
           <span class="card-meta">FFF</span>
         </div>
-        <div id="standingsTableContainer" class="skeleton">
-          Chargement du classement...
-        </div>
+        <div id="standingsTableContainer" class="skeleton">Chargement du classement...</div>
       </div>
     </section>
 
   </main>
 
-  <!-- Barre de Navigation Basse Institutionnelle (Navigation au Pouce) -->
+  <!-- Barre de Navigation Basse Institutionnelle -->
   <nav class="bottom-nav">
     <div class="nav-item active" onclick="switchTab('tabMatch', this)">
       <span class="nav-icon">⚽</span>
@@ -160,7 +170,7 @@
     </div>
   </nav>
 
-  <!-- Script de Données Réelles & Client -->
+  <!-- Scripts -->
   <script src="./data.js"></script>
   <script src="./app.js"></script>
 </body>

@@ -1,10 +1,6 @@
 /* ==========================================================================
    MatchDay - Thème Institutionnel "Football Manager" (Clair & Lisible)
-   Reprend fidèlement la charte des débriefs et fiches PDF MatchDay :
-   - Fond clair technique (#f4f6f9)
-   - Cartes blanches délimitées avec bordures précises (#cbd5e1)
-   - Header sombre institutionnel (#0a1728)
-   - Vert club profond (#15803d), Or sobre (#b45309) et Rouge (#b91c1c)
+   Reprend fidèlement la charte des débriefs et fiches PDF MatchDay
    ========================================================================== */
 
 :root {
@@ -50,6 +46,82 @@ body {
 }
 
 /* --------------------------------------------------------------------------
+   Écran de Chargement / Splash Screen (Mobile & Desktop)
+   -------------------------------------------------------------------------- */
+.splash-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0a1728;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.splash-overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.splash-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: splashZoomIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.splash-logo {
+  width: 84px;
+  height: 84px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.splash-title {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.splash-subtitle {
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.splash-spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #22c55e;
+  border-radius: 50%;
+  animation: splashSpin 0.8s linear infinite;
+}
+
+@keyframes splashSpin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes splashZoomIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* --------------------------------------------------------------------------
    Header Institutionnel
    -------------------------------------------------------------------------- */
 .app-header {
@@ -70,6 +142,14 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.header-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .brand-title {
@@ -334,29 +414,67 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   Alertes Disciplinaires (Art. 226 FFF)
+   Cartes & Alertes Disciplinaires Détaillées
    -------------------------------------------------------------------------- */
-.discipline-row {
-  padding: 10px 12px;
+.discipline-section-title {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 12px 0 6px 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.discipline-card-detail {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
   border-radius: 6px;
+  padding: 9px 12px;
   margin-bottom: 8px;
   font-size: 12px;
-  line-height: 1.4;
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
 }
 
-.discipline-row.sursis {
-  background-color: var(--color-gold-light);
-  border: 1px solid #fde68a;
-  color: #92400e;
-}
-
-.discipline-row.suspendu {
+.discipline-card-detail.red-card {
+  border-left: 4px solid var(--color-red);
   background-color: var(--color-red-light);
-  border: 1px solid #fecaca;
-  color: #991b1b;
+}
+
+.discipline-card-detail.sursis-card {
+  border-left: 4px solid var(--color-gold);
+  background-color: var(--color-gold-light);
+}
+
+.discipline-row-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 3px;
+}
+
+.discipline-status-badge {
+  font-size: 10px;
+  font-weight: 800;
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+.status-purged {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.status-active-red {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.discipline-subline {
+  font-size: 11px;
+  color: var(--text-muted);
 }
 
 /* --------------------------------------------------------------------------
@@ -436,7 +554,6 @@ body {
   font-size: 16px;
 }
 
-/* Skeleton Loading State (Zéro fausse donnée en dur) */
 .skeleton {
   color: #94a3b8;
   font-style: italic;

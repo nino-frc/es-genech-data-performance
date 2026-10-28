@@ -4,7 +4,7 @@
     "nom": "ES Genech",
     "categorie": "Seniors Régional 3",
     "poule": "Poule D",
-    "derniere_maj": "28/10/2026 à 09:20"
+    "derniere_maj": "28/10/2026 à 09:24"
   },
   "dernier_match": {
     "id": "cdf_t6_tatinghem_genech",
@@ -109,6 +109,72 @@
     "cartons_jaunes": 18,
     "cartons_rouges": 3
   },
+  "cartons_rouges_details": [
+    {
+      "joueur": "Gaspard D.",
+      "minute": 90,
+      "date": "2026-10-18",
+      "adversaire": "ANSTAING CHERENG EC",
+      "match_label": "Journée 4 vs ANSTAING CHERENG EC",
+      "statut_purge": "Purgé (Suspension effectuée)",
+      "est_suspendu": false
+    },
+    {
+      "joueur": "Mateo S.",
+      "minute": 82,
+      "date": "2026-09-13",
+      "adversaire": "SAINGHIN WEPPES AO",
+      "match_label": "Tour 3 vs SAINGHIN WEPPES AO",
+      "statut_purge": "Purgé (Suspension effectuée)",
+      "est_suspendu": false
+    },
+    {
+      "joueur": "Hugo H.",
+      "minute": 33,
+      "date": "2026-09-06",
+      "adversaire": "BONDUES FC 2",
+      "match_label": "Journée 1 vs BONDUES FC 2",
+      "statut_purge": "Purgé (Suspension effectuée)",
+      "est_suspendu": false
+    }
+  ],
+  "sursis_details": [
+    {
+      "joueur": "Maxime P.",
+      "jaunes_90j": 2,
+      "dates": "06/09, 18/10",
+      "expiration": "05/12/2026",
+      "message": "2 cartons reçus (06/09, 18/10). Prochain jaune = 1 match de suspension ferme."
+    },
+    {
+      "joueur": "Gaspard D.",
+      "jaunes_90j": 2,
+      "dates": "06/09, 20/09",
+      "expiration": "05/12/2026",
+      "message": "2 cartons reçus (06/09, 20/09). Prochain jaune = 1 match de suspension ferme."
+    },
+    {
+      "joueur": "Julien D.",
+      "jaunes_90j": 2,
+      "dates": "13/09, 18/10",
+      "expiration": "12/12/2026",
+      "message": "2 cartons reçus (13/09, 18/10). Prochain jaune = 1 match de suspension ferme."
+    },
+    {
+      "joueur": "Elio B.",
+      "jaunes_90j": 2,
+      "dates": "28/09, 28/09",
+      "expiration": "27/12/2026",
+      "message": "2 cartons reçus (28/09, 28/09). Prochain jaune = 1 match de suspension ferme."
+    },
+    {
+      "joueur": "Robin C.",
+      "jaunes_90j": 2,
+      "dates": "28/09, 10/10",
+      "expiration": "27/12/2026",
+      "message": "2 cartons reçus (28/09, 10/10). Prochain jaune = 1 match de suspension ferme."
+    }
+  ],
   "effectif_esg": [
     {
       "rang": 1,
@@ -350,13 +416,6 @@
       "cartons_r": 1,
       "esg_score": 0.0
     }
-  ],
-  "alertes_discipline": [
-    "⚠️ MAXIME PETIT : 2 cartons (06/09, 18/10). Prochain carton = suspension automatique (Sursis jusqu'au 05/12/2026).",
-    "⚠️ GASPARD DROUPSY : 2 cartons (06/09, 20/09). Prochain carton = suspension automatique (Sursis jusqu'au 05/12/2026).",
-    "⚠️ JULIEN DEVERNAY : 2 cartons (13/09, 18/10). Prochain carton = suspension automatique (Sursis jusqu'au 12/12/2026).",
-    "⚠️ ELIO BOTTIN : 2 cartons (28/09, 28/09). Prochain carton = suspension automatique (Sursis jusqu'au 27/12/2026).",
-    "⚠️ ROBIN CASTELAIN : 2 cartons (28/09, 10/10). Prochain carton = suspension automatique (Sursis jusqu'au 27/12/2026)."
   ],
   "classement": [
     {
