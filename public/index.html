@@ -279,7 +279,7 @@
     </section>
 
     <!-- ====================================================================
-         ONGLET 4 : GOUVERNANCE EXÉCUTIVE (Rapport Direction)
+         ONGLET 5 : GOUVERNANCE EXÉCUTIVE (Rapport Direction)
          ==================================================================== -->
     <section id="tabGovernance" class="tab-content" style="display: none;">
       
@@ -301,6 +301,25 @@
             </div>
             <div style="font-size: 10.5px; color: #bfdbfe;">Probabilité Montée R2</div>
           </div>
+        </div>
+      </div>
+
+      <!-- Bandeau Export Rapport Direction PDF (1-Click) -->
+      <div class="pdf-export-banner">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="font-size: 20px;">📄</span>
+          <div>
+            <div style="font-size: 12px; font-weight: 800; color: var(--text-main);">Rapport Mensuel de Direction</div>
+            <div style="font-size: 10px; color: var(--text-light);">Synthèse A4 certifiée pour le Comité Directeur</div>
+          </div>
+        </div>
+        <div style="display: flex; gap: 6px;">
+          <button class="btn-pdf-download" onclick="exportExecutivePdf()" title="Télécharger le PDF certifié">
+            📥 Télécharger PDF
+          </button>
+          <button class="btn-pdf-print" onclick="printExecutiveReport()" title="Imprimer ou enregistrer">
+            🖨️
+          </button>
         </div>
       </div>
 
@@ -331,6 +350,54 @@
             <div class="kpi-value" style="font-size: 16px;" id="govPointsPrevus">42.5 pts</div>
             <div class="kpi-desc">Objectif podium atteint</div>
           </div>
+        </div>
+      </div>
+
+      <!-- Matrice d'Efficacité Temporelle (Quarts d'Heure) -->
+      <div class="card">
+        <div class="card-header-bar">
+          <span class="card-title">Matrice d'Efficacité Temporelle</span>
+          <span class="card-meta">Quarts d'heure FFF</span>
+        </div>
+
+        <!-- Synthèse Clé Staff -->
+        <div class="time-matrix-insights">
+          <div class="matrix-insight-item insight-green">
+            <span class="insight-icon">🎯</span>
+            <div>
+              <strong>75% des buts en 2nde mi-temps</strong>
+              <div style="font-size: 10px; color: #166534;">37.5% inscrits dans le money-time (76-90+')</div>
+            </div>
+          </div>
+          <div class="matrix-insight-item insight-blue">
+            <span class="insight-icon">🛡️</span>
+            <div>
+              <strong>0 but concédé (0-30')</strong>
+              <div style="font-size: 10px; color: #1e40af;">Solidité totale dans la première demi-heure</div>
+            </div>
+          </div>
+          <div class="matrix-insight-item insight-red">
+            <span class="insight-icon">⚠️</span>
+            <div>
+              <strong>Alerte Fin de 1ère Mi-temps</strong>
+              <div style="font-size: 10px; color: #991b1b;">75% des buts concédés entre 31' et 45+'</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Légende -->
+        <div style="display: flex; justify-content: flex-end; gap: 12px; font-size: 10px; font-weight: 700; margin: 10px 0 8px 0;">
+          <span style="display: flex; align-items: center; gap: 4px;">
+            <span style="width: 8px; height: 8px; background: #15803d; border-radius: 2px;"></span> Buts Marqués (Genech)
+          </span>
+          <span style="display: flex; align-items: center; gap: 4px;">
+            <span style="width: 8px; height: 8px; background: #b91c1c; border-radius: 2px;"></span> Buts Encaissés
+          </span>
+        </div>
+
+        <!-- Graphique Barres Quarts d'Heure -->
+        <div id="timeMatrixRowsContainer" class="time-matrix-container skeleton">
+          Chargement de la matrice...
         </div>
       </div>
 

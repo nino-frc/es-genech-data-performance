@@ -404,6 +404,25 @@ function switchMatchDetailSubTab(subTab) {
   }
 }
 
+// 3. quater Export Rapport Direction (PDF & Impression)
+function exportExecutivePdf() {
+  const link = document.createElement('a');
+  link.href = './rapport_executif_mensuel.pdf';
+  link.download = 'MatchDay_Rapport_Executif_ES_Genech.pdf';
+  link.target = '_blank';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  showNotification('Téléchargement du rapport exécutif PDF lancé !');
+}
+
+function printExecutiveReport() {
+  showNotification('Génération de l\'aperçu avant impression...');
+  setTimeout(() => {
+    window.print();
+  }, 250);
+}
+
 // 4. Notification d'État (Toast)
 function showNotification(message, isError = false) {
   let toast = document.getElementById('appNotificationToast');
@@ -739,6 +758,40 @@ function renderInterface(data) {
     document.getElementById('govDefaites').textContent = bilan.defaites ?? 2;
     const diff = (bilan.buts_pour ?? 10) - (bilan.buts_contre ?? 4);
     document.getElementById('govDiffButs').textContent = diff > 0 ? `+${diff}` : diff;
+
+    // H bis. Matrice des Quarts d'Heure (Temps Forts / Faibles)
+    const matrixContainer = document.getElementById('timeMatrixRowsContainer');
+    const tranches = gov.matrice_quarts_heure || [];
+    if (matrixContainer && tranches.length > 0) {
+      let matrixHtml = '';
+      const maxGoals = 3;
+      tranches.forEach(t => {
+        const pctScored = Math.min(100, Math.round((t.marques / maxGoals) * 100));
+        const pctConceded = Math.min(100, Math.round((t.encaisses / maxGoals) * 100));
+
+        matrixHtml += `
+          <div class="time-matrix-row">
+            <div class="time-matrix-label">${t.tranche}</div>
+            <div class="time-matrix-bars-wrapper">
+              <div class="matrix-bar-track">
+                <div class="matrix-bar-fill fill-scored" style="width: ${pctScored}%;"></div>
+                <span class="matrix-bar-val" style="color: ${t.marques > 0 ? '#15803d' : '#94a3b8'};">
+                  ${t.marques} marqué${t.marques > 1 ? 's' : ''}
+                </span>
+              </div>
+              <div class="matrix-bar-track">
+                <div class="matrix-bar-fill fill-conceded" style="width: ${pctConceded}%;"></div>
+                <span class="matrix-bar-val" style="color: ${t.encaisses > 0 ? '#b91c1c' : '#94a3b8'};">
+                  ${t.encaisses} encaissé${t.encaisses > 1 ? 's' : ''}
+                </span>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+      matrixContainer.innerHTML = matrixHtml;
+      matrixContainer.classList.remove('skeleton');
+    }
   }
 
   // I. Classement Poule D

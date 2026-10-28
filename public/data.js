@@ -4,7 +4,7 @@ window.MATCHDAY_DATA = {
     "nom": "ES Genech",
     "categorie": "Seniors Régional 3",
     "poule": "Poule D",
-    "derniere_maj": "28/10/2026 à 10:46"
+    "derniere_maj": "28/10/2026 à 11:10"
   },
   "dernier_match": {
     "id": "cdf_t6_tatinghem_genech",
@@ -3247,6 +3247,50 @@ window.MATCHDAY_DATA = {
     "projection_saison": {
       "points_prevus": 42.5,
       "rang_final_estime": "2e (Accession Régional 2)"
+    },
+    "matrice_quarts_heure": [
+      {
+        "tranche": "0-15'",
+        "label": "0 - 15 min",
+        "marques": 0,
+        "encaisses": 0
+      },
+      {
+        "tranche": "16-30'",
+        "label": "16 - 30 min",
+        "marques": 0,
+        "encaisses": 0
+      },
+      {
+        "tranche": "31-45+'",
+        "label": "31 - 45+ min",
+        "marques": 2,
+        "encaisses": 3
+      },
+      {
+        "tranche": "46-60'",
+        "label": "46 - 60 min",
+        "marques": 1,
+        "encaisses": 0
+      },
+      {
+        "tranche": "61-75'",
+        "label": "61 - 75 min",
+        "marques": 2,
+        "encaisses": 0
+      },
+      {
+        "tranche": "76-90+'",
+        "label": "76 - 90+ min",
+        "marques": 3,
+        "encaisses": 1
+      }
+    ],
+    "analyse_temporelle": {
+      "buts_2nde_mi_temps_pct": 75.0,
+      "buts_money_time_pct": 37.5,
+      "clean_premiere_demi_heure": "0 but concédé (0-30')",
+      "point_vigilance": "75% des buts concédés entre la 31e et 45e min"
     }
   },
   "classement": [

@@ -859,3 +859,183 @@ netlify-drawer {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* --------------------------------------------------------------------------
+   Bandeau Export PDF & Matrice Quarts d'Heure
+   -------------------------------------------------------------------------- */
+.pdf-export-banner {
+  background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.btn-pdf-download {
+  background: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-pdf-download:active {
+  transform: scale(0.96);
+}
+
+.btn-pdf-print {
+  background: #ffffff;
+  color: var(--text-main);
+  border: 1px solid var(--border-card);
+  border-radius: 6px;
+  padding: 7px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.time-matrix-insights {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.matrix-insight-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+}
+
+.insight-icon {
+  font-size: 14px;
+}
+
+.insight-green {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
+
+.insight-blue {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e40af;
+}
+
+.insight-red {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+}
+
+.time-matrix-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.time-matrix-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+}
+
+.time-matrix-label {
+  width: 52px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text-muted);
+  font-size: 10.5px;
+  text-align: right;
+}
+
+.time-matrix-bars-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.matrix-bar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+  height: 13px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.matrix-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.matrix-bar-fill.fill-scored {
+  background-color: #15803d;
+}
+
+.matrix-bar-fill.fill-conceded {
+  background-color: #b91c1c;
+}
+
+.matrix-bar-val {
+  font-size: 9px;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  padding: 0 4px;
+  color: #475569;
+}
+
+/* --------------------------------------------------------------------------
+   Feuille de style d'impression (@media print)
+   -------------------------------------------------------------------------- */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 0 !important;
+  }
+
+  .app-header,
+  .bottom-nav,
+  .history-filter-bar,
+  .pdf-export-banner,
+  .modal-overlay,
+  button {
+    display: none !important;
+  }
+
+  .tab-content {
+    display: block !important;
+    opacity: 1 !important;
+  }
+
+  .card, .gov-hero-box {
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+    margin-bottom: 12px !important;
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .gov-hero-box * {
+    color: #000 !important;
+  }
+}
