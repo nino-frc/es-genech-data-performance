@@ -94,8 +94,18 @@ exports.handler = async (event, context) => {
 
     let devices = Array.isArray(club.devices) ? club.devices : [];
 
-    // Action : Révocation d'un accès par son device_id
+    // Action : Révocation d'un accès par son device_id (Strictement réservé à la Licence Master Nino)
     if (action === "revoke_device" && body.target_device_id) {
+      if (!isMaster) {
+        return {
+          statusCode: 403,
+          headers,
+          body: JSON.stringify({
+            valid: false,
+            message: "Action non autorisée. Seule la clé Super-Admin Master Nino peut révoquer des accès staff."
+          })
+        };
+      }
       devices = devices.map(d => {
         if (d.device_id === body.target_device_id) {
           return { ...d, statut: "Révoqué" };

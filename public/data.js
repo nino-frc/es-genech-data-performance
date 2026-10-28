@@ -8,7 +8,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "28/10/2026 à 15:33"
+      "derniere_maj": "28/10/2026 à 15:52"
     },
     "dernier_match": {
       "id": "cdf_t6_tatinghem_genech",
@@ -112,6 +112,23 @@ window.MATCHDAY_TEAMS = {
       "lieu": "Stade des Navarres (Aniche)",
       "domicile": "ANICHE SC",
       "exterieur": "ES GENECH",
+      "comparatif": {
+        "titre": "Comparatif de Performance (R3 Poule D)",
+        "adversaire_nom": "Aniche SC",
+        "adversaire_rang": "9e",
+        "adversaire_pts": 3,
+        "adversaire_buts_pour": 4,
+        "adversaire_buts_contre": 7,
+        "club_nom": "ES Genech",
+        "club_rang": "4e",
+        "club_pts": 7,
+        "club_buts_pour": 6,
+        "club_buts_contre": 3
+      },
+      "alertes": [
+        "Erwan G. (Aniche) averti le 18/10, secteur axial sous pression",
+        "Défense adverse perméable : 1.75 but concédé par match en championnat"
+      ],
       "stats_comparatives": {
         "genech": {
           "rang": 4,
@@ -3381,7 +3398,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "28/10/2026 à 15:33"
+      "derniere_maj": "28/10/2026 à 15:52"
     },
     "dernier_match": {
       "id": "m_u18_m1_79496282-et-c-anstai",
@@ -3422,14 +3439,23 @@ window.MATCHDAY_TEAMS = {
       "lieu": "Terrain adverse",
       "domicile": "CYSOING WB EAC",
       "exterieur": "GENECH ES",
-      "stats_comparatives": {
-        "genech": {
-          "points": 15,
-          "buts_marques": 30,
-          "buts_encaisses": 8,
-          "diff": "+22"
-        }
-      }
+      "comparatif": {
+        "titre": "Bilan & Projection (U19 / U18 (D1 District))",
+        "adversaire_nom": "CYSOING WB EAC",
+        "adversaire_rang": "-",
+        "adversaire_pts": "-",
+        "adversaire_buts_pour": "-",
+        "adversaire_buts_contre": "-",
+        "club_nom": "U19 / U18 (D1 District)",
+        "club_rang": "-",
+        "club_pts": 15,
+        "club_buts_pour": 30,
+        "club_buts_contre": 8
+      },
+      "alertes": [
+        "Prochaine journée officielle : D1 Poule Unique • Journée 6",
+        "Préparation tactique spécifique du groupe en cours."
+      ]
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Désignation District en attente",
@@ -4712,7 +4738,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "28/10/2026 à 15:33"
+      "derniere_maj": "28/10/2026 à 15:52"
     },
     "dernier_match": {
       "id": "m_senior_f2_78809066-lille-e-s-l",
@@ -4731,14 +4757,23 @@ window.MATCHDAY_TEAMS = {
       "lieu": "Stade Léo Lagrange (Genech)",
       "domicile": "ES GENECH",
       "exterieur": "ADVERSAIRE",
-      "stats_comparatives": {
-        "genech": {
-          "points": 6,
-          "buts_marques": 10,
-          "buts_encaisses": 11,
-          "diff": "-1"
-        }
-      }
+      "comparatif": {
+        "titre": "Bilan (Séniors Féminines)",
+        "adversaire_nom": "Adversaire CRA",
+        "adversaire_rang": "-",
+        "adversaire_pts": "-",
+        "adversaire_buts_pour": "-",
+        "adversaire_buts_contre": "-",
+        "club_nom": "Séniors Féminines",
+        "club_rang": "-",
+        "club_pts": 6,
+        "club_buts_pour": 10,
+        "club_buts_contre": 11
+      },
+      "alertes": [
+        "Calendrier en attente de validation FFF / District.",
+        "Séances d'entraînement maintenues."
+      ]
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Désignation District en attente",
@@ -5517,7 +5552,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "28/10/2026 à 15:33"
+      "derniere_maj": "28/10/2026 à 15:52"
     },
     "dernier_match": {
       "id": "m_senior_b_j4_loos",
@@ -5536,14 +5571,23 @@ window.MATCHDAY_TEAMS = {
       "lieu": "Stade Léo Lagrange (Genech)",
       "domicile": "GENECH ES 2",
       "exterieur": "ROUBAIX RC 2",
-      "stats_comparatives": {
-        "genech": {
-          "points": 4,
-          "buts_marques": 14,
-          "buts_encaisses": 16,
-          "diff": "-2"
-        }
-      }
+      "comparatif": {
+        "titre": "Bilan & Projection (Séniors B (D2 Réserve))",
+        "adversaire_nom": "ROUBAIX RC 2",
+        "adversaire_rang": "-",
+        "adversaire_pts": "-",
+        "adversaire_buts_pour": "-",
+        "adversaire_buts_contre": "-",
+        "club_nom": "Séniors B (D2 Réserve)",
+        "club_rang": "-",
+        "club_pts": 4,
+        "club_buts_pour": 14,
+        "club_buts_contre": 16
+      },
+      "alertes": [
+        "Prochaine journée officielle : D2 Poule C • Journée 5",
+        "Préparation tactique spécifique du groupe en cours."
+      ]
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Désignation District en attente",
@@ -6257,7 +6301,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "28/10/2026 à 15:33"
+      "derniere_maj": "28/10/2026 à 15:52"
     },
     "dernier_match": {
       "id": "seclin_80464279",
@@ -6277,14 +6321,23 @@ window.MATCHDAY_TEAMS = {
       "lieu": "Stade Henri Seigneur (Croix)",
       "domicile": "CROIX IC 2",
       "exterieur": "SECLIN FC",
-      "stats_comparatives": {
-        "genech": {
-          "points": 8,
-          "buts_marques": 22,
-          "buts_encaisses": 6,
-          "diff": "+16"
-        }
-      }
+      "comparatif": {
+        "titre": "Comparatif de Performance (R2 Poule B)",
+        "adversaire_nom": "Croix IC 2",
+        "adversaire_rang": "1er",
+        "adversaire_pts": 10,
+        "adversaire_buts_pour": 11,
+        "adversaire_buts_contre": 3,
+        "club_nom": "FC Seclin",
+        "club_rang": "2e",
+        "club_pts": 8,
+        "club_buts_pour": 22,
+        "club_buts_contre": 6
+      },
+      "alertes": [
+        "Croix IC 2 : Leader invaincu du groupe (10 pts en 4 matchs)",
+        "Choc au sommet pour la 1ère place de Régional 2"
+      ]
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Désignation CRA Ligue Hauts-de-France",
@@ -9223,7 +9276,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "28/10/2026 à 15:33"
+      "derniere_maj": "28/10/2026 à 15:52"
     },
     "dernier_match": {
       "id": "seclin_80464279",
@@ -9243,14 +9296,23 @@ window.MATCHDAY_TEAMS = {
       "lieu": "Stade Henri Seigneur (Croix)",
       "domicile": "CROIX IC 2",
       "exterieur": "SECLIN FC",
-      "stats_comparatives": {
-        "genech": {
-          "points": 8,
-          "buts_marques": 22,
-          "buts_encaisses": 6,
-          "diff": "+16"
-        }
-      }
+      "comparatif": {
+        "titre": "Comparatif de Performance (R2 Poule B)",
+        "adversaire_nom": "Croix IC 2",
+        "adversaire_rang": "1er",
+        "adversaire_pts": 10,
+        "adversaire_buts_pour": 11,
+        "adversaire_buts_contre": 3,
+        "club_nom": "FC Seclin",
+        "club_rang": "2e",
+        "club_pts": 8,
+        "club_buts_pour": 22,
+        "club_buts_contre": 6
+      },
+      "alertes": [
+        "Croix IC 2 : Leader invaincu du groupe (10 pts en 4 matchs)",
+        "Choc au sommet pour la 1ère place de Régional 2"
+      ]
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Désignation CRA Ligue Hauts-de-France",

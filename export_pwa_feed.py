@@ -147,20 +147,30 @@ def build_secondary_team_data(team_id: str, conn: sqlite3.Connection):
         else:
             comp_next = f"{team_meta['poule']} • {nm_row['tour_ou_journee']}"
 
+        opp_name = str(nm_row["equipe_exterieur"]) if "GENECH" in str(nm_row["equipe_domicile"]).upper() else str(nm_row["equipe_domicile"])
         next_match = {
             "competition": comp_next,
             "date_heure": nm_row["date_heure"],
             "lieu": "Stade Léo Lagrange (Genech)" if "GENECH" in str(nm_row["equipe_domicile"]).upper() else "Terrain adverse",
             "domicile": nm_row["equipe_domicile"],
             "exterieur": nm_row["equipe_exterieur"],
-            "stats_comparatives": {
-                "genech": {
-                    "points": champ_victoires * 3 + champ_nuls,
-                    "buts_marques": buts_marques,
-                    "buts_encaisses": buts_encaisses,
-                    "diff": f"+{buts_marques - buts_encaisses}" if (buts_marques - buts_encaisses) > 0 else str(buts_marques - buts_encaisses)
-                }
-            }
+            "comparatif": {
+                "titre": f"Bilan & Projection ({team_meta['nom_affiche']})",
+                "adversaire_nom": opp_name,
+                "adversaire_rang": "-",
+                "adversaire_pts": "-",
+                "adversaire_buts_pour": "-",
+                "adversaire_buts_contre": "-",
+                "club_nom": team_meta["nom_affiche"],
+                "club_rang": "-",
+                "club_pts": champ_victoires * 3 + champ_nuls,
+                "club_buts_pour": buts_marques,
+                "club_buts_contre": buts_encaisses
+            },
+            "alertes": [
+                f"Prochaine journée officielle : {comp_next}",
+                "Préparation tactique spécifique du groupe en cours."
+            ]
         }
     else:
         next_match = {
@@ -169,14 +179,23 @@ def build_secondary_team_data(team_id: str, conn: sqlite3.Connection):
             "lieu": "Stade Léo Lagrange (Genech)",
             "domicile": "ES GENECH",
             "exterieur": "ADVERSAIRE",
-            "stats_comparatives": {
-                "genech": {
-                    "points": champ_victoires * 3 + champ_nuls,
-                    "buts_marques": buts_marques,
-                    "buts_encaisses": buts_encaisses,
-                    "diff": f"+{buts_marques - buts_encaisses}" if (buts_marques - buts_encaisses) > 0 else str(buts_marques - buts_encaisses)
-                }
-            }
+            "comparatif": {
+                "titre": f"Bilan ({team_meta['nom_affiche']})",
+                "adversaire_nom": "Adversaire CRA",
+                "adversaire_rang": "-",
+                "adversaire_pts": "-",
+                "adversaire_buts_pour": "-",
+                "adversaire_buts_contre": "-",
+                "club_nom": team_meta["nom_affiche"],
+                "club_rang": "-",
+                "club_pts": champ_victoires * 3 + champ_nuls,
+                "club_buts_pour": buts_marques,
+                "club_buts_contre": buts_encaisses
+            },
+            "alertes": [
+                "Calendrier en attente de validation FFF / District.",
+                "Séances d'entraînement maintenues."
+            ]
         }
 
     historique_matchs = []
@@ -482,14 +501,23 @@ def build_seclin_pwa_payload(base_dir: str):
         "lieu": "Stade Henri Seigneur (Croix)",
         "domicile": "CROIX IC 2",
         "exterieur": "SECLIN FC",
-        "stats_comparatives": {
-            "genech": {
-                "points": 8,
-                "buts_marques": buts_marques,
-                "buts_encaisses": buts_encaisses,
-                "diff": f"+{buts_marques - buts_encaisses}"
-            }
-        }
+        "comparatif": {
+            "titre": "Comparatif de Performance (R2 Poule B)",
+            "adversaire_nom": "Croix IC 2",
+            "adversaire_rang": "1er",
+            "adversaire_pts": 10,
+            "adversaire_buts_pour": 11,
+            "adversaire_buts_contre": 3,
+            "club_nom": "FC Seclin",
+            "club_rang": "2e",
+            "club_pts": 8,
+            "club_buts_pour": buts_marques,
+            "club_buts_contre": buts_encaisses
+        },
+        "alertes": [
+            "Croix IC 2 : Leader invaincu du groupe (10 pts en 4 matchs)",
+            "Choc au sommet pour la 1ère place de Régional 2"
+        ]
     }
 
     historique_matchs = []
@@ -766,6 +794,23 @@ def export_real_pwa_feed():
         "lieu": "Stade des Navarres (Aniche)",
         "domicile": "ANICHE SC",
         "exterieur": "ES GENECH",
+        "comparatif": {
+            "titre": "Comparatif de Performance (R3 Poule D)",
+            "adversaire_nom": "Aniche SC",
+            "adversaire_rang": "9e",
+            "adversaire_pts": 3,
+            "adversaire_buts_pour": 4,
+            "adversaire_buts_contre": 7,
+            "club_nom": "ES Genech",
+            "club_rang": "4e",
+            "club_pts": 7,
+            "club_buts_pour": 6,
+            "club_buts_contre": 3
+        },
+        "alertes": [
+            "Erwan G. (Aniche) averti le 18/10, secteur axial sous pression",
+            "Défense adverse perméable : 1.75 but concédé par match en championnat"
+        ],
         "stats_comparatives": {
             "genech": {
                 "rang": 4,

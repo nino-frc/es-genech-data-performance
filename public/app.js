@@ -171,10 +171,14 @@ async function enablePushNotifications() {
 }
 
 function testStaffNotification(isWelcome = false) {
-  const title = isWelcome ? 'MatchDay - Notifications Activées 🎉' : 'MatchDay - Alerte Staff ES Genech 🚨';
+  const isSeclin = (activeClub?.code === 'seclin' || activeClub?.club_code === 'SCLN');
+  const clubNom = isSeclin ? 'FC Seclin' : 'ES Genech';
+  const title = isWelcome ? 'MatchDay - Notifications Activées 🎉' : `MatchDay - Alerte Staff ${clubNom} 🚨`;
   const body = isWelcome
     ? 'Vous recevrez les alertes de suspension FFF, briefings et debriefings en direct sur cet appareil.'
-    : 'Commission FFF : 4 joueurs sous sursis avant le déplacement à Aniche SC (Art. 226). 250 € préservés.';
+    : (isSeclin
+        ? 'Choc au sommet R2 : Déplacement chez le leader Croix IC 2. Bilan 22 buts marqués cette saison.'
+        : 'Commission FFF : 4 joueurs sous sursis avant le déplacement à Aniche SC (Art. 226). 250 € préservés.');
 
   if (!('Notification' in window) || Notification.permission !== 'granted') {
     if ('Notification' in window && Notification.permission !== 'denied') {
@@ -299,20 +303,23 @@ function openMatchDetailModal(matchIndex) {
 
   // Compositions
   const lineups = m.compositions || {};
-  const genech = lineups.genech || {};
+  const isSeclin = (activeClub?.code === 'seclin' || activeClub?.club_code === 'SCLN');
+  const clubDisplay = isSeclin ? 'FC SECLIN' : 'ES GENECH';
+  const clubBadge = isSeclin ? '🔵⚪' : '🟡🔵';
+  const clubLineup = lineups.club || (isSeclin ? (lineups.seclin || lineups.genech) : (lineups.genech || lineups.seclin)) || {};
   const opp = lineups.adversaire || {};
   const lineupContentEl = document.getElementById('detailLineupContent');
 
   let lineupHtml = `
     <div class="lineup-section-title">
-      <span>🟡🔵 ES GENECH (Titulaires)</span>
-      <span style="font-family: var(--font-mono);">${genech.titulaires ? genech.titulaires.length : 0} joueurs</span>
+      <span>${clubBadge} ${clubDisplay} (Titulaires)</span>
+      <span style="font-family: var(--font-mono);">${clubLineup.titulaires ? clubLineup.titulaires.length : 0} joueurs</span>
     </div>
     <div class="lineup-grid">
   `;
 
-  if (genech.titulaires && genech.titulaires.length > 0) {
-    genech.titulaires.forEach(p => {
+  if (clubLineup.titulaires && clubLineup.titulaires.length > 0) {
+    clubLineup.titulaires.forEach(p => {
       lineupHtml += `
         <div class="lineup-item">
           <span class="lineup-number">${p.numero || '-'}</span>
@@ -327,14 +334,14 @@ function openMatchDetailModal(matchIndex) {
   lineupHtml += `
     </div>
     <div class="lineup-section-title" style="margin-top: 14px;">
-      <span>🟡🔵 ES GENECH (Remplaçants)</span>
-      <span style="font-family: var(--font-mono);">${genech.remplacants ? genech.remplacants.length : 0} joueurs</span>
+      <span>${clubBadge} ${clubDisplay} (Remplaçants)</span>
+      <span style="font-family: var(--font-mono);">${clubLineup.remplacants ? clubLineup.remplacants.length : 0} joueurs</span>
     </div>
     <div class="lineup-grid">
   `;
 
-  if (genech.remplacants && genech.remplacants.length > 0) {
-    genech.remplacants.forEach(p => {
+  if (clubLineup.remplacants && clubLineup.remplacants.length > 0) {
+    clubLineup.remplacants.forEach(p => {
       lineupHtml += `
         <div class="lineup-item">
           <span class="lineup-number">${p.numero || '-'}</span>
@@ -868,12 +875,14 @@ function openDeviceModal() {
   const modal = document.getElementById('deviceManagerModal');
   if (!modal) return;
 
-  document.getElementById('deviceModalClubTag').textContent = activeClub.is_master ? "SUPER ADMIN" : activeClub.nom.toUpperCase();
+  const isMaster = Boolean(activeClub && (activeClub.is_master || activeClub.plan === 'SUPER_ADMIN'));
+
+  document.getElementById('deviceModalClubTag').textContent = isMaster ? "SUPER ADMIN" : activeClub.nom.toUpperCase();
   document.getElementById('deviceModalKeyDisplay').textContent = activeClub.license_key;
   document.getElementById('deviceModalStatusBadge').textContent = activeClub.statut;
 
   const myCodeEl = document.getElementById('mySupportCodeDisplay');
-  if (myCodeEl) myCodeEl.textContent = currentSupportCode || "#GN-01";
+  if (myCodeEl) myCodeEl.textContent = currentSupportCode || (isMaster ? "#ADM-01" : "#GN-01");
 
   const devices = Array.isArray(activeClub.devices) ? activeClub.devices : [];
   const activeCount = devices.filter(d => d.statut === 'Actif').length;
@@ -898,7 +907,9 @@ function openDeviceModal() {
               <div class="device-alias-title">
                 <span>${roleName}</span>
                 ${isCurrent ? '<span style="font-size: 10px; color: #16a34a; font-weight: 700;">(Votre session)</span>' : ''}
-                <button type="button" class="btn-edit-alias" onclick="renameDevicePrompt('${dev.device_id}', '${roleName.replace(/'/g, "\\'")}')" title="Modifier le titre / rôle">✏️</button>
+                ${(isCurrent || isMaster) ? `
+                  <button type="button" class="btn-edit-alias" onclick="renameDevicePrompt('${dev.device_id}', '${roleName.replace(/'/g, "\\'")}')" title="Modifier le titre / rôle">✏️</button>
+                ` : ''}
               </div>
               <div class="device-dates-meta" style="margin-top: 2px;">
                 Code Support : <strong>${supportCode}</strong> • Connecté le: ${dev.premiere_connexion || '--'}
@@ -910,7 +921,7 @@ function openDeviceModal() {
           </div>
           <div class="device-right-actions">
             <span class="device-status-badge ${isRevoked ? 'revoked' : 'active'}">${dev.statut}</span>
-            ${!isRevoked ? `
+            ${(!isRevoked && isMaster) ? `
               <button type="button" class="btn-revoke-device" onclick="revokeDeviceAction('${dev.device_id}')">
                 Révoquer
               </button>
@@ -919,6 +930,15 @@ function openDeviceModal() {
         </div>
       `;
     });
+
+    if (!isMaster) {
+      html += `
+        <div style="font-size: 11px; color: var(--text-muted); margin-top: 10px; text-align: center; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 6px; padding: 8px;">
+          🔒 <strong>Mode Consultation :</strong> La révocation des accès est sous le contrôle exclusif de la Direction & Licence Master Nino.
+        </div>
+      `;
+    }
+
     listContainer.innerHTML = html;
   }
 
@@ -935,6 +955,13 @@ function handleDeviceModalOverlay(e) {
 }
 
 function renameDevicePrompt(deviceId, currentAlias) {
+  const isMaster = Boolean(activeClub && (activeClub.is_master || activeClub.plan === 'SUPER_ADMIN'));
+  const isSelf = deviceId === currentDeviceId;
+  if (!isSelf && !isMaster) {
+    alert("Vous ne pouvez renommer que votre propre appareil de session.");
+    return;
+  }
+
   const newAlias = prompt("Saisissez le rôle / nom du titulaire de cet accès (ex: Coach Principal, Adjoint, Préparateur...) :", currentAlias);
   if (!newAlias || !newAlias.trim()) return;
 
@@ -959,6 +986,12 @@ function renameDevicePrompt(deviceId, currentAlias) {
 }
 
 function revokeDeviceAction(deviceId) {
+  const isMaster = Boolean(activeClub && (activeClub.is_master || activeClub.plan === 'SUPER_ADMIN'));
+  if (!isMaster) {
+    alert("Action réservée à la Direction Technique & Licence Master Nino. Les accès club standards sont en mode consultation.");
+    return;
+  }
+
   const isSelf = deviceId === currentDeviceId;
   const msg = isSelf 
     ? "⚠️ Attention : vous allez révoquer votre propre accès actuel. Vous serez immédiatement déconnecté. Confirmer ?"
@@ -1271,7 +1304,52 @@ function renderInterface(data) {
     document.getElementById('refereeAdvice').textContent = ref.consigne_coach;
   }
 
-  // E bis. Historique Exhaustif des Matchs Passés (Saison 2026-2027)
+  // E bis. Scouting Comparatif Dynamique & Alertes Adversaire
+  const compSectionEl = document.getElementById('scoutingComparativeSection');
+  if (compSectionEl) {
+    const comp = next.comparatif;
+    if (comp) {
+      compSectionEl.innerHTML = `
+        <div style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: var(--text-muted); margin-bottom: 6px;">
+          ${comp.titre || 'Comparatif de Performance'}
+        </div>
+        <div class="scouting-stat-bar">
+          <span>Classement</span>
+          <strong><span style="color: #b45309;">${comp.adversaire_nom} (${comp.adversaire_rang})</span> vs <span style="color: var(--color-green);">${comp.club_nom} (${comp.club_rang})</span></strong>
+        </div>
+        <div class="scouting-stat-bar">
+          <span>Points au Compteur</span>
+          <strong>${comp.adversaire_pts} pts vs ${comp.club_pts} pts</strong>
+        </div>
+        <div class="scouting-stat-bar">
+          <span>Attaque (Buts marqués)</span>
+          <strong>${comp.adversaire_buts_pour} buts vs ${comp.club_buts_pour} buts</strong>
+        </div>
+        <div class="scouting-stat-bar">
+          <span>Défense (Buts encaissés)</span>
+          <strong>${comp.adversaire_buts_contre} encaissés vs ${comp.club_buts_contre} encaissés</strong>
+        </div>
+      `;
+      compSectionEl.style.display = 'block';
+    } else {
+      compSectionEl.innerHTML = '';
+      compSectionEl.style.display = 'none';
+    }
+  }
+
+  const alertsListEl = document.getElementById('opponentAlertsList');
+  const alertsSectionEl = document.getElementById('scoutingAlertsSection');
+  const scoutAlerts = next.alertes || next.adversaire_alertes || [];
+  if (alertsListEl) {
+    if (scoutAlerts.length > 0) {
+      alertsListEl.innerHTML = scoutAlerts.map(a => `<li>${a}</li>`).join('');
+      if (alertsSectionEl) alertsSectionEl.style.display = 'block';
+    } else {
+      if (alertsSectionEl) alertsSectionEl.style.display = 'none';
+    }
+  }
+
+  // E ter. Historique Exhaustif des Matchs Passés (Saison 2026-2027)
   const historyContainer = document.getElementById('matchHistoryListContainer');
   const historyList = data.historique_matchs || [];
 
@@ -1585,9 +1663,24 @@ function renderInterface(data) {
       matrixContainer.innerHTML = matrixHtml;
       matrixContainer.classList.remove('skeleton');
     }
+
+    const matrixClubNameEl = document.getElementById('matrixLegendClubName');
+    if (matrixClubNameEl) {
+      const isSeclin = (activeClub?.code === 'seclin' || activeClub?.club_code === 'SCLN');
+      matrixClubNameEl.textContent = `Buts Marqués (${isSeclin ? 'FC Seclin' : 'ES Genech'})`;
+    }
   }
 
-  // I. Classement Poule D
+  // I. Classement Officiel & Isolation Club
+  const isSeclinClub = (activeClub?.code === 'seclin' || activeClub?.club_code === 'SCLN');
+  const standingsCardTitleEl = document.getElementById('standingsCardTitle');
+  if (standingsCardTitleEl) {
+    const currentTeam = (window.MATCHDAY_TEAMS && window.MATCHDAY_TEAMS[currentTeamId]) || {};
+    standingsCardTitleEl.textContent = isSeclinClub 
+      ? "Régional 2 • Poule B" 
+      : (currentTeam.categorie ? `${currentTeam.categorie} • ${currentTeam.poule || 'Poule D'}` : "Seniors R3 • Poule D");
+  }
+
   const standingsContainer = document.getElementById('standingsTableContainer');
   const standings = data.classement || [];
   if (standingsContainer) {
@@ -1605,9 +1698,11 @@ function renderInterface(data) {
           <tbody>
       `;
       standings.forEach(st => {
-        const isGenech = st.equipe.includes('GENECH');
+        const isClub = isSeclinClub 
+          ? st.equipe.toUpperCase().includes('SECLIN') 
+          : st.equipe.toUpperCase().includes('GENECH');
         tableHtml += `
-          <tr class="${isGenech ? 'highlight-team' : ''}">
+          <tr class="${isClub ? 'highlight-team' : ''}">
             <td>${st.rang}</td>
             <td>${st.equipe}</td>
             <td style="text-align: right; font-weight: 700;">${st.points}</td>
@@ -1629,6 +1724,78 @@ function renderInterface(data) {
         </div>
       `;
       standingsContainer.classList.remove('skeleton');
+    }
+  }
+
+  // J. Feed de Notifications Dynamique (Isolation 100% selon le club connecté)
+  const notifFeedEl = document.getElementById('notifFeedList');
+  if (notifFeedEl) {
+    if (isSeclinClub) {
+      notifFeedEl.innerHTML = `
+        <div class="notif-item alert-urgent">
+          <div class="notif-item-header">
+            <span class="notif-item-tag tag-primary">CHAMPIONNAT R2</span>
+            <span class="notif-item-time">Aujourd'hui 10:00</span>
+          </div>
+          <div class="notif-item-title">Choc au sommet : J-4 vs Croix IC 2</div>
+          <div class="notif-item-body">
+            Déplacement chez le leader invaincu de Régional 2 Poule B. Rapport tactique & scouting adverse consultable.
+          </div>
+        </div>
+        <div class="notif-item alert-success">
+          <div class="notif-item-header">
+            <span class="notif-item-tag tag-success">COUPE DES HAUTS-DE-FRANCE</span>
+            <span class="notif-item-time">25/10 18:00</span>
+          </div>
+          <div class="notif-item-title">Arques 2-2 Seclin (TAB 4-5) : Qualification validée !</div>
+          <div class="notif-item-body">
+            Qualification héroïque aux tirs au but après un match nul 2-2. Bilan consolidé à 22 buts marqués cette saison.
+          </div>
+        </div>
+        <div class="notif-item alert-info">
+          <div class="notif-item-header">
+            <span class="notif-item-tag tag-danger">VEILLE TECHNIQUE</span>
+            <span class="notif-item-time">20/10 14:00</span>
+          </div>
+          <div class="notif-item-title">Suivi Régional 2 Poule B FFF</div>
+          <div class="notif-item-body">
+            Plateforme configurée pour l'équipe fanion Senior A du FC Seclin. Consultation exclusive staff technique.
+          </div>
+        </div>
+      `;
+    } else {
+      notifFeedEl.innerHTML = `
+        <div class="notif-item alert-urgent">
+          <div class="notif-item-header">
+            <span class="notif-item-tag tag-danger">DISCIPLINE FFF</span>
+            <span class="notif-item-time">Aujourd'hui 09:30</span>
+          </div>
+          <div class="notif-item-title">4 joueurs sous sursis (Art. 226 FFF)</div>
+          <div class="notif-item-body">
+            Mathis L., Antoine B., Julien D. et Paul B. sont à un carton jaune de la suspension automatique. Risque financier évité de 250 €.
+          </div>
+        </div>
+        <div class="notif-item alert-info">
+          <div class="notif-item-header">
+            <span class="notif-item-tag tag-primary">SCOUTING & CRA</span>
+            <span class="notif-item-time">Hier 18:00</span>
+          </div>
+          <div class="notif-item-title">J-4 : Rapport Aniche SC disponible</div>
+          <div class="notif-item-body">
+            Consultez les forces adverses et les points vulnérables. Désignation de l'arbitre CRA attendue.
+          </div>
+        </div>
+        <div class="notif-item alert-success">
+          <div class="notif-item-header">
+            <span class="notif-item-tag tag-success">DÉBRIEFING MATCH</span>
+            <span class="notif-item-time">26/10 11:15</span>
+          </div>
+          <div class="notif-item-title">Tatinghem 0-1 Genech : 5ème Clean Sheet</div>
+          <div class="notif-item-body">
+            Victoire validée. Solidité défensive confirmée (0.44 but concédé/match). Cadence PPM consolidée à 1.75.
+          </div>
+        </div>
+      `;
     }
   }
 }
