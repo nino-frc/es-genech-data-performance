@@ -1,21 +1,29 @@
 """
-Script de migration et structuration des collections MongoDB Atlas pour MatchDay.
-Génère les 3 collections :
-- 'licencies' : Joueurs & membres avec anonymisation 'Prénom N.'
-- 'equipes'   : Hiérarchie des équipes par club
-- 'sanctions' : Cartons et sanctions qualifiés avec exclusion stricte U18/Banc
+Script de Synchronisation et Protection MongoDB Atlas - MatchDay Analytics
+Architecture Résiliente (Fail-Safe & Upsert Intelligent) :
+- Élimination des drop() destructifs
+- Contrôle de cohérence : Ne synchronise JAMAIS si le scraping a produit des données vides/anormales
+- Mode Upsert sélectif : Les champs 'None' ou 'Donnée FFF indisponible' n'écrasent JAMAIS les données saines précédentes
 """
 
 import os
 import json
 import sqlite3
 import hashlib
-from datetime import datetime
+import logging
+from datetime import datetime, timezone
 from dotenv import load_dotenv
 
 load_dotenv()
 
 from data_cleaner import anonymize_player_name, is_first_team_eligible
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='[%(asctime)s] [%(levelname)s] %(message)s',
+    datefmt='%H:%M:%S'
+)
+logger = logging.getLogger("AtlasSyncProtection")
 
 BASE_DIR = os.path.dirname(__file__)
 GENECH_DB = os.path.join(BASE_DIR, "genech_performance.db")
@@ -29,17 +37,40 @@ def generate_hash_id(value: str) -> str:
     """Génère un identifiant unique déterministe."""
     return hashlib.md5(value.encode('utf-8')).hexdigest()[:24]
 
-def run_migration():
-    print("=" * 60)
-    print("MATCHDAY - Migration vers schéma MongoDB 3 Collections")
-    print("=" * 60)
+def clean_doc_for_upsert(doc: dict) -> dict:
+    """
+    Filtre les champs 'None' ou 'Donnée FFF indisponible' pour le $set MongoDB.
+    Garantit qu'une indisponibilité temporaire n'écrase pas une donnée saine déjà en base.
+    """
+    cleaned = {}
+    for k, v in doc.items():
+        if k == "_id":
+            continue
+        if v is None or v == "Donnée FFF indisponible":
+            continue
+        if isinstance(v, dict):
+            sub_cleaned = clean_doc_for_upsert(v)
+            if sub_cleaned:
+                cleaned[k] = sub_cleaned
+        else:
+            cleaned[k] = v
+    return cleaned
+
+def sync_to_mongodb():
+    logger.info("=" * 60)
+    logger.info("MATCHDAY - Synchronisation & Protection MongoDB Atlas")
+    logger.info("=" * 60)
+
+    if not os.path.exists(GENECH_DB):
+        logger.error(f"Base locale SQLite introuvable : {GENECH_DB}. Synchronisation annulée.")
+        return False
 
     conn = sqlite3.connect(GENECH_DB)
     conn.row_factory = sqlite3.Row
     cur = conn.cursor()
 
     # -------------------------------------------------------------
-    # 1. COLLECTION 'equipes'
+    # 1. ÉQUIPES DU CLUB
     # -------------------------------------------------------------
     equipes = [
         {
@@ -55,7 +86,8 @@ def run_migration():
                 "poule": "Poule D",
                 "saison": "2026-2027"
             },
-            "actif": True
+            "actif": True,
+            "derniere_synchro": datetime.now(timezone.utc).isoformat()
         },
         {
             "_id": "525674_SENIOR_M2",
@@ -70,7 +102,8 @@ def run_migration():
                 "poule": "Poule B",
                 "saison": "2026-2027"
             },
-            "actif": True
+            "actif": True,
+            "derniere_synchro": datetime.now(timezone.utc).isoformat()
         },
         {
             "_id": "525674_U18_M1",
@@ -85,12 +118,13 @@ def run_migration():
                 "poule": "Poule Unique",
                 "saison": "2026-2027"
             },
-            "actif": True
+            "actif": True,
+            "derniere_synchro": datetime.now(timezone.utc).isoformat()
         }
     ]
 
     # -------------------------------------------------------------
-    # 2. COLLECTION 'licencies' (Depuis lineups et events avec anonymisation)
+    # 2. LICENCIÉS ANONYMISÉS
     # -------------------------------------------------------------
     cur.execute("SELECT DISTINCT joueur_nom, equipe, role FROM match_lineups;")
     raw_lineups = cur.fetchall()
@@ -103,8 +137,8 @@ def run_migration():
 
         anon_name = anonymize_player_name(raw_name)
         licencie_id = generate_hash_id(f"525674_{anon_name}")
-
         role = row["role"] or "JOUEUR"
+
         if licencie_id not in licencies_map:
             parts = anon_name.split(' ')
             prenom = parts[0]
@@ -120,15 +154,16 @@ def run_migration():
                     "anonymise": True
                 },
                 "statut": "ACTIF",
-                "role_principal": "JOUEUR" if "TITULAIRE" in role or "REMPLACANT" in role else "STAFF",
+                "role_principal": "JOUEUR" if ("TITULAIRE" in role or "REMPLACANT" in role) else "STAFF",
                 "categorie_age": "SENIOR",
-                "equipes_autorisees": ["SENIOR_M1"]
+                "equipes_autorisees": ["SENIOR_M1"],
+                "derniere_synchro": datetime.now(timezone.utc).isoformat()
             }
 
     licencies = list(licencies_map.values())
 
     # -------------------------------------------------------------
-    # 3. COLLECTION 'sanctions' (Avec filtrage strict U18 et banc)
+    # 3. SANCTIONS QUALIFIÉES (AVEC EXCLUSION STRICTE U18 / STAFF)
     # -------------------------------------------------------------
     query_events = """
     SELECT me.id, me.match_id, me.minute, me.type_event, me.acteur_principal, me.detail,
@@ -159,8 +194,6 @@ def run_migration():
         }
 
         is_eligible, raison = is_first_team_eligible(event_data)
-
-        # Déterminer si le match est un match U18
         is_u18 = "U18" in str(s["comp_nom"]).upper() or "GAMBARDELLA" in str(s["comp_nom"]).upper()
         equipe_id = "525674_U18_M1" if is_u18 else "525674_SENIOR_M1"
 
@@ -185,7 +218,8 @@ def run_migration():
             },
             "cycle_discipline": {
                 "statut": "ACTIF" if (is_eligible and not is_u18) else "EXCLU_CALCUL_FANION"
-            }
+            },
+            "derniere_synchro": datetime.now(timezone.utc).isoformat()
         }
 
         if is_eligible and not is_u18:
@@ -195,60 +229,83 @@ def run_migration():
 
     conn.close()
 
-    # Sauvegarde locale JSON
-    with open(os.path.join(EXPORT_DIR, "equipes.json"), "w", encoding="utf-8") as f:
-        json.dump(equipes, f, ensure_ascii=False, indent=2)
+    # -------------------------------------------------------------
+    # 4. GARDE-FOUS DE SÉCURITÉ (FAIL-SAFE CHECK)
+    # -------------------------------------------------------------
+    # Si le scraping a échoué (ex: 0 licenciés trouvés), on INTERDIT la mise à jour
+    if len(licencies) < 15:
+        logger.warning(
+            f"[ALERTE PROTECTION] Volume anormalement faible ({len(licencies)} licenciés extraits). "
+            f"Possible maintenance FFF ou erreur de scraping. SYNCHRONISATION ANNULÉE POUR PRÉSERVER ATLAS."
+        )
+        return False
 
-    with open(os.path.join(EXPORT_DIR, "licencies.json"), "w", encoding="utf-8") as f:
-        json.dump(licencies, f, ensure_ascii=False, indent=2)
+    # Sauvegarde locale JSON d'archive
+    try:
+        with open(os.path.join(EXPORT_DIR, "equipes.json"), "w", encoding="utf-8") as f:
+            json.dump(equipes, f, ensure_ascii=False, indent=2)
+        with open(os.path.join(EXPORT_DIR, "licencies.json"), "w", encoding="utf-8") as f:
+            json.dump(licencies, f, ensure_ascii=False, indent=2)
+        with open(os.path.join(EXPORT_DIR, "sanctions.json"), "w", encoding="utf-8") as f:
+            json.dump(sanctions, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        logger.warning(f"Erreur sauvegarde JSON locale : {e}")
 
-    with open(os.path.join(EXPORT_DIR, "sanctions.json"), "w", encoding="utf-8") as f:
-        json.dump(sanctions, f, ensure_ascii=False, indent=2)
+    logger.info(f"Vérification des volumes de données :")
+    logger.info(f" - Équipes configurées     : {len(equipes)}")
+    logger.info(f" - Licenciés anonymisés    : {len(licencies)}")
+    logger.info(f" - Sanctions fanion actives: {len(sanctions)}")
 
-    with open(os.path.join(EXPORT_DIR, "sanctions_exclues.json"), "w", encoding="utf-8") as f:
-        json.dump(sanctions_exclues, f, ensure_ascii=False, indent=2)
+    # -------------------------------------------------------------
+    # 5. SYNCHRONISATION ATLAS NON-DESTRUCTIVE (UPSERT UNIQUEMENT)
+    # -------------------------------------------------------------
+    if not MONGODB_URI or "mongodb" not in MONGODB_URI:
+        logger.info("[INFO] MONGODB_URI absent. Export JSON local terminé sans écriture distante.")
+        return True
 
-    print(f"Extraction terminée avec succès !")
-    print(f" - Equipes enregistrées : {len(equipes)}")
-    print(f" - Licenciés anonymisés ('Prénom N.') : {len(licencies)}")
-    print(f" - Sanctions fanion qualifiées actives : {len(sanctions)}")
-    print(f" - Sanctions exclues (U18 / Banc / Staff) : {len(sanctions_exclues)}")
+    logger.info("Connexion à MongoDB Atlas pour synchronisation sécurisée (Upsert)...")
+    try:
+        from pymongo import MongoClient, UpdateOne
+        client = MongoClient(MONGODB_URI, serverSelectionTimeoutMS=5000)
+        db = client[DB_NAME]
 
-    # Envoi vers MongoDB Atlas si URI présent
-    if MONGODB_URI and "mongodb" in MONGODB_URI:
-        print("\nConnexion à MongoDB Atlas...")
-        try:
-            from pymongo import MongoClient
-            client = MongoClient(MONGODB_URI)
-            db = client[DB_NAME]
-            
-            # Équipes
-            db.equipes.drop()
-            if equipes:
-                db.equipes.insert_many(equipes)
-            
-            # Licenciés
-            db.licencies.drop()
-            if licencies:
-                db.licencies.insert_many(licencies)
+        # A. Équipes : Upsert
+        equipes_ops = [
+            UpdateOne({"_id": eq["_id"]}, {"$set": clean_doc_for_upsert(eq)}, upsert=True)
+            for eq in equipes
+        ]
+        if equipes_ops:
+            db.equipes.bulk_write(equipes_ops, ordered=False)
+
+        # B. Licenciés : Upsert (Préserve les fiches si un joueur n'apparaît pas ce week-end)
+        licencies_ops = [
+            UpdateOne({"_id": lic["_id"]}, {"$set": clean_doc_for_upsert(lic)}, upsert=True)
+            for lic in licencies
+        ]
+        if licencies_ops:
+            db.licencies.bulk_write(licencies_ops, ordered=False)
             db.licencies.create_index([("club_id", 1), ("identite.nom_affiche", 1)])
-            
-            # Sanctions
-            db.sanctions.drop()
-            all_sanctions = sanctions + sanctions_exclues
-            if all_sanctions:
-                db.sanctions.insert_many(all_sanctions)
+
+        # C. Sanctions : Upsert (Ne supprime JAMAIS l'historique des sanctions précédentes)
+        all_sanctions = sanctions + sanctions_exclues
+        sanctions_ops = [
+            UpdateOne({"_id": s["_id"]}, {"$set": clean_doc_for_upsert(s)}, upsert=True)
+            for s in all_sanctions
+        ]
+        if sanctions_ops:
+            db.sanctions.bulk_write(sanctions_ops, ordered=False)
             db.sanctions.create_index([
-                ("equipe_id", 1), 
+                ("equipe_id", 1),
                 ("qualification_reglementaire.est_applicable_equipe_fanion", 1),
                 ("cycle_discipline.statut", 1)
             ])
-            print("Migration vers MongoDB Atlas complétée avec succès !")
-        except Exception as e:
-            print(f"Erreur lors de la connexion MongoDB Atlas : {e}")
-    else:
-        print("\nNote: Variable MONGODB_URI non détectée dans .env.")
-        print(f"Les 3 collections ont été exportées au format JSON dans : {EXPORT_DIR}")
+
+        logger.info(">>> [SUCCÈS] Base MongoDB Atlas synchronisée sans écrasement destructif !")
+        return True
+
+    except Exception as e:
+        logger.error(f"[ERREUR ATLAS] Échec de synchronisation MongoDB Atlas : {e}")
+        return False
 
 if __name__ == "__main__":
-    run_migration()
+    sync_to_mongodb()
