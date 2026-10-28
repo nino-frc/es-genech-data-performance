@@ -4,7 +4,7 @@
     "nom": "ES Genech",
     "categorie": "Seniors Régional 3",
     "poule": "Poule D",
-    "derniere_maj": "28/10/2026 à 09:50"
+    "derniere_maj": "28/10/2026 à 10:46"
   },
   "dernier_match": {
     "id": "cdf_t6_tatinghem_genech",
@@ -151,6 +151,2492 @@
     "style": "Standard R3 Hauts-de-France",
     "consigne_coach": "L'arbitre sera désigné par la CRA le mercredi 04/11. En R3, la moyenne régionale est de 3.4 cartons/match. Consigne : zéro contestation dès la 1ère minute."
   },
+  "historique_matchs": [
+    {
+      "id": "cdf_t6_tatinghem_genech",
+      "competition": "Coupe de France • Tour 6 (Finale Régionale)",
+      "comp_type": "CDF",
+      "date": "25/10/2026",
+      "date_heure": "2026-10-25 15:00",
+      "domicile": "ST MARTIN TATINGHEM",
+      "exterieur": "GENECH ES",
+      "score_domicile": 2,
+      "score_exterieur": 0,
+      "score_display": "2 - 0",
+      "is_domicile": false,
+      "resultat": "D",
+      "resultat_label": "Défaite",
+      "evenements": [
+        {
+          "minute": 43,
+          "type": "AVERTISSEMENT",
+          "equipe": "ST MARTIN TATINGHEM",
+          "acteur": "Ethan T.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 44,
+          "type": "BUT",
+          "equipe": "ST MARTIN TATINGHEM",
+          "acteur": "Anthone S.",
+          "acteur_secondaire": "",
+          "detail": "But officiel FFF (1-0)"
+        },
+        {
+          "minute": 46,
+          "type": "REMPLACEMENT",
+          "equipe": "ST MARTIN TATINGHEM",
+          "acteur": "Steven C.",
+          "acteur_secondaire": "Kevin S.",
+          "detail": "Remplacement"
+        },
+        {
+          "minute": 48,
+          "type": "REMPLACEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Thomas L.",
+          "acteur_secondaire": "Julien N.",
+          "detail": "Remplacement"
+        },
+        {
+          "minute": 58,
+          "type": "REMPLACEMENT",
+          "equipe": "ST MARTIN TATINGHEM",
+          "acteur": "Ake S.",
+          "acteur_secondaire": "Steven C.",
+          "detail": "Remplacement"
+        },
+        {
+          "minute": 62,
+          "type": "REMPLACEMENT",
+          "equipe": "ST MARTIN TATINGHEM",
+          "acteur": "Florian D.",
+          "acteur_secondaire": "Ethan T.",
+          "detail": "Remplacement"
+        },
+        {
+          "minute": 62,
+          "type": "REMPLACEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Dany D.",
+          "acteur_secondaire": "Giovany C.",
+          "detail": "Remplacement"
+        },
+        {
+          "minute": 62,
+          "type": "REMPLACEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Jules D.",
+          "acteur_secondaire": "Hugo H.",
+          "detail": "Remplacement"
+        },
+        {
+          "minute": 69,
+          "type": "REMPLACEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Elio D.",
+          "acteur_secondaire": "Thomas L.",
+          "detail": "Remplacement"
+        },
+        {
+          "minute": 73,
+          "type": "REMPLACEMENT",
+          "equipe": "ST MARTIN TATINGHEM",
+          "acteur": "Adama N.",
+          "acteur_secondaire": "Anthone S.",
+          "detail": "Remplacement"
+        },
+        {
+          "minute": 83,
+          "type": "BUT",
+          "equipe": "ST MARTIN TATINGHEM",
+          "acteur": "Aaron H.",
+          "acteur_secondaire": "",
+          "detail": "But officiel FFF (2-0)"
+        },
+        {
+          "minute": 90,
+          "type": "AVERTISSEMENT",
+          "equipe": "ST MARTIN TATINGHEM",
+          "acteur": "Florian D.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        }
+      ],
+      "compositions": {
+        "genech": {
+          "titulaires": [
+            {
+              "numero": 1,
+              "nom": "Tim L.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 2,
+              "nom": "Julien D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 3,
+              "nom": "Clement D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 4,
+              "nom": "Maxime P.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 5,
+              "nom": "Remi D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 6,
+              "nom": "Hugo H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 7,
+              "nom": "Jean-Paul B.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 8,
+              "nom": "Mathys H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 9,
+              "nom": "Julien N.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 10,
+              "nom": "Giovany C.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 11,
+              "nom": "Augustin D.",
+              "role": "TITULAIRE"
+            }
+          ],
+          "remplacants": [
+            {
+              "numero": 12,
+              "nom": "Dany D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 13,
+              "nom": "Elio D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 14,
+              "nom": "Jules D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 15,
+              "nom": "Thomas L.",
+              "role": "REMPLACANT"
+            }
+          ]
+        },
+        "adversaire": {
+          "equipe": "ST MARTIN TATINGHEM",
+          "titulaires": [],
+          "remplacants": []
+        }
+      }
+    },
+    {
+      "id": "r3_j4_genech_anstaing",
+      "competition": "Régional 3 • Journée 4",
+      "comp_type": "R3",
+      "date": "18/10/2026",
+      "date_heure": "2026-10-18 15:00",
+      "domicile": "GENECH ES",
+      "exterieur": "ANSTAING CHERENG EC",
+      "score_domicile": 1,
+      "score_exterieur": 1,
+      "score_display": "1 - 1",
+      "is_domicile": true,
+      "resultat": "N",
+      "resultat_label": "Match Nul",
+      "evenements": [
+        {
+          "minute": 45,
+          "type": "BUT",
+          "equipe": "ANSTAING CHERENG EC",
+          "acteur": "Yann B.",
+          "acteur_secondaire": "",
+          "detail": "But pour ANSTAING CHERENG EC"
+        },
+        {
+          "minute": 52,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Gaspard D.",
+          "acteur_secondaire": "Jean-Paul B.",
+          "detail": "GASPARD D. remplace JEAN PAUL B."
+        },
+        {
+          "minute": 52,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Julien N.",
+          "acteur_secondaire": "Thomas L.",
+          "detail": "JULIEN N. remplace THOMAS L."
+        },
+        {
+          "minute": 52,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Giovany C.",
+          "acteur_secondaire": "Dany D.",
+          "detail": "GIOVANY C. remplace DANY D."
+        },
+        {
+          "minute": 61,
+          "type": "AVERTISSEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Giovany C.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 63,
+          "type": "CHANGEMENT",
+          "equipe": "ANSTAING CHERENG EC",
+          "acteur": "Elyaz C.",
+          "acteur_secondaire": "Yann B.",
+          "detail": "ELYAZ C. remplace YANN B."
+        },
+        {
+          "minute": 72,
+          "type": "CHANGEMENT",
+          "equipe": "ANSTAING CHERENG EC",
+          "acteur": "Julien S.",
+          "acteur_secondaire": "Noa B.",
+          "detail": "JULIEN S. remplace NOA B."
+        },
+        {
+          "minute": 74,
+          "type": "AVERTISSEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Maxime P.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 79,
+          "type": "AVERTISSEMENT",
+          "equipe": "ANSTAING CHERENG EC",
+          "acteur": "Erwan G.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 79,
+          "type": "AVERTISSEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Julien D.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 79,
+          "type": "AVERTISSEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Mathys H.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 80,
+          "type": "CHANGEMENT",
+          "equipe": "ANSTAING CHERENG EC",
+          "acteur": "Quentin V.",
+          "acteur_secondaire": "Bastien P.",
+          "detail": "QUENTIN V. remplace BASTIEN P."
+        },
+        {
+          "minute": 90,
+          "type": "BUT",
+          "equipe": "GENECH ES",
+          "acteur": "Hugo H.",
+          "acteur_secondaire": "",
+          "detail": "But pour GENECH ES"
+        },
+        {
+          "minute": 90,
+          "type": "AVERTISSEMENT",
+          "equipe": "ANSTAING CHERENG EC",
+          "acteur": "Mohamed S.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 90,
+          "type": "AVERTISSEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Gaspard D.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune (3e en 3 mois)"
+        }
+      ],
+      "compositions": {
+        "genech": {
+          "titulaires": [
+            {
+              "numero": 1,
+              "nom": "Tim L.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 2,
+              "nom": "Julien D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 3,
+              "nom": "Clement D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 4,
+              "nom": "Maxime P.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 5,
+              "nom": "Remi D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 6,
+              "nom": "Hugo H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 7,
+              "nom": "Jean-Paul B.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 8,
+              "nom": "Mathys H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 9,
+              "nom": "Thomas L.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 10,
+              "nom": "Dany D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 11,
+              "nom": "Augustin D.",
+              "role": "TITULAIRE"
+            }
+          ],
+          "remplacants": [
+            {
+              "numero": 12,
+              "nom": "Giovany C.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 13,
+              "nom": "Gaspard D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 14,
+              "nom": "Julien N.",
+              "role": "REMPLACANT"
+            }
+          ]
+        },
+        "adversaire": {
+          "equipe": "ANSTAING CHERENG EC",
+          "titulaires": [
+            {
+              "numero": 1,
+              "nom": "Romain V.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 2,
+              "nom": "Nael B.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 3,
+              "nom": "Sasha B.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 4,
+              "nom": "Mael W.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 5,
+              "nom": "Patrik M.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 6,
+              "nom": "Erwan G.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 7,
+              "nom": "Noa B.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 8,
+              "nom": "Mohamed S.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 9,
+              "nom": "Bastien P.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 10,
+              "nom": "Yann B.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 11,
+              "nom": "Robin D.",
+              "role": "TITULAIRE"
+            }
+          ],
+          "remplacants": [
+            {
+              "numero": 12,
+              "nom": "Elyaz C.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 13,
+              "nom": "Julien S.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 14,
+              "nom": "Quentin V.",
+              "role": "REMPLACANT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cdf_t5_genech_chantilly",
+      "competition": "Coupe de France • Tour 5",
+      "comp_type": "CDF",
+      "date": "11/10/2026",
+      "date_heure": "2026-10-11 15:00",
+      "domicile": "GENECH ES",
+      "exterieur": "CHANTILLY US",
+      "score_domicile": 1,
+      "score_exterieur": 0,
+      "score_display": "1 - 0",
+      "is_domicile": true,
+      "resultat": "V",
+      "resultat_label": "Victoire",
+      "evenements": [
+        {
+          "minute": 7,
+          "type": "AVERTISSEMENT",
+          "equipe": "CHANTILLY US",
+          "acteur": "Oumar C.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 30,
+          "type": "CHANGEMENT",
+          "equipe": "CHANTILLY US",
+          "acteur": "Matias F.",
+          "acteur_secondaire": "Adrien P.",
+          "detail": "MATIAS FERREIRA remplace ADRIEN PAGERIE"
+        },
+        {
+          "minute": 46,
+          "type": "CHANGEMENT",
+          "equipe": "CHANTILLY US",
+          "acteur": "Dylan D.",
+          "acteur_secondaire": "Oumar C.",
+          "detail": "DYLAN DUQUESNES remplace OUMAR CAMARA"
+        },
+        {
+          "minute": 50,
+          "type": "AVERTISSEMENT",
+          "equipe": "CHANTILLY US",
+          "acteur": "Souleymane C.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 55,
+          "type": "CHANGEMENT",
+          "equipe": "CHANTILLY US",
+          "acteur": "Corentin L.",
+          "acteur_secondaire": "Noe M.",
+          "detail": "CORENTIN LEMAIRE remplace NOE MASEVO MUANDA"
+        },
+        {
+          "minute": 61,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Jean-Paul B.",
+          "acteur_secondaire": "Gaspard D.",
+          "detail": "JEAN PAUL BANGALA TOFIFI remplace GASPARD DROUPSY"
+        },
+        {
+          "minute": 61,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Dany D.",
+          "acteur_secondaire": "Giovany C.",
+          "detail": "DANY DE FREITAS remplace GIOVANY CALON"
+        },
+        {
+          "minute": 70,
+          "type": "AVERTISSEMENT",
+          "equipe": "CHANTILLY US",
+          "acteur": "Oumar N.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 70,
+          "type": "CHANGEMENT",
+          "equipe": "CHANTILLY US",
+          "acteur": "Ilyess E.",
+          "acteur_secondaire": "Sayyidoul M.",
+          "detail": "ILYESS EL HADDAD remplace SAYYIDOUL MOUHAMED SADJO"
+        },
+        {
+          "minute": 77,
+          "type": "BUT",
+          "equipe": "GENECH ES",
+          "acteur": "Julien N.",
+          "acteur_secondaire": "",
+          "detail": "But pour GENECH ES"
+        },
+        {
+          "minute": 79,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Jules D.",
+          "acteur_secondaire": "Augustin D.",
+          "detail": "JULES DIVERCHY remplace AUGUSTIN DROUPSY"
+        },
+        {
+          "minute": 81,
+          "type": "AVERTISSEMENT",
+          "equipe": "CHANTILLY US",
+          "acteur": "Nicolas C.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 86,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Elio D.",
+          "acteur_secondaire": "Julien N.",
+          "detail": "ELIO DELCROIX remplace JULIEN NISSE"
+        }
+      ],
+      "compositions": {
+        "genech": {
+          "titulaires": [
+            {
+              "numero": 1,
+              "nom": "Tim L.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 2,
+              "nom": "Julien D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 3,
+              "nom": "Clement D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 4,
+              "nom": "Maxime P.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 5,
+              "nom": "Remi D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 6,
+              "nom": "Hugo H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 7,
+              "nom": "Gaspard D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 8,
+              "nom": "Mathys H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 9,
+              "nom": "Julien N.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 10,
+              "nom": "Giovany C.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 11,
+              "nom": "Augustin D.",
+              "role": "TITULAIRE"
+            }
+          ],
+          "remplacants": [
+            {
+              "numero": 12,
+              "nom": "Jean-Paul B.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 13,
+              "nom": "Elio D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 14,
+              "nom": "Dany D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 15,
+              "nom": "Jules D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 16,
+              "nom": "Romain R.",
+              "role": "REMPLACANT"
+            }
+          ]
+        },
+        "adversaire": {
+          "equipe": "CHANTILLY US",
+          "titulaires": [
+            {
+              "numero": 1,
+              "nom": "Erwan D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 2,
+              "nom": "Gabriel D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 3,
+              "nom": "Oumar C.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 4,
+              "nom": "Souleymane C.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 5,
+              "nom": "Adrien P.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 6,
+              "nom": "Ozkan C.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 7,
+              "nom": "Oumar N.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 8,
+              "nom": "Sayyidoul M.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 9,
+              "nom": "Christopher B.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 10,
+              "nom": "Meizy I.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 11,
+              "nom": "Noe M.",
+              "role": "TITULAIRE"
+            }
+          ],
+          "remplacants": [
+            {
+              "numero": 12,
+              "nom": "Corentin L.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 13,
+              "nom": "Matias F.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 14,
+              "nom": "Ilyess E.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 15,
+              "nom": "Dylan D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 16,
+              "nom": "Theo C.",
+              "role": "REMPLACANT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "r3_j3_guesnain_genech",
+      "competition": "Régional 3 • Journée 3",
+      "comp_type": "R3",
+      "date": "04/10/2026",
+      "date_heure": "2026-10-04 15:00",
+      "domicile": "GUESNAIN SC",
+      "exterieur": "GENECH ES",
+      "score_domicile": 1,
+      "score_exterieur": 1,
+      "score_display": "1 - 1",
+      "is_domicile": false,
+      "resultat": "N",
+      "resultat_label": "Match Nul",
+      "evenements": [
+        {
+          "minute": 35,
+          "type": "CHANGEMENT",
+          "equipe": "GUESNAIN SC",
+          "acteur": "Nahil B.",
+          "acteur_secondaire": "Habib S.",
+          "detail": "NAHIL B. remplace HABIB S."
+        },
+        {
+          "minute": 46,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Dany D.",
+          "acteur_secondaire": "Giovany C.",
+          "detail": "DANY D. remplace GIOVANY C."
+        },
+        {
+          "minute": 46,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Elio D.",
+          "acteur_secondaire": "Clement D.",
+          "detail": "ELIO D. remplace CLEMENT D."
+        },
+        {
+          "minute": 56,
+          "type": "CHANGEMENT",
+          "equipe": "GUESNAIN SC",
+          "acteur": "Tom L.",
+          "acteur_secondaire": "Mohammed C.",
+          "detail": "TOM L. remplace MOHAMMED C."
+        },
+        {
+          "minute": 67,
+          "type": "CHANGEMENT",
+          "equipe": "GUESNAIN SC",
+          "acteur": "Mehdi B.",
+          "acteur_secondaire": "Jason L.",
+          "detail": "MEHDI B. remplace JASON L."
+        },
+        {
+          "minute": 67,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Julien D.",
+          "acteur_secondaire": "Mateo S.",
+          "detail": "JULIEN D. remplace MATEO S."
+        },
+        {
+          "minute": 70,
+          "type": "AVERTISSEMENT",
+          "equipe": "GUESNAIN SC",
+          "acteur": "Morgan A.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 83,
+          "type": "AVERTISSEMENT",
+          "equipe": "GUESNAIN SC",
+          "acteur": "Sofiane G.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 90,
+          "type": "AVERTISSEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Remi D.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 90,
+          "type": "AVERTISSEMENT",
+          "equipe": "GUESNAIN SC",
+          "acteur": "Nadir M.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 90,
+          "type": "AVERTISSEMENT",
+          "equipe": "GUESNAIN SC",
+          "acteur": "Mehdi B.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        }
+      ],
+      "compositions": {
+        "genech": {
+          "titulaires": [
+            {
+              "numero": 1,
+              "nom": "Tim L.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 2,
+              "nom": "Mateo S.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 3,
+              "nom": "Clement D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 4,
+              "nom": "Maxime P.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 5,
+              "nom": "Remi D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 6,
+              "nom": "Hugo H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 7,
+              "nom": "Gaspard D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 8,
+              "nom": "Mathys H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 9,
+              "nom": "Julien N.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 10,
+              "nom": "Giovany C.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 11,
+              "nom": "Augustin D.",
+              "role": "TITULAIRE"
+            }
+          ],
+          "remplacants": [
+            {
+              "numero": 12,
+              "nom": "Dany D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 13,
+              "nom": "Julien D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 14,
+              "nom": "Elio D.",
+              "role": "REMPLACANT"
+            }
+          ]
+        },
+        "adversaire": {
+          "equipe": "GUESNAIN SC",
+          "titulaires": [
+            {
+              "numero": 1,
+              "nom": "Aurelien M.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 2,
+              "nom": "Djibryl M.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 3,
+              "nom": "Sofiane G.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 4,
+              "nom": "Morgan A.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 5,
+              "nom": "Andy M.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 6,
+              "nom": "Sofiane B.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 7,
+              "nom": "Habib S.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 8,
+              "nom": "Jason L.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 9,
+              "nom": "Nadir M.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 10,
+              "nom": "Rayane M.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 11,
+              "nom": "Mohammed C.",
+              "role": "TITULAIRE"
+            }
+          ],
+          "remplacants": [
+            {
+              "numero": 12,
+              "nom": "Nahil B.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 13,
+              "nom": "Mehdi B.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 14,
+              "nom": "Tom L.",
+              "role": "REMPLACANT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cdf_t4_genech_dunkerque",
+      "competition": "Coupe de France • Tour 4",
+      "comp_type": "CDF",
+      "date": "27/09/2026",
+      "date_heure": "2026-09-27 15:00",
+      "domicile": "GENECH ES",
+      "exterieur": "DUNKERQUE MALO FC",
+      "score_domicile": 2,
+      "score_exterieur": 0,
+      "score_display": "2 - 0",
+      "is_domicile": true,
+      "resultat": "V",
+      "resultat_label": "Victoire",
+      "evenements": [
+        {
+          "minute": 28,
+          "type": "CHANGEMENT",
+          "equipe": "DUNKERQUE MALO FC",
+          "acteur": "Batiste P.",
+          "acteur_secondaire": "Luis O.",
+          "detail": "BATISTE POUCHELE remplace LUIS ORFAIT"
+        },
+        {
+          "minute": 45,
+          "type": "BUT",
+          "equipe": "GENECH ES",
+          "acteur": "Julien D.",
+          "acteur_secondaire": "",
+          "detail": "But pour GENECH ES"
+        },
+        {
+          "minute": 45,
+          "type": "AVERTISSEMENT",
+          "equipe": "DUNKERQUE MALO FC",
+          "acteur": "Jordan D.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 60,
+          "type": "AVERTISSEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Mathys H.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 60,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Julien N.",
+          "acteur_secondaire": "Jean-Paul B.",
+          "detail": "JULIEN NISSE remplace JEAN PAUL BANGALA TOFIFI"
+        },
+        {
+          "minute": 60,
+          "type": "CHANGEMENT",
+          "equipe": "DUNKERQUE MALO FC",
+          "acteur": "Samy F.",
+          "acteur_secondaire": "Cameron P.",
+          "detail": "SAMY FEDDI remplace CAMERON POZUELOS"
+        },
+        {
+          "minute": 60,
+          "type": "CHANGEMENT",
+          "equipe": "DUNKERQUE MALO FC",
+          "acteur": "Matys D.",
+          "acteur_secondaire": "Yanis L.",
+          "detail": "MATYS DEMAZIERES remplace YANIS LEQUELLENEC"
+        },
+        {
+          "minute": 65,
+          "type": "BUT",
+          "equipe": "GENECH ES",
+          "acteur": "Giovany C.",
+          "acteur_secondaire": "",
+          "detail": "But pour GENECH ES"
+        },
+        {
+          "minute": 70,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Elio D.",
+          "acteur_secondaire": "Giovany C.",
+          "detail": "ELIO DELCROIX remplace GIOVANY CALON"
+        },
+        {
+          "minute": 70,
+          "type": "CHANGEMENT",
+          "equipe": "DUNKERQUE MALO FC",
+          "acteur": "Rodrigue D.",
+          "acteur_secondaire": "Jordan D.",
+          "detail": "RODRIGUE DEWAELE remplace JORDAN DAKOUGNA"
+        },
+        {
+          "minute": 75,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Jules D.",
+          "acteur_secondaire": "Hugo H.",
+          "detail": "JULES DIVERCHY remplace HUGO HERVE"
+        },
+        {
+          "minute": 75,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Remi D.",
+          "acteur_secondaire": "Arthur C.",
+          "detail": "REMI DEFENIN remplace ARTHUR CLIQUE"
+        }
+      ],
+      "compositions": {
+        "genech": {
+          "titulaires": [
+            {
+              "numero": 1,
+              "nom": "Tim L.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 2,
+              "nom": "Julien D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 3,
+              "nom": "Clement D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 4,
+              "nom": "Maxime P.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 5,
+              "nom": "Arthur C.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 6,
+              "nom": "Hugo H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 7,
+              "nom": "Jean-Paul B.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 8,
+              "nom": "Mathys H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 9,
+              "nom": "Gaspard D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 10,
+              "nom": "Giovany C.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 11,
+              "nom": "Augustin D.",
+              "role": "TITULAIRE"
+            }
+          ],
+          "remplacants": [
+            {
+              "numero": 12,
+              "nom": "Julien N.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 13,
+              "nom": "Jules D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 14,
+              "nom": "Elio D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 15,
+              "nom": "Remi D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 16,
+              "nom": "Romain R.",
+              "role": "REMPLACANT"
+            }
+          ]
+        },
+        "adversaire": {
+          "equipe": "DUNKERQUE MALO FC",
+          "titulaires": [
+            {
+              "numero": 1,
+              "nom": "Luis O.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 2,
+              "nom": "Gabin D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 3,
+              "nom": "Alixe B.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 4,
+              "nom": "Yanis L.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 5,
+              "nom": "Luca D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 6,
+              "nom": "Jordan D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 7,
+              "nom": "Quentin H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 8,
+              "nom": "Guillaume D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 9,
+              "nom": "Steven M.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 10,
+              "nom": "Eliot V.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 11,
+              "nom": "Cameron P.",
+              "role": "TITULAIRE"
+            }
+          ],
+          "remplacants": [
+            {
+              "numero": 12,
+              "nom": "Samy F.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 13,
+              "nom": "Matys D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 14,
+              "nom": "Younes B.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 15,
+              "nom": "Rodrigue D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 16,
+              "nom": "Batiste P.",
+              "role": "REMPLACANT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "r3_j2_genech_maubeuge",
+      "competition": "Régional 3 • Journée 2",
+      "comp_type": "R3",
+      "date": "20/09/2026",
+      "date_heure": "2026-09-20 15:00",
+      "domicile": "GENECH ES",
+      "exterieur": "MAUBEUGE US 2",
+      "score_domicile": 2,
+      "score_exterieur": 0,
+      "score_display": "2 - 0",
+      "is_domicile": true,
+      "resultat": "V",
+      "resultat_label": "Victoire",
+      "evenements": [
+        {
+          "minute": 39,
+          "type": "BUT",
+          "equipe": "GENECH ES",
+          "acteur": "Gaspard D.",
+          "acteur_secondaire": "",
+          "detail": "But pour GENECH ES"
+        },
+        {
+          "minute": 46,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Jean-Paul B.",
+          "acteur_secondaire": "Augustin D.",
+          "detail": "JEAN PAUL B. remplace AUGUSTIN D."
+        },
+        {
+          "minute": 46,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Arthur C.",
+          "acteur_secondaire": "Giovany C.",
+          "detail": "ARTHUR C. remplace GIOVANY C."
+        },
+        {
+          "minute": 46,
+          "type": "CHANGEMENT",
+          "equipe": "MAUBEUGE US 2",
+          "acteur": "Cameron D.",
+          "acteur_secondaire": "Lucas D.",
+          "detail": "CAMERON D. remplace LUCAS D."
+        },
+        {
+          "minute": 48,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Clement D.",
+          "acteur_secondaire": "Elio D.",
+          "detail": "CLEMENT D. remplace ELIO D."
+        },
+        {
+          "minute": 51,
+          "type": "BUT",
+          "equipe": "GENECH ES",
+          "acteur": "Mathys H.",
+          "acteur_secondaire": "",
+          "detail": "But pour GENECH ES"
+        },
+        {
+          "minute": 56,
+          "type": "CHANGEMENT",
+          "equipe": "MAUBEUGE US 2",
+          "acteur": "Lancine T.",
+          "acteur_secondaire": "Rayan A.",
+          "detail": "LANCINE T. remplace RAYAN A."
+        },
+        {
+          "minute": 70,
+          "type": "CHANGEMENT",
+          "equipe": "MAUBEUGE US 2",
+          "acteur": "Ayoub A.",
+          "acteur_secondaire": "Lucas D.",
+          "detail": "AYOUB A. remplace LUCAS D."
+        },
+        {
+          "minute": 83,
+          "type": "AVERTISSEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Gaspard D.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 83,
+          "type": "AVERTISSEMENT",
+          "equipe": "MAUBEUGE US 2",
+          "acteur": "Antoine C.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        }
+      ],
+      "compositions": {
+        "genech": {
+          "titulaires": [
+            {
+              "numero": 1,
+              "nom": "Tim L.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 2,
+              "nom": "Julien D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 3,
+              "nom": "Elio D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 4,
+              "nom": "Maxime P.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 5,
+              "nom": "Remi D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 6,
+              "nom": "Hugo H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 7,
+              "nom": "Gaspard D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 8,
+              "nom": "Mathys H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 9,
+              "nom": "Julien N.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 10,
+              "nom": "Giovany C.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 11,
+              "nom": "Augustin D.",
+              "role": "TITULAIRE"
+            }
+          ],
+          "remplacants": [
+            {
+              "numero": 12,
+              "nom": "Jean-Paul B.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 13,
+              "nom": "Arthur C.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 14,
+              "nom": "Clement D.",
+              "role": "REMPLACANT"
+            }
+          ]
+        },
+        "adversaire": {
+          "equipe": "MAUBEUGE US 2",
+          "titulaires": [
+            {
+              "numero": 1,
+              "nom": "Issam M.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 2,
+              "nom": "Maxence M.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 3,
+              "nom": "Amine B.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 4,
+              "nom": "Quentin R.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 5,
+              "nom": "Antoine C.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 6,
+              "nom": "Rayan A.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 7,
+              "nom": "Lucas D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 8,
+              "nom": "Selyane Z.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 9,
+              "nom": "Louis P.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 10,
+              "nom": "Mehdi E.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 11,
+              "nom": "Naim B.",
+              "role": "TITULAIRE"
+            }
+          ],
+          "remplacants": [
+            {
+              "numero": 12,
+              "nom": "Cameron D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 13,
+              "nom": "Lancine T.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 14,
+              "nom": "Ayoub A.",
+              "role": "REMPLACANT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cdf_t3_sainghin_genech",
+      "competition": "Coupe de France • Tour 3",
+      "comp_type": "CDF",
+      "date": "13/09/2026",
+      "date_heure": "2026-09-13 15:00",
+      "domicile": "SAINGHIN WEPPES AO",
+      "exterieur": "GENECH ES",
+      "score_domicile": 0,
+      "score_exterieur": 1,
+      "score_display": "0 - 1",
+      "is_domicile": false,
+      "resultat": "V",
+      "resultat_label": "Victoire",
+      "evenements": [
+        {
+          "minute": 14,
+          "type": "AVERTISSEMENT",
+          "equipe": "SAINGHIN WEPPES AO",
+          "acteur": "Nicolas R.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 40,
+          "type": "AVERTISSEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Julien D.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 57,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Arthur C.",
+          "acteur_secondaire": "Jean-Paul B.",
+          "detail": "ARTHUR CLIQUE remplace JEAN PAUL BANGALA TOFIFI"
+        },
+        {
+          "minute": 57,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Mateo S.",
+          "acteur_secondaire": "Julien D.",
+          "detail": "MATEO SURMONT remplace JULIEN DEVERNAY"
+        },
+        {
+          "minute": 60,
+          "type": "CHANGEMENT",
+          "equipe": "SAINGHIN WEPPES AO",
+          "acteur": "Jules L.",
+          "acteur_secondaire": "Kelian H.",
+          "detail": "JULES LEBEGUE remplace KELIAN HALBOT"
+        },
+        {
+          "minute": 64,
+          "type": "EXPULSION",
+          "equipe": "SAINGHIN WEPPES AO",
+          "acteur": "David L.",
+          "acteur_secondaire": "",
+          "detail": "Carton rouge"
+        },
+        {
+          "minute": 66,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Elio D.",
+          "acteur_secondaire": "Clement D.",
+          "detail": "ELIO DELCROIX remplace CLEMENT DURIEZ"
+        },
+        {
+          "minute": 70,
+          "type": "CHANGEMENT",
+          "equipe": "SAINGHIN WEPPES AO",
+          "acteur": "Julien T.",
+          "acteur_secondaire": "Nicolas R.",
+          "detail": "JULIEN TOURBIER remplace NICOLAS ROMAO"
+        },
+        {
+          "minute": 78,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Jules D.",
+          "acteur_secondaire": "Gaspard D.",
+          "detail": "JULES DIVERCHY remplace GASPARD DROUPSY"
+        },
+        {
+          "minute": 79,
+          "type": "AVERTISSEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Mateo S.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 82,
+          "type": "AVERTISSEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Mateo S.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 82,
+          "type": "EXPULSION",
+          "equipe": "GENECH ES",
+          "acteur": "Mateo S.",
+          "acteur_secondaire": "",
+          "detail": "Carton rouge"
+        }
+      ],
+      "compositions": {
+        "genech": {
+          "titulaires": [
+            {
+              "numero": 2,
+              "nom": "Julien D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 3,
+              "nom": "Clement D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 4,
+              "nom": "Maxime P.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 5,
+              "nom": "Remi D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 6,
+              "nom": "Augustin D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 7,
+              "nom": "Gaspard D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 8,
+              "nom": "Mathys H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 9,
+              "nom": "Julien N.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 10,
+              "nom": "Giovany C.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 11,
+              "nom": "Jean-Paul B.",
+              "role": "TITULAIRE"
+            }
+          ],
+          "remplacants": [
+            {
+              "numero": 12,
+              "nom": "Jules D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 13,
+              "nom": "Arthur C.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 14,
+              "nom": "Elio D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 15,
+              "nom": "Mateo S.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 16,
+              "nom": "Romain R.",
+              "role": "REMPLACANT"
+            }
+          ]
+        },
+        "adversaire": {
+          "equipe": "SAINGHIN WEPPES AO",
+          "titulaires": [
+            {
+              "numero": 1,
+              "nom": "Pape S.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 1,
+              "nom": "Tim L.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 2,
+              "nom": "Kevin F.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 3,
+              "nom": "Kelian H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 4,
+              "nom": "David L.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 5,
+              "nom": "Nicolas R.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 6,
+              "nom": "Cedric M.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 7,
+              "nom": "Loic L.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 8,
+              "nom": "Simon V.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 9,
+              "nom": "Corenthin F.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 10,
+              "nom": "Noe F.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 11,
+              "nom": "Romeo D.",
+              "role": "TITULAIRE"
+            }
+          ],
+          "remplacants": [
+            {
+              "numero": 12,
+              "nom": "Jules L.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 13,
+              "nom": "Julien T.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 14,
+              "nom": "Thomas S.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 16,
+              "nom": "Kevin D.",
+              "role": "REMPLACANT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "r3_j1_bondues_genech",
+      "competition": "Régional 3 • Journée 1",
+      "comp_type": "R3",
+      "date": "06/09/2026",
+      "date_heure": "2026-09-06 15:00",
+      "domicile": "BONDUES FC 2",
+      "exterieur": "GENECH ES",
+      "score_domicile": 1,
+      "score_exterieur": 2,
+      "score_display": "1 - 2",
+      "is_domicile": false,
+      "resultat": "V",
+      "resultat_label": "Victoire",
+      "evenements": [
+        {
+          "minute": 33,
+          "type": "EXPULSION",
+          "equipe": "GENECH ES",
+          "acteur": "Hugo H.",
+          "acteur_secondaire": "",
+          "detail": "Carton rouge"
+        },
+        {
+          "minute": 34,
+          "type": "BUT",
+          "equipe": "BONDUES FC 2",
+          "acteur": "Mathis P.",
+          "acteur_secondaire": "",
+          "detail": "But pour BONDUES FC 2"
+        },
+        {
+          "minute": 40,
+          "type": "AVERTISSEMENT",
+          "equipe": "BONDUES FC 2",
+          "acteur": "Abel D.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 46,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Arthur C.",
+          "acteur_secondaire": "Giovany C.",
+          "detail": "ARTHUR C. remplace GIOVANY C."
+        },
+        {
+          "minute": 52,
+          "type": "CHANGEMENT",
+          "equipe": "BONDUES FC 2",
+          "acteur": "Noa L.",
+          "acteur_secondaire": "Till P.",
+          "detail": "NOA L. remplace TILL P."
+        },
+        {
+          "minute": 53,
+          "type": "AVERTISSEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Maxime P.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 54,
+          "type": "AVERTISSEMENT",
+          "equipe": "BONDUES FC 2",
+          "acteur": "Nathan D.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 59,
+          "type": "CHANGEMENT",
+          "equipe": "BONDUES FC 2",
+          "acteur": "Loic A.",
+          "acteur_secondaire": "Martin M.",
+          "detail": "LOIC A. remplace MARTIN M."
+        },
+        {
+          "minute": 59,
+          "type": "CHANGEMENT",
+          "equipe": "BONDUES FC 2",
+          "acteur": "Leo B.",
+          "acteur_secondaire": "Emilien L.",
+          "detail": "LEO B. remplace EMILIEN L."
+        },
+        {
+          "minute": 60,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Elio D.",
+          "acteur_secondaire": "Clement D.",
+          "detail": "ELIO D. remplace CLEMENT D."
+        },
+        {
+          "minute": 60,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Gaspard D.",
+          "acteur_secondaire": "Jean-Paul B.",
+          "detail": "GASPARD D. remplace JEAN PAUL B."
+        },
+        {
+          "minute": 63,
+          "type": "BUT",
+          "equipe": "GENECH ES",
+          "acteur": "Julien D.",
+          "acteur_secondaire": "",
+          "detail": "But pour GENECH ES"
+        },
+        {
+          "minute": 65,
+          "type": "AVERTISSEMENT",
+          "equipe": "BONDUES FC 2",
+          "acteur": "Nathan D.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 65,
+          "type": "EXPULSION",
+          "equipe": "BONDUES FC 2",
+          "acteur": "Nathan D.",
+          "acteur_secondaire": "",
+          "detail": "Carton rouge"
+        },
+        {
+          "minute": 80,
+          "type": "AVERTISSEMENT",
+          "equipe": "BONDUES FC 2",
+          "acteur": "Maxime H.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 80,
+          "type": "AVERTISSEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Gaspard D.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 86,
+          "type": "BUT",
+          "equipe": "GENECH ES",
+          "acteur": "Gaspard D.",
+          "acteur_secondaire": "",
+          "detail": "But pour GENECH ES"
+        },
+        {
+          "minute": 90,
+          "type": "AVERTISSEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Mathys H.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        }
+      ],
+      "compositions": {
+        "genech": {
+          "titulaires": [
+            {
+              "numero": 1,
+              "nom": "Tim L.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 2,
+              "nom": "Julien D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 3,
+              "nom": "Clement D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 4,
+              "nom": "Maxime P.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 5,
+              "nom": "Remi D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 6,
+              "nom": "Hugo H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 7,
+              "nom": "Jean-Paul B.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 8,
+              "nom": "Mathys H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 9,
+              "nom": "Julien N.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 10,
+              "nom": "Giovany C.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 11,
+              "nom": "Augustin D.",
+              "role": "TITULAIRE"
+            }
+          ],
+          "remplacants": [
+            {
+              "numero": 12,
+              "nom": "Gaspard D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 13,
+              "nom": "Arthur C.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 14,
+              "nom": "Elio D.",
+              "role": "REMPLACANT"
+            }
+          ]
+        },
+        "adversaire": {
+          "equipe": "BONDUES FC 2",
+          "titulaires": [
+            {
+              "numero": 1,
+              "nom": "Nicolas P.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 2,
+              "nom": "Martin M.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 3,
+              "nom": "Arthur L.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 4,
+              "nom": "Noah G.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 5,
+              "nom": "Abel D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 6,
+              "nom": "Tanguy D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 7,
+              "nom": "Anonyme X.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 8,
+              "nom": "Nathan D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 9,
+              "nom": "Mathis P.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 10,
+              "nom": "Till P.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 11,
+              "nom": "Emilien L.",
+              "role": "TITULAIRE"
+            }
+          ],
+          "remplacants": [
+            {
+              "numero": 12,
+              "nom": "Noa L.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 13,
+              "nom": "Loic A.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 14,
+              "nom": "Leo B.",
+              "role": "REMPLACANT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cdf_t2_lys_genech",
+      "competition": "Coupe de France • Tour 2",
+      "comp_type": "CDF",
+      "date": "30/08/2026",
+      "date_heure": "2026-08-30 15:00",
+      "domicile": "LYS L/LANNOY STELLA",
+      "exterieur": "GENECH ES",
+      "score_domicile": 0,
+      "score_exterieur": 0,
+      "score_display": "0 - 0",
+      "is_domicile": false,
+      "resultat": "N",
+      "resultat_label": "Match Nul",
+      "evenements": [
+        {
+          "minute": 36,
+          "type": "AVERTISSEMENT",
+          "equipe": "LYS L/LANNOY STELLA",
+          "acteur": "Ismael A.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 46,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Giovany C.",
+          "acteur_secondaire": "Gaspard D.",
+          "detail": "GIOVANY CALON remplace GASPARD DROUPSY"
+        },
+        {
+          "minute": 59,
+          "type": "CHANGEMENT",
+          "equipe": "LYS L/LANNOY STELLA",
+          "acteur": "Ugo V.",
+          "acteur_secondaire": "Mohand L.",
+          "detail": "UGO VANNESTE remplace MOHAND LAIB"
+        },
+        {
+          "minute": 59,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Thomas L.",
+          "acteur_secondaire": "Jean-Paul B.",
+          "detail": "THOMAS LEONARD remplace JEAN PAUL BANGALA TOFIFI"
+        },
+        {
+          "minute": 66,
+          "type": "CHANGEMENT",
+          "equipe": "LYS L/LANNOY STELLA",
+          "acteur": "Farhane G.",
+          "acteur_secondaire": "Gaetan D.",
+          "detail": "FARHANE GUENOUNE remplace GAETAN DJEHA"
+        },
+        {
+          "minute": 69,
+          "type": "CHANGEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Dany D.",
+          "acteur_secondaire": "Augustin D.",
+          "detail": "DANY DE FREITAS remplace AUGUSTIN DROUPSY"
+        },
+        {
+          "minute": 74,
+          "type": "CHANGEMENT",
+          "equipe": "LYS L/LANNOY STELLA",
+          "acteur": "Fabio D.",
+          "acteur_secondaire": "Amaury V.",
+          "detail": "FABIO DECARO remplace AMAURY VANSTRAESSELLE"
+        },
+        {
+          "minute": 80,
+          "type": "AVERTISSEMENT",
+          "equipe": "LYS L/LANNOY STELLA",
+          "acteur": "Sidia J.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 83,
+          "type": "AVERTISSEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Hugo H.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 85,
+          "type": "AVERTISSEMENT",
+          "equipe": "LYS L/LANNOY STELLA",
+          "acteur": "Gaetan D.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 88,
+          "type": "AVERTISSEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Thomas L.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        },
+        {
+          "minute": 90,
+          "type": "EXPULSION",
+          "equipe": "LYS L/LANNOY STELLA",
+          "acteur": "Amaury V.",
+          "acteur_secondaire": "",
+          "detail": "Carton rouge"
+        },
+        {
+          "minute": 90,
+          "type": "AVERTISSEMENT",
+          "equipe": "GENECH ES",
+          "acteur": "Julien N.",
+          "acteur_secondaire": "",
+          "detail": "Carton jaune"
+        }
+      ],
+      "compositions": {
+        "genech": {
+          "titulaires": [
+            {
+              "numero": 1,
+              "nom": "Tim L.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 2,
+              "nom": "Julien D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 3,
+              "nom": "Corentin D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 4,
+              "nom": "Maxime P.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 5,
+              "nom": "Arthur C.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 6,
+              "nom": "Hugo H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 7,
+              "nom": "Gaspard D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 8,
+              "nom": "Mathys H.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 9,
+              "nom": "Julien N.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 10,
+              "nom": "Augustin D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 11,
+              "nom": "Jean-Paul B.",
+              "role": "TITULAIRE"
+            }
+          ],
+          "remplacants": [
+            {
+              "numero": 12,
+              "nom": "Giovany C.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 13,
+              "nom": "Thomas L.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 14,
+              "nom": "Remi D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 15,
+              "nom": "Dany D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 16,
+              "nom": "Romain R.",
+              "role": "REMPLACANT"
+            }
+          ]
+        },
+        "adversaire": {
+          "equipe": "LYS L/LANNOY STELLA",
+          "titulaires": [
+            {
+              "numero": 1,
+              "nom": "Thierry Q.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 2,
+              "nom": "Ismael A.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 3,
+              "nom": "Lucas P.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 4,
+              "nom": "Souleymane D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 5,
+              "nom": "Dylan G.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 6,
+              "nom": "Gregory S.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 7,
+              "nom": "Mohand L.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 8,
+              "nom": "Sidia J.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 9,
+              "nom": "Gaetan D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 10,
+              "nom": "Alexandre D.",
+              "role": "TITULAIRE"
+            },
+            {
+              "numero": 11,
+              "nom": "Amaury V.",
+              "role": "TITULAIRE"
+            }
+          ],
+          "remplacants": [
+            {
+              "numero": 12,
+              "nom": "Fabio D.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 13,
+              "nom": "Gabriel L.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 14,
+              "nom": "Ugo V.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 15,
+              "nom": "Farhane G.",
+              "role": "REMPLACANT"
+            },
+            {
+              "numero": 16,
+              "nom": "Yene G.",
+              "role": "REMPLACANT"
+            }
+          ]
+        }
+      }
+    }
+  ],
   "kpis_saison": {
     "buts_marques": 10,
     "buts_encaisses": 5,

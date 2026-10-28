@@ -210,6 +210,200 @@ function testStaffNotification(isWelcome = false) {
   showNotification('Alerte envoyée sur votre appareil !');
 }
 
+// 3. ter Gestion de l'Historique des Matchs & Modale Feuille de Match
+function filterMatchHistory(filterType, btnElement) {
+  document.querySelectorAll('.history-filter-btn').forEach(b => b.classList.remove('active'));
+  if (btnElement) btnElement.classList.add('active');
+
+  const cards = document.querySelectorAll('.match-history-card');
+  cards.forEach(card => {
+    const comp = card.getAttribute('data-comp-type');
+    if (filterType === 'ALL' || comp === filterType) {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+function openMatchDetailModal(matchIndex) {
+  if (!globalData || !globalData.historique_matchs) return;
+  const m = globalData.historique_matchs[matchIndex];
+  if (!m) return;
+
+  const modal = document.getElementById('matchDetailModal');
+  document.getElementById('detailModalCompBadge').textContent = m.competition;
+  document.getElementById('detailModalDate').textContent = `${m.date} (${m.date_heure ? m.date_heure.slice(11) : '15:00'})`;
+  document.getElementById('detailModalHomeTeam').textContent = m.domicile;
+  document.getElementById('detailModalAwayTeam').textContent = m.exterieur;
+  document.getElementById('detailModalScoreDisplay').textContent = m.score_display;
+
+  const badgeEl = document.getElementById('detailModalResultBadge');
+  if (m.resultat === 'V') {
+    badgeEl.textContent = 'Victoire';
+    badgeEl.className = 'match-detail-result-badge score-pill-win';
+  } else if (m.resultat === 'N') {
+    badgeEl.textContent = 'Match Nul';
+    badgeEl.className = 'match-detail-result-badge score-pill-draw';
+  } else {
+    badgeEl.textContent = 'Défaite';
+    badgeEl.className = 'match-detail-result-badge score-pill-loss';
+  }
+
+  // Événements
+  const evs = m.evenements || [];
+  document.getElementById('countEvents').textContent = evs.length;
+
+  const eventsListEl = document.getElementById('detailEventsList');
+  if (evs.length > 0) {
+    let evHtml = '';
+    evs.forEach(ev => {
+      let icon = '⚡';
+      let title = ev.type;
+      if (ev.type === 'BUT') {
+        icon = '⚽';
+        title = 'But';
+      } else if (ev.type === 'AVERTISSEMENT') {
+        icon = '🟨';
+        title = 'Carton Jaune';
+      } else if (ev.type === 'EXPULSION') {
+        icon = '🟥';
+        title = 'Carton Rouge';
+      } else if (ev.type === 'REMPLACEMENT' || ev.type === 'CHANGEMENT') {
+        icon = '🔄';
+        title = 'Remplacement';
+      }
+
+      let desc = ev.acteur;
+      if (ev.acteur_secondaire) {
+        desc = `<strong>${ev.acteur}</strong> ⬅️ <em>${ev.acteur_secondaire}</em>`;
+      } else if (ev.acteur) {
+        desc = `<strong>${ev.acteur}</strong>`;
+      }
+
+      evHtml += `
+        <div class="timeline-event-row">
+          <span class="timeline-minute">${ev.minute}'</span>
+          <span class="timeline-icon">${icon}</span>
+          <div class="timeline-content">
+            <div>${desc} <span style="font-size: 10px; color: var(--text-light);">(${ev.equipe})</span></div>
+            <div class="timeline-detail">${ev.detail || title}</div>
+          </div>
+        </div>
+      `;
+    });
+    eventsListEl.innerHTML = evHtml;
+  } else {
+    eventsListEl.innerHTML = '<div style="text-align: center; color: var(--text-light); font-size: 11px; padding: 14px;">Aucun événement consigné pour ce match.</div>';
+  }
+
+  // Compositions
+  const lineups = m.compositions || {};
+  const genech = lineups.genech || {};
+  const opp = lineups.adversaire || {};
+  const lineupContentEl = document.getElementById('detailLineupContent');
+
+  let lineupHtml = `
+    <div class="lineup-section-title">
+      <span>🟡🔵 ES GENECH (Titulaires)</span>
+      <span style="font-family: var(--font-mono);">${genech.titulaires ? genech.titulaires.length : 0} joueurs</span>
+    </div>
+    <div class="lineup-grid">
+  `;
+
+  if (genech.titulaires && genech.titulaires.length > 0) {
+    genech.titulaires.forEach(p => {
+      lineupHtml += `
+        <div class="lineup-item">
+          <span class="lineup-number">${p.numero || '-'}</span>
+          <span class="lineup-name">${p.nom}</span>
+        </div>
+      `;
+    });
+  } else {
+    lineupHtml += '<div style="grid-column: 1/-1; font-size: 11px; color: var(--text-light);">Composition non disponible.</div>';
+  }
+
+  lineupHtml += `
+    </div>
+    <div class="lineup-section-title" style="margin-top: 14px;">
+      <span>🟡🔵 ES GENECH (Remplaçants)</span>
+      <span style="font-family: var(--font-mono);">${genech.remplacants ? genech.remplacants.length : 0} joueurs</span>
+    </div>
+    <div class="lineup-grid">
+  `;
+
+  if (genech.remplacants && genech.remplacants.length > 0) {
+    genech.remplacants.forEach(p => {
+      lineupHtml += `
+        <div class="lineup-item">
+          <span class="lineup-number">${p.numero || '-'}</span>
+          <span class="lineup-name">${p.nom}</span>
+        </div>
+      `;
+    });
+  } else {
+    lineupHtml += '<div style="grid-column: 1/-1; font-size: 11px; color: var(--text-light);">Aucun remplaçant renseigné.</div>';
+  }
+
+  lineupHtml += `</div>`;
+
+  if (opp.titulaires && opp.titulaires.length > 0) {
+    lineupHtml += `
+      <div class="lineup-section-title" style="margin-top: 14px;">
+        <span>⚪ ${opp.equipe || 'Adversaire'} (Titulaires)</span>
+        <span style="font-family: var(--font-mono);">${opp.titulaires.length} joueurs</span>
+      </div>
+      <div class="lineup-grid">
+    `;
+    opp.titulaires.forEach(p => {
+      lineupHtml += `
+        <div class="lineup-item">
+          <span class="lineup-number">${p.numero || '-'}</span>
+          <span class="lineup-name">${p.nom}</span>
+        </div>
+      `;
+    });
+    lineupHtml += `</div>`;
+  }
+
+  lineupContentEl.innerHTML = lineupHtml;
+  switchMatchDetailSubTab('events');
+  modal.classList.remove('hidden');
+}
+
+function closeMatchDetailModal() {
+  const modal = document.getElementById('matchDetailModal');
+  if (modal) {
+    modal.classList.add('hidden');
+  }
+}
+
+function handleMatchDetailModalOverlay(e) {
+  if (e.target.id === 'matchDetailModal') {
+    closeMatchDetailModal();
+  }
+}
+
+function switchMatchDetailSubTab(subTab) {
+  const btnEvents = document.getElementById('btnTabEvents');
+  const btnLineup = document.getElementById('btnTabLineup');
+  const viewEvents = document.getElementById('detailViewEvents');
+  const viewLineup = document.getElementById('detailViewLineup');
+
+  if (subTab === 'events') {
+    if (btnEvents) btnEvents.classList.add('active');
+    if (btnLineup) btnLineup.classList.remove('active');
+    if (viewEvents) viewEvents.style.display = 'block';
+    if (viewLineup) viewLineup.style.display = 'none';
+  } else {
+    if (btnLineup) btnLineup.classList.add('active');
+    if (btnEvents) btnEvents.classList.remove('active');
+    if (viewLineup) viewLineup.style.display = 'block';
+    if (viewEvents) viewEvents.style.display = 'none';
+  }
+}
+
 // 4. Notification d'État (Toast)
 function showNotification(message, isError = false) {
   let toast = document.getElementById('appNotificationToast');
@@ -380,6 +574,59 @@ function renderInterface(data) {
     document.getElementById('refereeSeverityBadge').style.color = ref.badge_color || '#b91c1c';
     document.getElementById('refereeCardsAvg').textContent = `${ref.moyenne_jaunes} cartons jaunes / match`;
     document.getElementById('refereeAdvice').textContent = ref.consigne_coach;
+  }
+
+  // E bis. Historique Exhaustif des Matchs Passés (Saison 2026-2027)
+  const historyContainer = document.getElementById('matchHistoryListContainer');
+  const historyList = data.historique_matchs || [];
+  if (historyContainer) {
+    if (historyList.length > 0) {
+      let historyHtml = '';
+      historyList.forEach((m, idx) => {
+        let pillClass = 'score-pill-win';
+        let tagClass = 'win';
+        if (m.resultat === 'N') {
+          pillClass = 'score-pill-draw';
+          tagClass = 'draw';
+        } else if (m.resultat === 'D') {
+          pillClass = 'score-pill-loss';
+          tagClass = 'loss';
+        }
+
+        const isHomeGenech = m.domicile.toUpperCase().includes('GENECH');
+        const isAwayGenech = m.exterieur.toUpperCase().includes('GENECH');
+
+        historyHtml += `
+          <div class="match-history-card" data-comp-type="${m.comp_type}" onclick="openMatchDetailModal(${idx})">
+            <div class="match-history-header">
+              <span class="tactical-role-pill" style="font-size: 9px; padding: 1px 6px;">${m.competition}</span>
+              <span>${m.date}</span>
+            </div>
+            <div class="match-history-main">
+              <div class="match-history-team home ${isHomeGenech ? 'highlight-genech' : ''}">
+                ${m.domicile}
+              </div>
+              <div class="match-history-score-wrapper">
+                <span class="score-pill ${pillClass}">${m.score_display}</span>
+                <span class="match-history-res-tag ${tagClass}">${m.resultat_label}</span>
+              </div>
+              <div class="match-history-team away ${isAwayGenech ? 'highlight-genech' : ''}">
+                ${m.exterieur}
+              </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 10px; color: var(--text-light); border-top: 1px dashed var(--border-light); padding-top: 5px; margin-top: 2px;">
+              <span>⚡ ${m.evenements ? m.evenements.length : 0} événements</span>
+              <span style="font-weight: 700; color: var(--color-primary);">Feuille de match 👉</span>
+            </div>
+          </div>
+        `;
+      });
+      historyContainer.innerHTML = historyHtml;
+      historyContainer.classList.remove('skeleton');
+    } else {
+      historyContainer.innerHTML = '<div style="text-align: center; color: var(--text-light); font-size: 11px; padding: 16px;">Aucun match archivé.</div>';
+      historyContainer.classList.remove('skeleton');
+    }
   }
 
   // F. Effectif Joueurs & Score ESG (Cliquables vers Modale)

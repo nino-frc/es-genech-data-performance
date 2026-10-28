@@ -294,6 +294,108 @@ def export_real_pwa_feed():
             "joues": st["joues"]
         })
 
+    # 10. Historique exhaustif des matchs passés (Saison 2026-2027)
+    query_history = """
+        SELECT * FROM matchs 
+        WHERE statut = 'TERMINE' AND equipe_club_id = 'SENIOR_M1'
+        ORDER BY date_heure DESC
+    """
+    historique_matchs = []
+    for m in conn.execute(query_history).fetchall():
+        m_id = m["id"]
+        is_dom = "GENECH" in m["equipe_domicile"].upper()
+        s_g = m["score_domicile"] if is_dom else m["score_exterieur"]
+        s_opp = m["score_exterieur"] if is_dom else m["score_domicile"]
+
+        if s_g > s_opp:
+            resultat = "V"
+            resultat_label = "Victoire"
+        elif s_g == s_opp:
+            resultat = "N"
+            resultat_label = "Match Nul"
+        else:
+            resultat = "D"
+            resultat_label = "Défaite"
+
+        comp_id = m["competition_id"]
+        if "cdf" in comp_id:
+            comp_name = f"Coupe de France • {m['tour_ou_journee']}"
+            comp_type = "CDF"
+        else:
+            comp_name = f"Régional 3 • {m['tour_ou_journee']}"
+            comp_type = "R3"
+
+        date_str = m["date_heure"] or ""
+        try:
+            dt = datetime.strptime(date_str, "%Y-%m-%d %H:%M")
+            date_formatted = dt.strftime("%d/%m/%Y")
+        except:
+            date_formatted = date_str[:10] if len(date_str) >= 10 else date_str
+
+        # Événements détaillés du match
+        match_events = []
+        for ev in conn.execute("SELECT minute, type_event, equipe, acteur_principal, acteur_secondaire, detail FROM match_events WHERE match_id = ? ORDER BY minute ASC", (m_id,)).fetchall():
+            match_events.append({
+                "minute": ev["minute"],
+                "type": ev["type_event"],
+                "equipe": ev["equipe"],
+                "acteur": anonymize_player_name(ev["acteur_principal"]) if ev["acteur_principal"] else "",
+                "acteur_secondaire": anonymize_player_name(ev["acteur_secondaire"]) if ev["acteur_secondaire"] else "",
+                "detail": ev["detail"] or ""
+            })
+
+        # Compositions officielles (Titulaires et Remplaçants)
+        genech_titulaires = []
+        genech_remplacants = []
+        opp_titulaires = []
+        opp_remplacants = []
+
+        lineup_rows = conn.execute("SELECT equipe, numero, joueur_nom, role FROM match_lineups WHERE match_id = ? ORDER BY role DESC, numero ASC", (m_id,)).fetchall()
+        for lp in lineup_rows:
+            p_obj = {
+                "numero": lp["numero"],
+                "nom": anonymize_player_name(lp["joueur_nom"]),
+                "role": lp["role"]
+            }
+            if "GENECH" in lp["equipe"].upper():
+                if lp["role"] == "TITULAIRE":
+                    genech_titulaires.append(p_obj)
+                else:
+                    genech_remplacants.append(p_obj)
+            else:
+                if lp["role"] == "TITULAIRE":
+                    opp_titulaires.append(p_obj)
+                else:
+                    opp_remplacants.append(p_obj)
+
+        historique_matchs.append({
+            "id": m_id,
+            "competition": comp_name,
+            "comp_type": comp_type,
+            "date": date_formatted,
+            "date_heure": m["date_heure"],
+            "domicile": m["equipe_domicile"],
+            "exterieur": m["equipe_exterieur"],
+            "score_domicile": m["score_domicile"],
+            "score_exterieur": m["score_exterieur"],
+            "score_display": f"{m['score_domicile']} - {m['score_exterieur']}",
+            "is_domicile": is_dom,
+            "resultat": resultat,
+            "resultat_label": resultat_label,
+            "evenements": match_events,
+            "compositions": {
+                "genech": {
+                    "titulaires": genech_titulaires,
+                    "remplacants": genech_remplacants
+                },
+                "adversaire": {
+                    "equipe": m["equipe_exterieur"] if is_dom else m["equipe_domicile"],
+                    "titulaires": opp_titulaires,
+                    "remplacants": opp_remplacants
+                }
+            }
+        })
+
     conn.close()
 
     payload = {
@@ -308,6 +410,7 @@ def export_real_pwa_feed():
         "evenements_dernier_match": events_rows,
         "prochain_match": next_match,
         "arbitre_prochain_match": arbitre_info,
+        "historique_matchs": historique_matchs,
         "kpis_saison": {
             "buts_marques": total_buts_marques,
             "buts_encaisses": total_buts_encaisses,
