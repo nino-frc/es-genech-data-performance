@@ -737,6 +737,12 @@ function authenticateClub(key, declaredRole, isFormSubmit) {
     }
   }
 
+  // Masquer le gestionnaire d'appareils pour les clubs (Strictement réservé au Super-Admin Master Nino)
+  const deviceBtn = document.getElementById('deviceStatusBtn');
+  if (deviceBtn) {
+    deviceBtn.style.display = isMaster ? 'inline-flex' : 'none';
+  }
+
   // 4. Configuration exclusive du Sélecteur d'équipes (Cloisonnement étanche !)
   const teamSelector = document.getElementById('teamSelector');
   if (teamSelector) {
