@@ -3,193 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>MatchDay - Performance Football</title>
+  <title>MatchDay - Direction Technique</title>
   
-  <!-- Configuration PWA (Progressive Web App) -->
+  <!-- Configuration PWA Standalone -->
   <link rel="manifest" href="./manifest.json">
-  <meta name="theme-color" content="#0B130E">
+  <meta name="theme-color" content="#0a1728">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="MatchDay">
   <link rel="apple-touch-icon" href="./icon.png">
   <link rel="icon" type="image/png" href="./icon.png">
 
-  <!-- Feuilles de style -->
+  <!-- Thème Football Manager Institutionnel -->
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-  <!-- En-tête Compact Fixe -->
+  <!-- Header Institutionnel Fixe -->
   <header class="app-header">
     <div class="brand-wrapper">
-      <img src="./icon.png" alt="MatchDay Logo" class="app-logo">
       <div class="brand-title">
-        MatchDay <span class="brand-badge" id="appRoleBadge">VIP</span>
+        MatchDay <span class="badge-tag" id="appRoleBadge">SAAS</span>
       </div>
     </div>
-    <div class="team-pill" id="teamPill">
+    <div class="team-pill">
       <span class="status-dot"></span>
-      <span id="activeClubName">ES Genech (R3)</span>
+      <span id="activeClubName">Chargement...</span>
     </div>
   </header>
 
   <!-- Contenu Principal Scrollable -->
   <main class="app-container">
 
-    <!-- Onglet 1 : Match & Débriefing -->
+    <!-- ONGLET 1 : DÉBRIEF DU DERNIER MATCH -->
     <section id="tabMatch" class="tab-content active">
-      <!-- Carte Dernier Résultat -->
-      <div class="card match-card">
-        <div class="card-header-bar">
-          <span class="card-title">Dernier Match Officiel</span>
-          <span style="font-size: 11px; color: var(--text-dim);" id="matchCompetition">Coupe de France • Tour 6</span>
+      
+      <!-- Encart Scoreboard Officiel -->
+      <div class="score-hero">
+        <span class="score-badge-status" id="matchStatusBadge">RÉSULTAT OFFICIEL FFF</span>
+        <div class="score-matchup">
+          <div class="team-col home" id="homeTeamName">--</div>
+          <div class="score-number-badge" id="matchScoreDisplay">- : -</div>
+          <div class="team-col away" id="awayTeamName">--</div>
         </div>
-        <div class="match-fixture">
-          <div class="team-block home">
-            <span class="team-name" id="homeTeamName">ST MARTIN TATINGHEM</span>
-            <span class="team-sub">Régional 3</span>
-          </div>
-          <div class="match-score-badge" id="matchScoreDisplay">
-            2 - 0
-          </div>
-          <div class="team-block away">
-            <span class="team-name" id="awayTeamName">ES GENECH</span>
-            <span class="team-sub">Régional 3</span>
-          </div>
-        </div>
-        <div style="font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 8px;" id="matchDateInfo">
-          Dimanche 25 Octobre 2026 • 15h00
-        </div>
+        <div class="match-subtext" id="matchMetaInfo">Chargement des données FFF...</div>
       </div>
 
-      <!-- Métriques Clés du Match -->
+      <!-- Les 4 Vrais Indicateurs de Performance (Issus des PDF) -->
       <div class="card">
         <div class="card-header-bar">
-          <span class="card-title">Indicateurs de Performance</span>
-          <span style="font-size: 11px; color: var(--primary-emerald);">ESG Index : 68/100</span>
+          <span class="card-title">Bilan Réel de la Saison</span>
+          <span class="card-meta" id="seasonSummaryComp">Équipe Fanion</span>
         </div>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-          <div style="background: var(--bg-card-hover); padding: 10px; border-radius: 8px;">
-            <div style="font-size: 10px; color: var(--text-dim); text-transform: uppercase;">xG Estimés</div>
-            <div style="font-size: 18px; font-weight: 800; color: #fff;">1.15 <span style="font-size: 11px; color: var(--text-dim);">vs 1.84</span></div>
+        <div class="kpi-grid">
+          <!-- KPI 1 : Buts Inscrits -->
+          <div class="kpi-box green">
+            <div class="kpi-title">Buts Inscrits</div>
+            <div class="kpi-value" id="kpiGoals">--</div>
+            <div class="kpi-desc">Attaque officielle</div>
           </div>
-          <div style="background: var(--bg-card-hover); padding: 10px; border-radius: 8px;">
-            <div style="font-size: 10px; color: var(--text-dim); text-transform: uppercase;">Tirs Cadrés</div>
-            <div style="font-size: 18px; font-weight: 800; color: #fff;">4 <span style="font-size: 11px; color: var(--text-dim);">/ 9 total</span></div>
+
+          <!-- KPI 2 : Clean Sheets -->
+          <div class="kpi-box green">
+            <div class="kpi-title">Clean Sheets</div>
+            <div class="kpi-value" id="kpiCleanSheets">--</div>
+            <div class="kpi-desc">Matchs sans encaisser</div>
+          </div>
+
+          <!-- KPI 3 : Temps de Jeu Total -->
+          <div class="kpi-box">
+            <div class="kpi-title">Temps de Jeu</div>
+            <div class="kpi-value" id="kpiTotalMinutes">--</div>
+            <div class="kpi-desc">Minutes cumulées</div>
+          </div>
+
+          <!-- KPI 4 : Cartons & Sanctions -->
+          <div class="kpi-box gold">
+            <div class="kpi-title">Discipline</div>
+            <div class="kpi-value" id="kpiCardsSummary">--</div>
+            <div class="kpi-desc">Cartons J. / R.</div>
           </div>
         </div>
       </div>
+
+      <!-- Chronologie des Événements Officiels FFF -->
+      <div class="card">
+        <div class="card-header-bar">
+          <span class="card-title">Événements de la Rencontre</span>
+          <span class="card-meta">Feuille FMI</span>
+        </div>
+        <div id="matchEventsTimeline" class="skeleton">
+          Chargement de la chronologie officielle...
+        </div>
+      </div>
+
     </section>
 
-    <!-- Onglet 2 : Effectif & Scores ESG -->
+    <!-- ONGLET 2 : EFFECTIF JOUEURS & SCORE ESG -->
     <section id="tabPlayers" class="tab-content" style="display: none;">
       <div class="card">
         <div class="card-header-bar">
-          <span class="card-title">Joueurs Fanion • ESG Impact</span>
-          <span style="font-size: 11px; color: var(--text-dim);">Anonymisé RGPD</span>
+          <span class="card-title">Effectif Fanion • Score ESG</span>
+          <span class="card-meta">Anonymisé RGPD</span>
         </div>
-        <div class="players-grid" id="playersListContainer">
-          <!-- Injecté dynamiquement par app.js -->
-          <div class="player-card">
-            <div class="player-info">
-              <div class="player-number">9</div>
-              <div>
-                <div class="player-name">Julien D.</div>
-                <div class="player-meta">Attaquant • 4 buts</div>
-              </div>
-            </div>
-            <div class="esg-badge">
-              <span class="esg-score high">84</span>
-              <span class="esg-label">Score ESG</span>
-            </div>
-          </div>
-
-          <div class="player-card">
-            <div class="player-info">
-              <div class="player-number">10</div>
-              <div>
-                <div class="player-name">Elio D.</div>
-                <div class="player-meta">Milieu Offensif • 2 assists</div>
-              </div>
-            </div>
-            <div class="esg-badge">
-              <span class="esg-score high">81</span>
-              <span class="esg-label">Score ESG</span>
-            </div>
-          </div>
-
-          <div class="player-card">
-            <div class="player-info">
-              <div class="player-number">6</div>
-              <div>
-                <div class="player-name">Maxime P.</div>
-                <div class="player-meta">Milieu Défensif • 3 cartons</div>
-              </div>
-            </div>
-            <div class="esg-badge">
-              <span class="esg-score medium">68</span>
-              <span class="esg-label">Score ESG</span>
-            </div>
-          </div>
+        <div id="playersListContainer" class="skeleton">
+          Chargement de l'effectif depuis MongoDB...
         </div>
       </div>
     </section>
 
-    <!-- Onglet 3 : Veille Disciplinaire -->
+    <!-- ONGLET 3 : VEILLE DISCIPLINAIRE (ART. 226 FFF) -->
     <section id="tabDiscipline" class="tab-content" style="display: none;">
       <div class="card">
         <div class="card-header-bar">
-          <span class="card-title">État Disciplinaire (Art. 226 FFF)</span>
-          <span style="font-size: 11px; color: var(--accent-gold);">Règle des 90 jours</span>
+          <span class="card-title">Veille Disciplinaire Réglementaire</span>
+          <span class="card-meta">Règle des 90 jours</span>
         </div>
-        <div id="disciplineAlertsContainer">
-          <div class="alert-row warning">
-            <span>⚠️</span>
-            <div>
-              <strong>Maxime P.</strong> : 2 cartons jaunes actifs. Prochain carton = suspension automatique de 1 match.
-            </div>
-          </div>
-          <div class="alert-row danger">
-            <span>🚨</span>
-            <div>
-              <strong>Mateo S.</strong> : Suspendu 1 match ferme suite à l'expulsion directe vs Sainghin.
-            </div>
-          </div>
+        <div id="disciplineAlertsContainer" class="skeleton">
+          Vérification des avertissements et suspensions...
         </div>
       </div>
     </section>
 
-    <!-- Onglet 4 : Classement R3 -->
+    <!-- ONGLET 4 : CLASSEMENT OFFICIEL -->
     <section id="tabStandings" class="tab-content" style="display: none;">
       <div class="card">
         <div class="card-header-bar">
-          <span class="card-title">Seniors R3 • Poule D</span>
-          <span style="font-size: 11px; color: var(--text-dim);">Saison 2026-2027</span>
+          <span class="card-title" id="standingsTitle">Classement Poule</span>
+          <span class="card-meta">FFF</span>
         </div>
-        <div id="standingsTable" style="font-size: 12px;">
-          <div style="display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.05); color: var(--text-dim);">
-            <span># Équipe</span>
-            <span>Pts | J</span>
-          </div>
-          <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.03); color: var(--primary-emerald); font-weight: 700;">
-            <span>4. GENECH ES</span>
-            <span>7 pts | 4m</span>
-          </div>
-          <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.03);">
-            <span>1. ANSTAING CHERENG</span>
-            <span>10 pts | 4m</span>
-          </div>
-          <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.03);">
-            <span>2. BONDUES FC 2</span>
-            <span>9 pts | 4m</span>
-          </div>
+        <div id="standingsTableContainer" class="skeleton">
+          Chargement du classement...
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Barre de Navigation Basse (Ergonomie Une Main) -->
+  <!-- Barre de Navigation Basse Institutionnelle (Navigation au Pouce) -->
   <nav class="bottom-nav">
     <div class="nav-item active" onclick="switchTab('tabMatch', this)">
       <span class="nav-icon">⚽</span>
@@ -209,7 +160,7 @@
     </div>
   </nav>
 
-  <!-- Script Client & Logique Token -->
+  <!-- Script d'Alimentation Dynamique (MongoDB & Local Engine) -->
   <script src="./app.js"></script>
 </body>
 </html>

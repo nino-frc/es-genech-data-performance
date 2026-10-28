@@ -1,27 +1,32 @@
-/* MatchDay - Tactical Dark Theme (Football Manager Aesthetic) */
+/* ==========================================================================
+   MatchDay - Thème Institutionnel "Football Manager" (Clair & Lisible)
+   Reprend fidèlement la charte des débriefs et fiches PDF MatchDay :
+   - Fond clair technique (#f4f6f9)
+   - Cartes blanches délimitées avec bordures précises (#cbd5e1)
+   - Header sombre institutionnel (#0a1728)
+   - Vert club profond (#15803d), Or sobre (#b45309) et Rouge (#b91c1c)
+   ========================================================================== */
+
 :root {
-  --bg-main: #080D0A;
-  --bg-card: #101812;
-  --bg-card-hover: #16221A;
-  --bg-card-glass: rgba(16, 24, 18, 0.85);
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-emerald: rgba(16, 185, 129, 0.3);
+  --bg-page: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-subtle: #f8fafc;
+  --bg-header: #0a1728;
   
-  --primary-emerald: #10B981;
-  --primary-emerald-hover: #059669;
-  --primary-glow: rgba(16, 185, 129, 0.15);
+  --border-card: #cbd5e1;
+  --border-light: #e2e8f0;
   
-  --accent-gold: #F59E0B;
-  --accent-red: #EF4444;
-  --accent-blue: #3B82F6;
+  --color-primary: #004687;
+  --color-green: #15803d;
+  --color-green-light: #f0fdf4;
+  --color-gold: #b45309;
+  --color-gold-light: #fffbeb;
+  --color-red: #b91c1c;
+  --color-red-light: #fef2f2;
   
-  --text-main: #F9FAFB;
-  --text-muted: #9CA3AF;
-  --text-dim: #6B7280;
-  
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-light: #64748b;
   
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
@@ -35,29 +40,30 @@
 }
 
 body {
-  background-color: var(--bg-main);
+  background-color: var(--bg-page);
   color: var(--text-main);
   font-family: var(--font-sans);
-  font-size: 14px;
-  line-height: 1.5;
-  min-height: 100vh;
-  padding-bottom: 85px; /* Pour la barre de navigation basse */
-  overflow-x: hidden;
+  font-size: 13.5px;
+  line-height: 1.45;
+  padding-bottom: 78px;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Header Compact & Statut */
+/* --------------------------------------------------------------------------
+   Header Institutionnel
+   -------------------------------------------------------------------------- */
 .app-header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: var(--bg-card-glass);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-subtle);
-  padding: 12px 16px;
+  background-color: var(--bg-header);
+  color: #ffffff;
+  padding: 10px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 3px solid var(--color-green);
+  box-shadow: 0 2px 8px rgba(10, 23, 40, 0.15);
 }
 
 .brand-wrapper {
@@ -66,277 +72,375 @@ body {
   gap: 10px;
 }
 
-.app-logo {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  object-fit: cover;
-  border: 1px solid var(--border-emerald);
-}
-
 .brand-title {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
-  letter-spacing: -0.5px;
-  color: #fff;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
-.brand-badge {
-  font-size: 10px;
+.badge-tag {
+  font-size: 9.5px;
   font-weight: 700;
   padding: 2px 6px;
-  border-radius: 4px;
-  background: var(--primary-glow);
-  color: var(--primary-emerald);
-  border: 1px solid var(--border-emerald);
-  text-transform: uppercase;
+  border-radius: 3px;
+  background: var(--color-green);
+  color: #ffffff;
+  letter-spacing: 0.5px;
 }
 
 .team-pill {
   display: flex;
   align-items: center;
   gap: 6px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--border-subtle);
-  padding: 5px 10px;
-  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 10px;
+  border-radius: 4px;
   font-size: 11px;
   font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .status-dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: var(--primary-emerald);
-  box-shadow: 0 0 8px var(--primary-emerald);
+  background-color: #22c55e;
 }
 
-/* Container Principal Mobile First */
+/* --------------------------------------------------------------------------
+   Conteneur Mobile First
+   -------------------------------------------------------------------------- */
 .app-container {
   max-width: 540px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 
-/* Cartes Tactiques Football Manager */
+/* --------------------------------------------------------------------------
+   Cartes & Encarts Typés "Football Manager"
+   -------------------------------------------------------------------------- */
 .card {
   background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-  position: relative;
-  overflow: hidden;
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  padding: 14px;
+  box-shadow: 0 1px 3px rgba(10, 23, 40, 0.05);
 }
 
 .card-header-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 12px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-light);
 }
 
 .card-title {
-  font-size: 13px;
+  font-size: 11.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--text-muted);
+}
+
+.card-meta {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+/* --------------------------------------------------------------------------
+   Encart Scoreboard Officiel (Style Débrief PDF)
+   -------------------------------------------------------------------------- */
+.score-hero {
+  background: var(--bg-header);
+  border-radius: 8px;
+  padding: 14px 16px;
+  color: #ffffff;
+  text-align: center;
+  border-left: 4px solid var(--color-green);
+}
+
+.score-badge-status {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 3px;
+  background: var(--color-green);
+  color: #fff;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+.score-matchup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6px 0;
+}
+
+.team-col {
+  flex: 1;
+  font-size: 13.5px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: var(--text-muted);
-  display: flex;
-  align-items: center;
-  gap: 6px;
 }
 
-/* Bloc Match du Week-end */
-.match-card {
-  border-left: 3px solid var(--primary-emerald);
-}
+.team-col.home { text-align: left; }
+.team-col.away { text-align: right; }
 
-.match-fixture {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 10px 0;
-}
-
-.team-block {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.team-block.home {
-  text-align: left;
-}
-
-.team-block.away {
-  text-align: right;
-}
-
-.team-name {
-  font-size: 15px;
-  font-weight: 700;
-  color: #fff;
-}
-
-.team-sub {
-  font-size: 11px;
-  color: var(--text-muted);
-}
-
-.match-score-badge {
-  padding: 6px 14px;
-  background: #000;
-  border: 1px solid var(--border-emerald);
-  border-radius: var(--radius-sm);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  color: var(--primary-emerald);
-}
-
-/* Cartes Joueurs & Scores ESG */
-.players-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-}
-
-.player-card {
-  background: var(--bg-card-hover);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  padding: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.player-info {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.player-number {
-  width: 26px;
-  height: 26px;
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.06);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--text-muted);
+.score-number-badge {
   font-family: var(--font-mono);
+  font-size: 26px;
+  font-weight: 900;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 2px 14px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  letter-spacing: 1px;
 }
 
-.player-name {
-  font-size: 14px;
-  font-weight: 700;
-  color: #fff;
-}
-
-.player-meta {
+.match-subtext {
   font-size: 11px;
-  color: var(--text-dim);
+  color: #94a3b8;
+  margin-top: 4px;
 }
 
-.esg-badge {
+/* --------------------------------------------------------------------------
+   Grille des 4 Vrais KPIs (PDF MatchDay) : Buts, CS, Minutes, Cartons
+   -------------------------------------------------------------------------- */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.kpi-box {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.kpi-box.green  { border-left-color: var(--color-green); }
+.kpi-box.gold   { border-left-color: var(--color-gold); }
+.kpi-box.red    { border-left-color: var(--color-red); }
+
+.kpi-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-light);
+  letter-spacing: 0.4px;
+}
+
+.kpi-value {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 2px 0;
+}
+
+.kpi-desc {
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Tableau & Cartes Joueurs : Scores ESG & Données Réelles
+   -------------------------------------------------------------------------- */
+.player-row {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.player-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-rank {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-light);
+  width: 18px;
+  text-align: center;
+}
+
+.player-name-text {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.player-stats-mini {
+  font-size: 11px;
+  color: var(--text-light);
+  display: flex;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.player-stats-mini span {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.esg-score-box {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.esg-score {
-  font-size: 16px;
-  font-weight: 800;
+.esg-number {
   font-family: var(--font-mono);
-  color: var(--primary-emerald);
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--color-green);
+  background: var(--color-green-light);
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid #bbf7d0;
 }
-
-.esg-score.high { color: #10B981; }
-.esg-score.medium { color: #F59E0B; }
-.esg-score.alert { color: #EF4444; }
 
 .esg-label {
-  font-size: 9px;
+  font-size: 8.5px;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--text-dim);
+  color: var(--text-light);
+  margin-top: 2px;
 }
 
-/* Alertes Disciplinaires */
-.alert-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+/* --------------------------------------------------------------------------
+   Alertes Disciplinaires (Art. 226 FFF)
+   -------------------------------------------------------------------------- */
+.discipline-row {
   padding: 10px 12px;
-  border-radius: var(--radius-sm);
+  border-radius: 6px;
   margin-bottom: 8px;
   font-size: 12px;
-  font-weight: 600;
+  line-height: 1.4;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
 }
 
-.alert-row.warning {
-  background: rgba(245, 158, 11, 0.12);
-  border: 1px solid rgba(245, 158, 11, 0.25);
-  color: #FCD34D;
+.discipline-row.sursis {
+  background-color: var(--color-gold-light);
+  border: 1px solid #fde68a;
+  color: #92400e;
 }
 
-.alert-row.danger {
-  background: rgba(239, 68, 68, 0.12);
-  border: 1px solid rgba(239, 68, 68, 0.25);
-  color: #FCA5A5;
+.discipline-row.suspendu {
+  background-color: var(--color-red-light);
+  border: 1px solid #fecaca;
+  color: #991b1b;
 }
 
-/* Barre de Navigation Basse (Ergonomie Une Main) */
+/* --------------------------------------------------------------------------
+   Tableau Classement FFF
+   -------------------------------------------------------------------------- */
+.table-fff {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.table-fff th {
+  text-align: left;
+  padding: 6px 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 9.5px;
+  color: var(--text-light);
+  border-bottom: 2px solid var(--border-light);
+}
+
+.table-fff td {
+  padding: 8px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.table-fff tr.highlight-team {
+  background-color: var(--color-green-light);
+  font-weight: 700;
+}
+
+.table-fff tr.highlight-team td {
+  color: var(--color-green);
+  border-top: 1px solid #bbf7d0;
+  border-bottom: 1px solid #bbf7d0;
+}
+
+/* --------------------------------------------------------------------------
+   Barre de Navigation Basse (Ergonomie Une Main)
+   -------------------------------------------------------------------------- */
 .bottom-nav {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 68px;
-  background: var(--bg-card-glass);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-top: 1px solid var(--border-subtle);
+  height: 62px;
+  background: #ffffff;
+  border-top: 1px solid var(--border-card);
   display: flex;
   align-items: center;
   justify-content: space-around;
   z-index: 100;
-  padding-bottom: env(safe-area-inset-bottom, 6px);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .nav-item {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
-  color: var(--text-muted);
+  justify-content: center;
+  gap: 3px;
+  color: var(--text-light);
   text-decoration: none;
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 10.5px;
+  font-weight: 700;
   cursor: pointer;
-  padding: 8px 12px;
-  border-radius: var(--radius-sm);
-  transition: all 0.2s ease;
+  height: 100%;
 }
 
 .nav-item.active {
-  color: var(--primary-emerald);
+  color: var(--color-primary);
+  border-top: 2px solid var(--color-primary);
 }
 
 .nav-icon {
-  font-size: 18px;
+  font-size: 16px;
+}
+
+/* Skeleton Loading State (Zéro fausse donnée en dur) */
+.skeleton {
+  color: #94a3b8;
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+  padding: 14px;
 }
