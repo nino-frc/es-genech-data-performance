@@ -773,17 +773,23 @@ function renderInterface(data) {
           <div class="time-matrix-row">
             <div class="time-matrix-label">${t.tranche}</div>
             <div class="time-matrix-bars-wrapper">
-              <div class="matrix-bar-track">
-                <div class="matrix-bar-fill fill-scored" style="width: ${pctScored}%;"></div>
-                <span class="matrix-bar-val" style="color: ${t.marques > 0 ? '#15803d' : '#94a3b8'};">
-                  ${t.marques} marqué${t.marques > 1 ? 's' : ''}
-                </span>
+              <!-- Ligne Buts Marqués -->
+              <div class="matrix-line">
+                <div class="matrix-bar-track">
+                  <div class="matrix-bar-fill fill-scored" style="width: ${pctScored}%;"></div>
+                </div>
+                <div class="matrix-count-col ${t.marques > 0 ? 'scored' : 'zero'}">
+                  ${t.marques} <span>marqué${t.marques > 1 ? 's' : ''}</span>
+                </div>
               </div>
-              <div class="matrix-bar-track">
-                <div class="matrix-bar-fill fill-conceded" style="width: ${pctConceded}%;"></div>
-                <span class="matrix-bar-val" style="color: ${t.encaisses > 0 ? '#b91c1c' : '#94a3b8'};">
-                  ${t.encaisses} encaissé${t.encaisses > 1 ? 's' : ''}
-                </span>
+              <!-- Ligne Buts Encaissés -->
+              <div class="matrix-line">
+                <div class="matrix-bar-track">
+                  <div class="matrix-bar-fill fill-conceded" style="width: ${pctConceded}%;"></div>
+                </div>
+                <div class="matrix-count-col ${t.encaisses > 0 ? 'conceded' : 'zero'}">
+                  ${t.encaisses} <span>encaissé${t.encaisses > 1 ? 's' : ''}</span>
+                </div>
               </div>
             </div>
           </div>
