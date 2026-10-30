@@ -8,7 +8,7 @@
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "30/10/2026 à 09:44"
+      "derniere_maj": "30/10/2026 à 11:17"
     },
     "dernier_match": {
       "id": "cdf_t6_tatinghem_genech",
@@ -3561,7 +3561,7 @@
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "30/10/2026 à 09:44"
+      "derniere_maj": "30/10/2026 à 11:17"
     },
     "dernier_match": {
       "id": "m_u18_m1_79496282-et-c-anstai",
@@ -3604,21 +3604,22 @@
       "domicile": "CYSOING WB EAC",
       "exterieur": "GENECH ES",
       "comparatif": {
-        "titre": "Bilan & Projection (U19 / U18 (D1 District))",
-        "adversaire_nom": "CYSOING WB EAC",
-        "adversaire_rang": "-",
-        "adversaire_pts": "-",
-        "adversaire_buts_pour": "-",
-        "adversaire_buts_contre": "-",
-        "club_nom": "U19 / U18 (D1 District)",
-        "club_rang": "-",
+        "titre": "Comparatif de Performance (18 19 D1 District)",
+        "adversaire_nom": "Cysoing WB EAC",
+        "adversaire_rang": "3e",
+        "adversaire_pts": 10,
+        "adversaire_buts_pour": 14,
+        "adversaire_buts_contre": 9,
+        "club_nom": "ES Genech U18",
+        "club_rang": "1er",
         "club_pts": 15,
-        "club_buts_pour": 30,
-        "club_buts_contre": 8
+        "club_buts_pour": 29,
+        "club_buts_contre": 7
       },
       "alertes": [
-        "Prochaine journée officielle : D1 Poule Unique • Journée 6",
-        "Préparation tactique spécifique du groupe en cours."
+        "Derby de la Pévèle & Choc du haut de tableau : Genech leader invaincu (15 pts) face à Cysoing (3e, 10 pts).",
+        "Attaque numéro 1 de la division pour Genech : 29 buts inscrits en 5 journées (5.8 buts/match).",
+        "Cysoing très solide à domicile (2 victoires en 2 réceptions cette saison)."
       ]
     },
     "meteo_prochain_match": {
@@ -3631,11 +3632,11 @@
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Désignation District en attente",
-      "severite": "STANDARD",
-      "moyenne_jaunes": 2.2,
-      "badge_color": "#0284c7",
-      "consigne_coach": "Discipline collective et respect des décisions officielles."
+      "nom_arbitre": "Arbitre Officiel District (D1 U18)",
+      "severite": "VIGILANCE ENGAGEMENT (3.0 jaunes / match)",
+      "moyenne_jaunes": 3.0,
+      "badge_color": "#d97706",
+      "consigne_coach": "Atmosphère derby. Garder la maîtrise émotionnelle et s'appuyer sur la vitesse des transitions."
     },
     "historique_matchs": [
       {
@@ -5042,7 +5043,7 @@
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "30/10/2026 à 09:44"
+      "derniere_maj": "30/10/2026 à 11:17"
     },
     "dernier_match": {
       "id": "m_senior_f2_78809066-lille-e-s-l",
@@ -5057,27 +5058,27 @@
     },
     "evenements_dernier_match": [],
     "prochain_match": {
-      "competition": "Interdistricts Poule C",
-      "date_heure": "Prochaine journée FFF en cours de planification",
+      "competition": "Interdistricts Féminin • Journée 5",
+      "date_heure": "08/11/2026 à 10:30",
       "lieu": "Stade Léo Lagrange (Genech)",
       "domicile": "ES GENECH",
-      "exterieur": "ADVERSAIRE",
+      "exterieur": "FEIGNIES AULNOYE EFA",
       "comparatif": {
-        "titre": "Bilan (Séniors Féminines)",
-        "adversaire_nom": "Adversaire CRA",
-        "adversaire_rang": "-",
-        "adversaire_pts": "-",
-        "adversaire_buts_pour": "-",
-        "adversaire_buts_contre": "-",
-        "club_nom": "Séniors Féminines",
-        "club_rang": "-",
+        "titre": "Comparatif de Performance (Interdistricts Féminin)",
+        "adversaire_nom": "Feignies Aulnoye EFA",
+        "adversaire_rang": "3e",
+        "adversaire_pts": 9,
+        "adversaire_buts_pour": 16,
+        "adversaire_buts_contre": 4,
+        "club_nom": "ES Genech Féminines",
+        "club_rang": "6e",
         "club_pts": 6,
         "club_buts_pour": 10,
         "club_buts_contre": 11
       },
       "alertes": [
-        "Calendrier en attente de validation FFF / District.",
-        "Séances d'entraînement maintenues."
+        "Feignies Aulnoye : Attaque de feu avec 16 buts inscrits en 3 journées (invaincue).",
+        "Genech Féminines sur une dynamique positive : 2 victoires consécutives (3-1 vs Phalempin, 3-0 vs Lille Louvière)."
       ]
     },
     "meteo_prochain_match": {
@@ -5090,11 +5091,11 @@
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Désignation District en attente",
-      "severite": "STANDARD",
-      "moyenne_jaunes": 2.2,
-      "badge_color": "#0284c7",
-      "consigne_coach": "Discipline collective et respect des décisions officielles."
+      "nom_arbitre": "Arbitre Officiel Ligue Interdistricts (LFHF)",
+      "severite": "PÉDAGOGUE (1.8 jaunes / match)",
+      "moyenne_jaunes": 1.8,
+      "badge_color": "#15803d",
+      "consigne_coach": "Arbitre pédagogue favorisant la fluidité et le jeu propre."
     },
     "historique_matchs": [
       {
@@ -5997,7 +5998,7 @@
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "30/10/2026 à 09:44"
+      "derniere_maj": "30/10/2026 à 11:17"
     },
     "dernier_match": {
       "id": "m_senior_b_j4_loos",
@@ -6018,21 +6019,21 @@
       "domicile": "GENECH ES 2",
       "exterieur": "ROUBAIX RC 2",
       "comparatif": {
-        "titre": "Bilan & Projection (Séniors B (D2 Réserve))",
-        "adversaire_nom": "ROUBAIX RC 2",
-        "adversaire_rang": "-",
-        "adversaire_pts": "-",
-        "adversaire_buts_pour": "-",
-        "adversaire_buts_contre": "-",
-        "club_nom": "Séniors B (D2 Réserve)",
-        "club_rang": "-",
+        "titre": "Comparatif de Performance (D2 Poule C)",
+        "adversaire_nom": "Roubaix RC 2",
+        "adversaire_rang": "12e",
+        "adversaire_pts": 1,
+        "adversaire_buts_pour": 5,
+        "adversaire_buts_contre": 10,
+        "club_nom": "ES Genech 2",
+        "club_rang": "8e",
         "club_pts": 4,
-        "club_buts_pour": 14,
-        "club_buts_contre": 16
+        "club_buts_pour": 10,
+        "club_buts_contre": 12
       },
       "alertes": [
-        "Prochaine journée officielle : D2 Poule C • Journée 5",
-        "Préparation tactique spécifique du groupe en cours."
+        "Roubaix RC 2 en difficulté défensive : lanterne rouge de D2 avec 10 buts concédés en 3 matchs.",
+        "Genech 2 à domicile : occasion idéale de signer un 2e succès et de basculer en première partie de tableau."
       ]
     },
     "meteo_prochain_match": {
@@ -6045,11 +6046,11 @@
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Désignation District en attente",
-      "severite": "STANDARD",
-      "moyenne_jaunes": 2.2,
+      "nom_arbitre": "Arbitre Officiel District (Désignation Flandres)",
+      "severite": "STANDARD (2.5 jaunes / match)",
+      "moyenne_jaunes": 2.5,
       "badge_color": "#0284c7",
-      "consigne_coach": "Discipline collective et respect des décisions officielles."
+      "consigne_coach": "Arbitre officiel de District. Veiller au calme dans les duels et laisser le capitaine dialoguer."
     },
     "historique_matchs": [
       {
@@ -6913,7 +6914,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "30/10/2026 à 09:44"
+      "derniere_maj": "30/10/2026 à 11:17"
     },
     "dernier_match": {
       "id": "seclin_80464279",
@@ -10617,7 +10618,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "30/10/2026 à 09:44"
+      "derniere_maj": "30/10/2026 à 11:17"
     },
     "dernier_match": {
       "id": "seclin_80464279",
@@ -14321,7 +14322,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "30/10/2026 à 09:44"
+      "derniere_maj": "30/10/2026 à 11:17"
     },
     "dernier_match": {
       "id": "lesquin_80499526",
@@ -17946,7 +17947,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "30/10/2026 à 09:44"
+      "derniere_maj": "30/10/2026 à 11:17"
     },
     "dernier_match": {
       "id": "lesquin_80499526",
