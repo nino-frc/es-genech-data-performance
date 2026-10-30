@@ -1419,15 +1419,32 @@ function renderInterface(data) {
   // Détection automatique de nouvelle mise à jour de données
   const lastSeenMaj = localStorage.getItem('matchday_last_seen_maj');
   const currentMaj = data?.equipe_active?.derniere_maj;
-  if (currentMaj && lastSeenMaj && currentMaj !== lastSeenMaj) {
+  if (currentMaj && (!lastSeenMaj || currentMaj !== lastSeenMaj)) {
     showNotification(`⚽ Données actualisées (${currentMaj})`);
     if ('Notification' in window && Notification.permission === 'granted') {
-      try {
-        new Notification('MatchDay - Données actualisées ⚽', {
-          body: `Nouvelle mise à jour FFF (${currentMaj}) prête sur votre appareil.`,
-          icon: './logo.png'
+      const notifTitle = 'MatchDay - Données actualisées ⚽';
+      const notifBody = `Mise à jour FFF (${currentMaj}) prête sur votre appareil.`;
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.ready.then(reg => {
+          if (reg && reg.showNotification) {
+            reg.showNotification(notifTitle, {
+              body: notifBody,
+              icon: './logo.png',
+              badge: './logo.png',
+              vibrate: [200, 100, 200],
+              data: { url: './' }
+            }).catch(() => {
+              try { new Notification(notifTitle, { body: notifBody, icon: './logo.png' }); } catch (e) {}
+            });
+          }
+        }).catch(() => {
+          try { new Notification(notifTitle, { body: notifBody, icon: './logo.png' }); } catch (e) {}
         });
-      } catch (e) {}
+      } else {
+        try {
+          new Notification(notifTitle, { body: notifBody, icon: './logo.png' });
+        } catch (e) {}
+      }
     }
   }
   if (currentMaj) {

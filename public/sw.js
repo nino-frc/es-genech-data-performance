@@ -1,5 +1,5 @@
 // Service Worker - MatchDay PWA
-const CACHE_NAME = 'matchday-cache-v17';
+const CACHE_NAME = 'matchday-cache-v18';
 const ASSETS = [
   './',
   './index.html',
@@ -36,7 +36,7 @@ self.addEventListener('activate', (e) => {
       ).then(() => {
         if (hasOldCache && self.registration && self.registration.showNotification) {
           return self.registration.showNotification('MatchDay - Données actualisées ⚽', {
-            body: 'Les dernières feuilles FFF, classements et alertes ont été actualisés.',
+            body: 'Affichage mobile optimisé & données FFF actualisées.',
             icon: './logo.png',
             badge: './logo.png',
             vibrate: [200, 100, 200],
@@ -94,7 +94,7 @@ self.addEventListener('notificationclick', (event) => {
   event.waitUntil(
     clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clientList) => {
       for (const client of clientList) {
-        if (client.url.includes('match-day') && 'focus' in client) {
+        if ((client.url.includes('matchday') || client.url.includes('vercel.app')) && 'focus' in client) {
           return client.focus();
         }
       }
