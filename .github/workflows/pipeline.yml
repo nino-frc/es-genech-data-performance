@@ -8,10 +8,10 @@ on:
     # Récupération des feuilles de match FFF du dimanche et débriefing prêt dès 07h00 pour le réveil du staff
     - cron: '35 5 * * 1'
 
-    # Vendredi : Déclenchement à 10h14 UTC (11h14 heure de Paris en hiver UTC+1)
-    # Permet au coach de recevoir le briefing tactique & scouting adverse pour le déjeuner (12h00)
-    # bien avant la séance d'entraînement du vendredi soir
-    - cron: '14 10 * * 5'
+    # Jeudi : Déclenchement à 05h35 UTC (06h35 heure de Paris en hiver UTC+1)
+    # Permet au coach de recevoir le briefing tactique & scouting adverse dès le jeudi matin
+    # après la publication des désignations et avant les séances d'entraînement de fin de semaine
+    - cron: '35 5 * * 4'
 
 jobs:
   run-pipeline:

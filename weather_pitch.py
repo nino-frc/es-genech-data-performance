@@ -33,7 +33,11 @@ STADIUM_COORDINATES = {
     "HENIN": {"lat": 50.4217, "lon": 2.9500, "ville": "Hénin-Beaumont", "surface": "Pelouse naturelle"},
     "ANSTAING": {"lat": 50.6017, "lon": 3.1900, "ville": "Anstaing", "surface": "Pelouse naturelle"},
     "CYSOING": {"lat": 50.5683, "lon": 3.2150, "ville": "Cysoing", "surface": "Pelouse naturelle"},
-    "AUBY": {"lat": 50.4183, "lon": 3.0533, "ville": "Auby", "surface": "Pelouse naturelle"}
+    "AUBY": {"lat": 50.4183, "lon": 3.0533, "ville": "Auby", "surface": "Pelouse naturelle"},
+    "SECLIN": {"lat": 50.5486, "lon": 3.0308, "ville": "Seclin (Stade Henri Jooris)", "surface": "Pelouse naturelle"},
+    "LESQUIN": {"lat": 50.5900, "lon": 3.1111, "ville": "Lesquin (Stade Jean-Pierre Papin)", "surface": "Terrain synthétique"},
+    "CROIX": {"lat": 50.6756, "lon": 3.1492, "ville": "Croix (Stade Henri Seigneur)", "surface": "Pelouse naturelle"},
+    "COURCELLES": {"lat": 50.4181, "lon": 3.0183, "ville": "Courcelles-lès-Lens", "surface": "Pelouse naturelle"}
 }
 
 def get_stadium_info(equipe_domicile: str):
@@ -110,6 +114,7 @@ def get_match_weather(equipe_domicile: str, match_date_str: str = None):
         "temperature": f"{temp_c} °C",
         "vent": vent_label,
         "pluie": pluie_label,
+        "creneau": "Dimanche à l'heure du match (15h00)",
         "consigne_tactique": f"{vent_impact} {terrain_impact}"
     }
 

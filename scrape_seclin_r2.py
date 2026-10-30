@@ -84,8 +84,8 @@ def init_db():
 
 def parse_date_to_iso(date_text: str) -> str:
     mois_map = {
-        "JAN": "01", "FEV": "02", "MAR": "03", "AVR": "04", "MAI": "05", "JUIN": "06",
-        "JUIL": "07", "AOU": "08", "SEP": "09", "OCT": "10", "NOV": "11", "DEC": "12"
+        "JAN": "01", "FEV": "02", "FÉV": "02", "MAR": "03", "AVR": "04", "MAI": "05", "JUIN": "06",
+        "JUIL": "07", "AOU": "08", "AOÛ": "08", "AOÛT": "08", "SEP": "09", "OCT": "10", "NOV": "11", "DEC": "12", "DÉC": "12"
     }
     m = re.search(r"(\d{1,2})\s+([A-ZÉÛ]{3,4})\s+(\d{4})\s*-\s*(\d{1,2})H(\d{2})", date_text, re.IGNORECASE)
     if m:

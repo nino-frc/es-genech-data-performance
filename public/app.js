@@ -1,3 +1,97 @@
+
+function generateDynamicCrestSvg(teamName) {
+  const clean = (teamName || 'CLUB').trim().toUpperCase();
+  const words = clean.replace(/[^A-Z0-9 ]/g, '').split(/\s+/).filter(w => !['US', 'FC', 'ES', 'SC', 'AS', 'O', 'RC', 'IC', 'JS', 'FF', '1', '2', '3'].includes(w) || clean.split(/\s+/).length <= 2);
+  let initials = 'FC';
+  if (words.length >= 2) {
+    initials = (words[0][0] + words[1][0] + (words[2] ? words[2][0] : '')).slice(0, 3);
+  } else if (words.length === 1 && words[0].length >= 3) {
+    initials = words[0].slice(0, 3);
+  } else {
+    initials = clean.replace(/[^A-Z]/g, '').slice(0, 3) || 'CLB';
+  }
+
+  let hash = 0;
+  for (let i = 0; i < clean.length; i++) {
+    hash = clean.charCodeAt(i) + ((hash << 5) - hash);
+  }
+  const palettes = [
+    { p: '#1e3a8a', s: '#0f172a', a: '#38bdf8' },
+    { p: '#dc2626', s: '#7f1d1d', a: '#fbbf24' },
+    { p: '#15803d', s: '#14532d', a: '#ffffff' },
+    { p: '#ea580c', s: '#9a3412', a: '#ffffff' },
+    { p: '#4f46e5', s: '#312e81', a: '#a5b4fc' },
+    { p: '#0284c7', s: '#075985', a: '#facc15' },
+  ];
+  const choice = palettes[Math.abs(hash) % palettes.length];
+  const shortLabel = clean.slice(0, 10);
+
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100"><defs><linearGradient id="g_${Math.abs(hash)}" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="${choice.p}"/><stop offset="100%" stop-color="${choice.s}"/></linearGradient></defs><path d="M50 5 C75 5 90 18 90 44 C90 72 50 94 50 94 C50 94 10 72 10 44 C10 18 25 5 50 5 Z" fill="url(#g_${Math.abs(hash)})" stroke="${choice.a}" stroke-width="3"/><circle cx="50" cy="20" r="2.5" fill="${choice.a}"/><text x="50" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1">${initials}</text><rect x="20" y="62" width="60" height="13" rx="6.5" fill="${choice.a}" opacity="0.95"/><text x="50" y="71.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7" font-weight="800" fill="#0f172a" text-anchor="middle" letter-spacing="0.5">${shortLabel}</text></svg>`;
+
+  return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+}
+
+function getClubLogo(teamName) {
+  if (!teamName) return './logo.png';
+  const up = teamName.toUpperCase();
+  if (up.includes('GENECH')) return './logos/logo_genech.png';
+  if (up.includes('SECLIN')) return './logos/logo_seclin.jpg';
+  if (up.includes('LESQUIN')) return './logos/logo_lesquin.jpg';
+  
+  // Vrais blasons officiels des clubs (PNG / JPG HD officiels)
+  if (up.includes('TATINGHEM') || up.includes('SMLT')) return './logos/logo_tatinghem.png';
+  if (up.includes('ANICHE')) return './logos/logo_aniche.png';
+  if (up.includes('CROIX')) return './logos/logo_croix.png';
+  if (up.includes('COURCELLES')) return './logos/logo_courcelles.png';
+  if (up.includes('CHOISY')) return './logos/logo_choisy.png';
+  if (up.includes('RAISMES')) return './logos/logo_raismes.png';
+  if (up.includes('MARQUETTE')) return './logos/logo_marquette.png';
+  if (up.includes('ROUBAIX')) return './logos/logo_roubaix.png';
+  if (up.includes('BAILLEUL')) return './logos/logo_bailleul.jpg';
+  if (up.includes('BEUVRY')) return './logos/logo_beuvry.svg';
+  if (up.includes('BIACHE')) return './logos/logo_biache.png';
+  if (up.includes('FOURMIES')) return './logos/logo_fourmies.png';
+  if (up.includes('MARLY')) return './logos/logo_marly.png';
+  if (up.includes('WILLEMS')) return './logos/logo_willems.png';
+  if (up.includes('ANSTAING')) return './logos/logo_anstaing.png';
+  if (up.includes('BAVAY')) return './logos/logo_bavay.png';
+  if (up.includes('GUESNAIN')) return './logos/logo_guesnain.png';
+  if (up.includes('AUBY')) return './logos/logo_auby.png';
+  if (up.includes('BONDUES')) return './logos/logo_bondues.png';
+  if (up.includes('CYSOING')) return './logos/logo_cysoing.png';
+  if (up.includes('ESCAUDAIN')) return './logos/logo_escaudain.png';
+  if (up.includes('HEM')) return './logos/logo_hem.png';
+  if (up.includes('HENIN')) return './logos/logo_henin.png';
+  if (up.includes('LINSELLES')) return './logos/logo_linselles.png';
+  if (up.includes('MERVILLE')) return './logos/logo_merville.png';
+  if (up.includes('MONTIGNY')) return './logos/logo_montigny.png';
+  if (up.includes('NOEUX')) return './logos/logo_noeux.png';
+  if (up.includes('NOYELLES')) return './logos/logo_noyelles.png';
+  if (up.includes('PEVELE')) return './logos/logo_pevele.png';
+  if (up.includes('PHALEMPIN')) return './logos/logo_phalempin.png';
+  if (up.includes('TEMPLEUVE')) return './logos/logo_templeuve.png';
+  if (up.includes('SUMMER') || up.includes('VALENCIENNES')) return './logos/logo_summer.png';
+  if (up.includes('MAUBEUGE')) return './logos/logo_maubeuge.png';
+  if (up.includes('ANTILLAIS')) return './logos/logo_antillais.png';
+  if (up.includes('LOUVIERE')) return './logos/logo_louviere.png';
+
+  // Clubs Officiels Féminines (Interdistricts Poule C) & Séniors B (D2 Poule C)
+  if (up.includes('FRETIN')) return './logos/logo_fretin.jpg';
+  if (up.includes('AMAND')) return './logos/logo_st_amand.jpg';
+  if (up.includes('FEIGNIES')) return './logos/logo_feignies.jpg';
+  if (up.includes('LEERS')) return './logos/logo_leers.jpg';
+  if (up.includes('LAMBRES')) return './logos/logo_lambres.jpg';
+  if (up.includes('THUMERIES')) return './logos/logo_thumeries.jpg';
+  if (up.includes('WAMBRECHIES')) return './logos/logo_wambrechies.jpg';
+  if (up.includes('PREMESQUE')) return './logos/logo_premesques.jpg';
+  if (up.includes('COMINES')) return './logos/logo_comines.jpg';
+  if (up.includes('BAUVIN')) return './logos/logo_bauvin.jpg';
+  if (up.includes('LOOS') || up.includes('OLIVEAUX')) return './logos/logo_loos.jpg';
+  if (up.includes('LYS')) return './logos/logo_lys.jpg';
+  if (up.includes('WATTRELOS')) return './logos/logo_wattrelos.jpg';
+
+  return './logo.png';
+}
 /**
  * MatchDay PWA - Client Script & Alimentation Dynamique
  * Gestion des 5 Onglets, Modales Joueurs Interactives, Trésorerie & Gouvernance
@@ -248,13 +342,13 @@ function openMatchDetailModal(matchIndex) {
 
   const badgeEl = document.getElementById('detailModalResultBadge');
   if (m.resultat === 'V') {
-    badgeEl.textContent = 'Victoire';
+    badgeEl.textContent = m.resultat_label || 'Victoire';
     badgeEl.className = 'match-detail-result-badge score-pill-win';
   } else if (m.resultat === 'N') {
-    badgeEl.textContent = 'Match Nul';
+    badgeEl.textContent = m.resultat_label || 'Match Nul';
     badgeEl.className = 'match-detail-result-badge score-pill-draw';
   } else {
-    badgeEl.textContent = 'Défaite';
+    badgeEl.textContent = m.resultat_label || 'Défaite';
     badgeEl.className = 'match-detail-result-badge score-pill-loss';
   }
 
@@ -266,7 +360,7 @@ function openMatchDetailModal(matchIndex) {
   if (evs.length > 0) {
     let evHtml = '';
     evs.forEach(ev => {
-      let icon = '⚡';
+      let icon = '⏱️';
       let title = ev.type;
       if (ev.type === 'BUT') {
         icon = '⚽';
@@ -607,6 +701,12 @@ function showLicenseModal(errorMsg) {
 function hideLicenseModal() {
   const modal = document.getElementById('licenseModal');
   if (modal) modal.classList.add('hidden');
+  const mainApp = document.getElementById('mainAppContent');
+  const bottomNav = document.querySelector('.bottom-nav');
+  const headerActions = document.getElementById('headerActionsBar');
+  if (mainApp) mainApp.style.display = 'block';
+  if (bottomNav) bottomNav.style.display = 'flex';
+  if (headerActions) headerActions.style.display = 'flex';
 }
 
 function handleLicenseSubmit(e) {
@@ -801,8 +901,14 @@ function authenticateClub(key, declaredRole, isFormSubmit) {
   const countBadge = document.getElementById('activeDeviceCountBadge');
   if (countBadge) countBadge.textContent = activeCount;
 
-  // 8. Fermeture de la modale de licence
+  // 8. Fermeture de la modale de licence et restauration navigation
   hideLicenseModal();
+  const mainApp = document.getElementById('mainAppContent');
+  const bottomNav = document.querySelector('.bottom-nav');
+  const headerActions = document.getElementById('headerActionsBar');
+  if (mainApp) mainApp.style.display = 'block';
+  if (bottomNav) bottomNav.style.display = 'flex';
+  if (headerActions) headerActions.style.display = 'flex';
 
   // 9. Dismiss du Splash Screen après transition fluide
   dismissSplashScreen();
@@ -1123,6 +1229,13 @@ function logoutClub(silent) {
     localStorage.removeItem('matchday_support_code');
   } catch (e) {}
 
+  const mainApp = document.getElementById('mainAppContent');
+  const bottomNav = document.querySelector('.bottom-nav');
+  const headerActions = document.getElementById('headerActionsBar');
+  if (mainApp) mainApp.style.display = 'none';
+  if (bottomNav) bottomNav.style.display = 'none';
+  if (headerActions) headerActions.style.display = 'none';
+
   activeClub = null;
   currentSupportCode = null;
   currentStaffRole = null;
@@ -1283,6 +1396,12 @@ function initApp() {
   } catch (e) {}
 
   if (!storedKey) {
+    const mainApp = document.getElementById('mainAppContent');
+    const bottomNav = document.querySelector('.bottom-nav');
+    const headerActions = document.getElementById('headerActionsBar');
+    if (mainApp) mainApp.style.display = 'none';
+    if (bottomNav) bottomNav.style.display = 'none';
+    if (headerActions) headerActions.style.display = 'none';
     showLicenseModal();
     return;
   }
@@ -1296,6 +1415,24 @@ function initApp() {
 // 7. Rendu DOM Dynamique Complet
 function renderInterface(data) {
   if (!data) return;
+  // Détection automatique de nouvelle mise à jour de données
+  const lastSeenMaj = localStorage.getItem('matchday_last_seen_maj');
+  const currentMaj = data?.equipe_active?.derniere_maj;
+  if (currentMaj && lastSeenMaj && currentMaj !== lastSeenMaj) {
+    showNotification(`⚽ Données actualisées (${currentMaj})`);
+    if ('Notification' in window && Notification.permission === 'granted') {
+      try {
+        new Notification('MatchDay - Données actualisées ⚽', {
+          body: `Nouvelle mise à jour FFF (${currentMaj}) prête sur votre appareil.`,
+          icon: './logo.png'
+        });
+      } catch (e) {}
+    }
+  }
+  if (currentMaj) {
+    localStorage.setItem('matchday_last_seen_maj', currentMaj);
+  }
+
 
   const isTrial = Boolean(activeClub && activeClub.plan === 'TRIAL_BRIDEE');
 
@@ -1319,10 +1456,18 @@ function renderInterface(data) {
   const scoreEl = document.getElementById('matchScoreDisplay');
   const metaEl = document.getElementById('matchMetaInfo');
 
-  if (homeEl) homeEl.textContent = match.domicile || '--';
-  if (awayEl) awayEl.textContent = match.exterieur || '--';
+  if (homeEl) {
+    homeEl.innerHTML = match.domicile && match.domicile.toUpperCase().includes('GENECH') ? `<strong>${match.domicile}</strong>` : (match.domicile || '--');
+  }
+  if (awayEl) {
+    awayEl.innerHTML = match.exterieur && match.exterieur.toUpperCase().includes('GENECH') ? `<strong>${match.exterieur}</strong>` : (match.exterieur || '--');
+  }
+  const homeLogoEl = document.getElementById('homeTeamLogo');
+  const awayLogoEl = document.getElementById('awayTeamLogo');
+  if (homeLogoEl) homeLogoEl.src = getClubLogo(match.domicile);
+  if (awayLogoEl) awayLogoEl.src = getClubLogo(match.exterieur);
   if (scoreEl && match.score_domicile !== undefined && match.score_exterieur !== undefined) {
-    scoreEl.textContent = `${match.score_domicile} - ${match.score_exterieur}`;
+    scoreEl.textContent = match.score_display || `${match.score_domicile} - ${match.score_exterieur}`;
   }
   if (metaEl) {
     metaEl.textContent = `${match.competition || ''} • ${match.date_heure || ''}`;
@@ -1337,7 +1482,7 @@ function renderInterface(data) {
 
   if (goalsEl) goalsEl.textContent = kpis.buts_marques ?? '--';
   if (csEl) csEl.textContent = kpis.clean_sheets ?? '--';
-  if (minEl) minEl.textContent = kpis.minutes_cumulees ? `${kpis.minutes_cumulees.toLocaleString()}m` : '--';
+  if (minEl) minEl.textContent = kpis.minutes_cumulees ? `${kpis.minutes_cumulees.toLocaleString()} mn` : '--';
   if (cardsEl) cardsEl.textContent = `${kpis.cartons_jaunes ?? 0} J. / ${kpis.cartons_rouges ?? 0} R.`;
 
   // D. Chronologie Dernier Match
@@ -1370,7 +1515,16 @@ function renderInterface(data) {
   const next = data.prochain_match || {};
   const ref = data.arbitre_prochain_match || {};
   if (next.domicile) {
-    document.getElementById('nextMatchFixture').textContent = `${next.domicile} vs ${next.exterieur}`;
+    const nextHomeNameEl = document.getElementById('nextHomeName');
+    const nextAwayNameEl = document.getElementById('nextAwayName');
+    const nextHomeLogoEl = document.getElementById('nextHomeLogo');
+    const nextAwayLogoEl = document.getElementById('nextAwayLogo');
+    if (nextHomeNameEl) nextHomeNameEl.innerHTML = next.domicile.toUpperCase().includes('GENECH') ? `<strong>${next.domicile}</strong>` : next.domicile;
+    if (nextAwayNameEl) nextAwayNameEl.innerHTML = next.exterieur.toUpperCase().includes('GENECH') ? `<strong>${next.exterieur}</strong>` : next.exterieur;
+    if (nextHomeLogoEl) nextHomeLogoEl.src = getClubLogo(next.domicile);
+    if (nextAwayLogoEl) nextAwayLogoEl.src = getClubLogo(next.exterieur);
+    const fixEl = document.getElementById('nextMatchFixture');
+    if (fixEl) fixEl.textContent = `${next.domicile} vs ${next.exterieur}`;
     document.getElementById('nextMatchComp').textContent = next.competition;
     document.getElementById('nextMatchDate').textContent = next.date_heure ? (next.date_heure.includes('T') || next.date_heure.includes(':') ? next.date_heure : next.date_heure) : "À programmer";
     document.getElementById('nextMatchLieu').textContent = next.lieu || "Terrain Officiel";
@@ -1382,6 +1536,31 @@ function renderInterface(data) {
     document.getElementById('refereeSeverityBadge').style.color = ref.badge_color || '#b91c1c';
     document.getElementById('refereeCardsAvg').textContent = `${ref.moyenne_jaunes} cartons jaunes / match`;
     document.getElementById('refereeAdvice').textContent = ref.consigne_coach;
+  }
+
+  // E ter. Météo & Conditions de Jeu
+  const weather = data.meteo_prochain_match;
+  const weatherBox = document.getElementById('matchWeatherBox');
+  if (weatherBox) {
+    if (weather && weather.lieu) {
+      const elLieu = document.getElementById('weatherLieu');
+      const elTemp = document.getElementById('weatherTemp');
+      const elPluie = document.getElementById('weatherPluie');
+      const elVent = document.getElementById('weatherVent');
+      const elSurf = document.getElementById('weatherSurface');
+      const elCons = document.getElementById('weatherConsigne');
+      if (elLieu) elLieu.textContent = weather.lieu;
+      if (elTemp) elTemp.textContent = weather.temperature || '-- °C';
+      if (elPluie) elPluie.textContent = weather.pluie || 'Sec (0%)';
+      if (elVent) elVent.textContent = weather.vent || 'Faible';
+      if (elSurf) elSurf.textContent = weather.surface || 'Pelouse naturelle';
+      if (elCons) elCons.textContent = weather.consigne_tactique || 'Conditions standard.';
+      const elCren = document.getElementById('weatherCreneau');
+      if (elCren) elCren.textContent = weather.creneau || 'Dimanche à 15h00';
+      weatherBox.style.display = 'block';
+    } else {
+      weatherBox.style.display = 'none';
+    }
   }
 
   // E bis. Scouting Comparatif Dynamique & Alertes Adversaire
@@ -1532,21 +1711,18 @@ function renderInterface(data) {
             </div>
             <div class="match-history-main">
               <div class="match-history-team home ${isHomeClub ? 'highlight-genech' : ''}">
-                ${m.domicile}
+                ${isHomeClub ? `<strong>${m.domicile}</strong>` : m.domicile}
               </div>
               <div class="match-history-score-wrapper">
                 <span class="score-pill ${pillClass}">${m.score_display}</span>
                 <span class="match-history-res-tag ${tagClass}">${m.resultat_label}</span>
               </div>
               <div class="match-history-team away ${isAwayClub ? 'highlight-genech' : ''}">
-                ${m.exterieur}
-              </div>
-            </div>
-                ${m.exterieur}
+                ${isAwayClub ? `<strong>${m.exterieur}</strong>` : m.exterieur}
               </div>
             </div>
             <div style="display: flex; justify-content: space-between; align-items: center; font-size: 10px; color: var(--text-light); border-top: 1px dashed var(--border-light); padding-top: 5px; margin-top: 2px;">
-              <span>⚡ ${m.evenements ? m.evenements.length : 0} événements</span>
+              <span>⏱️ ${m.evenements ? m.evenements.length : 0} événements</span>
               <span style="font-weight: 700; color: var(--color-primary);">Feuille de match 👉</span>
             </div>
           </div>
@@ -1754,11 +1930,15 @@ function renderInterface(data) {
   }
 
   // I. Classement Officiel & Isolation Club
-  const isSeclinClub = (activeClub?.code === 'seclin' || activeClub?.club_code === 'SCLN');
-  const isLesquinClub = (activeClub?.club_code === 'LSQN' || activeClub?.club_id === '500426');
+  // (currentTeam already declared above)
+  const isSeclinClub = (currentTeam.team_id && currentTeam.team_id.includes('500934')) || 
+                       (currentTeam.nom && currentTeam.nom.toUpperCase().includes('SECLIN')) ||
+                       (activeClub?.code === 'seclin' || activeClub?.club_code === 'SCLN');
+  const isLesquinClub = (currentTeam.team_id && currentTeam.team_id.includes('500426')) || 
+                        (currentTeam.nom && currentTeam.nom.toUpperCase().includes('LESQUIN')) ||
+                        (activeClub?.club_code === 'LSQN' || activeClub?.club_id === '500426');
   const standingsCardTitleEl = document.getElementById('standingsCardTitle');
   if (standingsCardTitleEl) {
-    const currentTeam = (window.MATCHDAY_TEAMS && window.MATCHDAY_TEAMS[currentTeamId]) || {};
     standingsCardTitleEl.textContent = (isSeclinClub || isLesquinClub) 
       ? "Régional 2 • Poule B" 
       : (currentTeam.categorie ? `${currentTeam.categorie} • ${currentTeam.poule || 'Poule D'}` : "Seniors R3 • Poule D");
@@ -1769,30 +1949,79 @@ function renderInterface(data) {
   if (standingsContainer) {
     if (standings.length > 0) {
       let tableHtml = `
-        <table class="table-fff">
-          <thead>
-            <tr>
-              <th style="width: 28px;">Pl</th>
-              <th>Équipe</th>
-              <th style="text-align: right; width: 45px;">Pts</th>
-              <th style="text-align: right; width: 35px;">J</th>
-            </tr>
-          </thead>
-          <tbody>
+        <div class="standings-scroll-container">
+          <table class="table-fff">
+            <thead>
+              <tr>
+                <th style="width: 24px; text-align: center;">#</th>
+                <th style="text-align: left;">ÉQUIPES</th>
+                <th style="text-align: center; width: 38px;">PTS</th>
+                <th style="text-align: center; width: 32px;">JO</th>
+                <th style="text-align: center; width: 58px;">G-N-P</th>
+                <th style="text-align: center; width: 32px;">BP</th>
+                <th style="text-align: center; width: 32px;">BC</th>
+                <th style="text-align: center; width: 38px;">DIFF</th>
+                <th style="text-align: center; width: 95px;">FORME</th>
+              </tr>
+            </thead>
+            <tbody>
       `;
+      const clubSearch = isSeclinClub ? 'SECLIN' : (isLesquinClub ? 'LESQUIN' : 'GENECH');
       standings.forEach(st => {
-        const clubSearch = isSeclinClub ? 'SECLIN' : (isLesquinClub ? 'LESQUIN' : ((activeClub?.club_code === 'GNCH') ? 'GENECH' : (activeClub?.nom ? activeClub.nom.toUpperCase().replace(/^(ES|FC|AS|SC|OSC|US)\s+/, '') : '')));
-        const isClub = clubSearch ? st.equipe.toUpperCase().includes(clubSearch) : false;
+        const teamName = st.equipe || st.nom || '--';
+        const isClub = clubSearch ? teamName.toUpperCase().includes(clubSearch) : false;
+        
+        const g = st.gagnes !== undefined ? st.gagnes : (st.victoires !== undefined ? st.victoires : 0);
+        const n = st.nuls !== undefined ? st.nuls : 0;
+        const p = st.perdus !== undefined ? st.perdus : (st.defaites !== undefined ? st.defaites : 0);
+        const bp = st.buts_pour !== undefined ? st.buts_pour : 0;
+        const bc = st.buts_contre !== undefined ? st.buts_contre : 0;
+        const diffVal = st.diff !== undefined ? st.diff : (st.difference !== undefined ? st.difference : (bp - bc));
+        const diffDisplay = diffVal > 0 ? `+${diffVal}` : `${diffVal}`;
+        
+        // Forme Badges
+        const formList = Array.isArray(st.forme) && st.forme.length > 0 
+          ? st.forme 
+          : (["V"].concat(Array(Math.max(0, g-1)).fill("V"), Array(n).fill("N"), Array(p).fill("D"))).slice(0, 4);
+        
+        let formBadgesHtml = '';
+        formList.forEach(res => {
+          const rUpper = String(res).toUpperCase();
+          if (rUpper === 'V') {
+            formBadgesHtml += `<span class="badge-forme forme-v">V</span>`;
+          } else if (rUpper === 'N') {
+            formBadgesHtml += `<span class="badge-forme forme-n">N</span>`;
+          } else {
+            formBadgesHtml += `<span class="badge-forme forme-d">D</span>`;
+          }
+        });
+
         tableHtml += `
-          <tr class="${isClub ? 'highlight-team' : ''}">
-            <td>${st.rang}</td>
-            <td>${st.equipe}</td>
-            <td style="text-align: right; font-weight: 700;">${st.points}</td>
-            <td style="text-align: right; color: var(--text-light);">${st.joues}</td>
+          <tr class="${isClub ? 'highlight-team' : ''}" style="${isClub ? 'background: #f0fdf4 !important; border-left: 4px solid #1e3a8a !important;' : ''}">
+            <td style="font-weight: ${isClub ? '800' : '600'}; text-align: center; width: 24px; ${isClub ? 'color: #1e3a8a !important;' : 'color: var(--text-light);'}">${st.rang}</td>
+            <td style="text-align: left;">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <img src="${getClubLogo(teamName)}" alt="" style="width: 22px; height: 22px; border-radius: 50%; object-fit: contain; flex-shrink: 0; background: #ffffff; border: 1px solid rgba(0,0,0,0.1); padding: 1px;">
+                <span style="${isClub ? 'font-weight: 800 !important; color: #0a1728 !important; font-size: 13px !important;' : 'font-weight: 600; color: #1e293b;'}">${isClub ? `<strong>${teamName}</strong>` : teamName}</span>
+              </div>
+            </td>
+            <td style="text-align: center; font-weight: 800; ${isClub ? 'color: #1e3a8a !important;' : 'color: #0f172a;'}">${st.points}</td>
+            <td style="text-align: center; color: var(--text-light); font-weight: 600;">${st.joues}</td>
+            <td style="text-align: center; font-size: 12px; letter-spacing: 0.5px;">
+              <span class="stat-g">${g}</span>-<span class="stat-n">${n}</span>-<span class="stat-p">${p}</span>
+            </td>
+            <td style="text-align: center; color: var(--text-light); font-weight: 500;">${bp}</td>
+            <td style="text-align: center; color: var(--text-light); font-weight: 500;">${bc}</td>
+            <td style="text-align: center; font-weight: 700; ${diffVal > 0 ? 'color: #15803d;' : (diffVal < 0 ? 'color: #b91c1c;' : 'color: #64748b;')}">${diffDisplay}</td>
+            <td style="text-align: center;">
+              <div style="display: inline-flex; align-items: center; gap: 3px;">
+                ${formBadgesHtml}
+              </div>
+            </td>
           </tr>
         `;
       });
-      tableHtml += '</tbody></table>';
+      tableHtml += '</tbody></table></div>';
       standingsContainer.innerHTML = tableHtml;
       standingsContainer.classList.remove('skeleton');
     } else {

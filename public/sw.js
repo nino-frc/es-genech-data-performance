@@ -1,5 +1,5 @@
 // Service Worker - MatchDay PWA
-const CACHE_NAME = 'matchday-cache-v15';
+const CACHE_NAME = 'matchday-cache-v17';
 const ASSETS = [
   './',
   './index.html',
@@ -28,11 +28,22 @@ self.addEventListener('install', (e) => {
 self.addEventListener('activate', (e) => {
   e.waitUntil(
     caches.keys().then((keys) => {
+      const hasOldCache = keys.some(key => key !== CACHE_NAME);
       return Promise.all(
         keys.map((key) => {
           if (key !== CACHE_NAME) return caches.delete(key);
         })
-      );
+      ).then(() => {
+        if (hasOldCache && self.registration && self.registration.showNotification) {
+          return self.registration.showNotification('MatchDay - Données actualisées ⚽', {
+            body: 'Les dernières feuilles FFF, classements et alertes ont été actualisés.',
+            icon: './logo.png',
+            badge: './logo.png',
+            vibrate: [200, 100, 200],
+            data: { url: './' }
+          }).catch(() => {});
+        }
+      });
     })
   );
   self.clients.claim();

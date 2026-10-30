@@ -41,7 +41,7 @@
         MatchDay <span class="badge-tag" id="appRoleBadge">SAAS</span>
       </div>
     </div>
-    <div class="header-actions">
+    <div class="header-actions" id="headerActionsBar" style="display: none;">
       <!-- Sélecteur Club Super-Admin Master (visible uniquement si Clé Master Nino) -->
       <div class="master-club-container" id="masterClubContainer" style="display: none;">
         <span class="status-dot master-dot"></span>
@@ -97,9 +97,15 @@
       <div class="score-hero">
         <span class="score-badge-status" id="matchStatusBadge">DERNIER RÉSULTAT OFFICIEL</span>
         <div class="score-matchup">
-          <div class="team-col home" id="homeTeamName">--</div>
+          <div class="team-col home">
+            <img id="homeTeamLogo" class="matchup-team-logo" src="./logo.png" alt="Logo" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; margin-bottom: 3px; display: inline-block; border: 1.5px solid rgba(255,255,255,0.4); background: #fff;">
+            <div id="homeTeamName" style="font-weight: 800;">--</div>
+          </div>
           <div class="score-number-badge" id="matchScoreDisplay">- : -</div>
-          <div class="team-col away" id="awayTeamName">--</div>
+          <div class="team-col away">
+            <img id="awayTeamLogo" class="matchup-team-logo" src="./logo.png" alt="Logo" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; margin-bottom: 3px; display: inline-block; border: 1.5px solid rgba(255,255,255,0.4); background: #fff;">
+            <div id="awayTeamName" style="font-weight: 800;">--</div>
+          </div>
         </div>
         <div class="match-subtext" id="matchMetaInfo">Chargement FFF...</div>
       </div>
@@ -147,13 +153,23 @@
       <div class="card">
         <div class="card-header-bar">
           <span class="card-title">Prochain Match • Scouting FFF</span>
-          <span class="card-meta" id="nextMatchDate">08/11 à 14h30</span>
+          <span class="card-meta" id="nextMatchDate">01/11 à 14h30</span>
         </div>
         
         <div class="scouting-header" style="text-align: center;">
-          <div style="font-size: 11px; text-transform: uppercase; color: #94a3b8;" id="nextMatchComp">--</div>
-          <div style="font-size: 16px; font-weight: 800; margin: 4px 0;" id="nextMatchFixture">-- vs --</div>
-          <div style="font-size: 10.5px; color: #cbd5e1;" id="nextMatchLieu">--</div>
+          <div style="font-size: 11px; text-transform: uppercase; color: #93c5fd; font-weight: 700; letter-spacing: 0.5px;" id="nextMatchComp">--</div>
+          <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin: 8px 0;">
+            <div style="text-align: center; flex: 1;">
+              <img id="nextHomeLogo" class="matchup-team-logo" src="./logos/logo_genech.png" alt="Logo" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover; display: inline-block; margin-bottom: 3px; border: 2px solid rgba(255,255,255,0.4); box-shadow: 0 2px 6px rgba(0,0,0,0.3); background: #ffffff;">
+              <div id="nextHomeName" style="font-size: 13.5px; font-weight: 800; color: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,0.4);">--</div>
+            </div>
+            <div style="font-size: 11px; font-weight: 900; color: #93c5fd; background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.25); padding: 4px 9px; border-radius: 6px; letter-spacing: 0.5px;">VS</div>
+            <div style="text-align: center; flex: 1;">
+              <img id="nextAwayLogo" class="matchup-team-logo" src="./logos/logo_aniche.png" alt="Logo" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover; display: inline-block; margin-bottom: 3px; border: 2px solid rgba(255,255,255,0.4); box-shadow: 0 2px 6px rgba(0,0,0,0.3); background: #ffffff;">
+              <div id="nextAwayName" style="font-size: 13.5px; font-weight: 800; color: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,0.4);">--</div>
+            </div>
+          </div>
+          <div style="font-size: 11px; color: #bfdbfe;" id="nextMatchLieu">--</div>
         </div>
 
         <!-- Comparaison Directe des Stats (Généré dynamiquement par renderInterface) -->
@@ -182,6 +198,29 @@
           <div style="font-size: 11px; color: var(--text-muted); line-height: 1.4;">
             <strong>Moyenne :</strong> <span id="refereeCardsAvg">4.5 cartons jaunes / match</span>.<br>
             <strong>Consigne Staff :</strong> <span id="refereeAdvice">Arbitre qui cartonne très vite sur les gestes d'humeur. Seul le capitaine doit lui adresser la parole.</span>
+          </div>
+        </div>
+
+        <!-- Bulletin Météo & Conditions de Jeu -->
+        <div class="weather-box" id="matchWeatherBox" style="margin-top: 10px; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 10px 12px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <div style="font-size: 12px; font-weight: 800; color: #166534;" id="weatherHeader">
+              🌤️ Météo Jour du Match • <span id="weatherLieu">Stade</span>
+            </div>
+            <span class="severity-pill" style="background: #dcfce7; color: #15803d; font-size: 10.5px; font-weight: 800; padding: 2px 8px; border-radius: 9999px;" id="weatherTemp">
+              11°C
+            </span>
+          </div>
+          <div style="font-size: 11px; color: #166534; line-height: 1.4;">
+            <div style="display: flex; flex-wrap: wrap; gap: 8px 14px; margin-bottom: 5px; font-weight: 600;">
+              <span>🕒 Horaire : <strong id="weatherCreneau">Dimanche 15h00</strong></span>
+              <span>🌧️ Pluie : <strong id="weatherPluie">Sec (0%)</strong></span>
+              <span>💨 Vent : <strong id="weatherVent">16 km/h</strong></span>
+              <span>🌱 Surface : <strong id="weatherSurface">Pelouse naturelle</strong></span>
+            </div>
+            <div style="font-size: 10.5px; color: #15803d; font-style: italic; border-top: 1px dashed #bbf7d0; padding-top: 4px;" id="weatherConsigne">
+              Conditions idéales pour un jeu de possession maîtrisé.
+            </div>
           </div>
         </div>
 
@@ -741,7 +780,7 @@
               <button type="button" class="role-preset-btn" onclick="selectRolePreset('Entraîneur Adjoint')">Adjoint</button>
               <button type="button" class="role-preset-btn" onclick="selectRolePreset('Dirigeant / Staff')">Dirigeant</button>
             </div>
-            <div class="form-tip">Permet à Nino de vous identifier sans collecter vos données personnelles.</div>
+            <div class="form-tip">Permet d'identifier votre rôle au sein du staff.</div>
           </div>
 
           <div id="licenseErrorMsg" class="license-error-msg hidden"></div>

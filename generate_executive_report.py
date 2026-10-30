@@ -39,9 +39,10 @@ def launch_browser(p):
 def generate_executive_report(club_display_name="Club Partenaire"):
     conn = sqlite3.connect(DB_PATH)
 
-    df_matchs = pd.read_sql_query("SELECT * FROM matchs WHERE statut = 'TERMINE'", conn)
+    # Isolation stricte de l'équipe fanion Senior A
+    df_matchs = pd.read_sql_query("SELECT * FROM matchs WHERE statut = 'TERMINE' AND equipe_club_id = 'SENIOR_M1' ORDER BY date_heure ASC", conn)
     df_classement = pd.read_sql_query("SELECT * FROM classement_poule ORDER BY rang ASC", conn)
-    df_events = pd.read_sql_query("SELECT * FROM match_events", conn)
+    df_events = pd.read_sql_query("SELECT me.* FROM match_events me JOIN matchs m ON me.match_id = m.id WHERE m.equipe_club_id = 'SENIOR_M1'", conn)
     conn.close()
 
     # Logo MatchDay Base64
@@ -52,7 +53,7 @@ def generate_executive_report(club_display_name="Club Partenaire"):
 
     # Données analytiques
     df_ratings = calculate_player_ratings()
-    df_discipline, alerts = analyze_discipline()
+    df_discipline, alerts = analyze_discipline(equipe_club_id='SENIOR_M1')
     df_subs = calculate_substitutions_impact()
 
     # Bilan sportif officiel
@@ -65,11 +66,12 @@ def generate_executive_report(club_display_name="Club Partenaire"):
     buts_encaisses = 0
 
     for _, m in df_matchs.iterrows():
-        s_g = m['score_domicile']
-        s_o = m['score_exterieur']
-        if pd.notnull(s_g) and pd.notnull(s_o):
-            s_g = int(s_g)
-            s_o = int(s_o)
+        s_dom = m['score_domicile']
+        s_ext = m['score_exterieur']
+        if pd.notnull(s_dom) and pd.notnull(s_ext):
+            is_dom = "GENECH" in str(m['equipe_domicile']).upper()
+            s_g = int(s_dom) if is_dom else int(s_ext)
+            s_o = int(s_ext) if is_dom else int(s_dom)
             buts_marques += s_g
             buts_encaisses += s_o
             if s_g > s_o: victoires += 1

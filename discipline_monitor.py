@@ -54,7 +54,7 @@ def normalize_player_name(raw_name: str) -> str:
     name = raw_name.strip().upper()
     return NAME_MAPPING.get(name, name)
 
-def analyze_discipline(reference_date=None):
+def analyze_discipline(reference_date=None, equipe_club_id='SENIOR_M1'):
     if reference_date is None:
         reference_date = datetime.now()
     elif isinstance(reference_date, str):
@@ -62,14 +62,16 @@ def analyze_discipline(reference_date=None):
 
     conn = sqlite3.connect(DB_PATH)
 
-    # Récupération de tous les matchs terminés de Genech pour évaluer les purges
+    # Récupération des matchs terminés de l'équipe ciblée pour évaluer les purges
     query_matchs = """
     SELECT id, date_heure, tour_ou_journee, competition_id 
     FROM matchs 
-    WHERE statut = 'TERMINE' AND (equipe_domicile LIKE '%GENECH%' OR equipe_exterieur LIKE '%GENECH%')
+    WHERE statut = 'TERMINE' 
+      AND (equipe_club_id = ? OR ? IS NULL)
+      AND (equipe_domicile LIKE '%GENECH%' OR equipe_exterieur LIKE '%GENECH%')
     ORDER BY date_heure ASC;
     """
-    df_matchs = pd.read_sql_query(query_matchs, conn)
+    df_matchs = pd.read_sql_query(query_matchs, conn, params=(equipe_club_id, equipe_club_id))
     df_matchs['date_match'] = pd.to_datetime(df_matchs['date_heure'])
 
     query_cards = """
@@ -78,10 +80,11 @@ def analyze_discipline(reference_date=None):
     FROM match_events me
     JOIN matchs m ON m.id = me.match_id
     WHERE me.type_event IN ('AVERTISSEMENT', 'EXPULSION')
+      AND (m.equipe_club_id = ? OR ? IS NULL)
       AND (me.equipe LIKE '%GENECH%' OR me.equipe = '')
     ORDER BY m.date_heure ASC;
     """
-    df_cards = pd.read_sql_query(query_cards, conn)
+    df_cards = pd.read_sql_query(query_cards, conn, params=(equipe_club_id, equipe_club_id))
     conn.close()
 
     if df_cards.empty:

@@ -302,12 +302,13 @@ body {
    Encart Scoreboard
    -------------------------------------------------------------------------- */
 .score-hero {
-  background: var(--bg-header);
+  background: linear-gradient(135deg, #002244 0%, #003870 50%, #00509e 100%);
   border-radius: 8px;
   padding: 14px 16px;
   color: #fff;
   text-align: center;
   border-left: 4px solid var(--color-green);
+  box-shadow: 0 4px 14px rgba(0, 34, 68, 0.22);
 }
 .score-badge-status {
   display: inline-block; font-size: 9.5px; font-weight: 800; text-transform: uppercase;
@@ -339,11 +340,13 @@ body {
    Prochain Match & Scouting Adversaire (Aniche SC)
    -------------------------------------------------------------------------- */
 .scouting-header {
-  background: #002d5a;
+  background: linear-gradient(135deg, #002244 0%, #003870 50%, #00509e 100%);
   color: #fff;
-  padding: 10px 14px;
-  border-radius: 6px;
-  margin-bottom: 10px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 14px rgba(0, 34, 68, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 .scouting-matchup-grid {
   display: grid;
@@ -2117,3 +2120,80 @@ netlify-drawer {
   margin: 0;
   line-height: 1.35;
 }
+
+/* Portail d'Accès Club Plein Écran */
+#licenseModal {
+  background: #0a1728 !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 16px !important;
+  z-index: 10000 !important;
+}
+#licenseModal .license-sheet {
+  border-radius: 16px !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5) !important;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* ====================================================================
+   TABLEAU DE CLASSEMENT OFFICIEL FFF DÉTAILLÉ (.table-fff & .highlight-team)
+   ==================================================================== */
+.standings-scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 4px;
+  border-radius: 8px;
+}
+.table-fff {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+.table-fff th {
+  padding: 9px 8px;
+  font-size: 10.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #1e40af;
+  background: #f8fafc;
+  border-bottom: 2px solid #e2e8f0;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+.table-fff td {
+  padding: 9px 8px;
+  border-bottom: 1px solid #f1f5f9;
+  color: var(--text-main);
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.table-fff tr.highlight-team {
+  background: #f0fdf4 !important;
+  border-left: 4px solid #1e3a8a !important;
+}
+.table-fff tr.highlight-team td {
+  font-weight: 700;
+}
+.table-fff tr.highlight-team strong {
+  font-weight: 900 !important;
+  font-size: 13px !important;
+}
+.badge-forme {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 19px;
+  height: 19px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 800;
+}
+.forme-v { background: #22c55e; color: #ffffff; }
+.forme-n { background: #f1f5f9; color: #64748b; border: 1px solid #cbd5e1; }
+.forme-d { background: #ef4444; color: #ffffff; }
+.stat-g { color: #16a34a; font-weight: 700; }
+.stat-n { color: #0284c7; font-weight: 700; }
+.stat-p { color: #dc2626; font-weight: 700; }
