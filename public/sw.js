@@ -1,75 +1,23 @@
-// Service Worker - MatchDay PWA
-const CACHE_NAME = 'matchday-cache-v20';
-const ASSETS = [
-  './',
-  './index.html',
-  './styles.css',
-  './app.js',
-  './data.js',
-  './licenses_registry.js',
-  './manifest.json',
-  './logo.png',
-  './logos/logo_genech.png',
-  './logos/logo_seclin.jpg',
-  './logos/logo_lesquin.jpg',
-  './qr_codes/qr_gnch.png',
-  './qr_codes/qr_scln.png',
-  './qr_codes/qr_lsqn.png',
-  './qr_codes/qr_root.png'
-];
+// Service Worker - MatchDay PWA (Notifications Push & Mode Autonome)
+const CACHE_NAME = 'matchday-cache-v21';
 
 self.addEventListener('install', (e) => {
-  e.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return Promise.allSettled(
-        ASSETS.map(url => cache.add(url).catch(() => {}))
-      );
-    })
-  );
   self.skipWaiting();
 });
 
 self.addEventListener('activate', (e) => {
+  // Suppression immédiate de tous les anciens caches pour éviter tout blocage
   e.waitUntil(
     caches.keys().then((keys) => {
-      const hasOldCache = keys.some(key => key !== CACHE_NAME);
-      return Promise.all(
-        keys.map((key) => {
-          if (key !== CACHE_NAME) return caches.delete(key);
-        })
-      ).then(() => {
-        if (hasOldCache && self.registration && self.registration.showNotification) {
-          return self.registration.showNotification('MatchDay - Données actualisées ⚽', {
-            body: 'Affichage mobile optimisé & données FFF actualisées.',
-            icon: './logo.png',
-            badge: './logo.png',
-            vibrate: [200, 100, 200],
-            data: { url: './' }
-          }).catch(() => {});
-        }
-      });
+      return Promise.all(keys.map((key) => caches.delete(key)));
     })
   );
   self.clients.claim();
 });
 
+// Pas d'interception réseau agressive : le navigateur utilise directement le CDN Vercel sans latence
 self.addEventListener('fetch', (e) => {
-  if (e.request.method !== 'GET' || e.request.url.includes('/api/')) {
-    return;
-  }
-  e.respondWith(
-    caches.match(e.request).then((cached) => {
-      const fetchPromise = fetch(e.request).then((networkResponse) => {
-        if (networkResponse && networkResponse.status === 200) {
-          const clone = networkResponse.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(e.request, clone));
-        }
-        return networkResponse;
-      }).catch(() => cached);
-
-      return cached || fetchPromise;
-    })
-  );
+  return;
 });
 
 // -----------------------------------------------------------------------------
@@ -108,15 +56,17 @@ self.addEventListener('push', (event) => {
 
 self.addEventListener('notificationclick', (event) => {
   event.notification.close();
+  const urlToOpen = event.notification.data?.url || './';
+
   event.waitUntil(
     clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clientList) => {
       for (const client of clientList) {
-        if ((client.url.includes('matchday') || client.url.includes('vercel.app')) && 'focus' in client) {
+        if (client.url.includes('matchday') && 'focus' in client) {
           return client.focus();
         }
       }
       if (clients.openWindow) {
-        return clients.openWindow(event.notification.data.url || './');
+        return clients.openWindow(urlToOpen);
       }
     })
   );
