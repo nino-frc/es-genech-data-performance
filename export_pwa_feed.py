@@ -517,6 +517,7 @@ def build_secondary_team_data(team_id: str, conn: sqlite3.Connection):
             "buts_marques": buts_marques,
             "buts_encaisses": buts_encaisses,
             "clean_sheets": clean_sheets,
+            "minutes_cumulees": total_matches * 900,
             "cartons_jaunes": jaunes,
             "cartons_rouges": rouges
         },
@@ -547,6 +548,14 @@ def build_secondary_team_data(team_id: str, conn: sqlite3.Connection):
                 "buts_pour": buts_marques,
                 "buts_contre": buts_encaisses,
                 "difference": buts_marques - buts_encaisses
+            },
+            "bilan_championnat": {
+                "matchs": champ_matchs,
+                "victoires": champ_victoires,
+                "nuls": champ_nuls,
+                "defaites": max(0, champ_matchs - (champ_victoires + champ_nuls)),
+                "points": champ_victoires * 3 + champ_nuls,
+                "ppm": ppm
             },
             "ratio_clean_sheet_pct": round(clean_sheets / total_matches * 100, 1) if total_matches > 0 else 0,
             "moyenne_buts_encaisses": round(buts_encaisses / total_matches, 2) if total_matches > 0 else 0,
@@ -686,7 +695,7 @@ def build_seclin_pwa_payload(base_dir: str):
         "domicile": "CROIX IC 2",
         "exterieur": "SECLIN FC",
         "comparatif": {
-            "titre": "Comparatif de Performance (R2 Poule B)",
+            "titre": "Choc au Sommet • 1er vs 2e (R2 Poule B)",
             "adversaire_nom": "Croix IC 2",
             "adversaire_rang": "1er",
             "adversaire_pts": 10,
@@ -695,12 +704,12 @@ def build_seclin_pwa_payload(base_dir: str):
             "club_nom": "FC Seclin",
             "club_rang": "2e",
             "club_pts": 8,
-            "club_buts_pour": buts_marques,
-            "club_buts_contre": buts_encaisses
+            "club_buts_pour": 16,
+            "club_buts_contre": 3
         },
         "alertes": [
-            "Croix IC 2 : Leader invaincu du groupe (10 pts en 4 matchs)",
-            "Choc au sommet pour la 1ère place de Régional 2"
+            "Choc direct pour la 1ère place de Régional 2 : Croix (1er, 10 pts) accueille Seclin (2e, 8 pts, invaincu).",
+            "Duel des meilleures attaques et défenses de la poule : 11 BP / 3 BC pour Croix, 16 BP / 3 BC pour Seclin."
         ]
     }
 
@@ -895,6 +904,17 @@ def build_seclin_pwa_payload(base_dir: str):
                 "buts_pour": buts_marques,
                 "buts_contre": buts_encaisses,
                 "difference": buts_marques - buts_encaisses
+            },
+            "bilan_championnat": {
+                "matchs": 4,
+                "victoires": 2,
+                "nuls": 2,
+                "defaites": 0,
+                "points": 8,
+                "buts_pour": 16,
+                "buts_contre": 3,
+                "difference": 13,
+                "ppm": 2.0
             },
             "ratio_clean_sheet_pct": round(clean_sheets / total_matches * 100, 1) if total_matches > 0 else 0,
             "moyenne_buts_encaisses": round(buts_encaisses / total_matches, 2) if total_matches > 0 else 0,
@@ -1326,6 +1346,17 @@ def build_lesquin_pwa_payload(base_dir: str):
                 "buts_pour": buts_marques,
                 "buts_contre": buts_encaisses,
                 "difference": buts_marques - buts_encaisses
+            },
+            "bilan_championnat": {
+                "matchs": 4,
+                "victoires": 0,
+                "nuls": 2,
+                "defaites": 2,
+                "points": 2,
+                "buts_pour": 6,
+                "buts_contre": 9,
+                "difference": -3,
+                "ppm": 0.5
             },
             "ratio_clean_sheet_pct": round(clean_sheets / total_matches * 100, 1) if total_matches > 0 else 0,
             "moyenne_buts_encaisses": round(buts_encaisses / total_matches, 2) if total_matches > 0 else 0,

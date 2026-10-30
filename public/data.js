@@ -8,7 +8,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "30/10/2026 à 13:22"
+      "derniere_maj": "30/10/2026 à 13:56"
     },
     "dernier_match": {
       "id": "cdf_t6_tatinghem_genech",
@@ -169,7 +169,7 @@ window.MATCHDAY_TEAMS = {
       "surface": "Pelouse naturelle",
       "temperature": "8.2 °C",
       "vent": "Faible (14.5 km/h)",
-      "pluie": "Sec (1 %)",
+      "pluie": "Sec (0 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -3574,7 +3574,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "30/10/2026 à 13:22"
+      "derniere_maj": "30/10/2026 à 13:56"
     },
     "dernier_match": {
       "id": "m_u18_m1_79496282-et-c-anstai",
@@ -3640,7 +3640,7 @@ window.MATCHDAY_TEAMS = {
       "surface": "Pelouse naturelle",
       "temperature": "8.1 °C",
       "vent": "Faible (16.2 km/h)",
-      "pluie": "Sec (2 %)",
+      "pluie": "Sec (0 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -4375,6 +4375,7 @@ window.MATCHDAY_TEAMS = {
       "buts_marques": 30,
       "buts_encaisses": 8,
       "clean_sheets": 2,
+      "minutes_cumulees": 5400,
       "cartons_jaunes": 8,
       "cartons_rouges": 1
     },
@@ -4869,6 +4870,14 @@ window.MATCHDAY_TEAMS = {
         "buts_contre": 8,
         "difference": 22
       },
+      "bilan_championnat": {
+        "matchs": 5,
+        "victoires": 5,
+        "nuls": 0,
+        "defaites": 0,
+        "points": 15,
+        "ppm": 3.0
+      },
       "ratio_clean_sheet_pct": 33.3,
       "moyenne_buts_encaisses": 1.33,
       "projection_saison": {
@@ -5056,7 +5065,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "30/10/2026 à 13:22"
+      "derniere_maj": "30/10/2026 à 13:56"
     },
     "dernier_match": {
       "id": "m_senior_f2_78809066-lille-e-s-l",
@@ -5099,7 +5108,7 @@ window.MATCHDAY_TEAMS = {
       "surface": "Pelouse naturelle",
       "temperature": "8.1 °C",
       "vent": "Faible (16.2 km/h)",
-      "pluie": "Sec (2 %)",
+      "pluie": "Sec (0 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -5462,6 +5471,7 @@ window.MATCHDAY_TEAMS = {
       "buts_marques": 10,
       "buts_encaisses": 11,
       "clean_sheets": 1,
+      "minutes_cumulees": 3600,
       "cartons_jaunes": 0,
       "cartons_rouges": 0
     },
@@ -5824,6 +5834,14 @@ window.MATCHDAY_TEAMS = {
         "buts_contre": 11,
         "difference": -1
       },
+      "bilan_championnat": {
+        "matchs": 4,
+        "victoires": 2,
+        "nuls": 0,
+        "defaites": 2,
+        "points": 6,
+        "ppm": 1.5
+      },
       "ratio_clean_sheet_pct": 25.0,
       "moyenne_buts_encaisses": 2.75,
       "projection_saison": {
@@ -6011,7 +6029,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "30/10/2026 à 13:22"
+      "derniere_maj": "30/10/2026 à 13:56"
     },
     "dernier_match": {
       "id": "m_senior_b_j4_loos",
@@ -6054,7 +6072,7 @@ window.MATCHDAY_TEAMS = {
       "surface": "Pelouse naturelle",
       "temperature": "8.1 °C",
       "vent": "Faible (16.2 km/h)",
-      "pluie": "Sec (2 %)",
+      "pluie": "Sec (0 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -6374,6 +6392,7 @@ window.MATCHDAY_TEAMS = {
       "buts_marques": 14,
       "buts_encaisses": 16,
       "clean_sheets": 1,
+      "minutes_cumulees": 5400,
       "cartons_jaunes": 0,
       "cartons_rouges": 0
     },
@@ -6714,6 +6733,14 @@ window.MATCHDAY_TEAMS = {
         "buts_contre": 16,
         "difference": -2
       },
+      "bilan_championnat": {
+        "matchs": 4,
+        "victoires": 1,
+        "nuls": 1,
+        "defaites": 2,
+        "points": 4,
+        "ppm": 1.0
+      },
       "ratio_clean_sheet_pct": 16.7,
       "moyenne_buts_encaisses": 2.67,
       "projection_saison": {
@@ -6927,7 +6954,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "30/10/2026 à 13:22"
+      "derniere_maj": "30/10/2026 à 13:56"
     },
     "dernier_match": {
       "id": "seclin_80464279",
@@ -6948,7 +6975,7 @@ window.MATCHDAY_TEAMS = {
       "domicile": "CROIX IC 2",
       "exterieur": "SECLIN FC",
       "comparatif": {
-        "titre": "Comparatif de Performance (R2 Poule B)",
+        "titre": "Choc au Sommet • 1er vs 2e (R2 Poule B)",
         "adversaire_nom": "Croix IC 2",
         "adversaire_rang": "1er",
         "adversaire_pts": 10,
@@ -6957,12 +6984,12 @@ window.MATCHDAY_TEAMS = {
         "club_nom": "FC Seclin",
         "club_rang": "2e",
         "club_pts": 8,
-        "club_buts_pour": 22,
-        "club_buts_contre": 6
+        "club_buts_pour": 16,
+        "club_buts_contre": 3
       },
       "alertes": [
-        "Croix IC 2 : Leader invaincu du groupe (10 pts en 4 matchs)",
-        "Choc au sommet pour la 1ère place de Régional 2"
+        "Choc direct pour la 1ère place de Régional 2 : Croix (1er, 10 pts) accueille Seclin (2e, 8 pts, invaincu).",
+        "Duel des meilleures attaques et défenses de la poule : 11 BP / 3 BC pour Croix, 16 BP / 3 BC pour Seclin."
       ]
     },
     "meteo_prochain_match": {
@@ -6970,7 +6997,7 @@ window.MATCHDAY_TEAMS = {
       "surface": "Pelouse naturelle",
       "temperature": "8.1 °C",
       "vent": "Faible (14.8 km/h)",
-      "pluie": "Sec (1 %)",
+      "pluie": "Sec (0 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -10333,6 +10360,17 @@ window.MATCHDAY_TEAMS = {
         "buts_pour": 22,
         "buts_contre": 6,
         "difference": 16
+      },
+      "bilan_championnat": {
+        "matchs": 4,
+        "victoires": 2,
+        "nuls": 2,
+        "defaites": 0,
+        "points": 8,
+        "buts_pour": 16,
+        "buts_contre": 3,
+        "difference": 13,
+        "ppm": 2.0
       },
       "ratio_clean_sheet_pct": 42.9,
       "moyenne_buts_encaisses": 0.86,
@@ -10631,7 +10669,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "30/10/2026 à 13:22"
+      "derniere_maj": "30/10/2026 à 13:56"
     },
     "dernier_match": {
       "id": "seclin_80464279",
@@ -10652,7 +10690,7 @@ window.MATCHDAY_TEAMS = {
       "domicile": "CROIX IC 2",
       "exterieur": "SECLIN FC",
       "comparatif": {
-        "titre": "Comparatif de Performance (R2 Poule B)",
+        "titre": "Choc au Sommet • 1er vs 2e (R2 Poule B)",
         "adversaire_nom": "Croix IC 2",
         "adversaire_rang": "1er",
         "adversaire_pts": 10,
@@ -10661,12 +10699,12 @@ window.MATCHDAY_TEAMS = {
         "club_nom": "FC Seclin",
         "club_rang": "2e",
         "club_pts": 8,
-        "club_buts_pour": 22,
-        "club_buts_contre": 6
+        "club_buts_pour": 16,
+        "club_buts_contre": 3
       },
       "alertes": [
-        "Croix IC 2 : Leader invaincu du groupe (10 pts en 4 matchs)",
-        "Choc au sommet pour la 1ère place de Régional 2"
+        "Choc direct pour la 1ère place de Régional 2 : Croix (1er, 10 pts) accueille Seclin (2e, 8 pts, invaincu).",
+        "Duel des meilleures attaques et défenses de la poule : 11 BP / 3 BC pour Croix, 16 BP / 3 BC pour Seclin."
       ]
     },
     "meteo_prochain_match": {
@@ -10674,7 +10712,7 @@ window.MATCHDAY_TEAMS = {
       "surface": "Pelouse naturelle",
       "temperature": "8.1 °C",
       "vent": "Faible (14.8 km/h)",
-      "pluie": "Sec (1 %)",
+      "pluie": "Sec (0 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -14038,6 +14076,17 @@ window.MATCHDAY_TEAMS = {
         "buts_contre": 6,
         "difference": 16
       },
+      "bilan_championnat": {
+        "matchs": 4,
+        "victoires": 2,
+        "nuls": 2,
+        "defaites": 0,
+        "points": 8,
+        "buts_pour": 16,
+        "buts_contre": 3,
+        "difference": 13,
+        "ppm": 2.0
+      },
       "ratio_clean_sheet_pct": 42.9,
       "moyenne_buts_encaisses": 0.86,
       "projection_saison": {
@@ -14335,7 +14384,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "30/10/2026 à 13:22"
+      "derniere_maj": "30/10/2026 à 13:56"
     },
     "dernier_match": {
       "id": "lesquin_80499526",
@@ -14449,7 +14498,7 @@ window.MATCHDAY_TEAMS = {
       "surface": "Pelouse naturelle",
       "temperature": "8.1 °C",
       "vent": "Faible (14.8 km/h)",
-      "pluie": "Sec (1 %)",
+      "pluie": "Sec (0 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -17662,6 +17711,17 @@ window.MATCHDAY_TEAMS = {
         "buts_pour": 38,
         "buts_contre": 17,
         "difference": 21
+      },
+      "bilan_championnat": {
+        "matchs": 4,
+        "victoires": 0,
+        "nuls": 2,
+        "defaites": 2,
+        "points": 2,
+        "buts_pour": 6,
+        "buts_contre": 9,
+        "difference": -3,
+        "ppm": 0.5
       },
       "ratio_clean_sheet_pct": 8.3,
       "moyenne_buts_encaisses": 1.42,
@@ -17960,7 +18020,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "30/10/2026 à 13:22"
+      "derniere_maj": "30/10/2026 à 13:56"
     },
     "dernier_match": {
       "id": "lesquin_80499526",
@@ -18074,7 +18134,7 @@ window.MATCHDAY_TEAMS = {
       "surface": "Pelouse naturelle",
       "temperature": "8.1 °C",
       "vent": "Faible (14.8 km/h)",
-      "pluie": "Sec (1 %)",
+      "pluie": "Sec (0 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -21287,6 +21347,17 @@ window.MATCHDAY_TEAMS = {
         "buts_pour": 38,
         "buts_contre": 17,
         "difference": 21
+      },
+      "bilan_championnat": {
+        "matchs": 4,
+        "victoires": 0,
+        "nuls": 2,
+        "defaites": 2,
+        "points": 2,
+        "buts_pour": 6,
+        "buts_contre": 9,
+        "difference": -3,
+        "ppm": 0.5
       },
       "ratio_clean_sheet_pct": 8.3,
       "moyenne_buts_encaisses": 1.42,

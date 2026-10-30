@@ -1570,7 +1570,7 @@ function renderInterface(data) {
     metaEl.textContent = `${match.competition || ''} • ${match.date_heure || ''}`;
   }
 
-  // C. 4 KPIs de Saison
+  // C. 4 KPIs de Saison - Harmonisation Multi-Équipes & Multi-Clubs (R3, R2, D1, D2, Fém)
   const kpis = data.kpis_saison || {};
   const goalsEl = document.getElementById('kpiGoals');
   const csEl = document.getElementById('kpiCleanSheets');
@@ -1590,10 +1590,23 @@ function renderInterface(data) {
       goalsEl.innerHTML = `10 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(14 TCC)</span>`;
       const desc = goalsEl.parentElement ? goalsEl.parentElement.querySelector('.kpi-desc') : null;
       if (desc) desc.textContent = "10 en D2 • 4 Coupe Flandres";
+    } else if (currentTeamId === 'SENIOR_F2') {
+      goalsEl.innerHTML = `10 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">buts</span>`;
+      const desc = goalsEl.parentElement ? goalsEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "10 en Championnat Interdistrict";
+    } else if (currentTeamId === '500934_SENIOR_M1' || currentTeamId === 'SECLIN_SENIOR_M1') {
+      goalsEl.innerHTML = `16 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(22 TCC)</span>`;
+      const desc = goalsEl.parentElement ? goalsEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "16 en R2 • 6 en Coupe";
+    } else if (currentTeamId === '500426_SENIOR_M1' || currentTeamId === 'LESQUIN_SENIOR_M1') {
+      goalsEl.innerHTML = `6 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(38 TCC)</span>`;
+      const desc = goalsEl.parentElement ? goalsEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "6 en R2 • 32 en Coupe & Amicaux";
     } else {
       goalsEl.textContent = kpis.buts_marques ?? '--';
     }
   }
+
   if (csEl) {
     if (currentTeamId === 'SENIOR_M1') {
       csEl.innerHTML = `1 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(5 TCC)</span>`;
@@ -1603,24 +1616,82 @@ function renderInterface(data) {
       csEl.innerHTML = `2 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">CS</span>`;
       const desc = csEl.parentElement ? csEl.parentElement.querySelector('.kpi-desc') : null;
       if (desc) desc.textContent = "2 Clean sheets en D1";
+    } else if (currentTeamId === 'SENIOR_M3') {
+      csEl.innerHTML = `1 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">CS</span>`;
+      const desc = csEl.parentElement ? csEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "1 Clean sheet Coupe des Flandres";
+    } else if (currentTeamId === 'SENIOR_F2') {
+      csEl.innerHTML = `1 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">CS</span>`;
+      const desc = csEl.parentElement ? csEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "1 Clean sheet en Championnat";
+    } else if (currentTeamId === '500934_SENIOR_M1' || currentTeamId === 'SECLIN_SENIOR_M1') {
+      csEl.innerHTML = `2 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(3 TCC)</span>`;
+      const desc = csEl.parentElement ? csEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "2 en R2 • 1 en Coupe";
+    } else if (currentTeamId === '500426_SENIOR_M1' || currentTeamId === 'LESQUIN_SENIOR_M1') {
+      csEl.innerHTML = `1 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">CS</span>`;
+      const desc = csEl.parentElement ? csEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "1 Clean sheet en Coupe (Haubourdin)";
     } else {
       csEl.textContent = kpis.clean_sheets ?? '--';
     }
   }
+
   if (minEl) {
     if (currentTeamId === 'SENIOR_M1') {
       minEl.textContent = `${(kpis.minutes_cumulees || 8820).toLocaleString()} mn`;
       const desc = minEl.parentElement ? minEl.parentElement.querySelector('.kpi-desc') : null;
       if (desc) desc.textContent = "Cumul effectif (9 matchs TCC)";
+    } else if (currentTeamId === 'U18_M1') {
+      minEl.textContent = "5 400 mn";
+      const desc = minEl.parentElement ? minEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "Cumul effectif (6 matchs TCC)";
+    } else if (currentTeamId === 'SENIOR_M3') {
+      minEl.textContent = "5 400 mn";
+      const desc = minEl.parentElement ? minEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "Cumul effectif (6 matchs TCC)";
+    } else if (currentTeamId === 'SENIOR_F2') {
+      minEl.textContent = "3 600 mn";
+      const desc = minEl.parentElement ? minEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "Cumul effectif (4 matchs)";
+    } else if (currentTeamId === '500934_SENIOR_M1' || currentTeamId === 'SECLIN_SENIOR_M1') {
+      minEl.textContent = "6 300 mn";
+      const desc = minEl.parentElement ? minEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "Cumul effectif (7 matchs TCC)";
+    } else if (currentTeamId === '500426_SENIOR_M1' || currentTeamId === 'LESQUIN_SENIOR_M1') {
+      minEl.textContent = "8 845 mn";
+      const desc = minEl.parentElement ? minEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "Cumul effectif (12 matchs TCC)";
     } else {
       minEl.textContent = kpis.minutes_cumulees ? `${kpis.minutes_cumulees.toLocaleString()} mn` : '--';
     }
   }
+
   if (cardsEl) {
     if (currentTeamId === 'SENIOR_M1') {
       cardsEl.innerHTML = `10 J. / 1 R. <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(17 J. / 2 R. TCC)</span>`;
       const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
       if (desc) desc.textContent = "10 J / 1 R en R3 • 7 J / 1 R en Coupe";
+    } else if (currentTeamId === 'U18_M1') {
+      cardsEl.innerHTML = `8 J. / 1 R.`;
+      const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "8 Jaunes • 1 Rouge en D1/Gambardella";
+    } else if (currentTeamId === 'SENIOR_M3') {
+      cardsEl.innerHTML = `0 J. / 0 R.`;
+      const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "Discipline exemplaire en D2";
+    } else if (currentTeamId === 'SENIOR_F2') {
+      cardsEl.innerHTML = `0 J. / 0 R.`;
+      const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "Zéro carton reçu en championnat";
+    } else if (currentTeamId === '500934_SENIOR_M1' || currentTeamId === 'SECLIN_SENIOR_M1') {
+      cardsEl.innerHTML = `15 J. / 0 R. <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(20 J. TCC)</span>`;
+      const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "15 J en R2 • 5 J en Coupe";
+    } else if (currentTeamId === '500426_SENIOR_M1' || currentTeamId === 'LESQUIN_SENIOR_M1') {
+      cardsEl.innerHTML = `8 J. / 0 R. <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(15 J. TCC)</span>`;
+      const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "8 J en R2 • 7 J en Coupe";
     } else {
       cardsEl.textContent = `${kpis.cartons_jaunes ?? 0} J. / ${kpis.cartons_rouges ?? 0} R.`;
     }
@@ -2015,10 +2086,10 @@ function renderInterface(data) {
     document.getElementById('govPointsPrevus').textContent = `${gov.projection_saison.points_prevus} pts`;
 
     const bilan = gov.bilan_global || {};
-    document.getElementById('govVictoires').textContent = bilan.victoires ?? 5;
-    document.getElementById('govNuls').textContent = bilan.nuls ?? 2;
-    document.getElementById('govDefaites').textContent = bilan.defaites ?? 2;
-    const diff = (bilan.buts_pour ?? 10) - (bilan.buts_contre ?? 4);
+    document.getElementById('govVictoires').textContent = bilan.victoires ?? 0;
+    document.getElementById('govNuls').textContent = bilan.nuls ?? 0;
+    document.getElementById('govDefaites').textContent = bilan.defaites ?? 0;
+    const diff = (bilan.difference !== undefined) ? bilan.difference : ((bilan.buts_pour ?? 0) - (bilan.buts_contre ?? 0));
     document.getElementById('govDiffButs').textContent = diff > 0 ? `+${diff}` : diff;
 
     // H bis. Matrice des Quarts d'Heure (Temps Forts / Faibles)
