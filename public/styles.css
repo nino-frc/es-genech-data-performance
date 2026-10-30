@@ -243,12 +243,12 @@ body {
   .master-club-container {
     padding: 2px 4px;
     height: 28px;
-    max-width: 82px;
+    max-width: 108px;
     box-sizing: border-box;
   }
   .club-dropdown-select {
-    font-size: 10px;
-    max-width: 58px;
+    font-size: 10.5px;
+    max-width: 84px;
     padding-right: 10px;
   }
   .team-selector-container {
