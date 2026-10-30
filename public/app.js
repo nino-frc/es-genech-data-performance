@@ -1607,8 +1607,24 @@ function renderInterface(data) {
       csEl.textContent = kpis.clean_sheets ?? '--';
     }
   }
-  if (minEl) minEl.textContent = kpis.minutes_cumulees ? `${kpis.minutes_cumulees.toLocaleString()} mn` : '--';
-  if (cardsEl) cardsEl.textContent = `${kpis.cartons_jaunes ?? 0} J. / ${kpis.cartons_rouges ?? 0} R.`;
+  if (minEl) {
+    if (currentTeamId === 'SENIOR_M1') {
+      minEl.textContent = `${(kpis.minutes_cumulees || 8820).toLocaleString()} mn`;
+      const desc = minEl.parentElement ? minEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "Cumul effectif (9 matchs TCC)";
+    } else {
+      minEl.textContent = kpis.minutes_cumulees ? `${kpis.minutes_cumulees.toLocaleString()} mn` : '--';
+    }
+  }
+  if (cardsEl) {
+    if (currentTeamId === 'SENIOR_M1') {
+      cardsEl.innerHTML = `10 J. / 1 R. <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(17 J. / 2 R. TCC)</span>`;
+      const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "10 J / 1 R en R3 • 7 J / 1 R en Coupe";
+    } else {
+      cardsEl.textContent = `${kpis.cartons_jaunes ?? 0} J. / ${kpis.cartons_rouges ?? 0} R.`;
+    }
+  }
 
   // D. Chronologie Dernier Match
   const timelineContainer = document.getElementById('matchEventsTimeline');
