@@ -774,13 +774,13 @@ function quickFillLicense(key, defaultRole) {
 function authenticateClub(key, declaredRole, isFormSubmit) {
   let cleanKey = (key || '').trim().toUpperCase();
   // Alias conviviaux et rétrocompatibilité
-  if (cleanKey === 'GENECH' || cleanKey === 'MD-GENECH' || cleanKey === 'MD-GNCH-2026-STAFF' || cleanKey === 'MD-GENECH-2026') {
+  if (cleanKey.includes('GENECH') || cleanKey.includes('GNCH') || cleanKey === 'MD-GNCH-88F4-A92B') {
     cleanKey = 'MD-GNCH-88F4-A92B';
-  } else if (cleanKey === 'MASTER' || cleanKey === 'ROOT' || cleanKey === 'NINO' || cleanKey === 'MD-MASTER-2026') {
+  } else if (cleanKey.includes('MASTER') || cleanKey.includes('ROOT') || cleanKey.includes('NINO') || cleanKey === 'MD-MASTER-NINO-2026') {
     cleanKey = 'MD-MASTER-NINO-2026';
-  } else if (cleanKey === 'SECLIN' || cleanKey === 'MD-SCLN-2026-STAFF' || cleanKey === 'MD-SECLIN-2026') {
+  } else if (cleanKey.includes('SECLIN') || cleanKey.includes('SCLN') || cleanKey === 'MD-SCLN-74C2-91E3') {
     cleanKey = 'MD-SCLN-74C2-91E3';
-  } else if (cleanKey === 'LESQUIN' || cleanKey === 'MD-LSQN-2026-STAFF' || cleanKey === 'MD-LESQUIN-2026') {
+  } else if (cleanKey.includes('LESQUIN') || cleanKey.includes('LSQN') || cleanKey === 'MD-LSQN-92D3-71B8') {
     cleanKey = 'MD-LSQN-92D3-71B8';
   }
   try {
@@ -1444,13 +1444,13 @@ function initApp() {
 
     if (urlKey) {
       let cleanKey = urlKey.trim().toUpperCase();
-      if (cleanKey === 'GENECH' || cleanKey === 'MD-GENECH' || cleanKey === 'MD-GNCH-2026-STAFF' || cleanKey === 'MD-GENECH-2026') {
+      if (cleanKey.includes('GENECH') || cleanKey.includes('GNCH') || cleanKey === 'MD-GNCH-88F4-A92B') {
         cleanKey = 'MD-GNCH-88F4-A92B';
-      } else if (cleanKey === 'MASTER' || cleanKey === 'ROOT' || cleanKey === 'NINO' || cleanKey === 'MD-MASTER-2026') {
+      } else if (cleanKey.includes('MASTER') || cleanKey.includes('ROOT') || cleanKey.includes('NINO') || cleanKey === 'MD-MASTER-NINO-2026') {
         cleanKey = 'MD-MASTER-NINO-2026';
-      } else if (cleanKey === 'SECLIN' || cleanKey === 'MD-SCLN-2026-STAFF' || cleanKey === 'MD-SECLIN-2026') {
+      } else if (cleanKey.includes('SECLIN') || cleanKey.includes('SCLN') || cleanKey === 'MD-SCLN-74C2-91E3') {
         cleanKey = 'MD-SCLN-74C2-91E3';
-      } else if (cleanKey === 'LESQUIN' || cleanKey === 'MD-LSQN-2026-STAFF' || cleanKey === 'MD-LESQUIN-2026') {
+      } else if (cleanKey.includes('LESQUIN') || cleanKey.includes('LSQN') || cleanKey === 'MD-LSQN-92D3-71B8') {
         cleanKey = 'MD-LSQN-92D3-71B8';
       }
       try {
