@@ -121,16 +121,14 @@ function switchTab(tabId, navElement) {
   }
 }
 
-// 2. Gestion du Splash Screen
+// 2. Gestion du Splash Screen (Transition immédiate et sécurisée)
 function dismissSplashScreen() {
   const splash = document.getElementById('splashScreen');
-  if (splash) {
+  if (splash && !splash.classList.contains('hidden')) {
+    splash.classList.add('hidden');
     setTimeout(() => {
-      splash.classList.add('hidden');
-      setTimeout(() => {
-        splash.style.display = 'none';
-      }, 400);
-    }, 800);
+      splash.style.display = 'none';
+    }, 300);
   }
 }
 
@@ -590,6 +588,7 @@ function printExecutiveReport() {
 
 // 4. Notification d'État (Toast)
 function showNotification(message, isError = false) {
+  if (!document.body) return;
   let toast = document.getElementById('appNotificationToast');
   if (!toast) {
     toast = document.createElement('div');
@@ -773,9 +772,20 @@ function quickFillLicense(key, defaultRole) {
 }
 
 function authenticateClub(key, declaredRole, isFormSubmit) {
-  const cleanKey = (key || '').trim().toUpperCase();
-  getOrCreateDeviceId();
-  getDevicePlatform();
+  let cleanKey = (key || '').trim().toUpperCase();
+  // Alias conviviaux et rétrocompatibilité
+  if (cleanKey === 'GENECH' || cleanKey === 'MD-GENECH' || cleanKey === 'MD-GNCH-2026-STAFF' || cleanKey === 'MD-GENECH-2026') {
+    cleanKey = 'MD-GNCH-88F4-A92B';
+  } else if (cleanKey === 'MASTER' || cleanKey === 'ROOT' || cleanKey === 'NINO' || cleanKey === 'MD-MASTER-2026') {
+    cleanKey = 'MD-MASTER-NINO-2026';
+  } else if (cleanKey === 'SECLIN' || cleanKey === 'MD-SCLN-2026-STAFF' || cleanKey === 'MD-SECLIN-2026') {
+    cleanKey = 'MD-SCLN-74C2-91E3';
+  } else if (cleanKey === 'LESQUIN' || cleanKey === 'MD-LSQN-2026-STAFF' || cleanKey === 'MD-LESQUIN-2026') {
+    cleanKey = 'MD-LSQN-92D3-71B8';
+  }
+  try {
+    getOrCreateDeviceId();
+    getDevicePlatform();
 
   // 1. Validation immédiate via le Registre Local (Offline First)
   const registry = window.MATCHDAY_LICENSES || {};
@@ -966,6 +976,11 @@ function authenticateClub(key, declaredRole, isFormSubmit) {
 
   // 10. Synchronisation Asynchrone en arrière-plan avec MongoDB Atlas
   syncDeviceWithBackend(cleanKey, currentStaffRole);
+  } catch (err) {
+    console.error('[MatchDay] Erreur authenticateClub:', err);
+  } finally {
+    dismissSplashScreen();
+  }
 }
 
 function switchMasterClub(clubId) {
@@ -1419,50 +1434,67 @@ function changeActiveTeam(teamId) {
 }
 
 function initApp() {
-  getOrCreateDeviceId();
-  getDevicePlatform();
-
-  // 1. Détection automatique via QR Code (?key=MD-XXXX-...)
-  const urlParams = new URLSearchParams(window.location.search);
-  const urlKey = urlParams.get('key');
-
-  if (urlKey) {
-    const cleanKey = urlKey.trim().toUpperCase();
-    try {
-      localStorage.setItem('matchday_club_key', cleanKey);
-      window.history.replaceState({}, document.title, window.location.pathname);
-    } catch (e) {}
-  }
-
-  // 2. Lecture de la clé mémorisée
-  let storedKey = null;
   try {
-    storedKey = localStorage.getItem('matchday_club_key');
-  } catch (e) {}
+    getOrCreateDeviceId();
+    getDevicePlatform();
 
-  if (!storedKey) {
-    const mainApp = document.getElementById('mainAppContent');
-    const bottomNav = document.querySelector('.bottom-nav');
-    const headerActions = document.getElementById('headerActionsBar');
-    if (mainApp) mainApp.style.display = 'none';
-    if (bottomNav) bottomNav.style.display = 'none';
-    if (headerActions) headerActions.style.display = 'none';
-    showLicenseModal();
-    return;
-  }
+    // 1. Détection automatique via QR Code (?key=MD-XXXX-...)
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlKey = urlParams.get('key');
 
-  // 3. Authentification & Démarrage
-  const savedRole = localStorage.getItem('matchday_staff_role') || null;
-  authenticateClub(storedKey, savedRole, false);
-  updateNotifUI();
-  if ('Notification' in window && Notification.permission === 'granted') {
-    subscribeDeviceToWebPush();
+    if (urlKey) {
+      let cleanKey = urlKey.trim().toUpperCase();
+      if (cleanKey === 'GENECH' || cleanKey === 'MD-GENECH' || cleanKey === 'MD-GNCH-2026-STAFF' || cleanKey === 'MD-GENECH-2026') {
+        cleanKey = 'MD-GNCH-88F4-A92B';
+      } else if (cleanKey === 'MASTER' || cleanKey === 'ROOT' || cleanKey === 'NINO' || cleanKey === 'MD-MASTER-2026') {
+        cleanKey = 'MD-MASTER-NINO-2026';
+      } else if (cleanKey === 'SECLIN' || cleanKey === 'MD-SCLN-2026-STAFF' || cleanKey === 'MD-SECLIN-2026') {
+        cleanKey = 'MD-SCLN-74C2-91E3';
+      } else if (cleanKey === 'LESQUIN' || cleanKey === 'MD-LSQN-2026-STAFF' || cleanKey === 'MD-LESQUIN-2026') {
+        cleanKey = 'MD-LSQN-92D3-71B8';
+      }
+      try {
+        localStorage.setItem('matchday_club_key', cleanKey);
+        window.history.replaceState({}, document.title, window.location.pathname);
+      } catch (e) {}
+    }
+
+    // 2. Lecture de la clé mémorisée
+    let storedKey = null;
+    try {
+      storedKey = localStorage.getItem('matchday_club_key');
+    } catch (e) {}
+
+    if (!storedKey) {
+      const mainApp = document.getElementById('mainAppContent');
+      const bottomNav = document.querySelector('.bottom-nav');
+      const headerActions = document.getElementById('headerActionsBar');
+      if (mainApp) mainApp.style.display = 'none';
+      if (bottomNav) bottomNav.style.display = 'none';
+      if (headerActions) headerActions.style.display = 'none';
+      showLicenseModal();
+      return;
+    }
+
+    // 3. Authentification & Démarrage
+    let savedRole = null;
+    try { savedRole = localStorage.getItem('matchday_staff_role'); } catch(e) {}
+    authenticateClub(storedKey, savedRole, false);
+    updateNotifUI();
+    if ('Notification' in window && Notification.permission === 'granted') {
+      subscribeDeviceToWebPush();
+    }
+  } catch (err) {
+    console.error('[MatchDay] Erreur initApp:', err);
+  } finally {
+    setTimeout(dismissSplashScreen, 300);
   }
 }
 
 // 7. Rendu DOM Dynamique Complet
 function renderInterface(data) {
   if (!data) return;
+  try {
   // Détection automatique de nouvelle mise à jour de données
   const lastSeenMaj = localStorage.getItem('matchday_last_seen_maj');
   const currentMaj = data?.equipe_active?.derniere_maj;
@@ -2206,6 +2238,11 @@ function renderInterface(data) {
         </div>
       `;
     }
+  }
+  } catch (err) {
+    console.error('[MatchDay] Erreur renderInterface:', err);
+  } finally {
+    dismissSplashScreen();
   }
 }
 

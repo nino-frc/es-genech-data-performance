@@ -31,6 +31,18 @@
     </div>
   </div>
 
+  <!-- Dispositif de Sécurité Anti-Blocage : Dismiss garanti sous 1.2s max -->
+  <script>
+    window.__dismissSplashSafe = function() {
+      var s = document.getElementById('splashScreen');
+      if (s && !s.classList.contains('hidden')) {
+        s.classList.add('hidden');
+        setTimeout(function() { s.style.display = 'none'; }, 300);
+      }
+    };
+    setTimeout(window.__dismissSplashSafe, 1200);
+  </script>
+
   <!-- Header Institutionnel Fixe avec Logo Dynamique -->
   <header class="app-header">
     <div class="brand-wrapper">
