@@ -1,0 +1,10 @@
+# Exclure les scripts Python et Streamlit du déploiement Vercel
+app.py
+*.py
+*.db
+*.csv
+briefings_coach/
+exports_powerbi/
+archive_dev_history/
+requirements.txt
+runtime.txt
