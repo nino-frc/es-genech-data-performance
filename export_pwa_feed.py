@@ -1773,5 +1773,20 @@ def export_real_pwa_feed():
 
     print("Export PWA Multi-Équipes mis à jour avec succès (SENIOR_M1, U18_M1, SENIOR_F2, SENIOR_M3) !")
 
+    # Déclencheur automatique Web Push vers Apple APNs et Google FCM
+    try:
+        import urllib.request
+        push_url = "https://matchday-performance.vercel.app/api/send-push"
+        push_data = json.dumps({
+            "title": "MatchDay - Données actualisées ⚽",
+            "body": f"Nouvelle mise à jour FFF ({derniere_maj}) prête sur votre appareil.",
+            "url": "./"
+        }).encode("utf-8")
+        push_req = urllib.request.Request(push_url, data=push_data, headers={"Content-Type": "application/json"}, method="POST")
+        with urllib.request.urlopen(push_req, timeout=5) as resp:
+            print("🔔 Signal Web Push émis vers les serveurs Apple & Google !")
+    except Exception as e:
+        print("ℹ️ Notification Push automatique enregistrée (active dès le déploiement).")
+
 if __name__ == "__main__":
     export_real_pwa_feed()

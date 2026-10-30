@@ -243,6 +243,49 @@ function updateNotifUI() {
   }
 }
 
+const VAPID_PUBLIC_KEY = 'BLgY9vcONVMN2C9JX7UVfI6tL_hxeTGMVEm5NdNPHNBWsMlf7xlA23ROwEsxN-qpuOtS6y0bAS_Rx2GX_xk5VHQ';
+
+function urlBase64ToUint8Array(base64String) {
+  const padding = '='.repeat((4 - base64String.length % 4) % 4);
+  const base64 = (base64String + padding).replace(/\-/g, '+').replace(/_/g, '/');
+  const rawData = window.atob(base64);
+  const outputArray = new Uint8Array(rawData.length);
+  for (let i = 0; i < rawData.length; ++i) {
+    outputArray[i] = rawData.charCodeAt(i);
+  }
+  return outputArray;
+}
+
+async function subscribeDeviceToWebPush() {
+  if (!('serviceWorker' in navigator) || !('PushManager' in window)) return;
+  try {
+    const registration = await navigator.serviceWorker.ready;
+    let subscription = await registration.pushManager.getSubscription();
+    if (!subscription) {
+      const convertedVapidKey = urlBase64ToUint8Array(VAPID_PUBLIC_KEY);
+      subscription = await registration.pushManager.subscribe({
+        userVisibleOnly: true,
+        applicationServerKey: convertedVapidKey
+      });
+    }
+    if (subscription) {
+      const clubCode = (typeof activeClub !== 'undefined' && activeClub) ? (activeClub.club_code || activeClub.code || 'GNCH') : 'GNCH';
+      const role = localStorage.getItem('matchday_staff_role') || 'STAFF';
+      fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          subscription: subscription.toJSON(),
+          clubCode: clubCode,
+          role: role
+        })
+      }).catch(() => {});
+    }
+  } catch (e) {
+    console.warn('Souscription Push automatique :', e);
+  }
+}
+
 async function enablePushNotifications() {
   if (!('Notification' in window)) {
     showNotification('Les notifications ne sont pas supportées par votre navigateur.', true);
@@ -255,6 +298,7 @@ async function enablePushNotifications() {
 
     if (permission === 'granted') {
       showNotification('Notifications MatchDay activées avec succès !');
+      subscribeDeviceToWebPush();
       testStaffNotification(true);
     } else if (permission === 'denied') {
       showNotification('Autorisation refusée dans le navigateur.', true);
@@ -1411,6 +1455,9 @@ function initApp() {
   const savedRole = localStorage.getItem('matchday_staff_role') || null;
   authenticateClub(storedKey, savedRole, false);
   updateNotifUI();
+  if ('Notification' in window && Notification.permission === 'granted') {
+    subscribeDeviceToWebPush();
+  }
 }
 
 // 7. Rendu DOM Dynamique Complet
