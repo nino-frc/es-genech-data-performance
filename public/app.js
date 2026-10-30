@@ -1278,7 +1278,8 @@ function openQrModal() {
   if (qrKey) qrKey.textContent = activeClub.license_key;
   if (qrImg) qrImg.src = `./qr_codes/qr_${activeClub.club_code.toLowerCase()}.png`;
   
-  const fullUrl = `https://match-day-app.netlify.app/?key=${activeClub.license_key}`;
+  const origin = (window.location.origin && window.location.origin !== "null") ? window.location.origin : "https://matchday-performance.vercel.app";
+  const fullUrl = `${origin}/?key=${activeClub.license_key}`;
   if (qrUrlInput) qrUrlInput.value = fullUrl;
 
   modal.classList.remove('hidden');
