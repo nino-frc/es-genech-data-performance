@@ -103,7 +103,7 @@ flowchart LR
 
 Une question, un besoin d'ajustement ou une analyse spécifique pour votre prochain match ?
 
-* **Responsable Technique & Déploiement** : Nino François
+* **Développement & Contact** : Nino François
 * **Procédure de support rapide** : En cas de question, communiquez simplement le **Code Support** affiché sur votre écran (ex: `#ROOT-01`, `#SC-01`) pour une prise en charge immédiate.
 
 ---
