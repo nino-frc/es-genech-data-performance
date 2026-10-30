@@ -1577,8 +1577,36 @@ function renderInterface(data) {
   const minEl = document.getElementById('kpiTotalMinutes');
   const cardsEl = document.getElementById('kpiCardsSummary');
 
-  if (goalsEl) goalsEl.textContent = kpis.buts_marques ?? '--';
-  if (csEl) csEl.textContent = kpis.clean_sheets ?? '--';
+  if (goalsEl) {
+    if (currentTeamId === 'SENIOR_M1') {
+      goalsEl.innerHTML = `6 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(10 TCC)</span>`;
+      const desc = goalsEl.parentElement ? goalsEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "6 en R3 • 4 en Coupe";
+    } else if (currentTeamId === 'U18_M1') {
+      goalsEl.innerHTML = `29 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(30 TCC)</span>`;
+      const desc = goalsEl.parentElement ? goalsEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "29 en D1 • 1 Gambardella";
+    } else if (currentTeamId === 'SENIOR_M3') {
+      goalsEl.innerHTML = `10 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(14 TCC)</span>`;
+      const desc = goalsEl.parentElement ? goalsEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "10 en D2 • 4 Coupe Flandres";
+    } else {
+      goalsEl.textContent = kpis.buts_marques ?? '--';
+    }
+  }
+  if (csEl) {
+    if (currentTeamId === 'SENIOR_M1') {
+      csEl.innerHTML = `1 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(5 TCC)</span>`;
+      const desc = csEl.parentElement ? csEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "1 en R3 • 4 en Coupe";
+    } else if (currentTeamId === 'U18_M1') {
+      csEl.innerHTML = `2 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">CS</span>`;
+      const desc = csEl.parentElement ? csEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "2 Clean sheets en D1";
+    } else {
+      csEl.textContent = kpis.clean_sheets ?? '--';
+    }
+  }
   if (minEl) minEl.textContent = kpis.minutes_cumulees ? `${kpis.minutes_cumulees.toLocaleString()} mn` : '--';
   if (cardsEl) cardsEl.textContent = `${kpis.cartons_jaunes ?? 0} J. / ${kpis.cartons_rouges ?? 0} R.`;
 
@@ -2208,32 +2236,32 @@ function renderInterface(data) {
       notifFeedEl.innerHTML = `
         <div class="notif-item alert-urgent">
           <div class="notif-item-header">
+            <span class="notif-item-tag tag-primary">CHAMPIONNAT R3 • J-2</span>
+            <span class="notif-item-time">Aujourd'hui 12:00</span>
+          </div>
+          <div class="notif-item-title">Choc au sommet : Aniche SC vs ES Genech (2e vs 3e)</div>
+          <div class="notif-item-body">
+            Duel direct des deux seuls invaincus (8 pts chacun, 2V 2N). Choc capital pour la 2e place ce dimanche 01/11 à 14h30 au Stade des Navarres.
+          </div>
+        </div>
+        <div class="notif-item alert-urgent">
+          <div class="notif-item-header">
             <span class="notif-item-tag tag-danger">DISCIPLINE FFF</span>
             <span class="notif-item-time">Aujourd'hui 09:30</span>
           </div>
-          <div class="notif-item-title">4 joueurs sous sursis (Art. 226 FFF)</div>
+          <div class="notif-item-title">2 joueurs sous sursis immédiat (Art. 226 FFF)</div>
           <div class="notif-item-body">
-            Mathis L., Antoine B., Julien D. et Paul B. sont à un carton jaune de la suspension automatique. Risque financier évité de 250 €.
+            Maxime P. et Julien D. sont sous le coup d'une suspension automatique au prochain avertissement. Vigilance recommandée.
           </div>
         </div>
         <div class="notif-item alert-info">
           <div class="notif-item-header">
-            <span class="notif-item-tag tag-primary">SCOUTING & CRA</span>
-            <span class="notif-item-time">Hier 18:00</span>
-          </div>
-          <div class="notif-item-title">J-4 : Rapport Aniche SC disponible</div>
-          <div class="notif-item-body">
-            Consultez les forces adverses et les points vulnérables. Désignation de l'arbitre CRA attendue.
-          </div>
-        </div>
-        <div class="notif-item alert-success">
-          <div class="notif-item-header">
-            <span class="notif-item-tag tag-success">DÉBRIEFING MATCH</span>
+            <span class="notif-item-tag tag-secondary">COUPE DE FRANCE</span>
             <span class="notif-item-time">26/10 11:15</span>
           </div>
-          <div class="notif-item-title">Tatinghem 0-1 Genech : 5ème Clean Sheet</div>
+          <div class="notif-item-title">Tatinghem 2-0 Genech : Fin de parcours au 6e tour</div>
           <div class="notif-item-body">
-            Victoire validée. Solidité défensive confirmée (0.44 but concédé/match). Cadence PPM consolidée à 1.75.
+            Élimination avec les honneurs en finale régionale face à une formation de R1 après un parcours héroïque (4 tours franchis). Focus total sur la R3.
           </div>
         </div>
       `;

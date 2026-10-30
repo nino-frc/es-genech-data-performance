@@ -1378,17 +1378,21 @@ def export_real_pwa_feed():
         if pd.notnull(s_g) and pd.notnull(s_opp):
             total_buts_marques += int(s_g)
             total_buts_encaisses += int(s_opp)
+            mid = str(m.get('id', '')).lower()
             if s_g > s_opp:
                 victoires += 1
             elif s_g == s_opp:
-                nuls += 1
+                if "cdf" in mid:  # Qualification aux tirs au but en Coupe
+                    victoires += 1
+                else:
+                    nuls += 1
             else:
                 defaites += 1
             if int(s_opp) == 0:
                 total_clean_sheets += 1
 
     invincibilite_pct = round(((victoires + nuls) / total_matches * 100), 1) if total_matches > 0 else 0
-    ppm = round(7 / 4, 2) # 7 points en 4 journées R3
+    ppm = round(8 / 4, 2)  # 8 points en 4 journées R3 = 2.00 PPM
 
     # 2. Dernier match officiel de l'Équipe Fanion
     last_match_row = conn.execute("""
@@ -1422,7 +1426,7 @@ def export_real_pwa_feed():
                 "detail": ev["detail"]
             })
 
-    # 3. Prochain Match : ANICHE SC vs GENECH ES (J5, 01/11 à 14h30)
+    # 3. Prochain Match : ANICHE SC vs GENECH ES (J5, 01/11 à 14h30) - Choc au Sommet 2e vs 3e
     next_match = {
         "competition": "Seniors Régional 3 • Journée 5",
         "date_heure": "Dimanche 01 Novembre 2026 à 14h30",
@@ -1430,43 +1434,45 @@ def export_real_pwa_feed():
         "domicile": "ANICHE SC",
         "exterieur": "ES GENECH",
         "comparatif": {
-            "titre": "Comparatif de Performance (R3 Poule D)",
+            "titre": "Choc au Sommet • 2e vs 3e (R3 Poule D)",
             "adversaire_nom": "Aniche SC",
-            "adversaire_rang": "9e",
-            "adversaire_pts": 3,
-            "adversaire_buts_pour": 4,
-            "adversaire_buts_contre": 7,
+            "adversaire_rang": "2e",
+            "adversaire_pts": 8,
+            "adversaire_buts_pour": 7,
+            "adversaire_buts_contre": 3,
             "club_nom": "ES Genech",
-            "club_rang": "4e",
-            "club_pts": 7,
+            "club_rang": "3e",
+            "club_pts": 8,
             "club_buts_pour": 6,
             "club_buts_contre": 3
         },
         "alertes": [
-            "Erwan G. (Aniche) averti le 18/10, secteur axial sous pression",
-            "Défense adverse perméable : 1.75 but concédé par match en championnat"
+            "Choc direct pour la 2e place derrière Beuvry (10 pts) : Aniche (2e, 8 pts) et Genech (3e, 8 pts) sont les deux seules équipes invaincues de la poule (2 victoires, 2 nuls chacune).",
+            "Duel des meilleures défenses de la poule : seulement 3 buts concédés en 4 journées pour chaque formation (0.75 but/match).",
+            "Erwan G. (Aniche) averti le 18/10, secteur axial sous surveillance."
         ],
         "stats_comparatives": {
             "genech": {
-                "rang": 4,
-                "points": 7,
+                "rang": 3,
+                "points": 8,
                 "buts_marques": 6,
                 "buts_encaisses": 3,
                 "diff": "+3",
-                "forme": ["V", "V", "N", "N"]
+                "forme": ["N", "N", "V", "V"]
             },
             "aniche": {
-                "rang": 9,
-                "points": 3,
-                "buts_marques": 4,
-                "buts_encaisses": 7,
-                "diff": "-3",
-                "forme": ["D", "D", "N", "V"]
+                "rang": 2,
+                "points": 8,
+                "buts_marques": 7,
+                "buts_encaisses": 3,
+                "diff": "+4",
+                "forme": ["N", "V", "N", "V"]
             }
         },
         "adversaire_alertes": [
-            "Erwan G. (Aniche) averti le 18/10, secteur axial sous pression",
-            "Défense poreuse : 1.75 but concédé par match en championnat"
+            "Choc direct pour la 2e place derrière Beuvry (10 pts) : Aniche (2e, 8 pts) et Genech (3e, 8 pts) sont les deux seules équipes invaincues de la poule (2 victoires, 2 nuls chacune).",
+            "Duel des meilleures défenses de la poule : seulement 3 buts concédés en 4 journées pour chaque formation (0.75 but/match).",
+            "Erwan G. (Aniche) averti le 18/10, secteur axial sous surveillance."
         ]
     }
 
@@ -1647,10 +1653,10 @@ def export_real_pwa_feed():
             tranches_dict[tk]["encaisses"] += 1
 
     gouvernance_data = {
-        "ppm_championnat": ppm,
-        "probabilite_montee_pct": 63.8,
-        "probabilite_maintien_pct": 98.4,
-        "taux_invincibilite": invincibilite_pct,
+        "ppm_championnat": 2.00,
+        "probabilite_montee_pct": 74.2,
+        "probabilite_maintien_pct": 99.1,
+        "taux_invincibilite": round(((victoires + nuls) / total_matches * 100), 1) if total_matches > 0 else 0,
         "bilan_global": {
             "matchs": total_matches,
             "victoires": victoires,
@@ -1660,10 +1666,21 @@ def export_real_pwa_feed():
             "buts_contre": total_buts_encaisses,
             "difference": total_buts_marques - total_buts_encaisses
         },
+        "bilan_championnat": {
+            "matchs": 4,
+            "victoires": 2,
+            "nuls": 2,
+            "defaites": 0,
+            "points": 8,
+            "buts_pour": 6,
+            "buts_contre": 3,
+            "difference": 3,
+            "ppm": 2.00
+        },
         "ratio_clean_sheet_pct": round((total_clean_sheets / total_matches * 100), 1) if total_matches > 0 else 0,
         "moyenne_buts_encaisses": round(total_buts_encaisses / total_matches, 2) if total_matches > 0 else 0,
         "projection_saison": {
-            "points_prevus": 42.5,
+            "points_prevus": 44.0,
             "rang_final_estime": "2e (Accession Régional 2)"
         },
         "matrice_quarts_heure": list(tranches_dict.values()),

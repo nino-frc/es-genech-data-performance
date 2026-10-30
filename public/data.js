@@ -8,7 +8,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "30/10/2026 à 11:17"
+      "derniere_maj": "30/10/2026 à 13:22"
     },
     "dernier_match": {
       "id": "cdf_t6_tatinghem_genech",
@@ -113,53 +113,55 @@ window.MATCHDAY_TEAMS = {
       "domicile": "ANICHE SC",
       "exterieur": "ES GENECH",
       "comparatif": {
-        "titre": "Comparatif de Performance (R3 Poule D)",
+        "titre": "Choc au Sommet • 2e vs 3e (R3 Poule D)",
         "adversaire_nom": "Aniche SC",
-        "adversaire_rang": "9e",
-        "adversaire_pts": 3,
-        "adversaire_buts_pour": 4,
-        "adversaire_buts_contre": 7,
+        "adversaire_rang": "2e",
+        "adversaire_pts": 8,
+        "adversaire_buts_pour": 7,
+        "adversaire_buts_contre": 3,
         "club_nom": "ES Genech",
-        "club_rang": "4e",
-        "club_pts": 7,
+        "club_rang": "3e",
+        "club_pts": 8,
         "club_buts_pour": 6,
         "club_buts_contre": 3
       },
       "alertes": [
-        "Erwan G. (Aniche) averti le 18/10, secteur axial sous pression",
-        "Défense adverse perméable : 1.75 but concédé par match en championnat"
+        "Choc direct pour la 2e place derrière Beuvry (10 pts) : Aniche (2e, 8 pts) et Genech (3e, 8 pts) sont les deux seules équipes invaincues de la poule (2 victoires, 2 nuls chacune).",
+        "Duel des meilleures défenses de la poule : seulement 3 buts concédés en 4 journées pour chaque formation (0.75 but/match).",
+        "Erwan G. (Aniche) averti le 18/10, secteur axial sous surveillance."
       ],
       "stats_comparatives": {
         "genech": {
-          "rang": 4,
-          "points": 7,
+          "rang": 3,
+          "points": 8,
           "buts_marques": 6,
           "buts_encaisses": 3,
           "diff": "+3",
           "forme": [
-            "V",
-            "V",
             "N",
-            "N"
+            "N",
+            "V",
+            "V"
           ]
         },
         "aniche": {
-          "rang": 9,
-          "points": 3,
-          "buts_marques": 4,
-          "buts_encaisses": 7,
-          "diff": "-3",
+          "rang": 2,
+          "points": 8,
+          "buts_marques": 7,
+          "buts_encaisses": 3,
+          "diff": "+4",
           "forme": [
-            "D",
-            "D",
+            "N",
+            "V",
             "N",
             "V"
           ]
         }
       },
       "adversaire_alertes": [
-        "Erwan G. (Aniche) averti le 18/10, secteur axial sous pression",
-        "Défense poreuse : 1.75 but concédé par match en championnat"
+        "Choc direct pour la 2e place derrière Beuvry (10 pts) : Aniche (2e, 8 pts) et Genech (3e, 8 pts) sont les deux seules équipes invaincues de la poule (2 victoires, 2 nuls chacune).",
+        "Duel des meilleures défenses de la poule : seulement 3 buts concédés en 4 journées pour chaque formation (0.75 but/match).",
+        "Erwan G. (Aniche) averti le 18/10, secteur axial sous surveillance."
       ]
     },
     "meteo_prochain_match": {
@@ -3245,23 +3247,34 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 1.75,
-      "probabilite_montee_pct": 63.8,
-      "probabilite_maintien_pct": 98.4,
+      "ppm_championnat": 2.0,
+      "probabilite_montee_pct": 74.2,
+      "probabilite_maintien_pct": 99.1,
       "taux_invincibilite": 88.9,
       "bilan_global": {
         "matchs": 9,
-        "victoires": 5,
-        "nuls": 3,
+        "victoires": 6,
+        "nuls": 2,
         "defaites": 1,
         "buts_pour": 10,
         "buts_contre": 5,
         "difference": 5
       },
+      "bilan_championnat": {
+        "matchs": 4,
+        "victoires": 2,
+        "nuls": 2,
+        "defaites": 0,
+        "points": 8,
+        "buts_pour": 6,
+        "buts_contre": 3,
+        "difference": 3,
+        "ppm": 2.0
+      },
       "ratio_clean_sheet_pct": 55.6,
       "moyenne_buts_encaisses": 0.56,
       "projection_saison": {
-        "points_prevus": 42.5,
+        "points_prevus": 44.0,
         "rang_final_estime": "2e (Accession Régional 2)"
       },
       "matrice_quarts_heure": [
@@ -3561,7 +3574,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "30/10/2026 à 11:17"
+      "derniere_maj": "30/10/2026 à 13:22"
     },
     "dernier_match": {
       "id": "m_u18_m1_79496282-et-c-anstai",
@@ -5043,7 +5056,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "30/10/2026 à 11:17"
+      "derniere_maj": "30/10/2026 à 13:22"
     },
     "dernier_match": {
       "id": "m_senior_f2_78809066-lille-e-s-l",
@@ -5998,7 +6011,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "30/10/2026 à 11:17"
+      "derniere_maj": "30/10/2026 à 13:22"
     },
     "dernier_match": {
       "id": "m_senior_b_j4_loos",
@@ -6914,7 +6927,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "30/10/2026 à 11:17"
+      "derniere_maj": "30/10/2026 à 13:22"
     },
     "dernier_match": {
       "id": "seclin_80464279",
@@ -10618,7 +10631,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "30/10/2026 à 11:17"
+      "derniere_maj": "30/10/2026 à 13:22"
     },
     "dernier_match": {
       "id": "seclin_80464279",
@@ -14322,7 +14335,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "30/10/2026 à 11:17"
+      "derniere_maj": "30/10/2026 à 13:22"
     },
     "dernier_match": {
       "id": "lesquin_80499526",
@@ -17947,7 +17960,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "30/10/2026 à 11:17"
+      "derniere_maj": "30/10/2026 à 13:22"
     },
     "dernier_match": {
       "id": "lesquin_80499526",
