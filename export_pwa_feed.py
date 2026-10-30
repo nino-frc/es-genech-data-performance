@@ -1776,8 +1776,9 @@ def export_real_pwa_feed():
     # Déclencheur automatique Web Push vers Apple APNs et Google FCM
     try:
         import urllib.request
-        push_url = "https://matchday-performance.vercel.app/api/send-push"
+        push_url = "https://matchday-performance.vercel.app/api/subscribe"
         push_data = json.dumps({
+            "action": "send",
             "title": "MatchDay - Données actualisées ⚽",
             "body": f"Nouvelle mise à jour FFF ({derniere_maj}) prête sur votre appareil.",
             "url": "./"
