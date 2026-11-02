@@ -1,7 +1,8 @@
 // Vercel Serverless Function : api/subscribe.js
-// Gère à la fois l'abonnement et la diffusion Web Push (Instance unifiée sans base externe)
+// Gère l'abonnement persistant (MongoDB Atlas) et la diffusion Web Push (Apple APNs & Google FCM)
 
 const webpush = require('web-push');
+const { MongoClient } = require('mongodb');
 const fs = require('fs');
 const path = require('path');
 
@@ -9,30 +10,52 @@ const VAPID_PUBLIC_KEY = process.env.VAPID_PUBLIC_KEY || 'BLgY9vcONVMN2C9JX7UVfI
 const VAPID_PRIVATE_KEY = process.env.VAPID_PRIVATE_KEY || 'OWLtDNDAKVy4B08VzCLCkmtmLaVOaQbfe1bic9jeBwM';
 const VAPID_SUBJECT = 'mailto:nino.francois.contact@gmail.com';
 
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://ninofrancois02_db_user:nino@cluster0.h5rlbka.mongodb.net/?retryWrites=true&w=majority';
+const DB_NAME = process.env.MONGODB_DB_NAME || 'matchday_db';
+
 webpush.setVapidDetails(VAPID_SUBJECT, VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY);
 
 const TMP_FILE = path.join('/tmp', 'matchday_push_subscriptions.json');
-
-// Mémoire partagée de l'instance
 let memorySubs = [];
+let cachedClient = null;
 
-function getSubscriptions() {
+async function getMongoCollection() {
+  try {
+    if (!cachedClient) {
+      cachedClient = new MongoClient(MONGODB_URI, {
+        serverSelectionTimeoutMS: 5000,
+        family: 4,
+        maxPoolSize: 5
+      });
+      await cachedClient.connect();
+    }
+    return cachedClient.db(DB_NAME).collection('push_subscriptions');
+  } catch (err) {
+    console.warn('[Push] MongoDB indisponible, bascule sur mémoire locale :', err.message);
+    return null;
+  }
+}
+
+async function getAllSubscriptions() {
+  const col = await getMongoCollection();
+  if (col) {
+    try {
+      const docs = await col.find({}).toArray();
+      if (docs && docs.length > 0) return docs;
+    } catch (e) {
+      console.warn('[Push] Erreur lecture MongoDB :', e.message);
+    }
+  }
+
+  // Fallback /tmp et mémoire
   try {
     if (fs.existsSync(TMP_FILE)) {
       const fileData = JSON.parse(fs.readFileSync(TMP_FILE, 'utf8'));
-      if (Array.isArray(fileData) && fileData.length > 0) {
-        memorySubs = fileData;
-      }
+      if (Array.isArray(fileData) && fileData.length > 0) return fileData;
     }
   } catch (e) {}
-  return memorySubs;
-}
 
-function saveSubscriptions(subs) {
-  memorySubs = subs;
-  try {
-    fs.writeFileSync(TMP_FILE, JSON.stringify(subs, null, 2), 'utf8');
-  } catch (e) {}
+  return memorySubs;
 }
 
 module.exports = async (req, res) => {
@@ -46,11 +69,11 @@ module.exports = async (req, res) => {
 
   // 1. Consultation des abonnés
   if (req.method === 'GET') {
-    const subs = getSubscriptions();
+    const subs = await getAllSubscriptions();
     return res.status(200).json({ count: subs.length, success: true });
   }
 
-  // 2. Traitement POST : soit Envoi (send), soit Abonnement (subscribe)
+  // 2. Traitement POST : Envoi (send) ou Abonnement (subscribe)
   if (req.method === 'POST') {
     const body = req.body || {};
 
@@ -65,7 +88,7 @@ module.exports = async (req, res) => {
         badge: './logo.png'
       });
 
-      const subs = getSubscriptions();
+      const subs = await getAllSubscriptions();
       if (subs.length === 0) {
         return res.status(200).json({
           success: true,
@@ -98,8 +121,15 @@ module.exports = async (req, res) => {
 
       await Promise.all(promises);
 
+      // Nettoyage des abonnements expirés (désinstallations)
       if (expired.length > 0) {
-        saveSubscriptions(subs.filter(s => !expired.includes(s.endpoint)));
+        const col = await getMongoCollection();
+        if (col) {
+          try {
+            await col.deleteMany({ endpoint: { $in: expired } });
+          } catch (e) {}
+        }
+        memorySubs = memorySubs.filter(s => !expired.includes(s.endpoint));
       }
 
       return res.status(200).json({
@@ -110,7 +140,7 @@ module.exports = async (req, res) => {
       });
     }
 
-    // ACTION : Enregistrement d'un nouvel abonnement
+    // ACTION : Enregistrement d'un nouvel abonnement (Téléphone ou Navigateur)
     const subscription = body.subscription;
     const clubCode = body.clubCode || 'GNCH';
     const role = body.role || 'STAFF';
@@ -119,22 +149,41 @@ module.exports = async (req, res) => {
       return res.status(400).json({ error: 'Subscription endpoint missing' });
     }
 
-    let subs = getSubscriptions();
-    subs = subs.filter(s => s.endpoint !== subscription.endpoint);
-    subs.push({
+    const doc = {
       endpoint: subscription.endpoint,
       keys: subscription.keys,
       clubCode,
       role,
       updatedAt: new Date().toISOString()
-    });
+    };
 
-    saveSubscriptions(subs);
+    // Sauvegarde persistante MongoDB Atlas
+    const col = await getMongoCollection();
+    let totalDevices = 1;
+    if (col) {
+      try {
+        await col.updateOne(
+          { endpoint: subscription.endpoint },
+          { $set: doc },
+          { upsert: true }
+        );
+        totalDevices = await col.countDocuments();
+      } catch (err) {
+        console.warn('[Push] Erreur écriture MongoDB :', err.message);
+      }
+    }
+
+    // Mise à jour fallback
+    memorySubs = memorySubs.filter(s => s.endpoint !== subscription.endpoint);
+    memorySubs.push(doc);
+    try {
+      fs.writeFileSync(TMP_FILE, JSON.stringify(memorySubs, null, 2), 'utf8');
+    } catch (e) {}
 
     return res.status(200).json({
       success: true,
-      message: 'Abonnement Push enregistré avec succès',
-      totalDevices: subs.length
+      message: 'Abonnement Push sauvegardé avec succès dans MongoDB Atlas',
+      totalDevices
     });
   }
 
