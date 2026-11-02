@@ -137,11 +137,17 @@ jobs:
             briefings_coach/*.png
           retention-days: 14
 
-      # --- 6. SAUVEGARDE & DÉPLOIEMENT AUTOMATIQUE NETLIFY ---
-      - name: 💾 16. Sauvegarde & Commit automatique Multi-Clubs (Déclenche le build Netlify)
+      # --- 6. VÉRIFICATION D'INTÉGRITÉ & PROTECTION ANTI-ÉCRASEMENT ---
+      - name: 🛡️ 15b. Contrôle d'intégrité strict avant déploiement
+        run: |
+          python -c "import json; d=json.load(open('public/data_feed.json', encoding='utf-8')); assert len(d['SENIOR_M1']['classement']) >= 5, 'Scraping FFF incomplet : classement vide detecte, commit annule pour proteger les donnees certifiees'"
+
+      # --- 7. SAUVEGARDE & DÉPLOIEMENT AUTOMATIQUE ---
+      - name: 💾 16. Sauvegarde & Commit automatique Multi-Clubs
         run: |
           git config user.name "MatchDay Analytics Bot"
           git config user.email "bot@matchday-app.fr"
+          git pull --rebase origin main
           git add genech_performance.db seclin_performance.db lesquin_performance.db public/data.js public/data_feed.json exports_powerbi/ briefings_coach/
           git diff-index --quiet HEAD || git commit -m "chore(auto): mise à jour hebdomadaire multi-clubs FFF (Genech, Seclin, Lesquin) [skip ci]"
           git push origin main

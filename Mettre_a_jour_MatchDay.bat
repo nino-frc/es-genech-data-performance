@@ -19,7 +19,8 @@ echo.
 echo [4/4] Regeneration des flux PWA et calculs disciplinaires...
 python export_pwa_feed.py
 echo.
-echo 🚀 Deploiement automatique sur Vercel...
+echo 🚀 Synchronisation et deploiement automatique sur Vercel...
+git pull --rebase origin main
 git add genech_performance.db seclin_performance.db lesquin_performance.db public/data.js public/data_feed.json public/app.js public/index.html exports_powerbi/ briefings_coach/
 git diff-index --quiet HEAD || (
   git commit -m "chore(auto): mise a jour hebdomadaire officielle FFF [skip ci]"
