@@ -8,168 +8,177 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "30/10/2026 à 13:56"
+      "derniere_maj": "02/11/2026 à 11:57"
     },
     "dernier_match": {
-      "id": "cdf_t6_tatinghem_genech",
-      "competition": "Coupe de France (Tour 6)",
-      "domicile": "ST MARTIN TATINGHEM",
+      "id": "r3_j5_aniche_genech",
+      "competition": "Seniors Régional 3",
+      "domicile": "ANICHE SC",
       "exterieur": "GENECH ES",
-      "score_domicile": 2,
-      "score_exterieur": 0,
-      "date_heure": "2026-10-25 15:00",
+      "score_domicile": 1,
+      "score_exterieur": 1,
+      "date_heure": "2026-11-08 14:30",
       "statut": "TERMINE"
     },
     "evenements_dernier_match": [
       {
-        "minute": 43,
+        "minute": 30,
         "type": "AVERTISSEMENT",
-        "equipe": "ST MARTIN TATINGHEM",
-        "acteur": "Ethan T.",
+        "equipe": "ANICHE SC",
+        "acteur": "Anthony B.",
         "detail": "Carton jaune"
       },
       {
+        "minute": 38,
+        "type": "CHANGEMENT",
+        "equipe": "ANICHE SC",
+        "acteur": "Leo L.",
+        "detail": "LEO L. remplace JULIEN M."
+      },
+      {
         "minute": 44,
-        "type": "BUT",
-        "equipe": "ST MARTIN TATINGHEM",
-        "acteur": "Anthone S.",
-        "detail": "But officiel FFF (1-0)"
-      },
-      {
-        "minute": 46,
-        "type": "REMPLACEMENT",
-        "equipe": "ST MARTIN TATINGHEM",
-        "acteur": "Steven C.",
-        "detail": "Remplacement"
-      },
-      {
-        "minute": 48,
-        "type": "REMPLACEMENT",
+        "type": "AVERTISSEMENT",
         "equipe": "GENECH ES",
-        "acteur": "Thomas L.",
-        "detail": "Remplacement"
+        "acteur": "Jean-paul B.",
+        "detail": "Carton jaune"
       },
       {
-        "minute": 58,
-        "type": "REMPLACEMENT",
-        "equipe": "ST MARTIN TATINGHEM",
-        "acteur": "Ake S.",
-        "detail": "Remplacement"
+        "minute": 52,
+        "type": "AVERTISSEMENT",
+        "equipe": "GENECH ES",
+        "acteur": "Giovany C.",
+        "detail": "Carton jaune"
       },
       {
-        "minute": 62,
-        "type": "REMPLACEMENT",
-        "equipe": "ST MARTIN TATINGHEM",
-        "acteur": "Florian D.",
-        "detail": "Remplacement"
-      },
-      {
-        "minute": 62,
-        "type": "REMPLACEMENT",
+        "minute": 66,
+        "type": "CHANGEMENT",
         "equipe": "GENECH ES",
         "acteur": "Dany D.",
-        "detail": "Remplacement"
+        "detail": "DANY D. remplace CLEMENT D."
       },
       {
-        "minute": 62,
-        "type": "REMPLACEMENT",
+        "minute": 70,
+        "type": "CHANGEMENT",
+        "equipe": "ANICHE SC",
+        "acteur": "Matheo F.",
+        "detail": "MATHEO F. remplace DONATO M."
+      },
+      {
+        "minute": 75,
+        "type": "CHANGEMENT",
         "equipe": "GENECH ES",
-        "acteur": "Jules D.",
-        "detail": "Remplacement"
+        "acteur": "Gabyn D.",
+        "detail": "GABYN D. remplace JULES D."
       },
       {
-        "minute": 69,
-        "type": "REMPLACEMENT",
+        "minute": 76,
+        "type": "BUT",
         "equipe": "GENECH ES",
-        "acteur": "Elio D.",
-        "detail": "Remplacement"
-      },
-      {
-        "minute": 73,
-        "type": "REMPLACEMENT",
-        "equipe": "ST MARTIN TATINGHEM",
-        "acteur": "Adama N.",
-        "detail": "Remplacement"
+        "acteur": "Gabyn D.",
+        "detail": "But inscrit par GABYN D."
       },
       {
         "minute": 83,
+        "type": "CHANGEMENT",
+        "equipe": "GENECH ES",
+        "acteur": "Evan P.",
+        "detail": "EVAN P. remplace ELIO D."
+      },
+      {
+        "minute": 84,
+        "type": "CHANGEMENT",
+        "equipe": "ANICHE SC",
+        "acteur": "Rafik E.",
+        "detail": "RAFIK E. remplace MATHIEU T."
+      },
+      {
+        "minute": 87,
+        "type": "AVERTISSEMENT",
+        "equipe": "ANICHE SC",
+        "acteur": "Abdelaziz A.",
+        "detail": "Carton jaune"
+      },
+      {
+        "minute": 90,
         "type": "BUT",
-        "equipe": "ST MARTIN TATINGHEM",
-        "acteur": "Aaron H.",
-        "detail": "But officiel FFF (2-0)"
+        "equipe": "ANICHE SC",
+        "acteur": "Yanis B.",
+        "detail": "But inscrit par YANIS B."
       },
       {
         "minute": 90,
         "type": "AVERTISSEMENT",
-        "equipe": "ST MARTIN TATINGHEM",
-        "acteur": "Florian D.",
+        "equipe": "ANICHE SC",
+        "acteur": "Rafik E.",
         "detail": "Carton jaune"
       }
     ],
     "prochain_match": {
-      "competition": "Seniors Régional 3 • Journée 5",
-      "date_heure": "Dimanche 01 Novembre 2026 à 14h30",
-      "lieu": "Stade des Navarres (Aniche)",
-      "domicile": "ANICHE SC",
-      "exterieur": "ES GENECH",
+      "competition": "Seniors Régional 3 • Journée 6",
+      "date_heure": "Dimanche 08 Novembre 2026 à 14h30",
+      "lieu": "Stade Léo Lagrange (Genech)",
+      "domicile": "ES GENECH",
+      "exterieur": "BEUVRY LA FORET AS",
       "comparatif": {
-        "titre": "Choc au Sommet • 2e vs 3e (R3 Poule D)",
-        "adversaire_nom": "Aniche SC",
+        "titre": "Choc de Haut de Tableau • 5e vs 2e (R3 Poule D)",
+        "adversaire_nom": "Beuvry la Forêt AS",
         "adversaire_rang": "2e",
-        "adversaire_pts": 8,
-        "adversaire_buts_pour": 7,
-        "adversaire_buts_contre": 3,
+        "adversaire_pts": 10,
+        "adversaire_buts_pour": 8,
+        "adversaire_buts_contre": 4,
         "club_nom": "ES Genech",
-        "club_rang": "3e",
-        "club_pts": 8,
-        "club_buts_pour": 6,
-        "club_buts_contre": 3
+        "club_rang": "5e",
+        "club_pts": 9,
+        "club_buts_pour": 7,
+        "club_buts_contre": 4
       },
       "alertes": [
-        "Choc direct pour la 2e place derrière Beuvry (10 pts) : Aniche (2e, 8 pts) et Genech (3e, 8 pts) sont les deux seules équipes invaincues de la poule (2 victoires, 2 nuls chacune).",
-        "Duel des meilleures défenses de la poule : seulement 3 buts concédés en 4 journées pour chaque formation (0.75 but/match).",
-        "Erwan G. (Aniche) averti le 18/10, secteur axial sous surveillance."
+        "Choc de haut de tableau : Genech (5e, 9 pts, invaincu) accueille Beuvry (2e, 10 pts) séparés par seulement 1 point.",
+        "Duel des meilleures défenses : seulement 4 buts concédés en 5 journées par Genech et Beuvry (0.80 but/match).",
+        "Genech reste invaincu en championnat R3 cette saison (2 victoires, 3 nuls)."
       ],
       "stats_comparatives": {
         "genech": {
-          "rang": 3,
-          "points": 8,
-          "buts_marques": 6,
-          "buts_encaisses": 3,
+          "rang": 5,
+          "points": 9,
+          "buts_marques": 7,
+          "buts_encaisses": 4,
           "diff": "+3",
           "forme": [
+            "N",
             "N",
             "N",
             "V",
             "V"
           ]
         },
-        "aniche": {
+        "beuvry": {
           "rang": 2,
-          "points": 8,
-          "buts_marques": 7,
-          "buts_encaisses": 3,
+          "points": 10,
+          "buts_marques": 8,
+          "buts_encaisses": 4,
           "diff": "+4",
           "forme": [
-            "N",
             "V",
             "N",
+            "V",
+            "D",
             "V"
           ]
         }
       },
       "adversaire_alertes": [
-        "Choc direct pour la 2e place derrière Beuvry (10 pts) : Aniche (2e, 8 pts) et Genech (3e, 8 pts) sont les deux seules équipes invaincues de la poule (2 victoires, 2 nuls chacune).",
-        "Duel des meilleures défenses de la poule : seulement 3 buts concédés en 4 journées pour chaque formation (0.75 but/match).",
-        "Erwan G. (Aniche) averti le 18/10, secteur axial sous surveillance."
+        "Choc de haut de tableau : Genech (5e, 9 pts, invaincu) accueille Beuvry (2e, 10 pts) séparés par seulement 1 point.",
+        "Duel des meilleures défenses : seulement 4 buts concédés en 5 journées par Genech et Beuvry (0.80 but/match).",
+        "Genech reste invaincu en championnat R3 cette saison (2 victoires, 3 nuls)."
       ]
     },
     "meteo_prochain_match": {
       "lieu": "Aniche",
       "surface": "Pelouse naturelle",
-      "temperature": "8.2 °C",
-      "vent": "Faible (14.5 km/h)",
-      "pluie": "Sec (0 %)",
+      "temperature": "8.9 °C",
+      "vent": "Faible (9.3 km/h)",
+      "pluie": "Sec (8 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -185,8 +194,284 @@ window.MATCHDAY_TEAMS = {
     },
     "historique_matchs": [
       {
+        "id": "r3_j5_aniche_genech",
+        "competition": "Régional 3 • Journée 5",
+        "comp_type": "R3",
+        "date": "08/11/2026",
+        "date_heure": "2026-11-08 14:30",
+        "domicile": "ANICHE SC",
+        "exterieur": "GENECH ES",
+        "score_domicile": 1,
+        "score_exterieur": 1,
+        "score_display": "1 - 1",
+        "is_domicile": false,
+        "resultat": "N",
+        "resultat_label": "Match Nul",
+        "evenements": [
+          {
+            "minute": 30,
+            "type": "AVERTISSEMENT",
+            "equipe": "ANICHE SC",
+            "acteur": "Anthony B.",
+            "acteur_secondaire": "",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 38,
+            "type": "CHANGEMENT",
+            "equipe": "ANICHE SC",
+            "acteur": "Leo L.",
+            "acteur_secondaire": "Julien M.",
+            "detail": "LEO L. remplace JULIEN M."
+          },
+          {
+            "minute": 44,
+            "type": "AVERTISSEMENT",
+            "equipe": "GENECH ES",
+            "acteur": "Jean-paul B.",
+            "acteur_secondaire": "",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 52,
+            "type": "AVERTISSEMENT",
+            "equipe": "GENECH ES",
+            "acteur": "Giovany C.",
+            "acteur_secondaire": "",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 66,
+            "type": "CHANGEMENT",
+            "equipe": "GENECH ES",
+            "acteur": "Dany D.",
+            "acteur_secondaire": "Clement D.",
+            "detail": "DANY D. remplace CLEMENT D."
+          },
+          {
+            "minute": 70,
+            "type": "CHANGEMENT",
+            "equipe": "ANICHE SC",
+            "acteur": "Matheo F.",
+            "acteur_secondaire": "Donato M.",
+            "detail": "MATHEO F. remplace DONATO M."
+          },
+          {
+            "minute": 75,
+            "type": "CHANGEMENT",
+            "equipe": "GENECH ES",
+            "acteur": "Gabyn D.",
+            "acteur_secondaire": "Jules D.",
+            "detail": "GABYN D. remplace JULES D."
+          },
+          {
+            "minute": 76,
+            "type": "BUT",
+            "equipe": "GENECH ES",
+            "acteur": "Gabyn D.",
+            "acteur_secondaire": "",
+            "detail": "But inscrit par GABYN D."
+          },
+          {
+            "minute": 83,
+            "type": "CHANGEMENT",
+            "equipe": "GENECH ES",
+            "acteur": "Evan P.",
+            "acteur_secondaire": "Elio D.",
+            "detail": "EVAN P. remplace ELIO D."
+          },
+          {
+            "minute": 84,
+            "type": "CHANGEMENT",
+            "equipe": "ANICHE SC",
+            "acteur": "Rafik E.",
+            "acteur_secondaire": "Mathieu T.",
+            "detail": "RAFIK E. remplace MATHIEU T."
+          },
+          {
+            "minute": 87,
+            "type": "AVERTISSEMENT",
+            "equipe": "ANICHE SC",
+            "acteur": "Abdelaziz A.",
+            "acteur_secondaire": "",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 90,
+            "type": "BUT",
+            "equipe": "ANICHE SC",
+            "acteur": "Yanis B.",
+            "acteur_secondaire": "",
+            "detail": "But inscrit par YANIS B."
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "ANICHE SC",
+            "acteur": "Rafik E.",
+            "acteur_secondaire": "",
+            "detail": "Carton jaune"
+          }
+        ],
+        "compositions": {
+          "genech": {
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Tim L.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 2,
+                "nom": "Julien D.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 3,
+                "nom": "Clement D.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 4,
+                "nom": "Maxime P.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 5,
+                "nom": "Remi D.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 6,
+                "nom": "Jules D.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 7,
+                "nom": "Mateo S.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 8,
+                "nom": "Augustin D.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 9,
+                "nom": "Jean-paul B.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 10,
+                "nom": "Giovany C.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 11,
+                "nom": "Elio D.",
+                "role": "TITULAIRE"
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Dany D.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 13,
+                "nom": "Gabyn D.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 14,
+                "nom": "Evan P.",
+                "role": "REMPLACANT"
+              }
+            ]
+          },
+          "adversaire": {
+            "equipe": "ANICHE SC",
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Noah S.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 2,
+                "nom": "Mathieu T.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 3,
+                "nom": "Abdelaziz A.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 4,
+                "nom": "Anonyme X.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 5,
+                "nom": "Anthony B.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 6,
+                "nom": "Loyd O.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 7,
+                "nom": "Lilian T.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 8,
+                "nom": "Lenny O.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 9,
+                "nom": "Donato M.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 10,
+                "nom": "Yanis B.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 11,
+                "nom": "Julien M.",
+                "role": "TITULAIRE"
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Matheo F.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 13,
+                "nom": "Rafik E.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 14,
+                "nom": "Leo L.",
+                "role": "REMPLACANT"
+              }
+            ]
+          }
+        }
+      },
+      {
         "id": "cdf_t6_tatinghem_genech",
-        "competition": "Coupe de France • Tour 6 (Finale Régionale)",
+        "competition": "Coupe de France • Tour 6",
         "comp_type": "CDF",
         "date": "25/10/2026",
         "date_heure": "2026-10-25 15:00",
@@ -213,71 +498,71 @@ window.MATCHDAY_TEAMS = {
             "equipe": "ST MARTIN TATINGHEM",
             "acteur": "Anthone S.",
             "acteur_secondaire": "",
-            "detail": "But officiel FFF (1-0)"
+            "detail": "But inscrit par ANTHONE SOTOMSKI"
           },
           {
             "minute": 46,
-            "type": "REMPLACEMENT",
+            "type": "CHANGEMENT",
             "equipe": "ST MARTIN TATINGHEM",
             "acteur": "Steven C.",
             "acteur_secondaire": "Kevin S.",
-            "detail": "Remplacement"
+            "detail": "STEVEN CARPENTIER remplace KEVIN SCHRIVE"
           },
           {
             "minute": 48,
-            "type": "REMPLACEMENT",
+            "type": "CHANGEMENT",
             "equipe": "GENECH ES",
             "acteur": "Thomas L.",
             "acteur_secondaire": "Julien N.",
-            "detail": "Remplacement"
+            "detail": "THOMAS LEONARD remplace JULIEN NISSE"
           },
           {
             "minute": 58,
-            "type": "REMPLACEMENT",
+            "type": "CHANGEMENT",
             "equipe": "ST MARTIN TATINGHEM",
             "acteur": "Ake S.",
             "acteur_secondaire": "Steven C.",
-            "detail": "Remplacement"
+            "detail": "AKE SEKOU CISSE remplace STEVEN CARPENTIER"
           },
           {
             "minute": 62,
-            "type": "REMPLACEMENT",
+            "type": "CHANGEMENT",
             "equipe": "ST MARTIN TATINGHEM",
             "acteur": "Florian D.",
             "acteur_secondaire": "Ethan T.",
-            "detail": "Remplacement"
+            "detail": "FLORIAN DELATTRE remplace ETHAN TREHOUX"
           },
           {
             "minute": 62,
-            "type": "REMPLACEMENT",
+            "type": "CHANGEMENT",
             "equipe": "GENECH ES",
             "acteur": "Dany D.",
             "acteur_secondaire": "Giovany C.",
-            "detail": "Remplacement"
+            "detail": "DANY DE FREITAS remplace GIOVANY CALON"
           },
           {
             "minute": 62,
-            "type": "REMPLACEMENT",
+            "type": "CHANGEMENT",
             "equipe": "GENECH ES",
             "acteur": "Jules D.",
             "acteur_secondaire": "Hugo H.",
-            "detail": "Remplacement"
+            "detail": "JULES DIVERCHY remplace HUGO HERVE"
           },
           {
             "minute": 69,
-            "type": "REMPLACEMENT",
+            "type": "CHANGEMENT",
             "equipe": "GENECH ES",
             "acteur": "Elio D.",
             "acteur_secondaire": "Thomas L.",
-            "detail": "Remplacement"
+            "detail": "ELIO DELCROIX remplace THOMAS LEONARD"
           },
           {
             "minute": 73,
-            "type": "REMPLACEMENT",
+            "type": "CHANGEMENT",
             "equipe": "ST MARTIN TATINGHEM",
             "acteur": "Adama N.",
             "acteur_secondaire": "Anthone S.",
-            "detail": "Remplacement"
+            "detail": "ADAMA NIANE remplace ANTHONE SOTOMSKI"
           },
           {
             "minute": 83,
@@ -285,7 +570,7 @@ window.MATCHDAY_TEAMS = {
             "equipe": "ST MARTIN TATINGHEM",
             "acteur": "Aaron H.",
             "acteur_secondaire": "",
-            "detail": "But officiel FFF (2-0)"
+            "detail": "But inscrit par AARON HUYSMAN"
           },
           {
             "minute": 90,
@@ -331,7 +616,7 @@ window.MATCHDAY_TEAMS = {
               },
               {
                 "numero": 7,
-                "nom": "Jean-Paul B.",
+                "nom": "Jean-paul B.",
                 "role": "TITULAIRE"
               },
               {
@@ -380,8 +665,90 @@ window.MATCHDAY_TEAMS = {
           },
           "adversaire": {
             "equipe": "ST MARTIN TATINGHEM",
-            "titulaires": [],
-            "remplacants": []
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Thibault D.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 2,
+                "nom": "Ibrahim S.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 3,
+                "nom": "Theo G.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 4,
+                "nom": "Kevin R.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 5,
+                "nom": "Louis M.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 6,
+                "nom": "Christian C.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 7,
+                "nom": "Kevin S.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 8,
+                "nom": "Mohamed T.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 9,
+                "nom": "Aaron H.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 10,
+                "nom": "Anthone S.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 11,
+                "nom": "Ethan T.",
+                "role": "TITULAIRE"
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Ake S.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 13,
+                "nom": "Florian D.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 14,
+                "nom": "Adama N.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 15,
+                "nom": "Steven C.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 16,
+                "nom": "Tawfik S.",
+                "role": "REMPLACANT"
+              }
+            ]
           }
         }
       },
@@ -406,14 +773,14 @@ window.MATCHDAY_TEAMS = {
             "equipe": "ANSTAING CHERENG EC",
             "acteur": "Yann B.",
             "acteur_secondaire": "",
-            "detail": "But pour ANSTAING CHERENG EC"
+            "detail": "But inscrit par YANN B."
           },
           {
             "minute": 52,
             "type": "CHANGEMENT",
             "equipe": "GENECH ES",
             "acteur": "Gaspard D.",
-            "acteur_secondaire": "Jean-Paul B.",
+            "acteur_secondaire": "Jean-paul B.",
             "detail": "GASPARD D. remplace JEAN PAUL B."
           },
           {
@@ -502,7 +869,7 @@ window.MATCHDAY_TEAMS = {
             "equipe": "GENECH ES",
             "acteur": "Hugo H.",
             "acteur_secondaire": "",
-            "detail": "But pour GENECH ES"
+            "detail": "But inscrit par HUGO H."
           },
           {
             "minute": 90,
@@ -518,7 +885,23 @@ window.MATCHDAY_TEAMS = {
             "equipe": "GENECH ES",
             "acteur": "Gaspard D.",
             "acteur_secondaire": "",
-            "detail": "Carton jaune (3e en 3 mois)"
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "GENECH ES",
+            "acteur": "Gaspard D.",
+            "acteur_secondaire": "",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 90,
+            "type": "EXPULSION",
+            "equipe": "GENECH ES",
+            "acteur": "Gaspard D.",
+            "acteur_secondaire": "",
+            "detail": "Carton rouge"
           }
         ],
         "compositions": {
@@ -556,7 +939,7 @@ window.MATCHDAY_TEAMS = {
               },
               {
                 "numero": 7,
-                "nom": "Jean-Paul B.",
+                "nom": "Jean-paul B.",
                 "role": "TITULAIRE"
               },
               {
@@ -736,7 +1119,7 @@ window.MATCHDAY_TEAMS = {
             "minute": 61,
             "type": "CHANGEMENT",
             "equipe": "GENECH ES",
-            "acteur": "Jean-Paul B.",
+            "acteur": "Jean-paul B.",
             "acteur_secondaire": "Gaspard D.",
             "detail": "JEAN PAUL BANGALA TOFIFI remplace GASPARD DROUPSY"
           },
@@ -770,7 +1153,7 @@ window.MATCHDAY_TEAMS = {
             "equipe": "GENECH ES",
             "acteur": "Julien N.",
             "acteur_secondaire": "",
-            "detail": "But pour GENECH ES"
+            "detail": "But inscrit par JULIEN NISSE"
           },
           {
             "minute": 79,
@@ -859,7 +1242,7 @@ window.MATCHDAY_TEAMS = {
             "remplacants": [
               {
                 "numero": 12,
-                "nom": "Jean-Paul B.",
+                "nom": "Jean-paul B.",
                 "role": "REMPLACANT"
               },
               {
@@ -1262,7 +1645,7 @@ window.MATCHDAY_TEAMS = {
             "equipe": "GENECH ES",
             "acteur": "Julien D.",
             "acteur_secondaire": "",
-            "detail": "But pour GENECH ES"
+            "detail": "But inscrit par JULIEN DEVERNAY"
           },
           {
             "minute": 45,
@@ -1285,7 +1668,7 @@ window.MATCHDAY_TEAMS = {
             "type": "CHANGEMENT",
             "equipe": "GENECH ES",
             "acteur": "Julien N.",
-            "acteur_secondaire": "Jean-Paul B.",
+            "acteur_secondaire": "Jean-paul B.",
             "detail": "JULIEN NISSE remplace JEAN PAUL BANGALA TOFIFI"
           },
           {
@@ -1310,7 +1693,7 @@ window.MATCHDAY_TEAMS = {
             "equipe": "GENECH ES",
             "acteur": "Giovany C.",
             "acteur_secondaire": "",
-            "detail": "But pour GENECH ES"
+            "detail": "But inscrit par GIOVANY CALON"
           },
           {
             "minute": 70,
@@ -1380,7 +1763,7 @@ window.MATCHDAY_TEAMS = {
               },
               {
                 "numero": 7,
-                "nom": "Jean-Paul B.",
+                "nom": "Jean-paul B.",
                 "role": "TITULAIRE"
               },
               {
@@ -1542,13 +1925,13 @@ window.MATCHDAY_TEAMS = {
             "equipe": "GENECH ES",
             "acteur": "Gaspard D.",
             "acteur_secondaire": "",
-            "detail": "But pour GENECH ES"
+            "detail": "But inscrit par GASPARD D."
           },
           {
             "minute": 46,
             "type": "CHANGEMENT",
             "equipe": "GENECH ES",
-            "acteur": "Jean-Paul B.",
+            "acteur": "Jean-paul B.",
             "acteur_secondaire": "Augustin D.",
             "detail": "JEAN PAUL B. remplace AUGUSTIN D."
           },
@@ -1582,7 +1965,7 @@ window.MATCHDAY_TEAMS = {
             "equipe": "GENECH ES",
             "acteur": "Mathys H.",
             "acteur_secondaire": "",
-            "detail": "But pour GENECH ES"
+            "detail": "But inscrit par MATHYS H."
           },
           {
             "minute": 56,
@@ -1679,7 +2062,7 @@ window.MATCHDAY_TEAMS = {
             "remplacants": [
               {
                 "numero": 12,
-                "nom": "Jean-Paul B.",
+                "nom": "Jean-paul B.",
                 "role": "REMPLACANT"
               },
               {
@@ -1809,7 +2192,7 @@ window.MATCHDAY_TEAMS = {
             "type": "CHANGEMENT",
             "equipe": "GENECH ES",
             "acteur": "Arthur C.",
-            "acteur_secondaire": "Jean-Paul B.",
+            "acteur_secondaire": "Jean-paul B.",
             "detail": "ARTHUR CLIQUE remplace JEAN PAUL BANGALA TOFIFI"
           },
           {
@@ -1889,6 +2272,11 @@ window.MATCHDAY_TEAMS = {
           "genech": {
             "titulaires": [
               {
+                "numero": 1,
+                "nom": "Tim L.",
+                "role": "TITULAIRE"
+              },
+              {
                 "numero": 2,
                 "nom": "Julien D.",
                 "role": "TITULAIRE"
@@ -1935,7 +2323,7 @@ window.MATCHDAY_TEAMS = {
               },
               {
                 "numero": 11,
-                "nom": "Jean-Paul B.",
+                "nom": "Jean-paul B.",
                 "role": "TITULAIRE"
               }
             ],
@@ -1973,11 +2361,6 @@ window.MATCHDAY_TEAMS = {
               {
                 "numero": 1,
                 "nom": "Pape S.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 1,
-                "nom": "Tim L.",
                 "role": "TITULAIRE"
               },
               {
@@ -2085,7 +2468,7 @@ window.MATCHDAY_TEAMS = {
             "equipe": "BONDUES FC 2",
             "acteur": "Mathis P.",
             "acteur_secondaire": "",
-            "detail": "But pour BONDUES FC 2"
+            "detail": "But inscrit par MATHIS P."
           },
           {
             "minute": 40,
@@ -2156,7 +2539,7 @@ window.MATCHDAY_TEAMS = {
             "type": "CHANGEMENT",
             "equipe": "GENECH ES",
             "acteur": "Gaspard D.",
-            "acteur_secondaire": "Jean-Paul B.",
+            "acteur_secondaire": "Jean-paul B.",
             "detail": "GASPARD D. remplace JEAN PAUL B."
           },
           {
@@ -2165,7 +2548,7 @@ window.MATCHDAY_TEAMS = {
             "equipe": "GENECH ES",
             "acteur": "Julien D.",
             "acteur_secondaire": "",
-            "detail": "But pour GENECH ES"
+            "detail": "But inscrit par JULIEN D."
           },
           {
             "minute": 65,
@@ -2205,7 +2588,7 @@ window.MATCHDAY_TEAMS = {
             "equipe": "GENECH ES",
             "acteur": "Gaspard D.",
             "acteur_secondaire": "",
-            "detail": "But pour GENECH ES"
+            "detail": "But inscrit par GASPARD D."
           },
           {
             "minute": 90,
@@ -2251,7 +2634,7 @@ window.MATCHDAY_TEAMS = {
               },
               {
                 "numero": 7,
-                "nom": "Jean-Paul B.",
+                "nom": "Jean-paul B.",
                 "role": "TITULAIRE"
               },
               {
@@ -2416,7 +2799,7 @@ window.MATCHDAY_TEAMS = {
             "type": "CHANGEMENT",
             "equipe": "GENECH ES",
             "acteur": "Thomas L.",
-            "acteur_secondaire": "Jean-Paul B.",
+            "acteur_secondaire": "Jean-paul B.",
             "detail": "THOMAS LEONARD remplace JEAN PAUL BANGALA TOFIFI"
           },
           {
@@ -2547,7 +2930,7 @@ window.MATCHDAY_TEAMS = {
               },
               {
                 "numero": 11,
-                "nom": "Jean-Paul B.",
+                "nom": "Jean-paul B.",
                 "role": "TITULAIRE"
               }
             ],
@@ -2670,25 +3053,34 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "kpis_saison": {
-      "buts_marques": 10,
-      "buts_encaisses": 5,
+      "buts_marques": 11,
+      "buts_encaisses": 6,
       "clean_sheets": 5,
-      "minutes_cumulees": 8820,
-      "cartons_jaunes": 17,
-      "cartons_rouges": 2
+      "minutes_cumulees": 9921,
+      "cartons_jaunes": 20,
+      "cartons_rouges": 3
     },
     "tresorerie_discipline": {
-      "cout_total_estime": 406,
-      "cout_jaunes": 306,
-      "cout_rouges": 100,
+      "cout_total_estime": 510,
+      "cout_jaunes": 360,
+      "cout_rouges": 150,
       "amendes_evitees": 250,
       "explication_calcul": {
-        "jaunes_detail": "17 cartons jaunes × 18 € = 306 €",
-        "rouges_detail": "2 cartons rouges × 50 € = 100 €",
+        "jaunes_detail": "20 cartons jaunes × 18 € = 360 €",
+        "rouges_detail": "3 cartons rouges × 50 € = 150 €",
         "amende_evitee_detail": "Forfait instruction LFHF (100 €) + amende joueur inéligible aligné (150 €) = 250 € évités"
       }
     },
     "cartons_rouges_details": [
+      {
+        "joueur": "Gaspard D.",
+        "minute": 90,
+        "date": "2026-10-18",
+        "adversaire": "ANSTAING CHERENG EC",
+        "match_label": "Journée 4 vs ANSTAING CHERENG EC",
+        "statut_purge": "Purgé (Suspension effectuée)",
+        "est_suspendu": false
+      },
       {
         "joueur": "Mateo S.",
         "minute": 82,
@@ -2717,11 +3109,25 @@ window.MATCHDAY_TEAMS = {
         "message": "2 cartons reçus (06/09, 18/10). Prochain avertissement = 1 match ferme."
       },
       {
+        "joueur": "Gaspard D.",
+        "jaunes_90j": 2,
+        "dates": "06/09, 20/09",
+        "expiration": "05/12/2026",
+        "message": "2 cartons reçus (06/09, 20/09). Prochain avertissement = 1 match ferme."
+      },
+      {
         "joueur": "Julien D.",
         "jaunes_90j": 2,
         "dates": "13/09, 18/10",
         "expiration": "12/12/2026",
         "message": "2 cartons reçus (13/09, 18/10). Prochain avertissement = 1 match ferme."
+      },
+      {
+        "joueur": "Giovany C.",
+        "jaunes_90j": 2,
+        "dates": "18/10, 08/11",
+        "expiration": "16/01/2027",
+        "message": "2 cartons reçus (18/10, 08/11). Prochain avertissement = 1 match ferme."
       }
     ],
     "effectif_esg": [
@@ -2730,17 +3136,17 @@ window.MATCHDAY_TEAMS = {
         "rang": 1,
         "nom": "Julien D.",
         "badge": "⭐ MVP / Cadre Incontournable",
-        "matchs": 9,
-        "titularisations": 8,
+        "matchs": 10,
+        "titularisations": 9,
         "remplacements": 1,
-        "minutes": 710,
+        "minutes": 800,
         "clean_sheets": 5,
         "buts": 2,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 90.7,
+        "esg_score": 91.1,
         "sous_scores": {
-          "volume": 30.7,
+          "volume": 31.1,
           "volume_max": 35,
           "defense": 30.0,
           "defense_max": 30,
@@ -2754,27 +3160,27 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "p_2",
         "rang": 2,
-        "nom": "Gaspard D.",
-        "badge": "🎯 Buteur d'Élite",
-        "matchs": 8,
-        "titularisations": 6,
-        "remplacements": 2,
-        "minutes": 523,
+        "nom": "Tim L.",
+        "badge": "🛡️ Roc Défensif",
+        "matchs": 10,
+        "titularisations": 10,
+        "remplacements": 0,
+        "minutes": 900,
         "clean_sheets": 5,
-        "buts": 2,
-        "cartons_j": 3,
+        "buts": 0,
+        "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 78.6,
+        "esg_score": 75.0,
         "sous_scores": {
-          "volume": 22.6,
+          "volume": 35.0,
           "volume_max": 35,
           "defense": 30.0,
           "defense_max": 30,
-          "attaque": 28.0,
+          "attaque": 0.0,
           "attaque_max": 35,
           "presence": 10.0,
           "presence_max": 10,
-          "malus_discipline": 12.0
+          "malus_discipline": 0.0
         }
       },
       {
@@ -2790,9 +3196,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 3,
         "cartons_r": 0,
-        "esg_score": 77.0,
+        "esg_score": 73.5,
         "sous_scores": {
-          "volume": 35.0,
+          "volume": 31.5,
           "volume_max": 35,
           "defense": 30.0,
           "defense_max": 30,
@@ -2806,45 +3212,19 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "p_4",
         "rang": 4,
-        "nom": "Julien N.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 9,
-        "titularisations": 7,
-        "remplacements": 2,
-        "minutes": 694,
-        "clean_sheets": 4,
-        "buts": 1,
-        "cartons_j": 1,
-        "cartons_r": 0,
-        "esg_score": 74.0,
-        "sous_scores": {
-          "volume": 30.0,
-          "volume_max": 35,
-          "defense": 24.0,
-          "defense_max": 30,
-          "attaque": 14.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 4.0
-        }
-      },
-      {
-        "id": "p_5",
-        "rang": 5,
         "nom": "Augustin D.",
         "badge": "🛡️ Roc Défensif",
-        "matchs": 9,
-        "titularisations": 9,
+        "matchs": 10,
+        "titularisations": 10,
         "remplacements": 0,
-        "minutes": 734,
+        "minutes": 824,
         "clean_sheets": 5,
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 71.7,
+        "esg_score": 72.0,
         "sous_scores": {
-          "volume": 31.7,
+          "volume": 32.0,
           "volume_max": 35,
           "defense": 30.0,
           "defense_max": 30,
@@ -2856,14 +3236,40 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
+        "id": "p_5",
+        "rang": 5,
+        "nom": "Julien N.",
+        "badge": "🛡️ Roc Défensif",
+        "matchs": 9,
+        "titularisations": 7,
+        "remplacements": 2,
+        "minutes": 652,
+        "clean_sheets": 4,
+        "buts": 1,
+        "cartons_j": 1,
+        "cartons_r": 0,
+        "esg_score": 69.4,
+        "sous_scores": {
+          "volume": 25.4,
+          "volume_max": 35,
+          "defense": 24.0,
+          "defense_max": 30,
+          "attaque": 14.0,
+          "attaque_max": 35,
+          "presence": 10.0,
+          "presence_max": 10,
+          "malus_discipline": 4.0
+        }
+      },
+      {
         "id": "p_6",
         "rang": 6,
         "nom": "Maxime P.",
         "badge": "🛡️ Roc Défensif",
-        "matchs": 9,
-        "titularisations": 9,
+        "matchs": 10,
+        "titularisations": 10,
         "remplacements": 0,
-        "minutes": 810,
+        "minutes": 900,
         "clean_sheets": 5,
         "buts": 0,
         "cartons_j": 2,
@@ -2886,17 +3292,17 @@ window.MATCHDAY_TEAMS = {
         "rang": 7,
         "nom": "Giovany C.",
         "badge": "🛡️ Roc Défensif",
-        "matchs": 9,
-        "titularisations": 7,
+        "matchs": 10,
+        "titularisations": 8,
         "remplacements": 2,
-        "minutes": 531,
+        "minutes": 593,
         "clean_sheets": 4,
         "buts": 1,
-        "cartons_j": 1,
+        "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 66.9,
+        "esg_score": 63.1,
         "sous_scores": {
-          "volume": 22.9,
+          "volume": 23.1,
           "volume_max": 35,
           "defense": 24.0,
           "defense_max": 30,
@@ -2904,33 +3310,33 @@ window.MATCHDAY_TEAMS = {
           "attaque_max": 35,
           "presence": 10.0,
           "presence_max": 10,
-          "malus_discipline": 4.0
+          "malus_discipline": 8.0
         }
       },
       {
         "id": "p_8",
         "rang": 8,
-        "nom": "Tim L.",
-        "badge": "🛡️ Roc Défensif",
+        "nom": "Gaspard D.",
+        "badge": "🎯 Buteur d'Élite",
         "matchs": 8,
-        "titularisations": 8,
-        "remplacements": 0,
-        "minutes": 720,
-        "clean_sheets": 4,
-        "buts": 0,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 65.1,
+        "titularisations": 6,
+        "remplacements": 2,
+        "minutes": 523,
+        "clean_sheets": 5,
+        "buts": 2,
+        "cartons_j": 4,
+        "cartons_r": 1,
+        "esg_score": 60.3,
         "sous_scores": {
-          "volume": 31.1,
+          "volume": 20.3,
           "volume_max": 35,
-          "defense": 24.0,
+          "defense": 30.0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 28.0,
           "attaque_max": 35,
           "presence": 10.0,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 28.0
         }
       },
       {
@@ -2941,14 +3347,14 @@ window.MATCHDAY_TEAMS = {
         "matchs": 8,
         "titularisations": 8,
         "remplacements": 0,
-        "minutes": 705,
+        "minutes": 677,
         "clean_sheets": 4,
         "buts": 1,
         "cartons_j": 1,
         "cartons_r": 1,
-        "esg_score": 62.5,
+        "esg_score": 58.3,
         "sous_scores": {
-          "volume": 30.5,
+          "volume": 26.3,
           "volume_max": 35,
           "defense": 24.0,
           "defense_max": 30,
@@ -2964,17 +3370,17 @@ window.MATCHDAY_TEAMS = {
         "rang": 10,
         "nom": "Clement D.",
         "badge": "🛡️ Roc Défensif",
-        "matchs": 8,
-        "titularisations": 7,
+        "matchs": 9,
+        "titularisations": 8,
         "remplacements": 1,
-        "minutes": 574,
+        "minutes": 640,
         "clean_sheets": 3,
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 52.8,
+        "esg_score": 52.9,
         "sous_scores": {
-          "volume": 24.8,
+          "volume": 24.9,
           "volume_max": 35,
           "defense": 18.0,
           "defense_max": 30,
@@ -2990,17 +3396,17 @@ window.MATCHDAY_TEAMS = {
         "rang": 11,
         "nom": "Remi D.",
         "badge": "🛡️ Roc Défensif",
-        "matchs": 9,
-        "titularisations": 7,
+        "matchs": 10,
+        "titularisations": 8,
         "remplacements": 2,
-        "minutes": 645,
+        "minutes": 735,
         "clean_sheets": 3,
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 51.9,
+        "esg_score": 52.6,
         "sous_scores": {
-          "volume": 27.9,
+          "volume": 28.6,
           "volume_max": 35,
           "defense": 18.0,
           "defense_max": 30,
@@ -3014,19 +3420,19 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "p_12",
         "rang": 12,
-        "nom": "Jean-Paul B.",
+        "nom": "Jean-paul B.",
         "badge": "🛡️ Roc Défensif",
-        "matchs": 8,
-        "titularisations": 6,
+        "matchs": 9,
+        "titularisations": 7,
         "remplacements": 2,
-        "minutes": 451,
+        "minutes": 541,
         "clean_sheets": 3,
         "buts": 0,
-        "cartons_j": 0,
+        "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 47.5,
+        "esg_score": 45.0,
         "sous_scores": {
-          "volume": 19.5,
+          "volume": 21.0,
           "volume_max": 35,
           "defense": 18.0,
           "defense_max": 30,
@@ -3034,7 +3440,7 @@ window.MATCHDAY_TEAMS = {
           "attaque_max": 35,
           "presence": 10.0,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 4.0
         }
       },
       {
@@ -3050,9 +3456,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 34.4,
+        "esg_score": 33.1,
         "sous_scores": {
-          "volume": 12.4,
+          "volume": 11.1,
           "volume_max": 35,
           "defense": 12.0,
           "defense_max": 30,
@@ -3068,17 +3474,17 @@ window.MATCHDAY_TEAMS = {
         "rang": 14,
         "nom": "Elio D.",
         "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 7,
-        "titularisations": 1,
+        "matchs": 8,
+        "titularisations": 2,
         "remplacements": 6,
-        "minutes": 170,
+        "minutes": 274,
         "clean_sheets": 1,
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 23.3,
+        "esg_score": 26.7,
         "sous_scores": {
-          "volume": 7.3,
+          "volume": 10.7,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -3094,17 +3500,17 @@ window.MATCHDAY_TEAMS = {
         "rang": 15,
         "nom": "Dany D.",
         "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 5,
+        "matchs": 6,
         "titularisations": 1,
-        "remplacements": 4,
-        "minutes": 146,
+        "remplacements": 5,
+        "minutes": 198,
         "clean_sheets": 0,
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 16.3,
+        "esg_score": 17.7,
         "sous_scores": {
-          "volume": 6.3,
+          "volume": 7.7,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -3118,23 +3524,23 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "p_16",
         "rang": 16,
-        "nom": "Corentin D.",
+        "nom": "Gabyn D.",
         "badge": "🔄 Rotation Effectif",
         "matchs": 1,
-        "titularisations": 1,
-        "remplacements": 0,
-        "minutes": 90,
-        "clean_sheets": 1,
-        "buts": 0,
+        "titularisations": 0,
+        "remplacements": 1,
+        "minutes": 15,
+        "clean_sheets": 0,
+        "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 12.4,
+        "esg_score": 17.1,
         "sous_scores": {
-          "volume": 3.9,
+          "volume": 0.6,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 0.0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 14.0,
           "attaque_max": 35,
           "presence": 2.5,
           "presence_max": 10,
@@ -3145,18 +3551,18 @@ window.MATCHDAY_TEAMS = {
         "id": "p_17",
         "rang": 17,
         "nom": "Jules D.",
-        "badge": "🔄 Rotation Effectif",
-        "matchs": 4,
-        "titularisations": 0,
+        "badge": "⚡ Super-Sub / Impact Player",
+        "matchs": 5,
+        "titularisations": 1,
         "remplacements": 4,
-        "minutes": 38,
+        "minutes": 141,
         "clean_sheets": 0,
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 11.6,
+        "esg_score": 15.5,
         "sous_scores": {
-          "volume": 1.6,
+          "volume": 5.5,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -3170,6 +3576,32 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "p_18",
         "rang": 18,
+        "nom": "Corentin D.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 1,
+        "titularisations": 1,
+        "remplacements": 0,
+        "minutes": 90,
+        "clean_sheets": 1,
+        "buts": 0,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 12.0,
+        "sous_scores": {
+          "volume": 3.5,
+          "volume_max": 35,
+          "defense": 6.0,
+          "defense_max": 30,
+          "attaque": 0.0,
+          "attaque_max": 35,
+          "presence": 2.5,
+          "presence_max": 10,
+          "malus_discipline": 0.0
+        }
+      },
+      {
+        "id": "p_19",
+        "rang": 19,
         "nom": "Romain R.",
         "badge": "🔄 Rotation Effectif",
         "matchs": 4,
@@ -3194,21 +3626,21 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "id": "p_19",
-        "rang": 19,
+        "id": "p_20",
+        "rang": 20,
         "nom": "Thomas L.",
         "badge": "⚡ Super-Sub / Impact Player",
         "matchs": 3,
         "titularisations": 1,
         "remplacements": 2,
-        "minutes": 83,
+        "minutes": 125,
         "clean_sheets": 0,
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 7.1,
+        "esg_score": 8.4,
         "sous_scores": {
-          "volume": 3.6,
+          "volume": 4.9,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -3220,27 +3652,53 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "id": "p_20",
-        "rang": 20,
+        "id": "p_21",
+        "rang": 21,
+        "nom": "Evan P.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 1,
+        "titularisations": 0,
+        "remplacements": 1,
+        "minutes": 7,
+        "clean_sheets": 0,
+        "buts": 0,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 2.8,
+        "sous_scores": {
+          "volume": 0.3,
+          "volume_max": 35,
+          "defense": 0.0,
+          "defense_max": 30,
+          "attaque": 0.0,
+          "attaque_max": 35,
+          "presence": 2.5,
+          "presence_max": 10,
+          "malus_discipline": 0.0
+        }
+      },
+      {
+        "id": "p_22",
+        "rang": 22,
         "nom": "Mateo S.",
         "badge": "🔄 Rotation Effectif",
-        "matchs": 2,
-        "titularisations": 1,
+        "matchs": 3,
+        "titularisations": 2,
         "remplacements": 1,
-        "minutes": 100,
+        "minutes": 190,
         "clean_sheets": 0,
         "buts": 0,
         "cartons_j": 2,
         "cartons_r": 1,
         "esg_score": 0.0,
         "sous_scores": {
-          "volume": 4.3,
+          "volume": 7.4,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
           "attaque": 0.0,
           "attaque_max": 35,
-          "presence": 5.0,
+          "presence": 7.5,
           "presence_max": 10,
           "malus_discipline": 20.0
         }
@@ -3250,14 +3708,14 @@ window.MATCHDAY_TEAMS = {
       "ppm_championnat": 2.0,
       "probabilite_montee_pct": 74.2,
       "probabilite_maintien_pct": 99.1,
-      "taux_invincibilite": 88.9,
+      "taux_invincibilite": 90.0,
       "bilan_global": {
-        "matchs": 9,
+        "matchs": 10,
         "victoires": 6,
-        "nuls": 2,
+        "nuls": 3,
         "defaites": 1,
-        "buts_pour": 10,
-        "buts_contre": 5,
+        "buts_pour": 11,
+        "buts_contre": 6,
         "difference": 5
       },
       "bilan_championnat": {
@@ -3271,8 +3729,8 @@ window.MATCHDAY_TEAMS = {
         "difference": 3,
         "ppm": 2.0
       },
-      "ratio_clean_sheet_pct": 55.6,
-      "moyenne_buts_encaisses": 0.56,
+      "ratio_clean_sheet_pct": 50.0,
+      "moyenne_buts_encaisses": 0.6,
       "projection_saison": {
         "points_prevus": 44.0,
         "rang_final_estime": "2e (Accession Régional 2)"
@@ -3311,8 +3769,8 @@ window.MATCHDAY_TEAMS = {
         {
           "tranche": "76-90+'",
           "label": "76 - 90+ min",
-          "marques": 3,
-          "encaisses": 1
+          "marques": 4,
+          "encaisses": 2
         }
       ],
       "analyse_temporelle": {
@@ -3325,77 +3783,17 @@ window.MATCHDAY_TEAMS = {
     "classement": [
       {
         "rang": 1,
-        "equipe": "BEUVRY LA FORET AS",
-        "nom": "BEUVRY LA FORET AS",
-        "points": 10,
-        "joues": 4,
-        "gagnes": 3,
-        "nuls": 1,
-        "perdus": 0,
-        "buts_pour": 9,
-        "buts_contre": 6,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "N",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 2,
-        "equipe": "ANICHE SC",
-        "nom": "ANICHE SC",
-        "points": 8,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 2,
-        "perdus": 0,
-        "buts_pour": 7,
-        "buts_contre": 3,
-        "diff": 4,
-        "difference": 4,
-        "forme": [
-          "N",
-          "V",
-          "N",
-          "V"
-        ]
-      },
-      {
-        "rang": 3,
-        "equipe": "GENECH ES",
-        "nom": "GENECH ES",
-        "points": 8,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 2,
-        "perdus": 0,
-        "buts_pour": 6,
-        "buts_contre": 3,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "N",
-          "N",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 4,
         "equipe": "HENIN BEAUMONT O.",
         "nom": "HENIN BEAUMONT O.",
-        "points": 7,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 1,
-        "perdus": 1,
-        "buts_pour": 11,
-        "buts_contre": 4,
-        "diff": 7,
-        "difference": 7,
+        "points": 10,
+        "joues": 5,
+        "gagnes": 0,
+        "nuls": 0,
+        "perdus": 0,
+        "buts_pour": 0,
+        "buts_contre": 0,
+        "diff": 0,
+        "difference": 0,
         "forme": [
           "N",
           "D",
@@ -3404,18 +3802,38 @@ window.MATCHDAY_TEAMS = {
         ]
       },
       {
-        "rang": 5,
+        "rang": 2,
+        "equipe": "BEUVRY LA FORET AS",
+        "nom": "BEUVRY LA FORET AS",
+        "points": 10,
+        "joues": 5,
+        "gagnes": 0,
+        "nuls": 0,
+        "perdus": 0,
+        "buts_pour": 0,
+        "buts_contre": 0,
+        "diff": 0,
+        "difference": 0,
+        "forme": [
+          "V",
+          "N",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": 3,
         "equipe": "ANSTAING CHERENG EC",
         "nom": "ANSTAING CHERENG EC",
-        "points": 6,
-        "joues": 4,
-        "gagnes": 1,
-        "nuls": 3,
+        "points": 9,
+        "joues": 5,
+        "gagnes": 0,
+        "nuls": 0,
         "perdus": 0,
-        "buts_pour": 8,
-        "buts_contre": 3,
-        "diff": 5,
-        "difference": 5,
+        "buts_pour": 0,
+        "buts_contre": 0,
+        "diff": 0,
+        "difference": 0,
         "forme": [
           "N",
           "N",
@@ -3424,18 +3842,58 @@ window.MATCHDAY_TEAMS = {
         ]
       },
       {
+        "rang": 4,
+        "equipe": "ANICHE SC",
+        "nom": "ANICHE SC",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 0,
+        "nuls": 0,
+        "perdus": 0,
+        "buts_pour": 0,
+        "buts_contre": 0,
+        "diff": 0,
+        "difference": 0,
+        "forme": [
+          "N",
+          "V",
+          "N",
+          "V"
+        ]
+      },
+      {
+        "rang": 5,
+        "equipe": "GENECH ES",
+        "nom": "GENECH ES",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 0,
+        "nuls": 0,
+        "perdus": 0,
+        "buts_pour": 0,
+        "buts_contre": 0,
+        "diff": 0,
+        "difference": 0,
+        "forme": [
+          "N",
+          "N",
+          "V",
+          "V"
+        ]
+      },
+      {
         "rang": 6,
         "equipe": "BONDUES FC 2",
         "nom": "BONDUES FC 2",
-        "points": 6,
-        "joues": 4,
-        "gagnes": 2,
+        "points": 9,
+        "joues": 5,
+        "gagnes": 0,
         "nuls": 0,
-        "perdus": 2,
-        "buts_pour": 11,
-        "buts_contre": 8,
-        "diff": 3,
-        "difference": 3,
+        "perdus": 0,
+        "buts_pour": 0,
+        "buts_contre": 0,
+        "diff": 0,
+        "difference": 0,
         "forme": [
           "V",
           "V",
@@ -3447,15 +3905,15 @@ window.MATCHDAY_TEAMS = {
         "rang": 7,
         "equipe": "VALENCIENNES SUMMER",
         "nom": "VALENCIENNES SUMMER",
-        "points": 6,
-        "joues": 4,
-        "gagnes": 2,
+        "points": 9,
+        "joues": 5,
+        "gagnes": 0,
         "nuls": 0,
-        "perdus": 2,
-        "buts_pour": 7,
-        "buts_contre": 9,
-        "diff": -2,
-        "difference": -2,
+        "perdus": 0,
+        "buts_pour": 0,
+        "buts_contre": 0,
+        "diff": 0,
+        "difference": 0,
         "forme": [
           "V",
           "D",
@@ -3467,13 +3925,13 @@ window.MATCHDAY_TEAMS = {
         "rang": 8,
         "equipe": "MAUBEUGE US 2",
         "nom": "MAUBEUGE US 2",
-        "points": 5,
-        "joues": 4,
-        "gagnes": 1,
-        "nuls": 2,
-        "perdus": 1,
-        "buts_pour": 6,
-        "buts_contre": 6,
+        "points": 6,
+        "joues": 5,
+        "gagnes": 0,
+        "nuls": 0,
+        "perdus": 0,
+        "buts_pour": 0,
+        "buts_contre": 0,
         "diff": 0,
         "difference": 0,
         "forme": [
@@ -3488,14 +3946,14 @@ window.MATCHDAY_TEAMS = {
         "equipe": "BAVAY US",
         "nom": "BAVAY US",
         "points": 3,
-        "joues": 4,
+        "joues": 5,
         "gagnes": 0,
-        "nuls": 3,
-        "perdus": 1,
-        "buts_pour": 1,
-        "buts_contre": 3,
-        "diff": -2,
-        "difference": -2,
+        "nuls": 0,
+        "perdus": 0,
+        "buts_pour": 0,
+        "buts_contre": 0,
+        "diff": 0,
+        "difference": 0,
         "forme": [
           "N",
           "N",
@@ -3508,14 +3966,14 @@ window.MATCHDAY_TEAMS = {
         "equipe": "GUESNAIN SC",
         "nom": "GUESNAIN SC",
         "points": 2,
-        "joues": 4,
+        "joues": 5,
         "gagnes": 0,
-        "nuls": 2,
-        "perdus": 2,
-        "buts_pour": 2,
-        "buts_contre": 5,
-        "diff": -3,
-        "difference": -3,
+        "nuls": 0,
+        "perdus": 0,
+        "buts_pour": 0,
+        "buts_contre": 0,
+        "diff": 0,
+        "difference": 0,
         "forme": [
           "D",
           "N",
@@ -3527,15 +3985,15 @@ window.MATCHDAY_TEAMS = {
         "rang": 11,
         "equipe": "CYSOING WB EAC",
         "nom": "CYSOING WB EAC",
-        "points": 1,
-        "joues": 4,
+        "points": 2,
+        "joues": 5,
         "gagnes": 0,
-        "nuls": 1,
-        "perdus": 3,
-        "buts_pour": 5,
-        "buts_contre": 17,
-        "diff": -12,
-        "difference": -12,
+        "nuls": 0,
+        "perdus": 0,
+        "buts_pour": 0,
+        "buts_contre": 0,
+        "diff": 0,
+        "difference": 0,
         "forme": [
           "D",
           "N",
@@ -3548,14 +4006,14 @@ window.MATCHDAY_TEAMS = {
         "equipe": "AUBY US",
         "nom": "AUBY US",
         "points": 0,
-        "joues": 4,
+        "joues": 5,
         "gagnes": 0,
-        "nuls": 1,
-        "perdus": 3,
-        "buts_pour": 4,
-        "buts_contre": 10,
-        "diff": -6,
-        "difference": -6,
+        "nuls": 0,
+        "perdus": 0,
+        "buts_pour": 0,
+        "buts_contre": 0,
+        "diff": 0,
+        "difference": 0,
         "forme": [
           "D",
           "N",
@@ -3574,7 +4032,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "30/10/2026 à 13:56"
+      "derniere_maj": "02/11/2026 à 11:57"
     },
     "dernier_match": {
       "id": "m_u18_m1_79496282-et-c-anstai",
@@ -3638,9 +4096,9 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "8.1 °C",
-      "vent": "Faible (16.2 km/h)",
-      "pluie": "Sec (0 %)",
+      "temperature": "8.9 °C",
+      "vent": "Faible (9.2 km/h)",
+      "pluie": "Sec (7 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -5065,7 +5523,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "30/10/2026 à 13:56"
+      "derniere_maj": "02/11/2026 à 11:57"
     },
     "dernier_match": {
       "id": "m_senior_f2_78809066-lille-e-s-l",
@@ -5106,9 +5564,9 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "8.1 °C",
-      "vent": "Faible (16.2 km/h)",
-      "pluie": "Sec (0 %)",
+      "temperature": "8.9 °C",
+      "vent": "Faible (9.2 km/h)",
+      "pluie": "Sec (7 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -6029,7 +6487,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "30/10/2026 à 13:56"
+      "derniere_maj": "02/11/2026 à 11:57"
     },
     "dernier_match": {
       "id": "m_senior_b_j4_loos",
@@ -6070,9 +6528,9 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "8.1 °C",
-      "vent": "Faible (16.2 km/h)",
-      "pluie": "Sec (0 %)",
+      "temperature": "8.9 °C",
+      "vent": "Faible (9.2 km/h)",
+      "pluie": "Sec (7 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -6954,50 +7412,65 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "30/10/2026 à 13:56"
+      "derniere_maj": "02/11/2026 à 11:57"
     },
     "dernier_match": {
-      "id": "seclin_80464279",
-      "competition": "Coupe Hauts-de-France Seniors (3ème Tour)",
-      "domicile": "ARQUES ES",
+      "id": "seclin_56215870",
+      "competition": "Régional 2 (Poule B) • Journée",
+      "domicile": "CROIX FIC 2",
       "exterieur": "SECLIN FC",
-      "score_domicile": 2,
-      "score_exterieur": 2,
-      "score_display": "2 - 2 (TAB 4-5)",
-      "date_heure": "2026-10-25 15:00",
+      "score_domicile": 0,
+      "score_exterieur": 0,
+      "score_display": "0 - 0",
+      "date_heure": "2026-11-01 14:30",
       "statut": "TERMINE"
     },
-    "evenements_dernier_match": [],
+    "evenements_dernier_match": [
+      {
+        "minute": 49,
+        "type": "AVERTISSEMENT",
+        "equipe": "SECLIN FC",
+        "acteur": "Lenny M.",
+        "detail": "Carton jaune"
+      },
+      {
+        "minute": 78,
+        "type": "AVERTISSEMENT",
+        "equipe": "SECLIN FC",
+        "acteur": "Amadou S.",
+        "detail": "Carton jaune"
+      }
+    ],
     "prochain_match": {
-      "competition": "Régional 2 (Poule B) • Journée 5",
-      "date_heure": "01/11/2026 à 14:30",
-      "lieu": "Stade Henri Seigneur (Croix)",
-      "domicile": "CROIX IC 2",
-      "exterieur": "SECLIN FC",
+      "competition": "Régional 2 (Poule B) • Journée 6",
+      "date_heure": "08/11/2026 à 14:30",
+      "lieu": "Stade Henri Seigneur (Seclin)",
+      "domicile": "SECLIN FC",
+      "exterieur": "BIACHE ST VAAST US",
       "comparatif": {
-        "titre": "Choc au Sommet • 1er vs 2e (R2 Poule B)",
-        "adversaire_nom": "Croix IC 2",
-        "adversaire_rang": "1er",
-        "adversaire_pts": 10,
-        "adversaire_buts_pour": 11,
-        "adversaire_buts_contre": 3,
+        "titre": "Comparatif de Performance (R2 Poule B)",
+        "adversaire_nom": "Biache St Vaast US",
+        "adversaire_rang": "8e",
+        "adversaire_pts": 6,
+        "adversaire_buts_pour": 14,
+        "adversaire_buts_contre": 7,
         "club_nom": "FC Seclin",
         "club_rang": "2e",
-        "club_pts": 8,
+        "club_pts": 9,
         "club_buts_pour": 16,
         "club_buts_contre": 3
       },
       "alertes": [
-        "Choc direct pour la 1ère place de Régional 2 : Croix (1er, 10 pts) accueille Seclin (2e, 8 pts, invaincu).",
-        "Duel des meilleures attaques et défenses de la poule : 11 BP / 3 BC pour Croix, 16 BP / 3 BC pour Seclin."
+        "Seclin toujours invaincu en R2 après son nul héroïque 0-0 chez le leader Croix (9 pts, 16 BP, 3 BC).",
+        "Meilleure défense de la poule : seulement 3 buts concédés en 5 journées (3e clean sheet de rang)."
       ]
     },
     "meteo_prochain_match": {
       "lieu": "Croix (Stade Henri Seigneur)",
       "surface": "Pelouse naturelle",
-      "temperature": "8.1 °C",
-      "vent": "Faible (14.8 km/h)",
-      "pluie": "Sec (0 %)",
+      "temperature": "9.3 °C",
+      "vent": "Faible (10.2 km/h)",
+      "pluie": "Sec (7 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -7009,6 +7482,167 @@ window.MATCHDAY_TEAMS = {
       "consigne_coach": "Choc au sommet face au leader Croix (10 pts). Rigueur défensive et transition rapide."
     },
     "historique_matchs": [
+      {
+        "id": "seclin_56215870",
+        "competition": "R2 • Journée",
+        "comp_type": "CHAMPIONNAT",
+        "date": "01/11/2026",
+        "date_heure": "2026-11-01 14:30",
+        "domicile": "CROIX FIC 2",
+        "exterieur": "SECLIN FC",
+        "score_domicile": 0,
+        "score_exterieur": 0,
+        "score_display": "0 - 0",
+        "is_domicile": false,
+        "resultat": "N",
+        "resultat_label": "Match Nul",
+        "evenements": [
+          {
+            "minute": 49,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Lenny M.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 78,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Amadou S.",
+            "detail": "Carton jaune"
+          }
+        ],
+        "compositions": {
+          "club": {
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Valentin L."
+              },
+              {
+                "numero": 2,
+                "nom": "Hugo C."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
+              },
+              {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
+                "numero": 5,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 6,
+                "nom": "Nabil I."
+              },
+              {
+                "numero": 7,
+                "nom": "Paul R."
+              },
+              {
+                "numero": 8,
+                "nom": "Luther M."
+              },
+              {
+                "numero": 9,
+                "nom": "Corentin L."
+              },
+              {
+                "numero": 10,
+                "nom": "Lenny M."
+              },
+              {
+                "numero": 11,
+                "nom": "Evan D."
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Tom D."
+              },
+              {
+                "numero": 13,
+                "nom": "Benjamin D."
+              },
+              {
+                "numero": 14,
+                "nom": "Amadou S."
+              }
+            ]
+          },
+          "seclin": {
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Valentin L."
+              },
+              {
+                "numero": 2,
+                "nom": "Hugo C."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
+              },
+              {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
+                "numero": 5,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 6,
+                "nom": "Nabil I."
+              },
+              {
+                "numero": 7,
+                "nom": "Paul R."
+              },
+              {
+                "numero": 8,
+                "nom": "Luther M."
+              },
+              {
+                "numero": 9,
+                "nom": "Corentin L."
+              },
+              {
+                "numero": 10,
+                "nom": "Lenny M."
+              },
+              {
+                "numero": 11,
+                "nom": "Evan D."
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Tom D."
+              },
+              {
+                "numero": 13,
+                "nom": "Benjamin D."
+              },
+              {
+                "numero": 14,
+                "nom": "Amadou S."
+              }
+            ]
+          },
+          "adversaire": {
+            "equipe": "CROIX FIC 2",
+            "titulaires": []
+          }
+        }
+      },
       {
         "id": "seclin_80464279",
         "competition": "Coupe Hauts-de-France Seniors (3ème Tour)",
@@ -7936,6 +8570,216 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
+        "id": "seclin_79638706",
+        "competition": "Coupe Hauts-de-France Seniors - Senior 1er Tour",
+        "comp_type": "COUPE",
+        "date": "26/09/2026",
+        "date_heure": "2026-09-26 19:15",
+        "domicile": "MOUVAUX ES",
+        "exterieur": "TAB 3 - 5",
+        "score_domicile": 2,
+        "score_exterieur": 2,
+        "score_display": "2 - 2",
+        "is_domicile": false,
+        "resultat": "N",
+        "resultat_label": "Match Nul",
+        "evenements": [
+          {
+            "minute": 13,
+            "type": "BUT",
+            "equipe": "MOUVAUX ES",
+            "acteur": "Abdoulaye N.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 34,
+            "type": "AVERTISSEMENT",
+            "equipe": "MOUVAUX ES",
+            "acteur": "Valentino S.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 53,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Tom D.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 59,
+            "type": "AVERTISSEMENT",
+            "equipe": "MOUVAUX ES",
+            "acteur": "Valentino S.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 65,
+            "type": "BUT",
+            "equipe": "SECLIN FC",
+            "acteur": "Tom D.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 70,
+            "type": "BUT",
+            "equipe": "MOUVAUX ES",
+            "acteur": "Yannis I.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 90,
+            "type": "BUT",
+            "equipe": "SECLIN FC",
+            "acteur": "Antoine O.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Pierre H.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Nabil I.",
+            "detail": "Carton jaune"
+          }
+        ],
+        "compositions": {
+          "club": {
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Hugo L."
+              },
+              {
+                "numero": 2,
+                "nom": "Corentin L."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
+              },
+              {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
+                "numero": 5,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 6,
+                "nom": "Benjamin D."
+              },
+              {
+                "numero": 7,
+                "nom": "Thibaut D."
+              },
+              {
+                "numero": 8,
+                "nom": "Mouhamadou S."
+              },
+              {
+                "numero": 9,
+                "nom": "Luther M."
+              },
+              {
+                "numero": 10,
+                "nom": "Lenny M."
+              },
+              {
+                "numero": 11,
+                "nom": "Evan D."
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Nabil I."
+              },
+              {
+                "numero": 13,
+                "nom": "Tom D."
+              },
+              {
+                "numero": 14,
+                "nom": "Kylian D."
+              }
+            ]
+          },
+          "seclin": {
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Hugo L."
+              },
+              {
+                "numero": 2,
+                "nom": "Corentin L."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
+              },
+              {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
+                "numero": 5,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 6,
+                "nom": "Benjamin D."
+              },
+              {
+                "numero": 7,
+                "nom": "Thibaut D."
+              },
+              {
+                "numero": 8,
+                "nom": "Mouhamadou S."
+              },
+              {
+                "numero": 9,
+                "nom": "Luther M."
+              },
+              {
+                "numero": 10,
+                "nom": "Lenny M."
+              },
+              {
+                "numero": 11,
+                "nom": "Evan D."
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Nabil I."
+              },
+              {
+                "numero": 13,
+                "nom": "Tom D."
+              },
+              {
+                "numero": 14,
+                "nom": "Kylian D."
+              }
+            ]
+          },
+          "adversaire": {
+            "equipe": "MOUVAUX ES",
+            "titulaires": []
+          }
+        }
+      },
+      {
         "id": "seclin_56215852",
         "competition": "R2 • Journée",
         "comp_type": "CHAMPIONNAT",
@@ -7958,10 +8802,31 @@ window.MATCHDAY_TEAMS = {
             "detail": "But FFF"
           },
           {
+            "minute": 23,
+            "type": "BUT",
+            "equipe": "SECLIN FC",
+            "acteur": "Mouhamadou S.",
+            "detail": "But FFF"
+          },
+          {
             "minute": 31,
             "type": "AVERTISSEMENT",
             "equipe": "SECLIN FC",
             "acteur": "Mouhamadou S.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 31,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Mouhamadou S.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 37,
+            "type": "AVERTISSEMENT",
+            "equipe": "COURCELLES US",
+            "acteur": "Zayd D.",
             "detail": "Carton jaune"
           },
           {
@@ -7979,10 +8844,31 @@ window.MATCHDAY_TEAMS = {
             "detail": "Carton jaune"
           },
           {
+            "minute": 42,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Ismaila C.",
+            "detail": "Carton jaune"
+          },
+          {
             "minute": 51,
             "type": "AVERTISSEMENT",
             "equipe": "SECLIN FC",
             "acteur": "Benjamin D.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 51,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Benjamin D.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 73,
+            "type": "AVERTISSEMENT",
+            "equipe": "COURCELLES US",
+            "acteur": "Mohamed A.",
             "detail": "Carton jaune"
           },
           {
@@ -8005,12 +8891,36 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Maxence B."
               },
               {
+                "numero": 1,
+                "nom": "Valentin L."
+              },
+              {
+                "numero": 1,
+                "nom": "Maxence B."
+              },
+              {
                 "numero": 2,
                 "nom": "Corentin L."
               },
               {
                 "numero": 2,
                 "nom": "Mohamed A."
+              },
+              {
+                "numero": 2,
+                "nom": "Corentin L."
+              },
+              {
+                "numero": 2,
+                "nom": "Mohamed A."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas V."
               },
               {
                 "numero": 3,
@@ -8029,12 +8939,36 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Fares O."
               },
               {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
+                "numero": 4,
+                "nom": "Fares O."
+              },
+              {
                 "numero": 5,
                 "nom": "Antoine O."
               },
               {
                 "numero": 5,
                 "nom": "Billal B."
+              },
+              {
+                "numero": 5,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 5,
+                "nom": "Billal B."
+              },
+              {
+                "numero": 6,
+                "nom": "Benjamin D."
+              },
+              {
+                "numero": 6,
+                "nom": "Moise L."
               },
               {
                 "numero": 6,
@@ -8053,6 +8987,22 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Zayd D."
               },
               {
+                "numero": 7,
+                "nom": "Ismaila C."
+              },
+              {
+                "numero": 7,
+                "nom": "Zayd D."
+              },
+              {
+                "numero": 8,
+                "nom": "Mouhamadou S."
+              },
+              {
+                "numero": 8,
+                "nom": "Younes B."
+              },
+              {
                 "numero": 8,
                 "nom": "Mouhamadou S."
               },
@@ -8069,12 +9019,36 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Mehdi K."
               },
               {
+                "numero": 9,
+                "nom": "Luther M."
+              },
+              {
+                "numero": 9,
+                "nom": "Mehdi K."
+              },
+              {
                 "numero": 10,
                 "nom": "Lenny M."
               },
               {
                 "numero": 10,
                 "nom": "Lorenzo P."
+              },
+              {
+                "numero": 10,
+                "nom": "Lenny M."
+              },
+              {
+                "numero": 10,
+                "nom": "Lorenzo P."
+              },
+              {
+                "numero": 11,
+                "nom": "Paul R."
+              },
+              {
+                "numero": 11,
+                "nom": "Othman B."
               },
               {
                 "numero": 11,
@@ -8095,12 +9069,36 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Ahmed B."
               },
               {
+                "numero": 12,
+                "nom": "Tom D."
+              },
+              {
+                "numero": 12,
+                "nom": "Ahmed B."
+              },
+              {
                 "numero": 13,
                 "nom": "Thibaut D."
               },
               {
                 "numero": 13,
                 "nom": "Mohamed E."
+              },
+              {
+                "numero": 13,
+                "nom": "Thibaut D."
+              },
+              {
+                "numero": 13,
+                "nom": "Mohamed E."
+              },
+              {
+                "numero": 14,
+                "nom": "Kylian D."
+              },
+              {
+                "numero": 14,
+                "nom": "Lahoucine E."
               },
               {
                 "numero": 14,
@@ -8123,12 +9121,36 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Maxence B."
               },
               {
+                "numero": 1,
+                "nom": "Valentin L."
+              },
+              {
+                "numero": 1,
+                "nom": "Maxence B."
+              },
+              {
                 "numero": 2,
                 "nom": "Corentin L."
               },
               {
                 "numero": 2,
                 "nom": "Mohamed A."
+              },
+              {
+                "numero": 2,
+                "nom": "Corentin L."
+              },
+              {
+                "numero": 2,
+                "nom": "Mohamed A."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas V."
               },
               {
                 "numero": 3,
@@ -8147,12 +9169,36 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Fares O."
               },
               {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
+                "numero": 4,
+                "nom": "Fares O."
+              },
+              {
                 "numero": 5,
                 "nom": "Antoine O."
               },
               {
                 "numero": 5,
                 "nom": "Billal B."
+              },
+              {
+                "numero": 5,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 5,
+                "nom": "Billal B."
+              },
+              {
+                "numero": 6,
+                "nom": "Benjamin D."
+              },
+              {
+                "numero": 6,
+                "nom": "Moise L."
               },
               {
                 "numero": 6,
@@ -8171,6 +9217,22 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Zayd D."
               },
               {
+                "numero": 7,
+                "nom": "Ismaila C."
+              },
+              {
+                "numero": 7,
+                "nom": "Zayd D."
+              },
+              {
+                "numero": 8,
+                "nom": "Mouhamadou S."
+              },
+              {
+                "numero": 8,
+                "nom": "Younes B."
+              },
+              {
                 "numero": 8,
                 "nom": "Mouhamadou S."
               },
@@ -8187,12 +9249,36 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Mehdi K."
               },
               {
+                "numero": 9,
+                "nom": "Luther M."
+              },
+              {
+                "numero": 9,
+                "nom": "Mehdi K."
+              },
+              {
                 "numero": 10,
                 "nom": "Lenny M."
               },
               {
                 "numero": 10,
                 "nom": "Lorenzo P."
+              },
+              {
+                "numero": 10,
+                "nom": "Lenny M."
+              },
+              {
+                "numero": 10,
+                "nom": "Lorenzo P."
+              },
+              {
+                "numero": 11,
+                "nom": "Paul R."
+              },
+              {
+                "numero": 11,
+                "nom": "Othman B."
               },
               {
                 "numero": 11,
@@ -8213,12 +9299,36 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Ahmed B."
               },
               {
+                "numero": 12,
+                "nom": "Tom D."
+              },
+              {
+                "numero": 12,
+                "nom": "Ahmed B."
+              },
+              {
                 "numero": 13,
                 "nom": "Thibaut D."
               },
               {
                 "numero": 13,
                 "nom": "Mohamed E."
+              },
+              {
+                "numero": 13,
+                "nom": "Thibaut D."
+              },
+              {
+                "numero": 13,
+                "nom": "Mohamed E."
+              },
+              {
+                "numero": 14,
+                "nom": "Kylian D."
+              },
+              {
+                "numero": 14,
+                "nom": "Lahoucine E."
               },
               {
                 "numero": 14,
@@ -8259,6 +9369,20 @@ window.MATCHDAY_TEAMS = {
             "detail": "Carton jaune"
           },
           {
+            "minute": 19,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Lenny M.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 22,
+            "type": "BUT",
+            "equipe": "SECLIN FC",
+            "acteur": "Corentin L.",
+            "detail": "But FFF"
+          },
+          {
             "minute": 22,
             "type": "BUT",
             "equipe": "SECLIN FC",
@@ -8270,6 +9394,20 @@ window.MATCHDAY_TEAMS = {
             "type": "AVERTISSEMENT",
             "equipe": "LESQUIN US",
             "acteur": "Martin C.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 23,
+            "type": "AVERTISSEMENT",
+            "equipe": "LESQUIN US",
+            "acteur": "Martin C.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 32,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Pierre H.",
             "detail": "Carton jaune"
           },
           {
@@ -8287,6 +9425,20 @@ window.MATCHDAY_TEAMS = {
             "detail": "But FFF"
           },
           {
+            "minute": 33,
+            "type": "BUT",
+            "equipe": "LESQUIN US",
+            "acteur": "Corentin D.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 36,
+            "type": "BUT",
+            "equipe": "SECLIN FC",
+            "acteur": "Evan D.",
+            "detail": "But FFF"
+          },
+          {
             "minute": 36,
             "type": "BUT",
             "equipe": "SECLIN FC",
@@ -8298,6 +9450,20 @@ window.MATCHDAY_TEAMS = {
             "type": "AVERTISSEMENT",
             "equipe": "SECLIN FC",
             "acteur": "Evan D.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 41,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Evan D.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 47,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Nabil I.",
             "detail": "Carton jaune"
           },
           {
@@ -8315,6 +9481,20 @@ window.MATCHDAY_TEAMS = {
             "detail": "But FFF"
           },
           {
+            "minute": 68,
+            "type": "BUT",
+            "equipe": "LESQUIN US",
+            "acteur": "Mahery N.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 70,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Tom D.",
+            "detail": "Carton jaune"
+          },
+          {
             "minute": 70,
             "type": "AVERTISSEMENT",
             "equipe": "SECLIN FC",
@@ -8326,6 +9506,27 @@ window.MATCHDAY_TEAMS = {
             "type": "AVERTISSEMENT",
             "equipe": "SECLIN FC",
             "acteur": "Evan D.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 86,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Evan D.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Yannis D.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "LESQUIN US",
+            "acteur": "Alex M.",
             "detail": "Carton jaune"
           },
           {
@@ -8351,8 +9552,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Valentin L."
               },
               {
+                "numero": 1,
+                "nom": "Valentin L."
+              },
+              {
                 "numero": 2,
                 "nom": "Tom D."
+              },
+              {
+                "numero": 2,
+                "nom": "Tom D."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
               },
               {
                 "numero": 3,
@@ -8363,8 +9576,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Yannis D."
               },
               {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
                 "numero": 5,
                 "nom": "Antoine O."
+              },
+              {
+                "numero": 5,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 6,
+                "nom": "Nabil I."
               },
               {
                 "numero": 6,
@@ -8375,6 +9600,14 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Ismaila C."
               },
               {
+                "numero": 7,
+                "nom": "Ismaila C."
+              },
+              {
+                "numero": 8,
+                "nom": "Lenny M."
+              },
+              {
                 "numero": 8,
                 "nom": "Lenny M."
               },
@@ -8383,8 +9616,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Corentin L."
               },
               {
+                "numero": 9,
+                "nom": "Corentin L."
+              },
+              {
                 "numero": 10,
                 "nom": "Mouhamadou S."
+              },
+              {
+                "numero": 10,
+                "nom": "Mouhamadou S."
+              },
+              {
+                "numero": 11,
+                "nom": "Evan D."
               },
               {
                 "numero": 11,
@@ -8397,8 +9642,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Luther M."
               },
               {
+                "numero": 12,
+                "nom": "Luther M."
+              },
+              {
                 "numero": 13,
                 "nom": "Kylian D."
+              },
+              {
+                "numero": 13,
+                "nom": "Kylian D."
+              },
+              {
+                "numero": 14,
+                "nom": "Youssef A."
               },
               {
                 "numero": 14,
@@ -8413,8 +9670,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Valentin L."
               },
               {
+                "numero": 1,
+                "nom": "Valentin L."
+              },
+              {
                 "numero": 2,
                 "nom": "Tom D."
+              },
+              {
+                "numero": 2,
+                "nom": "Tom D."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
               },
               {
                 "numero": 3,
@@ -8425,8 +9694,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Yannis D."
               },
               {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
                 "numero": 5,
                 "nom": "Antoine O."
+              },
+              {
+                "numero": 5,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 6,
+                "nom": "Nabil I."
               },
               {
                 "numero": 6,
@@ -8437,6 +9718,14 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Ismaila C."
               },
               {
+                "numero": 7,
+                "nom": "Ismaila C."
+              },
+              {
+                "numero": 8,
+                "nom": "Lenny M."
+              },
+              {
                 "numero": 8,
                 "nom": "Lenny M."
               },
@@ -8445,8 +9734,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Corentin L."
               },
               {
+                "numero": 9,
+                "nom": "Corentin L."
+              },
+              {
                 "numero": 10,
                 "nom": "Mouhamadou S."
+              },
+              {
+                "numero": 10,
+                "nom": "Mouhamadou S."
+              },
+              {
+                "numero": 11,
+                "nom": "Evan D."
               },
               {
                 "numero": 11,
@@ -8459,8 +9760,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Luther M."
               },
               {
+                "numero": 12,
+                "nom": "Luther M."
+              },
+              {
                 "numero": 13,
                 "nom": "Kylian D."
+              },
+              {
+                "numero": 13,
+                "nom": "Kylian D."
+              },
+              {
+                "numero": 14,
+                "nom": "Youssef A."
               },
               {
                 "numero": 14,
@@ -8476,12 +9789,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "id": "seclin_79040479",
-        "competition": "Coupe de France - 2ème Tour",
-        "comp_type": "COUPE",
+        "competition": "R2 • Journée",
+        "comp_type": "CHAMPIONNAT",
         "date": "30/08/2026",
         "date_heure": "2026-08-30 15:00",
         "domicile": "BAUVIN FC",
-        "exterieur": "SECLIN FC",
+        "exterieur": "TAB 5 - 3",
         "score_domicile": 1,
         "score_exterieur": 1,
         "score_display": "1 - 1 (TAB 3-4)",
@@ -8494,6 +9807,20 @@ window.MATCHDAY_TEAMS = {
             "type": "AVERTISSEMENT",
             "equipe": "BAUVIN FC",
             "acteur": "Valentin C.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 33,
+            "type": "AVERTISSEMENT",
+            "equipe": "BAUVIN FC",
+            "acteur": "Valentin C.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "BAUVIN FC",
+            "acteur": "Willy L.",
             "detail": "Carton jaune"
           },
           {
@@ -8512,8 +9839,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Valentin L."
               },
               {
+                "numero": 1,
+                "nom": "Valentin L."
+              },
+              {
                 "numero": 2,
                 "nom": "Antoine O."
+              },
+              {
+                "numero": 2,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
               },
               {
                 "numero": 3,
@@ -8524,8 +9863,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Yannis D."
               },
               {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
                 "numero": 5,
                 "nom": "Nabil I."
+              },
+              {
+                "numero": 5,
+                "nom": "Nabil I."
+              },
+              {
+                "numero": 6,
+                "nom": "Lenny M."
               },
               {
                 "numero": 6,
@@ -8536,6 +9887,14 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Ismaila C."
               },
               {
+                "numero": 7,
+                "nom": "Ismaila C."
+              },
+              {
+                "numero": 8,
+                "nom": "Corentin L."
+              },
+              {
                 "numero": 8,
                 "nom": "Corentin L."
               },
@@ -8544,8 +9903,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Mouhamadou S."
               },
               {
+                "numero": 9,
+                "nom": "Mouhamadou S."
+              },
+              {
                 "numero": 10,
                 "nom": "Benjamin D."
+              },
+              {
+                "numero": 10,
+                "nom": "Benjamin D."
+              },
+              {
+                "numero": 11,
+                "nom": "Evan D."
               },
               {
                 "numero": 11,
@@ -8558,6 +9929,14 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Luther M."
               },
               {
+                "numero": 12,
+                "nom": "Luther M."
+              },
+              {
+                "numero": 13,
+                "nom": "Tom D."
+              },
+              {
                 "numero": 13,
                 "nom": "Tom D."
               },
@@ -8566,8 +9945,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Kylian D."
               },
               {
+                "numero": 14,
+                "nom": "Kylian D."
+              },
+              {
                 "numero": 15,
                 "nom": "Axel R."
+              },
+              {
+                "numero": 15,
+                "nom": "Axel R."
+              },
+              {
+                "numero": 16,
+                "nom": "Hugo L."
               },
               {
                 "numero": 16,
@@ -8582,8 +9973,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Valentin L."
               },
               {
+                "numero": 1,
+                "nom": "Valentin L."
+              },
+              {
                 "numero": 2,
                 "nom": "Antoine O."
+              },
+              {
+                "numero": 2,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
               },
               {
                 "numero": 3,
@@ -8594,8 +9997,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Yannis D."
               },
               {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
                 "numero": 5,
                 "nom": "Nabil I."
+              },
+              {
+                "numero": 5,
+                "nom": "Nabil I."
+              },
+              {
+                "numero": 6,
+                "nom": "Lenny M."
               },
               {
                 "numero": 6,
@@ -8606,6 +10021,14 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Ismaila C."
               },
               {
+                "numero": 7,
+                "nom": "Ismaila C."
+              },
+              {
+                "numero": 8,
+                "nom": "Corentin L."
+              },
+              {
                 "numero": 8,
                 "nom": "Corentin L."
               },
@@ -8614,8 +10037,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Mouhamadou S."
               },
               {
+                "numero": 9,
+                "nom": "Mouhamadou S."
+              },
+              {
                 "numero": 10,
                 "nom": "Benjamin D."
+              },
+              {
+                "numero": 10,
+                "nom": "Benjamin D."
+              },
+              {
+                "numero": 11,
+                "nom": "Evan D."
               },
               {
                 "numero": 11,
@@ -8628,6 +10063,14 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Luther M."
               },
               {
+                "numero": 12,
+                "nom": "Luther M."
+              },
+              {
+                "numero": 13,
+                "nom": "Tom D."
+              },
+              {
                 "numero": 13,
                 "nom": "Tom D."
               },
@@ -8636,8 +10079,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Kylian D."
               },
               {
+                "numero": 14,
+                "nom": "Kylian D."
+              },
+              {
                 "numero": 15,
                 "nom": "Axel R."
+              },
+              {
+                "numero": 15,
+                "nom": "Axel R."
+              },
+              {
+                "numero": 16,
+                "nom": "Hugo L."
               },
               {
                 "numero": 16,
@@ -8650,13 +10105,43 @@ window.MATCHDAY_TEAMS = {
             "titulaires": []
           }
         }
+      },
+      {
+        "id": "seclin_56619426",
+        "competition": "R2 • Journée",
+        "comp_type": "CHAMPIONNAT",
+        "date": "26/08/2026",
+        "date_heure": "2026-08-26 19:30",
+        "domicile": "ST ANDRE US",
+        "exterieur": "SECLIN FC",
+        "score_domicile": 5,
+        "score_exterieur": 2,
+        "score_display": "5 - 2",
+        "is_domicile": false,
+        "resultat": "D",
+        "resultat_label": "Défaite",
+        "evenements": [],
+        "compositions": {
+          "club": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "seclin": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "ST ANDRE US",
+            "titulaires": []
+          }
+        }
       }
     ],
     "kpis_saison": {
-      "buts_marques": 22,
-      "buts_encaisses": 6,
-      "clean_sheets": 3,
-      "minutes_cumulees": 6300,
+      "buts_marques": 26,
+      "buts_encaisses": 13,
+      "clean_sheets": 4,
+      "minutes_cumulees": 9000,
       "cartons_jaunes": 11,
       "cartons_rouges": 0
     },
@@ -8677,14 +10162,14 @@ window.MATCHDAY_TEAMS = {
       {
         "rang": 1,
         "nom": "Antoine O.",
-        "matchs": 5,
-        "titularisations": 5,
-        "minutes": 410,
+        "matchs": 7,
+        "titularisations": 9,
+        "minutes": 688,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 90.0,
+        "esg_score": 96.0,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -8699,14 +10184,14 @@ window.MATCHDAY_TEAMS = {
       {
         "rang": 2,
         "nom": "Corentin L.",
-        "matchs": 5,
-        "titularisations": 5,
-        "minutes": 410,
+        "matchs": 7,
+        "titularisations": 9,
+        "minutes": 688,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 90.0,
+        "esg_score": 96.0,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -8720,15 +10205,15 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 3,
-        "nom": "Ismaila C.",
-        "matchs": 5,
-        "titularisations": 5,
-        "minutes": 410,
+        "nom": "Lenny M.",
+        "matchs": 7,
+        "titularisations": 9,
+        "minutes": 688,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 90.0,
+        "esg_score": 96.0,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -8742,15 +10227,15 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 4,
-        "nom": "Lenny M.",
-        "matchs": 5,
-        "titularisations": 5,
-        "minutes": 410,
+        "nom": "Nicolas P.",
+        "matchs": 7,
+        "titularisations": 9,
+        "minutes": 688,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 90.0,
+        "esg_score": 96.0,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -8764,15 +10249,15 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 5,
-        "nom": "Mouhamadou S.",
-        "matchs": 5,
-        "titularisations": 5,
-        "minutes": 410,
+        "nom": "Yannis D.",
+        "matchs": 7,
+        "titularisations": 9,
+        "minutes": 688,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 90.0,
+        "esg_score": 96.0,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -8786,15 +10271,15 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 6,
-        "nom": "Nicolas P.",
-        "matchs": 5,
-        "titularisations": 5,
-        "minutes": 410,
+        "nom": "Mouhamadou S.",
+        "matchs": 6,
+        "titularisations": 8,
+        "minutes": 606,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 90.0,
+        "esg_score": 96.0,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -8808,15 +10293,15 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 7,
-        "nom": "Yannis D.",
+        "nom": "Ismaila C.",
         "matchs": 5,
-        "titularisations": 5,
-        "minutes": 410,
+        "titularisations": 7,
+        "minutes": 524,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 90.0,
+        "esg_score": 96.0,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -8830,12 +10315,122 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 8,
+        "nom": "Valentin L.",
+        "matchs": 5,
+        "titularisations": 7,
+        "minutes": 524,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 96.0,
+        "badge": "⭐ Cadre Titulaire",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 9,
+        "nom": "Evan D.",
+        "matchs": 6,
+        "titularisations": 6,
+        "minutes": 492,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 96.0,
+        "badge": "⭐ Cadre Titulaire",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 10,
+        "nom": "Nabil I.",
+        "matchs": 6,
+        "titularisations": 6,
+        "minutes": 492,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 96.0,
+        "badge": "⭐ Cadre Titulaire",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 11,
         "nom": "Tom D.",
+        "matchs": 7,
+        "titularisations": 5,
+        "minutes": 460,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 94.0,
+        "badge": "⭐ Cadre Titulaire",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 12,
+        "nom": "Luther M.",
+        "matchs": 6,
+        "titularisations": 4,
+        "minutes": 378,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 87.0,
+        "badge": "⭐ Cadre Titulaire",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 13,
+        "nom": "Paul R.",
         "matchs": 5,
         "titularisations": 4,
         "minutes": 353,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 85.0,
@@ -8851,123 +10446,541 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "rang": 9,
-        "nom": "Nabil I.",
-        "matchs": 4,
-        "titularisations": 4,
-        "minutes": 328,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 83.0,
-        "badge": "⭐ Cadre Titulaire",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 10,
-        "nom": "Valentin L.",
-        "matchs": 4,
-        "titularisations": 4,
-        "minutes": 328,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 83.0,
-        "badge": "⭐ Cadre Titulaire",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 11,
-        "nom": "Evan D.",
-        "matchs": 4,
-        "titularisations": 3,
-        "minutes": 271,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 78.0,
-        "badge": "⭐ Cadre Titulaire",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 12,
-        "nom": "Paul R.",
-        "matchs": 4,
-        "titularisations": 2,
-        "minutes": 214,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 73.0,
-        "badge": "⚡ Rotation Effectif",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 13,
-        "nom": "Luther M.",
-        "matchs": 4,
-        "titularisations": 1,
-        "minutes": 157,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 68.0,
-        "badge": "⚡ Rotation Effectif",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
         "rang": 14,
         "nom": "Benjamin D.",
+        "matchs": 5,
+        "titularisations": 3,
+        "minutes": 296,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 80.0,
+        "badge": "⭐ Cadre Titulaire",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 15,
+        "nom": "Hugo L.",
+        "matchs": 2,
+        "titularisations": 2,
+        "minutes": 164,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 69.0,
+        "badge": "⚡ Rotation Effectif",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 16,
+        "nom": "Antoine O.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 17,
+        "nom": "Benjamin D.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 18,
+        "nom": "Billal B.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 19,
+        "nom": "Corentin L.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 20,
+        "nom": "Evan D.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 21,
+        "nom": "Fares O.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 22,
+        "nom": "Ismaila C.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 23,
+        "nom": "Lenny M.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 24,
+        "nom": "Lorenzo P.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 25,
+        "nom": "Maxence B.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 26,
+        "nom": "Mehdi K.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 27,
+        "nom": "Mohamed A.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 28,
+        "nom": "Moise L.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 29,
+        "nom": "Mouhamadou S.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 30,
+        "nom": "Nabil I.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 31,
+        "nom": "Nicolas P.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 32,
+        "nom": "Nicolas V.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 33,
+        "nom": "Othman B.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 34,
+        "nom": "Valentin L.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 35,
+        "nom": "Yannis D.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 36,
+        "nom": "Younes B.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 37,
+        "nom": "Zayd D.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 38,
+        "nom": "Thibaut D.",
         "matchs": 3,
         "titularisations": 1,
         "minutes": 132,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 66.0,
@@ -8983,541 +10996,13 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "rang": 15,
+        "rang": 39,
         "nom": "Ali H.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 16,
-        "nom": "Anthony B.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 17,
-        "nom": "Anthony R.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 18,
-        "nom": "Antoine O.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 19,
-        "nom": "Athman H.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 20,
-        "nom": "Benjamin D.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 21,
-        "nom": "Billal B.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 22,
-        "nom": "Carmelo L.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 23,
-        "nom": "Corentin L.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 24,
-        "nom": "Dylan B.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 25,
-        "nom": "El M.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 26,
-        "nom": "Evan D.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 27,
-        "nom": "Fares O.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 28,
-        "nom": "Hakim H.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 29,
-        "nom": "Hugo B.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 30,
-        "nom": "Hugo L.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 31,
-        "nom": "Ismaila C.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 32,
-        "nom": "Lenny M.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 33,
-        "nom": "Lorenzo P.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 34,
-        "nom": "Mahdi G.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 35,
-        "nom": "Matthys B.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 36,
-        "nom": "Maxence B.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 37,
-        "nom": "Mehdi K.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 38,
-        "nom": "Mohamed A.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 39,
-        "nom": "Moise L.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9534,12 +11019,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 40,
-        "nom": "Mouhamadou S.",
+        "nom": "Anthony B.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9556,12 +11041,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 41,
-        "nom": "Mounir D.",
+        "nom": "Anthony R.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9578,12 +11063,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 42,
-        "nom": "Mounir S.",
+        "nom": "Athman H.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9600,12 +11085,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 43,
-        "nom": "Nabil I.",
+        "nom": "Carmelo L.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9622,12 +11107,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 44,
-        "nom": "Nicolas P.",
+        "nom": "Dylan B.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9644,12 +11129,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 45,
-        "nom": "Nicolas V.",
+        "nom": "El M.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9666,12 +11151,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 46,
-        "nom": "Omar Z.",
+        "nom": "Hakim H.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9688,12 +11173,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 47,
-        "nom": "Othman B.",
+        "nom": "Hugo B.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9710,12 +11195,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 48,
-        "nom": "Raouf G.",
+        "nom": "Hugo C.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9732,12 +11217,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 49,
-        "nom": "Rayan L.",
+        "nom": "Mahdi G.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9754,12 +11239,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 50,
-        "nom": "Semi A.",
+        "nom": "Matthys B.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9776,12 +11261,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 51,
-        "nom": "Sofiane S.",
+        "nom": "Mounir D.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9798,12 +11283,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 52,
-        "nom": "Tom G.",
+        "nom": "Mounir S.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9820,12 +11305,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 53,
-        "nom": "Tom L.",
+        "nom": "Omar Z.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9842,12 +11327,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 54,
-        "nom": "Valentin L.",
+        "nom": "Raouf G.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9864,12 +11349,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 55,
-        "nom": "Yanis A.",
+        "nom": "Rayan L.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9886,12 +11371,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 56,
-        "nom": "Yannis D.",
+        "nom": "Semi A.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9908,12 +11393,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 57,
-        "nom": "Yoan B.",
+        "nom": "Sofiane S.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9930,12 +11415,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 58,
-        "nom": "Younes B.",
+        "nom": "Tom G.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9952,12 +11437,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 59,
-        "nom": "Zayd D.",
+        "nom": "Tom L.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -9974,16 +11459,16 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 60,
-        "nom": "Kylian D.",
-        "matchs": 3,
-        "titularisations": 0,
-        "minutes": 75,
+        "nom": "Yanis A.",
+        "matchs": 1,
+        "titularisations": 1,
+        "minutes": 82,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 61.0,
-        "badge": "⚡ Rotation Effectif",
+        "esg_score": 62.0,
+        "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
           "volume_max": 35,
@@ -9996,16 +11481,16 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 61,
-        "nom": "Thibaut D.",
-        "matchs": 2,
-        "titularisations": 0,
-        "minutes": 50,
+        "nom": "Yoan B.",
+        "matchs": 1,
+        "titularisations": 1,
+        "minutes": 82,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 59.0,
-        "badge": "⚡ Rotation Effectif",
+        "esg_score": 62.0,
+        "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
           "volume_max": 35,
@@ -10018,6 +11503,28 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 62,
+        "nom": "Kylian D.",
+        "matchs": 4,
+        "titularisations": 0,
+        "minutes": 100,
+        "buts": 0,
+        "clean_sheets": 0,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 63.0,
+        "badge": "⚡ Rotation Effectif",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 63,
         "nom": "Ahmed B.",
         "matchs": 1,
         "titularisations": 0,
@@ -10039,7 +11546,7 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "rang": 63,
+        "rang": 64,
         "nom": "Amadou B.",
         "matchs": 1,
         "titularisations": 0,
@@ -10061,30 +11568,8 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "rang": 64,
-        "nom": "Axel R.",
-        "matchs": 1,
-        "titularisations": 0,
-        "minutes": 25,
-        "buts": 0,
-        "clean_sheets": 0,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 57.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
         "rang": 65,
-        "nom": "Eymen B.",
+        "nom": "Amadou S.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -10106,7 +11591,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 66,
-        "nom": "Hugo L.",
+        "nom": "Axel R.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -10128,7 +11613,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 67,
-        "nom": "Julien A.",
+        "nom": "Eymen B.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -10150,7 +11635,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 68,
-        "nom": "Kylian D.",
+        "nom": "Hugo L.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -10172,7 +11657,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 69,
-        "nom": "Lahoucine E.",
+        "nom": "Julien A.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -10194,7 +11679,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 70,
-        "nom": "Loic T.",
+        "nom": "Kylian D.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -10216,7 +11701,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 71,
-        "nom": "Luther M.",
+        "nom": "Lahoucine E.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -10238,7 +11723,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 72,
-        "nom": "Mohamed E.",
+        "nom": "Loic T.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -10260,7 +11745,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 73,
-        "nom": "Salman P.",
+        "nom": "Luther M.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -10282,7 +11767,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 74,
-        "nom": "Taoufik Z.",
+        "nom": "Mohamed E.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -10304,7 +11789,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 75,
-        "nom": "Tom D.",
+        "nom": "Salman P.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -10326,6 +11811,50 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 76,
+        "nom": "Taoufik Z.",
+        "matchs": 1,
+        "titularisations": 0,
+        "minutes": 25,
+        "buts": 0,
+        "clean_sheets": 0,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 57.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 77,
+        "nom": "Tom D.",
+        "matchs": 1,
+        "titularisations": 0,
+        "minutes": 25,
+        "buts": 0,
+        "clean_sheets": 0,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 57.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 78,
         "nom": "Youssef A.",
         "matchs": 1,
         "titularisations": 0,
@@ -10351,15 +11880,15 @@ window.MATCHDAY_TEAMS = {
       "ppm_championnat": 2.0,
       "probabilite_montee_pct": 78.0,
       "probabilite_maintien_pct": 99.0,
-      "taux_invincibilite": 100.0,
+      "taux_invincibilite": 90.0,
       "bilan_global": {
-        "matchs": 7,
+        "matchs": 10,
         "victoires": 3,
-        "nuls": 4,
-        "defaites": 0,
-        "buts_pour": 22,
-        "buts_contre": 6,
-        "difference": 16
+        "nuls": 6,
+        "defaites": 1,
+        "buts_pour": 26,
+        "buts_contre": 13,
+        "difference": 13
       },
       "bilan_championnat": {
         "matchs": 4,
@@ -10372,8 +11901,8 @@ window.MATCHDAY_TEAMS = {
         "difference": 13,
         "ppm": 2.0
       },
-      "ratio_clean_sheet_pct": 42.9,
-      "moyenne_buts_encaisses": 0.86,
+      "ratio_clean_sheet_pct": 40.0,
+      "moyenne_buts_encaisses": 1.3,
       "projection_saison": {
         "points_prevus": 44.0,
         "rang_final_estime": "Top 2 Régional 2 (Course à la montée en R1)"
@@ -10413,249 +11942,369 @@ window.MATCHDAY_TEAMS = {
       "analyse_temporelle": {
         "buts_2nde_mi_temps_pct": 57.0,
         "buts_money_time_pct": 28.0,
-        "clean_premiere_demi_heure": "3 clean sheets",
+        "clean_premiere_demi_heure": "4 clean sheets",
         "point_vigilance": "Excellente efficacité offensive (12-0 vs Montigny)"
       }
     },
     "classement": [
       {
-        "rang": 1,
-        "equipe": "CROIX FIC 2",
-        "nom": "CROIX FIC 2",
-        "points": 10,
-        "joues": 4,
-        "gagnes": 3,
-        "nuls": 1,
+        "rang": -45,
+        "equipe": "12",
+        "nom": "12",
+        "points": "MONTIGNY GOHELLE FC",
+        "joues": 0,
+        "gagnes": 5,
+        "nuls": 0,
         "perdus": 0,
-        "buts_pour": 7,
-        "buts_contre": 4,
-        "diff": 3,
-        "difference": 3,
+        "buts_pour": 5,
+        "buts_contre": 2,
+        "diff": 47,
+        "difference": 47,
         "forme": [
           "V",
           "V",
           "V",
-          "N"
+          "V"
+        ]
+      },
+      {
+        "rang": -3,
+        "equipe": "10",
+        "nom": "10",
+        "points": "LESQUIN US",
+        "joues": 3,
+        "gagnes": 5,
+        "nuls": 0,
+        "perdus": 3,
+        "buts_pour": 2,
+        "buts_contre": 8,
+        "diff": 11,
+        "difference": 11,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": -3,
+        "equipe": "11",
+        "nom": "11",
+        "points": "COURCELLES US",
+        "joues": 2,
+        "gagnes": 5,
+        "nuls": 0,
+        "perdus": 2,
+        "buts_pour": 3,
+        "buts_contre": 3,
+        "diff": 6,
+        "difference": 6,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
         ]
       },
       {
         "rang": 2,
-        "equipe": "SECLIN FC",
-        "nom": "SECLIN FC",
-        "points": 8,
+        "equipe": "9",
+        "nom": "9",
+        "points": "NOYELLES S/LENS US",
         "joues": 4,
-        "gagnes": 2,
-        "nuls": 2,
-        "perdus": 0,
-        "buts_pour": 16,
-        "buts_contre": 3,
-        "diff": 13,
-        "difference": 13,
+        "gagnes": 5,
+        "nuls": 1,
+        "perdus": 1,
+        "buts_pour": 3,
+        "buts_contre": 12,
+        "diff": 10,
+        "difference": 10,
         "forme": [
           "V",
           "V",
-          "N",
-          "N"
+          "V",
+          "V"
         ]
       },
       {
         "rang": 3,
-        "equipe": "NOEUX LES MINES US",
-        "nom": "NOEUX LES MINES US",
-        "points": 8,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 2,
-        "perdus": 0,
-        "buts_pour": 6,
-        "buts_contre": 2,
+        "equipe": "1",
+        "nom": "1",
+        "points": "CROIX FIC 2",
+        "joues": 11,
+        "gagnes": 5,
+        "nuls": 3,
+        "perdus": 2,
+        "buts_pour": 0,
+        "buts_contre": 7,
         "diff": 4,
         "difference": 4,
         "forme": [
           "V",
           "V",
-          "N",
-          "N"
+          "V",
+          "V"
         ]
       },
       {
-        "rang": 4,
-        "equipe": "ESCAUDAIN USF",
-        "nom": "ESCAUDAIN USF",
-        "points": 8,
-        "joues": 4,
-        "gagnes": 2,
+        "rang": 3,
+        "equipe": "3",
+        "nom": "3",
+        "points": "ESCAUDAIN USF",
+        "joues": 9,
+        "gagnes": 5,
         "nuls": 2,
-        "perdus": 0,
-        "buts_pour": 10,
-        "buts_contre": 7,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "N"
-        ]
-      },
-      {
-        "rang": 5,
-        "equipe": "RAISMES FC",
-        "nom": "RAISMES FC",
-        "points": 7,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 1,
-        "perdus": 1,
-        "buts_pour": 8,
-        "buts_contre": 5,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "D"
-        ]
-      },
-      {
-        "rang": 6,
-        "equipe": "FOURMIES US",
-        "nom": "FOURMIES US",
-        "points": 7,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 1,
-        "perdus": 1,
-        "buts_pour": 6,
-        "buts_contre": 7,
-        "diff": -1,
-        "difference": -1,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "D"
-        ]
-      },
-      {
-        "rang": 7,
-        "equipe": "BIACHE ST VAAST US",
-        "nom": "BIACHE ST VAAST US",
-        "points": 6,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 0,
-        "perdus": 2,
-        "buts_pour": 13,
-        "buts_contre": 5,
+        "perdus": 3,
+        "buts_pour": 0,
+        "buts_contre": 11,
         "diff": 8,
         "difference": 8,
         "forme": [
           "V",
           "V",
-          "D",
-          "D"
+          "V",
+          "V"
         ]
       },
       {
-        "rang": 8,
-        "equipe": "MERVILLE USM",
-        "nom": "MERVILLE USM",
-        "points": 6,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 0,
+        "rang": 3,
+        "equipe": "7",
+        "nom": "7",
+        "points": "RAISMES FC",
+        "joues": 8,
+        "gagnes": 5,
+        "nuls": 2,
         "perdus": 2,
-        "buts_pour": 13,
-        "buts_contre": 6,
+        "buts_pour": 1,
+        "buts_contre": 9,
+        "diff": 6,
+        "difference": 6,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": 3,
+        "equipe": "2",
+        "nom": "2",
+        "points": "RAISMES FC",
+        "joues": 8,
+        "gagnes": 5,
+        "nuls": 2,
+        "perdus": 2,
+        "buts_pour": 1,
+        "buts_contre": 9,
+        "diff": 6,
+        "difference": 6,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": 4,
+        "equipe": "5",
+        "nom": "5",
+        "points": "NOEUX LES MINES US",
+        "joues": 9,
+        "gagnes": 5,
+        "nuls": 2,
+        "perdus": 3,
+        "buts_pour": 0,
+        "buts_contre": 7,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": 4,
+        "equipe": "1",
+        "nom": "1",
+        "points": "NOEUX LES MINES US",
+        "joues": 9,
+        "gagnes": 5,
+        "nuls": 2,
+        "perdus": 3,
+        "buts_pour": 0,
+        "buts_contre": 7,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": 7,
+        "equipe": "8",
+        "nom": "8",
+        "points": "BIACHE ST VAAST US",
+        "joues": 6,
+        "gagnes": 5,
+        "nuls": 2,
+        "perdus": 0,
+        "buts_pour": 3,
+        "buts_contre": 14,
         "diff": 7,
         "difference": 7,
         "forme": [
           "V",
           "V",
-          "D",
-          "D"
+          "V",
+          "V"
         ]
       },
       {
-        "rang": 9,
-        "equipe": "NOYELLES S/LENS US",
-        "nom": "NOYELLES S/LENS US",
-        "points": 3,
-        "joues": 4,
-        "gagnes": 1,
-        "nuls": 0,
-        "perdus": 3,
-        "buts_pour": 11,
-        "buts_contre": 9,
-        "diff": 2,
-        "difference": 2,
+        "rang": 7,
+        "equipe": "1",
+        "nom": "1",
+        "points": "BIACHE ST VAAST US",
+        "joues": 6,
+        "gagnes": 5,
+        "nuls": 2,
+        "perdus": 0,
+        "buts_pour": 3,
+        "buts_contre": 14,
+        "diff": 7,
+        "difference": 7,
         "forme": [
           "V",
-          "D",
-          "D",
-          "D"
+          "V",
+          "V",
+          "V"
         ]
       },
       {
-        "rang": 10,
-        "equipe": "LESQUIN US",
-        "nom": "LESQUIN US",
-        "points": 2,
-        "joues": 4,
-        "gagnes": 0,
-        "nuls": 2,
-        "perdus": 2,
-        "buts_pour": 6,
-        "buts_contre": 9,
-        "diff": -3,
-        "difference": -3,
-        "forme": [
-          "N",
-          "N",
-          "D",
-          "D"
-        ]
-      },
-      {
-        "rang": 11,
-        "equipe": "COURCELLES US",
-        "nom": "COURCELLES US",
-        "points": 1,
-        "joues": 4,
-        "gagnes": 0,
-        "nuls": 1,
-        "perdus": 3,
+        "rang": 8,
+        "equipe": "2",
+        "nom": "2",
+        "points": "FOURMIES US",
+        "joues": 10,
+        "gagnes": 5,
+        "nuls": 3,
+        "perdus": 1,
         "buts_pour": 1,
-        "buts_contre": 4,
-        "diff": -3,
-        "difference": -3,
+        "buts_contre": 15,
+        "diff": 7,
+        "difference": 7,
         "forme": [
-          "N",
-          "D",
-          "D",
-          "D"
+          "V",
+          "V",
+          "V",
+          "V"
         ]
       },
       {
-        "rang": 12,
-        "equipe": "MONTIGNY GOHELLE FC",
-        "nom": "MONTIGNY GOHELLE FC",
-        "points": 0,
-        "joues": 4,
-        "gagnes": 0,
-        "nuls": 0,
-        "perdus": 4,
-        "buts_pour": 2,
-        "buts_contre": 38,
-        "diff": -36,
-        "difference": -36,
+        "rang": 8,
+        "equipe": "4",
+        "nom": "4",
+        "points": "FOURMIES US",
+        "joues": 10,
+        "gagnes": 5,
+        "nuls": 3,
+        "perdus": 1,
+        "buts_pour": 1,
+        "buts_contre": 15,
+        "diff": 7,
+        "difference": 7,
         "forme": [
-          "D",
-          "D",
-          "D",
-          "D"
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": 8,
+        "equipe": "6",
+        "nom": "6",
+        "points": "MERVILLE USM",
+        "joues": 9,
+        "gagnes": 5,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 2,
+        "buts_contre": 15,
+        "diff": 7,
+        "difference": 7,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": 8,
+        "equipe": "2",
+        "nom": "2",
+        "points": "MERVILLE USM",
+        "joues": 9,
+        "gagnes": 5,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 2,
+        "buts_contre": 15,
+        "diff": 7,
+        "difference": 7,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": 13,
+        "equipe": "4",
+        "nom": "4",
+        "points": "SECLIN FC",
+        "joues": 9,
+        "gagnes": 5,
+        "nuls": 2,
+        "perdus": 3,
+        "buts_pour": 0,
+        "buts_contre": 16,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": 13,
+        "equipe": "2",
+        "nom": "2",
+        "points": "SECLIN FC",
+        "joues": 9,
+        "gagnes": 5,
+        "nuls": 2,
+        "perdus": 3,
+        "buts_pour": 0,
+        "buts_contre": 16,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
         ]
       }
     ]
@@ -10669,50 +12318,65 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "30/10/2026 à 13:56"
+      "derniere_maj": "02/11/2026 à 11:57"
     },
     "dernier_match": {
-      "id": "seclin_80464279",
-      "competition": "Coupe Hauts-de-France Seniors (3ème Tour)",
-      "domicile": "ARQUES ES",
+      "id": "seclin_56215870",
+      "competition": "Régional 2 (Poule B) • Journée",
+      "domicile": "CROIX FIC 2",
       "exterieur": "SECLIN FC",
-      "score_domicile": 2,
-      "score_exterieur": 2,
-      "score_display": "2 - 2 (TAB 4-5)",
-      "date_heure": "2026-10-25 15:00",
+      "score_domicile": 0,
+      "score_exterieur": 0,
+      "score_display": "0 - 0",
+      "date_heure": "2026-11-01 14:30",
       "statut": "TERMINE"
     },
-    "evenements_dernier_match": [],
+    "evenements_dernier_match": [
+      {
+        "minute": 49,
+        "type": "AVERTISSEMENT",
+        "equipe": "SECLIN FC",
+        "acteur": "Lenny M.",
+        "detail": "Carton jaune"
+      },
+      {
+        "minute": 78,
+        "type": "AVERTISSEMENT",
+        "equipe": "SECLIN FC",
+        "acteur": "Amadou S.",
+        "detail": "Carton jaune"
+      }
+    ],
     "prochain_match": {
-      "competition": "Régional 2 (Poule B) • Journée 5",
-      "date_heure": "01/11/2026 à 14:30",
-      "lieu": "Stade Henri Seigneur (Croix)",
-      "domicile": "CROIX IC 2",
-      "exterieur": "SECLIN FC",
+      "competition": "Régional 2 (Poule B) • Journée 6",
+      "date_heure": "08/11/2026 à 14:30",
+      "lieu": "Stade Henri Seigneur (Seclin)",
+      "domicile": "SECLIN FC",
+      "exterieur": "BIACHE ST VAAST US",
       "comparatif": {
-        "titre": "Choc au Sommet • 1er vs 2e (R2 Poule B)",
-        "adversaire_nom": "Croix IC 2",
-        "adversaire_rang": "1er",
-        "adversaire_pts": 10,
-        "adversaire_buts_pour": 11,
-        "adversaire_buts_contre": 3,
+        "titre": "Comparatif de Performance (R2 Poule B)",
+        "adversaire_nom": "Biache St Vaast US",
+        "adversaire_rang": "8e",
+        "adversaire_pts": 6,
+        "adversaire_buts_pour": 14,
+        "adversaire_buts_contre": 7,
         "club_nom": "FC Seclin",
         "club_rang": "2e",
-        "club_pts": 8,
+        "club_pts": 9,
         "club_buts_pour": 16,
         "club_buts_contre": 3
       },
       "alertes": [
-        "Choc direct pour la 1ère place de Régional 2 : Croix (1er, 10 pts) accueille Seclin (2e, 8 pts, invaincu).",
-        "Duel des meilleures attaques et défenses de la poule : 11 BP / 3 BC pour Croix, 16 BP / 3 BC pour Seclin."
+        "Seclin toujours invaincu en R2 après son nul héroïque 0-0 chez le leader Croix (9 pts, 16 BP, 3 BC).",
+        "Meilleure défense de la poule : seulement 3 buts concédés en 5 journées (3e clean sheet de rang)."
       ]
     },
     "meteo_prochain_match": {
       "lieu": "Croix (Stade Henri Seigneur)",
       "surface": "Pelouse naturelle",
-      "temperature": "8.1 °C",
-      "vent": "Faible (14.8 km/h)",
-      "pluie": "Sec (0 %)",
+      "temperature": "9.3 °C",
+      "vent": "Faible (10.2 km/h)",
+      "pluie": "Sec (7 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -10724,6 +12388,167 @@ window.MATCHDAY_TEAMS = {
       "consigne_coach": "Choc au sommet face au leader Croix (10 pts). Rigueur défensive et transition rapide."
     },
     "historique_matchs": [
+      {
+        "id": "seclin_56215870",
+        "competition": "R2 • Journée",
+        "comp_type": "CHAMPIONNAT",
+        "date": "01/11/2026",
+        "date_heure": "2026-11-01 14:30",
+        "domicile": "CROIX FIC 2",
+        "exterieur": "SECLIN FC",
+        "score_domicile": 0,
+        "score_exterieur": 0,
+        "score_display": "0 - 0",
+        "is_domicile": false,
+        "resultat": "N",
+        "resultat_label": "Match Nul",
+        "evenements": [
+          {
+            "minute": 49,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Lenny M.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 78,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Amadou S.",
+            "detail": "Carton jaune"
+          }
+        ],
+        "compositions": {
+          "club": {
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Valentin L."
+              },
+              {
+                "numero": 2,
+                "nom": "Hugo C."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
+              },
+              {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
+                "numero": 5,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 6,
+                "nom": "Nabil I."
+              },
+              {
+                "numero": 7,
+                "nom": "Paul R."
+              },
+              {
+                "numero": 8,
+                "nom": "Luther M."
+              },
+              {
+                "numero": 9,
+                "nom": "Corentin L."
+              },
+              {
+                "numero": 10,
+                "nom": "Lenny M."
+              },
+              {
+                "numero": 11,
+                "nom": "Evan D."
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Tom D."
+              },
+              {
+                "numero": 13,
+                "nom": "Benjamin D."
+              },
+              {
+                "numero": 14,
+                "nom": "Amadou S."
+              }
+            ]
+          },
+          "seclin": {
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Valentin L."
+              },
+              {
+                "numero": 2,
+                "nom": "Hugo C."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
+              },
+              {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
+                "numero": 5,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 6,
+                "nom": "Nabil I."
+              },
+              {
+                "numero": 7,
+                "nom": "Paul R."
+              },
+              {
+                "numero": 8,
+                "nom": "Luther M."
+              },
+              {
+                "numero": 9,
+                "nom": "Corentin L."
+              },
+              {
+                "numero": 10,
+                "nom": "Lenny M."
+              },
+              {
+                "numero": 11,
+                "nom": "Evan D."
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Tom D."
+              },
+              {
+                "numero": 13,
+                "nom": "Benjamin D."
+              },
+              {
+                "numero": 14,
+                "nom": "Amadou S."
+              }
+            ]
+          },
+          "adversaire": {
+            "equipe": "CROIX FIC 2",
+            "titulaires": []
+          }
+        }
+      },
       {
         "id": "seclin_80464279",
         "competition": "Coupe Hauts-de-France Seniors (3ème Tour)",
@@ -11651,6 +13476,216 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
+        "id": "seclin_79638706",
+        "competition": "Coupe Hauts-de-France Seniors - Senior 1er Tour",
+        "comp_type": "COUPE",
+        "date": "26/09/2026",
+        "date_heure": "2026-09-26 19:15",
+        "domicile": "MOUVAUX ES",
+        "exterieur": "TAB 3 - 5",
+        "score_domicile": 2,
+        "score_exterieur": 2,
+        "score_display": "2 - 2",
+        "is_domicile": false,
+        "resultat": "N",
+        "resultat_label": "Match Nul",
+        "evenements": [
+          {
+            "minute": 13,
+            "type": "BUT",
+            "equipe": "MOUVAUX ES",
+            "acteur": "Abdoulaye N.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 34,
+            "type": "AVERTISSEMENT",
+            "equipe": "MOUVAUX ES",
+            "acteur": "Valentino S.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 53,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Tom D.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 59,
+            "type": "AVERTISSEMENT",
+            "equipe": "MOUVAUX ES",
+            "acteur": "Valentino S.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 65,
+            "type": "BUT",
+            "equipe": "SECLIN FC",
+            "acteur": "Tom D.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 70,
+            "type": "BUT",
+            "equipe": "MOUVAUX ES",
+            "acteur": "Yannis I.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 90,
+            "type": "BUT",
+            "equipe": "SECLIN FC",
+            "acteur": "Antoine O.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Pierre H.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Nabil I.",
+            "detail": "Carton jaune"
+          }
+        ],
+        "compositions": {
+          "club": {
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Hugo L."
+              },
+              {
+                "numero": 2,
+                "nom": "Corentin L."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
+              },
+              {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
+                "numero": 5,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 6,
+                "nom": "Benjamin D."
+              },
+              {
+                "numero": 7,
+                "nom": "Thibaut D."
+              },
+              {
+                "numero": 8,
+                "nom": "Mouhamadou S."
+              },
+              {
+                "numero": 9,
+                "nom": "Luther M."
+              },
+              {
+                "numero": 10,
+                "nom": "Lenny M."
+              },
+              {
+                "numero": 11,
+                "nom": "Evan D."
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Nabil I."
+              },
+              {
+                "numero": 13,
+                "nom": "Tom D."
+              },
+              {
+                "numero": 14,
+                "nom": "Kylian D."
+              }
+            ]
+          },
+          "seclin": {
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Hugo L."
+              },
+              {
+                "numero": 2,
+                "nom": "Corentin L."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
+              },
+              {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
+                "numero": 5,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 6,
+                "nom": "Benjamin D."
+              },
+              {
+                "numero": 7,
+                "nom": "Thibaut D."
+              },
+              {
+                "numero": 8,
+                "nom": "Mouhamadou S."
+              },
+              {
+                "numero": 9,
+                "nom": "Luther M."
+              },
+              {
+                "numero": 10,
+                "nom": "Lenny M."
+              },
+              {
+                "numero": 11,
+                "nom": "Evan D."
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Nabil I."
+              },
+              {
+                "numero": 13,
+                "nom": "Tom D."
+              },
+              {
+                "numero": 14,
+                "nom": "Kylian D."
+              }
+            ]
+          },
+          "adversaire": {
+            "equipe": "MOUVAUX ES",
+            "titulaires": []
+          }
+        }
+      },
+      {
         "id": "seclin_56215852",
         "competition": "R2 • Journée",
         "comp_type": "CHAMPIONNAT",
@@ -11673,10 +13708,31 @@ window.MATCHDAY_TEAMS = {
             "detail": "But FFF"
           },
           {
+            "minute": 23,
+            "type": "BUT",
+            "equipe": "SECLIN FC",
+            "acteur": "Mouhamadou S.",
+            "detail": "But FFF"
+          },
+          {
             "minute": 31,
             "type": "AVERTISSEMENT",
             "equipe": "SECLIN FC",
             "acteur": "Mouhamadou S.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 31,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Mouhamadou S.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 37,
+            "type": "AVERTISSEMENT",
+            "equipe": "COURCELLES US",
+            "acteur": "Zayd D.",
             "detail": "Carton jaune"
           },
           {
@@ -11694,10 +13750,31 @@ window.MATCHDAY_TEAMS = {
             "detail": "Carton jaune"
           },
           {
+            "minute": 42,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Ismaila C.",
+            "detail": "Carton jaune"
+          },
+          {
             "minute": 51,
             "type": "AVERTISSEMENT",
             "equipe": "SECLIN FC",
             "acteur": "Benjamin D.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 51,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Benjamin D.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 73,
+            "type": "AVERTISSEMENT",
+            "equipe": "COURCELLES US",
+            "acteur": "Mohamed A.",
             "detail": "Carton jaune"
           },
           {
@@ -11720,12 +13797,36 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Maxence B."
               },
               {
+                "numero": 1,
+                "nom": "Valentin L."
+              },
+              {
+                "numero": 1,
+                "nom": "Maxence B."
+              },
+              {
                 "numero": 2,
                 "nom": "Corentin L."
               },
               {
                 "numero": 2,
                 "nom": "Mohamed A."
+              },
+              {
+                "numero": 2,
+                "nom": "Corentin L."
+              },
+              {
+                "numero": 2,
+                "nom": "Mohamed A."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas V."
               },
               {
                 "numero": 3,
@@ -11744,12 +13845,36 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Fares O."
               },
               {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
+                "numero": 4,
+                "nom": "Fares O."
+              },
+              {
                 "numero": 5,
                 "nom": "Antoine O."
               },
               {
                 "numero": 5,
                 "nom": "Billal B."
+              },
+              {
+                "numero": 5,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 5,
+                "nom": "Billal B."
+              },
+              {
+                "numero": 6,
+                "nom": "Benjamin D."
+              },
+              {
+                "numero": 6,
+                "nom": "Moise L."
               },
               {
                 "numero": 6,
@@ -11768,6 +13893,22 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Zayd D."
               },
               {
+                "numero": 7,
+                "nom": "Ismaila C."
+              },
+              {
+                "numero": 7,
+                "nom": "Zayd D."
+              },
+              {
+                "numero": 8,
+                "nom": "Mouhamadou S."
+              },
+              {
+                "numero": 8,
+                "nom": "Younes B."
+              },
+              {
                 "numero": 8,
                 "nom": "Mouhamadou S."
               },
@@ -11784,12 +13925,36 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Mehdi K."
               },
               {
+                "numero": 9,
+                "nom": "Luther M."
+              },
+              {
+                "numero": 9,
+                "nom": "Mehdi K."
+              },
+              {
                 "numero": 10,
                 "nom": "Lenny M."
               },
               {
                 "numero": 10,
                 "nom": "Lorenzo P."
+              },
+              {
+                "numero": 10,
+                "nom": "Lenny M."
+              },
+              {
+                "numero": 10,
+                "nom": "Lorenzo P."
+              },
+              {
+                "numero": 11,
+                "nom": "Paul R."
+              },
+              {
+                "numero": 11,
+                "nom": "Othman B."
               },
               {
                 "numero": 11,
@@ -11810,12 +13975,36 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Ahmed B."
               },
               {
+                "numero": 12,
+                "nom": "Tom D."
+              },
+              {
+                "numero": 12,
+                "nom": "Ahmed B."
+              },
+              {
                 "numero": 13,
                 "nom": "Thibaut D."
               },
               {
                 "numero": 13,
                 "nom": "Mohamed E."
+              },
+              {
+                "numero": 13,
+                "nom": "Thibaut D."
+              },
+              {
+                "numero": 13,
+                "nom": "Mohamed E."
+              },
+              {
+                "numero": 14,
+                "nom": "Kylian D."
+              },
+              {
+                "numero": 14,
+                "nom": "Lahoucine E."
               },
               {
                 "numero": 14,
@@ -11838,12 +14027,36 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Maxence B."
               },
               {
+                "numero": 1,
+                "nom": "Valentin L."
+              },
+              {
+                "numero": 1,
+                "nom": "Maxence B."
+              },
+              {
                 "numero": 2,
                 "nom": "Corentin L."
               },
               {
                 "numero": 2,
                 "nom": "Mohamed A."
+              },
+              {
+                "numero": 2,
+                "nom": "Corentin L."
+              },
+              {
+                "numero": 2,
+                "nom": "Mohamed A."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas V."
               },
               {
                 "numero": 3,
@@ -11862,12 +14075,36 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Fares O."
               },
               {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
+                "numero": 4,
+                "nom": "Fares O."
+              },
+              {
                 "numero": 5,
                 "nom": "Antoine O."
               },
               {
                 "numero": 5,
                 "nom": "Billal B."
+              },
+              {
+                "numero": 5,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 5,
+                "nom": "Billal B."
+              },
+              {
+                "numero": 6,
+                "nom": "Benjamin D."
+              },
+              {
+                "numero": 6,
+                "nom": "Moise L."
               },
               {
                 "numero": 6,
@@ -11886,6 +14123,22 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Zayd D."
               },
               {
+                "numero": 7,
+                "nom": "Ismaila C."
+              },
+              {
+                "numero": 7,
+                "nom": "Zayd D."
+              },
+              {
+                "numero": 8,
+                "nom": "Mouhamadou S."
+              },
+              {
+                "numero": 8,
+                "nom": "Younes B."
+              },
+              {
                 "numero": 8,
                 "nom": "Mouhamadou S."
               },
@@ -11902,12 +14155,36 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Mehdi K."
               },
               {
+                "numero": 9,
+                "nom": "Luther M."
+              },
+              {
+                "numero": 9,
+                "nom": "Mehdi K."
+              },
+              {
                 "numero": 10,
                 "nom": "Lenny M."
               },
               {
                 "numero": 10,
                 "nom": "Lorenzo P."
+              },
+              {
+                "numero": 10,
+                "nom": "Lenny M."
+              },
+              {
+                "numero": 10,
+                "nom": "Lorenzo P."
+              },
+              {
+                "numero": 11,
+                "nom": "Paul R."
+              },
+              {
+                "numero": 11,
+                "nom": "Othman B."
               },
               {
                 "numero": 11,
@@ -11928,12 +14205,36 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Ahmed B."
               },
               {
+                "numero": 12,
+                "nom": "Tom D."
+              },
+              {
+                "numero": 12,
+                "nom": "Ahmed B."
+              },
+              {
                 "numero": 13,
                 "nom": "Thibaut D."
               },
               {
                 "numero": 13,
                 "nom": "Mohamed E."
+              },
+              {
+                "numero": 13,
+                "nom": "Thibaut D."
+              },
+              {
+                "numero": 13,
+                "nom": "Mohamed E."
+              },
+              {
+                "numero": 14,
+                "nom": "Kylian D."
+              },
+              {
+                "numero": 14,
+                "nom": "Lahoucine E."
               },
               {
                 "numero": 14,
@@ -11974,6 +14275,20 @@ window.MATCHDAY_TEAMS = {
             "detail": "Carton jaune"
           },
           {
+            "minute": 19,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Lenny M.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 22,
+            "type": "BUT",
+            "equipe": "SECLIN FC",
+            "acteur": "Corentin L.",
+            "detail": "But FFF"
+          },
+          {
             "minute": 22,
             "type": "BUT",
             "equipe": "SECLIN FC",
@@ -11985,6 +14300,20 @@ window.MATCHDAY_TEAMS = {
             "type": "AVERTISSEMENT",
             "equipe": "LESQUIN US",
             "acteur": "Martin C.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 23,
+            "type": "AVERTISSEMENT",
+            "equipe": "LESQUIN US",
+            "acteur": "Martin C.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 32,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Pierre H.",
             "detail": "Carton jaune"
           },
           {
@@ -12002,6 +14331,20 @@ window.MATCHDAY_TEAMS = {
             "detail": "But FFF"
           },
           {
+            "minute": 33,
+            "type": "BUT",
+            "equipe": "LESQUIN US",
+            "acteur": "Corentin D.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 36,
+            "type": "BUT",
+            "equipe": "SECLIN FC",
+            "acteur": "Evan D.",
+            "detail": "But FFF"
+          },
+          {
             "minute": 36,
             "type": "BUT",
             "equipe": "SECLIN FC",
@@ -12013,6 +14356,20 @@ window.MATCHDAY_TEAMS = {
             "type": "AVERTISSEMENT",
             "equipe": "SECLIN FC",
             "acteur": "Evan D.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 41,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Evan D.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 47,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Nabil I.",
             "detail": "Carton jaune"
           },
           {
@@ -12030,6 +14387,20 @@ window.MATCHDAY_TEAMS = {
             "detail": "But FFF"
           },
           {
+            "minute": 68,
+            "type": "BUT",
+            "equipe": "LESQUIN US",
+            "acteur": "Mahery N.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 70,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Tom D.",
+            "detail": "Carton jaune"
+          },
+          {
             "minute": 70,
             "type": "AVERTISSEMENT",
             "equipe": "SECLIN FC",
@@ -12041,6 +14412,27 @@ window.MATCHDAY_TEAMS = {
             "type": "AVERTISSEMENT",
             "equipe": "SECLIN FC",
             "acteur": "Evan D.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 86,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Evan D.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "SECLIN FC",
+            "acteur": "Yannis D.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "LESQUIN US",
+            "acteur": "Alex M.",
             "detail": "Carton jaune"
           },
           {
@@ -12066,8 +14458,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Valentin L."
               },
               {
+                "numero": 1,
+                "nom": "Valentin L."
+              },
+              {
                 "numero": 2,
                 "nom": "Tom D."
+              },
+              {
+                "numero": 2,
+                "nom": "Tom D."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
               },
               {
                 "numero": 3,
@@ -12078,8 +14482,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Yannis D."
               },
               {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
                 "numero": 5,
                 "nom": "Antoine O."
+              },
+              {
+                "numero": 5,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 6,
+                "nom": "Nabil I."
               },
               {
                 "numero": 6,
@@ -12090,6 +14506,14 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Ismaila C."
               },
               {
+                "numero": 7,
+                "nom": "Ismaila C."
+              },
+              {
+                "numero": 8,
+                "nom": "Lenny M."
+              },
+              {
                 "numero": 8,
                 "nom": "Lenny M."
               },
@@ -12098,8 +14522,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Corentin L."
               },
               {
+                "numero": 9,
+                "nom": "Corentin L."
+              },
+              {
                 "numero": 10,
                 "nom": "Mouhamadou S."
+              },
+              {
+                "numero": 10,
+                "nom": "Mouhamadou S."
+              },
+              {
+                "numero": 11,
+                "nom": "Evan D."
               },
               {
                 "numero": 11,
@@ -12112,8 +14548,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Luther M."
               },
               {
+                "numero": 12,
+                "nom": "Luther M."
+              },
+              {
                 "numero": 13,
                 "nom": "Kylian D."
+              },
+              {
+                "numero": 13,
+                "nom": "Kylian D."
+              },
+              {
+                "numero": 14,
+                "nom": "Youssef A."
               },
               {
                 "numero": 14,
@@ -12128,8 +14576,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Valentin L."
               },
               {
+                "numero": 1,
+                "nom": "Valentin L."
+              },
+              {
                 "numero": 2,
                 "nom": "Tom D."
+              },
+              {
+                "numero": 2,
+                "nom": "Tom D."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
               },
               {
                 "numero": 3,
@@ -12140,8 +14600,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Yannis D."
               },
               {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
                 "numero": 5,
                 "nom": "Antoine O."
+              },
+              {
+                "numero": 5,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 6,
+                "nom": "Nabil I."
               },
               {
                 "numero": 6,
@@ -12152,6 +14624,14 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Ismaila C."
               },
               {
+                "numero": 7,
+                "nom": "Ismaila C."
+              },
+              {
+                "numero": 8,
+                "nom": "Lenny M."
+              },
+              {
                 "numero": 8,
                 "nom": "Lenny M."
               },
@@ -12160,8 +14640,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Corentin L."
               },
               {
+                "numero": 9,
+                "nom": "Corentin L."
+              },
+              {
                 "numero": 10,
                 "nom": "Mouhamadou S."
+              },
+              {
+                "numero": 10,
+                "nom": "Mouhamadou S."
+              },
+              {
+                "numero": 11,
+                "nom": "Evan D."
               },
               {
                 "numero": 11,
@@ -12174,8 +14666,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Luther M."
               },
               {
+                "numero": 12,
+                "nom": "Luther M."
+              },
+              {
                 "numero": 13,
                 "nom": "Kylian D."
+              },
+              {
+                "numero": 13,
+                "nom": "Kylian D."
+              },
+              {
+                "numero": 14,
+                "nom": "Youssef A."
               },
               {
                 "numero": 14,
@@ -12191,12 +14695,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "id": "seclin_79040479",
-        "competition": "Coupe de France - 2ème Tour",
-        "comp_type": "COUPE",
+        "competition": "R2 • Journée",
+        "comp_type": "CHAMPIONNAT",
         "date": "30/08/2026",
         "date_heure": "2026-08-30 15:00",
         "domicile": "BAUVIN FC",
-        "exterieur": "SECLIN FC",
+        "exterieur": "TAB 5 - 3",
         "score_domicile": 1,
         "score_exterieur": 1,
         "score_display": "1 - 1 (TAB 3-4)",
@@ -12209,6 +14713,20 @@ window.MATCHDAY_TEAMS = {
             "type": "AVERTISSEMENT",
             "equipe": "BAUVIN FC",
             "acteur": "Valentin C.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 33,
+            "type": "AVERTISSEMENT",
+            "equipe": "BAUVIN FC",
+            "acteur": "Valentin C.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "BAUVIN FC",
+            "acteur": "Willy L.",
             "detail": "Carton jaune"
           },
           {
@@ -12227,8 +14745,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Valentin L."
               },
               {
+                "numero": 1,
+                "nom": "Valentin L."
+              },
+              {
                 "numero": 2,
                 "nom": "Antoine O."
+              },
+              {
+                "numero": 2,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
               },
               {
                 "numero": 3,
@@ -12239,8 +14769,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Yannis D."
               },
               {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
                 "numero": 5,
                 "nom": "Nabil I."
+              },
+              {
+                "numero": 5,
+                "nom": "Nabil I."
+              },
+              {
+                "numero": 6,
+                "nom": "Lenny M."
               },
               {
                 "numero": 6,
@@ -12251,6 +14793,14 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Ismaila C."
               },
               {
+                "numero": 7,
+                "nom": "Ismaila C."
+              },
+              {
+                "numero": 8,
+                "nom": "Corentin L."
+              },
+              {
                 "numero": 8,
                 "nom": "Corentin L."
               },
@@ -12259,8 +14809,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Mouhamadou S."
               },
               {
+                "numero": 9,
+                "nom": "Mouhamadou S."
+              },
+              {
                 "numero": 10,
                 "nom": "Benjamin D."
+              },
+              {
+                "numero": 10,
+                "nom": "Benjamin D."
+              },
+              {
+                "numero": 11,
+                "nom": "Evan D."
               },
               {
                 "numero": 11,
@@ -12273,6 +14835,14 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Luther M."
               },
               {
+                "numero": 12,
+                "nom": "Luther M."
+              },
+              {
+                "numero": 13,
+                "nom": "Tom D."
+              },
+              {
                 "numero": 13,
                 "nom": "Tom D."
               },
@@ -12281,8 +14851,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Kylian D."
               },
               {
+                "numero": 14,
+                "nom": "Kylian D."
+              },
+              {
                 "numero": 15,
                 "nom": "Axel R."
+              },
+              {
+                "numero": 15,
+                "nom": "Axel R."
+              },
+              {
+                "numero": 16,
+                "nom": "Hugo L."
               },
               {
                 "numero": 16,
@@ -12297,8 +14879,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Valentin L."
               },
               {
+                "numero": 1,
+                "nom": "Valentin L."
+              },
+              {
                 "numero": 2,
                 "nom": "Antoine O."
+              },
+              {
+                "numero": 2,
+                "nom": "Antoine O."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas P."
               },
               {
                 "numero": 3,
@@ -12309,8 +14903,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Yannis D."
               },
               {
+                "numero": 4,
+                "nom": "Yannis D."
+              },
+              {
                 "numero": 5,
                 "nom": "Nabil I."
+              },
+              {
+                "numero": 5,
+                "nom": "Nabil I."
+              },
+              {
+                "numero": 6,
+                "nom": "Lenny M."
               },
               {
                 "numero": 6,
@@ -12321,6 +14927,14 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Ismaila C."
               },
               {
+                "numero": 7,
+                "nom": "Ismaila C."
+              },
+              {
+                "numero": 8,
+                "nom": "Corentin L."
+              },
+              {
                 "numero": 8,
                 "nom": "Corentin L."
               },
@@ -12329,8 +14943,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Mouhamadou S."
               },
               {
+                "numero": 9,
+                "nom": "Mouhamadou S."
+              },
+              {
                 "numero": 10,
                 "nom": "Benjamin D."
+              },
+              {
+                "numero": 10,
+                "nom": "Benjamin D."
+              },
+              {
+                "numero": 11,
+                "nom": "Evan D."
               },
               {
                 "numero": 11,
@@ -12343,6 +14969,14 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Luther M."
               },
               {
+                "numero": 12,
+                "nom": "Luther M."
+              },
+              {
+                "numero": 13,
+                "nom": "Tom D."
+              },
+              {
                 "numero": 13,
                 "nom": "Tom D."
               },
@@ -12351,8 +14985,20 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Kylian D."
               },
               {
+                "numero": 14,
+                "nom": "Kylian D."
+              },
+              {
                 "numero": 15,
                 "nom": "Axel R."
+              },
+              {
+                "numero": 15,
+                "nom": "Axel R."
+              },
+              {
+                "numero": 16,
+                "nom": "Hugo L."
               },
               {
                 "numero": 16,
@@ -12365,13 +15011,43 @@ window.MATCHDAY_TEAMS = {
             "titulaires": []
           }
         }
+      },
+      {
+        "id": "seclin_56619426",
+        "competition": "R2 • Journée",
+        "comp_type": "CHAMPIONNAT",
+        "date": "26/08/2026",
+        "date_heure": "2026-08-26 19:30",
+        "domicile": "ST ANDRE US",
+        "exterieur": "SECLIN FC",
+        "score_domicile": 5,
+        "score_exterieur": 2,
+        "score_display": "5 - 2",
+        "is_domicile": false,
+        "resultat": "D",
+        "resultat_label": "Défaite",
+        "evenements": [],
+        "compositions": {
+          "club": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "seclin": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "ST ANDRE US",
+            "titulaires": []
+          }
+        }
       }
     ],
     "kpis_saison": {
-      "buts_marques": 22,
-      "buts_encaisses": 6,
-      "clean_sheets": 3,
-      "minutes_cumulees": 6300,
+      "buts_marques": 26,
+      "buts_encaisses": 13,
+      "clean_sheets": 4,
+      "minutes_cumulees": 9000,
       "cartons_jaunes": 11,
       "cartons_rouges": 0
     },
@@ -12392,14 +15068,14 @@ window.MATCHDAY_TEAMS = {
       {
         "rang": 1,
         "nom": "Antoine O.",
-        "matchs": 5,
-        "titularisations": 5,
-        "minutes": 410,
+        "matchs": 7,
+        "titularisations": 9,
+        "minutes": 688,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 90.0,
+        "esg_score": 96.0,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -12414,14 +15090,14 @@ window.MATCHDAY_TEAMS = {
       {
         "rang": 2,
         "nom": "Corentin L.",
-        "matchs": 5,
-        "titularisations": 5,
-        "minutes": 410,
+        "matchs": 7,
+        "titularisations": 9,
+        "minutes": 688,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 90.0,
+        "esg_score": 96.0,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -12435,15 +15111,15 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 3,
-        "nom": "Ismaila C.",
-        "matchs": 5,
-        "titularisations": 5,
-        "minutes": 410,
+        "nom": "Lenny M.",
+        "matchs": 7,
+        "titularisations": 9,
+        "minutes": 688,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 90.0,
+        "esg_score": 96.0,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -12457,15 +15133,15 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 4,
-        "nom": "Lenny M.",
-        "matchs": 5,
-        "titularisations": 5,
-        "minutes": 410,
+        "nom": "Nicolas P.",
+        "matchs": 7,
+        "titularisations": 9,
+        "minutes": 688,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 90.0,
+        "esg_score": 96.0,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -12479,15 +15155,15 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 5,
-        "nom": "Mouhamadou S.",
-        "matchs": 5,
-        "titularisations": 5,
-        "minutes": 410,
+        "nom": "Yannis D.",
+        "matchs": 7,
+        "titularisations": 9,
+        "minutes": 688,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 90.0,
+        "esg_score": 96.0,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -12501,15 +15177,15 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 6,
-        "nom": "Nicolas P.",
-        "matchs": 5,
-        "titularisations": 5,
-        "minutes": 410,
+        "nom": "Mouhamadou S.",
+        "matchs": 6,
+        "titularisations": 8,
+        "minutes": 606,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 90.0,
+        "esg_score": 96.0,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -12523,15 +15199,15 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 7,
-        "nom": "Yannis D.",
+        "nom": "Ismaila C.",
         "matchs": 5,
-        "titularisations": 5,
-        "minutes": 410,
+        "titularisations": 7,
+        "minutes": 524,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 90.0,
+        "esg_score": 96.0,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -12545,12 +15221,122 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 8,
+        "nom": "Valentin L.",
+        "matchs": 5,
+        "titularisations": 7,
+        "minutes": 524,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 96.0,
+        "badge": "⭐ Cadre Titulaire",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 9,
+        "nom": "Evan D.",
+        "matchs": 6,
+        "titularisations": 6,
+        "minutes": 492,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 96.0,
+        "badge": "⭐ Cadre Titulaire",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 10,
+        "nom": "Nabil I.",
+        "matchs": 6,
+        "titularisations": 6,
+        "minutes": 492,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 96.0,
+        "badge": "⭐ Cadre Titulaire",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 11,
         "nom": "Tom D.",
+        "matchs": 7,
+        "titularisations": 5,
+        "minutes": 460,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 94.0,
+        "badge": "⭐ Cadre Titulaire",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 12,
+        "nom": "Luther M.",
+        "matchs": 6,
+        "titularisations": 4,
+        "minutes": 378,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 87.0,
+        "badge": "⭐ Cadre Titulaire",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 13,
+        "nom": "Paul R.",
         "matchs": 5,
         "titularisations": 4,
         "minutes": 353,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 85.0,
@@ -12566,123 +15352,541 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "rang": 9,
-        "nom": "Nabil I.",
-        "matchs": 4,
-        "titularisations": 4,
-        "minutes": 328,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 83.0,
-        "badge": "⭐ Cadre Titulaire",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 10,
-        "nom": "Valentin L.",
-        "matchs": 4,
-        "titularisations": 4,
-        "minutes": 328,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 83.0,
-        "badge": "⭐ Cadre Titulaire",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 11,
-        "nom": "Evan D.",
-        "matchs": 4,
-        "titularisations": 3,
-        "minutes": 271,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 78.0,
-        "badge": "⭐ Cadre Titulaire",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 12,
-        "nom": "Paul R.",
-        "matchs": 4,
-        "titularisations": 2,
-        "minutes": 214,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 73.0,
-        "badge": "⚡ Rotation Effectif",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 13,
-        "nom": "Luther M.",
-        "matchs": 4,
-        "titularisations": 1,
-        "minutes": 157,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 68.0,
-        "badge": "⚡ Rotation Effectif",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
         "rang": 14,
         "nom": "Benjamin D.",
+        "matchs": 5,
+        "titularisations": 3,
+        "minutes": 296,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 80.0,
+        "badge": "⭐ Cadre Titulaire",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 15,
+        "nom": "Hugo L.",
+        "matchs": 2,
+        "titularisations": 2,
+        "minutes": 164,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 69.0,
+        "badge": "⚡ Rotation Effectif",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 16,
+        "nom": "Antoine O.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 17,
+        "nom": "Benjamin D.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 18,
+        "nom": "Billal B.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 19,
+        "nom": "Corentin L.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 20,
+        "nom": "Evan D.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 21,
+        "nom": "Fares O.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 22,
+        "nom": "Ismaila C.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 23,
+        "nom": "Lenny M.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 24,
+        "nom": "Lorenzo P.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 25,
+        "nom": "Maxence B.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 26,
+        "nom": "Mehdi K.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 27,
+        "nom": "Mohamed A.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 28,
+        "nom": "Moise L.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 29,
+        "nom": "Mouhamadou S.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 30,
+        "nom": "Nabil I.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 31,
+        "nom": "Nicolas P.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 32,
+        "nom": "Nicolas V.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 33,
+        "nom": "Othman B.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 34,
+        "nom": "Valentin L.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 35,
+        "nom": "Yannis D.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 36,
+        "nom": "Younes B.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 37,
+        "nom": "Zayd D.",
+        "matchs": 1,
+        "titularisations": 2,
+        "minutes": 139,
+        "buts": 0,
+        "clean_sheets": 4,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 67.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 38,
+        "nom": "Thibaut D.",
         "matchs": 3,
         "titularisations": 1,
         "minutes": 132,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 66.0,
@@ -12698,541 +15902,13 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "rang": 15,
+        "rang": 39,
         "nom": "Ali H.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 16,
-        "nom": "Anthony B.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 17,
-        "nom": "Anthony R.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 18,
-        "nom": "Antoine O.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 19,
-        "nom": "Athman H.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 20,
-        "nom": "Benjamin D.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 21,
-        "nom": "Billal B.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 22,
-        "nom": "Carmelo L.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 23,
-        "nom": "Corentin L.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 24,
-        "nom": "Dylan B.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 25,
-        "nom": "El M.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 26,
-        "nom": "Evan D.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 27,
-        "nom": "Fares O.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 28,
-        "nom": "Hakim H.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 29,
-        "nom": "Hugo B.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 30,
-        "nom": "Hugo L.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 31,
-        "nom": "Ismaila C.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 32,
-        "nom": "Lenny M.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 33,
-        "nom": "Lorenzo P.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 34,
-        "nom": "Mahdi G.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 35,
-        "nom": "Matthys B.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 36,
-        "nom": "Maxence B.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 37,
-        "nom": "Mehdi K.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 38,
-        "nom": "Mohamed A.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 62.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
-        "rang": 39,
-        "nom": "Moise L.",
-        "matchs": 1,
-        "titularisations": 1,
-        "minutes": 82,
-        "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13249,12 +15925,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 40,
-        "nom": "Mouhamadou S.",
+        "nom": "Anthony B.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13271,12 +15947,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 41,
-        "nom": "Mounir D.",
+        "nom": "Anthony R.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13293,12 +15969,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 42,
-        "nom": "Mounir S.",
+        "nom": "Athman H.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13315,12 +15991,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 43,
-        "nom": "Nabil I.",
+        "nom": "Carmelo L.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13337,12 +16013,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 44,
-        "nom": "Nicolas P.",
+        "nom": "Dylan B.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13359,12 +16035,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 45,
-        "nom": "Nicolas V.",
+        "nom": "El M.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13381,12 +16057,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 46,
-        "nom": "Omar Z.",
+        "nom": "Hakim H.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13403,12 +16079,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 47,
-        "nom": "Othman B.",
+        "nom": "Hugo B.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13425,12 +16101,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 48,
-        "nom": "Raouf G.",
+        "nom": "Hugo C.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13447,12 +16123,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 49,
-        "nom": "Rayan L.",
+        "nom": "Mahdi G.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13469,12 +16145,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 50,
-        "nom": "Semi A.",
+        "nom": "Matthys B.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13491,12 +16167,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 51,
-        "nom": "Sofiane S.",
+        "nom": "Mounir D.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13513,12 +16189,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 52,
-        "nom": "Tom G.",
+        "nom": "Mounir S.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13535,12 +16211,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 53,
-        "nom": "Tom L.",
+        "nom": "Omar Z.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13557,12 +16233,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 54,
-        "nom": "Valentin L.",
+        "nom": "Raouf G.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13579,12 +16255,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 55,
-        "nom": "Yanis A.",
+        "nom": "Rayan L.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13601,12 +16277,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 56,
-        "nom": "Yannis D.",
+        "nom": "Semi A.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13623,12 +16299,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 57,
-        "nom": "Yoan B.",
+        "nom": "Sofiane S.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13645,12 +16321,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 58,
-        "nom": "Younes B.",
+        "nom": "Tom G.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13667,12 +16343,12 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 59,
-        "nom": "Zayd D.",
+        "nom": "Tom L.",
         "matchs": 1,
         "titularisations": 1,
         "minutes": 82,
         "buts": 0,
-        "clean_sheets": 3,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 62.0,
@@ -13689,16 +16365,16 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 60,
-        "nom": "Kylian D.",
-        "matchs": 3,
-        "titularisations": 0,
-        "minutes": 75,
+        "nom": "Yanis A.",
+        "matchs": 1,
+        "titularisations": 1,
+        "minutes": 82,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 61.0,
-        "badge": "⚡ Rotation Effectif",
+        "esg_score": 62.0,
+        "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
           "volume_max": 35,
@@ -13711,16 +16387,16 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 61,
-        "nom": "Thibaut D.",
-        "matchs": 2,
-        "titularisations": 0,
-        "minutes": 50,
+        "nom": "Yoan B.",
+        "matchs": 1,
+        "titularisations": 1,
+        "minutes": 82,
         "buts": 0,
-        "clean_sheets": 0,
+        "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 59.0,
-        "badge": "⚡ Rotation Effectif",
+        "esg_score": 62.0,
+        "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
           "volume_max": 35,
@@ -13733,6 +16409,28 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 62,
+        "nom": "Kylian D.",
+        "matchs": 4,
+        "titularisations": 0,
+        "minutes": 100,
+        "buts": 0,
+        "clean_sheets": 0,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 63.0,
+        "badge": "⚡ Rotation Effectif",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 63,
         "nom": "Ahmed B.",
         "matchs": 1,
         "titularisations": 0,
@@ -13754,7 +16452,7 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "rang": 63,
+        "rang": 64,
         "nom": "Amadou B.",
         "matchs": 1,
         "titularisations": 0,
@@ -13776,30 +16474,8 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "rang": 64,
-        "nom": "Axel R.",
-        "matchs": 1,
-        "titularisations": 0,
-        "minutes": 25,
-        "buts": 0,
-        "clean_sheets": 0,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 57.0,
-        "badge": "🔄 Remplaçant",
-        "sous_scores": {
-          "volume": 28,
-          "volume_max": 35,
-          "defense": 24,
-          "defense_max": 30,
-          "attaque": 27,
-          "attaque_max": 35,
-          "malus_discipline": 0
-        }
-      },
-      {
         "rang": 65,
-        "nom": "Eymen B.",
+        "nom": "Amadou S.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -13821,7 +16497,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 66,
-        "nom": "Hugo L.",
+        "nom": "Axel R.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -13843,7 +16519,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 67,
-        "nom": "Julien A.",
+        "nom": "Eymen B.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -13865,7 +16541,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 68,
-        "nom": "Kylian D.",
+        "nom": "Hugo L.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -13887,7 +16563,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 69,
-        "nom": "Lahoucine E.",
+        "nom": "Julien A.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -13909,7 +16585,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 70,
-        "nom": "Loic T.",
+        "nom": "Kylian D.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -13931,7 +16607,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 71,
-        "nom": "Luther M.",
+        "nom": "Lahoucine E.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -13953,7 +16629,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 72,
-        "nom": "Mohamed E.",
+        "nom": "Loic T.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -13975,7 +16651,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 73,
-        "nom": "Salman P.",
+        "nom": "Luther M.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -13997,7 +16673,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 74,
-        "nom": "Taoufik Z.",
+        "nom": "Mohamed E.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -14019,7 +16695,7 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 75,
-        "nom": "Tom D.",
+        "nom": "Salman P.",
         "matchs": 1,
         "titularisations": 0,
         "minutes": 25,
@@ -14041,6 +16717,50 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "rang": 76,
+        "nom": "Taoufik Z.",
+        "matchs": 1,
+        "titularisations": 0,
+        "minutes": 25,
+        "buts": 0,
+        "clean_sheets": 0,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 57.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 77,
+        "nom": "Tom D.",
+        "matchs": 1,
+        "titularisations": 0,
+        "minutes": 25,
+        "buts": 0,
+        "clean_sheets": 0,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 57.0,
+        "badge": "🔄 Remplaçant",
+        "sous_scores": {
+          "volume": 28,
+          "volume_max": 35,
+          "defense": 24,
+          "defense_max": 30,
+          "attaque": 27,
+          "attaque_max": 35,
+          "malus_discipline": 0
+        }
+      },
+      {
+        "rang": 78,
         "nom": "Youssef A.",
         "matchs": 1,
         "titularisations": 0,
@@ -14066,15 +16786,15 @@ window.MATCHDAY_TEAMS = {
       "ppm_championnat": 2.0,
       "probabilite_montee_pct": 78.0,
       "probabilite_maintien_pct": 99.0,
-      "taux_invincibilite": 100.0,
+      "taux_invincibilite": 90.0,
       "bilan_global": {
-        "matchs": 7,
+        "matchs": 10,
         "victoires": 3,
-        "nuls": 4,
-        "defaites": 0,
-        "buts_pour": 22,
-        "buts_contre": 6,
-        "difference": 16
+        "nuls": 6,
+        "defaites": 1,
+        "buts_pour": 26,
+        "buts_contre": 13,
+        "difference": 13
       },
       "bilan_championnat": {
         "matchs": 4,
@@ -14087,8 +16807,8 @@ window.MATCHDAY_TEAMS = {
         "difference": 13,
         "ppm": 2.0
       },
-      "ratio_clean_sheet_pct": 42.9,
-      "moyenne_buts_encaisses": 0.86,
+      "ratio_clean_sheet_pct": 40.0,
+      "moyenne_buts_encaisses": 1.3,
       "projection_saison": {
         "points_prevus": 44.0,
         "rang_final_estime": "Top 2 Régional 2 (Course à la montée en R1)"
@@ -14128,249 +16848,369 @@ window.MATCHDAY_TEAMS = {
       "analyse_temporelle": {
         "buts_2nde_mi_temps_pct": 57.0,
         "buts_money_time_pct": 28.0,
-        "clean_premiere_demi_heure": "3 clean sheets",
+        "clean_premiere_demi_heure": "4 clean sheets",
         "point_vigilance": "Excellente efficacité offensive (12-0 vs Montigny)"
       }
     },
     "classement": [
       {
-        "rang": 1,
-        "equipe": "CROIX FIC 2",
-        "nom": "CROIX FIC 2",
-        "points": 10,
-        "joues": 4,
-        "gagnes": 3,
-        "nuls": 1,
+        "rang": -45,
+        "equipe": "12",
+        "nom": "12",
+        "points": "MONTIGNY GOHELLE FC",
+        "joues": 0,
+        "gagnes": 5,
+        "nuls": 0,
         "perdus": 0,
-        "buts_pour": 7,
-        "buts_contre": 4,
-        "diff": 3,
-        "difference": 3,
+        "buts_pour": 5,
+        "buts_contre": 2,
+        "diff": 47,
+        "difference": 47,
         "forme": [
           "V",
           "V",
           "V",
-          "N"
+          "V"
+        ]
+      },
+      {
+        "rang": -3,
+        "equipe": "10",
+        "nom": "10",
+        "points": "LESQUIN US",
+        "joues": 3,
+        "gagnes": 5,
+        "nuls": 0,
+        "perdus": 3,
+        "buts_pour": 2,
+        "buts_contre": 8,
+        "diff": 11,
+        "difference": 11,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": -3,
+        "equipe": "11",
+        "nom": "11",
+        "points": "COURCELLES US",
+        "joues": 2,
+        "gagnes": 5,
+        "nuls": 0,
+        "perdus": 2,
+        "buts_pour": 3,
+        "buts_contre": 3,
+        "diff": 6,
+        "difference": 6,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
         ]
       },
       {
         "rang": 2,
-        "equipe": "SECLIN FC",
-        "nom": "SECLIN FC",
-        "points": 8,
+        "equipe": "9",
+        "nom": "9",
+        "points": "NOYELLES S/LENS US",
         "joues": 4,
-        "gagnes": 2,
-        "nuls": 2,
-        "perdus": 0,
-        "buts_pour": 16,
-        "buts_contre": 3,
-        "diff": 13,
-        "difference": 13,
+        "gagnes": 5,
+        "nuls": 1,
+        "perdus": 1,
+        "buts_pour": 3,
+        "buts_contre": 12,
+        "diff": 10,
+        "difference": 10,
         "forme": [
           "V",
           "V",
-          "N",
-          "N"
+          "V",
+          "V"
         ]
       },
       {
         "rang": 3,
-        "equipe": "NOEUX LES MINES US",
-        "nom": "NOEUX LES MINES US",
-        "points": 8,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 2,
-        "perdus": 0,
-        "buts_pour": 6,
-        "buts_contre": 2,
+        "equipe": "1",
+        "nom": "1",
+        "points": "CROIX FIC 2",
+        "joues": 11,
+        "gagnes": 5,
+        "nuls": 3,
+        "perdus": 2,
+        "buts_pour": 0,
+        "buts_contre": 7,
         "diff": 4,
         "difference": 4,
         "forme": [
           "V",
           "V",
-          "N",
-          "N"
+          "V",
+          "V"
         ]
       },
       {
-        "rang": 4,
-        "equipe": "ESCAUDAIN USF",
-        "nom": "ESCAUDAIN USF",
-        "points": 8,
-        "joues": 4,
-        "gagnes": 2,
+        "rang": 3,
+        "equipe": "3",
+        "nom": "3",
+        "points": "ESCAUDAIN USF",
+        "joues": 9,
+        "gagnes": 5,
         "nuls": 2,
-        "perdus": 0,
-        "buts_pour": 10,
-        "buts_contre": 7,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "N"
-        ]
-      },
-      {
-        "rang": 5,
-        "equipe": "RAISMES FC",
-        "nom": "RAISMES FC",
-        "points": 7,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 1,
-        "perdus": 1,
-        "buts_pour": 8,
-        "buts_contre": 5,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "D"
-        ]
-      },
-      {
-        "rang": 6,
-        "equipe": "FOURMIES US",
-        "nom": "FOURMIES US",
-        "points": 7,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 1,
-        "perdus": 1,
-        "buts_pour": 6,
-        "buts_contre": 7,
-        "diff": -1,
-        "difference": -1,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "D"
-        ]
-      },
-      {
-        "rang": 7,
-        "equipe": "BIACHE ST VAAST US",
-        "nom": "BIACHE ST VAAST US",
-        "points": 6,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 0,
-        "perdus": 2,
-        "buts_pour": 13,
-        "buts_contre": 5,
+        "perdus": 3,
+        "buts_pour": 0,
+        "buts_contre": 11,
         "diff": 8,
         "difference": 8,
         "forme": [
           "V",
           "V",
-          "D",
-          "D"
+          "V",
+          "V"
         ]
       },
       {
-        "rang": 8,
-        "equipe": "MERVILLE USM",
-        "nom": "MERVILLE USM",
-        "points": 6,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 0,
+        "rang": 3,
+        "equipe": "7",
+        "nom": "7",
+        "points": "RAISMES FC",
+        "joues": 8,
+        "gagnes": 5,
+        "nuls": 2,
         "perdus": 2,
-        "buts_pour": 13,
-        "buts_contre": 6,
+        "buts_pour": 1,
+        "buts_contre": 9,
+        "diff": 6,
+        "difference": 6,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": 3,
+        "equipe": "2",
+        "nom": "2",
+        "points": "RAISMES FC",
+        "joues": 8,
+        "gagnes": 5,
+        "nuls": 2,
+        "perdus": 2,
+        "buts_pour": 1,
+        "buts_contre": 9,
+        "diff": 6,
+        "difference": 6,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": 4,
+        "equipe": "5",
+        "nom": "5",
+        "points": "NOEUX LES MINES US",
+        "joues": 9,
+        "gagnes": 5,
+        "nuls": 2,
+        "perdus": 3,
+        "buts_pour": 0,
+        "buts_contre": 7,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": 4,
+        "equipe": "1",
+        "nom": "1",
+        "points": "NOEUX LES MINES US",
+        "joues": 9,
+        "gagnes": 5,
+        "nuls": 2,
+        "perdus": 3,
+        "buts_pour": 0,
+        "buts_contre": 7,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": 7,
+        "equipe": "8",
+        "nom": "8",
+        "points": "BIACHE ST VAAST US",
+        "joues": 6,
+        "gagnes": 5,
+        "nuls": 2,
+        "perdus": 0,
+        "buts_pour": 3,
+        "buts_contre": 14,
         "diff": 7,
         "difference": 7,
         "forme": [
           "V",
           "V",
-          "D",
-          "D"
+          "V",
+          "V"
         ]
       },
       {
-        "rang": 9,
-        "equipe": "NOYELLES S/LENS US",
-        "nom": "NOYELLES S/LENS US",
-        "points": 3,
-        "joues": 4,
-        "gagnes": 1,
-        "nuls": 0,
-        "perdus": 3,
-        "buts_pour": 11,
-        "buts_contre": 9,
-        "diff": 2,
-        "difference": 2,
+        "rang": 7,
+        "equipe": "1",
+        "nom": "1",
+        "points": "BIACHE ST VAAST US",
+        "joues": 6,
+        "gagnes": 5,
+        "nuls": 2,
+        "perdus": 0,
+        "buts_pour": 3,
+        "buts_contre": 14,
+        "diff": 7,
+        "difference": 7,
         "forme": [
           "V",
-          "D",
-          "D",
-          "D"
+          "V",
+          "V",
+          "V"
         ]
       },
       {
-        "rang": 10,
-        "equipe": "LESQUIN US",
-        "nom": "LESQUIN US",
-        "points": 2,
-        "joues": 4,
-        "gagnes": 0,
-        "nuls": 2,
-        "perdus": 2,
-        "buts_pour": 6,
-        "buts_contre": 9,
-        "diff": -3,
-        "difference": -3,
-        "forme": [
-          "N",
-          "N",
-          "D",
-          "D"
-        ]
-      },
-      {
-        "rang": 11,
-        "equipe": "COURCELLES US",
-        "nom": "COURCELLES US",
-        "points": 1,
-        "joues": 4,
-        "gagnes": 0,
-        "nuls": 1,
-        "perdus": 3,
+        "rang": 8,
+        "equipe": "2",
+        "nom": "2",
+        "points": "FOURMIES US",
+        "joues": 10,
+        "gagnes": 5,
+        "nuls": 3,
+        "perdus": 1,
         "buts_pour": 1,
-        "buts_contre": 4,
-        "diff": -3,
-        "difference": -3,
+        "buts_contre": 15,
+        "diff": 7,
+        "difference": 7,
         "forme": [
-          "N",
-          "D",
-          "D",
-          "D"
+          "V",
+          "V",
+          "V",
+          "V"
         ]
       },
       {
-        "rang": 12,
-        "equipe": "MONTIGNY GOHELLE FC",
-        "nom": "MONTIGNY GOHELLE FC",
-        "points": 0,
-        "joues": 4,
-        "gagnes": 0,
-        "nuls": 0,
-        "perdus": 4,
-        "buts_pour": 2,
-        "buts_contre": 38,
-        "diff": -36,
-        "difference": -36,
+        "rang": 8,
+        "equipe": "4",
+        "nom": "4",
+        "points": "FOURMIES US",
+        "joues": 10,
+        "gagnes": 5,
+        "nuls": 3,
+        "perdus": 1,
+        "buts_pour": 1,
+        "buts_contre": 15,
+        "diff": 7,
+        "difference": 7,
         "forme": [
-          "D",
-          "D",
-          "D",
-          "D"
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": 8,
+        "equipe": "6",
+        "nom": "6",
+        "points": "MERVILLE USM",
+        "joues": 9,
+        "gagnes": 5,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 2,
+        "buts_contre": 15,
+        "diff": 7,
+        "difference": 7,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": 8,
+        "equipe": "2",
+        "nom": "2",
+        "points": "MERVILLE USM",
+        "joues": 9,
+        "gagnes": 5,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 2,
+        "buts_contre": 15,
+        "diff": 7,
+        "difference": 7,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": 13,
+        "equipe": "4",
+        "nom": "4",
+        "points": "SECLIN FC",
+        "joues": 9,
+        "gagnes": 5,
+        "nuls": 2,
+        "perdus": 3,
+        "buts_pour": 0,
+        "buts_contre": 16,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
+      },
+      {
+        "rang": 13,
+        "equipe": "2",
+        "nom": "2",
+        "points": "SECLIN FC",
+        "joues": 9,
+        "gagnes": 5,
+        "nuls": 2,
+        "perdus": 3,
+        "buts_pour": 0,
+        "buts_contre": 16,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V"
         ]
       }
     ]
@@ -14384,121 +17224,128 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "30/10/2026 à 13:56"
+      "derniere_maj": "02/11/2026 à 11:57"
     },
     "dernier_match": {
-      "id": "lesquin_80499526",
-      "competition": "Régional 2 (Poule B) • Senior 6ème Tour (Finale Régionale)",
-      "domicile": "CHOISY AU BAC US",
+      "id": "lesquin_56215867",
+      "competition": "Régional 2 (Poule B) • Senior Journée 5",
+      "domicile": "COURCELLES US",
       "exterieur": "LESQUIN US",
       "score_domicile": 2,
-      "score_exterieur": 0,
-      "score_display": "2 - 0",
-      "date_heure": "2026-10-25 15:00",
+      "score_exterieur": 2,
+      "score_display": "2 - 2",
+      "date_heure": "2026-11-01 14:30",
       "statut": "TERMINE"
     },
     "evenements_dernier_match": [
       {
-        "minute": 8,
-        "type": "BUT",
-        "equipe": "CHOISY AU BAC US",
-        "acteur": "Nathan B.",
-        "detail": "But FFF"
-      },
-      {
-        "minute": 29,
-        "type": "AVERTISSEMENT",
-        "equipe": "CHOISY AU BAC US",
-        "acteur": "Kylian N.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 50,
-        "type": "AVERTISSEMENT",
-        "equipe": "LESQUIN US",
-        "acteur": "Oscar R.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 60,
-        "type": "AVERTISSEMENT",
-        "equipe": "LESQUIN US",
-        "acteur": "Alex M.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 69,
-        "type": "AVERTISSEMENT",
-        "equipe": "CHOISY AU BAC US",
-        "acteur": "Nathan B.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 82,
-        "type": "AVERTISSEMENT",
-        "equipe": "CHOISY AU BAC US",
-        "acteur": "Dimitri D.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 90,
-        "type": "BUT",
-        "equipe": "CHOISY AU BAC US",
-        "acteur": "Samuel F.",
-        "detail": "But FFF"
-      },
-      {
-        "minute": 90,
-        "type": "AVERTISSEMENT",
-        "equipe": "CHOISY AU BAC US",
-        "acteur": "Samuel F.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 90,
+        "minute": 25,
         "type": "AVERTISSEMENT",
         "equipe": "LESQUIN US",
         "acteur": "Antonin L.",
         "detail": "Carton jaune"
       },
       {
-        "minute": 90,
+        "minute": 28,
+        "type": "BUT",
+        "equipe": "LESQUIN US",
+        "acteur": "Antoine M.",
+        "detail": "But FFF"
+      },
+      {
+        "minute": 31,
+        "type": "AVERTISSEMENT",
+        "equipe": "COURCELLES US",
+        "acteur": "Chemssedine D.",
+        "detail": "Carton jaune"
+      },
+      {
+        "minute": 58,
         "type": "AVERTISSEMENT",
         "equipe": "LESQUIN US",
-        "acteur": "Alex M.",
+        "acteur": "Mahery N.",
+        "detail": "Carton jaune"
+      },
+      {
+        "minute": 61,
+        "type": "AVERTISSEMENT",
+        "equipe": "COURCELLES US",
+        "acteur": "Brahim T.",
+        "detail": "Carton jaune"
+      },
+      {
+        "minute": 62,
+        "type": "BUT",
+        "equipe": "COURCELLES US",
+        "acteur": "Ismael B.",
+        "detail": "But FFF"
+      },
+      {
+        "minute": 84,
+        "type": "AVERTISSEMENT",
+        "equipe": "COURCELLES US",
+        "acteur": "Mohamed E.",
+        "detail": "Carton jaune"
+      },
+      {
+        "minute": 86,
+        "type": "AVERTISSEMENT",
+        "equipe": "LESQUIN US",
+        "acteur": "Sergio J.",
+        "detail": "Carton jaune"
+      },
+      {
+        "minute": 88,
+        "type": "BUT",
+        "equipe": "LESQUIN US",
+        "acteur": "Pierre C.",
+        "detail": "But FFF"
+      },
+      {
+        "minute": 90,
+        "type": "BUT",
+        "equipe": "COURCELLES US",
+        "acteur": "Lorenzo P.",
+        "detail": "But FFF"
+      },
+      {
+        "minute": 90,
+        "type": "AVERTISSEMENT",
+        "equipe": "COURCELLES US",
+        "acteur": "Lorenzo P.",
         "detail": "Carton jaune"
       }
     ],
     "prochain_match": {
-      "competition": "Régional 2 (Poule B) • Journée 5",
-      "date_heure": "01/11/2026 à 14:30",
-      "lieu": "Stade de Courcelles (Courcelles-lès-Lens)",
-      "domicile": "COURCELLES US",
-      "exterieur": "US LESQUIN",
+      "competition": "Régional 2 (Poule B) • Journée 6",
+      "date_heure": "08/11/2026 à 14:30",
+      "lieu": "Stade Jean-Pierre Papin (Lesquin)",
+      "domicile": "US LESQUIN",
+      "exterieur": "ESCAUDAIN USF",
       "comparatif": {
         "titre": "Comparatif de Performance (R2 Poule B)",
-        "adversaire_nom": "Courcelles US",
-        "adversaire_rang": "11e",
-        "adversaire_pts": 1,
-        "adversaire_buts_pour": 1,
-        "adversaire_buts_contre": 4,
+        "adversaire_nom": "Escaudain USF",
+        "adversaire_rang": "3e",
+        "adversaire_pts": 9,
+        "adversaire_buts_pour": 11,
+        "adversaire_buts_contre": 8,
         "club_nom": "US Lesquin",
         "club_rang": "10e",
-        "club_pts": 2,
-        "club_buts_pour": 6,
-        "club_buts_contre": 9
+        "club_pts": 3,
+        "club_buts_pour": 8,
+        "club_buts_contre": 11
       },
       "alertes": [
-        "Courcelles US : Concurrent direct en bas de tableau R2 (11e avec 1 pt)",
-        "Choc capital pour s'éloigner de la zone de relégation"
+        "Lesquin prend un point précieux à Courcelles (2-2) et accueille le 3e Escaudain (9 pts).",
+        "Objectif décrocher la première victoire de la saison à domicile."
       ]
     },
     "meteo_prochain_match": {
       "lieu": "Courcelles-lès-Lens",
       "surface": "Pelouse naturelle",
-      "temperature": "8.1 °C",
-      "vent": "Faible (14.8 km/h)",
-      "pluie": "Sec (0 %)",
+      "temperature": "9.1 °C",
+      "vent": "Faible (8.3 km/h)",
+      "pluie": "Sec (9 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -14510,6 +17357,275 @@ window.MATCHDAY_TEAMS = {
       "consigne_coach": "Match capital chez la lanterne rouge Courcelles US. Maîtriser le tempo et éviter les fautes d'énervement."
     },
     "historique_matchs": [
+      {
+        "id": "lesquin_56215867",
+        "competition": "R2 • Senior Journée 5",
+        "comp_type": "CHAMPIONNAT",
+        "date": "01/11/2026",
+        "date_heure": "2026-11-01 14:30",
+        "domicile": "COURCELLES US",
+        "exterieur": "LESQUIN US",
+        "score_domicile": 2,
+        "score_exterieur": 2,
+        "score_display": "2 - 2",
+        "is_domicile": false,
+        "resultat": "N",
+        "resultat_label": "Match Nul",
+        "evenements": [
+          {
+            "minute": 25,
+            "type": "AVERTISSEMENT",
+            "equipe": "LESQUIN US",
+            "acteur": "Antonin L.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 28,
+            "type": "BUT",
+            "equipe": "LESQUIN US",
+            "acteur": "Antoine M.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 31,
+            "type": "AVERTISSEMENT",
+            "equipe": "COURCELLES US",
+            "acteur": "Chemssedine D.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 58,
+            "type": "AVERTISSEMENT",
+            "equipe": "LESQUIN US",
+            "acteur": "Mahery N.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 61,
+            "type": "AVERTISSEMENT",
+            "equipe": "COURCELLES US",
+            "acteur": "Brahim T.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 62,
+            "type": "BUT",
+            "equipe": "COURCELLES US",
+            "acteur": "Ismael B.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 84,
+            "type": "AVERTISSEMENT",
+            "equipe": "COURCELLES US",
+            "acteur": "Mohamed E.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 86,
+            "type": "AVERTISSEMENT",
+            "equipe": "LESQUIN US",
+            "acteur": "Sergio J.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 88,
+            "type": "BUT",
+            "equipe": "LESQUIN US",
+            "acteur": "Pierre C.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 90,
+            "type": "BUT",
+            "equipe": "COURCELLES US",
+            "acteur": "Lorenzo P.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "COURCELLES US",
+            "acteur": "Lorenzo P.",
+            "detail": "Carton jaune"
+          }
+        ],
+        "compositions": {
+          "club": {
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Maxence D."
+              },
+              {
+                "numero": 2,
+                "nom": "Raphael D."
+              },
+              {
+                "numero": 3,
+                "nom": "Antonin L."
+              },
+              {
+                "numero": 4,
+                "nom": "Mahery N."
+              },
+              {
+                "numero": 5,
+                "nom": "Corentin G."
+              },
+              {
+                "numero": 6,
+                "nom": "Corentin D."
+              },
+              {
+                "numero": 7,
+                "nom": "Pierre C."
+              },
+              {
+                "numero": 8,
+                "nom": "Abdoul A."
+              },
+              {
+                "numero": 9,
+                "nom": "Antoine M."
+              },
+              {
+                "numero": 10,
+                "nom": "Abd E."
+              },
+              {
+                "numero": 11,
+                "nom": "Oscar R."
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Ilyes A."
+              },
+              {
+                "numero": 13,
+                "nom": "Sergio J."
+              },
+              {
+                "numero": 14,
+                "nom": "Jules L."
+              }
+            ]
+          },
+          "lesquin": {
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Maxence D."
+              },
+              {
+                "numero": 2,
+                "nom": "Raphael D."
+              },
+              {
+                "numero": 3,
+                "nom": "Antonin L."
+              },
+              {
+                "numero": 4,
+                "nom": "Mahery N."
+              },
+              {
+                "numero": 5,
+                "nom": "Corentin G."
+              },
+              {
+                "numero": 6,
+                "nom": "Corentin D."
+              },
+              {
+                "numero": 7,
+                "nom": "Pierre C."
+              },
+              {
+                "numero": 8,
+                "nom": "Abdoul A."
+              },
+              {
+                "numero": 9,
+                "nom": "Antoine M."
+              },
+              {
+                "numero": 10,
+                "nom": "Abd E."
+              },
+              {
+                "numero": 11,
+                "nom": "Oscar R."
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Ilyes A."
+              },
+              {
+                "numero": 13,
+                "nom": "Sergio J."
+              },
+              {
+                "numero": 14,
+                "nom": "Jules L."
+              }
+            ]
+          },
+          "adversaire": {
+            "equipe": "COURCELLES US",
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Maxence B."
+              },
+              {
+                "numero": 2,
+                "nom": "Mohamed A."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas V."
+              },
+              {
+                "numero": 4,
+                "nom": "Fares O."
+              },
+              {
+                "numero": 5,
+                "nom": "Anonyme X."
+              },
+              {
+                "numero": 6,
+                "nom": "Christopher V."
+              },
+              {
+                "numero": 7,
+                "nom": "Othman B."
+              },
+              {
+                "numero": 8,
+                "nom": "Zayd D."
+              },
+              {
+                "numero": 9,
+                "nom": "Chemssedine D."
+              },
+              {
+                "numero": 10,
+                "nom": "Mohamed E."
+              },
+              {
+                "numero": 11,
+                "nom": "Ismael B."
+              }
+            ]
+          }
+        }
+      },
       {
         "id": "lesquin_80499526",
         "competition": "COUPE DE FRANCE CRÉDIT AGRICOLE",
@@ -14789,36 +17905,6 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "id": "lesquin_56306029",
-        "competition": "R2 • Senior Journée 34",
-        "comp_type": "CHAMPIONNAT",
-        "date": "23/10/2026",
-        "date_heure": "2026-10-23 11:00",
-        "domicile": "MARCK EN CALAISIS AS",
-        "exterieur": "LESQUIN US",
-        "score_domicile": 1,
-        "score_exterieur": 3,
-        "score_display": "1 - 3",
-        "is_domicile": false,
-        "resultat": "V",
-        "resultat_label": "Victoire",
-        "evenements": [],
-        "compositions": {
-          "club": {
-            "titulaires": [],
-            "remplacants": []
-          },
-          "lesquin": {
-            "titulaires": [],
-            "remplacants": []
-          },
-          "adversaire": {
-            "equipe": "MARCK EN CALAISIS AS",
-            "titulaires": []
-          }
-        }
-      },
-      {
         "id": "lesquin_56215866",
         "competition": "R2 • Senior Journée 4",
         "comp_type": "CHAMPIONNAT",
@@ -15042,36 +18128,6 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Julien L."
               }
             ]
-          }
-        }
-      },
-      {
-        "id": "lesquin_56422526",
-        "competition": "R2 • Senior Journée 33",
-        "comp_type": "CHAMPIONNAT",
-        "date": "14/10/2026",
-        "date_heure": "2026-10-14 19:30",
-        "domicile": "HAZEBROUCK SC",
-        "exterieur": "LESQUIN US",
-        "score_domicile": 1,
-        "score_exterieur": 1,
-        "score_display": "1 - 1",
-        "is_domicile": false,
-        "resultat": "N",
-        "resultat_label": "Match Nul",
-        "evenements": [],
-        "compositions": {
-          "club": {
-            "titulaires": [],
-            "remplacants": []
-          },
-          "lesquin": {
-            "titulaires": [],
-            "remplacants": []
-          },
-          "adversaire": {
-            "equipe": "HAZEBROUCK SC",
-            "titulaires": []
           }
         }
       },
@@ -16995,23 +20051,83 @@ window.MATCHDAY_TEAMS = {
             ]
           }
         }
+      },
+      {
+        "id": "lesquin_56306029",
+        "competition": "R2 • Senior Journée 34",
+        "comp_type": "CHAMPIONNAT",
+        "date": "23/08/2026",
+        "date_heure": "2026-08-23 11:00",
+        "domicile": "MARCK EN CALAISIS AS",
+        "exterieur": "LESQUIN US",
+        "score_domicile": 1,
+        "score_exterieur": 3,
+        "score_display": "1 - 3",
+        "is_domicile": false,
+        "resultat": "V",
+        "resultat_label": "Victoire",
+        "evenements": [],
+        "compositions": {
+          "club": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "lesquin": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "MARCK EN CALAISIS AS",
+            "titulaires": []
+          }
+        }
+      },
+      {
+        "id": "lesquin_56422526",
+        "competition": "R2 • Senior Journée 33",
+        "comp_type": "CHAMPIONNAT",
+        "date": "14/08/2026",
+        "date_heure": "2026-08-14 19:30",
+        "domicile": "HAZEBROUCK SC",
+        "exterieur": "LESQUIN US",
+        "score_domicile": 1,
+        "score_exterieur": 1,
+        "score_display": "1 - 1",
+        "is_domicile": false,
+        "resultat": "N",
+        "resultat_label": "Match Nul",
+        "evenements": [],
+        "compositions": {
+          "club": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "lesquin": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "HAZEBROUCK SC",
+            "titulaires": []
+          }
+        }
       }
     ],
     "kpis_saison": {
-      "buts_marques": 38,
-      "buts_encaisses": 17,
+      "buts_marques": 40,
+      "buts_encaisses": 19,
       "clean_sheets": 1,
-      "minutes_cumulees": 8845,
-      "cartons_jaunes": 15,
+      "minutes_cumulees": 9800,
+      "cartons_jaunes": 18,
       "cartons_rouges": 0
     },
     "tresorerie_discipline": {
-      "cout_total_estime": 270,
-      "cout_jaunes": 270,
+      "cout_total_estime": 324,
+      "cout_jaunes": 324,
       "cout_rouges": 0,
       "amendes_evitees": 250,
       "explication_calcul": {
-        "jaunes_detail": "15 cartons jaunes × 18 € = 270 €",
+        "jaunes_detail": "18 cartons jaunes × 18 € = 324 €",
         "rouges_detail": "0 carton rouge = 0 €",
         "amende_evitee_detail": "Suivi des joueurs sous sursis (Alex M., Martin C., Raphael D.) = 250 € préservés"
       }
@@ -17050,45 +20166,19 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "p_lesquin_1",
         "rang": 1,
-        "nom": "Martin C.",
-        "badge": "🎯 Buteur d'Élite",
-        "matchs": 9,
-        "titularisations": 8,
-        "remplacements": 1,
-        "minutes": 665,
-        "clean_sheets": 1,
-        "buts": 4,
-        "cartons_j": 2,
-        "cartons_r": 0,
-        "esg_score": 86.6,
-        "sous_scores": {
-          "volume": 21.6,
-          "volume_max": 35,
-          "defense": 6.0,
-          "defense_max": 30,
-          "attaque": 35.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 6.0
-        }
-      },
-      {
-        "id": "p_lesquin_2",
-        "rang": 2,
         "nom": "Antoine M.",
         "badge": "🎯 Buteur d'Élite",
-        "matchs": 7,
-        "titularisations": 5,
+        "matchs": 8,
+        "titularisations": 6,
         "remplacements": 2,
-        "minutes": 450,
+        "minutes": 530,
         "clean_sheets": 0,
-        "buts": 5,
+        "buts": 6,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 76.6,
+        "esg_score": 77.9,
         "sous_scores": {
-          "volume": 14.6,
+          "volume": 15.9,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -17100,21 +20190,47 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
+        "id": "p_lesquin_2",
+        "rang": 2,
+        "nom": "Martin C.",
+        "badge": "🎯 Buteur d'Élite",
+        "matchs": 9,
+        "titularisations": 8,
+        "remplacements": 1,
+        "minutes": 665,
+        "clean_sheets": 1,
+        "buts": 4,
+        "cartons_j": 2,
+        "cartons_r": 0,
+        "esg_score": 84.9,
+        "sous_scores": {
+          "volume": 19.9,
+          "volume_max": 35,
+          "defense": 6.0,
+          "defense_max": 30,
+          "attaque": 35.0,
+          "attaque_max": 35,
+          "presence": 10.0,
+          "presence_max": 10,
+          "malus_discipline": 6.0
+        }
+      },
+      {
         "id": "p_lesquin_3",
         "rang": 3,
         "nom": "Abd E.",
         "badge": "🎯 Buteur d'Élite",
-        "matchs": 9,
-        "titularisations": 7,
+        "matchs": 10,
+        "titularisations": 8,
         "remplacements": 2,
-        "minutes": 610,
+        "minutes": 690,
         "clean_sheets": 1,
         "buts": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 79.8,
+        "esg_score": 80.6,
         "sous_scores": {
-          "volume": 19.8,
+          "volume": 20.6,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -17128,6 +20244,32 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "p_lesquin_4",
         "rang": 4,
+        "nom": "Corentin D.",
+        "badge": "⚙️ Régulateur / Titulaire Cadre",
+        "matchs": 9,
+        "titularisations": 9,
+        "remplacements": 0,
+        "minutes": 770,
+        "clean_sheets": 1,
+        "buts": 1,
+        "cartons_j": 1,
+        "cartons_r": 0,
+        "esg_score": 68.0,
+        "sous_scores": {
+          "volume": 23.0,
+          "volume_max": 35,
+          "defense": 6.0,
+          "defense_max": 30,
+          "attaque": 12.0,
+          "attaque_max": 35,
+          "presence": 10.0,
+          "presence_max": 10,
+          "malus_discipline": 3.0
+        }
+      },
+      {
+        "id": "p_lesquin_5",
+        "rang": 5,
         "nom": "Mamadou D.",
         "badge": "🎯 Buteur d'Élite",
         "matchs": 8,
@@ -17138,9 +20280,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 3,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 81.6,
+        "esg_score": 80.6,
         "sous_scores": {
-          "volume": 13.6,
+          "volume": 12.6,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -17152,47 +20294,21 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "id": "p_lesquin_5",
-        "rang": 5,
-        "nom": "Corentin D.",
-        "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 8,
-        "titularisations": 8,
-        "remplacements": 0,
-        "minutes": 690,
-        "clean_sheets": 1,
-        "buts": 1,
-        "cartons_j": 1,
-        "cartons_r": 0,
-        "esg_score": 67.4,
-        "sous_scores": {
-          "volume": 22.4,
-          "volume_max": 35,
-          "defense": 6.0,
-          "defense_max": 30,
-          "attaque": 12.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 3.0
-        }
-      },
-      {
         "id": "p_lesquin_6",
         "rang": 6,
         "nom": "Mahery N.",
         "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 9,
-        "titularisations": 7,
+        "matchs": 10,
+        "titularisations": 8,
         "remplacements": 2,
-        "minutes": 610,
+        "minutes": 690,
         "clean_sheets": 1,
         "buts": 1,
-        "cartons_j": 1,
+        "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 64.8,
+        "esg_score": 62.6,
         "sous_scores": {
-          "volume": 19.8,
+          "volume": 20.6,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -17200,7 +20316,7 @@ window.MATCHDAY_TEAMS = {
           "attaque_max": 35,
           "presence": 10.0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 6.0
         }
       },
       {
@@ -17208,17 +20324,17 @@ window.MATCHDAY_TEAMS = {
         "rang": 7,
         "nom": "Antonin L.",
         "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 9,
-        "titularisations": 9,
+        "matchs": 10,
+        "titularisations": 10,
         "remplacements": 0,
-        "minutes": 720,
+        "minutes": 800,
         "clean_sheets": 1,
         "buts": 0,
-        "cartons_j": 1,
+        "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 56.3,
+        "esg_score": 53.9,
         "sous_scores": {
-          "volume": 23.3,
+          "volume": 23.9,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -17226,7 +20342,7 @@ window.MATCHDAY_TEAMS = {
           "attaque_max": 35,
           "presence": 10.0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 6.0
         }
       },
       {
@@ -17242,9 +20358,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 66.1,
+        "esg_score": 64.8,
         "sous_scores": {
-          "volume": 18.1,
+          "volume": 16.8,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -17268,9 +20384,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 3,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 73.4,
+        "esg_score": 72.6,
         "sous_scores": {
-          "volume": 10.4,
+          "volume": 9.6,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -17284,45 +20400,19 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "p_lesquin_10",
         "rang": 10,
-        "nom": "Jules L.",
-        "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 9,
-        "titularisations": 8,
-        "remplacements": 1,
-        "minutes": 665,
-        "clean_sheets": 0,
-        "buts": 0,
-        "cartons_j": 1,
-        "cartons_r": 0,
-        "esg_score": 48.6,
-        "sous_scores": {
-          "volume": 21.6,
-          "volume_max": 35,
-          "defense": 0.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 3.0
-        }
-      },
-      {
-        "id": "p_lesquin_11",
-        "rang": 11,
         "nom": "Raphael D.",
         "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 8,
-        "titularisations": 8,
+        "matchs": 9,
+        "titularisations": 9,
         "remplacements": 0,
-        "minutes": 640,
+        "minutes": 720,
         "clean_sheets": 1,
         "buts": 0,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 50.7,
+        "esg_score": 51.5,
         "sous_scores": {
-          "volume": 20.7,
+          "volume": 21.5,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -17334,47 +20424,47 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "id": "p_lesquin_12",
-        "rang": 12,
-        "nom": "Alex M.",
-        "badge": "🎯 Buteur d'Élite",
-        "matchs": 8,
-        "titularisations": 4,
-        "remplacements": 4,
-        "minutes": 420,
-        "clean_sheets": 1,
-        "buts": 2,
-        "cartons_j": 4,
+        "id": "p_lesquin_11",
+        "rang": 11,
+        "nom": "Jules L.",
+        "badge": "⚙️ Régulateur / Titulaire Cadre",
+        "matchs": 10,
+        "titularisations": 8,
+        "remplacements": 2,
+        "minutes": 690,
+        "clean_sheets": 0,
+        "buts": 0,
+        "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 61.6,
+        "esg_score": 47.6,
         "sous_scores": {
-          "volume": 13.6,
+          "volume": 20.6,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 0.0,
           "defense_max": 30,
-          "attaque": 24.0,
+          "attaque": 0.0,
           "attaque_max": 35,
           "presence": 10.0,
           "presence_max": 10,
-          "malus_discipline": 12.0
+          "malus_discipline": 3.0
         }
       },
       {
-        "id": "p_lesquin_13",
-        "rang": 13,
+        "id": "p_lesquin_12",
+        "rang": 12,
         "nom": "Corentin G.",
         "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 7,
-        "titularisations": 4,
+        "matchs": 8,
+        "titularisations": 5,
         "remplacements": 3,
-        "minutes": 395,
+        "minutes": 475,
         "clean_sheets": 1,
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 60.8,
+        "esg_score": 62.2,
         "sous_scores": {
-          "volume": 12.8,
+          "volume": 14.2,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -17386,21 +20476,47 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
+        "id": "p_lesquin_13",
+        "rang": 13,
+        "nom": "Alex M.",
+        "badge": "🎯 Buteur d'Élite",
+        "matchs": 8,
+        "titularisations": 4,
+        "remplacements": 4,
+        "minutes": 420,
+        "clean_sheets": 1,
+        "buts": 2,
+        "cartons_j": 4,
+        "cartons_r": 0,
+        "esg_score": 60.6,
+        "sous_scores": {
+          "volume": 12.6,
+          "volume_max": 35,
+          "defense": 6.0,
+          "defense_max": 30,
+          "attaque": 24.0,
+          "attaque_max": 35,
+          "presence": 10.0,
+          "presence_max": 10,
+          "malus_discipline": 12.0
+        }
+      },
+      {
         "id": "p_lesquin_14",
         "rang": 14,
         "nom": "Maxence D.",
         "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 6,
-        "titularisations": 6,
+        "matchs": 7,
+        "titularisations": 7,
         "remplacements": 0,
-        "minutes": 480,
+        "minutes": 560,
         "clean_sheets": 1,
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 51.6,
+        "esg_score": 52.8,
         "sous_scores": {
-          "volume": 15.6,
+          "volume": 16.8,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -17416,17 +20532,17 @@ window.MATCHDAY_TEAMS = {
         "rang": 15,
         "nom": "Oscar R.",
         "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 6,
-        "titularisations": 4,
+        "matchs": 7,
+        "titularisations": 5,
         "remplacements": 2,
-        "minutes": 370,
+        "minutes": 450,
         "clean_sheets": 0,
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 39.0,
+        "esg_score": 40.5,
         "sous_scores": {
-          "volume": 12.0,
+          "volume": 13.5,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -17450,9 +20566,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 40.2,
+        "esg_score": 39.4,
         "sous_scores": {
-          "volume": 10.2,
+          "volume": 9.4,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -17468,23 +20584,23 @@ window.MATCHDAY_TEAMS = {
         "rang": 17,
         "nom": "Ilyes A.",
         "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 3,
+        "matchs": 4,
         "titularisations": 1,
-        "remplacements": 2,
-        "minutes": 130,
+        "remplacements": 3,
+        "minutes": 155,
         "clean_sheets": 0,
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 42.2,
+        "esg_score": 44.6,
         "sous_scores": {
-          "volume": 4.2,
+          "volume": 4.6,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
           "attaque": 12.0,
           "attaque_max": 35,
-          "presence": 6.0,
+          "presence": 8.0,
           "presence_max": 10,
           "malus_discipline": 0.0
         }
@@ -17493,24 +20609,24 @@ window.MATCHDAY_TEAMS = {
         "id": "p_lesquin_18",
         "rang": 18,
         "nom": "Abdoul A.",
-        "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 3,
-        "titularisations": 2,
+        "badge": "⚙️ Régulateur / Titulaire Cadre",
+        "matchs": 4,
+        "titularisations": 3,
         "remplacements": 1,
-        "minutes": 185,
+        "minutes": 265,
         "clean_sheets": 0,
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 32.0,
+        "esg_score": 35.9,
         "sous_scores": {
-          "volume": 6.0,
+          "volume": 7.9,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
           "attaque": 0.0,
           "attaque_max": 35,
-          "presence": 6.0,
+          "presence": 8.0,
           "presence_max": 10,
           "malus_discipline": 0.0
         }
@@ -17518,6 +20634,32 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "p_lesquin_19",
         "rang": 19,
+        "nom": "Pierre C.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 1,
+        "titularisations": 1,
+        "remplacements": 0,
+        "minutes": 80,
+        "clean_sheets": 0,
+        "buts": 1,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 36.4,
+        "sous_scores": {
+          "volume": 2.4,
+          "volume_max": 35,
+          "defense": 0.0,
+          "defense_max": 30,
+          "attaque": 12.0,
+          "attaque_max": 35,
+          "presence": 2.0,
+          "presence_max": 10,
+          "malus_discipline": 0.0
+        }
+      },
+      {
+        "id": "p_lesquin_20",
+        "rang": 20,
         "nom": "Angelo A.",
         "badge": "🔄 Rotation Effectif",
         "matchs": 0,
@@ -17542,34 +20684,34 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "id": "p_lesquin_20",
-        "rang": 20,
+        "id": "p_lesquin_21",
+        "rang": 21,
         "nom": "Sergio J.",
         "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 2,
+        "matchs": 3,
         "titularisations": 0,
-        "remplacements": 2,
-        "minutes": 50,
+        "remplacements": 3,
+        "minutes": 75,
         "clean_sheets": 0,
         "buts": 0,
-        "cartons_j": 0,
+        "cartons_j": 1,
         "cartons_r": 0,
         "esg_score": 30.0,
         "sous_scores": {
-          "volume": 1.6,
+          "volume": 2.2,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
           "attaque": 0.0,
           "attaque_max": 35,
-          "presence": 4.0,
+          "presence": 6.0,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 3.0
         }
       },
       {
-        "id": "p_lesquin_21",
-        "rang": 21,
+        "id": "p_lesquin_22",
+        "rang": 22,
         "nom": "Anonyme X.",
         "badge": "⚡ Super-Sub / Impact Player",
         "matchs": 2,
@@ -17582,7 +20724,7 @@ window.MATCHDAY_TEAMS = {
         "cartons_r": 0,
         "esg_score": 30.0,
         "sous_scores": {
-          "volume": 1.6,
+          "volume": 1.5,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -17594,8 +20736,8 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "id": "p_lesquin_22",
-        "rang": 22,
+        "id": "p_lesquin_23",
+        "rang": 23,
         "nom": "Alhassane D.",
         "badge": "🔄 Rotation Effectif",
         "matchs": 1,
@@ -17608,33 +20750,7 @@ window.MATCHDAY_TEAMS = {
         "cartons_r": 0,
         "esg_score": 30.0,
         "sous_scores": {
-          "volume": 0.8,
-          "volume_max": 35,
-          "defense": 0.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 2.0,
-          "presence_max": 10,
-          "malus_discipline": 0.0
-        }
-      },
-      {
-        "id": "p_lesquin_23",
-        "rang": 23,
-        "nom": "Emilian L.",
-        "badge": "🔄 Rotation Effectif",
-        "matchs": 1,
-        "titularisations": 0,
-        "remplacements": 1,
-        "minutes": 25,
-        "clean_sheets": 0,
-        "buts": 0,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 30.0,
-        "sous_scores": {
-          "volume": 0.8,
+          "volume": 0.7,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -17648,7 +20764,7 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "p_lesquin_24",
         "rang": 24,
-        "nom": "Mohamed N.",
+        "nom": "Emilian L.",
         "badge": "🔄 Rotation Effectif",
         "matchs": 1,
         "titularisations": 0,
@@ -17660,7 +20776,7 @@ window.MATCHDAY_TEAMS = {
         "cartons_r": 0,
         "esg_score": 30.0,
         "sous_scores": {
-          "volume": 0.8,
+          "volume": 0.7,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -17674,6 +20790,32 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "p_lesquin_25",
         "rang": 25,
+        "nom": "Mohamed N.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 1,
+        "titularisations": 0,
+        "remplacements": 1,
+        "minutes": 25,
+        "clean_sheets": 0,
+        "buts": 0,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 30.0,
+        "sous_scores": {
+          "volume": 0.7,
+          "volume_max": 35,
+          "defense": 0.0,
+          "defense_max": 30,
+          "attaque": 0.0,
+          "attaque_max": 35,
+          "presence": 2.0,
+          "presence_max": 10,
+          "malus_discipline": 0.0
+        }
+      },
+      {
+        "id": "p_lesquin_26",
+        "rang": 26,
         "nom": "Milan V.",
         "badge": "🔄 Rotation Effectif",
         "matchs": 1,
@@ -17686,7 +20828,7 @@ window.MATCHDAY_TEAMS = {
         "cartons_r": 0,
         "esg_score": 30.0,
         "sous_scores": {
-          "volume": 0.8,
+          "volume": 0.7,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -17699,17 +20841,17 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 0.5,
+      "ppm_championnat": 0.6,
       "probabilite_montee_pct": 12.0,
       "probabilite_maintien_pct": 74.0,
-      "taux_invincibilite": 75.0,
+      "taux_invincibilite": 76.9,
       "bilan_global": {
-        "matchs": 12,
+        "matchs": 13,
         "victoires": 6,
-        "nuls": 3,
+        "nuls": 4,
         "defaites": 3,
-        "buts_pour": 38,
-        "buts_contre": 17,
+        "buts_pour": 40,
+        "buts_contre": 19,
         "difference": 21
       },
       "bilan_championnat": {
@@ -17723,8 +20865,8 @@ window.MATCHDAY_TEAMS = {
         "difference": -3,
         "ppm": 0.5
       },
-      "ratio_clean_sheet_pct": 8.3,
-      "moyenne_buts_encaisses": 1.42,
+      "ratio_clean_sheet_pct": 7.7,
+      "moyenne_buts_encaisses": 1.46,
       "projection_saison": {
         "points_prevus": 26.0,
         "rang_final_estime": "Milieu de tableau Régional 2 (Objectif maintien consolidé)"
@@ -17773,10 +20915,10 @@ window.MATCHDAY_TEAMS = {
         "rang": 1,
         "equipe": "CROIX FIC 2",
         "nom": "CROIX FIC 2",
-        "points": 10,
-        "joues": 4,
+        "points": 11,
+        "joues": 5,
         "gagnes": 3,
-        "nuls": 1,
+        "nuls": 2,
         "perdus": 0,
         "buts_pour": 7,
         "buts_contre": 4,
@@ -17790,13 +20932,73 @@ window.MATCHDAY_TEAMS = {
         ]
       },
       {
+        "rang": 1,
+        "equipe": "NOEUX LES MINES US",
+        "nom": "NOEUX LES MINES US",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 7,
+        "buts_contre": 3,
+        "diff": 4,
+        "difference": 4,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 1,
+        "equipe": "BIACHE ST VAAST US",
+        "nom": "BIACHE ST VAAST US",
+        "points": 6,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 0,
+        "perdus": 3,
+        "buts_pour": 14,
+        "buts_contre": 7,
+        "diff": 7,
+        "difference": 7,
+        "forme": [
+          "V",
+          "V",
+          "D",
+          "D"
+        ]
+      },
+      {
+        "rang": 2,
+        "equipe": "FOURMIES US",
+        "nom": "FOURMIES US",
+        "points": 10,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 1,
+        "perdus": 1,
+        "buts_pour": 15,
+        "buts_contre": 7,
+        "diff": 8,
+        "difference": 8,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "N"
+        ]
+      },
+      {
         "rang": 2,
         "equipe": "SECLIN FC",
         "nom": "SECLIN FC",
-        "points": 8,
-        "joues": 4,
+        "points": 9,
+        "joues": 5,
         "gagnes": 2,
-        "nuls": 2,
+        "nuls": 3,
         "perdus": 0,
         "buts_pour": 16,
         "buts_contre": 3,
@@ -17810,16 +21012,116 @@ window.MATCHDAY_TEAMS = {
         ]
       },
       {
-        "rang": 3,
-        "equipe": "NOEUX LES MINES US",
-        "nom": "NOEUX LES MINES US",
+        "rang": 2,
+        "equipe": "MERVILLE USM",
+        "nom": "MERVILLE USM",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 0,
+        "perdus": 2,
+        "buts_pour": 15,
+        "buts_contre": 7,
+        "diff": 8,
+        "difference": 8,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "D"
+        ]
+      },
+      {
+        "rang": 2,
+        "equipe": "RAISMES FC",
+        "nom": "RAISMES FC",
         "points": 8,
-        "joues": 4,
+        "joues": 5,
         "gagnes": 2,
         "nuls": 2,
+        "perdus": 1,
+        "buts_pour": 9,
+        "buts_contre": 6,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 3,
+        "equipe": "ESCAUDAIN USF",
+        "nom": "ESCAUDAIN USF",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
         "perdus": 0,
-        "buts_pour": 6,
-        "buts_contre": 2,
+        "buts_pour": 11,
+        "buts_contre": 8,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 4,
+        "equipe": "FOURMIES US",
+        "nom": "FOURMIES US",
+        "points": 10,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 1,
+        "perdus": 1,
+        "buts_pour": 15,
+        "buts_contre": 7,
+        "diff": 8,
+        "difference": 8,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "N"
+        ]
+      },
+      {
+        "rang": 4,
+        "equipe": "SECLIN FC",
+        "nom": "SECLIN FC",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 16,
+        "buts_contre": 3,
+        "diff": 13,
+        "difference": 13,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 5,
+        "equipe": "NOEUX LES MINES US",
+        "nom": "NOEUX LES MINES US",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 7,
+        "buts_contre": 3,
         "diff": 4,
         "difference": 4,
         "forme": [
@@ -17830,16 +21132,36 @@ window.MATCHDAY_TEAMS = {
         ]
       },
       {
-        "rang": 4,
-        "equipe": "ESCAUDAIN USF",
-        "nom": "ESCAUDAIN USF",
+        "rang": 6,
+        "equipe": "MERVILLE USM",
+        "nom": "MERVILLE USM",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 0,
+        "perdus": 2,
+        "buts_pour": 15,
+        "buts_contre": 7,
+        "diff": 8,
+        "difference": 8,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "D"
+        ]
+      },
+      {
+        "rang": 7,
+        "equipe": "RAISMES FC",
+        "nom": "RAISMES FC",
         "points": 8,
-        "joues": 4,
+        "joues": 5,
         "gagnes": 2,
         "nuls": 2,
-        "perdus": 0,
-        "buts_pour": 10,
-        "buts_contre": 7,
+        "perdus": 1,
+        "buts_pour": 9,
+        "buts_contre": 6,
         "diff": 3,
         "difference": 3,
         "forme": [
@@ -17850,76 +21172,16 @@ window.MATCHDAY_TEAMS = {
         ]
       },
       {
-        "rang": 5,
-        "equipe": "RAISMES FC",
-        "nom": "RAISMES FC",
-        "points": 7,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 1,
-        "perdus": 1,
-        "buts_pour": 8,
-        "buts_contre": 5,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "D"
-        ]
-      },
-      {
-        "rang": 6,
-        "equipe": "FOURMIES US",
-        "nom": "FOURMIES US",
-        "points": 7,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 1,
-        "perdus": 1,
-        "buts_pour": 6,
-        "buts_contre": 7,
-        "diff": -1,
-        "difference": -1,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "D"
-        ]
-      },
-      {
-        "rang": 7,
+        "rang": 8,
         "equipe": "BIACHE ST VAAST US",
         "nom": "BIACHE ST VAAST US",
         "points": 6,
-        "joues": 4,
+        "joues": 5,
         "gagnes": 2,
         "nuls": 0,
-        "perdus": 2,
-        "buts_pour": 13,
-        "buts_contre": 5,
-        "diff": 8,
-        "difference": 8,
-        "forme": [
-          "V",
-          "V",
-          "D",
-          "D"
-        ]
-      },
-      {
-        "rang": 8,
-        "equipe": "MERVILLE USM",
-        "nom": "MERVILLE USM",
-        "points": 6,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 0,
-        "perdus": 2,
-        "buts_pour": 13,
-        "buts_contre": 6,
+        "perdus": 3,
+        "buts_pour": 14,
+        "buts_contre": 7,
         "diff": 7,
         "difference": 7,
         "forme": [
@@ -17933,18 +21195,18 @@ window.MATCHDAY_TEAMS = {
         "rang": 9,
         "equipe": "NOYELLES S/LENS US",
         "nom": "NOYELLES S/LENS US",
-        "points": 3,
-        "joues": 4,
+        "points": 4,
+        "joues": 5,
         "gagnes": 1,
-        "nuls": 0,
+        "nuls": 1,
         "perdus": 3,
-        "buts_pour": 11,
-        "buts_contre": 9,
+        "buts_pour": 12,
+        "buts_contre": 10,
         "diff": 2,
         "difference": 2,
         "forme": [
           "V",
-          "D",
+          "N",
           "D",
           "D"
         ]
@@ -17953,19 +21215,19 @@ window.MATCHDAY_TEAMS = {
         "rang": 10,
         "equipe": "LESQUIN US",
         "nom": "LESQUIN US",
-        "points": 2,
-        "joues": 4,
+        "points": 3,
+        "joues": 5,
         "gagnes": 0,
-        "nuls": 2,
+        "nuls": 3,
         "perdus": 2,
-        "buts_pour": 6,
-        "buts_contre": 9,
+        "buts_pour": 8,
+        "buts_contre": 11,
         "diff": -3,
         "difference": -3,
         "forme": [
           "N",
           "N",
-          "D",
+          "N",
           "D"
         ]
       },
@@ -17973,18 +21235,18 @@ window.MATCHDAY_TEAMS = {
         "rang": 11,
         "equipe": "COURCELLES US",
         "nom": "COURCELLES US",
-        "points": 1,
-        "joues": 4,
+        "points": 2,
+        "joues": 5,
         "gagnes": 0,
-        "nuls": 1,
+        "nuls": 2,
         "perdus": 3,
-        "buts_pour": 1,
-        "buts_contre": 4,
+        "buts_pour": 3,
+        "buts_contre": 6,
         "diff": -3,
         "difference": -3,
         "forme": [
           "N",
-          "D",
+          "N",
           "D",
           "D"
         ]
@@ -17994,14 +21256,14 @@ window.MATCHDAY_TEAMS = {
         "equipe": "MONTIGNY GOHELLE FC",
         "nom": "MONTIGNY GOHELLE FC",
         "points": 0,
-        "joues": 4,
+        "joues": 5,
         "gagnes": 0,
         "nuls": 0,
-        "perdus": 4,
+        "perdus": 5,
         "buts_pour": 2,
-        "buts_contre": 38,
-        "diff": -36,
-        "difference": -36,
+        "buts_contre": 47,
+        "diff": -45,
+        "difference": -45,
         "forme": [
           "D",
           "D",
@@ -18020,121 +21282,128 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "30/10/2026 à 13:56"
+      "derniere_maj": "02/11/2026 à 11:57"
     },
     "dernier_match": {
-      "id": "lesquin_80499526",
-      "competition": "Régional 2 (Poule B) • Senior 6ème Tour (Finale Régionale)",
-      "domicile": "CHOISY AU BAC US",
+      "id": "lesquin_56215867",
+      "competition": "Régional 2 (Poule B) • Senior Journée 5",
+      "domicile": "COURCELLES US",
       "exterieur": "LESQUIN US",
       "score_domicile": 2,
-      "score_exterieur": 0,
-      "score_display": "2 - 0",
-      "date_heure": "2026-10-25 15:00",
+      "score_exterieur": 2,
+      "score_display": "2 - 2",
+      "date_heure": "2026-11-01 14:30",
       "statut": "TERMINE"
     },
     "evenements_dernier_match": [
       {
-        "minute": 8,
-        "type": "BUT",
-        "equipe": "CHOISY AU BAC US",
-        "acteur": "Nathan B.",
-        "detail": "But FFF"
-      },
-      {
-        "minute": 29,
-        "type": "AVERTISSEMENT",
-        "equipe": "CHOISY AU BAC US",
-        "acteur": "Kylian N.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 50,
-        "type": "AVERTISSEMENT",
-        "equipe": "LESQUIN US",
-        "acteur": "Oscar R.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 60,
-        "type": "AVERTISSEMENT",
-        "equipe": "LESQUIN US",
-        "acteur": "Alex M.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 69,
-        "type": "AVERTISSEMENT",
-        "equipe": "CHOISY AU BAC US",
-        "acteur": "Nathan B.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 82,
-        "type": "AVERTISSEMENT",
-        "equipe": "CHOISY AU BAC US",
-        "acteur": "Dimitri D.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 90,
-        "type": "BUT",
-        "equipe": "CHOISY AU BAC US",
-        "acteur": "Samuel F.",
-        "detail": "But FFF"
-      },
-      {
-        "minute": 90,
-        "type": "AVERTISSEMENT",
-        "equipe": "CHOISY AU BAC US",
-        "acteur": "Samuel F.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 90,
+        "minute": 25,
         "type": "AVERTISSEMENT",
         "equipe": "LESQUIN US",
         "acteur": "Antonin L.",
         "detail": "Carton jaune"
       },
       {
-        "minute": 90,
+        "minute": 28,
+        "type": "BUT",
+        "equipe": "LESQUIN US",
+        "acteur": "Antoine M.",
+        "detail": "But FFF"
+      },
+      {
+        "minute": 31,
+        "type": "AVERTISSEMENT",
+        "equipe": "COURCELLES US",
+        "acteur": "Chemssedine D.",
+        "detail": "Carton jaune"
+      },
+      {
+        "minute": 58,
         "type": "AVERTISSEMENT",
         "equipe": "LESQUIN US",
-        "acteur": "Alex M.",
+        "acteur": "Mahery N.",
+        "detail": "Carton jaune"
+      },
+      {
+        "minute": 61,
+        "type": "AVERTISSEMENT",
+        "equipe": "COURCELLES US",
+        "acteur": "Brahim T.",
+        "detail": "Carton jaune"
+      },
+      {
+        "minute": 62,
+        "type": "BUT",
+        "equipe": "COURCELLES US",
+        "acteur": "Ismael B.",
+        "detail": "But FFF"
+      },
+      {
+        "minute": 84,
+        "type": "AVERTISSEMENT",
+        "equipe": "COURCELLES US",
+        "acteur": "Mohamed E.",
+        "detail": "Carton jaune"
+      },
+      {
+        "minute": 86,
+        "type": "AVERTISSEMENT",
+        "equipe": "LESQUIN US",
+        "acteur": "Sergio J.",
+        "detail": "Carton jaune"
+      },
+      {
+        "minute": 88,
+        "type": "BUT",
+        "equipe": "LESQUIN US",
+        "acteur": "Pierre C.",
+        "detail": "But FFF"
+      },
+      {
+        "minute": 90,
+        "type": "BUT",
+        "equipe": "COURCELLES US",
+        "acteur": "Lorenzo P.",
+        "detail": "But FFF"
+      },
+      {
+        "minute": 90,
+        "type": "AVERTISSEMENT",
+        "equipe": "COURCELLES US",
+        "acteur": "Lorenzo P.",
         "detail": "Carton jaune"
       }
     ],
     "prochain_match": {
-      "competition": "Régional 2 (Poule B) • Journée 5",
-      "date_heure": "01/11/2026 à 14:30",
-      "lieu": "Stade de Courcelles (Courcelles-lès-Lens)",
-      "domicile": "COURCELLES US",
-      "exterieur": "US LESQUIN",
+      "competition": "Régional 2 (Poule B) • Journée 6",
+      "date_heure": "08/11/2026 à 14:30",
+      "lieu": "Stade Jean-Pierre Papin (Lesquin)",
+      "domicile": "US LESQUIN",
+      "exterieur": "ESCAUDAIN USF",
       "comparatif": {
         "titre": "Comparatif de Performance (R2 Poule B)",
-        "adversaire_nom": "Courcelles US",
-        "adversaire_rang": "11e",
-        "adversaire_pts": 1,
-        "adversaire_buts_pour": 1,
-        "adversaire_buts_contre": 4,
+        "adversaire_nom": "Escaudain USF",
+        "adversaire_rang": "3e",
+        "adversaire_pts": 9,
+        "adversaire_buts_pour": 11,
+        "adversaire_buts_contre": 8,
         "club_nom": "US Lesquin",
         "club_rang": "10e",
-        "club_pts": 2,
-        "club_buts_pour": 6,
-        "club_buts_contre": 9
+        "club_pts": 3,
+        "club_buts_pour": 8,
+        "club_buts_contre": 11
       },
       "alertes": [
-        "Courcelles US : Concurrent direct en bas de tableau R2 (11e avec 1 pt)",
-        "Choc capital pour s'éloigner de la zone de relégation"
+        "Lesquin prend un point précieux à Courcelles (2-2) et accueille le 3e Escaudain (9 pts).",
+        "Objectif décrocher la première victoire de la saison à domicile."
       ]
     },
     "meteo_prochain_match": {
       "lieu": "Courcelles-lès-Lens",
       "surface": "Pelouse naturelle",
-      "temperature": "8.1 °C",
-      "vent": "Faible (14.8 km/h)",
-      "pluie": "Sec (0 %)",
+      "temperature": "9.1 °C",
+      "vent": "Faible (8.3 km/h)",
+      "pluie": "Sec (9 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -18146,6 +21415,275 @@ window.MATCHDAY_TEAMS = {
       "consigne_coach": "Match capital chez la lanterne rouge Courcelles US. Maîtriser le tempo et éviter les fautes d'énervement."
     },
     "historique_matchs": [
+      {
+        "id": "lesquin_56215867",
+        "competition": "R2 • Senior Journée 5",
+        "comp_type": "CHAMPIONNAT",
+        "date": "01/11/2026",
+        "date_heure": "2026-11-01 14:30",
+        "domicile": "COURCELLES US",
+        "exterieur": "LESQUIN US",
+        "score_domicile": 2,
+        "score_exterieur": 2,
+        "score_display": "2 - 2",
+        "is_domicile": false,
+        "resultat": "N",
+        "resultat_label": "Match Nul",
+        "evenements": [
+          {
+            "minute": 25,
+            "type": "AVERTISSEMENT",
+            "equipe": "LESQUIN US",
+            "acteur": "Antonin L.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 28,
+            "type": "BUT",
+            "equipe": "LESQUIN US",
+            "acteur": "Antoine M.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 31,
+            "type": "AVERTISSEMENT",
+            "equipe": "COURCELLES US",
+            "acteur": "Chemssedine D.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 58,
+            "type": "AVERTISSEMENT",
+            "equipe": "LESQUIN US",
+            "acteur": "Mahery N.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 61,
+            "type": "AVERTISSEMENT",
+            "equipe": "COURCELLES US",
+            "acteur": "Brahim T.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 62,
+            "type": "BUT",
+            "equipe": "COURCELLES US",
+            "acteur": "Ismael B.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 84,
+            "type": "AVERTISSEMENT",
+            "equipe": "COURCELLES US",
+            "acteur": "Mohamed E.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 86,
+            "type": "AVERTISSEMENT",
+            "equipe": "LESQUIN US",
+            "acteur": "Sergio J.",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 88,
+            "type": "BUT",
+            "equipe": "LESQUIN US",
+            "acteur": "Pierre C.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 90,
+            "type": "BUT",
+            "equipe": "COURCELLES US",
+            "acteur": "Lorenzo P.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "COURCELLES US",
+            "acteur": "Lorenzo P.",
+            "detail": "Carton jaune"
+          }
+        ],
+        "compositions": {
+          "club": {
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Maxence D."
+              },
+              {
+                "numero": 2,
+                "nom": "Raphael D."
+              },
+              {
+                "numero": 3,
+                "nom": "Antonin L."
+              },
+              {
+                "numero": 4,
+                "nom": "Mahery N."
+              },
+              {
+                "numero": 5,
+                "nom": "Corentin G."
+              },
+              {
+                "numero": 6,
+                "nom": "Corentin D."
+              },
+              {
+                "numero": 7,
+                "nom": "Pierre C."
+              },
+              {
+                "numero": 8,
+                "nom": "Abdoul A."
+              },
+              {
+                "numero": 9,
+                "nom": "Antoine M."
+              },
+              {
+                "numero": 10,
+                "nom": "Abd E."
+              },
+              {
+                "numero": 11,
+                "nom": "Oscar R."
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Ilyes A."
+              },
+              {
+                "numero": 13,
+                "nom": "Sergio J."
+              },
+              {
+                "numero": 14,
+                "nom": "Jules L."
+              }
+            ]
+          },
+          "lesquin": {
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Maxence D."
+              },
+              {
+                "numero": 2,
+                "nom": "Raphael D."
+              },
+              {
+                "numero": 3,
+                "nom": "Antonin L."
+              },
+              {
+                "numero": 4,
+                "nom": "Mahery N."
+              },
+              {
+                "numero": 5,
+                "nom": "Corentin G."
+              },
+              {
+                "numero": 6,
+                "nom": "Corentin D."
+              },
+              {
+                "numero": 7,
+                "nom": "Pierre C."
+              },
+              {
+                "numero": 8,
+                "nom": "Abdoul A."
+              },
+              {
+                "numero": 9,
+                "nom": "Antoine M."
+              },
+              {
+                "numero": 10,
+                "nom": "Abd E."
+              },
+              {
+                "numero": 11,
+                "nom": "Oscar R."
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Ilyes A."
+              },
+              {
+                "numero": 13,
+                "nom": "Sergio J."
+              },
+              {
+                "numero": 14,
+                "nom": "Jules L."
+              }
+            ]
+          },
+          "adversaire": {
+            "equipe": "COURCELLES US",
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Maxence B."
+              },
+              {
+                "numero": 2,
+                "nom": "Mohamed A."
+              },
+              {
+                "numero": 3,
+                "nom": "Nicolas V."
+              },
+              {
+                "numero": 4,
+                "nom": "Fares O."
+              },
+              {
+                "numero": 5,
+                "nom": "Anonyme X."
+              },
+              {
+                "numero": 6,
+                "nom": "Christopher V."
+              },
+              {
+                "numero": 7,
+                "nom": "Othman B."
+              },
+              {
+                "numero": 8,
+                "nom": "Zayd D."
+              },
+              {
+                "numero": 9,
+                "nom": "Chemssedine D."
+              },
+              {
+                "numero": 10,
+                "nom": "Mohamed E."
+              },
+              {
+                "numero": 11,
+                "nom": "Ismael B."
+              }
+            ]
+          }
+        }
+      },
       {
         "id": "lesquin_80499526",
         "competition": "COUPE DE FRANCE CRÉDIT AGRICOLE",
@@ -18425,36 +21963,6 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "id": "lesquin_56306029",
-        "competition": "R2 • Senior Journée 34",
-        "comp_type": "CHAMPIONNAT",
-        "date": "23/10/2026",
-        "date_heure": "2026-10-23 11:00",
-        "domicile": "MARCK EN CALAISIS AS",
-        "exterieur": "LESQUIN US",
-        "score_domicile": 1,
-        "score_exterieur": 3,
-        "score_display": "1 - 3",
-        "is_domicile": false,
-        "resultat": "V",
-        "resultat_label": "Victoire",
-        "evenements": [],
-        "compositions": {
-          "club": {
-            "titulaires": [],
-            "remplacants": []
-          },
-          "lesquin": {
-            "titulaires": [],
-            "remplacants": []
-          },
-          "adversaire": {
-            "equipe": "MARCK EN CALAISIS AS",
-            "titulaires": []
-          }
-        }
-      },
-      {
         "id": "lesquin_56215866",
         "competition": "R2 • Senior Journée 4",
         "comp_type": "CHAMPIONNAT",
@@ -18678,36 +22186,6 @@ window.MATCHDAY_TEAMS = {
                 "nom": "Julien L."
               }
             ]
-          }
-        }
-      },
-      {
-        "id": "lesquin_56422526",
-        "competition": "R2 • Senior Journée 33",
-        "comp_type": "CHAMPIONNAT",
-        "date": "14/10/2026",
-        "date_heure": "2026-10-14 19:30",
-        "domicile": "HAZEBROUCK SC",
-        "exterieur": "LESQUIN US",
-        "score_domicile": 1,
-        "score_exterieur": 1,
-        "score_display": "1 - 1",
-        "is_domicile": false,
-        "resultat": "N",
-        "resultat_label": "Match Nul",
-        "evenements": [],
-        "compositions": {
-          "club": {
-            "titulaires": [],
-            "remplacants": []
-          },
-          "lesquin": {
-            "titulaires": [],
-            "remplacants": []
-          },
-          "adversaire": {
-            "equipe": "HAZEBROUCK SC",
-            "titulaires": []
           }
         }
       },
@@ -20631,23 +24109,83 @@ window.MATCHDAY_TEAMS = {
             ]
           }
         }
+      },
+      {
+        "id": "lesquin_56306029",
+        "competition": "R2 • Senior Journée 34",
+        "comp_type": "CHAMPIONNAT",
+        "date": "23/08/2026",
+        "date_heure": "2026-08-23 11:00",
+        "domicile": "MARCK EN CALAISIS AS",
+        "exterieur": "LESQUIN US",
+        "score_domicile": 1,
+        "score_exterieur": 3,
+        "score_display": "1 - 3",
+        "is_domicile": false,
+        "resultat": "V",
+        "resultat_label": "Victoire",
+        "evenements": [],
+        "compositions": {
+          "club": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "lesquin": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "MARCK EN CALAISIS AS",
+            "titulaires": []
+          }
+        }
+      },
+      {
+        "id": "lesquin_56422526",
+        "competition": "R2 • Senior Journée 33",
+        "comp_type": "CHAMPIONNAT",
+        "date": "14/08/2026",
+        "date_heure": "2026-08-14 19:30",
+        "domicile": "HAZEBROUCK SC",
+        "exterieur": "LESQUIN US",
+        "score_domicile": 1,
+        "score_exterieur": 1,
+        "score_display": "1 - 1",
+        "is_domicile": false,
+        "resultat": "N",
+        "resultat_label": "Match Nul",
+        "evenements": [],
+        "compositions": {
+          "club": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "lesquin": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "HAZEBROUCK SC",
+            "titulaires": []
+          }
+        }
       }
     ],
     "kpis_saison": {
-      "buts_marques": 38,
-      "buts_encaisses": 17,
+      "buts_marques": 40,
+      "buts_encaisses": 19,
       "clean_sheets": 1,
-      "minutes_cumulees": 8845,
-      "cartons_jaunes": 15,
+      "minutes_cumulees": 9800,
+      "cartons_jaunes": 18,
       "cartons_rouges": 0
     },
     "tresorerie_discipline": {
-      "cout_total_estime": 270,
-      "cout_jaunes": 270,
+      "cout_total_estime": 324,
+      "cout_jaunes": 324,
       "cout_rouges": 0,
       "amendes_evitees": 250,
       "explication_calcul": {
-        "jaunes_detail": "15 cartons jaunes × 18 € = 270 €",
+        "jaunes_detail": "18 cartons jaunes × 18 € = 324 €",
         "rouges_detail": "0 carton rouge = 0 €",
         "amende_evitee_detail": "Suivi des joueurs sous sursis (Alex M., Martin C., Raphael D.) = 250 € préservés"
       }
@@ -20686,45 +24224,19 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "p_lesquin_1",
         "rang": 1,
-        "nom": "Martin C.",
-        "badge": "🎯 Buteur d'Élite",
-        "matchs": 9,
-        "titularisations": 8,
-        "remplacements": 1,
-        "minutes": 665,
-        "clean_sheets": 1,
-        "buts": 4,
-        "cartons_j": 2,
-        "cartons_r": 0,
-        "esg_score": 86.6,
-        "sous_scores": {
-          "volume": 21.6,
-          "volume_max": 35,
-          "defense": 6.0,
-          "defense_max": 30,
-          "attaque": 35.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 6.0
-        }
-      },
-      {
-        "id": "p_lesquin_2",
-        "rang": 2,
         "nom": "Antoine M.",
         "badge": "🎯 Buteur d'Élite",
-        "matchs": 7,
-        "titularisations": 5,
+        "matchs": 8,
+        "titularisations": 6,
         "remplacements": 2,
-        "minutes": 450,
+        "minutes": 530,
         "clean_sheets": 0,
-        "buts": 5,
+        "buts": 6,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 76.6,
+        "esg_score": 77.9,
         "sous_scores": {
-          "volume": 14.6,
+          "volume": 15.9,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -20736,21 +24248,47 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
+        "id": "p_lesquin_2",
+        "rang": 2,
+        "nom": "Martin C.",
+        "badge": "🎯 Buteur d'Élite",
+        "matchs": 9,
+        "titularisations": 8,
+        "remplacements": 1,
+        "minutes": 665,
+        "clean_sheets": 1,
+        "buts": 4,
+        "cartons_j": 2,
+        "cartons_r": 0,
+        "esg_score": 84.9,
+        "sous_scores": {
+          "volume": 19.9,
+          "volume_max": 35,
+          "defense": 6.0,
+          "defense_max": 30,
+          "attaque": 35.0,
+          "attaque_max": 35,
+          "presence": 10.0,
+          "presence_max": 10,
+          "malus_discipline": 6.0
+        }
+      },
+      {
         "id": "p_lesquin_3",
         "rang": 3,
         "nom": "Abd E.",
         "badge": "🎯 Buteur d'Élite",
-        "matchs": 9,
-        "titularisations": 7,
+        "matchs": 10,
+        "titularisations": 8,
         "remplacements": 2,
-        "minutes": 610,
+        "minutes": 690,
         "clean_sheets": 1,
         "buts": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 79.8,
+        "esg_score": 80.6,
         "sous_scores": {
-          "volume": 19.8,
+          "volume": 20.6,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -20764,6 +24302,32 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "p_lesquin_4",
         "rang": 4,
+        "nom": "Corentin D.",
+        "badge": "⚙️ Régulateur / Titulaire Cadre",
+        "matchs": 9,
+        "titularisations": 9,
+        "remplacements": 0,
+        "minutes": 770,
+        "clean_sheets": 1,
+        "buts": 1,
+        "cartons_j": 1,
+        "cartons_r": 0,
+        "esg_score": 68.0,
+        "sous_scores": {
+          "volume": 23.0,
+          "volume_max": 35,
+          "defense": 6.0,
+          "defense_max": 30,
+          "attaque": 12.0,
+          "attaque_max": 35,
+          "presence": 10.0,
+          "presence_max": 10,
+          "malus_discipline": 3.0
+        }
+      },
+      {
+        "id": "p_lesquin_5",
+        "rang": 5,
         "nom": "Mamadou D.",
         "badge": "🎯 Buteur d'Élite",
         "matchs": 8,
@@ -20774,9 +24338,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 3,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 81.6,
+        "esg_score": 80.6,
         "sous_scores": {
-          "volume": 13.6,
+          "volume": 12.6,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -20788,47 +24352,21 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "id": "p_lesquin_5",
-        "rang": 5,
-        "nom": "Corentin D.",
-        "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 8,
-        "titularisations": 8,
-        "remplacements": 0,
-        "minutes": 690,
-        "clean_sheets": 1,
-        "buts": 1,
-        "cartons_j": 1,
-        "cartons_r": 0,
-        "esg_score": 67.4,
-        "sous_scores": {
-          "volume": 22.4,
-          "volume_max": 35,
-          "defense": 6.0,
-          "defense_max": 30,
-          "attaque": 12.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 3.0
-        }
-      },
-      {
         "id": "p_lesquin_6",
         "rang": 6,
         "nom": "Mahery N.",
         "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 9,
-        "titularisations": 7,
+        "matchs": 10,
+        "titularisations": 8,
         "remplacements": 2,
-        "minutes": 610,
+        "minutes": 690,
         "clean_sheets": 1,
         "buts": 1,
-        "cartons_j": 1,
+        "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 64.8,
+        "esg_score": 62.6,
         "sous_scores": {
-          "volume": 19.8,
+          "volume": 20.6,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -20836,7 +24374,7 @@ window.MATCHDAY_TEAMS = {
           "attaque_max": 35,
           "presence": 10.0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 6.0
         }
       },
       {
@@ -20844,17 +24382,17 @@ window.MATCHDAY_TEAMS = {
         "rang": 7,
         "nom": "Antonin L.",
         "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 9,
-        "titularisations": 9,
+        "matchs": 10,
+        "titularisations": 10,
         "remplacements": 0,
-        "minutes": 720,
+        "minutes": 800,
         "clean_sheets": 1,
         "buts": 0,
-        "cartons_j": 1,
+        "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 56.3,
+        "esg_score": 53.9,
         "sous_scores": {
-          "volume": 23.3,
+          "volume": 23.9,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -20862,7 +24400,7 @@ window.MATCHDAY_TEAMS = {
           "attaque_max": 35,
           "presence": 10.0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 6.0
         }
       },
       {
@@ -20878,9 +24416,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 66.1,
+        "esg_score": 64.8,
         "sous_scores": {
-          "volume": 18.1,
+          "volume": 16.8,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -20904,9 +24442,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 3,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 73.4,
+        "esg_score": 72.6,
         "sous_scores": {
-          "volume": 10.4,
+          "volume": 9.6,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -20920,45 +24458,19 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "p_lesquin_10",
         "rang": 10,
-        "nom": "Jules L.",
-        "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 9,
-        "titularisations": 8,
-        "remplacements": 1,
-        "minutes": 665,
-        "clean_sheets": 0,
-        "buts": 0,
-        "cartons_j": 1,
-        "cartons_r": 0,
-        "esg_score": 48.6,
-        "sous_scores": {
-          "volume": 21.6,
-          "volume_max": 35,
-          "defense": 0.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 3.0
-        }
-      },
-      {
-        "id": "p_lesquin_11",
-        "rang": 11,
         "nom": "Raphael D.",
         "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 8,
-        "titularisations": 8,
+        "matchs": 9,
+        "titularisations": 9,
         "remplacements": 0,
-        "minutes": 640,
+        "minutes": 720,
         "clean_sheets": 1,
         "buts": 0,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 50.7,
+        "esg_score": 51.5,
         "sous_scores": {
-          "volume": 20.7,
+          "volume": 21.5,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -20970,47 +24482,47 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "id": "p_lesquin_12",
-        "rang": 12,
-        "nom": "Alex M.",
-        "badge": "🎯 Buteur d'Élite",
-        "matchs": 8,
-        "titularisations": 4,
-        "remplacements": 4,
-        "minutes": 420,
-        "clean_sheets": 1,
-        "buts": 2,
-        "cartons_j": 4,
+        "id": "p_lesquin_11",
+        "rang": 11,
+        "nom": "Jules L.",
+        "badge": "⚙️ Régulateur / Titulaire Cadre",
+        "matchs": 10,
+        "titularisations": 8,
+        "remplacements": 2,
+        "minutes": 690,
+        "clean_sheets": 0,
+        "buts": 0,
+        "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 61.6,
+        "esg_score": 47.6,
         "sous_scores": {
-          "volume": 13.6,
+          "volume": 20.6,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 0.0,
           "defense_max": 30,
-          "attaque": 24.0,
+          "attaque": 0.0,
           "attaque_max": 35,
           "presence": 10.0,
           "presence_max": 10,
-          "malus_discipline": 12.0
+          "malus_discipline": 3.0
         }
       },
       {
-        "id": "p_lesquin_13",
-        "rang": 13,
+        "id": "p_lesquin_12",
+        "rang": 12,
         "nom": "Corentin G.",
         "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 7,
-        "titularisations": 4,
+        "matchs": 8,
+        "titularisations": 5,
         "remplacements": 3,
-        "minutes": 395,
+        "minutes": 475,
         "clean_sheets": 1,
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 60.8,
+        "esg_score": 62.2,
         "sous_scores": {
-          "volume": 12.8,
+          "volume": 14.2,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -21022,21 +24534,47 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
+        "id": "p_lesquin_13",
+        "rang": 13,
+        "nom": "Alex M.",
+        "badge": "🎯 Buteur d'Élite",
+        "matchs": 8,
+        "titularisations": 4,
+        "remplacements": 4,
+        "minutes": 420,
+        "clean_sheets": 1,
+        "buts": 2,
+        "cartons_j": 4,
+        "cartons_r": 0,
+        "esg_score": 60.6,
+        "sous_scores": {
+          "volume": 12.6,
+          "volume_max": 35,
+          "defense": 6.0,
+          "defense_max": 30,
+          "attaque": 24.0,
+          "attaque_max": 35,
+          "presence": 10.0,
+          "presence_max": 10,
+          "malus_discipline": 12.0
+        }
+      },
+      {
         "id": "p_lesquin_14",
         "rang": 14,
         "nom": "Maxence D.",
         "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 6,
-        "titularisations": 6,
+        "matchs": 7,
+        "titularisations": 7,
         "remplacements": 0,
-        "minutes": 480,
+        "minutes": 560,
         "clean_sheets": 1,
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 51.6,
+        "esg_score": 52.8,
         "sous_scores": {
-          "volume": 15.6,
+          "volume": 16.8,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -21052,17 +24590,17 @@ window.MATCHDAY_TEAMS = {
         "rang": 15,
         "nom": "Oscar R.",
         "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 6,
-        "titularisations": 4,
+        "matchs": 7,
+        "titularisations": 5,
         "remplacements": 2,
-        "minutes": 370,
+        "minutes": 450,
         "clean_sheets": 0,
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 39.0,
+        "esg_score": 40.5,
         "sous_scores": {
-          "volume": 12.0,
+          "volume": 13.5,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -21086,9 +24624,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 40.2,
+        "esg_score": 39.4,
         "sous_scores": {
-          "volume": 10.2,
+          "volume": 9.4,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -21104,23 +24642,23 @@ window.MATCHDAY_TEAMS = {
         "rang": 17,
         "nom": "Ilyes A.",
         "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 3,
+        "matchs": 4,
         "titularisations": 1,
-        "remplacements": 2,
-        "minutes": 130,
+        "remplacements": 3,
+        "minutes": 155,
         "clean_sheets": 0,
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 42.2,
+        "esg_score": 44.6,
         "sous_scores": {
-          "volume": 4.2,
+          "volume": 4.6,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
           "attaque": 12.0,
           "attaque_max": 35,
-          "presence": 6.0,
+          "presence": 8.0,
           "presence_max": 10,
           "malus_discipline": 0.0
         }
@@ -21129,24 +24667,24 @@ window.MATCHDAY_TEAMS = {
         "id": "p_lesquin_18",
         "rang": 18,
         "nom": "Abdoul A.",
-        "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 3,
-        "titularisations": 2,
+        "badge": "⚙️ Régulateur / Titulaire Cadre",
+        "matchs": 4,
+        "titularisations": 3,
         "remplacements": 1,
-        "minutes": 185,
+        "minutes": 265,
         "clean_sheets": 0,
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 32.0,
+        "esg_score": 35.9,
         "sous_scores": {
-          "volume": 6.0,
+          "volume": 7.9,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
           "attaque": 0.0,
           "attaque_max": 35,
-          "presence": 6.0,
+          "presence": 8.0,
           "presence_max": 10,
           "malus_discipline": 0.0
         }
@@ -21154,6 +24692,32 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "p_lesquin_19",
         "rang": 19,
+        "nom": "Pierre C.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 1,
+        "titularisations": 1,
+        "remplacements": 0,
+        "minutes": 80,
+        "clean_sheets": 0,
+        "buts": 1,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 36.4,
+        "sous_scores": {
+          "volume": 2.4,
+          "volume_max": 35,
+          "defense": 0.0,
+          "defense_max": 30,
+          "attaque": 12.0,
+          "attaque_max": 35,
+          "presence": 2.0,
+          "presence_max": 10,
+          "malus_discipline": 0.0
+        }
+      },
+      {
+        "id": "p_lesquin_20",
+        "rang": 20,
         "nom": "Angelo A.",
         "badge": "🔄 Rotation Effectif",
         "matchs": 0,
@@ -21178,34 +24742,34 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "id": "p_lesquin_20",
-        "rang": 20,
+        "id": "p_lesquin_21",
+        "rang": 21,
         "nom": "Sergio J.",
         "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 2,
+        "matchs": 3,
         "titularisations": 0,
-        "remplacements": 2,
-        "minutes": 50,
+        "remplacements": 3,
+        "minutes": 75,
         "clean_sheets": 0,
         "buts": 0,
-        "cartons_j": 0,
+        "cartons_j": 1,
         "cartons_r": 0,
         "esg_score": 30.0,
         "sous_scores": {
-          "volume": 1.6,
+          "volume": 2.2,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
           "attaque": 0.0,
           "attaque_max": 35,
-          "presence": 4.0,
+          "presence": 6.0,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 3.0
         }
       },
       {
-        "id": "p_lesquin_21",
-        "rang": 21,
+        "id": "p_lesquin_22",
+        "rang": 22,
         "nom": "Anonyme X.",
         "badge": "⚡ Super-Sub / Impact Player",
         "matchs": 2,
@@ -21218,7 +24782,7 @@ window.MATCHDAY_TEAMS = {
         "cartons_r": 0,
         "esg_score": 30.0,
         "sous_scores": {
-          "volume": 1.6,
+          "volume": 1.5,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -21230,8 +24794,8 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "id": "p_lesquin_22",
-        "rang": 22,
+        "id": "p_lesquin_23",
+        "rang": 23,
         "nom": "Alhassane D.",
         "badge": "🔄 Rotation Effectif",
         "matchs": 1,
@@ -21244,33 +24808,7 @@ window.MATCHDAY_TEAMS = {
         "cartons_r": 0,
         "esg_score": 30.0,
         "sous_scores": {
-          "volume": 0.8,
-          "volume_max": 35,
-          "defense": 0.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 2.0,
-          "presence_max": 10,
-          "malus_discipline": 0.0
-        }
-      },
-      {
-        "id": "p_lesquin_23",
-        "rang": 23,
-        "nom": "Emilian L.",
-        "badge": "🔄 Rotation Effectif",
-        "matchs": 1,
-        "titularisations": 0,
-        "remplacements": 1,
-        "minutes": 25,
-        "clean_sheets": 0,
-        "buts": 0,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 30.0,
-        "sous_scores": {
-          "volume": 0.8,
+          "volume": 0.7,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -21284,7 +24822,7 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "p_lesquin_24",
         "rang": 24,
-        "nom": "Mohamed N.",
+        "nom": "Emilian L.",
         "badge": "🔄 Rotation Effectif",
         "matchs": 1,
         "titularisations": 0,
@@ -21296,7 +24834,7 @@ window.MATCHDAY_TEAMS = {
         "cartons_r": 0,
         "esg_score": 30.0,
         "sous_scores": {
-          "volume": 0.8,
+          "volume": 0.7,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -21310,6 +24848,32 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "p_lesquin_25",
         "rang": 25,
+        "nom": "Mohamed N.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 1,
+        "titularisations": 0,
+        "remplacements": 1,
+        "minutes": 25,
+        "clean_sheets": 0,
+        "buts": 0,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 30.0,
+        "sous_scores": {
+          "volume": 0.7,
+          "volume_max": 35,
+          "defense": 0.0,
+          "defense_max": 30,
+          "attaque": 0.0,
+          "attaque_max": 35,
+          "presence": 2.0,
+          "presence_max": 10,
+          "malus_discipline": 0.0
+        }
+      },
+      {
+        "id": "p_lesquin_26",
+        "rang": 26,
         "nom": "Milan V.",
         "badge": "🔄 Rotation Effectif",
         "matchs": 1,
@@ -21322,7 +24886,7 @@ window.MATCHDAY_TEAMS = {
         "cartons_r": 0,
         "esg_score": 30.0,
         "sous_scores": {
-          "volume": 0.8,
+          "volume": 0.7,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -21335,17 +24899,17 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 0.5,
+      "ppm_championnat": 0.6,
       "probabilite_montee_pct": 12.0,
       "probabilite_maintien_pct": 74.0,
-      "taux_invincibilite": 75.0,
+      "taux_invincibilite": 76.9,
       "bilan_global": {
-        "matchs": 12,
+        "matchs": 13,
         "victoires": 6,
-        "nuls": 3,
+        "nuls": 4,
         "defaites": 3,
-        "buts_pour": 38,
-        "buts_contre": 17,
+        "buts_pour": 40,
+        "buts_contre": 19,
         "difference": 21
       },
       "bilan_championnat": {
@@ -21359,8 +24923,8 @@ window.MATCHDAY_TEAMS = {
         "difference": -3,
         "ppm": 0.5
       },
-      "ratio_clean_sheet_pct": 8.3,
-      "moyenne_buts_encaisses": 1.42,
+      "ratio_clean_sheet_pct": 7.7,
+      "moyenne_buts_encaisses": 1.46,
       "projection_saison": {
         "points_prevus": 26.0,
         "rang_final_estime": "Milieu de tableau Régional 2 (Objectif maintien consolidé)"
@@ -21409,10 +24973,10 @@ window.MATCHDAY_TEAMS = {
         "rang": 1,
         "equipe": "CROIX FIC 2",
         "nom": "CROIX FIC 2",
-        "points": 10,
-        "joues": 4,
+        "points": 11,
+        "joues": 5,
         "gagnes": 3,
-        "nuls": 1,
+        "nuls": 2,
         "perdus": 0,
         "buts_pour": 7,
         "buts_contre": 4,
@@ -21426,13 +24990,73 @@ window.MATCHDAY_TEAMS = {
         ]
       },
       {
+        "rang": 1,
+        "equipe": "NOEUX LES MINES US",
+        "nom": "NOEUX LES MINES US",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 7,
+        "buts_contre": 3,
+        "diff": 4,
+        "difference": 4,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 1,
+        "equipe": "BIACHE ST VAAST US",
+        "nom": "BIACHE ST VAAST US",
+        "points": 6,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 0,
+        "perdus": 3,
+        "buts_pour": 14,
+        "buts_contre": 7,
+        "diff": 7,
+        "difference": 7,
+        "forme": [
+          "V",
+          "V",
+          "D",
+          "D"
+        ]
+      },
+      {
+        "rang": 2,
+        "equipe": "FOURMIES US",
+        "nom": "FOURMIES US",
+        "points": 10,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 1,
+        "perdus": 1,
+        "buts_pour": 15,
+        "buts_contre": 7,
+        "diff": 8,
+        "difference": 8,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "N"
+        ]
+      },
+      {
         "rang": 2,
         "equipe": "SECLIN FC",
         "nom": "SECLIN FC",
-        "points": 8,
-        "joues": 4,
+        "points": 9,
+        "joues": 5,
         "gagnes": 2,
-        "nuls": 2,
+        "nuls": 3,
         "perdus": 0,
         "buts_pour": 16,
         "buts_contre": 3,
@@ -21446,16 +25070,116 @@ window.MATCHDAY_TEAMS = {
         ]
       },
       {
-        "rang": 3,
-        "equipe": "NOEUX LES MINES US",
-        "nom": "NOEUX LES MINES US",
+        "rang": 2,
+        "equipe": "MERVILLE USM",
+        "nom": "MERVILLE USM",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 0,
+        "perdus": 2,
+        "buts_pour": 15,
+        "buts_contre": 7,
+        "diff": 8,
+        "difference": 8,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "D"
+        ]
+      },
+      {
+        "rang": 2,
+        "equipe": "RAISMES FC",
+        "nom": "RAISMES FC",
         "points": 8,
-        "joues": 4,
+        "joues": 5,
         "gagnes": 2,
         "nuls": 2,
+        "perdus": 1,
+        "buts_pour": 9,
+        "buts_contre": 6,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 3,
+        "equipe": "ESCAUDAIN USF",
+        "nom": "ESCAUDAIN USF",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
         "perdus": 0,
-        "buts_pour": 6,
-        "buts_contre": 2,
+        "buts_pour": 11,
+        "buts_contre": 8,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 4,
+        "equipe": "FOURMIES US",
+        "nom": "FOURMIES US",
+        "points": 10,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 1,
+        "perdus": 1,
+        "buts_pour": 15,
+        "buts_contre": 7,
+        "diff": 8,
+        "difference": 8,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "N"
+        ]
+      },
+      {
+        "rang": 4,
+        "equipe": "SECLIN FC",
+        "nom": "SECLIN FC",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 16,
+        "buts_contre": 3,
+        "diff": 13,
+        "difference": 13,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 5,
+        "equipe": "NOEUX LES MINES US",
+        "nom": "NOEUX LES MINES US",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 7,
+        "buts_contre": 3,
         "diff": 4,
         "difference": 4,
         "forme": [
@@ -21466,16 +25190,36 @@ window.MATCHDAY_TEAMS = {
         ]
       },
       {
-        "rang": 4,
-        "equipe": "ESCAUDAIN USF",
-        "nom": "ESCAUDAIN USF",
+        "rang": 6,
+        "equipe": "MERVILLE USM",
+        "nom": "MERVILLE USM",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 0,
+        "perdus": 2,
+        "buts_pour": 15,
+        "buts_contre": 7,
+        "diff": 8,
+        "difference": 8,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "D"
+        ]
+      },
+      {
+        "rang": 7,
+        "equipe": "RAISMES FC",
+        "nom": "RAISMES FC",
         "points": 8,
-        "joues": 4,
+        "joues": 5,
         "gagnes": 2,
         "nuls": 2,
-        "perdus": 0,
-        "buts_pour": 10,
-        "buts_contre": 7,
+        "perdus": 1,
+        "buts_pour": 9,
+        "buts_contre": 6,
         "diff": 3,
         "difference": 3,
         "forme": [
@@ -21486,76 +25230,16 @@ window.MATCHDAY_TEAMS = {
         ]
       },
       {
-        "rang": 5,
-        "equipe": "RAISMES FC",
-        "nom": "RAISMES FC",
-        "points": 7,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 1,
-        "perdus": 1,
-        "buts_pour": 8,
-        "buts_contre": 5,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "D"
-        ]
-      },
-      {
-        "rang": 6,
-        "equipe": "FOURMIES US",
-        "nom": "FOURMIES US",
-        "points": 7,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 1,
-        "perdus": 1,
-        "buts_pour": 6,
-        "buts_contre": 7,
-        "diff": -1,
-        "difference": -1,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "D"
-        ]
-      },
-      {
-        "rang": 7,
+        "rang": 8,
         "equipe": "BIACHE ST VAAST US",
         "nom": "BIACHE ST VAAST US",
         "points": 6,
-        "joues": 4,
+        "joues": 5,
         "gagnes": 2,
         "nuls": 0,
-        "perdus": 2,
-        "buts_pour": 13,
-        "buts_contre": 5,
-        "diff": 8,
-        "difference": 8,
-        "forme": [
-          "V",
-          "V",
-          "D",
-          "D"
-        ]
-      },
-      {
-        "rang": 8,
-        "equipe": "MERVILLE USM",
-        "nom": "MERVILLE USM",
-        "points": 6,
-        "joues": 4,
-        "gagnes": 2,
-        "nuls": 0,
-        "perdus": 2,
-        "buts_pour": 13,
-        "buts_contre": 6,
+        "perdus": 3,
+        "buts_pour": 14,
+        "buts_contre": 7,
         "diff": 7,
         "difference": 7,
         "forme": [
@@ -21569,18 +25253,18 @@ window.MATCHDAY_TEAMS = {
         "rang": 9,
         "equipe": "NOYELLES S/LENS US",
         "nom": "NOYELLES S/LENS US",
-        "points": 3,
-        "joues": 4,
+        "points": 4,
+        "joues": 5,
         "gagnes": 1,
-        "nuls": 0,
+        "nuls": 1,
         "perdus": 3,
-        "buts_pour": 11,
-        "buts_contre": 9,
+        "buts_pour": 12,
+        "buts_contre": 10,
         "diff": 2,
         "difference": 2,
         "forme": [
           "V",
-          "D",
+          "N",
           "D",
           "D"
         ]
@@ -21589,19 +25273,19 @@ window.MATCHDAY_TEAMS = {
         "rang": 10,
         "equipe": "LESQUIN US",
         "nom": "LESQUIN US",
-        "points": 2,
-        "joues": 4,
+        "points": 3,
+        "joues": 5,
         "gagnes": 0,
-        "nuls": 2,
+        "nuls": 3,
         "perdus": 2,
-        "buts_pour": 6,
-        "buts_contre": 9,
+        "buts_pour": 8,
+        "buts_contre": 11,
         "diff": -3,
         "difference": -3,
         "forme": [
           "N",
           "N",
-          "D",
+          "N",
           "D"
         ]
       },
@@ -21609,18 +25293,18 @@ window.MATCHDAY_TEAMS = {
         "rang": 11,
         "equipe": "COURCELLES US",
         "nom": "COURCELLES US",
-        "points": 1,
-        "joues": 4,
+        "points": 2,
+        "joues": 5,
         "gagnes": 0,
-        "nuls": 1,
+        "nuls": 2,
         "perdus": 3,
-        "buts_pour": 1,
-        "buts_contre": 4,
+        "buts_pour": 3,
+        "buts_contre": 6,
         "diff": -3,
         "difference": -3,
         "forme": [
           "N",
-          "D",
+          "N",
           "D",
           "D"
         ]
@@ -21630,14 +25314,14 @@ window.MATCHDAY_TEAMS = {
         "equipe": "MONTIGNY GOHELLE FC",
         "nom": "MONTIGNY GOHELLE FC",
         "points": 0,
-        "joues": 4,
+        "joues": 5,
         "gagnes": 0,
         "nuls": 0,
-        "perdus": 4,
+        "perdus": 5,
         "buts_pour": 2,
-        "buts_contre": 38,
-        "diff": -36,
-        "difference": -36,
+        "buts_contre": 47,
+        "diff": -45,
+        "difference": -45,
         "forme": [
           "D",
           "D",

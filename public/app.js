@@ -1579,9 +1579,9 @@ function renderInterface(data) {
 
   if (goalsEl) {
     if (currentTeamId === 'SENIOR_M1') {
-      goalsEl.innerHTML = `6 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(10 TCC)</span>`;
+      goalsEl.innerHTML = `7 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(11 TCC)</span>`;
       const desc = goalsEl.parentElement ? goalsEl.parentElement.querySelector('.kpi-desc') : null;
-      if (desc) desc.textContent = "6 en R3 • 4 en Coupe";
+      if (desc) desc.textContent = "7 en R3 • 4 en Coupe";
     } else if (currentTeamId === 'U18_M1') {
       goalsEl.innerHTML = `29 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(30 TCC)</span>`;
       const desc = goalsEl.parentElement ? goalsEl.parentElement.querySelector('.kpi-desc') : null;
@@ -1599,9 +1599,9 @@ function renderInterface(data) {
       const desc = goalsEl.parentElement ? goalsEl.parentElement.querySelector('.kpi-desc') : null;
       if (desc) desc.textContent = "16 en R2 • 6 en Coupe";
     } else if (currentTeamId === '500426_SENIOR_M1' || currentTeamId === 'LESQUIN_SENIOR_M1') {
-      goalsEl.innerHTML = `6 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(38 TCC)</span>`;
+      goalsEl.innerHTML = `8 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(40 TCC)</span>`;
       const desc = goalsEl.parentElement ? goalsEl.parentElement.querySelector('.kpi-desc') : null;
-      if (desc) desc.textContent = "6 en R2 • 32 en Coupe & Amicaux";
+      if (desc) desc.textContent = "8 en R2 • 32 en Coupe & Amicaux";
     } else {
       goalsEl.textContent = kpis.buts_marques ?? '--';
     }
@@ -1625,9 +1625,9 @@ function renderInterface(data) {
       const desc = csEl.parentElement ? csEl.parentElement.querySelector('.kpi-desc') : null;
       if (desc) desc.textContent = "1 Clean sheet en Championnat";
     } else if (currentTeamId === '500934_SENIOR_M1' || currentTeamId === 'SECLIN_SENIOR_M1') {
-      csEl.innerHTML = `2 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(3 TCC)</span>`;
+      csEl.innerHTML = `3 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(4 TCC)</span>`;
       const desc = csEl.parentElement ? csEl.parentElement.querySelector('.kpi-desc') : null;
-      if (desc) desc.textContent = "2 en R2 • 1 en Coupe";
+      if (desc) desc.textContent = "3 en R2 • 1 en Coupe";
     } else if (currentTeamId === '500426_SENIOR_M1' || currentTeamId === 'LESQUIN_SENIOR_M1') {
       csEl.innerHTML = `1 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">CS</span>`;
       const desc = csEl.parentElement ? csEl.parentElement.querySelector('.kpi-desc') : null;
@@ -1639,9 +1639,9 @@ function renderInterface(data) {
 
   if (minEl) {
     if (currentTeamId === 'SENIOR_M1') {
-      minEl.textContent = `${(kpis.minutes_cumulees || 8820).toLocaleString()} mn`;
+      minEl.textContent = `${(kpis.minutes_cumulees || 9720).toLocaleString()} mn`;
       const desc = minEl.parentElement ? minEl.parentElement.querySelector('.kpi-desc') : null;
-      if (desc) desc.textContent = "Cumul effectif (9 matchs TCC)";
+      if (desc) desc.textContent = "Cumul effectif (10 matchs TCC)";
     } else if (currentTeamId === 'U18_M1') {
       minEl.textContent = "5 400 mn";
       const desc = minEl.parentElement ? minEl.parentElement.querySelector('.kpi-desc') : null;
@@ -1669,9 +1669,9 @@ function renderInterface(data) {
 
   if (cardsEl) {
     if (currentTeamId === 'SENIOR_M1') {
-      cardsEl.innerHTML = `10 J. / 1 R. <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(17 J. / 2 R. TCC)</span>`;
+      cardsEl.innerHTML = `12 J. / 1 R. <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(19 J. / 2 R. TCC)</span>`;
       const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
-      if (desc) desc.textContent = "10 J / 1 R en R3 • 7 J / 1 R en Coupe";
+      if (desc) desc.textContent = "12 J / 1 R en R3 • 7 J / 1 R en Coupe";
     } else if (currentTeamId === 'U18_M1') {
       cardsEl.innerHTML = `8 J. / 1 R.`;
       const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;

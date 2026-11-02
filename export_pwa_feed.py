@@ -689,27 +689,27 @@ def build_seclin_pwa_payload(base_dir: str):
             })
 
     next_match = {
-        "competition": "Régional 2 (Poule B) • Journée 5",
-        "date_heure": "01/11/2026 à 14:30",
-        "lieu": "Stade Henri Seigneur (Croix)",
-        "domicile": "CROIX IC 2",
-        "exterieur": "SECLIN FC",
+        "competition": "Régional 2 (Poule B) • Journée 6",
+        "date_heure": "08/11/2026 à 14:30",
+        "lieu": "Stade Henri Seigneur (Seclin)",
+        "domicile": "SECLIN FC",
+        "exterieur": "BIACHE ST VAAST US",
         "comparatif": {
-            "titre": "Choc au Sommet • 1er vs 2e (R2 Poule B)",
-            "adversaire_nom": "Croix IC 2",
-            "adversaire_rang": "1er",
-            "adversaire_pts": 10,
-            "adversaire_buts_pour": 11,
-            "adversaire_buts_contre": 3,
+            "titre": "Comparatif de Performance (R2 Poule B)",
+            "adversaire_nom": "Biache St Vaast US",
+            "adversaire_rang": "8e",
+            "adversaire_pts": 6,
+            "adversaire_buts_pour": 14,
+            "adversaire_buts_contre": 7,
             "club_nom": "FC Seclin",
             "club_rang": "2e",
-            "club_pts": 8,
+            "club_pts": 9,
             "club_buts_pour": 16,
             "club_buts_contre": 3
         },
         "alertes": [
-            "Choc direct pour la 1ère place de Régional 2 : Croix (1er, 10 pts) accueille Seclin (2e, 8 pts, invaincu).",
-            "Duel des meilleures attaques et défenses de la poule : 11 BP / 3 BC pour Croix, 16 BP / 3 BC pour Seclin."
+            "Seclin toujours invaincu en R2 après son nul héroïque 0-0 chez le leader Croix (9 pts, 16 BP, 3 BC).",
+            "Meilleure défense de la poule : seulement 3 buts concédés en 5 journées (3e clean sheet de rang)."
         ]
     }
 
@@ -1016,27 +1016,27 @@ def build_lesquin_pwa_payload(base_dir: str):
             })
 
     next_match = {
-        "competition": "Régional 2 (Poule B) • Journée 5",
-        "date_heure": "01/11/2026 à 14:30",
-        "lieu": "Stade de Courcelles (Courcelles-lès-Lens)",
-        "domicile": "COURCELLES US",
-        "exterieur": "US LESQUIN",
+        "competition": "Régional 2 (Poule B) • Journée 6",
+        "date_heure": "08/11/2026 à 14:30",
+        "lieu": "Stade Jean-Pierre Papin (Lesquin)",
+        "domicile": "US LESQUIN",
+        "exterieur": "ESCAUDAIN USF",
         "comparatif": {
             "titre": "Comparatif de Performance (R2 Poule B)",
-            "adversaire_nom": "Courcelles US",
-            "adversaire_rang": "11e",
-            "adversaire_pts": 1,
-            "adversaire_buts_pour": 1,
-            "adversaire_buts_contre": 4,
+            "adversaire_nom": "Escaudain USF",
+            "adversaire_rang": "3e",
+            "adversaire_pts": 9,
+            "adversaire_buts_pour": 11,
+            "adversaire_buts_contre": 8,
             "club_nom": "US Lesquin",
             "club_rang": "10e",
-            "club_pts": 2,
-            "club_buts_pour": 6,
-            "club_buts_contre": 9
+            "club_pts": 3,
+            "club_buts_pour": 8,
+            "club_buts_contre": 11
         },
         "alertes": [
-            "Courcelles US : Concurrent direct en bas de tableau R2 (11e avec 1 pt)",
-            "Choc capital pour s'éloigner de la zone de relégation"
+            "Lesquin prend un point précieux à Courcelles (2-2) et accueille le 3e Escaudain (9 pts).",
+            "Objectif décrocher la première victoire de la saison à domicile."
         ]
     }
 
@@ -1423,7 +1423,7 @@ def export_real_pwa_feed():
                 total_clean_sheets += 1
 
     invincibilite_pct = round(((victoires + nuls) / total_matches * 100), 1) if total_matches > 0 else 0
-    ppm = round(8 / 4, 2)  # 8 points en 4 journées R3 = 2.00 PPM
+    ppm = round(9 / 5, 2)  # 9 points en 5 journées R3 = 1.80 PPM
 
     # 2. Dernier match officiel de l'Équipe Fanion
     last_match_row = conn.execute("""
@@ -1457,53 +1457,53 @@ def export_real_pwa_feed():
                 "detail": ev["detail"]
             })
 
-    # 3. Prochain Match : ANICHE SC vs GENECH ES (J5, 01/11 à 14h30) - Choc au Sommet 2e vs 3e
+    # 3. Prochain Match : ES GENECH vs BEUVRY LA FORET AS (J6, 08/11 à 14h30)
     next_match = {
-        "competition": "Seniors Régional 3 • Journée 5",
-        "date_heure": "Dimanche 01 Novembre 2026 à 14h30",
-        "lieu": "Stade des Navarres (Aniche)",
-        "domicile": "ANICHE SC",
-        "exterieur": "ES GENECH",
+        "competition": "Seniors Régional 3 • Journée 6",
+        "date_heure": "Dimanche 08 Novembre 2026 à 14h30",
+        "lieu": "Stade Léo Lagrange (Genech)",
+        "domicile": "ES GENECH",
+        "exterieur": "BEUVRY LA FORET AS",
         "comparatif": {
-            "titre": "Choc au Sommet • 2e vs 3e (R3 Poule D)",
-            "adversaire_nom": "Aniche SC",
+            "titre": "Choc de Haut de Tableau • 5e vs 2e (R3 Poule D)",
+            "adversaire_nom": "Beuvry la Forêt AS",
             "adversaire_rang": "2e",
-            "adversaire_pts": 8,
-            "adversaire_buts_pour": 7,
-            "adversaire_buts_contre": 3,
+            "adversaire_pts": 10,
+            "adversaire_buts_pour": 8,
+            "adversaire_buts_contre": 4,
             "club_nom": "ES Genech",
-            "club_rang": "3e",
-            "club_pts": 8,
-            "club_buts_pour": 6,
-            "club_buts_contre": 3
+            "club_rang": "5e",
+            "club_pts": 9,
+            "club_buts_pour": 7,
+            "club_buts_contre": 4
         },
         "alertes": [
-            "Choc direct pour la 2e place derrière Beuvry (10 pts) : Aniche (2e, 8 pts) et Genech (3e, 8 pts) sont les deux seules équipes invaincues de la poule (2 victoires, 2 nuls chacune).",
-            "Duel des meilleures défenses de la poule : seulement 3 buts concédés en 4 journées pour chaque formation (0.75 but/match).",
-            "Erwan G. (Aniche) averti le 18/10, secteur axial sous surveillance."
+            "Choc de haut de tableau : Genech (5e, 9 pts, invaincu) accueille Beuvry (2e, 10 pts) séparés par seulement 1 point.",
+            "Duel des meilleures défenses : seulement 4 buts concédés en 5 journées par Genech et Beuvry (0.80 but/match).",
+            "Genech reste invaincu en championnat R3 cette saison (2 victoires, 3 nuls)."
         ],
         "stats_comparatives": {
             "genech": {
-                "rang": 3,
-                "points": 8,
-                "buts_marques": 6,
-                "buts_encaisses": 3,
-                "diff": "+3",
-                "forme": ["N", "N", "V", "V"]
-            },
-            "aniche": {
-                "rang": 2,
-                "points": 8,
+                "rang": 5,
+                "points": 9,
                 "buts_marques": 7,
-                "buts_encaisses": 3,
+                "buts_encaisses": 4,
+                "diff": "+3",
+                "forme": ["N", "N", "N", "V", "V"]
+            },
+            "beuvry": {
+                "rang": 2,
+                "points": 10,
+                "buts_marques": 8,
+                "buts_encaisses": 4,
                 "diff": "+4",
-                "forme": ["N", "V", "N", "V"]
+                "forme": ["V", "N", "V", "D", "V"]
             }
         },
         "adversaire_alertes": [
-            "Choc direct pour la 2e place derrière Beuvry (10 pts) : Aniche (2e, 8 pts) et Genech (3e, 8 pts) sont les deux seules équipes invaincues de la poule (2 victoires, 2 nuls chacune).",
-            "Duel des meilleures défenses de la poule : seulement 3 buts concédés en 4 journées pour chaque formation (0.75 but/match).",
-            "Erwan G. (Aniche) averti le 18/10, secteur axial sous surveillance."
+            "Choc de haut de tableau : Genech (5e, 9 pts, invaincu) accueille Beuvry (2e, 10 pts) séparés par seulement 1 point.",
+            "Duel des meilleures défenses : seulement 4 buts concédés en 5 journées par Genech et Beuvry (0.80 but/match).",
+            "Genech reste invaincu en championnat R3 cette saison (2 victoires, 3 nuls)."
         ]
     }
 
