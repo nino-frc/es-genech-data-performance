@@ -8,108 +8,101 @@
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "02/11/2026 à 13:43"
+      "derniere_maj": "02/11/2026 à 13:49"
     },
     "dernier_match": {
-      "id": "r3_j5_aniche_genech",
-      "competition": "Seniors Régional 3",
-      "domicile": "ANICHE SC",
+      "id": "cdf_t6_tatinghem_genech",
+      "competition": "Coupe de France (Tour 6)",
+      "domicile": "ST MARTIN TATINGHEM",
       "exterieur": "GENECH ES",
-      "score_domicile": 1,
-      "score_exterieur": 1,
-      "date_heure": "2026-11-08 14:30",
+      "score_domicile": 2,
+      "score_exterieur": 0,
+      "date_heure": "2026-10-25 15:00",
       "statut": "TERMINE"
     },
     "evenements_dernier_match": [
       {
-        "minute": 30,
+        "minute": 43,
         "type": "AVERTISSEMENT",
-        "equipe": "ANICHE SC",
-        "acteur": "Anthony B.",
+        "equipe": "ST MARTIN TATINGHEM",
+        "acteur": "Ethan T.",
         "detail": "Carton jaune"
-      },
-      {
-        "minute": 38,
-        "type": "CHANGEMENT",
-        "equipe": "ANICHE SC",
-        "acteur": "Leo L.",
-        "detail": "LEO L. remplace JULIEN M."
       },
       {
         "minute": 44,
-        "type": "AVERTISSEMENT",
-        "equipe": "GENECH ES",
-        "acteur": "Jean-paul B.",
-        "detail": "Carton jaune"
+        "type": "BUT",
+        "equipe": "ST MARTIN TATINGHEM",
+        "acteur": "Anthone S.",
+        "detail": "But inscrit par ANTHONE SOTOMSKI"
       },
       {
-        "minute": 52,
-        "type": "AVERTISSEMENT",
-        "equipe": "GENECH ES",
-        "acteur": "Giovany C.",
-        "detail": "Carton jaune"
+        "minute": 46,
+        "type": "CHANGEMENT",
+        "equipe": "ST MARTIN TATINGHEM",
+        "acteur": "Steven C.",
+        "detail": "STEVEN CARPENTIER remplace KEVIN SCHRIVE"
       },
       {
-        "minute": 66,
+        "minute": 48,
+        "type": "CHANGEMENT",
+        "equipe": "GENECH ES",
+        "acteur": "Thomas L.",
+        "detail": "THOMAS LEONARD remplace JULIEN NISSE"
+      },
+      {
+        "minute": 58,
+        "type": "CHANGEMENT",
+        "equipe": "ST MARTIN TATINGHEM",
+        "acteur": "Ake S.",
+        "detail": "AKE SEKOU CISSE remplace STEVEN CARPENTIER"
+      },
+      {
+        "minute": 62,
+        "type": "CHANGEMENT",
+        "equipe": "ST MARTIN TATINGHEM",
+        "acteur": "Florian D.",
+        "detail": "FLORIAN DELATTRE remplace ETHAN TREHOUX"
+      },
+      {
+        "minute": 62,
         "type": "CHANGEMENT",
         "equipe": "GENECH ES",
         "acteur": "Dany D.",
-        "detail": "DANY D. remplace CLEMENT D."
+        "detail": "DANY DE FREITAS remplace GIOVANY CALON"
       },
       {
-        "minute": 70,
-        "type": "CHANGEMENT",
-        "equipe": "ANICHE SC",
-        "acteur": "Matheo F.",
-        "detail": "MATHEO F. remplace DONATO M."
-      },
-      {
-        "minute": 75,
+        "minute": 62,
         "type": "CHANGEMENT",
         "equipe": "GENECH ES",
-        "acteur": "Gabyn D.",
-        "detail": "GABYN D. remplace JULES D."
+        "acteur": "Jules D.",
+        "detail": "JULES DIVERCHY remplace HUGO HERVE"
       },
       {
-        "minute": 76,
-        "type": "BUT",
+        "minute": 69,
+        "type": "CHANGEMENT",
         "equipe": "GENECH ES",
-        "acteur": "Gabyn D.",
-        "detail": "But inscrit par GABYN D."
+        "acteur": "Elio D.",
+        "detail": "ELIO DELCROIX remplace THOMAS LEONARD"
+      },
+      {
+        "minute": 73,
+        "type": "CHANGEMENT",
+        "equipe": "ST MARTIN TATINGHEM",
+        "acteur": "Adama N.",
+        "detail": "ADAMA NIANE remplace ANTHONE SOTOMSKI"
       },
       {
         "minute": 83,
-        "type": "CHANGEMENT",
-        "equipe": "GENECH ES",
-        "acteur": "Evan P.",
-        "detail": "EVAN P. remplace ELIO D."
-      },
-      {
-        "minute": 84,
-        "type": "CHANGEMENT",
-        "equipe": "ANICHE SC",
-        "acteur": "Rafik E.",
-        "detail": "RAFIK E. remplace MATHIEU T."
-      },
-      {
-        "minute": 87,
-        "type": "AVERTISSEMENT",
-        "equipe": "ANICHE SC",
-        "acteur": "Abdelaziz A.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 90,
         "type": "BUT",
-        "equipe": "ANICHE SC",
-        "acteur": "Yanis B.",
-        "detail": "But inscrit par YANIS B."
+        "equipe": "ST MARTIN TATINGHEM",
+        "acteur": "Aaron H.",
+        "detail": "But inscrit par AARON HUYSMAN"
       },
       {
         "minute": 90,
         "type": "AVERTISSEMENT",
-        "equipe": "ANICHE SC",
-        "acteur": "Rafik E.",
+        "equipe": "ST MARTIN TATINGHEM",
+        "acteur": "Florian D.",
         "detail": "Carton jaune"
       }
     ],
@@ -193,282 +186,6 @@
       "consigne_coach": "La Commission Régionale d'Arbitrage (CRA) publiera l'arbitre officiel ce jeudi 05/11. Le profil et les consignes disciplinaires seront actualisés automatiquement dès parution."
     },
     "historique_matchs": [
-      {
-        "id": "r3_j5_aniche_genech",
-        "competition": "Régional 3 • Journée 5",
-        "comp_type": "R3",
-        "date": "08/11/2026",
-        "date_heure": "2026-11-08 14:30",
-        "domicile": "ANICHE SC",
-        "exterieur": "GENECH ES",
-        "score_domicile": 1,
-        "score_exterieur": 1,
-        "score_display": "1 - 1",
-        "is_domicile": false,
-        "resultat": "N",
-        "resultat_label": "Match Nul",
-        "evenements": [
-          {
-            "minute": 30,
-            "type": "AVERTISSEMENT",
-            "equipe": "ANICHE SC",
-            "acteur": "Anthony B.",
-            "acteur_secondaire": "",
-            "detail": "Carton jaune"
-          },
-          {
-            "minute": 38,
-            "type": "CHANGEMENT",
-            "equipe": "ANICHE SC",
-            "acteur": "Leo L.",
-            "acteur_secondaire": "Julien M.",
-            "detail": "LEO L. remplace JULIEN M."
-          },
-          {
-            "minute": 44,
-            "type": "AVERTISSEMENT",
-            "equipe": "GENECH ES",
-            "acteur": "Jean-paul B.",
-            "acteur_secondaire": "",
-            "detail": "Carton jaune"
-          },
-          {
-            "minute": 52,
-            "type": "AVERTISSEMENT",
-            "equipe": "GENECH ES",
-            "acteur": "Giovany C.",
-            "acteur_secondaire": "",
-            "detail": "Carton jaune"
-          },
-          {
-            "minute": 66,
-            "type": "CHANGEMENT",
-            "equipe": "GENECH ES",
-            "acteur": "Dany D.",
-            "acteur_secondaire": "Clement D.",
-            "detail": "DANY D. remplace CLEMENT D."
-          },
-          {
-            "minute": 70,
-            "type": "CHANGEMENT",
-            "equipe": "ANICHE SC",
-            "acteur": "Matheo F.",
-            "acteur_secondaire": "Donato M.",
-            "detail": "MATHEO F. remplace DONATO M."
-          },
-          {
-            "minute": 75,
-            "type": "CHANGEMENT",
-            "equipe": "GENECH ES",
-            "acteur": "Gabyn D.",
-            "acteur_secondaire": "Jules D.",
-            "detail": "GABYN D. remplace JULES D."
-          },
-          {
-            "minute": 76,
-            "type": "BUT",
-            "equipe": "GENECH ES",
-            "acteur": "Gabyn D.",
-            "acteur_secondaire": "",
-            "detail": "But inscrit par GABYN D."
-          },
-          {
-            "minute": 83,
-            "type": "CHANGEMENT",
-            "equipe": "GENECH ES",
-            "acteur": "Evan P.",
-            "acteur_secondaire": "Elio D.",
-            "detail": "EVAN P. remplace ELIO D."
-          },
-          {
-            "minute": 84,
-            "type": "CHANGEMENT",
-            "equipe": "ANICHE SC",
-            "acteur": "Rafik E.",
-            "acteur_secondaire": "Mathieu T.",
-            "detail": "RAFIK E. remplace MATHIEU T."
-          },
-          {
-            "minute": 87,
-            "type": "AVERTISSEMENT",
-            "equipe": "ANICHE SC",
-            "acteur": "Abdelaziz A.",
-            "acteur_secondaire": "",
-            "detail": "Carton jaune"
-          },
-          {
-            "minute": 90,
-            "type": "BUT",
-            "equipe": "ANICHE SC",
-            "acteur": "Yanis B.",
-            "acteur_secondaire": "",
-            "detail": "But inscrit par YANIS B."
-          },
-          {
-            "minute": 90,
-            "type": "AVERTISSEMENT",
-            "equipe": "ANICHE SC",
-            "acteur": "Rafik E.",
-            "acteur_secondaire": "",
-            "detail": "Carton jaune"
-          }
-        ],
-        "compositions": {
-          "genech": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Tim L.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 2,
-                "nom": "Julien D.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 3,
-                "nom": "Clement D.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 4,
-                "nom": "Maxime P.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 5,
-                "nom": "Remi D.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 6,
-                "nom": "Jules D.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 7,
-                "nom": "Mateo S.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 8,
-                "nom": "Augustin D.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 9,
-                "nom": "Jean-paul B.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 10,
-                "nom": "Giovany C.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 11,
-                "nom": "Elio D.",
-                "role": "TITULAIRE"
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Dany D.",
-                "role": "REMPLACANT"
-              },
-              {
-                "numero": 13,
-                "nom": "Gabyn D.",
-                "role": "REMPLACANT"
-              },
-              {
-                "numero": 14,
-                "nom": "Evan P.",
-                "role": "REMPLACANT"
-              }
-            ]
-          },
-          "adversaire": {
-            "equipe": "ANICHE SC",
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Noah S.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 2,
-                "nom": "Mathieu T.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 3,
-                "nom": "Abdelaziz A.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 4,
-                "nom": "Anonyme X.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 5,
-                "nom": "Anthony B.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 6,
-                "nom": "Loyd O.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 7,
-                "nom": "Lilian T.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 8,
-                "nom": "Lenny O.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 9,
-                "nom": "Donato M.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 10,
-                "nom": "Yanis B.",
-                "role": "TITULAIRE"
-              },
-              {
-                "numero": 11,
-                "nom": "Julien M.",
-                "role": "TITULAIRE"
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Matheo F.",
-                "role": "REMPLACANT"
-              },
-              {
-                "numero": 13,
-                "nom": "Rafik E.",
-                "role": "REMPLACANT"
-              },
-              {
-                "numero": 14,
-                "nom": "Leo L.",
-                "role": "REMPLACANT"
-              }
-            ]
-          }
-        }
-      },
       {
         "id": "cdf_t6_tatinghem_genech",
         "competition": "Coupe de France • Tour 6",
@@ -1054,6 +771,533 @@
               {
                 "numero": 14,
                 "nom": "Quentin V.",
+                "role": "REMPLACANT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "r3_j4_bavay_aniche",
+        "competition": "Régional 3 • Journée 4",
+        "comp_type": "R3",
+        "date": "18/10/2026",
+        "date_heure": "2026-10-18 15:00",
+        "domicile": "BAVAY US",
+        "exterieur": "ANICHE SC",
+        "score_domicile": 1,
+        "score_exterieur": 1,
+        "score_display": "1 - 1",
+        "is_domicile": false,
+        "resultat": "N",
+        "resultat_label": "Match Nul",
+        "evenements": [
+          {
+            "minute": 27,
+            "type": "CHANGEMENT",
+            "equipe": "BAVAY US",
+            "acteur": "Sofiane W.",
+            "acteur_secondaire": "Said E.",
+            "detail": "SOFIANE W. remplace SAID E."
+          },
+          {
+            "minute": 30,
+            "type": "BUT",
+            "equipe": "BAVAY US",
+            "acteur": "Noam L.",
+            "acteur_secondaire": "",
+            "detail": "But inscrit par NOAM L."
+          },
+          {
+            "minute": 42,
+            "type": "AVERTISSEMENT",
+            "equipe": "ANICHE SC",
+            "acteur": "Abdelaziz A.",
+            "acteur_secondaire": "",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 45,
+            "type": "AVERTISSEMENT",
+            "equipe": "BAVAY US",
+            "acteur": "Antoine G.",
+            "acteur_secondaire": "",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 51,
+            "type": "CHANGEMENT",
+            "equipe": "BAVAY US",
+            "acteur": "Basile C.",
+            "acteur_secondaire": "Luca T.",
+            "detail": "BASILE C. remplace LUCA T."
+          },
+          {
+            "minute": 55,
+            "type": "AVERTISSEMENT",
+            "equipe": "ANICHE SC",
+            "acteur": "Lenny O.",
+            "acteur_secondaire": "",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 60,
+            "type": "CHANGEMENT",
+            "equipe": "ANICHE SC",
+            "acteur": "Mehdi S.",
+            "acteur_secondaire": "Lilian T.",
+            "detail": "MEHDI S. remplace LILIAN T."
+          },
+          {
+            "minute": 60,
+            "type": "CHANGEMENT",
+            "equipe": "ANICHE SC",
+            "acteur": "Julien M.",
+            "acteur_secondaire": "Adrien S.",
+            "detail": "JULIEN M. remplace ADRIEN S."
+          },
+          {
+            "minute": 61,
+            "type": "AVERTISSEMENT",
+            "equipe": "ANICHE SC",
+            "acteur": "Kevin B.",
+            "acteur_secondaire": "",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 70,
+            "type": "CHANGEMENT",
+            "equipe": "ANICHE SC",
+            "acteur": "Axel C.",
+            "acteur_secondaire": "Lenny O.",
+            "detail": "AXEL C. remplace LENNY O."
+          },
+          {
+            "minute": 80,
+            "type": "AVERTISSEMENT",
+            "equipe": "ANICHE SC",
+            "acteur": "Mustafa B.",
+            "acteur_secondaire": "",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 90,
+            "type": "BUT",
+            "equipe": "ANICHE SC",
+            "acteur": "Axel C.",
+            "acteur_secondaire": "",
+            "detail": "But inscrit par AXEL C."
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "ANICHE SC",
+            "acteur": "Adrien S.",
+            "acteur_secondaire": "",
+            "detail": "Carton jaune"
+          }
+        ],
+        "compositions": {
+          "genech": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "BAVAY US",
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Romain C.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 1,
+                "nom": "Noah S.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 2,
+                "nom": "Aurelien V.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 2,
+                "nom": "Anonyme X.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 3,
+                "nom": "Said E.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 3,
+                "nom": "Abdelaziz A.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 4,
+                "nom": "Antonino T.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 4,
+                "nom": "Baltazar H.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 5,
+                "nom": "Hugo M.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 5,
+                "nom": "Anthony B.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 6,
+                "nom": "Ethan M.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 6,
+                "nom": "Loyd O.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 7,
+                "nom": "Ayoub M.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 7,
+                "nom": "Lilian T.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 8,
+                "nom": "Antoine G.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 8,
+                "nom": "Lenny O.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 9,
+                "nom": "Noam L.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 9,
+                "nom": "Kevin B.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 10,
+                "nom": "Theo C.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 10,
+                "nom": "Zinedine B.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 11,
+                "nom": "Luca T.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 11,
+                "nom": "Adrien S.",
+                "role": "TITULAIRE"
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Sofiane W.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 12,
+                "nom": "Mehdi S.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 13,
+                "nom": "Basile C.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 13,
+                "nom": "Axel C.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 14,
+                "nom": "Julien M.",
+                "role": "REMPLACANT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "r3_j4_beuvry_guesnain",
+        "competition": "Régional 3 • Journée 4",
+        "comp_type": "R3",
+        "date": "18/10/2026",
+        "date_heure": "2026-10-18 15:00",
+        "domicile": "BEUVRY LA FORET AS",
+        "exterieur": "GUESNAIN SC",
+        "score_domicile": 2,
+        "score_exterieur": 1,
+        "score_display": "2 - 1",
+        "is_domicile": false,
+        "resultat": "D",
+        "resultat_label": "Défaite",
+        "evenements": [
+          {
+            "minute": 26,
+            "type": "AVERTISSEMENT",
+            "equipe": "GUESNAIN SC",
+            "acteur": "Sofiane B.",
+            "acteur_secondaire": "",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 37,
+            "type": "CHANGEMENT",
+            "equipe": "GUESNAIN SC",
+            "acteur": "Sofiane G.",
+            "acteur_secondaire": "Jason L.",
+            "detail": "SOFIANE G. remplace JASON L."
+          },
+          {
+            "minute": 45,
+            "type": "CHANGEMENT",
+            "equipe": "BEUVRY LA FORET AS",
+            "acteur": "Martin B.",
+            "acteur_secondaire": "Antoine S.",
+            "detail": "MARTIN B. remplace ANTOINE S."
+          },
+          {
+            "minute": 45,
+            "type": "CHANGEMENT",
+            "equipe": "GUESNAIN SC",
+            "acteur": "Nahil B.",
+            "acteur_secondaire": "Habib S.",
+            "detail": "NAHIL B. remplace HABIB S."
+          },
+          {
+            "minute": 45,
+            "type": "CHANGEMENT",
+            "equipe": "GUESNAIN SC",
+            "acteur": "Yanice B.",
+            "acteur_secondaire": "Nadir M.",
+            "detail": "YANICE B. remplace NADIR M."
+          },
+          {
+            "minute": 47,
+            "type": "AVERTISSEMENT",
+            "equipe": "BEUVRY LA FORET AS",
+            "acteur": "Florent H.",
+            "acteur_secondaire": "",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 63,
+            "type": "CHANGEMENT",
+            "equipe": "BEUVRY LA FORET AS",
+            "acteur": "Enzo C.",
+            "acteur_secondaire": "Luc C.",
+            "detail": "ENZO C. remplace LUC C."
+          },
+          {
+            "minute": 72,
+            "type": "CHANGEMENT",
+            "equipe": "BEUVRY LA FORET AS",
+            "acteur": "Anthony D.",
+            "acteur_secondaire": "Anthony C.",
+            "detail": "ANTHONY D. remplace ANTHONY C."
+          },
+          {
+            "minute": 76,
+            "type": "AVERTISSEMENT",
+            "equipe": "GUESNAIN SC",
+            "acteur": "Hakim G.",
+            "acteur_secondaire": "",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 86,
+            "type": "AVERTISSEMENT",
+            "equipe": "GUESNAIN SC",
+            "acteur": "Mehdi B.",
+            "acteur_secondaire": "",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 88,
+            "type": "AVERTISSEMENT",
+            "equipe": "BEUVRY LA FORET AS",
+            "acteur": "Matteo M.",
+            "acteur_secondaire": "",
+            "detail": "Carton jaune"
+          }
+        ],
+        "compositions": {
+          "genech": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "BEUVRY LA FORET AS",
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Virgile S.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 1,
+                "nom": "Aurelien M.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 2,
+                "nom": "Matteo M.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 2,
+                "nom": "Djibryl M.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 3,
+                "nom": "Anthony C.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 3,
+                "nom": "Hakim G.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 4,
+                "nom": "Camille A.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 4,
+                "nom": "Morgan A.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 5,
+                "nom": "Florent H.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 5,
+                "nom": "Andy M.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 6,
+                "nom": "Jules H.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 6,
+                "nom": "Sofiane B.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 7,
+                "nom": "William M.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 7,
+                "nom": "Habib S.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 8,
+                "nom": "Antoine S.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 8,
+                "nom": "Jason L.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 9,
+                "nom": "Luc C.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 9,
+                "nom": "Nadir M.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 10,
+                "nom": "Mathieu B.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 10,
+                "nom": "Rayane M.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 11,
+                "nom": "Lucas P.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 11,
+                "nom": "Mohammed C.",
+                "role": "TITULAIRE"
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Enzo C.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 12,
+                "nom": "Nahil B.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 13,
+                "nom": "Martin B.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 13,
+                "nom": "Yanice B.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 14,
+                "nom": "Anthony D.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 14,
+                "nom": "Sofiane G.",
                 "role": "REMPLACANT"
               }
             ]
@@ -3053,8 +3297,8 @@
       }
     ],
     "kpis_saison": {
-      "buts_marques": 11,
-      "buts_encaisses": 6,
+      "buts_marques": 12,
+      "buts_encaisses": 8,
       "clean_sheets": 5,
       "minutes_cumulees": 9921,
       "cartons_jaunes": 20,
@@ -3144,9 +3388,9 @@
         "buts": 2,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 91.1,
+        "esg_score": 94.6,
         "sous_scores": {
-          "volume": 31.1,
+          "volume": 28.3,
           "volume_max": 35,
           "defense": 30.0,
           "defense_max": 30,
@@ -3160,6 +3404,58 @@
       {
         "id": "p_2",
         "rang": 2,
+        "nom": "Mathys H.",
+        "badge": "🛡️ Roc Défensif",
+        "matchs": 9,
+        "titularisations": 9,
+        "remplacements": 0,
+        "minutes": 810,
+        "clean_sheets": 5,
+        "buts": 1,
+        "cartons_j": 3,
+        "cartons_r": 0,
+        "esg_score": 77.0,
+        "sous_scores": {
+          "volume": 28.6,
+          "volume_max": 35,
+          "defense": 30.0,
+          "defense_max": 30,
+          "attaque": 14.0,
+          "attaque_max": 35,
+          "presence": 10.0,
+          "presence_max": 10,
+          "malus_discipline": 12.0
+        }
+      },
+      {
+        "id": "p_3",
+        "rang": 3,
+        "nom": "Augustin D.",
+        "badge": "🛡️ Roc Défensif",
+        "matchs": 10,
+        "titularisations": 10,
+        "remplacements": 0,
+        "minutes": 824,
+        "clean_sheets": 5,
+        "buts": 0,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 75.0,
+        "sous_scores": {
+          "volume": 29.1,
+          "volume_max": 35,
+          "defense": 30.0,
+          "defense_max": 30,
+          "attaque": 0.0,
+          "attaque_max": 35,
+          "presence": 10.0,
+          "presence_max": 10,
+          "malus_discipline": 0.0
+        }
+      },
+      {
+        "id": "p_4",
+        "rang": 4,
         "nom": "Tim L.",
         "badge": "🛡️ Roc Défensif",
         "matchs": 10,
@@ -3172,59 +3468,7 @@
         "cartons_r": 0,
         "esg_score": 75.0,
         "sous_scores": {
-          "volume": 35.0,
-          "volume_max": 35,
-          "defense": 30.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 0.0
-        }
-      },
-      {
-        "id": "p_3",
-        "rang": 3,
-        "nom": "Mathys H.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 9,
-        "titularisations": 9,
-        "remplacements": 0,
-        "minutes": 810,
-        "clean_sheets": 5,
-        "buts": 1,
-        "cartons_j": 3,
-        "cartons_r": 0,
-        "esg_score": 73.5,
-        "sous_scores": {
-          "volume": 31.5,
-          "volume_max": 35,
-          "defense": 30.0,
-          "defense_max": 30,
-          "attaque": 14.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 12.0
-        }
-      },
-      {
-        "id": "p_4",
-        "rang": 4,
-        "nom": "Augustin D.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 10,
-        "titularisations": 10,
-        "remplacements": 0,
-        "minutes": 824,
-        "clean_sheets": 5,
-        "buts": 0,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 72.0,
-        "sous_scores": {
-          "volume": 32.0,
+          "volume": 31.8,
           "volume_max": 35,
           "defense": 30.0,
           "defense_max": 30,
@@ -3248,9 +3492,9 @@
         "buts": 1,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 69.4,
+        "esg_score": 72.2,
         "sous_scores": {
-          "volume": 25.4,
+          "volume": 23.1,
           "volume_max": 35,
           "defense": 24.0,
           "defense_max": 30,
@@ -3276,7 +3520,7 @@
         "cartons_r": 0,
         "esg_score": 67.0,
         "sous_scores": {
-          "volume": 35.0,
+          "volume": 31.8,
           "volume_max": 35,
           "defense": 30.0,
           "defense_max": 30,
@@ -3300,9 +3544,9 @@
         "buts": 1,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 63.1,
+        "esg_score": 65.6,
         "sous_scores": {
-          "volume": 23.1,
+          "volume": 21.0,
           "volume_max": 35,
           "defense": 24.0,
           "defense_max": 30,
@@ -3326,9 +3570,9 @@
         "buts": 2,
         "cartons_j": 4,
         "cartons_r": 1,
-        "esg_score": 60.3,
+        "esg_score": 62.6,
         "sous_scores": {
-          "volume": 20.3,
+          "volume": 18.5,
           "volume_max": 35,
           "defense": 30.0,
           "defense_max": 30,
@@ -3352,9 +3596,9 @@
         "buts": 1,
         "cartons_j": 1,
         "cartons_r": 1,
-        "esg_score": 58.3,
+        "esg_score": 61.3,
         "sous_scores": {
-          "volume": 26.3,
+          "volume": 23.9,
           "volume_max": 35,
           "defense": 24.0,
           "defense_max": 30,
@@ -3368,32 +3612,6 @@
       {
         "id": "p_10",
         "rang": 10,
-        "nom": "Clement D.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 9,
-        "titularisations": 8,
-        "remplacements": 1,
-        "minutes": 640,
-        "clean_sheets": 3,
-        "buts": 0,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 52.9,
-        "sous_scores": {
-          "volume": 24.9,
-          "volume_max": 35,
-          "defense": 18.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 0.0
-        }
-      },
-      {
-        "id": "p_11",
-        "rang": 11,
         "nom": "Remi D.",
         "badge": "🛡️ Roc Défensif",
         "matchs": 10,
@@ -3404,9 +3622,9 @@
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 52.6,
+        "esg_score": 55.8,
         "sous_scores": {
-          "volume": 28.6,
+          "volume": 26.0,
           "volume_max": 35,
           "defense": 18.0,
           "defense_max": 30,
@@ -3415,6 +3633,32 @@
           "presence": 10.0,
           "presence_max": 10,
           "malus_discipline": 4.0
+        }
+      },
+      {
+        "id": "p_11",
+        "rang": 11,
+        "nom": "Clement D.",
+        "badge": "🛡️ Roc Défensif",
+        "matchs": 9,
+        "titularisations": 8,
+        "remplacements": 1,
+        "minutes": 640,
+        "clean_sheets": 3,
+        "buts": 0,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 55.7,
+        "sous_scores": {
+          "volume": 22.6,
+          "volume_max": 35,
+          "defense": 18.0,
+          "defense_max": 30,
+          "attaque": 0.0,
+          "attaque_max": 35,
+          "presence": 10.0,
+          "presence_max": 10,
+          "malus_discipline": 0.0
         }
       },
       {
@@ -3430,9 +3674,9 @@
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 45.0,
+        "esg_score": 47.4,
         "sous_scores": {
-          "volume": 21.0,
+          "volume": 19.1,
           "volume_max": 35,
           "defense": 18.0,
           "defense_max": 30,
@@ -3456,9 +3700,9 @@
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 33.1,
+        "esg_score": 34.4,
         "sous_scores": {
-          "volume": 11.1,
+          "volume": 10.1,
           "volume_max": 35,
           "defense": 12.0,
           "defense_max": 30,
@@ -3482,9 +3726,9 @@
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 26.7,
+        "esg_score": 27.8,
         "sous_scores": {
-          "volume": 10.7,
+          "volume": 9.7,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -3508,9 +3752,9 @@
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 17.7,
+        "esg_score": 18.6,
         "sous_scores": {
-          "volume": 7.7,
+          "volume": 7.0,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -3536,7 +3780,7 @@
         "cartons_r": 0,
         "esg_score": 17.1,
         "sous_scores": {
-          "volume": 0.6,
+          "volume": 0.5,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -3560,9 +3804,9 @@
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 15.5,
+        "esg_score": 16.1,
         "sous_scores": {
-          "volume": 5.5,
+          "volume": 5.0,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -3586,9 +3830,9 @@
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 12.0,
+        "esg_score": 12.4,
         "sous_scores": {
-          "volume": 3.5,
+          "volume": 3.2,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -3638,9 +3882,9 @@
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 8.4,
+        "esg_score": 8.9,
         "sous_scores": {
-          "volume": 4.9,
+          "volume": 4.4,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -3666,7 +3910,7 @@
         "cartons_r": 0,
         "esg_score": 2.8,
         "sous_scores": {
-          "volume": 0.3,
+          "volume": 0.2,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -3692,7 +3936,7 @@
         "cartons_r": 1,
         "esg_score": 0.0,
         "sous_scores": {
-          "volume": 7.4,
+          "volume": 6.7,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -3708,15 +3952,15 @@
       "ppm_championnat": 2.0,
       "probabilite_montee_pct": 74.2,
       "probabilite_maintien_pct": 99.1,
-      "taux_invincibilite": 90.0,
+      "taux_invincibilite": 81.8,
       "bilan_global": {
-        "matchs": 10,
+        "matchs": 11,
         "victoires": 6,
         "nuls": 3,
-        "defaites": 1,
-        "buts_pour": 11,
-        "buts_contre": 6,
-        "difference": 5
+        "defaites": 2,
+        "buts_pour": 12,
+        "buts_contre": 8,
+        "difference": 4
       },
       "bilan_championnat": {
         "matchs": 4,
@@ -3729,8 +3973,8 @@
         "difference": 3,
         "ppm": 2.0
       },
-      "ratio_clean_sheet_pct": 50.0,
-      "moyenne_buts_encaisses": 0.6,
+      "ratio_clean_sheet_pct": 45.5,
+      "moyenne_buts_encaisses": 0.73,
       "projection_saison": {
         "points_prevus": 44.0,
         "rang_final_estime": "2e (Accession Régional 2)"
@@ -3746,7 +3990,7 @@
           "tranche": "16-30'",
           "label": "16 - 30 min",
           "marques": 0,
-          "encaisses": 0
+          "encaisses": 1
         },
         {
           "tranche": "31-45+'",
@@ -3769,7 +4013,7 @@
         {
           "tranche": "76-90+'",
           "label": "76 - 90+ min",
-          "marques": 4,
+          "marques": 3,
           "encaisses": 2
         }
       ],
@@ -4032,7 +4276,7 @@
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "02/11/2026 à 13:43"
+      "derniere_maj": "02/11/2026 à 13:49"
     },
     "dernier_match": {
       "id": "m_u18_m1_79496282-et-c-anstai",
@@ -5523,7 +5767,7 @@
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "02/11/2026 à 13:43"
+      "derniere_maj": "02/11/2026 à 13:49"
     },
     "dernier_match": {
       "id": "m_senior_f2_78809066-lille-e-s-l",
@@ -6487,7 +6731,7 @@
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "02/11/2026 à 13:43"
+      "derniere_maj": "02/11/2026 à 13:49"
     },
     "dernier_match": {
       "id": "m_senior_b_j4_loos",
@@ -7412,7 +7656,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "02/11/2026 à 13:43"
+      "derniere_maj": "02/11/2026 à 13:49"
     },
     "dernier_match": {
       "id": "seclin_56215870",
@@ -11946,368 +12190,7 @@
         "point_vigilance": "Excellente efficacité offensive (12-0 vs Montigny)"
       }
     },
-    "classement": [
-      {
-        "rang": -45,
-        "equipe": "12",
-        "nom": "12",
-        "points": "MONTIGNY GOHELLE FC",
-        "joues": 0,
-        "gagnes": 5,
-        "nuls": 0,
-        "perdus": 0,
-        "buts_pour": 5,
-        "buts_contre": 2,
-        "diff": 47,
-        "difference": 47,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": -3,
-        "equipe": "10",
-        "nom": "10",
-        "points": "LESQUIN US",
-        "joues": 3,
-        "gagnes": 5,
-        "nuls": 0,
-        "perdus": 3,
-        "buts_pour": 2,
-        "buts_contre": 8,
-        "diff": 11,
-        "difference": 11,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": -3,
-        "equipe": "11",
-        "nom": "11",
-        "points": "COURCELLES US",
-        "joues": 2,
-        "gagnes": 5,
-        "nuls": 0,
-        "perdus": 2,
-        "buts_pour": 3,
-        "buts_contre": 3,
-        "diff": 6,
-        "difference": 6,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 2,
-        "equipe": "9",
-        "nom": "9",
-        "points": "NOYELLES S/LENS US",
-        "joues": 4,
-        "gagnes": 5,
-        "nuls": 1,
-        "perdus": 1,
-        "buts_pour": 3,
-        "buts_contre": 12,
-        "diff": 10,
-        "difference": 10,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 3,
-        "equipe": "1",
-        "nom": "1",
-        "points": "CROIX FIC 2",
-        "joues": 11,
-        "gagnes": 5,
-        "nuls": 3,
-        "perdus": 2,
-        "buts_pour": 0,
-        "buts_contre": 7,
-        "diff": 4,
-        "difference": 4,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 3,
-        "equipe": "3",
-        "nom": "3",
-        "points": "ESCAUDAIN USF",
-        "joues": 9,
-        "gagnes": 5,
-        "nuls": 2,
-        "perdus": 3,
-        "buts_pour": 0,
-        "buts_contre": 11,
-        "diff": 8,
-        "difference": 8,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 3,
-        "equipe": "7",
-        "nom": "7",
-        "points": "RAISMES FC",
-        "joues": 8,
-        "gagnes": 5,
-        "nuls": 2,
-        "perdus": 2,
-        "buts_pour": 1,
-        "buts_contre": 9,
-        "diff": 6,
-        "difference": 6,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 3,
-        "equipe": "2",
-        "nom": "2",
-        "points": "RAISMES FC",
-        "joues": 8,
-        "gagnes": 5,
-        "nuls": 2,
-        "perdus": 2,
-        "buts_pour": 1,
-        "buts_contre": 9,
-        "diff": 6,
-        "difference": 6,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 4,
-        "equipe": "5",
-        "nom": "5",
-        "points": "NOEUX LES MINES US",
-        "joues": 9,
-        "gagnes": 5,
-        "nuls": 2,
-        "perdus": 3,
-        "buts_pour": 0,
-        "buts_contre": 7,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 4,
-        "equipe": "1",
-        "nom": "1",
-        "points": "NOEUX LES MINES US",
-        "joues": 9,
-        "gagnes": 5,
-        "nuls": 2,
-        "perdus": 3,
-        "buts_pour": 0,
-        "buts_contre": 7,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 7,
-        "equipe": "8",
-        "nom": "8",
-        "points": "BIACHE ST VAAST US",
-        "joues": 6,
-        "gagnes": 5,
-        "nuls": 2,
-        "perdus": 0,
-        "buts_pour": 3,
-        "buts_contre": 14,
-        "diff": 7,
-        "difference": 7,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 7,
-        "equipe": "1",
-        "nom": "1",
-        "points": "BIACHE ST VAAST US",
-        "joues": 6,
-        "gagnes": 5,
-        "nuls": 2,
-        "perdus": 0,
-        "buts_pour": 3,
-        "buts_contre": 14,
-        "diff": 7,
-        "difference": 7,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 8,
-        "equipe": "2",
-        "nom": "2",
-        "points": "FOURMIES US",
-        "joues": 10,
-        "gagnes": 5,
-        "nuls": 3,
-        "perdus": 1,
-        "buts_pour": 1,
-        "buts_contre": 15,
-        "diff": 7,
-        "difference": 7,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 8,
-        "equipe": "4",
-        "nom": "4",
-        "points": "FOURMIES US",
-        "joues": 10,
-        "gagnes": 5,
-        "nuls": 3,
-        "perdus": 1,
-        "buts_pour": 1,
-        "buts_contre": 15,
-        "diff": 7,
-        "difference": 7,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 8,
-        "equipe": "6",
-        "nom": "6",
-        "points": "MERVILLE USM",
-        "joues": 9,
-        "gagnes": 5,
-        "nuls": 3,
-        "perdus": 0,
-        "buts_pour": 2,
-        "buts_contre": 15,
-        "diff": 7,
-        "difference": 7,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 8,
-        "equipe": "2",
-        "nom": "2",
-        "points": "MERVILLE USM",
-        "joues": 9,
-        "gagnes": 5,
-        "nuls": 3,
-        "perdus": 0,
-        "buts_pour": 2,
-        "buts_contre": 15,
-        "diff": 7,
-        "difference": 7,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 13,
-        "equipe": "4",
-        "nom": "4",
-        "points": "SECLIN FC",
-        "joues": 9,
-        "gagnes": 5,
-        "nuls": 2,
-        "perdus": 3,
-        "buts_pour": 0,
-        "buts_contre": 16,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 13,
-        "equipe": "2",
-        "nom": "2",
-        "points": "SECLIN FC",
-        "joues": 9,
-        "gagnes": 5,
-        "nuls": 2,
-        "perdus": 3,
-        "buts_pour": 0,
-        "buts_contre": 16,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      }
-    ]
+    "classement": []
   },
   "SECLIN_SENIOR_M1": {
     "equipe_active": {
@@ -12318,7 +12201,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "02/11/2026 à 13:43"
+      "derniere_maj": "02/11/2026 à 13:49"
     },
     "dernier_match": {
       "id": "seclin_56215870",
@@ -16852,368 +16735,7 @@
         "point_vigilance": "Excellente efficacité offensive (12-0 vs Montigny)"
       }
     },
-    "classement": [
-      {
-        "rang": -45,
-        "equipe": "12",
-        "nom": "12",
-        "points": "MONTIGNY GOHELLE FC",
-        "joues": 0,
-        "gagnes": 5,
-        "nuls": 0,
-        "perdus": 0,
-        "buts_pour": 5,
-        "buts_contre": 2,
-        "diff": 47,
-        "difference": 47,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": -3,
-        "equipe": "10",
-        "nom": "10",
-        "points": "LESQUIN US",
-        "joues": 3,
-        "gagnes": 5,
-        "nuls": 0,
-        "perdus": 3,
-        "buts_pour": 2,
-        "buts_contre": 8,
-        "diff": 11,
-        "difference": 11,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": -3,
-        "equipe": "11",
-        "nom": "11",
-        "points": "COURCELLES US",
-        "joues": 2,
-        "gagnes": 5,
-        "nuls": 0,
-        "perdus": 2,
-        "buts_pour": 3,
-        "buts_contre": 3,
-        "diff": 6,
-        "difference": 6,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 2,
-        "equipe": "9",
-        "nom": "9",
-        "points": "NOYELLES S/LENS US",
-        "joues": 4,
-        "gagnes": 5,
-        "nuls": 1,
-        "perdus": 1,
-        "buts_pour": 3,
-        "buts_contre": 12,
-        "diff": 10,
-        "difference": 10,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 3,
-        "equipe": "1",
-        "nom": "1",
-        "points": "CROIX FIC 2",
-        "joues": 11,
-        "gagnes": 5,
-        "nuls": 3,
-        "perdus": 2,
-        "buts_pour": 0,
-        "buts_contre": 7,
-        "diff": 4,
-        "difference": 4,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 3,
-        "equipe": "3",
-        "nom": "3",
-        "points": "ESCAUDAIN USF",
-        "joues": 9,
-        "gagnes": 5,
-        "nuls": 2,
-        "perdus": 3,
-        "buts_pour": 0,
-        "buts_contre": 11,
-        "diff": 8,
-        "difference": 8,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 3,
-        "equipe": "7",
-        "nom": "7",
-        "points": "RAISMES FC",
-        "joues": 8,
-        "gagnes": 5,
-        "nuls": 2,
-        "perdus": 2,
-        "buts_pour": 1,
-        "buts_contre": 9,
-        "diff": 6,
-        "difference": 6,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 3,
-        "equipe": "2",
-        "nom": "2",
-        "points": "RAISMES FC",
-        "joues": 8,
-        "gagnes": 5,
-        "nuls": 2,
-        "perdus": 2,
-        "buts_pour": 1,
-        "buts_contre": 9,
-        "diff": 6,
-        "difference": 6,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 4,
-        "equipe": "5",
-        "nom": "5",
-        "points": "NOEUX LES MINES US",
-        "joues": 9,
-        "gagnes": 5,
-        "nuls": 2,
-        "perdus": 3,
-        "buts_pour": 0,
-        "buts_contre": 7,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 4,
-        "equipe": "1",
-        "nom": "1",
-        "points": "NOEUX LES MINES US",
-        "joues": 9,
-        "gagnes": 5,
-        "nuls": 2,
-        "perdus": 3,
-        "buts_pour": 0,
-        "buts_contre": 7,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 7,
-        "equipe": "8",
-        "nom": "8",
-        "points": "BIACHE ST VAAST US",
-        "joues": 6,
-        "gagnes": 5,
-        "nuls": 2,
-        "perdus": 0,
-        "buts_pour": 3,
-        "buts_contre": 14,
-        "diff": 7,
-        "difference": 7,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 7,
-        "equipe": "1",
-        "nom": "1",
-        "points": "BIACHE ST VAAST US",
-        "joues": 6,
-        "gagnes": 5,
-        "nuls": 2,
-        "perdus": 0,
-        "buts_pour": 3,
-        "buts_contre": 14,
-        "diff": 7,
-        "difference": 7,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 8,
-        "equipe": "2",
-        "nom": "2",
-        "points": "FOURMIES US",
-        "joues": 10,
-        "gagnes": 5,
-        "nuls": 3,
-        "perdus": 1,
-        "buts_pour": 1,
-        "buts_contre": 15,
-        "diff": 7,
-        "difference": 7,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 8,
-        "equipe": "4",
-        "nom": "4",
-        "points": "FOURMIES US",
-        "joues": 10,
-        "gagnes": 5,
-        "nuls": 3,
-        "perdus": 1,
-        "buts_pour": 1,
-        "buts_contre": 15,
-        "diff": 7,
-        "difference": 7,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 8,
-        "equipe": "6",
-        "nom": "6",
-        "points": "MERVILLE USM",
-        "joues": 9,
-        "gagnes": 5,
-        "nuls": 3,
-        "perdus": 0,
-        "buts_pour": 2,
-        "buts_contre": 15,
-        "diff": 7,
-        "difference": 7,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 8,
-        "equipe": "2",
-        "nom": "2",
-        "points": "MERVILLE USM",
-        "joues": 9,
-        "gagnes": 5,
-        "nuls": 3,
-        "perdus": 0,
-        "buts_pour": 2,
-        "buts_contre": 15,
-        "diff": 7,
-        "difference": 7,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 13,
-        "equipe": "4",
-        "nom": "4",
-        "points": "SECLIN FC",
-        "joues": 9,
-        "gagnes": 5,
-        "nuls": 2,
-        "perdus": 3,
-        "buts_pour": 0,
-        "buts_contre": 16,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      },
-      {
-        "rang": 13,
-        "equipe": "2",
-        "nom": "2",
-        "points": "SECLIN FC",
-        "joues": 9,
-        "gagnes": 5,
-        "nuls": 2,
-        "perdus": 3,
-        "buts_pour": 0,
-        "buts_contre": 16,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "V"
-        ]
-      }
-    ]
+    "classement": []
   },
   "500426_SENIOR_M1": {
     "equipe_active": {
@@ -17224,7 +16746,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "02/11/2026 à 13:43"
+      "derniere_maj": "02/11/2026 à 13:49"
     },
     "dernier_match": {
       "id": "lesquin_56215867",
@@ -20910,368 +20432,7 @@
         "point_vigilance": "Gérer la fin de match pour concrétiser les nuls en victoires"
       }
     },
-    "classement": [
-      {
-        "rang": 1,
-        "equipe": "CROIX FIC 2",
-        "nom": "CROIX FIC 2",
-        "points": 11,
-        "joues": 5,
-        "gagnes": 3,
-        "nuls": 2,
-        "perdus": 0,
-        "buts_pour": 7,
-        "buts_contre": 4,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "N"
-        ]
-      },
-      {
-        "rang": 1,
-        "equipe": "NOEUX LES MINES US",
-        "nom": "NOEUX LES MINES US",
-        "points": 9,
-        "joues": 5,
-        "gagnes": 2,
-        "nuls": 3,
-        "perdus": 0,
-        "buts_pour": 7,
-        "buts_contre": 3,
-        "diff": 4,
-        "difference": 4,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "N"
-        ]
-      },
-      {
-        "rang": 1,
-        "equipe": "BIACHE ST VAAST US",
-        "nom": "BIACHE ST VAAST US",
-        "points": 6,
-        "joues": 5,
-        "gagnes": 2,
-        "nuls": 0,
-        "perdus": 3,
-        "buts_pour": 14,
-        "buts_contre": 7,
-        "diff": 7,
-        "difference": 7,
-        "forme": [
-          "V",
-          "V",
-          "D",
-          "D"
-        ]
-      },
-      {
-        "rang": 2,
-        "equipe": "FOURMIES US",
-        "nom": "FOURMIES US",
-        "points": 10,
-        "joues": 5,
-        "gagnes": 3,
-        "nuls": 1,
-        "perdus": 1,
-        "buts_pour": 15,
-        "buts_contre": 7,
-        "diff": 8,
-        "difference": 8,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "N"
-        ]
-      },
-      {
-        "rang": 2,
-        "equipe": "SECLIN FC",
-        "nom": "SECLIN FC",
-        "points": 9,
-        "joues": 5,
-        "gagnes": 2,
-        "nuls": 3,
-        "perdus": 0,
-        "buts_pour": 16,
-        "buts_contre": 3,
-        "diff": 13,
-        "difference": 13,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "N"
-        ]
-      },
-      {
-        "rang": 2,
-        "equipe": "MERVILLE USM",
-        "nom": "MERVILLE USM",
-        "points": 9,
-        "joues": 5,
-        "gagnes": 3,
-        "nuls": 0,
-        "perdus": 2,
-        "buts_pour": 15,
-        "buts_contre": 7,
-        "diff": 8,
-        "difference": 8,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "D"
-        ]
-      },
-      {
-        "rang": 2,
-        "equipe": "RAISMES FC",
-        "nom": "RAISMES FC",
-        "points": 8,
-        "joues": 5,
-        "gagnes": 2,
-        "nuls": 2,
-        "perdus": 1,
-        "buts_pour": 9,
-        "buts_contre": 6,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "N"
-        ]
-      },
-      {
-        "rang": 3,
-        "equipe": "ESCAUDAIN USF",
-        "nom": "ESCAUDAIN USF",
-        "points": 9,
-        "joues": 5,
-        "gagnes": 2,
-        "nuls": 3,
-        "perdus": 0,
-        "buts_pour": 11,
-        "buts_contre": 8,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "N"
-        ]
-      },
-      {
-        "rang": 4,
-        "equipe": "FOURMIES US",
-        "nom": "FOURMIES US",
-        "points": 10,
-        "joues": 5,
-        "gagnes": 3,
-        "nuls": 1,
-        "perdus": 1,
-        "buts_pour": 15,
-        "buts_contre": 7,
-        "diff": 8,
-        "difference": 8,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "N"
-        ]
-      },
-      {
-        "rang": 4,
-        "equipe": "SECLIN FC",
-        "nom": "SECLIN FC",
-        "points": 9,
-        "joues": 5,
-        "gagnes": 2,
-        "nuls": 3,
-        "perdus": 0,
-        "buts_pour": 16,
-        "buts_contre": 3,
-        "diff": 13,
-        "difference": 13,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "N"
-        ]
-      },
-      {
-        "rang": 5,
-        "equipe": "NOEUX LES MINES US",
-        "nom": "NOEUX LES MINES US",
-        "points": 9,
-        "joues": 5,
-        "gagnes": 2,
-        "nuls": 3,
-        "perdus": 0,
-        "buts_pour": 7,
-        "buts_contre": 3,
-        "diff": 4,
-        "difference": 4,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "N"
-        ]
-      },
-      {
-        "rang": 6,
-        "equipe": "MERVILLE USM",
-        "nom": "MERVILLE USM",
-        "points": 9,
-        "joues": 5,
-        "gagnes": 3,
-        "nuls": 0,
-        "perdus": 2,
-        "buts_pour": 15,
-        "buts_contre": 7,
-        "diff": 8,
-        "difference": 8,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "D"
-        ]
-      },
-      {
-        "rang": 7,
-        "equipe": "RAISMES FC",
-        "nom": "RAISMES FC",
-        "points": 8,
-        "joues": 5,
-        "gagnes": 2,
-        "nuls": 2,
-        "perdus": 1,
-        "buts_pour": 9,
-        "buts_contre": 6,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "N"
-        ]
-      },
-      {
-        "rang": 8,
-        "equipe": "BIACHE ST VAAST US",
-        "nom": "BIACHE ST VAAST US",
-        "points": 6,
-        "joues": 5,
-        "gagnes": 2,
-        "nuls": 0,
-        "perdus": 3,
-        "buts_pour": 14,
-        "buts_contre": 7,
-        "diff": 7,
-        "difference": 7,
-        "forme": [
-          "V",
-          "V",
-          "D",
-          "D"
-        ]
-      },
-      {
-        "rang": 9,
-        "equipe": "NOYELLES S/LENS US",
-        "nom": "NOYELLES S/LENS US",
-        "points": 4,
-        "joues": 5,
-        "gagnes": 1,
-        "nuls": 1,
-        "perdus": 3,
-        "buts_pour": 12,
-        "buts_contre": 10,
-        "diff": 2,
-        "difference": 2,
-        "forme": [
-          "V",
-          "N",
-          "D",
-          "D"
-        ]
-      },
-      {
-        "rang": 10,
-        "equipe": "LESQUIN US",
-        "nom": "LESQUIN US",
-        "points": 3,
-        "joues": 5,
-        "gagnes": 0,
-        "nuls": 3,
-        "perdus": 2,
-        "buts_pour": 8,
-        "buts_contre": 11,
-        "diff": -3,
-        "difference": -3,
-        "forme": [
-          "N",
-          "N",
-          "N",
-          "D"
-        ]
-      },
-      {
-        "rang": 11,
-        "equipe": "COURCELLES US",
-        "nom": "COURCELLES US",
-        "points": 2,
-        "joues": 5,
-        "gagnes": 0,
-        "nuls": 2,
-        "perdus": 3,
-        "buts_pour": 3,
-        "buts_contre": 6,
-        "diff": -3,
-        "difference": -3,
-        "forme": [
-          "N",
-          "N",
-          "D",
-          "D"
-        ]
-      },
-      {
-        "rang": 12,
-        "equipe": "MONTIGNY GOHELLE FC",
-        "nom": "MONTIGNY GOHELLE FC",
-        "points": 0,
-        "joues": 5,
-        "gagnes": 0,
-        "nuls": 0,
-        "perdus": 5,
-        "buts_pour": 2,
-        "buts_contre": 47,
-        "diff": -45,
-        "difference": -45,
-        "forme": [
-          "D",
-          "D",
-          "D",
-          "D"
-        ]
-      }
-    ]
+    "classement": []
   },
   "LESQUIN_SENIOR_M1": {
     "equipe_active": {
@@ -21282,7 +20443,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "02/11/2026 à 13:43"
+      "derniere_maj": "02/11/2026 à 13:49"
     },
     "dernier_match": {
       "id": "lesquin_56215867",
@@ -24968,367 +24129,6 @@
         "point_vigilance": "Gérer la fin de match pour concrétiser les nuls en victoires"
       }
     },
-    "classement": [
-      {
-        "rang": 1,
-        "equipe": "CROIX FIC 2",
-        "nom": "CROIX FIC 2",
-        "points": 11,
-        "joues": 5,
-        "gagnes": 3,
-        "nuls": 2,
-        "perdus": 0,
-        "buts_pour": 7,
-        "buts_contre": 4,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "N"
-        ]
-      },
-      {
-        "rang": 1,
-        "equipe": "NOEUX LES MINES US",
-        "nom": "NOEUX LES MINES US",
-        "points": 9,
-        "joues": 5,
-        "gagnes": 2,
-        "nuls": 3,
-        "perdus": 0,
-        "buts_pour": 7,
-        "buts_contre": 3,
-        "diff": 4,
-        "difference": 4,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "N"
-        ]
-      },
-      {
-        "rang": 1,
-        "equipe": "BIACHE ST VAAST US",
-        "nom": "BIACHE ST VAAST US",
-        "points": 6,
-        "joues": 5,
-        "gagnes": 2,
-        "nuls": 0,
-        "perdus": 3,
-        "buts_pour": 14,
-        "buts_contre": 7,
-        "diff": 7,
-        "difference": 7,
-        "forme": [
-          "V",
-          "V",
-          "D",
-          "D"
-        ]
-      },
-      {
-        "rang": 2,
-        "equipe": "FOURMIES US",
-        "nom": "FOURMIES US",
-        "points": 10,
-        "joues": 5,
-        "gagnes": 3,
-        "nuls": 1,
-        "perdus": 1,
-        "buts_pour": 15,
-        "buts_contre": 7,
-        "diff": 8,
-        "difference": 8,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "N"
-        ]
-      },
-      {
-        "rang": 2,
-        "equipe": "SECLIN FC",
-        "nom": "SECLIN FC",
-        "points": 9,
-        "joues": 5,
-        "gagnes": 2,
-        "nuls": 3,
-        "perdus": 0,
-        "buts_pour": 16,
-        "buts_contre": 3,
-        "diff": 13,
-        "difference": 13,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "N"
-        ]
-      },
-      {
-        "rang": 2,
-        "equipe": "MERVILLE USM",
-        "nom": "MERVILLE USM",
-        "points": 9,
-        "joues": 5,
-        "gagnes": 3,
-        "nuls": 0,
-        "perdus": 2,
-        "buts_pour": 15,
-        "buts_contre": 7,
-        "diff": 8,
-        "difference": 8,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "D"
-        ]
-      },
-      {
-        "rang": 2,
-        "equipe": "RAISMES FC",
-        "nom": "RAISMES FC",
-        "points": 8,
-        "joues": 5,
-        "gagnes": 2,
-        "nuls": 2,
-        "perdus": 1,
-        "buts_pour": 9,
-        "buts_contre": 6,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "N"
-        ]
-      },
-      {
-        "rang": 3,
-        "equipe": "ESCAUDAIN USF",
-        "nom": "ESCAUDAIN USF",
-        "points": 9,
-        "joues": 5,
-        "gagnes": 2,
-        "nuls": 3,
-        "perdus": 0,
-        "buts_pour": 11,
-        "buts_contre": 8,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "N"
-        ]
-      },
-      {
-        "rang": 4,
-        "equipe": "FOURMIES US",
-        "nom": "FOURMIES US",
-        "points": 10,
-        "joues": 5,
-        "gagnes": 3,
-        "nuls": 1,
-        "perdus": 1,
-        "buts_pour": 15,
-        "buts_contre": 7,
-        "diff": 8,
-        "difference": 8,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "N"
-        ]
-      },
-      {
-        "rang": 4,
-        "equipe": "SECLIN FC",
-        "nom": "SECLIN FC",
-        "points": 9,
-        "joues": 5,
-        "gagnes": 2,
-        "nuls": 3,
-        "perdus": 0,
-        "buts_pour": 16,
-        "buts_contre": 3,
-        "diff": 13,
-        "difference": 13,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "N"
-        ]
-      },
-      {
-        "rang": 5,
-        "equipe": "NOEUX LES MINES US",
-        "nom": "NOEUX LES MINES US",
-        "points": 9,
-        "joues": 5,
-        "gagnes": 2,
-        "nuls": 3,
-        "perdus": 0,
-        "buts_pour": 7,
-        "buts_contre": 3,
-        "diff": 4,
-        "difference": 4,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "N"
-        ]
-      },
-      {
-        "rang": 6,
-        "equipe": "MERVILLE USM",
-        "nom": "MERVILLE USM",
-        "points": 9,
-        "joues": 5,
-        "gagnes": 3,
-        "nuls": 0,
-        "perdus": 2,
-        "buts_pour": 15,
-        "buts_contre": 7,
-        "diff": 8,
-        "difference": 8,
-        "forme": [
-          "V",
-          "V",
-          "V",
-          "D"
-        ]
-      },
-      {
-        "rang": 7,
-        "equipe": "RAISMES FC",
-        "nom": "RAISMES FC",
-        "points": 8,
-        "joues": 5,
-        "gagnes": 2,
-        "nuls": 2,
-        "perdus": 1,
-        "buts_pour": 9,
-        "buts_contre": 6,
-        "diff": 3,
-        "difference": 3,
-        "forme": [
-          "V",
-          "V",
-          "N",
-          "N"
-        ]
-      },
-      {
-        "rang": 8,
-        "equipe": "BIACHE ST VAAST US",
-        "nom": "BIACHE ST VAAST US",
-        "points": 6,
-        "joues": 5,
-        "gagnes": 2,
-        "nuls": 0,
-        "perdus": 3,
-        "buts_pour": 14,
-        "buts_contre": 7,
-        "diff": 7,
-        "difference": 7,
-        "forme": [
-          "V",
-          "V",
-          "D",
-          "D"
-        ]
-      },
-      {
-        "rang": 9,
-        "equipe": "NOYELLES S/LENS US",
-        "nom": "NOYELLES S/LENS US",
-        "points": 4,
-        "joues": 5,
-        "gagnes": 1,
-        "nuls": 1,
-        "perdus": 3,
-        "buts_pour": 12,
-        "buts_contre": 10,
-        "diff": 2,
-        "difference": 2,
-        "forme": [
-          "V",
-          "N",
-          "D",
-          "D"
-        ]
-      },
-      {
-        "rang": 10,
-        "equipe": "LESQUIN US",
-        "nom": "LESQUIN US",
-        "points": 3,
-        "joues": 5,
-        "gagnes": 0,
-        "nuls": 3,
-        "perdus": 2,
-        "buts_pour": 8,
-        "buts_contre": 11,
-        "diff": -3,
-        "difference": -3,
-        "forme": [
-          "N",
-          "N",
-          "N",
-          "D"
-        ]
-      },
-      {
-        "rang": 11,
-        "equipe": "COURCELLES US",
-        "nom": "COURCELLES US",
-        "points": 2,
-        "joues": 5,
-        "gagnes": 0,
-        "nuls": 2,
-        "perdus": 3,
-        "buts_pour": 3,
-        "buts_contre": 6,
-        "diff": -3,
-        "difference": -3,
-        "forme": [
-          "N",
-          "N",
-          "D",
-          "D"
-        ]
-      },
-      {
-        "rang": 12,
-        "equipe": "MONTIGNY GOHELLE FC",
-        "nom": "MONTIGNY GOHELLE FC",
-        "points": 0,
-        "joues": 5,
-        "gagnes": 0,
-        "nuls": 0,
-        "perdus": 5,
-        "buts_pour": 2,
-        "buts_contre": 47,
-        "diff": -45,
-        "difference": -45,
-        "forme": [
-          "D",
-          "D",
-          "D",
-          "D"
-        ]
-      }
-    ]
+    "classement": []
   }
 }
