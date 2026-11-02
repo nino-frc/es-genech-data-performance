@@ -13,6 +13,12 @@ from datetime import datetime
 from playwright.sync_api import sync_playwright
 
 try:
+    from playwright_stealth import Stealth
+    HAS_STEALTH = True
+except ImportError:
+    HAS_STEALTH = False
+
+try:
     sys.stdout.reconfigure(encoding='utf-8')
 except Exception:
     pass
@@ -133,9 +139,13 @@ def scrape_lesquin():
         except Exception:
             browser = p.chromium.launch(headless=True, args=['--disable-blink-features=AutomationControlled'])
         context = browser.new_context(
-            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-            viewport={'width': 1280, 'height': 800}
+            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+            viewport={'width': 1280, 'height': 800},
+            locale='fr-FR',
+            timezone_id='Europe/Paris'
         )
+        if HAS_STEALTH:
+            Stealth().apply_stealth_sync(context)
         page = context.new_page()
 
         # Navigation initiale pour cookies
@@ -150,8 +160,8 @@ def scrape_lesquin():
         page.goto("https://epreuves.fff.fr/competition/club/500426-u-s-lesquinoise/equipe/2026_511_SEM_1/classement", timeout=30000)
         page.wait_for_timeout(3000)
 
-        cur.execute("DELETE FROM classement")
         lines = [l.strip() for l in page.inner_text('body').split('\n') if l.strip()]
+        new_standings = []
         for i, l in enumerate(lines):
             if l.isdigit() and i + 2 < len(lines):
                 try:
@@ -169,12 +179,19 @@ def scrape_lesquin():
                         bp = int(parts[7])
                         bc = int(parts[8])
                         diff = int(parts[9])
-                        cur.execute("INSERT INTO classement VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                                    (rang, team_name, pts, j, g, n, p_loss, bp, bc, diff))
-                        print(f"  {rang}. {team_name} - {pts} pts ({j}j, {g}V {n}N {p_loss}D, {bp}-{bc})")
+                        new_standings.append((rang, team_name, pts, j, g, n, p_loss, bp, bc, diff))
                 except:
                     pass
-        conn.commit()
+
+        if len(new_standings) >= 6:
+            cur.execute("DELETE FROM classement")
+            for st in new_standings:
+                cur.execute("INSERT INTO classement VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", st)
+                print(f"  {st[0]}. {st[1]} - {st[2]} pts ({st[3]}j, {st[4]}V {st[5]}N {st[6]}D, {st[7]}-{st[8]})")
+            conn.commit()
+            print(f"✅ Classement Lesquin mis à jour ({len(new_standings)} équipes).")
+        else:
+            print(f"⚠️ Classement Lesquin incomplet ou protégé ({len(new_standings)} trouvées), ancien classement préservé.")
 
         # 2. Scraping Calendrier & Matchs US Lesquin Senior 1
         print("\n2. Scraping des Matchs Senior 1 (Régional 2 & Coupes)...")

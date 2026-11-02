@@ -13,6 +13,12 @@ from datetime import datetime
 from playwright.sync_api import sync_playwright
 
 try:
+    from playwright_stealth import Stealth
+    HAS_STEALTH = True
+except ImportError:
+    HAS_STEALTH = False
+
+try:
     sys.stdout.reconfigure(encoding='utf-8')
 except Exception:
     pass
@@ -126,10 +132,16 @@ def scrape_seclin():
             browser = p.chromium.launch(channel="chrome", headless=True, args=['--disable-blink-features=AutomationControlled'])
         except Exception:
             browser = p.chromium.launch(headless=True, args=['--disable-blink-features=AutomationControlled'])
-        page = browser.new_page(
-            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-            viewport={'width': 1280, 'height': 800}
+        
+        context = browser.new_context(
+            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+            viewport={'width': 1280, 'height': 800},
+            locale='fr-FR',
+            timezone_id='Europe/Paris'
         )
+        if HAS_STEALTH:
+            Stealth().apply_stealth_sync(context)
+        page = context.new_page()
 
         # 1. Scraping Classement Régional 2
         print("\n1. Scraping du Classement Régional 2...")
@@ -139,15 +151,12 @@ def scrape_seclin():
             page.locator('#didomi-notice-agree-button').click(timeout=1000)
         except: pass
 
-        cur.execute("DELETE FROM classement")
         lines = [l.strip() for l in page.inner_text('body').split('\n') if l.strip()]
+        new_standings = []
         for i, l in enumerate(lines):
             if l.isdigit() and i + 2 < len(lines):
-                # Pattern: Rang, Changement, Equipe, Stats
-                # ex: '2', '4', 'SECLIN FC', '8', '4', '2', '2', '0', '0', '0', '16', '3', '13'
                 try:
                     rang = int(l)
-                    # Vérifier si l'équipe est à +1 ou +2
                     team_idx = i + 2 if lines[i+1].isdigit() else i + 1
                     team_name = lines[team_idx]
                     stats_line = lines[team_idx + 1] if team_idx + 1 < len(lines) else ""
@@ -161,12 +170,19 @@ def scrape_seclin():
                         bp = int(parts[7])
                         bc = int(parts[8])
                         diff = int(parts[9])
-                        cur.execute("INSERT INTO classement VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                                    (rang, team_name, pts, j, g, n, p_loss, bp, bc, diff))
-                        print(f"  {rang}. {team_name} - {pts} pts ({j}j, {g}V {n}N {p_loss}D, {bp}-{bc})")
+                        new_standings.append((rang, team_name, pts, j, g, n, p_loss, bp, bc, diff))
                 except:
                     pass
-        conn.commit()
+        
+        if len(new_standings) >= 6:
+            cur.execute("DELETE FROM classement")
+            for st in new_standings:
+                cur.execute("INSERT INTO classement VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", st)
+                print(f"  {st[0]}. {st[1]} - {st[2]} pts ({st[3]}j, {st[4]}V {st[5]}N {st[6]}D, {st[7]}-{st[8]})")
+            conn.commit()
+            print(f"✅ Classement Seclin mis à jour ({len(new_standings)} équipes).")
+        else:
+            print(f"⚠️ Classement Seclin incomplet ou protégé ({len(new_standings)} trouvées), ancien classement préservé.")
 
         # 2. Scraping Calendrier & Matchs Senior 1
         print("\n2. Scraping des Matchs Senior 1 (Régional 2 & Coupes)...")

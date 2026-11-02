@@ -12,6 +12,12 @@ import sqlite3
 from typing import List, Dict, Any, Optional, Tuple
 from playwright.sync_api import sync_playwright
 
+try:
+    from playwright_stealth import Stealth
+    HAS_STEALTH = True
+except ImportError:
+    HAS_STEALTH = False
+
 from data_cleaner import anonymize_player_name, is_first_team_eligible
 
 try:
@@ -371,8 +377,12 @@ def scrape_fff():
         browser = launch_browser(p)
         context = browser.new_context(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-            viewport={"width": 1280, "height": 800}
+            viewport={"width": 1280, "height": 800},
+            locale="fr-FR",
+            timezone_id="Europe/Paris"
         )
+        if HAS_STEALTH:
+            Stealth().apply_stealth_sync(context)
         page = context.new_page()
 
         # 1. Scraping du classement (Non destructif)
