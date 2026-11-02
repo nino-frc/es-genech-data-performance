@@ -5,10 +5,10 @@ on:
   repository_dispatch:
     types: [matchday_update, webhook]
   schedule:
-    # Lundi matin : Déclenchement automatique post-matchs
-    - cron: '15 5 * * 1'
-    # Jeudi matin : Déclenchement automatique pré-matchs (arbitres & briefing)
-    - cron: '15 5 * * 4'
+    # Lundi matin : Déclenchement à 05h45 UTC (06h45 heure de Paris) pour arrivée garantie avant 07h20
+    - cron: '45 5 * * 1'
+    # Jeudi matin : Déclenchement à 05h45 UTC (06h45 heure de Paris)
+    - cron: '45 5 * * 4'
 
 jobs:
   run-pipeline:
