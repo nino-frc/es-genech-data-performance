@@ -1743,10 +1743,14 @@ function renderInterface(data) {
   }
   if (ref.nom_arbitre) {
     document.getElementById('refereeName').textContent = `👨‍⚖️ ${ref.nom_arbitre}`;
-    document.getElementById('refereeSeverityBadge').textContent = ref.severite;
-    document.getElementById('refereeSeverityBadge').style.background = ref.badge_color ? `${ref.badge_color}22` : '#fee2e2';
-    document.getElementById('refereeSeverityBadge').style.color = ref.badge_color || '#b91c1c';
-    document.getElementById('refereeCardsAvg').textContent = `${ref.moyenne_jaunes} cartons jaunes / match`;
+    document.getElementById('refereeSeverityBadge').textContent = ref.severite || "EN ATTENTE";
+    document.getElementById('refereeSeverityBadge').style.background = ref.badge_color ? `${ref.badge_color}22` : '#f1f5f9';
+    document.getElementById('refereeSeverityBadge').style.color = ref.badge_color || '#475569';
+    if (ref.moyenne_jaunes && ref.moyenne_jaunes !== '--') {
+      document.getElementById('refereeCardsAvg').textContent = `${ref.moyenne_jaunes} cartons jaunes / match`;
+    } else {
+      document.getElementById('refereeCardsAvg').textContent = "Publication officielle CRA ce jeudi";
+    }
     document.getElementById('refereeAdvice').textContent = ref.consigne_coach;
   }
 

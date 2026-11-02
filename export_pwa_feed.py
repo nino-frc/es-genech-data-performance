@@ -860,13 +860,13 @@ def build_seclin_pwa_payload(base_dir: str):
         "dernier_match": last_match,
         "evenements_dernier_match": last_events,
         "prochain_match": next_match,
-        "meteo_prochain_match": get_match_weather("CROIX", "2026-11-01"),
+        "meteo_prochain_match": get_match_weather("SECLIN", "2026-11-08"),
         "arbitre_prochain_match": {
-            "nom_arbitre": "Thomas B. (Ligue Hauts-de-France)",
-            "severite": "RIGUEUR ÉLEVÉE",
-            "moyenne_jaunes": 3.6,
-            "badge_color": "#0284c7",
-            "consigne_coach": "Choc au sommet face au leader Croix (10 pts). Rigueur défensive et transition rapide."
+            "nom_arbitre": "En attente de désignation CRA",
+            "severite": "DÉSIGNATION EN COURS",
+            "moyenne_jaunes": "--",
+            "badge_color": "#64748b",
+            "consigne_coach": "La Commission Régionale d'Arbitrage (CRA) publiera l'arbitre officiel ce jeudi 05/11. Les consignes seront actualisées dès parution."
         },
         "historique_matchs": historique_matchs,
         "kpis_saison": {
@@ -1312,13 +1312,13 @@ def build_lesquin_pwa_payload(base_dir: str):
         "dernier_match": last_match,
         "evenements_dernier_match": last_events,
         "prochain_match": next_match,
-        "meteo_prochain_match": get_match_weather("COURCELLES", "2026-11-01"),
+        "meteo_prochain_match": get_match_weather("LESQUIN", "2026-11-08"),
         "arbitre_prochain_match": {
-            "nom_arbitre": "Maxime D. (Ligue Hauts-de-France)",
-            "severite": "VIGILANCE CONTESTATION",
-            "moyenne_jaunes": 3.4,
-            "badge_color": "#059669",
-            "consigne_coach": "Match capital chez la lanterne rouge Courcelles US. Maîtriser le tempo et éviter les fautes d'énervement."
+            "nom_arbitre": "En attente de désignation CRA",
+            "severite": "DÉSIGNATION EN COURS",
+            "moyenne_jaunes": "--",
+            "badge_color": "#64748b",
+            "consigne_coach": "La Commission Régionale d'Arbitrage (CRA) publiera l'arbitre officiel ce jeudi 05/11. Les consignes seront actualisées dès parution."
         },
         "historique_matchs": historique_matchs,
         "kpis_saison": {
@@ -1457,20 +1457,20 @@ def export_real_pwa_feed():
                 "detail": ev["detail"]
             })
 
-    # 3. Prochain Match : ES GENECH vs BEUVRY LA FORET AS (J6, 08/11 à 14h30)
+    # 3. Prochain Match : ES GENECH vs BAVAY US (J6, 08/11 à 14h30)
     next_match = {
         "competition": "Seniors Régional 3 • Journée 6",
         "date_heure": "Dimanche 08 Novembre 2026 à 14h30",
         "lieu": "Stade Léo Lagrange (Genech)",
         "domicile": "ES GENECH",
-        "exterieur": "BEUVRY LA FORET AS",
+        "exterieur": "BAVAY US",
         "comparatif": {
-            "titre": "Choc de Haut de Tableau • 5e vs 2e (R3 Poule D)",
-            "adversaire_nom": "Beuvry la Forêt AS",
-            "adversaire_rang": "2e",
-            "adversaire_pts": 10,
-            "adversaire_buts_pour": 8,
-            "adversaire_buts_contre": 4,
+            "titre": "Seniors Régional 3 • Journée 6 (Poule D)",
+            "adversaire_nom": "Bavay US",
+            "adversaire_rang": "9e",
+            "adversaire_pts": 3,
+            "adversaire_buts_pour": 5,
+            "adversaire_buts_contre": 9,
             "club_nom": "ES Genech",
             "club_rang": "5e",
             "club_pts": 9,
@@ -1478,9 +1478,9 @@ def export_real_pwa_feed():
             "club_buts_contre": 4
         },
         "alertes": [
-            "Choc de haut de tableau : Genech (5e, 9 pts, invaincu) accueille Beuvry (2e, 10 pts) séparés par seulement 1 point.",
-            "Duel des meilleures défenses : seulement 4 buts concédés en 5 journées par Genech et Beuvry (0.80 but/match).",
-            "Genech reste invaincu en championnat R3 cette saison (2 victoires, 3 nuls)."
+            "Réception de Bavay US (9e, 3 pts) : l'occasion idéale pour Genech (5e, 9 pts, invaincu) de renouer avec la victoire à domicile.",
+            "Bavay reste sur une défaite 3-0 à Valenciennes Summer le week-end dernier (1 seule victoire en 5 journées).",
+            "Genech est l'une des 2 seules formations encore invaincues de la poule (2 victoires, 3 nuls)."
         ],
         "stats_comparatives": {
             "genech": {
@@ -1491,33 +1491,33 @@ def export_real_pwa_feed():
                 "diff": "+3",
                 "forme": ["N", "N", "N", "V", "V"]
             },
-            "beuvry": {
-                "rang": 2,
-                "points": 10,
-                "buts_marques": 8,
-                "buts_encaisses": 4,
-                "diff": "+4",
-                "forme": ["V", "N", "V", "D", "V"]
+            "bavay": {
+                "rang": 9,
+                "points": 3,
+                "buts_marques": 5,
+                "buts_encaisses": 9,
+                "diff": "-4",
+                "forme": ["D", "N", "D", "V", "D"]
             }
         },
         "adversaire_alertes": [
-            "Choc de haut de tableau : Genech (5e, 9 pts, invaincu) accueille Beuvry (2e, 10 pts) séparés par seulement 1 point.",
-            "Duel des meilleures défenses : seulement 4 buts concédés en 5 journées par Genech et Beuvry (0.80 but/match).",
-            "Genech reste invaincu en championnat R3 cette saison (2 victoires, 3 nuls)."
+            "Réception de Bavay US (9e, 3 pts) : l'occasion idéale pour Genech (5e, 9 pts, invaincu) de renouer avec la victoire à domicile.",
+            "Bavay reste sur une défaite 3-0 à Valenciennes Summer le week-end dernier (1 seule victoire en 5 journées).",
+            "Genech est l'une des 2 seules formations encore invaincues de la poule (2 victoires, 3 nuls)."
         ]
     }
 
     # Arbitre prochain match : En attente de désignation officielle CRA FFF
     # La CRA publie les désignations d'arbitres R3 le mercredi précédant la rencontre
     arbitre_info = {
-        "nom_arbitre": "Benjamin D. (Ligue Hauts-de-France)",
+        "nom_arbitre": "En attente de désignation CRA",
         "district": "Ligue de Football des Hauts-de-France",
         "niveau": "Arbitre Régional R3 Officiel",
-        "moyenne_jaunes": 3.2,
-        "severite": "MODÉRÉE (3.2 jaunes / match)",
-        "badge_color": "#15803d",
-        "style": "Pédagogue • Favorise la fluidité du jeu",
-        "consigne_coach": "Arbitre officiel désigné pour ce dimanche 01/11. Privilégie le dialogue et laisse jouer les duels. Canaliser l'engagement au milieu et laisser le capitaine échanger avec lui."
+        "moyenne_jaunes": "--",
+        "severite": "DÉSIGNATION EN COURS",
+        "badge_color": "#64748b",
+        "style": "Publication officielle CRA le jeudi",
+        "consigne_coach": "La Commission Régionale d'Arbitrage (CRA) publiera l'arbitre officiel ce jeudi 05/11. Le profil et les consignes disciplinaires seront actualisés automatiquement dès parution."
     }
 
     # 4. Traducteur Financier de Trésorerie (Barème officiel Ligue LFHF)
@@ -1891,7 +1891,7 @@ def export_real_pwa_feed():
         "dernier_match": last_match,
         "evenements_dernier_match": events_rows,
         "prochain_match": next_match,
-        "meteo_prochain_match": get_match_weather("ANICHE", "2026-11-01"),
+        "meteo_prochain_match": get_match_weather("GENECH", "2026-11-08"),
         "arbitre_prochain_match": arbitre_info,
         "historique_matchs": historique_matchs,
         "kpis_saison": {

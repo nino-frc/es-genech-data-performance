@@ -8,7 +8,7 @@
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "02/11/2026 à 11:57"
+      "derniere_maj": "02/11/2026 à 13:43"
     },
     "dernier_match": {
       "id": "r3_j5_aniche_genech",
@@ -118,14 +118,14 @@
       "date_heure": "Dimanche 08 Novembre 2026 à 14h30",
       "lieu": "Stade Léo Lagrange (Genech)",
       "domicile": "ES GENECH",
-      "exterieur": "BEUVRY LA FORET AS",
+      "exterieur": "BAVAY US",
       "comparatif": {
-        "titre": "Choc de Haut de Tableau • 5e vs 2e (R3 Poule D)",
-        "adversaire_nom": "Beuvry la Forêt AS",
-        "adversaire_rang": "2e",
-        "adversaire_pts": 10,
-        "adversaire_buts_pour": 8,
-        "adversaire_buts_contre": 4,
+        "titre": "Seniors Régional 3 • Journée 6 (Poule D)",
+        "adversaire_nom": "Bavay US",
+        "adversaire_rang": "9e",
+        "adversaire_pts": 3,
+        "adversaire_buts_pour": 5,
+        "adversaire_buts_contre": 9,
         "club_nom": "ES Genech",
         "club_rang": "5e",
         "club_pts": 9,
@@ -133,9 +133,9 @@
         "club_buts_contre": 4
       },
       "alertes": [
-        "Choc de haut de tableau : Genech (5e, 9 pts, invaincu) accueille Beuvry (2e, 10 pts) séparés par seulement 1 point.",
-        "Duel des meilleures défenses : seulement 4 buts concédés en 5 journées par Genech et Beuvry (0.80 but/match).",
-        "Genech reste invaincu en championnat R3 cette saison (2 victoires, 3 nuls)."
+        "Réception de Bavay US (9e, 3 pts) : l'occasion idéale pour Genech (5e, 9 pts, invaincu) de renouer avec la victoire à domicile.",
+        "Bavay reste sur une défaite 3-0 à Valenciennes Summer le week-end dernier (1 seule victoire en 5 journées).",
+        "Genech est l'une des 2 seules formations encore invaincues de la poule (2 victoires, 3 nuls)."
       ],
       "stats_comparatives": {
         "genech": {
@@ -152,45 +152,45 @@
             "V"
           ]
         },
-        "beuvry": {
-          "rang": 2,
-          "points": 10,
-          "buts_marques": 8,
-          "buts_encaisses": 4,
-          "diff": "+4",
+        "bavay": {
+          "rang": 9,
+          "points": 3,
+          "buts_marques": 5,
+          "buts_encaisses": 9,
+          "diff": "-4",
           "forme": [
-            "V",
-            "N",
-            "V",
             "D",
-            "V"
+            "N",
+            "D",
+            "V",
+            "D"
           ]
         }
       },
       "adversaire_alertes": [
-        "Choc de haut de tableau : Genech (5e, 9 pts, invaincu) accueille Beuvry (2e, 10 pts) séparés par seulement 1 point.",
-        "Duel des meilleures défenses : seulement 4 buts concédés en 5 journées par Genech et Beuvry (0.80 but/match).",
-        "Genech reste invaincu en championnat R3 cette saison (2 victoires, 3 nuls)."
+        "Réception de Bavay US (9e, 3 pts) : l'occasion idéale pour Genech (5e, 9 pts, invaincu) de renouer avec la victoire à domicile.",
+        "Bavay reste sur une défaite 3-0 à Valenciennes Summer le week-end dernier (1 seule victoire en 5 journées).",
+        "Genech est l'une des 2 seules formations encore invaincues de la poule (2 victoires, 3 nuls)."
       ]
     },
     "meteo_prochain_match": {
-      "lieu": "Aniche",
+      "lieu": "Genech",
       "surface": "Pelouse naturelle",
       "temperature": "8.9 °C",
-      "vent": "Faible (9.3 km/h)",
-      "pluie": "Sec (8 %)",
+      "vent": "Faible (9.2 km/h)",
+      "pluie": "Sec (2 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Benjamin D. (Ligue Hauts-de-France)",
+      "nom_arbitre": "En attente de désignation CRA",
       "district": "Ligue de Football des Hauts-de-France",
       "niveau": "Arbitre Régional R3 Officiel",
-      "moyenne_jaunes": 3.2,
-      "severite": "MODÉRÉE (3.2 jaunes / match)",
-      "badge_color": "#15803d",
-      "style": "Pédagogue • Favorise la fluidité du jeu",
-      "consigne_coach": "Arbitre officiel désigné pour ce dimanche 01/11. Privilégie le dialogue et laisse jouer les duels. Canaliser l'engagement au milieu et laisser le capitaine échanger avec lui."
+      "moyenne_jaunes": "--",
+      "severite": "DÉSIGNATION EN COURS",
+      "badge_color": "#64748b",
+      "style": "Publication officielle CRA le jeudi",
+      "consigne_coach": "La Commission Régionale d'Arbitrage (CRA) publiera l'arbitre officiel ce jeudi 05/11. Le profil et les consignes disciplinaires seront actualisés automatiquement dès parution."
     },
     "historique_matchs": [
       {
@@ -4032,7 +4032,7 @@
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "02/11/2026 à 11:57"
+      "derniere_maj": "02/11/2026 à 13:43"
     },
     "dernier_match": {
       "id": "m_u18_m1_79496282-et-c-anstai",
@@ -4098,7 +4098,7 @@
       "surface": "Pelouse naturelle",
       "temperature": "8.9 °C",
       "vent": "Faible (9.2 km/h)",
-      "pluie": "Sec (7 %)",
+      "pluie": "Sec (2 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -5523,7 +5523,7 @@
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "02/11/2026 à 11:57"
+      "derniere_maj": "02/11/2026 à 13:43"
     },
     "dernier_match": {
       "id": "m_senior_f2_78809066-lille-e-s-l",
@@ -5566,7 +5566,7 @@
       "surface": "Pelouse naturelle",
       "temperature": "8.9 °C",
       "vent": "Faible (9.2 km/h)",
-      "pluie": "Sec (7 %)",
+      "pluie": "Sec (2 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -6487,7 +6487,7 @@
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "02/11/2026 à 11:57"
+      "derniere_maj": "02/11/2026 à 13:43"
     },
     "dernier_match": {
       "id": "m_senior_b_j4_loos",
@@ -6530,7 +6530,7 @@
       "surface": "Pelouse naturelle",
       "temperature": "8.9 °C",
       "vent": "Faible (9.2 km/h)",
-      "pluie": "Sec (7 %)",
+      "pluie": "Sec (2 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
@@ -7412,7 +7412,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "02/11/2026 à 11:57"
+      "derniere_maj": "02/11/2026 à 13:43"
     },
     "dernier_match": {
       "id": "seclin_56215870",
@@ -7466,20 +7466,20 @@
       ]
     },
     "meteo_prochain_match": {
-      "lieu": "Croix (Stade Henri Seigneur)",
+      "lieu": "Seclin (Stade Henri Jooris)",
       "surface": "Pelouse naturelle",
-      "temperature": "9.3 °C",
-      "vent": "Faible (10.2 km/h)",
-      "pluie": "Sec (7 %)",
+      "temperature": "9.1 °C",
+      "vent": "Faible (8.9 km/h)",
+      "pluie": "Sec (3 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Thomas B. (Ligue Hauts-de-France)",
-      "severite": "RIGUEUR ÉLEVÉE",
-      "moyenne_jaunes": 3.6,
-      "badge_color": "#0284c7",
-      "consigne_coach": "Choc au sommet face au leader Croix (10 pts). Rigueur défensive et transition rapide."
+      "nom_arbitre": "En attente de désignation CRA",
+      "severite": "DÉSIGNATION EN COURS",
+      "moyenne_jaunes": "--",
+      "badge_color": "#64748b",
+      "consigne_coach": "La Commission Régionale d'Arbitrage (CRA) publiera l'arbitre officiel ce jeudi 05/11. Les consignes seront actualisées dès parution."
     },
     "historique_matchs": [
       {
@@ -12318,7 +12318,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "02/11/2026 à 11:57"
+      "derniere_maj": "02/11/2026 à 13:43"
     },
     "dernier_match": {
       "id": "seclin_56215870",
@@ -12372,20 +12372,20 @@
       ]
     },
     "meteo_prochain_match": {
-      "lieu": "Croix (Stade Henri Seigneur)",
+      "lieu": "Seclin (Stade Henri Jooris)",
       "surface": "Pelouse naturelle",
-      "temperature": "9.3 °C",
-      "vent": "Faible (10.2 km/h)",
-      "pluie": "Sec (7 %)",
+      "temperature": "9.1 °C",
+      "vent": "Faible (8.9 km/h)",
+      "pluie": "Sec (3 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Thomas B. (Ligue Hauts-de-France)",
-      "severite": "RIGUEUR ÉLEVÉE",
-      "moyenne_jaunes": 3.6,
-      "badge_color": "#0284c7",
-      "consigne_coach": "Choc au sommet face au leader Croix (10 pts). Rigueur défensive et transition rapide."
+      "nom_arbitre": "En attente de désignation CRA",
+      "severite": "DÉSIGNATION EN COURS",
+      "moyenne_jaunes": "--",
+      "badge_color": "#64748b",
+      "consigne_coach": "La Commission Régionale d'Arbitrage (CRA) publiera l'arbitre officiel ce jeudi 05/11. Les consignes seront actualisées dès parution."
     },
     "historique_matchs": [
       {
@@ -17224,7 +17224,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "02/11/2026 à 11:57"
+      "derniere_maj": "02/11/2026 à 13:43"
     },
     "dernier_match": {
       "id": "lesquin_56215867",
@@ -17341,20 +17341,20 @@
       ]
     },
     "meteo_prochain_match": {
-      "lieu": "Courcelles-lès-Lens",
-      "surface": "Pelouse naturelle",
+      "lieu": "Lesquin (Stade Jean-Pierre Papin)",
+      "surface": "Terrain synthétique",
       "temperature": "9.1 °C",
-      "vent": "Faible (8.3 km/h)",
-      "pluie": "Sec (9 %)",
+      "vent": "Faible (9.8 km/h)",
+      "pluie": "Sec (3 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique sèche et rapide."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Maxime D. (Ligue Hauts-de-France)",
-      "severite": "VIGILANCE CONTESTATION",
-      "moyenne_jaunes": 3.4,
-      "badge_color": "#059669",
-      "consigne_coach": "Match capital chez la lanterne rouge Courcelles US. Maîtriser le tempo et éviter les fautes d'énervement."
+      "nom_arbitre": "En attente de désignation CRA",
+      "severite": "DÉSIGNATION EN COURS",
+      "moyenne_jaunes": "--",
+      "badge_color": "#64748b",
+      "consigne_coach": "La Commission Régionale d'Arbitrage (CRA) publiera l'arbitre officiel ce jeudi 05/11. Les consignes seront actualisées dès parution."
     },
     "historique_matchs": [
       {
@@ -21282,7 +21282,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "02/11/2026 à 11:57"
+      "derniere_maj": "02/11/2026 à 13:43"
     },
     "dernier_match": {
       "id": "lesquin_56215867",
@@ -21399,20 +21399,20 @@
       ]
     },
     "meteo_prochain_match": {
-      "lieu": "Courcelles-lès-Lens",
-      "surface": "Pelouse naturelle",
+      "lieu": "Lesquin (Stade Jean-Pierre Papin)",
+      "surface": "Terrain synthétique",
       "temperature": "9.1 °C",
-      "vent": "Faible (8.3 km/h)",
-      "pluie": "Sec (9 %)",
+      "vent": "Faible (9.8 km/h)",
+      "pluie": "Sec (3 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle sèche et rapide."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique sèche et rapide."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Maxime D. (Ligue Hauts-de-France)",
-      "severite": "VIGILANCE CONTESTATION",
-      "moyenne_jaunes": 3.4,
-      "badge_color": "#059669",
-      "consigne_coach": "Match capital chez la lanterne rouge Courcelles US. Maîtriser le tempo et éviter les fautes d'énervement."
+      "nom_arbitre": "En attente de désignation CRA",
+      "severite": "DÉSIGNATION EN COURS",
+      "moyenne_jaunes": "--",
+      "badge_color": "#64748b",
+      "consigne_coach": "La Commission Régionale d'Arbitrage (CRA) publiera l'arbitre officiel ce jeudi 05/11. Les consignes seront actualisées dès parution."
     },
     "historique_matchs": [
       {
