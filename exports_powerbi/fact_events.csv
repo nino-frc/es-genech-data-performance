@@ -1,134 +1,4 @@
 ﻿id,match_id,minute,temps_additionnel,tranche_quart_heure,type_event,equipe,acteur_principal,acteur_secondaire,detail,camp_event,is_but_genech,is_but_adverse,is_carton_genech,is_carton_adverse,mi_temps,is_money_time
-115,r3_j1_bondues_genech,33,0,31-45+',EXPULSION,GENECH ES,HUGO HERVE,,Carton rouge,ES Genech,0,0,1,0,1ère Mi-Temps,0
-116,r3_j1_bondues_genech,34,0,31-45+',BUT,BONDUES FC 2,MATHIS P.,,But pour BONDUES FC 2,Adversaire,0,1,0,0,1ère Mi-Temps,0
-117,r3_j1_bondues_genech,40,0,31-45+',AVERTISSEMENT,BONDUES FC 2,ABEL D.,,Carton jaune,Adversaire,0,0,0,1,1ère Mi-Temps,0
-118,r3_j1_bondues_genech,46,0,46-60',CHANGEMENT,GENECH ES,ARTHUR CLIQUE,GIOVANY CALON,ARTHUR C. remplace GIOVANY C.,ES Genech,0,0,0,0,2nde Mi-Temps,0
-119,r3_j1_bondues_genech,52,0,46-60',CHANGEMENT,BONDUES FC 2,NOA L.,TILL P.,NOA L. remplace TILL P.,Adversaire,0,0,0,0,2nde Mi-Temps,0
-120,r3_j1_bondues_genech,53,0,46-60',AVERTISSEMENT,GENECH ES,MAXIME PETIT,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,0
-121,r3_j1_bondues_genech,54,0,46-60',AVERTISSEMENT,BONDUES FC 2,NATHAN D.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,0
-122,r3_j1_bondues_genech,59,0,46-60',CHANGEMENT,BONDUES FC 2,LOIC A.,MARTIN M.,LOIC A. remplace MARTIN M.,Adversaire,0,0,0,0,2nde Mi-Temps,0
-123,r3_j1_bondues_genech,59,0,46-60',CHANGEMENT,BONDUES FC 2,LEO B.,EMILIEN L.,LEO B. remplace EMILIEN L.,Adversaire,0,0,0,0,2nde Mi-Temps,0
-124,r3_j1_bondues_genech,60,0,46-60',CHANGEMENT,GENECH ES,ELIO DELCROIX,CLEMENT DURIEZ,ELIO D. remplace CLEMENT D.,ES Genech,0,0,0,0,2nde Mi-Temps,0
-125,r3_j1_bondues_genech,60,0,46-60',CHANGEMENT,GENECH ES,GASPARD DROUPSY,JEAN PAUL BANGALA TOFIFI,GASPARD D. remplace JEAN PAUL B.,ES Genech,0,0,0,0,2nde Mi-Temps,0
-126,r3_j1_bondues_genech,63,0,61-75',BUT,GENECH ES,JULIEN DEVERNAY,,But pour GENECH ES,ES Genech,1,0,0,0,2nde Mi-Temps,0
-127,r3_j1_bondues_genech,65,0,61-75',AVERTISSEMENT,BONDUES FC 2,NATHAN D.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,0
-128,r3_j1_bondues_genech,65,0,61-75',EXPULSION,BONDUES FC 2,NATHAN D.,,Carton rouge,Adversaire,0,0,0,1,2nde Mi-Temps,0
-129,r3_j1_bondues_genech,80,0,76-90+',AVERTISSEMENT,BONDUES FC 2,MAXIME H.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
-130,r3_j1_bondues_genech,80,0,76-90+',AVERTISSEMENT,GENECH ES,GASPARD DROUPSY,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
-131,r3_j1_bondues_genech,86,0,76-90+',BUT,GENECH ES,GASPARD DROUPSY,,But pour GENECH ES,ES Genech,1,0,0,0,2nde Mi-Temps,1
-132,r3_j1_bondues_genech,90,0,76-90+',AVERTISSEMENT,GENECH ES,MATHYS HERVE,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
-133,r3_j2_genech_maubeuge,39,0,31-45+',BUT,GENECH ES,GASPARD DROUPSY,,But pour GENECH ES,ES Genech,1,0,0,0,1ère Mi-Temps,0
-134,r3_j2_genech_maubeuge,46,0,46-60',CHANGEMENT,GENECH ES,JEAN PAUL BANGALA TOFIFI,AUGUSTIN DROUPSY,JEAN PAUL B. remplace AUGUSTIN D.,ES Genech,0,0,0,0,2nde Mi-Temps,0
-135,r3_j2_genech_maubeuge,46,0,46-60',CHANGEMENT,GENECH ES,ARTHUR CLIQUE,GIOVANY CALON,ARTHUR C. remplace GIOVANY C.,ES Genech,0,0,0,0,2nde Mi-Temps,0
-136,r3_j2_genech_maubeuge,46,0,46-60',CHANGEMENT,MAUBEUGE US 2,CAMERON D.,LUCAS D.,CAMERON D. remplace LUCAS D.,Adversaire,0,0,0,0,2nde Mi-Temps,0
-137,r3_j2_genech_maubeuge,48,0,46-60',CHANGEMENT,GENECH ES,CLEMENT DURIEZ,ELIO DELCROIX,CLEMENT D. remplace ELIO D.,ES Genech,0,0,0,0,2nde Mi-Temps,0
-138,r3_j2_genech_maubeuge,51,0,46-60',BUT,GENECH ES,MATHYS HERVE,,But pour GENECH ES,ES Genech,1,0,0,0,2nde Mi-Temps,0
-139,r3_j2_genech_maubeuge,56,0,46-60',CHANGEMENT,MAUBEUGE US 2,LANCINE T.,RAYAN A.,LANCINE T. remplace RAYAN A.,Adversaire,0,0,0,0,2nde Mi-Temps,0
-140,r3_j2_genech_maubeuge,70,0,61-75',CHANGEMENT,MAUBEUGE US 2,AYOUB A.,LUCAS D.,AYOUB A. remplace LUCAS D.,Adversaire,0,0,0,0,2nde Mi-Temps,0
-141,r3_j2_genech_maubeuge,83,0,76-90+',AVERTISSEMENT,GENECH ES,GASPARD DROUPSY,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
-142,r3_j2_genech_maubeuge,83,0,76-90+',AVERTISSEMENT,MAUBEUGE US 2,ANTOINE C.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
-143,r3_j3_guesnain_genech,35,0,31-45+',CHANGEMENT,GUESNAIN SC,NAHIL B.,HABIB S.,NAHIL B. remplace HABIB S.,Adversaire,0,0,0,0,1ère Mi-Temps,0
-144,r3_j3_guesnain_genech,46,0,46-60',CHANGEMENT,GENECH ES,DANY DE FREITAS,GIOVANY CALON,DANY D. remplace GIOVANY C.,ES Genech,0,0,0,0,2nde Mi-Temps,0
-145,r3_j3_guesnain_genech,46,0,46-60',CHANGEMENT,GENECH ES,ELIO DELCROIX,CLEMENT DURIEZ,ELIO D. remplace CLEMENT D.,ES Genech,0,0,0,0,2nde Mi-Temps,0
-146,r3_j3_guesnain_genech,56,0,46-60',CHANGEMENT,GUESNAIN SC,TOM L.,MOHAMMED C.,TOM L. remplace MOHAMMED C.,Adversaire,0,0,0,0,2nde Mi-Temps,0
-147,r3_j3_guesnain_genech,67,0,61-75',CHANGEMENT,GUESNAIN SC,MEHDI B.,JASON L.,MEHDI B. remplace JASON L.,Adversaire,0,0,0,0,2nde Mi-Temps,0
-148,r3_j3_guesnain_genech,67,0,61-75',CHANGEMENT,GENECH ES,JULIEN DEVERNAY,MATEO SURMONT,JULIEN D. remplace MATEO S.,ES Genech,0,0,0,0,2nde Mi-Temps,0
-149,r3_j3_guesnain_genech,70,0,61-75',AVERTISSEMENT,GUESNAIN SC,MORGAN A.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,0
-150,r3_j3_guesnain_genech,83,0,76-90+',AVERTISSEMENT,GUESNAIN SC,SOFIANE G.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
-151,r3_j3_guesnain_genech,90,0,76-90+',AVERTISSEMENT,GENECH ES,REMI DEFENIN,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
-152,r3_j3_guesnain_genech,90,0,76-90+',AVERTISSEMENT,GUESNAIN SC,NADIR M.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
-153,r3_j3_guesnain_genech,90,0,76-90+',AVERTISSEMENT,GUESNAIN SC,MEHDI B.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
-154,r3_j4_bavay_aniche,27,0,16-30',CHANGEMENT,BAVAY US,SOFIANE W.,SAID E.,SOFIANE W. remplace SAID E.,Adversaire,0,0,0,0,1ère Mi-Temps,0
-155,r3_j4_bavay_aniche,30,0,16-30',BUT,BAVAY US,NOAM L.,,But pour BAVAY US,Adversaire,0,1,0,0,1ère Mi-Temps,0
-156,r3_j4_bavay_aniche,42,0,31-45+',AVERTISSEMENT,ANICHE SC,ABDELAZIZ A.,,Carton jaune,Adversaire,0,0,0,1,1ère Mi-Temps,0
-157,r3_j4_bavay_aniche,45,0,31-45+',AVERTISSEMENT,BAVAY US,ANTOINE G.,,Carton jaune,Adversaire,0,0,0,1,1ère Mi-Temps,0
-158,r3_j4_bavay_aniche,51,0,46-60',CHANGEMENT,BAVAY US,BASILE C.,LUCA T.,BASILE C. remplace LUCA T.,Adversaire,0,0,0,0,2nde Mi-Temps,0
-159,r3_j4_bavay_aniche,55,0,46-60',AVERTISSEMENT,ANICHE SC,LENNY O.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,0
-160,r3_j4_bavay_aniche,60,0,46-60',CHANGEMENT,ANICHE SC,MEHDI S.,LILIAN T.,MEHDI S. remplace LILIAN T.,Adversaire,0,0,0,0,2nde Mi-Temps,0
-161,r3_j4_bavay_aniche,60,0,46-60',CHANGEMENT,ANICHE SC,JULIEN M.,ADRIEN S.,JULIEN M. remplace ADRIEN S.,Adversaire,0,0,0,0,2nde Mi-Temps,0
-162,r3_j4_bavay_aniche,61,0,61-75',AVERTISSEMENT,ANICHE SC,KEVIN B.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,0
-163,r3_j4_bavay_aniche,70,0,61-75',CHANGEMENT,ANICHE SC,AXEL C.,LENNY O.,AXEL C. remplace LENNY O.,Adversaire,0,0,0,0,2nde Mi-Temps,0
-164,r3_j4_bavay_aniche,80,0,76-90+',AVERTISSEMENT,ANICHE SC,MUSTAFA B.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
-165,r3_j4_bavay_aniche,90,0,76-90+',BUT,ANICHE SC,AXEL C.,,But pour ANICHE SC,Adversaire,0,1,0,0,2nde Mi-Temps,1
-166,r3_j4_bavay_aniche,90,0,76-90+',AVERTISSEMENT,ANICHE SC,ADRIEN S.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
-167,r3_j4_beuvry_guesnain,26,0,16-30',AVERTISSEMENT,GUESNAIN SC,SOFIANE B.,,Carton jaune,Adversaire,0,0,0,1,1ère Mi-Temps,0
-168,r3_j4_beuvry_guesnain,37,0,31-45+',CHANGEMENT,GUESNAIN SC,SOFIANE G.,JASON L.,SOFIANE G. remplace JASON L.,Adversaire,0,0,0,0,1ère Mi-Temps,0
-169,r3_j4_beuvry_guesnain,45,0,31-45+',CHANGEMENT,BEUVRY LA FORET AS,MARTIN B.,ANTOINE S.,MARTIN B. remplace ANTOINE S.,Adversaire,0,0,0,0,1ère Mi-Temps,0
-170,r3_j4_beuvry_guesnain,45,0,31-45+',CHANGEMENT,GUESNAIN SC,NAHIL B.,HABIB S.,NAHIL B. remplace HABIB S.,Adversaire,0,0,0,0,1ère Mi-Temps,0
-171,r3_j4_beuvry_guesnain,45,0,31-45+',CHANGEMENT,GUESNAIN SC,YANICE B.,NADIR M.,YANICE B. remplace NADIR M.,Adversaire,0,0,0,0,1ère Mi-Temps,0
-172,r3_j4_beuvry_guesnain,47,0,46-60',AVERTISSEMENT,BEUVRY LA FORET AS,FLORENT H.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,0
-173,r3_j4_beuvry_guesnain,63,0,61-75',CHANGEMENT,BEUVRY LA FORET AS,ENZO C.,LUC C.,ENZO C. remplace LUC C.,Adversaire,0,0,0,0,2nde Mi-Temps,0
-174,r3_j4_beuvry_guesnain,72,0,61-75',CHANGEMENT,BEUVRY LA FORET AS,ANTHONY D.,ANTHONY C.,ANTHONY D. remplace ANTHONY C.,Adversaire,0,0,0,0,2nde Mi-Temps,0
-175,r3_j4_beuvry_guesnain,76,0,76-90+',AVERTISSEMENT,GUESNAIN SC,HAKIM G.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
-176,r3_j4_beuvry_guesnain,86,0,76-90+',AVERTISSEMENT,GUESNAIN SC,MEHDI B.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
-177,r3_j4_beuvry_guesnain,88,0,76-90+',AVERTISSEMENT,BEUVRY LA FORET AS,MATTEO M.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
-178,cdf_t2_lys_genech,36,0,31-45+',AVERTISSEMENT,LYS L/LANNOY STELLA,ISMAEL AIDAOUI,,Carton jaune,Adversaire,0,0,0,1,1ère Mi-Temps,0
-179,cdf_t2_lys_genech,46,0,46-60',CHANGEMENT,GENECH ES,GIOVANY CALON,GASPARD DROUPSY,GIOVANY CALON remplace GASPARD DROUPSY,ES Genech,0,0,0,0,2nde Mi-Temps,0
-180,cdf_t2_lys_genech,59,0,46-60',CHANGEMENT,LYS L/LANNOY STELLA,UGO VANNESTE,MOHAND LAIB,UGO VANNESTE remplace MOHAND LAIB,Adversaire,0,0,0,0,2nde Mi-Temps,0
-181,cdf_t2_lys_genech,59,0,46-60',CHANGEMENT,GENECH ES,THOMAS LEONARD,JEAN PAUL BANGALA TOFIFI,THOMAS LEONARD remplace JEAN PAUL BANGALA TOFIFI,ES Genech,0,0,0,0,2nde Mi-Temps,0
-182,cdf_t2_lys_genech,66,0,61-75',CHANGEMENT,LYS L/LANNOY STELLA,FARHANE GUENOUNE,GAETAN DJEHA,FARHANE GUENOUNE remplace GAETAN DJEHA,Adversaire,0,0,0,0,2nde Mi-Temps,0
-183,cdf_t2_lys_genech,69,0,61-75',CHANGEMENT,GENECH ES,DANY DE FREITAS,AUGUSTIN DROUPSY,DANY DE FREITAS remplace AUGUSTIN DROUPSY,ES Genech,0,0,0,0,2nde Mi-Temps,0
-184,cdf_t2_lys_genech,74,0,61-75',CHANGEMENT,LYS L/LANNOY STELLA,FABIO DECARO,AMAURY VANSTRAESSELLE,FABIO DECARO remplace AMAURY VANSTRAESSELLE,Adversaire,0,0,0,0,2nde Mi-Temps,0
-185,cdf_t2_lys_genech,80,0,76-90+',AVERTISSEMENT,LYS L/LANNOY STELLA,SIDIA JAITEH,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
-186,cdf_t2_lys_genech,83,0,76-90+',AVERTISSEMENT,GENECH ES,HUGO HERVE,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
-187,cdf_t2_lys_genech,85,0,76-90+',AVERTISSEMENT,LYS L/LANNOY STELLA,GAETAN DJEHA,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
-188,cdf_t2_lys_genech,88,0,76-90+',AVERTISSEMENT,GENECH ES,THOMAS LEONARD,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
-189,cdf_t2_lys_genech,90,0,76-90+',EXPULSION,LYS L/LANNOY STELLA,AMAURY VANSTRAESSELLE,,Carton rouge,Adversaire,0,0,0,1,2nde Mi-Temps,1
-190,cdf_t2_lys_genech,90,0,76-90+',AVERTISSEMENT,GENECH ES,JULIEN NISSE,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
-191,cdf_t3_sainghin_genech,14,0,01-15',AVERTISSEMENT,SAINGHIN WEPPES AO,NICOLAS ROMAO,,Carton jaune,Adversaire,0,0,0,1,1ère Mi-Temps,0
-192,cdf_t3_sainghin_genech,40,0,31-45+',AVERTISSEMENT,GENECH ES,JULIEN DEVERNAY,,Carton jaune,ES Genech,0,0,1,0,1ère Mi-Temps,0
-193,cdf_t3_sainghin_genech,57,0,46-60',CHANGEMENT,GENECH ES,ARTHUR CLIQUE,JEAN PAUL BANGALA TOFIFI,ARTHUR CLIQUE remplace JEAN PAUL BANGALA TOFIFI,ES Genech,0,0,0,0,2nde Mi-Temps,0
-194,cdf_t3_sainghin_genech,57,0,46-60',CHANGEMENT,GENECH ES,MATEO SURMONT,JULIEN DEVERNAY,MATEO SURMONT remplace JULIEN DEVERNAY,ES Genech,0,0,0,0,2nde Mi-Temps,0
-195,cdf_t3_sainghin_genech,60,0,46-60',CHANGEMENT,SAINGHIN WEPPES AO,JULES LEBEGUE,KELIAN HALBOT,JULES LEBEGUE remplace KELIAN HALBOT,Adversaire,0,0,0,0,2nde Mi-Temps,0
-196,cdf_t3_sainghin_genech,64,0,61-75',EXPULSION,SAINGHIN WEPPES AO,DAVID LEMAIRE,,Carton rouge,Adversaire,0,0,0,1,2nde Mi-Temps,0
-197,cdf_t3_sainghin_genech,66,0,61-75',CHANGEMENT,GENECH ES,ELIO DELCROIX,CLEMENT DURIEZ,ELIO DELCROIX remplace CLEMENT DURIEZ,ES Genech,0,0,0,0,2nde Mi-Temps,0
-198,cdf_t3_sainghin_genech,70,0,61-75',CHANGEMENT,SAINGHIN WEPPES AO,JULIEN TOURBIER,NICOLAS ROMAO,JULIEN TOURBIER remplace NICOLAS ROMAO,Adversaire,0,0,0,0,2nde Mi-Temps,0
-199,cdf_t3_sainghin_genech,78,0,76-90+',CHANGEMENT,GENECH ES,JULES DIVERCHY,GASPARD DROUPSY,JULES DIVERCHY remplace GASPARD DROUPSY,ES Genech,0,0,0,0,2nde Mi-Temps,1
-200,cdf_t3_sainghin_genech,79,0,76-90+',AVERTISSEMENT,GENECH ES,MATEO SURMONT,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
-201,cdf_t3_sainghin_genech,82,0,76-90+',AVERTISSEMENT,GENECH ES,MATEO SURMONT,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
-202,cdf_t3_sainghin_genech,82,0,76-90+',EXPULSION,GENECH ES,MATEO SURMONT,,Carton rouge,ES Genech,0,0,1,0,2nde Mi-Temps,1
-203,cdf_t4_genech_dunkerque,28,0,16-30',CHANGEMENT,DUNKERQUE MALO FC,BATISTE POUCHELE,LUIS ORFAIT,BATISTE POUCHELE remplace LUIS ORFAIT,Adversaire,0,0,0,0,1ère Mi-Temps,0
-204,cdf_t4_genech_dunkerque,45,0,31-45+',BUT,GENECH ES,JULIEN DEVERNAY,,But pour GENECH ES,ES Genech,1,0,0,0,1ère Mi-Temps,0
-205,cdf_t4_genech_dunkerque,45,0,31-45+',AVERTISSEMENT,DUNKERQUE MALO FC,JORDAN DAKOUGNA,,Carton jaune,Adversaire,0,0,0,1,1ère Mi-Temps,0
-206,cdf_t4_genech_dunkerque,60,0,46-60',AVERTISSEMENT,GENECH ES,MATHYS HERVE,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,0
-207,cdf_t4_genech_dunkerque,60,0,46-60',CHANGEMENT,GENECH ES,JULIEN NISSE,JEAN PAUL BANGALA TOFIFI,JULIEN NISSE remplace JEAN PAUL BANGALA TOFIFI,ES Genech,0,0,0,0,2nde Mi-Temps,0
-208,cdf_t4_genech_dunkerque,60,0,46-60',CHANGEMENT,DUNKERQUE MALO FC,SAMY FEDDI,CAMERON POZUELOS,SAMY FEDDI remplace CAMERON POZUELOS,Adversaire,0,0,0,0,2nde Mi-Temps,0
-209,cdf_t4_genech_dunkerque,60,0,46-60',CHANGEMENT,DUNKERQUE MALO FC,MATYS DEMAZIERES,YANIS LEQUELLENEC,MATYS DEMAZIERES remplace YANIS LEQUELLENEC,Adversaire,0,0,0,0,2nde Mi-Temps,0
-210,cdf_t4_genech_dunkerque,65,0,61-75',BUT,GENECH ES,GIOVANY CALON,,But pour GENECH ES,ES Genech,1,0,0,0,2nde Mi-Temps,0
-211,cdf_t4_genech_dunkerque,70,0,61-75',CHANGEMENT,GENECH ES,ELIO DELCROIX,GIOVANY CALON,ELIO DELCROIX remplace GIOVANY CALON,ES Genech,0,0,0,0,2nde Mi-Temps,0
-212,cdf_t4_genech_dunkerque,70,0,61-75',CHANGEMENT,DUNKERQUE MALO FC,RODRIGUE DEWAELE,JORDAN DAKOUGNA,RODRIGUE DEWAELE remplace JORDAN DAKOUGNA,Adversaire,0,0,0,0,2nde Mi-Temps,0
-213,cdf_t4_genech_dunkerque,75,0,61-75',CHANGEMENT,GENECH ES,JULES DIVERCHY,HUGO HERVE,JULES DIVERCHY remplace HUGO HERVE,ES Genech,0,0,0,0,2nde Mi-Temps,1
-214,cdf_t4_genech_dunkerque,75,0,61-75',CHANGEMENT,GENECH ES,REMI DEFENIN,ARTHUR CLIQUE,REMI DEFENIN remplace ARTHUR CLIQUE,ES Genech,0,0,0,0,2nde Mi-Temps,1
-215,cdf_t5_genech_chantilly,7,0,01-15',AVERTISSEMENT,CHANTILLY US,OUMAR CAMARA,,Carton jaune,Adversaire,0,0,0,1,1ère Mi-Temps,0
-216,cdf_t5_genech_chantilly,30,0,16-30',CHANGEMENT,CHANTILLY US,MATIAS FERREIRA,ADRIEN PAGERIE,MATIAS FERREIRA remplace ADRIEN PAGERIE,Adversaire,0,0,0,0,1ère Mi-Temps,0
-217,cdf_t5_genech_chantilly,46,0,46-60',CHANGEMENT,CHANTILLY US,DYLAN DUQUESNES,OUMAR CAMARA,DYLAN DUQUESNES remplace OUMAR CAMARA,Adversaire,0,0,0,0,2nde Mi-Temps,0
-218,cdf_t5_genech_chantilly,50,0,46-60',AVERTISSEMENT,CHANTILLY US,SOULEYMANE COULIBALY,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,0
-219,cdf_t5_genech_chantilly,55,0,46-60',CHANGEMENT,CHANTILLY US,CORENTIN LEMAIRE,NOE MASEVO MUANDA,CORENTIN LEMAIRE remplace NOE MASEVO MUANDA,Adversaire,0,0,0,0,2nde Mi-Temps,0
-220,cdf_t5_genech_chantilly,61,0,61-75',CHANGEMENT,GENECH ES,JEAN PAUL BANGALA TOFIFI,GASPARD DROUPSY,JEAN PAUL BANGALA TOFIFI remplace GASPARD DROUPSY,ES Genech,0,0,0,0,2nde Mi-Temps,0
-221,cdf_t5_genech_chantilly,61,0,61-75',CHANGEMENT,GENECH ES,DANY DE FREITAS,GIOVANY CALON,DANY DE FREITAS remplace GIOVANY CALON,ES Genech,0,0,0,0,2nde Mi-Temps,0
-222,cdf_t5_genech_chantilly,70,0,61-75',AVERTISSEMENT,CHANTILLY US,OUMAR N'DIAYE,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,0
-223,cdf_t5_genech_chantilly,70,0,61-75',CHANGEMENT,CHANTILLY US,ILYESS EL HADDAD,SAYYIDOUL MOUHAMED SADJO,ILYESS EL HADDAD remplace SAYYIDOUL MOUHAMED SADJO,Adversaire,0,0,0,0,2nde Mi-Temps,0
-224,cdf_t5_genech_chantilly,77,0,76-90+',BUT,GENECH ES,JULIEN NISSE,,But pour GENECH ES,ES Genech,1,0,0,0,2nde Mi-Temps,1
-225,cdf_t5_genech_chantilly,79,0,76-90+',CHANGEMENT,GENECH ES,JULES DIVERCHY,AUGUSTIN DROUPSY,JULES DIVERCHY remplace AUGUSTIN DROUPSY,ES Genech,0,0,0,0,2nde Mi-Temps,1
-226,cdf_t5_genech_chantilly,81,0,76-90+',AVERTISSEMENT,CHANTILLY US,NICOLAS CAPELLI,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
-227,cdf_t5_genech_chantilly,86,0,76-90+',CHANGEMENT,GENECH ES,ELIO DELCROIX,JULIEN NISSE,ELIO DELCROIX remplace JULIEN NISSE,ES Genech,0,0,0,0,2nde Mi-Temps,1
-228,r3_j4_genech_anstaing,45,0,31-45+',BUT,ANSTAING CHERENG EC,YANN B.,,But pour ANSTAING CHERENG EC,Adversaire,0,1,0,0,1ère Mi-Temps,0
-229,r3_j4_genech_anstaing,52,0,46-60',CHANGEMENT,GENECH ES,GASPARD DROUPSY,JEAN PAUL BANGALA TOFIFI,GASPARD D. remplace JEAN PAUL B.,ES Genech,0,0,0,0,2nde Mi-Temps,0
-230,r3_j4_genech_anstaing,52,0,46-60',CHANGEMENT,GENECH ES,JULIEN NISSE,THOMAS LEONARD,JULIEN N. remplace THOMAS L.,ES Genech,0,0,0,0,2nde Mi-Temps,0
-231,r3_j4_genech_anstaing,52,0,46-60',CHANGEMENT,GENECH ES,GIOVANY CALON,DANY DE FREITAS,GIOVANY C. remplace DANY D.,ES Genech,0,0,0,0,2nde Mi-Temps,0
-232,r3_j4_genech_anstaing,61,0,61-75',AVERTISSEMENT,GENECH ES,GIOVANY CALON,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,0
-233,r3_j4_genech_anstaing,63,0,61-75',CHANGEMENT,ANSTAING CHERENG EC,ELYAZ C.,YANN B.,ELYAZ C. remplace YANN B.,Adversaire,0,0,0,0,2nde Mi-Temps,0
-234,r3_j4_genech_anstaing,72,0,61-75',CHANGEMENT,ANSTAING CHERENG EC,JULIEN S.,NOA B.,JULIEN S. remplace NOA B.,Adversaire,0,0,0,0,2nde Mi-Temps,0
-235,r3_j4_genech_anstaing,74,0,61-75',AVERTISSEMENT,GENECH ES,MAXIME PETIT,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,0
-236,r3_j4_genech_anstaing,79,0,76-90+',AVERTISSEMENT,ANSTAING CHERENG EC,ERWAN G.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
-237,r3_j4_genech_anstaing,79,0,76-90+',AVERTISSEMENT,GENECH ES,JULIEN DEVERNAY,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
-238,r3_j4_genech_anstaing,79,0,76-90+',AVERTISSEMENT,GENECH ES,MATHYS HERVE,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
-239,r3_j4_genech_anstaing,80,0,76-90+',CHANGEMENT,ANSTAING CHERENG EC,QUENTIN V.,BASTIEN P.,QUENTIN V. remplace BASTIEN P.,Adversaire,0,0,0,0,2nde Mi-Temps,1
-240,r3_j4_genech_anstaing,90,0,76-90+',BUT,GENECH ES,HUGO HERVE,,But pour GENECH ES,ES Genech,1,0,0,0,2nde Mi-Temps,1
-241,r3_j4_genech_anstaing,90,0,76-90+',AVERTISSEMENT,ANSTAING CHERENG EC,MOHAMED SAIDOU B.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
-242,r3_j4_genech_anstaing,90,0,76-90+',AVERTISSEMENT,GENECH ES,GASPARD DROUPSY,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
-243,r3_j4_genech_anstaing,90,0,76-90+',AVERTISSEMENT,GENECH ES,GASPARD DROUPSY,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
-244,r3_j4_genech_anstaing,90,0,76-90+',EXPULSION,GENECH ES,GASPARD DROUPSY,,Carton rouge,ES Genech,0,0,1,0,2nde Mi-Temps,1
 257,m_senior_m3_56361526-ent-s-de-ge,11,0,90,BUT,GENECH ES 2,MAXIME M.,,But officiel FFF,ES Genech,1,0,0,0,1ère Mi-Temps,0
 258,m_senior_m3_56361526-ent-s-de-ge,33,0,90,BUT,MARQUETTE FF 2,ALEM M.,,But officiel FFF,Adversaire,0,1,0,0,1ère Mi-Temps,0
 259,m_senior_m3_56361526-ent-s-de-ge,52,0,90,BUT,MARQUETTE FF 2,HAMZA B.,,But officiel FFF,Adversaire,0,1,0,0,2nde Mi-Temps,0
@@ -183,5 +53,160 @@
 311,m_u18_m1_56697624-ent-s-de-ge,75,0,90,AVERTISSEMENT,GENECH ES,ELIO BOTTIN,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
 312,m_u18_m1_56697624-ent-s-de-ge,78,0,90,AVERTISSEMENT,GENECH ES,ROBIN CASTELAIN,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
 313,m_u18_m1_56697624-ent-s-de-ge,90,0,90,BUT,GENECH ES,MARCEAU URBANIAK,,But officiel FFF,ES Genech,1,0,0,0,2nde Mi-Temps,1
-314,m_u18_m1_56697624-ent-s-de-ge,90,0,90,AVERTISSEMENT,GENECH ES,ELIO BOTTIN,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
-315,m_u18_m1_56697624-ent-s-de-ge,90,0,90,AVERTISSEMENT,GENECH ES,ELIO DELCROIX,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
+314,m_u18_m1_56697624-ent-s-de-ge,90,0,90,EXPULSION,GENECH ES,ELIO BOTTIN,,2e carton jaune (Exclusion),ES Genech,0,0,1,0,2nde Mi-Temps,1
+315,m_u18_m1_56697624-ent-s-de-ge,90,0,90,AVERTISSEMENT,GENECH ES,ELIO DELCROIX (Coach U18),,Avertissement Éducateur (Banc),ES Genech,0,0,1,0,2nde Mi-Temps,1
+329,r3_j1_bondues_genech,33,0,31-45+',EXPULSION,GENECH ES,Hugo H.,,Carton rouge,ES Genech,0,0,1,0,1ère Mi-Temps,0
+330,r3_j1_bondues_genech,34,0,31-45+',BUT,BONDUES FC 2,Mathis P.,,But inscrit par MATHIS P.,Adversaire,0,1,0,0,1ère Mi-Temps,0
+331,r3_j1_bondues_genech,40,0,31-45+',AVERTISSEMENT,BONDUES FC 2,Abel D.,,Carton jaune,Adversaire,0,0,0,1,1ère Mi-Temps,0
+332,r3_j1_bondues_genech,46,0,46-60',CHANGEMENT,GENECH ES,Arthur C.,Giovany C.,ARTHUR C. remplace GIOVANY C.,ES Genech,0,0,0,0,2nde Mi-Temps,0
+333,r3_j1_bondues_genech,52,0,46-60',CHANGEMENT,BONDUES FC 2,Noa L.,Till P.,NOA L. remplace TILL P.,Adversaire,0,0,0,0,2nde Mi-Temps,0
+334,r3_j1_bondues_genech,53,0,46-60',AVERTISSEMENT,GENECH ES,Maxime P.,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,0
+335,r3_j1_bondues_genech,54,0,46-60',AVERTISSEMENT,BONDUES FC 2,Nathan D.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,0
+336,r3_j1_bondues_genech,59,0,46-60',CHANGEMENT,BONDUES FC 2,Loic A.,Martin M.,LOIC A. remplace MARTIN M.,Adversaire,0,0,0,0,2nde Mi-Temps,0
+337,r3_j1_bondues_genech,59,0,46-60',CHANGEMENT,BONDUES FC 2,Leo B.,Emilien L.,LEO B. remplace EMILIEN L.,Adversaire,0,0,0,0,2nde Mi-Temps,0
+338,r3_j1_bondues_genech,60,0,46-60',CHANGEMENT,GENECH ES,Elio D.,Clement D.,ELIO D. remplace CLEMENT D.,ES Genech,0,0,0,0,2nde Mi-Temps,0
+339,r3_j1_bondues_genech,60,0,46-60',CHANGEMENT,GENECH ES,Gaspard D.,Jean-Paul B.,GASPARD D. remplace JEAN PAUL B.,ES Genech,0,0,0,0,2nde Mi-Temps,0
+340,r3_j1_bondues_genech,63,0,61-75',BUT,GENECH ES,Julien D.,,But inscrit par JULIEN D.,ES Genech,1,0,0,0,2nde Mi-Temps,0
+341,r3_j1_bondues_genech,65,0,61-75',AVERTISSEMENT,BONDUES FC 2,Nathan D.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,0
+342,r3_j1_bondues_genech,65,0,61-75',EXPULSION,BONDUES FC 2,Nathan D.,,Carton rouge,Adversaire,0,0,0,1,2nde Mi-Temps,0
+343,r3_j1_bondues_genech,80,0,76-90+',AVERTISSEMENT,BONDUES FC 2,Maxime H.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
+344,r3_j1_bondues_genech,80,0,76-90+',AVERTISSEMENT,GENECH ES,Gaspard D.,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
+345,r3_j1_bondues_genech,86,0,76-90+',BUT,GENECH ES,Gaspard D.,,But inscrit par GASPARD D.,ES Genech,1,0,0,0,2nde Mi-Temps,1
+346,r3_j1_bondues_genech,90,0,76-90+',AVERTISSEMENT,GENECH ES,Mathys H.,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
+347,r3_j2_genech_maubeuge,39,0,31-45+',BUT,GENECH ES,Gaspard D.,,But inscrit par GASPARD D.,ES Genech,1,0,0,0,1ère Mi-Temps,0
+348,r3_j2_genech_maubeuge,46,0,46-60',CHANGEMENT,GENECH ES,Jean-Paul B.,Augustin D.,JEAN PAUL B. remplace AUGUSTIN D.,ES Genech,0,0,0,0,2nde Mi-Temps,0
+349,r3_j2_genech_maubeuge,46,0,46-60',CHANGEMENT,GENECH ES,Arthur C.,Giovany C.,ARTHUR C. remplace GIOVANY C.,ES Genech,0,0,0,0,2nde Mi-Temps,0
+350,r3_j2_genech_maubeuge,46,0,46-60',CHANGEMENT,MAUBEUGE US 2,Cameron D.,Lucas D.,CAMERON D. remplace LUCAS D.,Adversaire,0,0,0,0,2nde Mi-Temps,0
+351,r3_j2_genech_maubeuge,48,0,46-60',CHANGEMENT,GENECH ES,Clement D.,Elio D.,CLEMENT D. remplace ELIO D.,ES Genech,0,0,0,0,2nde Mi-Temps,0
+352,r3_j2_genech_maubeuge,51,0,46-60',BUT,GENECH ES,Mathys H.,,But inscrit par MATHYS H.,ES Genech,1,0,0,0,2nde Mi-Temps,0
+353,r3_j2_genech_maubeuge,56,0,46-60',CHANGEMENT,MAUBEUGE US 2,Lancine T.,Rayan A.,LANCINE T. remplace RAYAN A.,Adversaire,0,0,0,0,2nde Mi-Temps,0
+354,r3_j2_genech_maubeuge,70,0,61-75',CHANGEMENT,MAUBEUGE US 2,Ayoub A.,Lucas D.,AYOUB A. remplace LUCAS D.,Adversaire,0,0,0,0,2nde Mi-Temps,0
+355,r3_j2_genech_maubeuge,83,0,76-90+',AVERTISSEMENT,GENECH ES,Gaspard D.,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
+356,r3_j2_genech_maubeuge,83,0,76-90+',AVERTISSEMENT,MAUBEUGE US 2,Antoine C.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
+357,r3_j3_guesnain_genech,35,0,31-45+',CHANGEMENT,GUESNAIN SC,Nahil B.,Habib S.,NAHIL B. remplace HABIB S.,Adversaire,0,0,0,0,1ère Mi-Temps,0
+358,r3_j3_guesnain_genech,46,0,46-60',CHANGEMENT,GENECH ES,Dany D.,Giovany C.,DANY D. remplace GIOVANY C.,ES Genech,0,0,0,0,2nde Mi-Temps,0
+359,r3_j3_guesnain_genech,46,0,46-60',CHANGEMENT,GENECH ES,Elio D.,Clement D.,ELIO D. remplace CLEMENT D.,ES Genech,0,0,0,0,2nde Mi-Temps,0
+360,r3_j3_guesnain_genech,56,0,46-60',CHANGEMENT,GUESNAIN SC,Tom L.,Mohammed C.,TOM L. remplace MOHAMMED C.,Adversaire,0,0,0,0,2nde Mi-Temps,0
+361,r3_j3_guesnain_genech,67,0,61-75',CHANGEMENT,GUESNAIN SC,Mehdi B.,Jason L.,MEHDI B. remplace JASON L.,Adversaire,0,0,0,0,2nde Mi-Temps,0
+362,r3_j3_guesnain_genech,67,0,61-75',CHANGEMENT,GENECH ES,Julien D.,Mateo S.,JULIEN D. remplace MATEO S.,ES Genech,0,0,0,0,2nde Mi-Temps,0
+363,r3_j3_guesnain_genech,70,0,61-75',AVERTISSEMENT,GUESNAIN SC,Morgan A.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,0
+364,r3_j3_guesnain_genech,83,0,76-90+',AVERTISSEMENT,GUESNAIN SC,Sofiane G.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
+365,r3_j3_guesnain_genech,90,0,76-90+',AVERTISSEMENT,GENECH ES,Remi D.,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
+366,r3_j3_guesnain_genech,90,0,76-90+',AVERTISSEMENT,GUESNAIN SC,Nadir M.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
+367,r3_j3_guesnain_genech,90,0,76-90+',AVERTISSEMENT,GUESNAIN SC,Mehdi B.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
+368,r3_j4_genech_anstaing,45,0,31-45+',BUT,ANSTAING CHERENG EC,Yann B.,,But inscrit par YANN B.,Adversaire,0,1,0,0,1ère Mi-Temps,0
+369,r3_j4_genech_anstaing,52,0,46-60',CHANGEMENT,GENECH ES,Gaspard D.,Jean-Paul B.,GASPARD D. remplace JEAN PAUL B.,ES Genech,0,0,0,0,2nde Mi-Temps,0
+370,r3_j4_genech_anstaing,52,0,46-60',CHANGEMENT,GENECH ES,Julien N.,Thomas L.,JULIEN N. remplace THOMAS L.,ES Genech,0,0,0,0,2nde Mi-Temps,0
+371,r3_j4_genech_anstaing,52,0,46-60',CHANGEMENT,GENECH ES,Giovany C.,Dany D.,GIOVANY C. remplace DANY D.,ES Genech,0,0,0,0,2nde Mi-Temps,0
+372,r3_j4_genech_anstaing,61,0,61-75',AVERTISSEMENT,GENECH ES,Giovany C.,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,0
+373,r3_j4_genech_anstaing,63,0,61-75',CHANGEMENT,ANSTAING CHERENG EC,Elyaz C.,Yann B.,ELYAZ C. remplace YANN B.,Adversaire,0,0,0,0,2nde Mi-Temps,0
+374,r3_j4_genech_anstaing,72,0,61-75',CHANGEMENT,ANSTAING CHERENG EC,Julien S.,Noa B.,JULIEN S. remplace NOA B.,Adversaire,0,0,0,0,2nde Mi-Temps,0
+375,r3_j4_genech_anstaing,74,0,61-75',AVERTISSEMENT,GENECH ES,Maxime P.,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,0
+376,r3_j4_genech_anstaing,79,0,76-90+',AVERTISSEMENT,ANSTAING CHERENG EC,Erwan G.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
+377,r3_j4_genech_anstaing,79,0,76-90+',AVERTISSEMENT,GENECH ES,Julien D.,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
+378,r3_j4_genech_anstaing,79,0,76-90+',AVERTISSEMENT,GENECH ES,Mathys H.,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
+379,r3_j4_genech_anstaing,80,0,76-90+',CHANGEMENT,ANSTAING CHERENG EC,Quentin V.,Bastien P.,QUENTIN V. remplace BASTIEN P.,Adversaire,0,0,0,0,2nde Mi-Temps,1
+380,r3_j4_genech_anstaing,90,0,76-90+',BUT,GENECH ES,Hugo H.,,But inscrit par HUGO H.,ES Genech,1,0,0,0,2nde Mi-Temps,1
+381,r3_j4_genech_anstaing,90,0,76-90+',AVERTISSEMENT,ANSTAING CHERENG EC,Mohamed S.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
+382,r3_j4_genech_anstaing,90,0,76-90+',AVERTISSEMENT,GENECH ES,Gaspard D.,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
+383,r3_j4_genech_anstaing,90,0,76-90+',AVERTISSEMENT,GENECH ES,Gaspard D.,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
+384,r3_j4_genech_anstaing,90,0,76-90+',EXPULSION,GENECH ES,Gaspard D.,,Carton rouge,ES Genech,0,0,1,0,2nde Mi-Temps,1
+385,r3_j4_bavay_aniche,27,0,16-30',CHANGEMENT,BAVAY US,Sofiane W.,Said E.,SOFIANE W. remplace SAID E.,Adversaire,0,0,0,0,1ère Mi-Temps,0
+386,r3_j4_bavay_aniche,30,0,16-30',BUT,BAVAY US,Noam L.,,But inscrit par NOAM L.,Adversaire,0,1,0,0,1ère Mi-Temps,0
+387,r3_j4_bavay_aniche,42,0,31-45+',AVERTISSEMENT,ANICHE SC,Abdelaziz A.,,Carton jaune,Adversaire,0,0,0,1,1ère Mi-Temps,0
+388,r3_j4_bavay_aniche,45,0,31-45+',AVERTISSEMENT,BAVAY US,Antoine G.,,Carton jaune,Adversaire,0,0,0,1,1ère Mi-Temps,0
+389,r3_j4_bavay_aniche,51,0,46-60',CHANGEMENT,BAVAY US,Basile C.,Luca T.,BASILE C. remplace LUCA T.,Adversaire,0,0,0,0,2nde Mi-Temps,0
+390,r3_j4_bavay_aniche,55,0,46-60',AVERTISSEMENT,ANICHE SC,Lenny O.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,0
+391,r3_j4_bavay_aniche,60,0,46-60',CHANGEMENT,ANICHE SC,Mehdi S.,Lilian T.,MEHDI S. remplace LILIAN T.,Adversaire,0,0,0,0,2nde Mi-Temps,0
+392,r3_j4_bavay_aniche,60,0,46-60',CHANGEMENT,ANICHE SC,Julien M.,Adrien S.,JULIEN M. remplace ADRIEN S.,Adversaire,0,0,0,0,2nde Mi-Temps,0
+393,r3_j4_bavay_aniche,61,0,61-75',AVERTISSEMENT,ANICHE SC,Kevin B.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,0
+394,r3_j4_bavay_aniche,70,0,61-75',CHANGEMENT,ANICHE SC,Axel C.,Lenny O.,AXEL C. remplace LENNY O.,Adversaire,0,0,0,0,2nde Mi-Temps,0
+395,r3_j4_bavay_aniche,80,0,76-90+',AVERTISSEMENT,ANICHE SC,Mustafa B.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
+396,r3_j4_bavay_aniche,90,0,76-90+',BUT,ANICHE SC,Axel C.,,But inscrit par AXEL C.,Adversaire,0,1,0,0,2nde Mi-Temps,1
+397,r3_j4_bavay_aniche,90,0,76-90+',AVERTISSEMENT,ANICHE SC,Adrien S.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
+398,r3_j4_beuvry_guesnain,26,0,16-30',AVERTISSEMENT,GUESNAIN SC,Sofiane B.,,Carton jaune,Adversaire,0,0,0,1,1ère Mi-Temps,0
+399,r3_j4_beuvry_guesnain,37,0,31-45+',CHANGEMENT,GUESNAIN SC,Sofiane G.,Jason L.,SOFIANE G. remplace JASON L.,Adversaire,0,0,0,0,1ère Mi-Temps,0
+400,r3_j4_beuvry_guesnain,45,0,31-45+',CHANGEMENT,BEUVRY LA FORET AS,Martin B.,Antoine S.,MARTIN B. remplace ANTOINE S.,Adversaire,0,0,0,0,1ère Mi-Temps,0
+401,r3_j4_beuvry_guesnain,45,0,31-45+',CHANGEMENT,GUESNAIN SC,Nahil B.,Habib S.,NAHIL B. remplace HABIB S.,Adversaire,0,0,0,0,1ère Mi-Temps,0
+402,r3_j4_beuvry_guesnain,45,0,31-45+',CHANGEMENT,GUESNAIN SC,Yanice B.,Nadir M.,YANICE B. remplace NADIR M.,Adversaire,0,0,0,0,1ère Mi-Temps,0
+403,r3_j4_beuvry_guesnain,47,0,46-60',AVERTISSEMENT,BEUVRY LA FORET AS,Florent H.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,0
+404,r3_j4_beuvry_guesnain,63,0,61-75',CHANGEMENT,BEUVRY LA FORET AS,Enzo C.,Luc C.,ENZO C. remplace LUC C.,Adversaire,0,0,0,0,2nde Mi-Temps,0
+405,r3_j4_beuvry_guesnain,72,0,61-75',CHANGEMENT,BEUVRY LA FORET AS,Anthony D.,Anthony C.,ANTHONY D. remplace ANTHONY C.,Adversaire,0,0,0,0,2nde Mi-Temps,0
+406,r3_j4_beuvry_guesnain,76,0,76-90+',AVERTISSEMENT,GUESNAIN SC,Hakim G.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
+407,r3_j4_beuvry_guesnain,86,0,76-90+',AVERTISSEMENT,GUESNAIN SC,Mehdi B.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
+408,r3_j4_beuvry_guesnain,88,0,76-90+',AVERTISSEMENT,BEUVRY LA FORET AS,Matteo M.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
+409,cdf_t2_lys_genech,36,0,31-45+',AVERTISSEMENT,LYS L/LANNOY STELLA,Ismael A.,,Carton jaune,Adversaire,0,0,0,1,1ère Mi-Temps,0
+410,cdf_t2_lys_genech,46,0,46-60',CHANGEMENT,GENECH ES,Giovany C.,Gaspard D.,GIOVANY CALON remplace GASPARD DROUPSY,ES Genech,0,0,0,0,2nde Mi-Temps,0
+411,cdf_t2_lys_genech,59,0,46-60',CHANGEMENT,LYS L/LANNOY STELLA,Ugo V.,Mohand L.,UGO VANNESTE remplace MOHAND LAIB,Adversaire,0,0,0,0,2nde Mi-Temps,0
+412,cdf_t2_lys_genech,59,0,46-60',CHANGEMENT,GENECH ES,Thomas L.,Jean-Paul B.,THOMAS LEONARD remplace JEAN PAUL BANGALA TOFIFI,ES Genech,0,0,0,0,2nde Mi-Temps,0
+413,cdf_t2_lys_genech,66,0,61-75',CHANGEMENT,LYS L/LANNOY STELLA,Farhane G.,Gaetan D.,FARHANE GUENOUNE remplace GAETAN DJEHA,Adversaire,0,0,0,0,2nde Mi-Temps,0
+414,cdf_t2_lys_genech,69,0,61-75',CHANGEMENT,GENECH ES,Dany D.,Augustin D.,DANY DE FREITAS remplace AUGUSTIN DROUPSY,ES Genech,0,0,0,0,2nde Mi-Temps,0
+415,cdf_t2_lys_genech,74,0,61-75',CHANGEMENT,LYS L/LANNOY STELLA,Fabio D.,Amaury V.,FABIO DECARO remplace AMAURY VANSTRAESSELLE,Adversaire,0,0,0,0,2nde Mi-Temps,0
+416,cdf_t2_lys_genech,80,0,76-90+',AVERTISSEMENT,LYS L/LANNOY STELLA,Sidia J.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
+417,cdf_t2_lys_genech,83,0,76-90+',AVERTISSEMENT,GENECH ES,Hugo H.,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
+418,cdf_t2_lys_genech,85,0,76-90+',AVERTISSEMENT,LYS L/LANNOY STELLA,Gaetan D.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
+419,cdf_t2_lys_genech,88,0,76-90+',AVERTISSEMENT,GENECH ES,Thomas L.,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
+420,cdf_t2_lys_genech,90,0,76-90+',EXPULSION,LYS L/LANNOY STELLA,Amaury V.,,Carton rouge,Adversaire,0,0,0,1,2nde Mi-Temps,1
+421,cdf_t2_lys_genech,90,0,76-90+',AVERTISSEMENT,GENECH ES,Julien N.,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
+422,cdf_t3_sainghin_genech,14,0,01-15',AVERTISSEMENT,SAINGHIN WEPPES AO,Nicolas R.,,Carton jaune,Adversaire,0,0,0,1,1ère Mi-Temps,0
+423,cdf_t3_sainghin_genech,40,0,31-45+',AVERTISSEMENT,GENECH ES,Julien D.,,Carton jaune,ES Genech,0,0,1,0,1ère Mi-Temps,0
+424,cdf_t3_sainghin_genech,57,0,46-60',CHANGEMENT,GENECH ES,Arthur C.,Jean-Paul B.,ARTHUR CLIQUE remplace JEAN PAUL BANGALA TOFIFI,ES Genech,0,0,0,0,2nde Mi-Temps,0
+425,cdf_t3_sainghin_genech,57,0,46-60',CHANGEMENT,GENECH ES,Mateo S.,Julien D.,MATEO SURMONT remplace JULIEN DEVERNAY,ES Genech,0,0,0,0,2nde Mi-Temps,0
+426,cdf_t3_sainghin_genech,60,0,46-60',CHANGEMENT,SAINGHIN WEPPES AO,Jules L.,Kelian H.,JULES LEBEGUE remplace KELIAN HALBOT,Adversaire,0,0,0,0,2nde Mi-Temps,0
+427,cdf_t3_sainghin_genech,64,0,61-75',EXPULSION,SAINGHIN WEPPES AO,David L.,,Carton rouge,Adversaire,0,0,0,1,2nde Mi-Temps,0
+428,cdf_t3_sainghin_genech,66,0,61-75',CHANGEMENT,GENECH ES,Elio D.,Clement D.,ELIO DELCROIX remplace CLEMENT DURIEZ,ES Genech,0,0,0,0,2nde Mi-Temps,0
+429,cdf_t3_sainghin_genech,70,0,61-75',CHANGEMENT,SAINGHIN WEPPES AO,Julien T.,Nicolas R.,JULIEN TOURBIER remplace NICOLAS ROMAO,Adversaire,0,0,0,0,2nde Mi-Temps,0
+430,cdf_t3_sainghin_genech,78,0,76-90+',CHANGEMENT,GENECH ES,Jules D.,Gaspard D.,JULES DIVERCHY remplace GASPARD DROUPSY,ES Genech,0,0,0,0,2nde Mi-Temps,1
+431,cdf_t3_sainghin_genech,79,0,76-90+',AVERTISSEMENT,GENECH ES,Mateo S.,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
+432,cdf_t3_sainghin_genech,82,0,76-90+',AVERTISSEMENT,GENECH ES,Mateo S.,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,1
+433,cdf_t3_sainghin_genech,82,0,76-90+',EXPULSION,GENECH ES,Mateo S.,,Carton rouge,ES Genech,0,0,1,0,2nde Mi-Temps,1
+434,cdf_t4_genech_dunkerque,28,0,16-30',CHANGEMENT,DUNKERQUE MALO FC,Batiste P.,Luis O.,BATISTE POUCHELE remplace LUIS ORFAIT,Adversaire,0,0,0,0,1ère Mi-Temps,0
+435,cdf_t4_genech_dunkerque,45,0,31-45+',BUT,GENECH ES,Julien D.,,But inscrit par JULIEN DEVERNAY,ES Genech,1,0,0,0,1ère Mi-Temps,0
+436,cdf_t4_genech_dunkerque,45,0,31-45+',AVERTISSEMENT,DUNKERQUE MALO FC,Jordan D.,,Carton jaune,Adversaire,0,0,0,1,1ère Mi-Temps,0
+437,cdf_t4_genech_dunkerque,60,0,46-60',AVERTISSEMENT,GENECH ES,Mathys H.,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,0
+438,cdf_t4_genech_dunkerque,60,0,46-60',CHANGEMENT,GENECH ES,Julien N.,Jean-Paul B.,JULIEN NISSE remplace JEAN PAUL BANGALA TOFIFI,ES Genech,0,0,0,0,2nde Mi-Temps,0
+439,cdf_t4_genech_dunkerque,60,0,46-60',CHANGEMENT,DUNKERQUE MALO FC,Samy F.,Cameron P.,SAMY FEDDI remplace CAMERON POZUELOS,Adversaire,0,0,0,0,2nde Mi-Temps,0
+440,cdf_t4_genech_dunkerque,60,0,46-60',CHANGEMENT,DUNKERQUE MALO FC,Matys D.,Yanis L.,MATYS DEMAZIERES remplace YANIS LEQUELLENEC,Adversaire,0,0,0,0,2nde Mi-Temps,0
+441,cdf_t4_genech_dunkerque,65,0,61-75',BUT,GENECH ES,Giovany C.,,But inscrit par GIOVANY CALON,ES Genech,1,0,0,0,2nde Mi-Temps,0
+442,cdf_t4_genech_dunkerque,70,0,61-75',CHANGEMENT,GENECH ES,Elio D.,Giovany C.,ELIO DELCROIX remplace GIOVANY CALON,ES Genech,0,0,0,0,2nde Mi-Temps,0
+443,cdf_t4_genech_dunkerque,70,0,61-75',CHANGEMENT,DUNKERQUE MALO FC,Rodrigue D.,Jordan D.,RODRIGUE DEWAELE remplace JORDAN DAKOUGNA,Adversaire,0,0,0,0,2nde Mi-Temps,0
+444,cdf_t4_genech_dunkerque,75,0,61-75',CHANGEMENT,GENECH ES,Jules D.,Hugo H.,JULES DIVERCHY remplace HUGO HERVE,ES Genech,0,0,0,0,2nde Mi-Temps,1
+445,cdf_t4_genech_dunkerque,75,0,61-75',CHANGEMENT,GENECH ES,Remi D.,Arthur C.,REMI DEFENIN remplace ARTHUR CLIQUE,ES Genech,0,0,0,0,2nde Mi-Temps,1
+446,cdf_t5_genech_chantilly,7,0,01-15',AVERTISSEMENT,CHANTILLY US,Oumar C.,,Carton jaune,Adversaire,0,0,0,1,1ère Mi-Temps,0
+447,cdf_t5_genech_chantilly,30,0,16-30',CHANGEMENT,CHANTILLY US,Matias F.,Adrien P.,MATIAS FERREIRA remplace ADRIEN PAGERIE,Adversaire,0,0,0,0,1ère Mi-Temps,0
+448,cdf_t5_genech_chantilly,46,0,46-60',CHANGEMENT,CHANTILLY US,Dylan D.,Oumar C.,DYLAN DUQUESNES remplace OUMAR CAMARA,Adversaire,0,0,0,0,2nde Mi-Temps,0
+449,cdf_t5_genech_chantilly,50,0,46-60',AVERTISSEMENT,CHANTILLY US,Souleymane C.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,0
+450,cdf_t5_genech_chantilly,55,0,46-60',CHANGEMENT,CHANTILLY US,Corentin L.,Noe M.,CORENTIN LEMAIRE remplace NOE MASEVO MUANDA,Adversaire,0,0,0,0,2nde Mi-Temps,0
+451,cdf_t5_genech_chantilly,61,0,61-75',CHANGEMENT,GENECH ES,Jean-Paul B.,Gaspard D.,JEAN PAUL BANGALA TOFIFI remplace GASPARD DROUPSY,ES Genech,0,0,0,0,2nde Mi-Temps,0
+452,cdf_t5_genech_chantilly,61,0,61-75',CHANGEMENT,GENECH ES,Dany D.,Giovany C.,DANY DE FREITAS remplace GIOVANY CALON,ES Genech,0,0,0,0,2nde Mi-Temps,0
+453,cdf_t5_genech_chantilly,70,0,61-75',AVERTISSEMENT,CHANTILLY US,Oumar N.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,0
+454,cdf_t5_genech_chantilly,70,0,61-75',CHANGEMENT,CHANTILLY US,Ilyess E.,Sayyidoul M.,ILYESS EL HADDAD remplace SAYYIDOUL MOUHAMED SADJO,Adversaire,0,0,0,0,2nde Mi-Temps,0
+455,cdf_t5_genech_chantilly,77,0,76-90+',BUT,GENECH ES,Julien N.,,But inscrit par JULIEN NISSE,ES Genech,1,0,0,0,2nde Mi-Temps,1
+456,cdf_t5_genech_chantilly,79,0,76-90+',CHANGEMENT,GENECH ES,Jules D.,Augustin D.,JULES DIVERCHY remplace AUGUSTIN DROUPSY,ES Genech,0,0,0,0,2nde Mi-Temps,1
+457,cdf_t5_genech_chantilly,81,0,76-90+',AVERTISSEMENT,CHANTILLY US,Nicolas C.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
+458,cdf_t5_genech_chantilly,86,0,76-90+',CHANGEMENT,GENECH ES,Elio D.,Julien N.,ELIO DELCROIX remplace JULIEN NISSE,ES Genech,0,0,0,0,2nde Mi-Temps,1
+459,cdf_t6_tatinghem_genech,43,0,31-45+',AVERTISSEMENT,ST MARTIN TATINGHEM,Ethan T.,,Carton jaune,Adversaire,0,0,0,1,1ère Mi-Temps,0
+460,cdf_t6_tatinghem_genech,44,0,31-45+',BUT,ST MARTIN TATINGHEM,Anthone S.,,But inscrit par ANTHONE SOTOMSKI,Adversaire,0,1,0,0,1ère Mi-Temps,0
+461,cdf_t6_tatinghem_genech,46,0,46-60',CHANGEMENT,ST MARTIN TATINGHEM,Steven C.,Kevin S.,STEVEN CARPENTIER remplace KEVIN SCHRIVE,Adversaire,0,0,0,0,2nde Mi-Temps,0
+462,cdf_t6_tatinghem_genech,48,0,46-60',CHANGEMENT,GENECH ES,Thomas L.,Julien N.,THOMAS LEONARD remplace JULIEN NISSE,ES Genech,0,0,0,0,2nde Mi-Temps,0
+463,cdf_t6_tatinghem_genech,58,0,46-60',CHANGEMENT,ST MARTIN TATINGHEM,Ake S.,Steven C.,AKE SEKOU CISSE remplace STEVEN CARPENTIER,Adversaire,0,0,0,0,2nde Mi-Temps,0
+464,cdf_t6_tatinghem_genech,62,0,61-75',CHANGEMENT,ST MARTIN TATINGHEM,Florian D.,Ethan T.,FLORIAN DELATTRE remplace ETHAN TREHOUX,Adversaire,0,0,0,0,2nde Mi-Temps,0
+465,cdf_t6_tatinghem_genech,62,0,61-75',CHANGEMENT,GENECH ES,Dany D.,Giovany C.,DANY DE FREITAS remplace GIOVANY CALON,ES Genech,0,0,0,0,2nde Mi-Temps,0
+466,cdf_t6_tatinghem_genech,62,0,61-75',CHANGEMENT,GENECH ES,Jules D.,Hugo H.,JULES DIVERCHY remplace HUGO HERVE,ES Genech,0,0,0,0,2nde Mi-Temps,0
+467,cdf_t6_tatinghem_genech,69,0,61-75',CHANGEMENT,GENECH ES,Elio D.,Thomas L.,ELIO DELCROIX remplace THOMAS LEONARD,ES Genech,0,0,0,0,2nde Mi-Temps,0
+468,cdf_t6_tatinghem_genech,73,0,61-75',CHANGEMENT,ST MARTIN TATINGHEM,Adama N.,Anthone S.,ADAMA NIANE remplace ANTHONE SOTOMSKI,Adversaire,0,0,0,0,2nde Mi-Temps,0
+469,cdf_t6_tatinghem_genech,83,0,76-90+',BUT,ST MARTIN TATINGHEM,Aaron H.,,But inscrit par AARON HUYSMAN,Adversaire,0,1,0,0,2nde Mi-Temps,1
+470,cdf_t6_tatinghem_genech,90,0,76-90+',AVERTISSEMENT,ST MARTIN TATINGHEM,Florian D.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
+471,r3_j5_aniche_genech,30,0,16-30',AVERTISSEMENT,ANICHE SC,Anthony B.,,Carton jaune,Adversaire,0,0,0,1,1ère Mi-Temps,0
+472,r3_j5_aniche_genech,38,0,31-45+',CHANGEMENT,ANICHE SC,Leo L.,Julien M.,LEO L. remplace JULIEN M.,Adversaire,0,0,0,0,1ère Mi-Temps,0
+473,r3_j5_aniche_genech,44,0,31-45+',AVERTISSEMENT,GENECH ES,Jean-Paul B.,,Carton jaune,ES Genech,0,0,1,0,1ère Mi-Temps,0
+474,r3_j5_aniche_genech,52,0,46-60',AVERTISSEMENT,GENECH ES,Giovany C.,,Carton jaune,ES Genech,0,0,1,0,2nde Mi-Temps,0
+475,r3_j5_aniche_genech,66,0,61-75',CHANGEMENT,GENECH ES,Dany D.,Clement D.,DANY D. remplace CLEMENT D.,ES Genech,0,0,0,0,2nde Mi-Temps,0
+476,r3_j5_aniche_genech,70,0,61-75',CHANGEMENT,ANICHE SC,Matheo F.,Donato M.,MATHEO F. remplace DONATO M.,Adversaire,0,0,0,0,2nde Mi-Temps,0
+477,r3_j5_aniche_genech,75,0,61-75',CHANGEMENT,GENECH ES,Gabyn D.,Jules D.,GABYN D. remplace JULES D.,ES Genech,0,0,0,0,2nde Mi-Temps,1
+478,r3_j5_aniche_genech,76,0,76-90+',BUT,GENECH ES,Gabyn D.,,But inscrit par GABYN D.,ES Genech,1,0,0,0,2nde Mi-Temps,1
+479,r3_j5_aniche_genech,83,0,76-90+',CHANGEMENT,GENECH ES,Evan P.,Elio D.,EVAN P. remplace ELIO D.,ES Genech,0,0,0,0,2nde Mi-Temps,1
+480,r3_j5_aniche_genech,84,0,76-90+',CHANGEMENT,ANICHE SC,Rafik E.,Mathieu T.,RAFIK E. remplace MATHIEU T.,Adversaire,0,0,0,0,2nde Mi-Temps,1
+481,r3_j5_aniche_genech,87,0,76-90+',AVERTISSEMENT,ANICHE SC,Abdelaziz A.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
+482,r3_j5_aniche_genech,90,0,76-90+',BUT,ANICHE SC,Yanis B.,,But inscrit par YANIS B.,Adversaire,0,1,0,0,2nde Mi-Temps,1
+483,r3_j5_aniche_genech,90,0,76-90+',AVERTISSEMENT,ANICHE SC,Rafik E.,,Carton jaune,Adversaire,0,0,0,1,2nde Mi-Temps,1
