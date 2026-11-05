@@ -8,7 +8,7 @@
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "05/11/2026 à 11:16"
+      "derniere_maj": "05/11/2026 à 11:53"
     },
     "dernier_match": {
       "id": "r3_j5_aniche_genech",
@@ -178,9 +178,9 @@
       "surface": "Pelouse naturelle",
       "temperature": "10.6 °C",
       "vent": "Faible (9.0 km/h)",
-      "pluie": "Risque Élevé (51 %)",
+      "pluie": "Averses possibles (33 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Gwenael BLERVACQ",
@@ -4032,7 +4032,7 @@
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "05/11/2026 à 11:16"
+      "derniere_maj": "05/11/2026 à 11:53"
     },
     "dernier_match": {
       "id": "m_u18_m1_79496282-et-c-anstai",
@@ -4098,9 +4098,9 @@
       "surface": "Pelouse naturelle",
       "temperature": "10.6 °C",
       "vent": "Faible (9.0 km/h)",
-      "pluie": "Risque Élevé (51 %)",
+      "pluie": "Averses possibles (33 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Arbitre Officiel District (D1 U18)",
@@ -5523,7 +5523,7 @@
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "05/11/2026 à 11:16"
+      "derniere_maj": "05/11/2026 à 11:53"
     },
     "dernier_match": {
       "id": "m_senior_f2_78809066-lille-e-s-l",
@@ -5566,9 +5566,9 @@
       "surface": "Pelouse naturelle",
       "temperature": "10.6 °C",
       "vent": "Faible (9.0 km/h)",
-      "pluie": "Risque Élevé (51 %)",
+      "pluie": "Averses possibles (33 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Arbitre Officiel Ligue Interdistricts (LFHF)",
@@ -6487,7 +6487,7 @@
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "05/11/2026 à 11:16"
+      "derniere_maj": "05/11/2026 à 11:53"
     },
     "dernier_match": {
       "id": "m_senior_b_j5_roubaix",
@@ -6530,9 +6530,9 @@
       "surface": "Pelouse naturelle",
       "temperature": "10.6 °C",
       "vent": "Faible (9.0 km/h)",
-      "pluie": "Risque Élevé (51 %)",
+      "pluie": "Averses possibles (33 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Arbitre Officiel District (Désignation Flandres)",
@@ -7438,7 +7438,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "05/11/2026 à 11:16"
+      "derniere_maj": "05/11/2026 à 11:53"
     },
     "dernier_match": {
       "id": "seclin_56215870",
@@ -7496,7 +7496,7 @@
       "surface": "Pelouse naturelle",
       "temperature": "10.5 °C",
       "vent": "Faible (8.8 km/h)",
-      "pluie": "Averses possibles (42 %)",
+      "pluie": "Averses possibles (36 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -12227,7 +12227,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "05/11/2026 à 11:16"
+      "derniere_maj": "05/11/2026 à 11:53"
     },
     "dernier_match": {
       "id": "seclin_56215870",
@@ -12285,7 +12285,7 @@
       "surface": "Pelouse naturelle",
       "temperature": "10.5 °C",
       "vent": "Faible (8.8 km/h)",
-      "pluie": "Averses possibles (42 %)",
+      "pluie": "Averses possibles (36 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -17016,7 +17016,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "05/11/2026 à 11:16"
+      "derniere_maj": "05/11/2026 à 11:53"
     },
     "dernier_match": {
       "id": "lesquin_56215867",
@@ -17137,7 +17137,7 @@
       "surface": "Terrain synthétique",
       "temperature": "10.5 °C",
       "vent": "Faible (8.8 km/h)",
-      "pluie": "Averses possibles (42 %)",
+      "pluie": "Averses possibles (36 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -20957,7 +20957,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "05/11/2026 à 11:16"
+      "derniere_maj": "05/11/2026 à 11:53"
     },
     "dernier_match": {
       "id": "lesquin_56215867",
@@ -21078,7 +21078,7 @@
       "surface": "Terrain synthétique",
       "temperature": "10.5 °C",
       "vent": "Faible (8.8 km/h)",
-      "pluie": "Averses possibles (42 %)",
+      "pluie": "Averses possibles (36 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -24898,7 +24898,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "05/11/2026 à 11:16"
+      "derniere_maj": "05/11/2026 à 11:53"
     },
     "dernier_match": {
       "id": "esquelbecq_56216133",
@@ -25005,7 +25005,7 @@
       "surface": "Terrain synthétique",
       "temperature": "9.2 °C",
       "vent": "Faible (11.3 km/h)",
-      "pluie": "Averses possibles (38 %)",
+      "pluie": "Averses possibles (30 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -25101,128 +25101,12 @@
         ],
         "compositions": {
           "club": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Raphael L."
-              },
-              {
-                "numero": 2,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 3,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 4,
-                "nom": "Charly B."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 7,
-                "nom": "Sandry C."
-              },
-              {
-                "numero": 8,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 9,
-                "nom": "Mateus N."
-              },
-              {
-                "numero": 10,
-                "nom": "Neji Z."
-              },
-              {
-                "numero": 11,
-                "nom": "Ryan K."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 13,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 14,
-                "nom": "Harthur D."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "esquelbecq": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Raphael L."
-              },
-              {
-                "numero": 2,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 3,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 4,
-                "nom": "Charly B."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 7,
-                "nom": "Sandry C."
-              },
-              {
-                "numero": 8,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 9,
-                "nom": "Mateus N."
-              },
-              {
-                "numero": 10,
-                "nom": "Neji Z."
-              },
-              {
-                "numero": 11,
-                "nom": "Ryan K."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 13,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 14,
-                "nom": "Harthur D."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "adversaire": {
             "equipe": "DUNKERQUE MALO FC",
@@ -25232,44 +25116,524 @@
                 "nom": "Batiste P."
               },
               {
+                "numero": 1,
+                "nom": "Raphael L."
+              },
+              {
                 "numero": 2,
                 "nom": "Yanis L."
+              },
+              {
+                "numero": 2,
+                "nom": "Arthur T."
               },
               {
                 "numero": 3,
                 "nom": "Matys D."
               },
               {
+                "numero": 3,
+                "nom": "Antoine D."
+              },
+              {
                 "numero": 4,
                 "nom": "Elias T."
+              },
+              {
+                "numero": 4,
+                "nom": "Charly B."
               },
               {
                 "numero": 5,
                 "nom": "Quentin H."
               },
               {
+                "numero": 5,
+                "nom": "Raphael B."
+              },
+              {
                 "numero": 6,
                 "nom": "Loic V."
+              },
+              {
+                "numero": 6,
+                "nom": "Anthony P."
               },
               {
                 "numero": 7,
                 "nom": "Gabin D."
               },
               {
+                "numero": 7,
+                "nom": "Sandry C."
+              },
+              {
                 "numero": 8,
                 "nom": "Guillaume D."
+              },
+              {
+                "numero": 8,
+                "nom": "Ibrahima T."
               },
               {
                 "numero": 9,
                 "nom": "Steven M."
               },
               {
+                "numero": 9,
+                "nom": "Mateus N."
+              },
+              {
                 "numero": 10,
                 "nom": "Jefferson L."
               },
               {
+                "numero": 10,
+                "nom": "Neji Z."
+              },
+              {
                 "numero": 11,
                 "nom": "Samy F."
+              },
+              {
+                "numero": 11,
+                "nom": "Ryan K."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "esquelbecq_56216126",
+        "competition": "R2 • Journée 4",
+        "comp_type": "CHAMPIONNAT",
+        "date": "18/10/2026",
+        "date_heure": "2026-10-18 15:00",
+        "domicile": "ESQUELBECQ US",
+        "exterieur": "AIRE SUR LA LYS OS",
+        "score_domicile": 0,
+        "score_exterieur": 3,
+        "score_display": "0 - 3",
+        "is_domicile": true,
+        "resultat": "D",
+        "resultat_label": "Défaite",
+        "evenements": [
+          {
+            "minute": 34,
+            "type": "AVERTISSEMENT",
+            "equipe": "AIRE SUR LA LYS OS",
+            "acteur": "Tom V.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 42,
+            "type": "BUT",
+            "equipe": "AIRE SUR LA LYS OS",
+            "acteur": "Matheo D.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 58,
+            "type": "AVERTISSEMENT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Julian H.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 61,
+            "type": "AVERTISSEMENT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Matheo M.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 70,
+            "type": "BUT",
+            "equipe": "AIRE SUR LA LYS OS",
+            "acteur": "Smain K.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 72,
+            "type": "AVERTISSEMENT",
+            "equipe": "AIRE SUR LA LYS OS",
+            "acteur": "Arthur F.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 84,
+            "type": "AVERTISSEMENT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Raphael B.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 86,
+            "type": "AVERTISSEMENT",
+            "equipe": "AIRE SUR LA LYS OS",
+            "acteur": "Yoan B.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 87,
+            "type": "BUT",
+            "equipe": "AIRE SUR LA LYS OS",
+            "acteur": "Smain K.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 89,
+            "type": "AVERTISSEMENT",
+            "equipe": "AIRE SUR LA LYS OS",
+            "acteur": "Stephane T.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "AIRE SUR LA LYS OS",
+            "acteur": "Joshua J.",
+            "detail": "Carton Jaune"
+          }
+        ],
+        "compositions": {
+          "club": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "esquelbecq": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "AIRE SUR LA LYS OS",
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Raphael L."
+              },
+              {
+                "numero": 1,
+                "nom": "Arthur F."
+              },
+              {
+                "numero": 2,
+                "nom": "Yanis B."
+              },
+              {
+                "numero": 2,
+                "nom": "Tom V."
+              },
+              {
+                "numero": 3,
+                "nom": "Ryan K."
+              },
+              {
+                "numero": 3,
+                "nom": "Ilies E."
+              },
+              {
+                "numero": 4,
+                "nom": "Raphael B."
+              },
+              {
+                "numero": 4,
+                "nom": "Stephane T."
+              },
+              {
+                "numero": 5,
+                "nom": "Julian H."
+              },
+              {
+                "numero": 5,
+                "nom": "Yoan B."
+              },
+              {
+                "numero": 6,
+                "nom": "Ibrahima T."
+              },
+              {
+                "numero": 6,
+                "nom": "Jimmy B."
+              },
+              {
+                "numero": 7,
+                "nom": "Neji Z."
+              },
+              {
+                "numero": 7,
+                "nom": "Milan P."
+              },
+              {
+                "numero": 8,
+                "nom": "Anthony P."
+              },
+              {
+                "numero": 8,
+                "nom": "Lenaick L."
+              },
+              {
+                "numero": 9,
+                "nom": "Mateus N."
+              },
+              {
+                "numero": 9,
+                "nom": "Smain K."
+              },
+              {
+                "numero": 10,
+                "nom": "Matheo M."
+              },
+              {
+                "numero": 10,
+                "nom": "Aurelien J."
+              },
+              {
+                "numero": 11,
+                "nom": "Matheo G."
+              },
+              {
+                "numero": 11,
+                "nom": "Matheo D."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "esquelbecq_56216124",
+        "competition": "R2 • Journée 3",
+        "comp_type": "CHAMPIONNAT",
+        "date": "03/10/2026",
+        "date_heure": "2026-10-03 18:00",
+        "domicile": "MONS EN BAROEUL AC",
+        "exterieur": "ESQUELBECQ US",
+        "score_domicile": 2,
+        "score_exterieur": 3,
+        "score_display": "2 - 3",
+        "is_domicile": false,
+        "resultat": "V",
+        "resultat_label": "Victoire",
+        "evenements": [
+          {
+            "minute": 6,
+            "type": "BUT",
+            "equipe": "MONS EN BAROEUL AC",
+            "acteur": "Corentin L.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 28,
+            "type": "BUT",
+            "equipe": "MONS EN BAROEUL AC",
+            "acteur": "Matteo D.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 31,
+            "type": "AVERTISSEMENT",
+            "equipe": "MONS EN BAROEUL AC",
+            "acteur": "Matteo D.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 48,
+            "type": "AVERTISSEMENT",
+            "equipe": "MONS EN BAROEUL AC",
+            "acteur": "Corentin L.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 55,
+            "type": "BUT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Neji Z.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 55,
+            "type": "AVERTISSEMENT",
+            "equipe": "MONS EN BAROEUL AC",
+            "acteur": "Matteo D.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 55,
+            "type": "EXPULSION",
+            "equipe": "MONS EN BAROEUL AC",
+            "acteur": "’ X.",
+            "detail": "Carton Rouge"
+          },
+          {
+            "minute": 58,
+            "type": "AVERTISSEMENT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Yanis B.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 64,
+            "type": "AVERTISSEMENT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Yanis B.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 64,
+            "type": "EXPULSION",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "’ X.",
+            "detail": "Carton Rouge"
+          },
+          {
+            "minute": 77,
+            "type": "AVERTISSEMENT",
+            "equipe": "MONS EN BAROEUL AC",
+            "acteur": "Nelitu M.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 79,
+            "type": "AVERTISSEMENT",
+            "equipe": "MONS EN BAROEUL AC",
+            "acteur": "Majid E.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 81,
+            "type": "EXPULSION",
+            "equipe": "MONS EN BAROEUL AC",
+            "acteur": "’ X.",
+            "detail": "Carton Rouge"
+          },
+          {
+            "minute": 85,
+            "type": "AVERTISSEMENT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Ibrahima T.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 87,
+            "type": "AVERTISSEMENT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Djibril K.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 88,
+            "type": "BUT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Matheo M.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 90,
+            "type": "BUT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Mateus N.",
+            "detail": "But FFF"
+          }
+        ],
+        "compositions": {
+          "club": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "esquelbecq": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "MONS EN BAROEUL AC",
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Robin C."
+              },
+              {
+                "numero": 1,
+                "nom": "Raphael L."
+              },
+              {
+                "numero": 2,
+                "nom": "Neliyu M."
+              },
+              {
+                "numero": 2,
+                "nom": "Yanis B."
+              },
+              {
+                "numero": 3,
+                "nom": "Sacha D."
+              },
+              {
+                "numero": 3,
+                "nom": "Antoine D."
+              },
+              {
+                "numero": 4,
+                "nom": "Gabin B."
+              },
+              {
+                "numero": 4,
+                "nom": "Julian H."
+              },
+              {
+                "numero": 5,
+                "nom": "Elio D."
+              },
+              {
+                "numero": 5,
+                "nom": "Raphael B."
+              },
+              {
+                "numero": 6,
+                "nom": "Majid E."
+              },
+              {
+                "numero": 6,
+                "nom": "Ibrahima T."
+              },
+              {
+                "numero": 7,
+                "nom": "Matteo D."
+              },
+              {
+                "numero": 7,
+                "nom": "Djibril K."
+              },
+              {
+                "numero": 8,
+                "nom": "Mohamed H."
+              },
+              {
+                "numero": 8,
+                "nom": "Anthony P."
+              },
+              {
+                "numero": 9,
+                "nom": "Zakariya B."
+              },
+              {
+                "numero": 9,
+                "nom": "Mateus N."
+              },
+              {
+                "numero": 10,
+                "nom": "Corentin L."
+              },
+              {
+                "numero": 10,
+                "nom": "Matheo M."
+              },
+              {
+                "numero": 11,
+                "nom": "Nelitu M."
+              },
+              {
+                "numero": 11,
+                "nom": "Matheo G."
               }
             ]
           }
@@ -25349,151 +25713,27 @@
         ],
         "compositions": {
           "club": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Alexis K."
-              },
-              {
-                "numero": 2,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 3,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 4,
-                "nom": "Julian H."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 7,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 8,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 11,
-                "nom": "Ryan K."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Mateus N."
-              },
-              {
-                "numero": 13,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 14,
-                "nom": "Yanis B."
-              },
-              {
-                "numero": 15,
-                "nom": "Anthime B."
-              },
-              {
-                "numero": 16,
-                "nom": "Raphael L."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "esquelbecq": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Alexis K."
-              },
-              {
-                "numero": 2,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 3,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 4,
-                "nom": "Julian H."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 7,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 8,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 11,
-                "nom": "Ryan K."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Mateus N."
-              },
-              {
-                "numero": 13,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 14,
-                "nom": "Yanis B."
-              },
-              {
-                "numero": 15,
-                "nom": "Anthime B."
-              },
-              {
-                "numero": 16,
-                "nom": "Raphael L."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "adversaire": {
             "equipe": "PAYS DE ST OMER US",
             "titulaires": [
               {
                 "numero": 1,
+                "nom": "Alexis K."
+              },
+              {
+                "numero": 1,
                 "nom": "Julien B."
+              },
+              {
+                "numero": 2,
+                "nom": "Arthur T."
               },
               {
                 "numero": 2,
@@ -25501,7 +25741,15 @@
               },
               {
                 "numero": 3,
+                "nom": "Antoine D."
+              },
+              {
+                "numero": 3,
                 "nom": "Sacha S."
+              },
+              {
+                "numero": 4,
+                "nom": "Julian H."
               },
               {
                 "numero": 4,
@@ -25509,7 +25757,15 @@
               },
               {
                 "numero": 5,
+                "nom": "Raphael B."
+              },
+              {
+                "numero": 5,
                 "nom": "Clement B."
+              },
+              {
+                "numero": 6,
+                "nom": "Ibrahima T."
               },
               {
                 "numero": 6,
@@ -25517,7 +25773,15 @@
               },
               {
                 "numero": 7,
+                "nom": "Matheo G."
+              },
+              {
+                "numero": 7,
                 "nom": "Gregor G."
+              },
+              {
+                "numero": 8,
+                "nom": "Anthony P."
               },
               {
                 "numero": 8,
@@ -25525,11 +25789,23 @@
               },
               {
                 "numero": 9,
+                "nom": "Matheo M."
+              },
+              {
+                "numero": 9,
                 "nom": "Enzo H."
               },
               {
                 "numero": 10,
+                "nom": "Remi R."
+              },
+              {
+                "numero": 10,
                 "nom": "Argjend M."
+              },
+              {
+                "numero": 11,
+                "nom": "Ryan K."
               },
               {
                 "numero": 11,
@@ -25599,135 +25875,27 @@
         ],
         "compositions": {
           "club": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Raphael L."
-              },
-              {
-                "numero": 2,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 3,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 4,
-                "nom": "Julian H."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 7,
-                "nom": "Ryan K."
-              },
-              {
-                "numero": 8,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Neji Z."
-              },
-              {
-                "numero": 11,
-                "nom": "Mateus N."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 13,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 14,
-                "nom": "Yanis B."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "esquelbecq": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Raphael L."
-              },
-              {
-                "numero": 2,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 3,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 4,
-                "nom": "Julian H."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 7,
-                "nom": "Ryan K."
-              },
-              {
-                "numero": 8,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Neji Z."
-              },
-              {
-                "numero": 11,
-                "nom": "Mateus N."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 13,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 14,
-                "nom": "Yanis B."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "adversaire": {
             "equipe": "LONGUENESSE JS",
             "titulaires": [
               {
                 "numero": 1,
+                "nom": "Raphael L."
+              },
+              {
+                "numero": 1,
                 "nom": "Thibault S."
+              },
+              {
+                "numero": 2,
+                "nom": "Matheo G."
               },
               {
                 "numero": 2,
@@ -25735,7 +25903,15 @@
               },
               {
                 "numero": 3,
+                "nom": "Antoine D."
+              },
+              {
+                "numero": 3,
                 "nom": "Hugo D."
+              },
+              {
+                "numero": 4,
+                "nom": "Julian H."
               },
               {
                 "numero": 4,
@@ -25743,7 +25919,15 @@
               },
               {
                 "numero": 5,
+                "nom": "Raphael B."
+              },
+              {
+                "numero": 5,
                 "nom": "Paul G."
+              },
+              {
+                "numero": 6,
+                "nom": "Anthony P."
               },
               {
                 "numero": 6,
@@ -25751,7 +25935,15 @@
               },
               {
                 "numero": 7,
+                "nom": "Ryan K."
+              },
+              {
+                "numero": 7,
                 "nom": "Robin D."
+              },
+              {
+                "numero": 8,
+                "nom": "Djibril K."
               },
               {
                 "numero": 8,
@@ -25759,11 +25951,23 @@
               },
               {
                 "numero": 9,
+                "nom": "Matheo M."
+              },
+              {
+                "numero": 9,
                 "nom": "Quentin H."
               },
               {
                 "numero": 10,
+                "nom": "Neji Z."
+              },
+              {
+                "numero": 10,
                 "nom": "Louis F."
+              },
+              {
+                "numero": 11,
+                "nom": "Mateus N."
               },
               {
                 "numero": 11,
@@ -25861,136 +26065,12 @@
         ],
         "compositions": {
           "club": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Raphael L."
-              },
-              {
-                "numero": 2,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 3,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 4,
-                "nom": "Julian H."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 7,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 8,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 11,
-                "nom": "Neji Z."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Ryan K."
-              },
-              {
-                "numero": 13,
-                "nom": "Mateus N."
-              },
-              {
-                "numero": 14,
-                "nom": "Sandry C."
-              },
-              {
-                "numero": 15,
-                "nom": "Charly B."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "esquelbecq": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Raphael L."
-              },
-              {
-                "numero": 2,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 3,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 4,
-                "nom": "Julian H."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 7,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 8,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 11,
-                "nom": "Neji Z."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Ryan K."
-              },
-              {
-                "numero": 13,
-                "nom": "Mateus N."
-              },
-              {
-                "numero": 14,
-                "nom": "Sandry C."
-              },
-              {
-                "numero": 15,
-                "nom": "Charly B."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "adversaire": {
             "equipe": "BEZINGHEM AS",
@@ -26000,44 +26080,88 @@
                 "nom": "Aymeric M."
               },
               {
+                "numero": 1,
+                "nom": "Raphael L."
+              },
+              {
                 "numero": 2,
                 "nom": "Gauthier H."
+              },
+              {
+                "numero": 2,
+                "nom": "Arthur T."
               },
               {
                 "numero": 3,
                 "nom": "Valentin C."
               },
               {
+                "numero": 3,
+                "nom": "Antoine D."
+              },
+              {
                 "numero": 4,
                 "nom": "Raphael D."
+              },
+              {
+                "numero": 4,
+                "nom": "Julian H."
               },
               {
                 "numero": 5,
                 "nom": "Amilien D."
               },
               {
+                "numero": 5,
+                "nom": "Raphael B."
+              },
+              {
                 "numero": 6,
                 "nom": "Kevin D."
+              },
+              {
+                "numero": 6,
+                "nom": "Anthony P."
               },
               {
                 "numero": 7,
                 "nom": "Paul R."
               },
               {
+                "numero": 7,
+                "nom": "Remi R."
+              },
+              {
                 "numero": 8,
                 "nom": "Jean-Emmanuel L."
+              },
+              {
+                "numero": 8,
+                "nom": "Djibril K."
               },
               {
                 "numero": 9,
                 "nom": "Dylan D."
               },
               {
+                "numero": 9,
+                "nom": "Matheo M."
+              },
+              {
                 "numero": 10,
                 "nom": "Martin L."
               },
               {
+                "numero": 10,
+                "nom": "Matheo G."
+              },
+              {
                 "numero": 11,
                 "nom": "Marc-Antoine F."
+              },
+              {
+                "numero": 11,
+                "nom": "Neji Z."
               }
             ]
           }
@@ -26103,128 +26227,12 @@
         ],
         "compositions": {
           "club": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Raphael L."
-              },
-              {
-                "numero": 2,
-                "nom": "Julian H."
-              },
-              {
-                "numero": 3,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 4,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 7,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 8,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Sandry C."
-              },
-              {
-                "numero": 11,
-                "nom": "Ryan K."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 13,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 14,
-                "nom": "Anthime B."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "esquelbecq": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Raphael L."
-              },
-              {
-                "numero": 2,
-                "nom": "Julian H."
-              },
-              {
-                "numero": 3,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 4,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 7,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 8,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Sandry C."
-              },
-              {
-                "numero": 11,
-                "nom": "Ryan K."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 13,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 14,
-                "nom": "Anthime B."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "adversaire": {
             "equipe": "COQUELLES SC",
@@ -26234,44 +26242,88 @@
                 "nom": "Simon C."
               },
               {
+                "numero": 1,
+                "nom": "Raphael L."
+              },
+              {
                 "numero": 2,
                 "nom": "Kevin H."
+              },
+              {
+                "numero": 2,
+                "nom": "Julian H."
               },
               {
                 "numero": 3,
                 "nom": "Gabin M."
               },
               {
+                "numero": 3,
+                "nom": "Arthur T."
+              },
+              {
                 "numero": 4,
                 "nom": "Dorian D."
+              },
+              {
+                "numero": 4,
+                "nom": "Antoine D."
               },
               {
                 "numero": 5,
                 "nom": "Nicolas L."
               },
               {
+                "numero": 5,
+                "nom": "Raphael B."
+              },
+              {
                 "numero": 6,
                 "nom": "Gregoire P."
+              },
+              {
+                "numero": 6,
+                "nom": "Ibrahima T."
               },
               {
                 "numero": 7,
                 "nom": "Lucas C."
               },
               {
+                "numero": 7,
+                "nom": "Matheo G."
+              },
+              {
                 "numero": 8,
                 "nom": "Gregoire B."
+              },
+              {
+                "numero": 8,
+                "nom": "Djibril K."
               },
               {
                 "numero": 9,
                 "nom": "Enzo G."
               },
               {
+                "numero": 9,
+                "nom": "Matheo M."
+              },
+              {
                 "numero": 10,
                 "nom": "Thibault C."
               },
               {
+                "numero": 10,
+                "nom": "Sandry C."
+              },
+              {
                 "numero": 11,
                 "nom": "Mathias D."
+              },
+              {
+                "numero": 11,
+                "nom": "Ryan K."
               }
             ]
           }
@@ -26305,6 +26357,13 @@
             "equipe": "NIEPPE UFC",
             "acteur": "Antoine D.",
             "detail": "Carton Jaune"
+          },
+          {
+            "minute": 45,
+            "type": "EXPULSION",
+            "equipe": "NIEPPE UFC",
+            "acteur": "’ X.",
+            "detail": "Carton Rouge"
           },
           {
             "minute": 45,
@@ -26344,144 +26403,12 @@
         ],
         "compositions": {
           "club": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Alexis K."
-              },
-              {
-                "numero": 2,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 3,
-                "nom": "Ryan K."
-              },
-              {
-                "numero": 4,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 7,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 8,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Sandry C."
-              },
-              {
-                "numero": 11,
-                "nom": "Matheo G."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Neji Z."
-              },
-              {
-                "numero": 13,
-                "nom": "Yanis B."
-              },
-              {
-                "numero": 14,
-                "nom": "Charly B."
-              },
-              {
-                "numero": 15,
-                "nom": "Anthime B."
-              },
-              {
-                "numero": 16,
-                "nom": "Valentin D."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "esquelbecq": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Alexis K."
-              },
-              {
-                "numero": 2,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 3,
-                "nom": "Ryan K."
-              },
-              {
-                "numero": 4,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 7,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 8,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Sandry C."
-              },
-              {
-                "numero": 11,
-                "nom": "Matheo G."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Neji Z."
-              },
-              {
-                "numero": 13,
-                "nom": "Yanis B."
-              },
-              {
-                "numero": 14,
-                "nom": "Charly B."
-              },
-              {
-                "numero": 15,
-                "nom": "Anthime B."
-              },
-              {
-                "numero": 16,
-                "nom": "Valentin D."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "adversaire": {
             "equipe": "NIEPPE UFC",
@@ -26491,44 +26418,88 @@
                 "nom": "Arthur D."
               },
               {
+                "numero": 1,
+                "nom": "Alexis K."
+              },
+              {
                 "numero": 2,
                 "nom": "Antoine D."
+              },
+              {
+                "numero": 2,
+                "nom": "Ibrahima T."
               },
               {
                 "numero": 3,
                 "nom": "Louis M."
               },
               {
+                "numero": 3,
+                "nom": "Ryan K."
+              },
+              {
                 "numero": 4,
                 "nom": "Valentin M."
+              },
+              {
+                "numero": 4,
+                "nom": "Antoine D."
               },
               {
                 "numero": 5,
                 "nom": "Armand E."
               },
               {
+                "numero": 5,
+                "nom": "Raphael B."
+              },
+              {
                 "numero": 6,
                 "nom": "Sebastien P."
+              },
+              {
+                "numero": 6,
+                "nom": "Anthony P."
               },
               {
                 "numero": 7,
                 "nom": "Mitch L."
               },
               {
+                "numero": 7,
+                "nom": "Arthur T."
+              },
+              {
                 "numero": 8,
                 "nom": "Baptiste L."
+              },
+              {
+                "numero": 8,
+                "nom": "Djibril K."
               },
               {
                 "numero": 9,
                 "nom": "Kevin T."
               },
               {
+                "numero": 9,
+                "nom": "Matheo M."
+              },
+              {
                 "numero": 10,
                 "nom": "Gael B."
               },
               {
+                "numero": 10,
+                "nom": "Sandry C."
+              },
+              {
                 "numero": 11,
                 "nom": "Brandon P."
+              },
+              {
+                "numero": 11,
+                "nom": "Matheo G."
               }
             ]
           }
@@ -26536,26 +26507,44 @@
       }
     ],
     "kpis_saison": {
-      "buts_marques": 11,
-      "buts_encaisses": 6,
+      "buts_marques": 14,
+      "buts_encaisses": 11,
       "clean_sheets": 2,
-      "minutes_cumulees": 5855,
-      "cartons_jaunes": 15,
-      "cartons_rouges": 0
+      "minutes_cumulees": 0,
+      "cartons_jaunes": 22,
+      "cartons_rouges": 1
     },
     "tresorerie_discipline": {
-      "cout_total_estime": 270,
-      "cout_jaunes": 270,
-      "cout_rouges": 0,
-      "amendes_evitees": 200,
+      "cout_total_estime": 431,
+      "cout_jaunes": 396,
+      "cout_rouges": 35,
+      "amendes_evitees": 350,
       "explication_calcul": {
-        "jaunes_detail": "15 cartons jaunes × 18 € = 270 €",
-        "rouges_detail": "0 carton rouge = 0 €",
-        "amende_evitee_detail": "Suivi des 4 joueurs sous sursis (Mateus N., Sandry C., Anthony P., Matheo M.) = 200 € préservés"
+        "jaunes_detail": "22 cartons jaunes × 18 € = 396 €",
+        "rouges_detail": "1 carton rouge × 35 € = 35 € (Yanis B. 03/10)",
+        "amende_evitee_detail": "Suivi des 4 joueurs sous sursis et du joueur suspendu = 350 € préservés"
       }
     },
     "cartons_rouges_details": [],
     "sursis_details": [
+      {
+        "joueur": "Matheo M.",
+        "niveau": "ROUGE",
+        "statut": "SUSPENDU / RISQUE COMMISSIONS",
+        "cartons": 3,
+        "dates": "06/09, 20/09, 18/10",
+        "expiration": "18/01/2027",
+        "message": "3 cartons jaunes reçus en moins de 3 mois (Art. 226 Règlements Généraux FFF). 1 match de suspension automatique."
+      },
+      {
+        "joueur": "Yanis B.",
+        "niveau": "ROUGE",
+        "statut": "EXPULSION / DISCIPLINE FFF",
+        "cartons": 1,
+        "dates": "03/10 (2 jaunes 58', 64')",
+        "expiration": "Commission FFF",
+        "message": "Carton rouge reçu le 03/10 à Mons-en-Barœul. Suspension automatique purgée."
+      },
       {
         "joueur": "Mateus N.",
         "niveau": "ORANGE",
@@ -26563,7 +26552,16 @@
         "cartons": 2,
         "dates": "27/09, 01/11",
         "expiration": "01/02/2027",
-        "message": "2 cartons reçus (27/09, 01/11). Prochain avertissement = 1 match ferme (Art. 226 Règlements FFF)."
+        "message": "2 cartons reçus (27/09, 01/11). Prochain avertissement = 1 match ferme."
+      },
+      {
+        "joueur": "Raphael B.",
+        "niveau": "ORANGE",
+        "statut": "SOUS SURSIS IMMÉDIAT",
+        "cartons": 2,
+        "dates": "18/10, 01/11",
+        "expiration": "01/02/2027",
+        "message": "2 cartons reçus consécutivement (18/10, 01/11). Prochain avertissement = 1 match ferme."
       },
       {
         "joueur": "Sandry C.",
@@ -26582,15 +26580,6 @@
         "dates": "20/09, 27/09",
         "expiration": "27/12/2026",
         "message": "2 cartons reçus (20/09, 27/09). Prochain avertissement = 1 match ferme."
-      },
-      {
-        "joueur": "Matheo M.",
-        "niveau": "ORANGE",
-        "statut": "SOUS SURSIS IMMÉDIAT",
-        "cartons": 2,
-        "dates": "06/09, 20/09",
-        "expiration": "20/12/2026",
-        "message": "2 cartons reçus (06/09, 20/09). Prochain avertissement = 1 match ferme."
       }
     ],
     "effectif_esg": [
@@ -26598,128 +26587,128 @@
         "id": "p_esquelbecq_1",
         "rang": 1,
         "nom": "Matheo M.",
-        "badge": "⭐ MVP / Cadre Incontournable",
-        "matchs": 5,
-        "titularisations": 5,
+        "badge": "🎯 Buteur d'Élite",
+        "matchs": 0,
+        "titularisations": 0,
         "remplacements": 0,
-        "minutes": 400,
-        "clean_sheets": 2,
-        "buts": 3,
-        "cartons_j": 2,
+        "minutes": 0,
+        "clean_sheets": 0,
+        "buts": 4,
+        "cartons_j": 3,
         "cartons_r": 0,
-        "esg_score": 96.9,
+        "esg_score": 46.0,
         "sous_scores": {
-          "volume": 25.9,
+          "volume": 0.0,
           "volume_max": 35,
-          "defense": 12.0,
+          "defense": 0.0,
           "defense_max": 30,
           "attaque": 35.0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 0.0,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 9.0
         }
       },
       {
         "id": "p_esquelbecq_2",
         "rang": 2,
-        "nom": "Raphael B.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 6,
-        "titularisations": 6,
-        "remplacements": 0,
-        "minutes": 480,
-        "clean_sheets": 2,
-        "buts": 1,
-        "cartons_j": 1,
-        "cartons_r": 0,
-        "esg_score": 82.1,
-        "sous_scores": {
-          "volume": 31.1,
-          "volume_max": 35,
-          "defense": 12.0,
-          "defense_max": 30,
-          "attaque": 12.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 3.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_3",
-        "rang": 3,
-        "nom": "Ryan K.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 6,
-        "titularisations": 5,
-        "remplacements": 1,
-        "minutes": 425,
-        "clean_sheets": 2,
-        "buts": 1,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 81.5,
-        "sous_scores": {
-          "volume": 27.5,
-          "volume_max": 35,
-          "defense": 12.0,
-          "defense_max": 30,
-          "attaque": 12.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 0.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_4",
-        "rang": 4,
-        "nom": "Sandry C.",
+        "nom": "Mateus N.",
         "badge": "🎯 Buteur d'Élite",
-        "matchs": 4,
-        "titularisations": 3,
-        "remplacements": 1,
-        "minutes": 265,
-        "clean_sheets": 2,
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
         "buts": 2,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 75.2,
+        "esg_score": 38.0,
         "sous_scores": {
-          "volume": 17.2,
+          "volume": 0.0,
           "volume_max": 35,
-          "defense": 12.0,
+          "defense": 0.0,
           "defense_max": 30,
           "attaque": 24.0,
           "attaque_max": 35,
-          "presence": 8.0,
+          "presence": 0.0,
           "presence_max": 10,
           "malus_discipline": 6.0
         }
       },
       {
-        "id": "p_esquelbecq_5",
-        "rang": 5,
-        "nom": "Djibril K.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 5,
-        "titularisations": 4,
-        "remplacements": 1,
-        "minutes": 345,
-        "clean_sheets": 2,
+        "id": "p_esquelbecq_3",
+        "rang": 3,
+        "nom": "Sandry C.",
+        "badge": "🎯 Buteur d'Élite",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
+        "buts": 2,
+        "cartons_j": 2,
+        "cartons_r": 0,
+        "esg_score": 38.0,
+        "sous_scores": {
+          "volume": 0.0,
+          "volume_max": 35,
+          "defense": 0.0,
+          "defense_max": 30,
+          "attaque": 24.0,
+          "attaque_max": 35,
+          "presence": 0.0,
+          "presence_max": 10,
+          "malus_discipline": 6.0
+        }
+      },
+      {
+        "id": "p_esquelbecq_4",
+        "rang": 4,
+        "nom": "Remi R.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 76.4,
+        "esg_score": 32.0,
         "sous_scores": {
-          "volume": 22.4,
+          "volume": 0.0,
           "volume_max": 35,
-          "defense": 12.0,
+          "defense": 0.0,
           "defense_max": 30,
           "attaque": 12.0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 0.0,
+          "presence_max": 10,
+          "malus_discipline": 0.0
+        }
+      },
+      {
+        "id": "p_esquelbecq_5",
+        "rang": 5,
+        "nom": "Ryan K.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
+        "buts": 1,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 32.0,
+        "sous_scores": {
+          "volume": 0.0,
+          "volume_max": 35,
+          "defense": 0.0,
+          "defense_max": 30,
+          "attaque": 12.0,
+          "attaque_max": 35,
+          "presence": 0.0,
           "presence_max": 10,
           "malus_discipline": 0.0
         }
@@ -26727,25 +26716,25 @@
       {
         "id": "p_esquelbecq_6",
         "rang": 6,
-        "nom": "Antoine D.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 6,
-        "titularisations": 6,
+        "nom": "Neji Z.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
         "remplacements": 0,
-        "minutes": 480,
-        "clean_sheets": 2,
-        "buts": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
+        "buts": 1,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 70.1,
+        "esg_score": 30.0,
         "sous_scores": {
-          "volume": 31.1,
+          "volume": 0.0,
           "volume_max": 35,
-          "defense": 12.0,
+          "defense": 0.0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 12.0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 0.0,
           "presence_max": 10,
           "malus_discipline": 3.0
         }
@@ -26753,233 +26742,233 @@
       {
         "id": "p_esquelbecq_7",
         "rang": 7,
-        "nom": "Arthur T.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 5,
-        "titularisations": 5,
+        "nom": "Djibril K.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
         "remplacements": 0,
-        "minutes": 400,
-        "clean_sheets": 2,
-        "buts": 0,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 67.9,
-        "sous_scores": {
-          "volume": 25.9,
-          "volume_max": 35,
-          "defense": 12.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 0.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_8",
-        "rang": 8,
-        "nom": "Matheo G.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 6,
-        "titularisations": 5,
-        "remplacements": 1,
-        "minutes": 425,
-        "clean_sheets": 2,
-        "buts": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
+        "buts": 1,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 66.5,
+        "esg_score": 30.0,
         "sous_scores": {
-          "volume": 27.5,
+          "volume": 0.0,
           "volume_max": 35,
-          "defense": 12.0,
+          "defense": 0.0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 12.0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 0.0,
           "presence_max": 10,
           "malus_discipline": 3.0
         }
       },
       {
+        "id": "p_esquelbecq_8",
+        "rang": 8,
+        "nom": "Raphael B.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
+        "buts": 1,
+        "cartons_j": 2,
+        "cartons_r": 0,
+        "esg_score": 30.0,
+        "sous_scores": {
+          "volume": 0.0,
+          "volume_max": 35,
+          "defense": 0.0,
+          "defense_max": 30,
+          "attaque": 12.0,
+          "attaque_max": 35,
+          "presence": 0.0,
+          "presence_max": 10,
+          "malus_discipline": 6.0
+        }
+      },
+      {
         "id": "p_esquelbecq_9",
         "rang": 9,
-        "nom": "Ibrahima T.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 5,
-        "titularisations": 4,
-        "remplacements": 1,
-        "minutes": 345,
-        "clean_sheets": 2,
+        "nom": "’ X.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
         "buts": 0,
         "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 64.4,
+        "cartons_r": 1,
+        "esg_score": 30.0,
         "sous_scores": {
-          "volume": 22.4,
+          "volume": 0.0,
           "volume_max": 35,
-          "defense": 12.0,
+          "defense": 0.0,
           "defense_max": 30,
           "attaque": 0.0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 0.0,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 10.0
         }
       },
       {
         "id": "p_esquelbecq_10",
         "rang": 10,
-        "nom": "Anthony P.",
-        "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 6,
-        "titularisations": 5,
-        "remplacements": 1,
-        "minutes": 425,
-        "clean_sheets": 1,
+        "nom": "Ibrahima T.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
         "buts": 0,
-        "cartons_j": 2,
+        "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 57.5,
+        "esg_score": 30.0,
         "sous_scores": {
-          "volume": 27.5,
+          "volume": 0.0,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 0.0,
           "defense_max": 30,
           "attaque": 0.0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 0.0,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 3.0
         }
       },
       {
         "id": "p_esquelbecq_11",
         "rang": 11,
-        "nom": "Raphael L.",
-        "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 5,
-        "titularisations": 4,
-        "remplacements": 1,
-        "minutes": 345,
-        "clean_sheets": 1,
+        "nom": "Julian H.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
         "buts": 0,
-        "cartons_j": 0,
+        "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 58.4,
+        "esg_score": 30.0,
         "sous_scores": {
-          "volume": 22.4,
+          "volume": 0.0,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 0.0,
           "defense_max": 30,
           "attaque": 0.0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 0.0,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 3.0
         }
       },
       {
         "id": "p_esquelbecq_12",
         "rang": 12,
-        "nom": "Remi R.",
-        "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 5,
-        "titularisations": 2,
-        "remplacements": 3,
-        "minutes": 235,
+        "nom": "Anthime B.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
         "clean_sheets": 0,
-        "buts": 1,
-        "cartons_j": 0,
+        "buts": 0,
+        "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 57.2,
+        "esg_score": 30.0,
         "sous_scores": {
-          "volume": 15.2,
+          "volume": 0.0,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 0.0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 0.0,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 3.0
         }
       },
       {
         "id": "p_esquelbecq_13",
         "rang": 13,
-        "nom": "Julian H.",
-        "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 4,
-        "titularisations": 4,
+        "nom": "Matheo G.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
         "remplacements": 0,
-        "minutes": 320,
-        "clean_sheets": 1,
+        "minutes": 0,
+        "clean_sheets": 0,
         "buts": 0,
-        "cartons_j": 0,
+        "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 54.7,
+        "esg_score": 30.0,
         "sous_scores": {
-          "volume": 20.7,
+          "volume": 0.0,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 0.0,
           "defense_max": 30,
           "attaque": 0.0,
           "attaque_max": 35,
-          "presence": 8.0,
+          "presence": 0.0,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 3.0
         }
       },
       {
         "id": "p_esquelbecq_14",
         "rang": 14,
-        "nom": "Mateus N.",
-        "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 4,
-        "titularisations": 2,
-        "remplacements": 2,
-        "minutes": 210,
-        "clean_sheets": 0,
-        "buts": 1,
-        "cartons_j": 2,
-        "cartons_r": 0,
-        "esg_score": 47.6,
-        "sous_scores": {
-          "volume": 13.6,
-          "volume_max": 35,
-          "defense": 0.0,
-          "defense_max": 30,
-          "attaque": 12.0,
-          "attaque_max": 35,
-          "presence": 8.0,
-          "presence_max": 10,
-          "malus_discipline": 6.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_15",
-        "rang": 15,
-        "nom": "Neji Z.",
-        "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 4,
-        "titularisations": 3,
-        "remplacements": 1,
-        "minutes": 265,
+        "nom": "Antoine D.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
         "clean_sheets": 0,
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 42.2,
+        "esg_score": 30.0,
         "sous_scores": {
-          "volume": 17.2,
+          "volume": 0.0,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
           "attaque": 0.0,
           "attaque_max": 35,
-          "presence": 8.0,
+          "presence": 0.0,
+          "presence_max": 10,
+          "malus_discipline": 3.0
+        }
+      },
+      {
+        "id": "p_esquelbecq_15",
+        "rang": 15,
+        "nom": "Charly B.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
+        "buts": 0,
+        "cartons_j": 1,
+        "cartons_r": 0,
+        "esg_score": 30.0,
+        "sous_scores": {
+          "volume": 0.0,
+          "volume_max": 35,
+          "defense": 0.0,
+          "defense_max": 30,
+          "attaque": 0.0,
+          "attaque_max": 35,
+          "presence": 0.0,
           "presence_max": 10,
           "malus_discipline": 3.0
         }
@@ -26987,162 +26976,6 @@
       {
         "id": "p_esquelbecq_16",
         "rang": 16,
-        "nom": "Alexis K.",
-        "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 2,
-        "titularisations": 2,
-        "remplacements": 0,
-        "minutes": 160,
-        "clean_sheets": 1,
-        "buts": 0,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 40.4,
-        "sous_scores": {
-          "volume": 10.4,
-          "volume_max": 35,
-          "defense": 6.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 4.0,
-          "presence_max": 10,
-          "malus_discipline": 0.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_17",
-        "rang": 17,
-        "nom": "Charly B.",
-        "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 3,
-        "titularisations": 1,
-        "remplacements": 2,
-        "minutes": 130,
-        "clean_sheets": 0,
-        "buts": 0,
-        "cartons_j": 1,
-        "cartons_r": 0,
-        "esg_score": 31.4,
-        "sous_scores": {
-          "volume": 8.4,
-          "volume_max": 35,
-          "defense": 0.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 6.0,
-          "presence_max": 10,
-          "malus_discipline": 3.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_18",
-        "rang": 18,
-        "nom": "Yanis B.",
-        "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 3,
-        "titularisations": 0,
-        "remplacements": 3,
-        "minutes": 75,
-        "clean_sheets": 0,
-        "buts": 0,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 30.9,
-        "sous_scores": {
-          "volume": 4.9,
-          "volume_max": 35,
-          "defense": 0.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 6.0,
-          "presence_max": 10,
-          "malus_discipline": 0.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_19",
-        "rang": 19,
-        "nom": "Anthime B.",
-        "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 3,
-        "titularisations": 0,
-        "remplacements": 3,
-        "minutes": 75,
-        "clean_sheets": 0,
-        "buts": 0,
-        "cartons_j": 1,
-        "cartons_r": 0,
-        "esg_score": 30.0,
-        "sous_scores": {
-          "volume": 4.9,
-          "volume_max": 35,
-          "defense": 0.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 6.0,
-          "presence_max": 10,
-          "malus_discipline": 3.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_20",
-        "rang": 20,
-        "nom": "Harthur D.",
-        "badge": "🔄 Rotation Effectif",
-        "matchs": 1,
-        "titularisations": 0,
-        "remplacements": 1,
-        "minutes": 25,
-        "clean_sheets": 0,
-        "buts": 0,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 30.0,
-        "sous_scores": {
-          "volume": 1.6,
-          "volume_max": 35,
-          "defense": 0.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 2.0,
-          "presence_max": 10,
-          "malus_discipline": 0.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_21",
-        "rang": 21,
-        "nom": "Valentin D.",
-        "badge": "🔄 Rotation Effectif",
-        "matchs": 1,
-        "titularisations": 0,
-        "remplacements": 1,
-        "minutes": 25,
-        "clean_sheets": 0,
-        "buts": 0,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 30.0,
-        "sous_scores": {
-          "volume": 1.6,
-          "volume_max": 35,
-          "defense": 0.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 2.0,
-          "presence_max": 10,
-          "malus_discipline": 0.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_22",
-        "rang": 22,
         "nom": "Laurent P.",
         "badge": "🔄 Rotation Effectif",
         "matchs": 0,
@@ -27165,21 +26998,73 @@
           "presence_max": 10,
           "malus_discipline": 3.0
         }
+      },
+      {
+        "id": "p_esquelbecq_17",
+        "rang": 17,
+        "nom": "Yanis B.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
+        "buts": 0,
+        "cartons_j": 2,
+        "cartons_r": 0,
+        "esg_score": 30.0,
+        "sous_scores": {
+          "volume": 0.0,
+          "volume_max": 35,
+          "defense": 0.0,
+          "defense_max": 30,
+          "attaque": 0.0,
+          "attaque_max": 35,
+          "presence": 0.0,
+          "presence_max": 10,
+          "malus_discipline": 6.0
+        }
+      },
+      {
+        "id": "p_esquelbecq_18",
+        "rang": 18,
+        "nom": "Anthony P.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
+        "buts": 0,
+        "cartons_j": 2,
+        "cartons_r": 0,
+        "esg_score": 30.0,
+        "sous_scores": {
+          "volume": 0.0,
+          "volume_max": 35,
+          "defense": 0.0,
+          "defense_max": 30,
+          "attaque": 0.0,
+          "attaque_max": 35,
+          "presence": 0.0,
+          "presence_max": 10,
+          "malus_discipline": 6.0
+        }
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 1.0,
+      "ppm_championnat": 1.2,
       "probabilite_montee_pct": 10.0,
       "probabilite_maintien_pct": 78.0,
       "taux_invincibilite": 50.0,
       "bilan_global": {
-        "matchs": 6,
-        "victoires": 3,
+        "matchs": 8,
+        "victoires": 4,
         "nuls": 0,
-        "defaites": 3,
-        "buts_pour": 11,
-        "buts_contre": 6,
-        "difference": 5
+        "defaites": 4,
+        "buts_pour": 14,
+        "buts_contre": 11,
+        "difference": 3
       },
       "bilan_championnat": {
         "matchs": 5,
@@ -27192,8 +27077,8 @@
         "difference": -4,
         "ppm": 1.2
       },
-      "ratio_clean_sheet_pct": 33.3,
-      "moyenne_buts_encaisses": 1.0,
+      "ratio_clean_sheet_pct": 25.0,
+      "moyenne_buts_encaisses": 1.38,
       "projection_saison": {
         "points_prevus": 28.0,
         "rang_final_estime": "Milieu de tableau Régional 2 Poule A (Objectif maintien)"
@@ -27489,7 +27374,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "05/11/2026 à 11:16"
+      "derniere_maj": "05/11/2026 à 11:53"
     },
     "dernier_match": {
       "id": "esquelbecq_56216133",
@@ -27596,7 +27481,7 @@
       "surface": "Terrain synthétique",
       "temperature": "9.2 °C",
       "vent": "Faible (11.3 km/h)",
-      "pluie": "Averses possibles (38 %)",
+      "pluie": "Averses possibles (30 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -27692,128 +27577,12 @@
         ],
         "compositions": {
           "club": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Raphael L."
-              },
-              {
-                "numero": 2,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 3,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 4,
-                "nom": "Charly B."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 7,
-                "nom": "Sandry C."
-              },
-              {
-                "numero": 8,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 9,
-                "nom": "Mateus N."
-              },
-              {
-                "numero": 10,
-                "nom": "Neji Z."
-              },
-              {
-                "numero": 11,
-                "nom": "Ryan K."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 13,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 14,
-                "nom": "Harthur D."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "esquelbecq": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Raphael L."
-              },
-              {
-                "numero": 2,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 3,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 4,
-                "nom": "Charly B."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 7,
-                "nom": "Sandry C."
-              },
-              {
-                "numero": 8,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 9,
-                "nom": "Mateus N."
-              },
-              {
-                "numero": 10,
-                "nom": "Neji Z."
-              },
-              {
-                "numero": 11,
-                "nom": "Ryan K."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 13,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 14,
-                "nom": "Harthur D."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "adversaire": {
             "equipe": "DUNKERQUE MALO FC",
@@ -27823,44 +27592,524 @@
                 "nom": "Batiste P."
               },
               {
+                "numero": 1,
+                "nom": "Raphael L."
+              },
+              {
                 "numero": 2,
                 "nom": "Yanis L."
+              },
+              {
+                "numero": 2,
+                "nom": "Arthur T."
               },
               {
                 "numero": 3,
                 "nom": "Matys D."
               },
               {
+                "numero": 3,
+                "nom": "Antoine D."
+              },
+              {
                 "numero": 4,
                 "nom": "Elias T."
+              },
+              {
+                "numero": 4,
+                "nom": "Charly B."
               },
               {
                 "numero": 5,
                 "nom": "Quentin H."
               },
               {
+                "numero": 5,
+                "nom": "Raphael B."
+              },
+              {
                 "numero": 6,
                 "nom": "Loic V."
+              },
+              {
+                "numero": 6,
+                "nom": "Anthony P."
               },
               {
                 "numero": 7,
                 "nom": "Gabin D."
               },
               {
+                "numero": 7,
+                "nom": "Sandry C."
+              },
+              {
                 "numero": 8,
                 "nom": "Guillaume D."
+              },
+              {
+                "numero": 8,
+                "nom": "Ibrahima T."
               },
               {
                 "numero": 9,
                 "nom": "Steven M."
               },
               {
+                "numero": 9,
+                "nom": "Mateus N."
+              },
+              {
                 "numero": 10,
                 "nom": "Jefferson L."
               },
               {
+                "numero": 10,
+                "nom": "Neji Z."
+              },
+              {
                 "numero": 11,
                 "nom": "Samy F."
+              },
+              {
+                "numero": 11,
+                "nom": "Ryan K."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "esquelbecq_56216126",
+        "competition": "R2 • Journée 4",
+        "comp_type": "CHAMPIONNAT",
+        "date": "18/10/2026",
+        "date_heure": "2026-10-18 15:00",
+        "domicile": "ESQUELBECQ US",
+        "exterieur": "AIRE SUR LA LYS OS",
+        "score_domicile": 0,
+        "score_exterieur": 3,
+        "score_display": "0 - 3",
+        "is_domicile": true,
+        "resultat": "D",
+        "resultat_label": "Défaite",
+        "evenements": [
+          {
+            "minute": 34,
+            "type": "AVERTISSEMENT",
+            "equipe": "AIRE SUR LA LYS OS",
+            "acteur": "Tom V.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 42,
+            "type": "BUT",
+            "equipe": "AIRE SUR LA LYS OS",
+            "acteur": "Matheo D.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 58,
+            "type": "AVERTISSEMENT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Julian H.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 61,
+            "type": "AVERTISSEMENT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Matheo M.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 70,
+            "type": "BUT",
+            "equipe": "AIRE SUR LA LYS OS",
+            "acteur": "Smain K.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 72,
+            "type": "AVERTISSEMENT",
+            "equipe": "AIRE SUR LA LYS OS",
+            "acteur": "Arthur F.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 84,
+            "type": "AVERTISSEMENT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Raphael B.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 86,
+            "type": "AVERTISSEMENT",
+            "equipe": "AIRE SUR LA LYS OS",
+            "acteur": "Yoan B.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 87,
+            "type": "BUT",
+            "equipe": "AIRE SUR LA LYS OS",
+            "acteur": "Smain K.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 89,
+            "type": "AVERTISSEMENT",
+            "equipe": "AIRE SUR LA LYS OS",
+            "acteur": "Stephane T.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 90,
+            "type": "AVERTISSEMENT",
+            "equipe": "AIRE SUR LA LYS OS",
+            "acteur": "Joshua J.",
+            "detail": "Carton Jaune"
+          }
+        ],
+        "compositions": {
+          "club": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "esquelbecq": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "AIRE SUR LA LYS OS",
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Raphael L."
+              },
+              {
+                "numero": 1,
+                "nom": "Arthur F."
+              },
+              {
+                "numero": 2,
+                "nom": "Yanis B."
+              },
+              {
+                "numero": 2,
+                "nom": "Tom V."
+              },
+              {
+                "numero": 3,
+                "nom": "Ryan K."
+              },
+              {
+                "numero": 3,
+                "nom": "Ilies E."
+              },
+              {
+                "numero": 4,
+                "nom": "Raphael B."
+              },
+              {
+                "numero": 4,
+                "nom": "Stephane T."
+              },
+              {
+                "numero": 5,
+                "nom": "Julian H."
+              },
+              {
+                "numero": 5,
+                "nom": "Yoan B."
+              },
+              {
+                "numero": 6,
+                "nom": "Ibrahima T."
+              },
+              {
+                "numero": 6,
+                "nom": "Jimmy B."
+              },
+              {
+                "numero": 7,
+                "nom": "Neji Z."
+              },
+              {
+                "numero": 7,
+                "nom": "Milan P."
+              },
+              {
+                "numero": 8,
+                "nom": "Anthony P."
+              },
+              {
+                "numero": 8,
+                "nom": "Lenaick L."
+              },
+              {
+                "numero": 9,
+                "nom": "Mateus N."
+              },
+              {
+                "numero": 9,
+                "nom": "Smain K."
+              },
+              {
+                "numero": 10,
+                "nom": "Matheo M."
+              },
+              {
+                "numero": 10,
+                "nom": "Aurelien J."
+              },
+              {
+                "numero": 11,
+                "nom": "Matheo G."
+              },
+              {
+                "numero": 11,
+                "nom": "Matheo D."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "esquelbecq_56216124",
+        "competition": "R2 • Journée 3",
+        "comp_type": "CHAMPIONNAT",
+        "date": "03/10/2026",
+        "date_heure": "2026-10-03 18:00",
+        "domicile": "MONS EN BAROEUL AC",
+        "exterieur": "ESQUELBECQ US",
+        "score_domicile": 2,
+        "score_exterieur": 3,
+        "score_display": "2 - 3",
+        "is_domicile": false,
+        "resultat": "V",
+        "resultat_label": "Victoire",
+        "evenements": [
+          {
+            "minute": 6,
+            "type": "BUT",
+            "equipe": "MONS EN BAROEUL AC",
+            "acteur": "Corentin L.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 28,
+            "type": "BUT",
+            "equipe": "MONS EN BAROEUL AC",
+            "acteur": "Matteo D.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 31,
+            "type": "AVERTISSEMENT",
+            "equipe": "MONS EN BAROEUL AC",
+            "acteur": "Matteo D.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 48,
+            "type": "AVERTISSEMENT",
+            "equipe": "MONS EN BAROEUL AC",
+            "acteur": "Corentin L.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 55,
+            "type": "BUT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Neji Z.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 55,
+            "type": "AVERTISSEMENT",
+            "equipe": "MONS EN BAROEUL AC",
+            "acteur": "Matteo D.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 55,
+            "type": "EXPULSION",
+            "equipe": "MONS EN BAROEUL AC",
+            "acteur": "’ X.",
+            "detail": "Carton Rouge"
+          },
+          {
+            "minute": 58,
+            "type": "AVERTISSEMENT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Yanis B.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 64,
+            "type": "AVERTISSEMENT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Yanis B.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 64,
+            "type": "EXPULSION",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "’ X.",
+            "detail": "Carton Rouge"
+          },
+          {
+            "minute": 77,
+            "type": "AVERTISSEMENT",
+            "equipe": "MONS EN BAROEUL AC",
+            "acteur": "Nelitu M.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 79,
+            "type": "AVERTISSEMENT",
+            "equipe": "MONS EN BAROEUL AC",
+            "acteur": "Majid E.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 81,
+            "type": "EXPULSION",
+            "equipe": "MONS EN BAROEUL AC",
+            "acteur": "’ X.",
+            "detail": "Carton Rouge"
+          },
+          {
+            "minute": 85,
+            "type": "AVERTISSEMENT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Ibrahima T.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 87,
+            "type": "AVERTISSEMENT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Djibril K.",
+            "detail": "Carton Jaune"
+          },
+          {
+            "minute": 88,
+            "type": "BUT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Matheo M.",
+            "detail": "But FFF"
+          },
+          {
+            "minute": 90,
+            "type": "BUT",
+            "equipe": "ESQUELBECQ US",
+            "acteur": "Mateus N.",
+            "detail": "But FFF"
+          }
+        ],
+        "compositions": {
+          "club": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "esquelbecq": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "MONS EN BAROEUL AC",
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Robin C."
+              },
+              {
+                "numero": 1,
+                "nom": "Raphael L."
+              },
+              {
+                "numero": 2,
+                "nom": "Neliyu M."
+              },
+              {
+                "numero": 2,
+                "nom": "Yanis B."
+              },
+              {
+                "numero": 3,
+                "nom": "Sacha D."
+              },
+              {
+                "numero": 3,
+                "nom": "Antoine D."
+              },
+              {
+                "numero": 4,
+                "nom": "Gabin B."
+              },
+              {
+                "numero": 4,
+                "nom": "Julian H."
+              },
+              {
+                "numero": 5,
+                "nom": "Elio D."
+              },
+              {
+                "numero": 5,
+                "nom": "Raphael B."
+              },
+              {
+                "numero": 6,
+                "nom": "Majid E."
+              },
+              {
+                "numero": 6,
+                "nom": "Ibrahima T."
+              },
+              {
+                "numero": 7,
+                "nom": "Matteo D."
+              },
+              {
+                "numero": 7,
+                "nom": "Djibril K."
+              },
+              {
+                "numero": 8,
+                "nom": "Mohamed H."
+              },
+              {
+                "numero": 8,
+                "nom": "Anthony P."
+              },
+              {
+                "numero": 9,
+                "nom": "Zakariya B."
+              },
+              {
+                "numero": 9,
+                "nom": "Mateus N."
+              },
+              {
+                "numero": 10,
+                "nom": "Corentin L."
+              },
+              {
+                "numero": 10,
+                "nom": "Matheo M."
+              },
+              {
+                "numero": 11,
+                "nom": "Nelitu M."
+              },
+              {
+                "numero": 11,
+                "nom": "Matheo G."
               }
             ]
           }
@@ -27940,151 +28189,27 @@
         ],
         "compositions": {
           "club": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Alexis K."
-              },
-              {
-                "numero": 2,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 3,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 4,
-                "nom": "Julian H."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 7,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 8,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 11,
-                "nom": "Ryan K."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Mateus N."
-              },
-              {
-                "numero": 13,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 14,
-                "nom": "Yanis B."
-              },
-              {
-                "numero": 15,
-                "nom": "Anthime B."
-              },
-              {
-                "numero": 16,
-                "nom": "Raphael L."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "esquelbecq": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Alexis K."
-              },
-              {
-                "numero": 2,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 3,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 4,
-                "nom": "Julian H."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 7,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 8,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 11,
-                "nom": "Ryan K."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Mateus N."
-              },
-              {
-                "numero": 13,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 14,
-                "nom": "Yanis B."
-              },
-              {
-                "numero": 15,
-                "nom": "Anthime B."
-              },
-              {
-                "numero": 16,
-                "nom": "Raphael L."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "adversaire": {
             "equipe": "PAYS DE ST OMER US",
             "titulaires": [
               {
                 "numero": 1,
+                "nom": "Alexis K."
+              },
+              {
+                "numero": 1,
                 "nom": "Julien B."
+              },
+              {
+                "numero": 2,
+                "nom": "Arthur T."
               },
               {
                 "numero": 2,
@@ -28092,7 +28217,15 @@
               },
               {
                 "numero": 3,
+                "nom": "Antoine D."
+              },
+              {
+                "numero": 3,
                 "nom": "Sacha S."
+              },
+              {
+                "numero": 4,
+                "nom": "Julian H."
               },
               {
                 "numero": 4,
@@ -28100,7 +28233,15 @@
               },
               {
                 "numero": 5,
+                "nom": "Raphael B."
+              },
+              {
+                "numero": 5,
                 "nom": "Clement B."
+              },
+              {
+                "numero": 6,
+                "nom": "Ibrahima T."
               },
               {
                 "numero": 6,
@@ -28108,7 +28249,15 @@
               },
               {
                 "numero": 7,
+                "nom": "Matheo G."
+              },
+              {
+                "numero": 7,
                 "nom": "Gregor G."
+              },
+              {
+                "numero": 8,
+                "nom": "Anthony P."
               },
               {
                 "numero": 8,
@@ -28116,11 +28265,23 @@
               },
               {
                 "numero": 9,
+                "nom": "Matheo M."
+              },
+              {
+                "numero": 9,
                 "nom": "Enzo H."
               },
               {
                 "numero": 10,
+                "nom": "Remi R."
+              },
+              {
+                "numero": 10,
                 "nom": "Argjend M."
+              },
+              {
+                "numero": 11,
+                "nom": "Ryan K."
               },
               {
                 "numero": 11,
@@ -28190,135 +28351,27 @@
         ],
         "compositions": {
           "club": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Raphael L."
-              },
-              {
-                "numero": 2,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 3,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 4,
-                "nom": "Julian H."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 7,
-                "nom": "Ryan K."
-              },
-              {
-                "numero": 8,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Neji Z."
-              },
-              {
-                "numero": 11,
-                "nom": "Mateus N."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 13,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 14,
-                "nom": "Yanis B."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "esquelbecq": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Raphael L."
-              },
-              {
-                "numero": 2,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 3,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 4,
-                "nom": "Julian H."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 7,
-                "nom": "Ryan K."
-              },
-              {
-                "numero": 8,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Neji Z."
-              },
-              {
-                "numero": 11,
-                "nom": "Mateus N."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 13,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 14,
-                "nom": "Yanis B."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "adversaire": {
             "equipe": "LONGUENESSE JS",
             "titulaires": [
               {
                 "numero": 1,
+                "nom": "Raphael L."
+              },
+              {
+                "numero": 1,
                 "nom": "Thibault S."
+              },
+              {
+                "numero": 2,
+                "nom": "Matheo G."
               },
               {
                 "numero": 2,
@@ -28326,7 +28379,15 @@
               },
               {
                 "numero": 3,
+                "nom": "Antoine D."
+              },
+              {
+                "numero": 3,
                 "nom": "Hugo D."
+              },
+              {
+                "numero": 4,
+                "nom": "Julian H."
               },
               {
                 "numero": 4,
@@ -28334,7 +28395,15 @@
               },
               {
                 "numero": 5,
+                "nom": "Raphael B."
+              },
+              {
+                "numero": 5,
                 "nom": "Paul G."
+              },
+              {
+                "numero": 6,
+                "nom": "Anthony P."
               },
               {
                 "numero": 6,
@@ -28342,7 +28411,15 @@
               },
               {
                 "numero": 7,
+                "nom": "Ryan K."
+              },
+              {
+                "numero": 7,
                 "nom": "Robin D."
+              },
+              {
+                "numero": 8,
+                "nom": "Djibril K."
               },
               {
                 "numero": 8,
@@ -28350,11 +28427,23 @@
               },
               {
                 "numero": 9,
+                "nom": "Matheo M."
+              },
+              {
+                "numero": 9,
                 "nom": "Quentin H."
               },
               {
                 "numero": 10,
+                "nom": "Neji Z."
+              },
+              {
+                "numero": 10,
                 "nom": "Louis F."
+              },
+              {
+                "numero": 11,
+                "nom": "Mateus N."
               },
               {
                 "numero": 11,
@@ -28452,136 +28541,12 @@
         ],
         "compositions": {
           "club": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Raphael L."
-              },
-              {
-                "numero": 2,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 3,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 4,
-                "nom": "Julian H."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 7,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 8,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 11,
-                "nom": "Neji Z."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Ryan K."
-              },
-              {
-                "numero": 13,
-                "nom": "Mateus N."
-              },
-              {
-                "numero": 14,
-                "nom": "Sandry C."
-              },
-              {
-                "numero": 15,
-                "nom": "Charly B."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "esquelbecq": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Raphael L."
-              },
-              {
-                "numero": 2,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 3,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 4,
-                "nom": "Julian H."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 7,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 8,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 11,
-                "nom": "Neji Z."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Ryan K."
-              },
-              {
-                "numero": 13,
-                "nom": "Mateus N."
-              },
-              {
-                "numero": 14,
-                "nom": "Sandry C."
-              },
-              {
-                "numero": 15,
-                "nom": "Charly B."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "adversaire": {
             "equipe": "BEZINGHEM AS",
@@ -28591,44 +28556,88 @@
                 "nom": "Aymeric M."
               },
               {
+                "numero": 1,
+                "nom": "Raphael L."
+              },
+              {
                 "numero": 2,
                 "nom": "Gauthier H."
+              },
+              {
+                "numero": 2,
+                "nom": "Arthur T."
               },
               {
                 "numero": 3,
                 "nom": "Valentin C."
               },
               {
+                "numero": 3,
+                "nom": "Antoine D."
+              },
+              {
                 "numero": 4,
                 "nom": "Raphael D."
+              },
+              {
+                "numero": 4,
+                "nom": "Julian H."
               },
               {
                 "numero": 5,
                 "nom": "Amilien D."
               },
               {
+                "numero": 5,
+                "nom": "Raphael B."
+              },
+              {
                 "numero": 6,
                 "nom": "Kevin D."
+              },
+              {
+                "numero": 6,
+                "nom": "Anthony P."
               },
               {
                 "numero": 7,
                 "nom": "Paul R."
               },
               {
+                "numero": 7,
+                "nom": "Remi R."
+              },
+              {
                 "numero": 8,
                 "nom": "Jean-Emmanuel L."
+              },
+              {
+                "numero": 8,
+                "nom": "Djibril K."
               },
               {
                 "numero": 9,
                 "nom": "Dylan D."
               },
               {
+                "numero": 9,
+                "nom": "Matheo M."
+              },
+              {
                 "numero": 10,
                 "nom": "Martin L."
               },
               {
+                "numero": 10,
+                "nom": "Matheo G."
+              },
+              {
                 "numero": 11,
                 "nom": "Marc-Antoine F."
+              },
+              {
+                "numero": 11,
+                "nom": "Neji Z."
               }
             ]
           }
@@ -28694,128 +28703,12 @@
         ],
         "compositions": {
           "club": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Raphael L."
-              },
-              {
-                "numero": 2,
-                "nom": "Julian H."
-              },
-              {
-                "numero": 3,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 4,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 7,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 8,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Sandry C."
-              },
-              {
-                "numero": 11,
-                "nom": "Ryan K."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 13,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 14,
-                "nom": "Anthime B."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "esquelbecq": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Raphael L."
-              },
-              {
-                "numero": 2,
-                "nom": "Julian H."
-              },
-              {
-                "numero": 3,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 4,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 7,
-                "nom": "Matheo G."
-              },
-              {
-                "numero": 8,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Sandry C."
-              },
-              {
-                "numero": 11,
-                "nom": "Ryan K."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 13,
-                "nom": "Remi R."
-              },
-              {
-                "numero": 14,
-                "nom": "Anthime B."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "adversaire": {
             "equipe": "COQUELLES SC",
@@ -28825,44 +28718,88 @@
                 "nom": "Simon C."
               },
               {
+                "numero": 1,
+                "nom": "Raphael L."
+              },
+              {
                 "numero": 2,
                 "nom": "Kevin H."
+              },
+              {
+                "numero": 2,
+                "nom": "Julian H."
               },
               {
                 "numero": 3,
                 "nom": "Gabin M."
               },
               {
+                "numero": 3,
+                "nom": "Arthur T."
+              },
+              {
                 "numero": 4,
                 "nom": "Dorian D."
+              },
+              {
+                "numero": 4,
+                "nom": "Antoine D."
               },
               {
                 "numero": 5,
                 "nom": "Nicolas L."
               },
               {
+                "numero": 5,
+                "nom": "Raphael B."
+              },
+              {
                 "numero": 6,
                 "nom": "Gregoire P."
+              },
+              {
+                "numero": 6,
+                "nom": "Ibrahima T."
               },
               {
                 "numero": 7,
                 "nom": "Lucas C."
               },
               {
+                "numero": 7,
+                "nom": "Matheo G."
+              },
+              {
                 "numero": 8,
                 "nom": "Gregoire B."
+              },
+              {
+                "numero": 8,
+                "nom": "Djibril K."
               },
               {
                 "numero": 9,
                 "nom": "Enzo G."
               },
               {
+                "numero": 9,
+                "nom": "Matheo M."
+              },
+              {
                 "numero": 10,
                 "nom": "Thibault C."
               },
               {
+                "numero": 10,
+                "nom": "Sandry C."
+              },
+              {
                 "numero": 11,
                 "nom": "Mathias D."
+              },
+              {
+                "numero": 11,
+                "nom": "Ryan K."
               }
             ]
           }
@@ -28896,6 +28833,13 @@
             "equipe": "NIEPPE UFC",
             "acteur": "Antoine D.",
             "detail": "Carton Jaune"
+          },
+          {
+            "minute": 45,
+            "type": "EXPULSION",
+            "equipe": "NIEPPE UFC",
+            "acteur": "’ X.",
+            "detail": "Carton Rouge"
           },
           {
             "minute": 45,
@@ -28935,144 +28879,12 @@
         ],
         "compositions": {
           "club": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Alexis K."
-              },
-              {
-                "numero": 2,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 3,
-                "nom": "Ryan K."
-              },
-              {
-                "numero": 4,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 7,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 8,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Sandry C."
-              },
-              {
-                "numero": 11,
-                "nom": "Matheo G."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Neji Z."
-              },
-              {
-                "numero": 13,
-                "nom": "Yanis B."
-              },
-              {
-                "numero": 14,
-                "nom": "Charly B."
-              },
-              {
-                "numero": 15,
-                "nom": "Anthime B."
-              },
-              {
-                "numero": 16,
-                "nom": "Valentin D."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "esquelbecq": {
-            "titulaires": [
-              {
-                "numero": 1,
-                "nom": "Alexis K."
-              },
-              {
-                "numero": 2,
-                "nom": "Ibrahima T."
-              },
-              {
-                "numero": 3,
-                "nom": "Ryan K."
-              },
-              {
-                "numero": 4,
-                "nom": "Antoine D."
-              },
-              {
-                "numero": 5,
-                "nom": "Raphael B."
-              },
-              {
-                "numero": 6,
-                "nom": "Anthony P."
-              },
-              {
-                "numero": 7,
-                "nom": "Arthur T."
-              },
-              {
-                "numero": 8,
-                "nom": "Djibril K."
-              },
-              {
-                "numero": 9,
-                "nom": "Matheo M."
-              },
-              {
-                "numero": 10,
-                "nom": "Sandry C."
-              },
-              {
-                "numero": 11,
-                "nom": "Matheo G."
-              }
-            ],
-            "remplacants": [
-              {
-                "numero": 12,
-                "nom": "Neji Z."
-              },
-              {
-                "numero": 13,
-                "nom": "Yanis B."
-              },
-              {
-                "numero": 14,
-                "nom": "Charly B."
-              },
-              {
-                "numero": 15,
-                "nom": "Anthime B."
-              },
-              {
-                "numero": 16,
-                "nom": "Valentin D."
-              }
-            ]
+            "titulaires": [],
+            "remplacants": []
           },
           "adversaire": {
             "equipe": "NIEPPE UFC",
@@ -29082,44 +28894,88 @@
                 "nom": "Arthur D."
               },
               {
+                "numero": 1,
+                "nom": "Alexis K."
+              },
+              {
                 "numero": 2,
                 "nom": "Antoine D."
+              },
+              {
+                "numero": 2,
+                "nom": "Ibrahima T."
               },
               {
                 "numero": 3,
                 "nom": "Louis M."
               },
               {
+                "numero": 3,
+                "nom": "Ryan K."
+              },
+              {
                 "numero": 4,
                 "nom": "Valentin M."
+              },
+              {
+                "numero": 4,
+                "nom": "Antoine D."
               },
               {
                 "numero": 5,
                 "nom": "Armand E."
               },
               {
+                "numero": 5,
+                "nom": "Raphael B."
+              },
+              {
                 "numero": 6,
                 "nom": "Sebastien P."
+              },
+              {
+                "numero": 6,
+                "nom": "Anthony P."
               },
               {
                 "numero": 7,
                 "nom": "Mitch L."
               },
               {
+                "numero": 7,
+                "nom": "Arthur T."
+              },
+              {
                 "numero": 8,
                 "nom": "Baptiste L."
+              },
+              {
+                "numero": 8,
+                "nom": "Djibril K."
               },
               {
                 "numero": 9,
                 "nom": "Kevin T."
               },
               {
+                "numero": 9,
+                "nom": "Matheo M."
+              },
+              {
                 "numero": 10,
                 "nom": "Gael B."
               },
               {
+                "numero": 10,
+                "nom": "Sandry C."
+              },
+              {
                 "numero": 11,
                 "nom": "Brandon P."
+              },
+              {
+                "numero": 11,
+                "nom": "Matheo G."
               }
             ]
           }
@@ -29127,26 +28983,44 @@
       }
     ],
     "kpis_saison": {
-      "buts_marques": 11,
-      "buts_encaisses": 6,
+      "buts_marques": 14,
+      "buts_encaisses": 11,
       "clean_sheets": 2,
-      "minutes_cumulees": 5855,
-      "cartons_jaunes": 15,
-      "cartons_rouges": 0
+      "minutes_cumulees": 0,
+      "cartons_jaunes": 22,
+      "cartons_rouges": 1
     },
     "tresorerie_discipline": {
-      "cout_total_estime": 270,
-      "cout_jaunes": 270,
-      "cout_rouges": 0,
-      "amendes_evitees": 200,
+      "cout_total_estime": 431,
+      "cout_jaunes": 396,
+      "cout_rouges": 35,
+      "amendes_evitees": 350,
       "explication_calcul": {
-        "jaunes_detail": "15 cartons jaunes × 18 € = 270 €",
-        "rouges_detail": "0 carton rouge = 0 €",
-        "amende_evitee_detail": "Suivi des 4 joueurs sous sursis (Mateus N., Sandry C., Anthony P., Matheo M.) = 200 € préservés"
+        "jaunes_detail": "22 cartons jaunes × 18 € = 396 €",
+        "rouges_detail": "1 carton rouge × 35 € = 35 € (Yanis B. 03/10)",
+        "amende_evitee_detail": "Suivi des 4 joueurs sous sursis et du joueur suspendu = 350 € préservés"
       }
     },
     "cartons_rouges_details": [],
     "sursis_details": [
+      {
+        "joueur": "Matheo M.",
+        "niveau": "ROUGE",
+        "statut": "SUSPENDU / RISQUE COMMISSIONS",
+        "cartons": 3,
+        "dates": "06/09, 20/09, 18/10",
+        "expiration": "18/01/2027",
+        "message": "3 cartons jaunes reçus en moins de 3 mois (Art. 226 Règlements Généraux FFF). 1 match de suspension automatique."
+      },
+      {
+        "joueur": "Yanis B.",
+        "niveau": "ROUGE",
+        "statut": "EXPULSION / DISCIPLINE FFF",
+        "cartons": 1,
+        "dates": "03/10 (2 jaunes 58', 64')",
+        "expiration": "Commission FFF",
+        "message": "Carton rouge reçu le 03/10 à Mons-en-Barœul. Suspension automatique purgée."
+      },
       {
         "joueur": "Mateus N.",
         "niveau": "ORANGE",
@@ -29154,7 +29028,16 @@
         "cartons": 2,
         "dates": "27/09, 01/11",
         "expiration": "01/02/2027",
-        "message": "2 cartons reçus (27/09, 01/11). Prochain avertissement = 1 match ferme (Art. 226 Règlements FFF)."
+        "message": "2 cartons reçus (27/09, 01/11). Prochain avertissement = 1 match ferme."
+      },
+      {
+        "joueur": "Raphael B.",
+        "niveau": "ORANGE",
+        "statut": "SOUS SURSIS IMMÉDIAT",
+        "cartons": 2,
+        "dates": "18/10, 01/11",
+        "expiration": "01/02/2027",
+        "message": "2 cartons reçus consécutivement (18/10, 01/11). Prochain avertissement = 1 match ferme."
       },
       {
         "joueur": "Sandry C.",
@@ -29173,15 +29056,6 @@
         "dates": "20/09, 27/09",
         "expiration": "27/12/2026",
         "message": "2 cartons reçus (20/09, 27/09). Prochain avertissement = 1 match ferme."
-      },
-      {
-        "joueur": "Matheo M.",
-        "niveau": "ORANGE",
-        "statut": "SOUS SURSIS IMMÉDIAT",
-        "cartons": 2,
-        "dates": "06/09, 20/09",
-        "expiration": "20/12/2026",
-        "message": "2 cartons reçus (06/09, 20/09). Prochain avertissement = 1 match ferme."
       }
     ],
     "effectif_esg": [
@@ -29189,128 +29063,128 @@
         "id": "p_esquelbecq_1",
         "rang": 1,
         "nom": "Matheo M.",
-        "badge": "⭐ MVP / Cadre Incontournable",
-        "matchs": 5,
-        "titularisations": 5,
+        "badge": "🎯 Buteur d'Élite",
+        "matchs": 0,
+        "titularisations": 0,
         "remplacements": 0,
-        "minutes": 400,
-        "clean_sheets": 2,
-        "buts": 3,
-        "cartons_j": 2,
+        "minutes": 0,
+        "clean_sheets": 0,
+        "buts": 4,
+        "cartons_j": 3,
         "cartons_r": 0,
-        "esg_score": 96.9,
+        "esg_score": 46.0,
         "sous_scores": {
-          "volume": 25.9,
+          "volume": 0.0,
           "volume_max": 35,
-          "defense": 12.0,
+          "defense": 0.0,
           "defense_max": 30,
           "attaque": 35.0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 0.0,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 9.0
         }
       },
       {
         "id": "p_esquelbecq_2",
         "rang": 2,
-        "nom": "Raphael B.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 6,
-        "titularisations": 6,
-        "remplacements": 0,
-        "minutes": 480,
-        "clean_sheets": 2,
-        "buts": 1,
-        "cartons_j": 1,
-        "cartons_r": 0,
-        "esg_score": 82.1,
-        "sous_scores": {
-          "volume": 31.1,
-          "volume_max": 35,
-          "defense": 12.0,
-          "defense_max": 30,
-          "attaque": 12.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 3.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_3",
-        "rang": 3,
-        "nom": "Ryan K.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 6,
-        "titularisations": 5,
-        "remplacements": 1,
-        "minutes": 425,
-        "clean_sheets": 2,
-        "buts": 1,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 81.5,
-        "sous_scores": {
-          "volume": 27.5,
-          "volume_max": 35,
-          "defense": 12.0,
-          "defense_max": 30,
-          "attaque": 12.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 0.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_4",
-        "rang": 4,
-        "nom": "Sandry C.",
+        "nom": "Mateus N.",
         "badge": "🎯 Buteur d'Élite",
-        "matchs": 4,
-        "titularisations": 3,
-        "remplacements": 1,
-        "minutes": 265,
-        "clean_sheets": 2,
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
         "buts": 2,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 75.2,
+        "esg_score": 38.0,
         "sous_scores": {
-          "volume": 17.2,
+          "volume": 0.0,
           "volume_max": 35,
-          "defense": 12.0,
+          "defense": 0.0,
           "defense_max": 30,
           "attaque": 24.0,
           "attaque_max": 35,
-          "presence": 8.0,
+          "presence": 0.0,
           "presence_max": 10,
           "malus_discipline": 6.0
         }
       },
       {
-        "id": "p_esquelbecq_5",
-        "rang": 5,
-        "nom": "Djibril K.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 5,
-        "titularisations": 4,
-        "remplacements": 1,
-        "minutes": 345,
-        "clean_sheets": 2,
+        "id": "p_esquelbecq_3",
+        "rang": 3,
+        "nom": "Sandry C.",
+        "badge": "🎯 Buteur d'Élite",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
+        "buts": 2,
+        "cartons_j": 2,
+        "cartons_r": 0,
+        "esg_score": 38.0,
+        "sous_scores": {
+          "volume": 0.0,
+          "volume_max": 35,
+          "defense": 0.0,
+          "defense_max": 30,
+          "attaque": 24.0,
+          "attaque_max": 35,
+          "presence": 0.0,
+          "presence_max": 10,
+          "malus_discipline": 6.0
+        }
+      },
+      {
+        "id": "p_esquelbecq_4",
+        "rang": 4,
+        "nom": "Remi R.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 76.4,
+        "esg_score": 32.0,
         "sous_scores": {
-          "volume": 22.4,
+          "volume": 0.0,
           "volume_max": 35,
-          "defense": 12.0,
+          "defense": 0.0,
           "defense_max": 30,
           "attaque": 12.0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 0.0,
+          "presence_max": 10,
+          "malus_discipline": 0.0
+        }
+      },
+      {
+        "id": "p_esquelbecq_5",
+        "rang": 5,
+        "nom": "Ryan K.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
+        "buts": 1,
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 32.0,
+        "sous_scores": {
+          "volume": 0.0,
+          "volume_max": 35,
+          "defense": 0.0,
+          "defense_max": 30,
+          "attaque": 12.0,
+          "attaque_max": 35,
+          "presence": 0.0,
           "presence_max": 10,
           "malus_discipline": 0.0
         }
@@ -29318,25 +29192,25 @@
       {
         "id": "p_esquelbecq_6",
         "rang": 6,
-        "nom": "Antoine D.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 6,
-        "titularisations": 6,
+        "nom": "Neji Z.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
         "remplacements": 0,
-        "minutes": 480,
-        "clean_sheets": 2,
-        "buts": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
+        "buts": 1,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 70.1,
+        "esg_score": 30.0,
         "sous_scores": {
-          "volume": 31.1,
+          "volume": 0.0,
           "volume_max": 35,
-          "defense": 12.0,
+          "defense": 0.0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 12.0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 0.0,
           "presence_max": 10,
           "malus_discipline": 3.0
         }
@@ -29344,233 +29218,233 @@
       {
         "id": "p_esquelbecq_7",
         "rang": 7,
-        "nom": "Arthur T.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 5,
-        "titularisations": 5,
+        "nom": "Djibril K.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
         "remplacements": 0,
-        "minutes": 400,
-        "clean_sheets": 2,
-        "buts": 0,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 67.9,
-        "sous_scores": {
-          "volume": 25.9,
-          "volume_max": 35,
-          "defense": 12.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 0.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_8",
-        "rang": 8,
-        "nom": "Matheo G.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 6,
-        "titularisations": 5,
-        "remplacements": 1,
-        "minutes": 425,
-        "clean_sheets": 2,
-        "buts": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
+        "buts": 1,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 66.5,
+        "esg_score": 30.0,
         "sous_scores": {
-          "volume": 27.5,
+          "volume": 0.0,
           "volume_max": 35,
-          "defense": 12.0,
+          "defense": 0.0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 12.0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 0.0,
           "presence_max": 10,
           "malus_discipline": 3.0
         }
       },
       {
+        "id": "p_esquelbecq_8",
+        "rang": 8,
+        "nom": "Raphael B.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
+        "buts": 1,
+        "cartons_j": 2,
+        "cartons_r": 0,
+        "esg_score": 30.0,
+        "sous_scores": {
+          "volume": 0.0,
+          "volume_max": 35,
+          "defense": 0.0,
+          "defense_max": 30,
+          "attaque": 12.0,
+          "attaque_max": 35,
+          "presence": 0.0,
+          "presence_max": 10,
+          "malus_discipline": 6.0
+        }
+      },
+      {
         "id": "p_esquelbecq_9",
         "rang": 9,
-        "nom": "Ibrahima T.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 5,
-        "titularisations": 4,
-        "remplacements": 1,
-        "minutes": 345,
-        "clean_sheets": 2,
+        "nom": "’ X.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
         "buts": 0,
         "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 64.4,
+        "cartons_r": 1,
+        "esg_score": 30.0,
         "sous_scores": {
-          "volume": 22.4,
+          "volume": 0.0,
           "volume_max": 35,
-          "defense": 12.0,
+          "defense": 0.0,
           "defense_max": 30,
           "attaque": 0.0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 0.0,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 10.0
         }
       },
       {
         "id": "p_esquelbecq_10",
         "rang": 10,
-        "nom": "Anthony P.",
-        "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 6,
-        "titularisations": 5,
-        "remplacements": 1,
-        "minutes": 425,
-        "clean_sheets": 1,
+        "nom": "Ibrahima T.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
         "buts": 0,
-        "cartons_j": 2,
+        "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 57.5,
+        "esg_score": 30.0,
         "sous_scores": {
-          "volume": 27.5,
+          "volume": 0.0,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 0.0,
           "defense_max": 30,
           "attaque": 0.0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 0.0,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 3.0
         }
       },
       {
         "id": "p_esquelbecq_11",
         "rang": 11,
-        "nom": "Raphael L.",
-        "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 5,
-        "titularisations": 4,
-        "remplacements": 1,
-        "minutes": 345,
-        "clean_sheets": 1,
+        "nom": "Julian H.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
         "buts": 0,
-        "cartons_j": 0,
+        "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 58.4,
+        "esg_score": 30.0,
         "sous_scores": {
-          "volume": 22.4,
+          "volume": 0.0,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 0.0,
           "defense_max": 30,
           "attaque": 0.0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 0.0,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 3.0
         }
       },
       {
         "id": "p_esquelbecq_12",
         "rang": 12,
-        "nom": "Remi R.",
-        "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 5,
-        "titularisations": 2,
-        "remplacements": 3,
-        "minutes": 235,
+        "nom": "Anthime B.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
         "clean_sheets": 0,
-        "buts": 1,
-        "cartons_j": 0,
+        "buts": 0,
+        "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 57.2,
+        "esg_score": 30.0,
         "sous_scores": {
-          "volume": 15.2,
+          "volume": 0.0,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 0.0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 0.0,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 3.0
         }
       },
       {
         "id": "p_esquelbecq_13",
         "rang": 13,
-        "nom": "Julian H.",
-        "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 4,
-        "titularisations": 4,
+        "nom": "Matheo G.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
         "remplacements": 0,
-        "minutes": 320,
-        "clean_sheets": 1,
+        "minutes": 0,
+        "clean_sheets": 0,
         "buts": 0,
-        "cartons_j": 0,
+        "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 54.7,
+        "esg_score": 30.0,
         "sous_scores": {
-          "volume": 20.7,
+          "volume": 0.0,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 0.0,
           "defense_max": 30,
           "attaque": 0.0,
           "attaque_max": 35,
-          "presence": 8.0,
+          "presence": 0.0,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 3.0
         }
       },
       {
         "id": "p_esquelbecq_14",
         "rang": 14,
-        "nom": "Mateus N.",
-        "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 4,
-        "titularisations": 2,
-        "remplacements": 2,
-        "minutes": 210,
-        "clean_sheets": 0,
-        "buts": 1,
-        "cartons_j": 2,
-        "cartons_r": 0,
-        "esg_score": 47.6,
-        "sous_scores": {
-          "volume": 13.6,
-          "volume_max": 35,
-          "defense": 0.0,
-          "defense_max": 30,
-          "attaque": 12.0,
-          "attaque_max": 35,
-          "presence": 8.0,
-          "presence_max": 10,
-          "malus_discipline": 6.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_15",
-        "rang": 15,
-        "nom": "Neji Z.",
-        "badge": "⚙️ Régulateur / Titulaire Cadre",
-        "matchs": 4,
-        "titularisations": 3,
-        "remplacements": 1,
-        "minutes": 265,
+        "nom": "Antoine D.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
         "clean_sheets": 0,
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 42.2,
+        "esg_score": 30.0,
         "sous_scores": {
-          "volume": 17.2,
+          "volume": 0.0,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
           "attaque": 0.0,
           "attaque_max": 35,
-          "presence": 8.0,
+          "presence": 0.0,
+          "presence_max": 10,
+          "malus_discipline": 3.0
+        }
+      },
+      {
+        "id": "p_esquelbecq_15",
+        "rang": 15,
+        "nom": "Charly B.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
+        "buts": 0,
+        "cartons_j": 1,
+        "cartons_r": 0,
+        "esg_score": 30.0,
+        "sous_scores": {
+          "volume": 0.0,
+          "volume_max": 35,
+          "defense": 0.0,
+          "defense_max": 30,
+          "attaque": 0.0,
+          "attaque_max": 35,
+          "presence": 0.0,
           "presence_max": 10,
           "malus_discipline": 3.0
         }
@@ -29578,162 +29452,6 @@
       {
         "id": "p_esquelbecq_16",
         "rang": 16,
-        "nom": "Alexis K.",
-        "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 2,
-        "titularisations": 2,
-        "remplacements": 0,
-        "minutes": 160,
-        "clean_sheets": 1,
-        "buts": 0,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 40.4,
-        "sous_scores": {
-          "volume": 10.4,
-          "volume_max": 35,
-          "defense": 6.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 4.0,
-          "presence_max": 10,
-          "malus_discipline": 0.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_17",
-        "rang": 17,
-        "nom": "Charly B.",
-        "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 3,
-        "titularisations": 1,
-        "remplacements": 2,
-        "minutes": 130,
-        "clean_sheets": 0,
-        "buts": 0,
-        "cartons_j": 1,
-        "cartons_r": 0,
-        "esg_score": 31.4,
-        "sous_scores": {
-          "volume": 8.4,
-          "volume_max": 35,
-          "defense": 0.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 6.0,
-          "presence_max": 10,
-          "malus_discipline": 3.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_18",
-        "rang": 18,
-        "nom": "Yanis B.",
-        "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 3,
-        "titularisations": 0,
-        "remplacements": 3,
-        "minutes": 75,
-        "clean_sheets": 0,
-        "buts": 0,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 30.9,
-        "sous_scores": {
-          "volume": 4.9,
-          "volume_max": 35,
-          "defense": 0.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 6.0,
-          "presence_max": 10,
-          "malus_discipline": 0.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_19",
-        "rang": 19,
-        "nom": "Anthime B.",
-        "badge": "⚡ Super-Sub / Impact Player",
-        "matchs": 3,
-        "titularisations": 0,
-        "remplacements": 3,
-        "minutes": 75,
-        "clean_sheets": 0,
-        "buts": 0,
-        "cartons_j": 1,
-        "cartons_r": 0,
-        "esg_score": 30.0,
-        "sous_scores": {
-          "volume": 4.9,
-          "volume_max": 35,
-          "defense": 0.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 6.0,
-          "presence_max": 10,
-          "malus_discipline": 3.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_20",
-        "rang": 20,
-        "nom": "Harthur D.",
-        "badge": "🔄 Rotation Effectif",
-        "matchs": 1,
-        "titularisations": 0,
-        "remplacements": 1,
-        "minutes": 25,
-        "clean_sheets": 0,
-        "buts": 0,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 30.0,
-        "sous_scores": {
-          "volume": 1.6,
-          "volume_max": 35,
-          "defense": 0.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 2.0,
-          "presence_max": 10,
-          "malus_discipline": 0.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_21",
-        "rang": 21,
-        "nom": "Valentin D.",
-        "badge": "🔄 Rotation Effectif",
-        "matchs": 1,
-        "titularisations": 0,
-        "remplacements": 1,
-        "minutes": 25,
-        "clean_sheets": 0,
-        "buts": 0,
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 30.0,
-        "sous_scores": {
-          "volume": 1.6,
-          "volume_max": 35,
-          "defense": 0.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 2.0,
-          "presence_max": 10,
-          "malus_discipline": 0.0
-        }
-      },
-      {
-        "id": "p_esquelbecq_22",
-        "rang": 22,
         "nom": "Laurent P.",
         "badge": "🔄 Rotation Effectif",
         "matchs": 0,
@@ -29756,21 +29474,73 @@
           "presence_max": 10,
           "malus_discipline": 3.0
         }
+      },
+      {
+        "id": "p_esquelbecq_17",
+        "rang": 17,
+        "nom": "Yanis B.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
+        "buts": 0,
+        "cartons_j": 2,
+        "cartons_r": 0,
+        "esg_score": 30.0,
+        "sous_scores": {
+          "volume": 0.0,
+          "volume_max": 35,
+          "defense": 0.0,
+          "defense_max": 30,
+          "attaque": 0.0,
+          "attaque_max": 35,
+          "presence": 0.0,
+          "presence_max": 10,
+          "malus_discipline": 6.0
+        }
+      },
+      {
+        "id": "p_esquelbecq_18",
+        "rang": 18,
+        "nom": "Anthony P.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 0,
+        "titularisations": 0,
+        "remplacements": 0,
+        "minutes": 0,
+        "clean_sheets": 0,
+        "buts": 0,
+        "cartons_j": 2,
+        "cartons_r": 0,
+        "esg_score": 30.0,
+        "sous_scores": {
+          "volume": 0.0,
+          "volume_max": 35,
+          "defense": 0.0,
+          "defense_max": 30,
+          "attaque": 0.0,
+          "attaque_max": 35,
+          "presence": 0.0,
+          "presence_max": 10,
+          "malus_discipline": 6.0
+        }
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 1.0,
+      "ppm_championnat": 1.2,
       "probabilite_montee_pct": 10.0,
       "probabilite_maintien_pct": 78.0,
       "taux_invincibilite": 50.0,
       "bilan_global": {
-        "matchs": 6,
-        "victoires": 3,
+        "matchs": 8,
+        "victoires": 4,
         "nuls": 0,
-        "defaites": 3,
-        "buts_pour": 11,
-        "buts_contre": 6,
-        "difference": 5
+        "defaites": 4,
+        "buts_pour": 14,
+        "buts_contre": 11,
+        "difference": 3
       },
       "bilan_championnat": {
         "matchs": 5,
@@ -29783,8 +29553,8 @@
         "difference": -4,
         "ppm": 1.2
       },
-      "ratio_clean_sheet_pct": 33.3,
-      "moyenne_buts_encaisses": 1.0,
+      "ratio_clean_sheet_pct": 25.0,
+      "moyenne_buts_encaisses": 1.38,
       "projection_saison": {
         "points_prevus": 28.0,
         "rang_final_estime": "Milieu de tableau Régional 2 Poule A (Objectif maintien)"

@@ -1702,13 +1702,40 @@ def build_esquelbecq_pwa_payload(base_dir: str):
 
     sursis_details = [
         {
+            "joueur": "Matheo M.",
+            "niveau": "ROUGE",
+            "statut": "SUSPENDU / RISQUE COMMISSIONS",
+            "cartons": 3,
+            "dates": "06/09, 20/09, 18/10",
+            "expiration": "18/01/2027",
+            "message": "3 cartons jaunes reçus en moins de 3 mois (Art. 226 Règlements Généraux FFF). 1 match de suspension automatique."
+        },
+        {
+            "joueur": "Yanis B.",
+            "niveau": "ROUGE",
+            "statut": "EXPULSION / DISCIPLINE FFF",
+            "cartons": 1,
+            "dates": "03/10 (2 jaunes 58', 64')",
+            "expiration": "Commission FFF",
+            "message": "Carton rouge reçu le 03/10 à Mons-en-Barœul. Suspension automatique purgée."
+        },
+        {
             "joueur": "Mateus N.",
             "niveau": "ORANGE",
             "statut": "SOUS SURSIS IMMÉDIAT",
             "cartons": 2,
             "dates": "27/09, 01/11",
             "expiration": "01/02/2027",
-            "message": "2 cartons reçus (27/09, 01/11). Prochain avertissement = 1 match ferme (Art. 226 Règlements FFF)."
+            "message": "2 cartons reçus (27/09, 01/11). Prochain avertissement = 1 match ferme."
+        },
+        {
+            "joueur": "Raphael B.",
+            "niveau": "ORANGE",
+            "statut": "SOUS SURSIS IMMÉDIAT",
+            "cartons": 2,
+            "dates": "18/10, 01/11",
+            "expiration": "01/02/2027",
+            "message": "2 cartons reçus consécutivement (18/10, 01/11). Prochain avertissement = 1 match ferme."
         },
         {
             "joueur": "Sandry C.",
@@ -1727,29 +1754,22 @@ def build_esquelbecq_pwa_payload(base_dir: str):
             "dates": "20/09, 27/09",
             "expiration": "27/12/2026",
             "message": "2 cartons reçus (20/09, 27/09). Prochain avertissement = 1 match ferme."
-        },
-        {
-            "joueur": "Matheo M.",
-            "niveau": "ORANGE",
-            "statut": "SOUS SURSIS IMMÉDIAT",
-            "cartons": 2,
-            "dates": "06/09, 20/09",
-            "expiration": "20/12/2026",
-            "message": "2 cartons reçus (06/09, 20/09). Prochain avertissement = 1 match ferme."
         }
     ]
 
-    total_yellows = total_yellows_club if total_yellows_club > 0 else 14
-    cout_total = total_yellows * 18
+    total_yellows = total_yellows_club if total_yellows_club > 0 else 20
+    cout_jaunes = total_yellows * 18
+    cout_rouges = total_reds_club * 35 if total_reds_club > 0 else 35
+    cout_total = cout_jaunes + cout_rouges
     tresorerie = {
         "cout_total_estime": cout_total,
-        "cout_jaunes": cout_total,
-        "cout_rouges": 0,
-        "amendes_evitees": 200,
+        "cout_jaunes": cout_jaunes,
+        "cout_rouges": cout_rouges,
+        "amendes_evitees": 350,
         "explication_calcul": {
-            "jaunes_detail": f"{total_yellows} cartons jaunes × 18 € = {cout_total} €",
-            "rouges_detail": "0 carton rouge = 0 €",
-            "amende_evitee_detail": "Suivi des 4 joueurs sous sursis (Mateus N., Sandry C., Anthony P., Matheo M.) = 200 € préservés"
+            "jaunes_detail": f"{total_yellows} cartons jaunes × 18 € = {cout_jaunes} €",
+            "rouges_detail": f"1 carton rouge × 35 € = {cout_rouges} € (Yanis B. 03/10)",
+            "amende_evitee_detail": "Suivi des 4 joueurs sous sursis et du joueur suspendu = 350 € préservés"
         }
     }
 

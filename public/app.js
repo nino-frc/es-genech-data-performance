@@ -38,7 +38,19 @@ function getClubLogo(teamName) {
   if (up.includes('SECLIN')) return './logos/logo_seclin.jpg';
   if (up.includes('LESQUIN')) return './logos/logo_lesquin.jpg';
 
+  // Blasons Officiels Régional 2 Poule A
   if (up.includes('ESQUELBECQ')) return './logos/logo_esquelbecq.jpg';
+  if (up.includes('MARCK')) return './logos/logo_marck.jpg';
+  if (up.includes('OUTREAU')) return './logos/logo_outreau.jpg';
+  if (up.includes('AIRE')) return './logos/logo_aire.jpg';
+  if (up.includes('LONGUENESSE')) return './logos/logo_longuenesse.jpg';
+  if (up.includes('CALONNE')) return './logos/logo_calonne.jpg';
+  if (up.includes('BEAU MARAIS') || up.includes('BEAUMARAIS') || (up.includes('CALAIS') && !up.includes('MARCK'))) return './logos/logo_calais_beaumarais.jpg';
+  if (up.includes('MALO') || (up.includes('DUNKERQUE') && !up.includes('LITTORAL'))) return './logos/logo_malo.jpg';
+  if (up.includes('NEUVILLE') || up.includes('FERRAIN')) return './logos/logo_neuville.jpg';
+  if (up.includes('COQUELLES')) return './logos/logo_coquelles.jpg';
+  if (up.includes('MONS')) return './logos/logo_mons.jpg';
+  if (up.includes('CASSEL')) return './logos/logo_cassel.jpg';
   
   // Vrais blasons officiels des clubs (PNG / JPG HD officiels)
   if (up.includes('TATINGHEM') || up.includes('SMLT')) return './logos/logo_tatinghem.png';
@@ -1701,9 +1713,9 @@ function renderInterface(data) {
       const desc = minEl.parentElement ? minEl.parentElement.querySelector('.kpi-desc') : null;
       if (desc) desc.textContent = "Cumul effectif (12 matchs TCC)";
     } else if (currentTeamId === '521813_SENIOR_M1' || currentTeamId === 'ESQUELBECQ_SENIOR_M1') {
-      minEl.textContent = "5 940 mn";
+      minEl.textContent = "7 920 mn";
       const desc = minEl.parentElement ? minEl.parentElement.querySelector('.kpi-desc') : null;
-      if (desc) desc.textContent = "Cumul effectif (6 matchs officiels FFF)";
+      if (desc) desc.textContent = "Cumul effectif (8 matchs officiels FFF)";
     } else {
       minEl.textContent = kpis.minutes_cumulees ? `${kpis.minutes_cumulees.toLocaleString()} mn` : '--';
     }
@@ -1735,9 +1747,9 @@ function renderInterface(data) {
       const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
       if (desc) desc.textContent = "8 J en R2 • 7 J en Coupe";
     } else if (currentTeamId === '521813_SENIOR_M1' || currentTeamId === 'ESQUELBECQ_SENIOR_M1') {
-      cardsEl.innerHTML = `10 J. / 0 R. <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(14 J. TCC)</span>`;
+      cardsEl.innerHTML = `14 J. / 1 R. <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(20 J. / 1 R. TCC)</span>`;
       const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
-      if (desc) desc.textContent = "10 J en R2 • 4 J en Coupe";
+      if (desc) desc.textContent = "14 J / 1 R en R2 • 6 J en Coupe";
     } else {
       cardsEl.textContent = `${kpis.cartons_jaunes ?? 0} J. / ${kpis.cartons_rouges ?? 0} R.`;
     }
