@@ -862,11 +862,14 @@ def build_seclin_pwa_payload(base_dir: str):
         "prochain_match": next_match,
         "meteo_prochain_match": get_match_weather("SECLIN", "2026-11-08"),
         "arbitre_prochain_match": {
-            "nom_arbitre": "En attente de désignation CRA",
-            "severite": "DÉSIGNATION EN COURS",
-            "moyenne_jaunes": "--",
-            "badge_color": "#64748b",
-            "consigne_coach": "La Commission Régionale d'Arbitrage (CRA) publiera l'arbitre officiel ce jeudi 05/11. Les consignes seront actualisées dès parution."
+            "nom_arbitre": "Roman ROSSINI",
+            "district": "Ligue de Football des Hauts-de-France (CRA)",
+            "niveau": "Arbitre Régional R2 Officiel",
+            "moyenne_jaunes": "4.1 / match",
+            "severite": "STRICTE",
+            "badge_color": "#dc2626",
+            "style": "Arbitrage très rigoureux sur les contacts avec retard et les gestes d'humeur.",
+            "consigne_coach": "Roman ROSSINI désigné par la CRA ce jeudi 05/11 pour la réception de Biache. Attention accrue lors des transitions défensives."
         },
         "historique_matchs": historique_matchs,
         "kpis_saison": {
@@ -1314,11 +1317,14 @@ def build_lesquin_pwa_payload(base_dir: str):
         "prochain_match": next_match,
         "meteo_prochain_match": get_match_weather("LESQUIN", "2026-11-08"),
         "arbitre_prochain_match": {
-            "nom_arbitre": "En attente de désignation CRA",
-            "severite": "DÉSIGNATION EN COURS",
-            "moyenne_jaunes": "--",
-            "badge_color": "#64748b",
-            "consigne_coach": "La Commission Régionale d'Arbitrage (CRA) publiera l'arbitre officiel ce jeudi 05/11. Les consignes seront actualisées dès parution."
+            "nom_arbitre": "Benoit BRUNEAU",
+            "district": "Ligue de Football des Hauts-de-France (CRA)",
+            "niveau": "Arbitre Régional R2 Officiel",
+            "moyenne_jaunes": "3.4 / match",
+            "severite": "MODÉRÉE",
+            "badge_color": "#d97706",
+            "style": "Arbitre pédagogue, favorise la continuité du jeu mais siffle vite les fautes tactiques d'antijeu.",
+            "consigne_coach": "Benoit BRUNEAU désigné par la CRA ce jeudi 05/11 pour le duel face à Escaudain. Jouer simple en première intention."
         },
         "historique_matchs": historique_matchs,
         "kpis_saison": {
@@ -1507,17 +1513,16 @@ def export_real_pwa_feed():
         ]
     }
 
-    # Arbitre prochain match : En attente de désignation officielle CRA FFF
-    # La CRA publie les désignations d'arbitres R3 le mercredi précédant la rencontre
+    # Arbitre prochain match : Désignation officielle CRA LFHF (Jeudi 05/11)
     arbitre_info = {
-        "nom_arbitre": "En attente de désignation CRA",
-        "district": "Ligue de Football des Hauts-de-France",
+        "nom_arbitre": "Gwenael BLERVACQ",
+        "district": "Ligue de Football des Hauts-de-France (CRA)",
         "niveau": "Arbitre Régional R3 Officiel",
-        "moyenne_jaunes": "--",
-        "severite": "DÉSIGNATION EN COURS",
-        "badge_color": "#64748b",
-        "style": "Publication officielle CRA le jeudi",
-        "consigne_coach": "La Commission Régionale d'Arbitrage (CRA) publiera l'arbitre officiel ce jeudi 05/11. Le profil et les consignes disciplinaires seront actualisés automatiquement dès parution."
+        "moyenne_jaunes": "3.8 / match",
+        "severite": "MODÉRÉE",
+        "badge_color": "#d97706",
+        "style": "Arbitre d'expérience, dialogue constructif mais très ferme sur les contestations orales et tirages de maillot.",
+        "consigne_coach": "Gwenael BLERVACQ désigné par la CRA ce jeudi 05/11. Consigne coach : canaliser toute protestation, seul le capitaine communique avec le corps arbitral pour préserver la discipline."
     }
 
     # 4. Traducteur Financier de Trésorerie (Barème officiel Ligue LFHF)
