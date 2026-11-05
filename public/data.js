@@ -8,7 +8,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "05/11/2026 à 10:18"
+      "derniere_maj": "05/11/2026 à 10:27"
     },
     "dernier_match": {
       "id": "r3_j5_aniche_genech",
@@ -4032,7 +4032,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "05/11/2026 à 10:18"
+      "derniere_maj": "05/11/2026 à 10:27"
     },
     "dernier_match": {
       "id": "m_u18_m1_79496282-et-c-anstai",
@@ -5523,7 +5523,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "05/11/2026 à 10:18"
+      "derniere_maj": "05/11/2026 à 10:27"
     },
     "dernier_match": {
       "id": "m_senior_f2_78809066-lille-e-s-l",
@@ -6487,26 +6487,26 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "05/11/2026 à 10:18"
+      "derniere_maj": "05/11/2026 à 10:27"
     },
     "dernier_match": {
-      "id": "m_senior_b_j4_loos",
-      "competition": "D2 Poule C • Journée 4",
-      "domicile": "LOOS LILLE OLIVEAUX 1",
-      "exterieur": "GENECH ES 2",
-      "score_domicile": 1,
+      "id": "m_senior_b_j5_roubaix",
+      "competition": "D2 Poule C • Journée 5",
+      "domicile": "GENECH ES 2",
+      "exterieur": "ROUBAIX RC 2",
+      "score_domicile": 3,
       "score_exterieur": 1,
-      "score_display": "1 - 1",
-      "date_heure": "2026-10-18 15:00",
+      "score_display": "3 - 1",
+      "date_heure": "2026-11-01 14:30",
       "statut": "TERMINE"
     },
     "evenements_dernier_match": [],
     "prochain_match": {
-      "competition": "D2 Poule C • Journée 5",
-      "date_heure": "2026-11-01 14:30",
-      "lieu": "Stade Léo Lagrange (Genech)",
-      "domicile": "GENECH ES 2",
-      "exterieur": "ROUBAIX RC 2",
+      "competition": "D2 Poule C • Journée 6",
+      "date_heure": "2026-11-08 16:30",
+      "lieu": "Terrain adverse",
+      "domicile": "LESQUIN US 3",
+      "exterieur": "GENECH ES 2",
       "comparatif": {
         "titre": "Comparatif de Performance (D2 Poule C)",
         "adversaire_nom": "Roubaix RC 2",
@@ -6542,6 +6542,32 @@ window.MATCHDAY_TEAMS = {
       "consigne_coach": "Arbitre officiel de District. Veiller au calme dans les duels et laisser le capitaine dialoguer."
     },
     "historique_matchs": [
+      {
+        "id": "m_senior_b_j5_roubaix",
+        "competition": "Seniors D2 • Journée 5",
+        "comp_type": "CHAMPIONNAT",
+        "date": "01/11/2026",
+        "date_heure": "2026-11-01 14:30",
+        "domicile": "GENECH ES 2",
+        "exterieur": "ROUBAIX RC 2",
+        "score_domicile": 3,
+        "score_exterieur": 1,
+        "score_display": "3 - 1",
+        "is_domicile": true,
+        "resultat": "V",
+        "resultat_label": "Victoire",
+        "evenements": [],
+        "compositions": {
+          "genech": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "ROUBAIX RC 2",
+            "titulaires": []
+          }
+        }
+      },
       {
         "id": "m_senior_b_j4_loos",
         "competition": "Seniors D2 • Journée 4",
@@ -6847,10 +6873,10 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "kpis_saison": {
-      "buts_marques": 14,
-      "buts_encaisses": 16,
+      "buts_marques": 17,
+      "buts_encaisses": 17,
       "clean_sheets": 1,
-      "minutes_cumulees": 5400,
+      "minutes_cumulees": 6300,
       "cartons_jaunes": 0,
       "cartons_rouges": 0
     },
@@ -7178,31 +7204,31 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 1.0,
+      "ppm_championnat": 1.4,
       "probabilite_montee_pct": 45.0,
       "probabilite_maintien_pct": 98.0,
-      "taux_invincibilite": 50.0,
+      "taux_invincibilite": 57.1,
       "bilan_global": {
-        "matchs": 6,
-        "victoires": 2,
+        "matchs": 7,
+        "victoires": 3,
         "nuls": 1,
         "defaites": 3,
-        "buts_pour": 14,
-        "buts_contre": 16,
-        "difference": -2
+        "buts_pour": 17,
+        "buts_contre": 17,
+        "difference": 0
       },
       "bilan_championnat": {
-        "matchs": 4,
-        "victoires": 1,
+        "matchs": 5,
+        "victoires": 2,
         "nuls": 1,
         "defaites": 2,
-        "points": 4,
-        "ppm": 1.0
+        "points": 7,
+        "ppm": 1.4
       },
-      "ratio_clean_sheet_pct": 16.7,
-      "moyenne_buts_encaisses": 2.67,
+      "ratio_clean_sheet_pct": 14.3,
+      "moyenne_buts_encaisses": 2.43,
       "projection_saison": {
-        "points_prevus": 22.0,
+        "points_prevus": 30.8,
         "rang_final_estime": "Milieu de tableau"
       },
       "matrice_quarts_heure": [
@@ -7412,7 +7438,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "05/11/2026 à 10:18"
+      "derniere_maj": "05/11/2026 à 10:27"
     },
     "dernier_match": {
       "id": "seclin_56215870",
@@ -11949,7 +11975,248 @@ window.MATCHDAY_TEAMS = {
         "point_vigilance": "Excellente efficacité offensive (12-0 vs Montigny)"
       }
     },
-    "classement": []
+    "classement": [
+      {
+        "rang": 1,
+        "equipe": "CROIX FIC 2",
+        "nom": "CROIX FIC 2",
+        "points": 11,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 2,
+        "perdus": 0,
+        "buts_pour": 7,
+        "buts_contre": 4,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "N"
+        ]
+      },
+      {
+        "rang": 2,
+        "equipe": "FOURMIES US",
+        "nom": "FOURMIES US",
+        "points": 10,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 1,
+        "perdus": 1,
+        "buts_pour": 15,
+        "buts_contre": 7,
+        "diff": 8,
+        "difference": 8,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "N"
+        ]
+      },
+      {
+        "rang": 3,
+        "equipe": "ESCAUDAIN USF",
+        "nom": "ESCAUDAIN USF",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 11,
+        "buts_contre": 8,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 4,
+        "equipe": "SECLIN FC",
+        "nom": "SECLIN FC",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 16,
+        "buts_contre": 3,
+        "diff": 13,
+        "difference": 13,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 5,
+        "equipe": "NOEUX LES MINES US",
+        "nom": "NOEUX LES MINES US",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 7,
+        "buts_contre": 3,
+        "diff": 4,
+        "difference": 4,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 6,
+        "equipe": "MERVILLE USM",
+        "nom": "MERVILLE USM",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 0,
+        "perdus": 2,
+        "buts_pour": 15,
+        "buts_contre": 7,
+        "diff": 8,
+        "difference": 8,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "D"
+        ]
+      },
+      {
+        "rang": 7,
+        "equipe": "RAISMES FC",
+        "nom": "RAISMES FC",
+        "points": 8,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 2,
+        "perdus": 1,
+        "buts_pour": 9,
+        "buts_contre": 6,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 8,
+        "equipe": "BIACHE ST VAAST US",
+        "nom": "BIACHE ST VAAST US",
+        "points": 6,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 0,
+        "perdus": 3,
+        "buts_pour": 14,
+        "buts_contre": 7,
+        "diff": 7,
+        "difference": 7,
+        "forme": [
+          "V",
+          "V",
+          "D",
+          "D"
+        ]
+      },
+      {
+        "rang": 9,
+        "equipe": "NOYELLES S/LENS US",
+        "nom": "NOYELLES S/LENS US",
+        "points": 4,
+        "joues": 5,
+        "gagnes": 1,
+        "nuls": 1,
+        "perdus": 3,
+        "buts_pour": 12,
+        "buts_contre": 10,
+        "diff": 2,
+        "difference": 2,
+        "forme": [
+          "V",
+          "N",
+          "D",
+          "D"
+        ]
+      },
+      {
+        "rang": 10,
+        "equipe": "LESQUIN US",
+        "nom": "LESQUIN US",
+        "points": 3,
+        "joues": 5,
+        "gagnes": 0,
+        "nuls": 3,
+        "perdus": 2,
+        "buts_pour": 8,
+        "buts_contre": 11,
+        "diff": -3,
+        "difference": -3,
+        "forme": [
+          "N",
+          "N",
+          "N",
+          "D"
+        ]
+      },
+      {
+        "rang": 11,
+        "equipe": "COURCELLES US",
+        "nom": "COURCELLES US",
+        "points": 2,
+        "joues": 5,
+        "gagnes": 0,
+        "nuls": 2,
+        "perdus": 3,
+        "buts_pour": 3,
+        "buts_contre": 6,
+        "diff": -3,
+        "difference": -3,
+        "forme": [
+          "N",
+          "N",
+          "D",
+          "D"
+        ]
+      },
+      {
+        "rang": 12,
+        "equipe": "MONTIGNY GOHELLE FC",
+        "nom": "MONTIGNY GOHELLE FC",
+        "points": 0,
+        "joues": 5,
+        "gagnes": 0,
+        "nuls": 0,
+        "perdus": 5,
+        "buts_pour": 2,
+        "buts_contre": 47,
+        "diff": -45,
+        "difference": -45,
+        "forme": [
+          "D",
+          "D",
+          "D",
+          "D"
+        ]
+      }
+    ]
   },
   "SECLIN_SENIOR_M1": {
     "equipe_active": {
@@ -11960,7 +12227,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "05/11/2026 à 10:18"
+      "derniere_maj": "05/11/2026 à 10:27"
     },
     "dernier_match": {
       "id": "seclin_56215870",
@@ -16497,7 +16764,248 @@ window.MATCHDAY_TEAMS = {
         "point_vigilance": "Excellente efficacité offensive (12-0 vs Montigny)"
       }
     },
-    "classement": []
+    "classement": [
+      {
+        "rang": 1,
+        "equipe": "CROIX FIC 2",
+        "nom": "CROIX FIC 2",
+        "points": 11,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 2,
+        "perdus": 0,
+        "buts_pour": 7,
+        "buts_contre": 4,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "N"
+        ]
+      },
+      {
+        "rang": 2,
+        "equipe": "FOURMIES US",
+        "nom": "FOURMIES US",
+        "points": 10,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 1,
+        "perdus": 1,
+        "buts_pour": 15,
+        "buts_contre": 7,
+        "diff": 8,
+        "difference": 8,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "N"
+        ]
+      },
+      {
+        "rang": 3,
+        "equipe": "ESCAUDAIN USF",
+        "nom": "ESCAUDAIN USF",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 11,
+        "buts_contre": 8,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 4,
+        "equipe": "SECLIN FC",
+        "nom": "SECLIN FC",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 16,
+        "buts_contre": 3,
+        "diff": 13,
+        "difference": 13,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 5,
+        "equipe": "NOEUX LES MINES US",
+        "nom": "NOEUX LES MINES US",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 7,
+        "buts_contre": 3,
+        "diff": 4,
+        "difference": 4,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 6,
+        "equipe": "MERVILLE USM",
+        "nom": "MERVILLE USM",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 0,
+        "perdus": 2,
+        "buts_pour": 15,
+        "buts_contre": 7,
+        "diff": 8,
+        "difference": 8,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "D"
+        ]
+      },
+      {
+        "rang": 7,
+        "equipe": "RAISMES FC",
+        "nom": "RAISMES FC",
+        "points": 8,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 2,
+        "perdus": 1,
+        "buts_pour": 9,
+        "buts_contre": 6,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 8,
+        "equipe": "BIACHE ST VAAST US",
+        "nom": "BIACHE ST VAAST US",
+        "points": 6,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 0,
+        "perdus": 3,
+        "buts_pour": 14,
+        "buts_contre": 7,
+        "diff": 7,
+        "difference": 7,
+        "forme": [
+          "V",
+          "V",
+          "D",
+          "D"
+        ]
+      },
+      {
+        "rang": 9,
+        "equipe": "NOYELLES S/LENS US",
+        "nom": "NOYELLES S/LENS US",
+        "points": 4,
+        "joues": 5,
+        "gagnes": 1,
+        "nuls": 1,
+        "perdus": 3,
+        "buts_pour": 12,
+        "buts_contre": 10,
+        "diff": 2,
+        "difference": 2,
+        "forme": [
+          "V",
+          "N",
+          "D",
+          "D"
+        ]
+      },
+      {
+        "rang": 10,
+        "equipe": "LESQUIN US",
+        "nom": "LESQUIN US",
+        "points": 3,
+        "joues": 5,
+        "gagnes": 0,
+        "nuls": 3,
+        "perdus": 2,
+        "buts_pour": 8,
+        "buts_contre": 11,
+        "diff": -3,
+        "difference": -3,
+        "forme": [
+          "N",
+          "N",
+          "N",
+          "D"
+        ]
+      },
+      {
+        "rang": 11,
+        "equipe": "COURCELLES US",
+        "nom": "COURCELLES US",
+        "points": 2,
+        "joues": 5,
+        "gagnes": 0,
+        "nuls": 2,
+        "perdus": 3,
+        "buts_pour": 3,
+        "buts_contre": 6,
+        "diff": -3,
+        "difference": -3,
+        "forme": [
+          "N",
+          "N",
+          "D",
+          "D"
+        ]
+      },
+      {
+        "rang": 12,
+        "equipe": "MONTIGNY GOHELLE FC",
+        "nom": "MONTIGNY GOHELLE FC",
+        "points": 0,
+        "joues": 5,
+        "gagnes": 0,
+        "nuls": 0,
+        "perdus": 5,
+        "buts_pour": 2,
+        "buts_contre": 47,
+        "diff": -45,
+        "difference": -45,
+        "forme": [
+          "D",
+          "D",
+          "D",
+          "D"
+        ]
+      }
+    ]
   },
   "500426_SENIOR_M1": {
     "equipe_active": {
@@ -16508,7 +17016,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "05/11/2026 à 10:18"
+      "derniere_maj": "05/11/2026 à 10:27"
     },
     "dernier_match": {
       "id": "lesquin_56215867",
@@ -20197,7 +20705,248 @@ window.MATCHDAY_TEAMS = {
         "point_vigilance": "Gérer la fin de match pour concrétiser les nuls en victoires"
       }
     },
-    "classement": []
+    "classement": [
+      {
+        "rang": 1,
+        "equipe": "CROIX FIC 2",
+        "nom": "CROIX FIC 2",
+        "points": 11,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 2,
+        "perdus": 0,
+        "buts_pour": 7,
+        "buts_contre": 4,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "N"
+        ]
+      },
+      {
+        "rang": 2,
+        "equipe": "FOURMIES US",
+        "nom": "FOURMIES US",
+        "points": 10,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 1,
+        "perdus": 1,
+        "buts_pour": 15,
+        "buts_contre": 7,
+        "diff": 8,
+        "difference": 8,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "N"
+        ]
+      },
+      {
+        "rang": 3,
+        "equipe": "ESCAUDAIN USF",
+        "nom": "ESCAUDAIN USF",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 11,
+        "buts_contre": 8,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 4,
+        "equipe": "SECLIN FC",
+        "nom": "SECLIN FC",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 16,
+        "buts_contre": 3,
+        "diff": 13,
+        "difference": 13,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 5,
+        "equipe": "NOEUX LES MINES US",
+        "nom": "NOEUX LES MINES US",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 7,
+        "buts_contre": 3,
+        "diff": 4,
+        "difference": 4,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 6,
+        "equipe": "MERVILLE USM",
+        "nom": "MERVILLE USM",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 0,
+        "perdus": 2,
+        "buts_pour": 15,
+        "buts_contre": 7,
+        "diff": 8,
+        "difference": 8,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "D"
+        ]
+      },
+      {
+        "rang": 7,
+        "equipe": "RAISMES FC",
+        "nom": "RAISMES FC",
+        "points": 8,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 2,
+        "perdus": 1,
+        "buts_pour": 9,
+        "buts_contre": 6,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 8,
+        "equipe": "BIACHE ST VAAST US",
+        "nom": "BIACHE ST VAAST US",
+        "points": 6,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 0,
+        "perdus": 3,
+        "buts_pour": 14,
+        "buts_contre": 7,
+        "diff": 7,
+        "difference": 7,
+        "forme": [
+          "V",
+          "V",
+          "D",
+          "D"
+        ]
+      },
+      {
+        "rang": 9,
+        "equipe": "NOYELLES S/LENS US",
+        "nom": "NOYELLES S/LENS US",
+        "points": 4,
+        "joues": 5,
+        "gagnes": 1,
+        "nuls": 1,
+        "perdus": 3,
+        "buts_pour": 12,
+        "buts_contre": 10,
+        "diff": 2,
+        "difference": 2,
+        "forme": [
+          "V",
+          "N",
+          "D",
+          "D"
+        ]
+      },
+      {
+        "rang": 10,
+        "equipe": "LESQUIN US",
+        "nom": "LESQUIN US",
+        "points": 3,
+        "joues": 5,
+        "gagnes": 0,
+        "nuls": 3,
+        "perdus": 2,
+        "buts_pour": 8,
+        "buts_contre": 11,
+        "diff": -3,
+        "difference": -3,
+        "forme": [
+          "N",
+          "N",
+          "N",
+          "D"
+        ]
+      },
+      {
+        "rang": 11,
+        "equipe": "COURCELLES US",
+        "nom": "COURCELLES US",
+        "points": 2,
+        "joues": 5,
+        "gagnes": 0,
+        "nuls": 2,
+        "perdus": 3,
+        "buts_pour": 3,
+        "buts_contre": 6,
+        "diff": -3,
+        "difference": -3,
+        "forme": [
+          "N",
+          "N",
+          "D",
+          "D"
+        ]
+      },
+      {
+        "rang": 12,
+        "equipe": "MONTIGNY GOHELLE FC",
+        "nom": "MONTIGNY GOHELLE FC",
+        "points": 0,
+        "joues": 5,
+        "gagnes": 0,
+        "nuls": 0,
+        "perdus": 5,
+        "buts_pour": 2,
+        "buts_contre": 47,
+        "diff": -45,
+        "difference": -45,
+        "forme": [
+          "D",
+          "D",
+          "D",
+          "D"
+        ]
+      }
+    ]
   },
   "LESQUIN_SENIOR_M1": {
     "equipe_active": {
@@ -20208,7 +20957,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "05/11/2026 à 10:18"
+      "derniere_maj": "05/11/2026 à 10:27"
     },
     "dernier_match": {
       "id": "lesquin_56215867",
@@ -23897,7 +24646,248 @@ window.MATCHDAY_TEAMS = {
         "point_vigilance": "Gérer la fin de match pour concrétiser les nuls en victoires"
       }
     },
-    "classement": []
+    "classement": [
+      {
+        "rang": 1,
+        "equipe": "CROIX FIC 2",
+        "nom": "CROIX FIC 2",
+        "points": 11,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 2,
+        "perdus": 0,
+        "buts_pour": 7,
+        "buts_contre": 4,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "N"
+        ]
+      },
+      {
+        "rang": 2,
+        "equipe": "FOURMIES US",
+        "nom": "FOURMIES US",
+        "points": 10,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 1,
+        "perdus": 1,
+        "buts_pour": 15,
+        "buts_contre": 7,
+        "diff": 8,
+        "difference": 8,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "N"
+        ]
+      },
+      {
+        "rang": 3,
+        "equipe": "ESCAUDAIN USF",
+        "nom": "ESCAUDAIN USF",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 11,
+        "buts_contre": 8,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 4,
+        "equipe": "SECLIN FC",
+        "nom": "SECLIN FC",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 16,
+        "buts_contre": 3,
+        "diff": 13,
+        "difference": 13,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 5,
+        "equipe": "NOEUX LES MINES US",
+        "nom": "NOEUX LES MINES US",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 3,
+        "perdus": 0,
+        "buts_pour": 7,
+        "buts_contre": 3,
+        "diff": 4,
+        "difference": 4,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 6,
+        "equipe": "MERVILLE USM",
+        "nom": "MERVILLE USM",
+        "points": 9,
+        "joues": 5,
+        "gagnes": 3,
+        "nuls": 0,
+        "perdus": 2,
+        "buts_pour": 15,
+        "buts_contre": 7,
+        "diff": 8,
+        "difference": 8,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "D"
+        ]
+      },
+      {
+        "rang": 7,
+        "equipe": "RAISMES FC",
+        "nom": "RAISMES FC",
+        "points": 8,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 2,
+        "perdus": 1,
+        "buts_pour": 9,
+        "buts_contre": 6,
+        "diff": 3,
+        "difference": 3,
+        "forme": [
+          "V",
+          "V",
+          "N",
+          "N"
+        ]
+      },
+      {
+        "rang": 8,
+        "equipe": "BIACHE ST VAAST US",
+        "nom": "BIACHE ST VAAST US",
+        "points": 6,
+        "joues": 5,
+        "gagnes": 2,
+        "nuls": 0,
+        "perdus": 3,
+        "buts_pour": 14,
+        "buts_contre": 7,
+        "diff": 7,
+        "difference": 7,
+        "forme": [
+          "V",
+          "V",
+          "D",
+          "D"
+        ]
+      },
+      {
+        "rang": 9,
+        "equipe": "NOYELLES S/LENS US",
+        "nom": "NOYELLES S/LENS US",
+        "points": 4,
+        "joues": 5,
+        "gagnes": 1,
+        "nuls": 1,
+        "perdus": 3,
+        "buts_pour": 12,
+        "buts_contre": 10,
+        "diff": 2,
+        "difference": 2,
+        "forme": [
+          "V",
+          "N",
+          "D",
+          "D"
+        ]
+      },
+      {
+        "rang": 10,
+        "equipe": "LESQUIN US",
+        "nom": "LESQUIN US",
+        "points": 3,
+        "joues": 5,
+        "gagnes": 0,
+        "nuls": 3,
+        "perdus": 2,
+        "buts_pour": 8,
+        "buts_contre": 11,
+        "diff": -3,
+        "difference": -3,
+        "forme": [
+          "N",
+          "N",
+          "N",
+          "D"
+        ]
+      },
+      {
+        "rang": 11,
+        "equipe": "COURCELLES US",
+        "nom": "COURCELLES US",
+        "points": 2,
+        "joues": 5,
+        "gagnes": 0,
+        "nuls": 2,
+        "perdus": 3,
+        "buts_pour": 3,
+        "buts_contre": 6,
+        "diff": -3,
+        "difference": -3,
+        "forme": [
+          "N",
+          "N",
+          "D",
+          "D"
+        ]
+      },
+      {
+        "rang": 12,
+        "equipe": "MONTIGNY GOHELLE FC",
+        "nom": "MONTIGNY GOHELLE FC",
+        "points": 0,
+        "joues": 5,
+        "gagnes": 0,
+        "nuls": 0,
+        "perdus": 5,
+        "buts_pour": 2,
+        "buts_contre": 47,
+        "diff": -45,
+        "difference": -45,
+        "forme": [
+          "D",
+          "D",
+          "D",
+          "D"
+        ]
+      }
+    ]
   }
 };
 window.MATCHDAY_DATA = window.MATCHDAY_TEAMS['SENIOR_M1'];
