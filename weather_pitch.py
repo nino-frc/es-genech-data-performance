@@ -36,6 +36,7 @@ STADIUM_COORDINATES = {
     "AUBY": {"lat": 50.4183, "lon": 3.0533, "ville": "Auby", "surface": "Pelouse naturelle"},
     "SECLIN": {"lat": 50.5486, "lon": 3.0308, "ville": "Seclin (Stade Henri Jooris)", "surface": "Pelouse naturelle"},
     "LESQUIN": {"lat": 50.5900, "lon": 3.1111, "ville": "Lesquin (Stade Jean-Pierre Papin)", "surface": "Terrain synthétique"},
+    "ESQUELBECQ": {"lat": 50.8867, "lon": 2.4322, "ville": "Esquelbecq (Complexe J.M. Vaesken 2)", "surface": "Terrain synthétique"},
     "CROIX": {"lat": 50.6756, "lon": 3.1492, "ville": "Croix (Stade Henri Seigneur)", "surface": "Pelouse naturelle"},
     "COURCELLES": {"lat": 50.4181, "lon": 3.0183, "ville": "Courcelles-lès-Lens", "surface": "Pelouse naturelle"}
 }

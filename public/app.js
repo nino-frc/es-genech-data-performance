@@ -37,6 +37,8 @@ function getClubLogo(teamName) {
   if (up.includes('GENECH')) return './logos/logo_genech.png';
   if (up.includes('SECLIN')) return './logos/logo_seclin.jpg';
   if (up.includes('LESQUIN')) return './logos/logo_lesquin.jpg';
+
+  if (up.includes('ESQUELBECQ')) return './logos/logo_esquelbecq.jpg';
   
   // Vrais blasons officiels des clubs (PNG / JPG HD officiels)
   if (up.includes('TATINGHEM') || up.includes('SMLT')) return './logos/logo_tatinghem.png';
@@ -310,7 +312,9 @@ function testStaffNotification(isWelcome = false) {
   const clubCode = activeClub?.club_code || activeClub?.code || '';
   const isSeclin = (clubCode === 'SCLN');
   const isLesquin = (clubCode === 'LSQN');
-  const clubNom = isSeclin ? 'FC Seclin' : (isLesquin ? 'US Lesquin' : 'ES Genech');
+  const isEsquelbecq = (clubCode === 'ESQL');
+
+  const clubNom = isSeclin ? 'FC Seclin' : (isLesquin ? 'US Lesquin' : (isEsquelbecq ? 'US Esquelbecq' : 'ES Genech'));
   const title = isWelcome ? 'MatchDay - Notifications Activées 🎉' : `MatchDay - Alerte Staff ${clubNom} 🚨`;
   const body = isWelcome
     ? 'Vous recevrez les alertes de suspension FFF, briefings et debriefings en direct sur cet appareil.'
@@ -453,8 +457,11 @@ function openMatchDetailModal(matchIndex) {
   } else if (clubCodeComp === 'LSQN' || clubIdComp === '500426') {
     clubDisplay = 'US LESQUIN';
     clubBadge = '🟢⚪';
+  } else if (clubCodeComp === 'ESQL' || clubIdComp === '521813') {
+    clubDisplay = 'US ESQUELBECQ';
+    clubBadge = '🟡⚫';
   }
-  const clubLineup = lineups.club || (clubCodeComp === 'LSQN' ? lineups.lesquin : (clubCodeComp === 'SCLN' ? lineups.seclin : lineups.genech)) || lineups.genech || {};
+  const clubLineup = lineups.club || (clubCodeComp === 'ESQL' ? lineups.esquelbecq : (clubCodeComp === 'LSQN' ? lineups.lesquin : (clubCodeComp === 'SCLN' ? lineups.seclin : lineups.genech))) || lineups.genech || {};
   const opp = lineups.adversaire || {};
   const lineupContentEl = document.getElementById('detailLineupContent');
 
@@ -782,6 +789,8 @@ function authenticateClub(key, declaredRole, isFormSubmit) {
     cleanKey = 'MD-SCLN-74C2-91E3';
   } else if (cleanKey.includes('LESQUIN') || cleanKey.includes('LSQN') || cleanKey === 'MD-LSQN-92D3-71B8') {
     cleanKey = 'MD-LSQN-92D3-71B8';
+  } else if (cleanKey.includes('ESQUELBECQ') || cleanKey.includes('ESQL') || cleanKey === 'MD-ESQL-63B1-94A2') {
+    cleanKey = 'MD-ESQL-63B1-94A2';
   }
   try {
     getOrCreateDeviceId();
@@ -887,7 +896,7 @@ function authenticateClub(key, declaredRole, isFormSubmit) {
     if (headerDiv) headerDiv.style.display = 'block';
     if (roleBadge) {
       roleBadge.textContent = activeClub.nom.toUpperCase();
-      roleBadge.style.background = activeClub.club_code === 'SCLN' ? '#0284c7' : (activeClub.club_code === 'LSQN' ? '#059669' : '#15803d');
+      roleBadge.style.background = activeClub.club_code === 'SCLN' ? '#0284c7' : (activeClub.club_code === 'LSQN' ? '#059669' : (activeClub.club_code === 'ESQL' ? '#ca8a04' : '#15803d'));
     }
   }
 
@@ -1049,6 +1058,25 @@ function switchMasterClub(clubId) {
     }
     changeActiveTeam('500426_SENIOR_M1');
     showNotification("Mode Master : Basculé sur l'espace US Lesquin");
+  } else if (clubId === '521813') {
+    // Mode Super-Admin : Basculement sur Esquelbecq
+    if (headerLogo) {
+      headerLogo.src = './logos/logo_esquelbecq.jpg';
+      headerLogo.style.display = 'block';
+    }
+    if (headerDiv) headerDiv.style.display = 'block';
+    const roleBadge = document.getElementById('appRoleBadge');
+    if (roleBadge) {
+      roleBadge.textContent = 'ESQUELBECQ (ADMIN)';
+      roleBadge.style.background = '#ca8a04';
+    }
+    if (teamSelector) {
+      teamSelector.innerHTML = `
+        <option value="521813_SENIOR_M1" selected>Séniors A (R2)</option>
+      `;
+    }
+    changeActiveTeam('521813_SENIOR_M1');
+    showNotification("Mode Master : Basculé sur l'espace US Esquelbecq");
   }
 }
 
@@ -1452,6 +1480,8 @@ function initApp() {
         cleanKey = 'MD-SCLN-74C2-91E3';
       } else if (cleanKey.includes('LESQUIN') || cleanKey.includes('LSQN') || cleanKey === 'MD-LSQN-92D3-71B8') {
         cleanKey = 'MD-LSQN-92D3-71B8';
+      } else if (cleanKey.includes('ESQUELBECQ') || cleanKey.includes('ESQL') || cleanKey === 'MD-ESQL-63B1-94A2') {
+        cleanKey = 'MD-ESQL-63B1-94A2';
       }
       try {
         localStorage.setItem('matchday_club_key', cleanKey);
@@ -1602,6 +1632,10 @@ function renderInterface(data) {
       goalsEl.innerHTML = `8 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(40 TCC)</span>`;
       const desc = goalsEl.parentElement ? goalsEl.parentElement.querySelector('.kpi-desc') : null;
       if (desc) desc.textContent = "8 en R2 • 32 en Coupe & Amicaux";
+    } else if (currentTeamId === '521813_SENIOR_M1' || currentTeamId === 'ESQUELBECQ_SENIOR_M1') {
+      goalsEl.innerHTML = `4 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(14 TCC)</span>`;
+      const desc = goalsEl.parentElement ? goalsEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "4 en R2 • 10 en Coupe de France";
     } else {
       goalsEl.textContent = kpis.buts_marques ?? '--';
     }
@@ -1632,6 +1666,10 @@ function renderInterface(data) {
       csEl.innerHTML = `1 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">CS</span>`;
       const desc = csEl.parentElement ? csEl.parentElement.querySelector('.kpi-desc') : null;
       if (desc) desc.textContent = "1 Clean sheet en Coupe (Haubourdin)";
+    } else if (currentTeamId === '521813_SENIOR_M1' || currentTeamId === 'ESQUELBECQ_SENIOR_M1') {
+      csEl.innerHTML = `2 <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">CS</span>`;
+      const desc = csEl.parentElement ? csEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "1 en R2 (Coquelles) • 1 en Coupe (Nieppe)";
     } else {
       csEl.textContent = kpis.clean_sheets ?? '--';
     }
@@ -1662,6 +1700,10 @@ function renderInterface(data) {
       minEl.textContent = "8 845 mn";
       const desc = minEl.parentElement ? minEl.parentElement.querySelector('.kpi-desc') : null;
       if (desc) desc.textContent = "Cumul effectif (12 matchs TCC)";
+    } else if (currentTeamId === '521813_SENIOR_M1' || currentTeamId === 'ESQUELBECQ_SENIOR_M1') {
+      minEl.textContent = "5 940 mn";
+      const desc = minEl.parentElement ? minEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "Cumul effectif (6 matchs officiels FFF)";
     } else {
       minEl.textContent = kpis.minutes_cumulees ? `${kpis.minutes_cumulees.toLocaleString()} mn` : '--';
     }
@@ -1692,6 +1734,10 @@ function renderInterface(data) {
       cardsEl.innerHTML = `8 J. / 0 R. <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(15 J. TCC)</span>`;
       const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
       if (desc) desc.textContent = "8 J en R2 • 7 J en Coupe";
+    } else if (currentTeamId === '521813_SENIOR_M1' || currentTeamId === 'ESQUELBECQ_SENIOR_M1') {
+      cardsEl.innerHTML = `10 J. / 0 R. <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(14 J. TCC)</span>`;
+      const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
+      if (desc) desc.textContent = "10 J en R2 • 4 J en Coupe";
     } else {
       cardsEl.textContent = `${kpis.cartons_jaunes ?? 0} J. / ${kpis.cartons_rouges ?? 0} R.`;
     }
@@ -2153,11 +2199,16 @@ function renderInterface(data) {
   const isLesquinClub = (currentTeam.team_id && currentTeam.team_id.includes('500426')) || 
                         (currentTeam.nom && currentTeam.nom.toUpperCase().includes('LESQUIN')) ||
                         (activeClub?.club_code === 'LSQN' || activeClub?.club_id === '500426');
+  const isEsquelbecqClub = (currentTeam.team_id && currentTeam.team_id.includes('521813')) || 
+                           (currentTeam.nom && currentTeam.nom.toUpperCase().includes('ESQUELBECQ')) ||
+                           (activeClub?.club_code === 'ESQL' || activeClub?.club_id === '521813');
   const standingsCardTitleEl = document.getElementById('standingsCardTitle');
   if (standingsCardTitleEl) {
-    standingsCardTitleEl.textContent = (isSeclinClub || isLesquinClub) 
-      ? "Régional 2 • Poule B" 
-      : (currentTeam.categorie ? `${currentTeam.categorie} • ${currentTeam.poule || 'Poule D'}` : "Seniors R3 • Poule D");
+    standingsCardTitleEl.textContent = isEsquelbecqClub 
+      ? "Régional 2 • Poule A" 
+      : ((isSeclinClub || isLesquinClub) 
+          ? "Régional 2 • Poule B" 
+          : (currentTeam.categorie ? `${currentTeam.categorie} • ${currentTeam.poule || 'Poule D'}` : "Seniors R3 • Poule D"));
   }
 
   const standingsContainer = document.getElementById('standingsTableContainer');
@@ -2182,7 +2233,7 @@ function renderInterface(data) {
             </thead>
             <tbody>
       `;
-      const clubSearch = isSeclinClub ? 'SECLIN' : (isLesquinClub ? 'LESQUIN' : 'GENECH');
+      const clubSearch = isEsquelbecqClub ? 'ESQUELBECQ' : (isSeclinClub ? 'SECLIN' : (isLesquinClub ? 'LESQUIN' : 'GENECH'));
       standings.forEach(st => {
         const teamName = st.equipe || st.nom || '--';
         const isClub = clubSearch ? teamName.toUpperCase().includes(clubSearch) : false;

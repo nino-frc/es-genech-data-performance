@@ -38,6 +38,11 @@ window.MATCHDAY_LICENSES = {
         "id": "500426_SENIOR_M1",
         "nom": "US Lesquin - Séniors A (R2)",
         "club_code": "LSQN"
+      },
+      {
+        "id": "521813_SENIOR_M1",
+        "nom": "US Esquelbecq - Séniors A (R2)",
+        "club_code": "ESQL"
       }
     ],
     "default_team": "SENIOR_M1",
@@ -115,6 +120,23 @@ window.MATCHDAY_LICENSES = {
     "default_team": "500426_SENIOR_M1",
     "devices": []
   },
+  "MD-ESQL-63B1-94A2": {
+    "club_id": "521813",
+    "club_code": "ESQL",
+    "nom": "US Esquelbecq",
+    "logo_url": "./logos/logo_esquelbecq.jpg",
+    "statut": "Version d'Évaluation (Bridée)",
+    "plan": "TRIAL_BRIDEE",
+    "is_master": false,
+    "equipes_autorisees": [
+      {
+        "id": "521813_SENIOR_M1",
+        "nom": "Séniors A (R2)"
+      }
+    ],
+    "default_team": "521813_SENIOR_M1",
+    "devices": []
+  },
   "MD-BNDS-55D1-82A4": {
     "club_id": "500123",
     "club_code": "BNDS",
@@ -142,6 +164,9 @@ window.MATCHDAY_LICENSES["MD-SCLN-2026-STAFF"] = window.MATCHDAY_LICENSES["MD-SC
 window.MATCHDAY_LICENSES["SECLIN"] = window.MATCHDAY_LICENSES["MD-SCLN-74C2-91E3"];
 window.MATCHDAY_LICENSES["MD-LSQN-2026-STAFF"] = window.MATCHDAY_LICENSES["MD-LSQN-92D3-71B8"];
 window.MATCHDAY_LICENSES["LESQUIN"] = window.MATCHDAY_LICENSES["MD-LSQN-92D3-71B8"];
+window.MATCHDAY_LICENSES["MD-ESQL-2026-STAFF"] = window.MATCHDAY_LICENSES["MD-ESQL-63B1-94A2"];
+window.MATCHDAY_LICENSES["ESQUELBECQ"] = window.MATCHDAY_LICENSES["MD-ESQL-63B1-94A2"];
+window.MATCHDAY_LICENSES["ESQL"] = window.MATCHDAY_LICENSES["MD-ESQL-63B1-94A2"];
 window.MATCHDAY_LICENSES["MASTER"] = window.MATCHDAY_LICENSES["MD-MASTER-NINO-2026"];
 window.MATCHDAY_LICENSES["ROOT"] = window.MATCHDAY_LICENSES["MD-MASTER-NINO-2026"];
 

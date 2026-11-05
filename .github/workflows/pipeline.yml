@@ -53,6 +53,11 @@ jobs:
           python scrape_lesquin_r2.py
         continue-on-error: true
 
+      - name: ⚽ 1d. Scraping FFF US Esquelbecq (521813)
+        run: |
+          python scrape_esquelbecq_r2.py
+        continue-on-error: true
+
       # --- 2. ANALYTICS & VEILLE DISCIPLINAIRE ---
       - name: 🕵️ 2. Espionnage & Scouting tactique de l'adversaire
         run: |
@@ -145,6 +150,6 @@ jobs:
           git config user.name "MatchDay Analytics Bot"
           git config user.email "bot@matchday-app.fr"
           git pull --rebase origin main
-          git add genech_performance.db seclin_performance.db lesquin_performance.db public/data.js public/data_feed.json exports_powerbi/ briefings_coach/
-          git diff-index --quiet HEAD || git commit -m "chore(auto): mise à jour hebdomadaire multi-clubs FFF (Genech, Seclin, Lesquin) [skip ci]"
+          git add genech_performance.db seclin_performance.db lesquin_performance.db esquelbecq_performance.db public/data.js public/data_feed.json exports_powerbi/ briefings_coach/
+          git diff-index --quiet HEAD || git commit -m "chore(auto): mise à jour hebdomadaire multi-clubs FFF (Genech, Seclin, Lesquin, Esquelbecq) [skip ci]"
           git push origin main
