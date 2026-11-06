@@ -111,12 +111,12 @@
         <span class="score-badge-status" id="matchStatusBadge">DERNIER RÉSULTAT OFFICIEL</span>
         <div class="score-matchup">
           <div class="team-col home">
-            <img id="homeTeamLogo" class="matchup-team-logo" src="./logo.png" alt="Logo" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; margin-bottom: 3px; display: inline-block; border: 1.5px solid rgba(255,255,255,0.4); background: #fff;">
+            <img id="homeTeamLogo" class="matchup-team-logo" src="./logo.png" alt="Logo" style="width: 34px; height: 34px; border-radius: 50%; object-fit: contain; padding: 2px; margin-bottom: 3px; display: inline-block; border: 1.5px solid rgba(255,255,255,0.4); background: #ffffff;">
             <div id="homeTeamName" style="font-weight: 800;">--</div>
           </div>
           <div class="score-number-badge" id="matchScoreDisplay">- : -</div>
           <div class="team-col away">
-            <img id="awayTeamLogo" class="matchup-team-logo" src="./logo.png" alt="Logo" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; margin-bottom: 3px; display: inline-block; border: 1.5px solid rgba(255,255,255,0.4); background: #fff;">
+            <img id="awayTeamLogo" class="matchup-team-logo" src="./logo.png" alt="Logo" style="width: 34px; height: 34px; border-radius: 50%; object-fit: contain; padding: 2px; margin-bottom: 3px; display: inline-block; border: 1.5px solid rgba(255,255,255,0.4); background: #ffffff;">
             <div id="awayTeamName" style="font-weight: 800;">--</div>
           </div>
         </div>
@@ -134,21 +134,73 @@
             <div class="kpi-title">Buts Inscrits</div>
             <div class="kpi-value" id="kpiGoals">--</div>
             <div class="kpi-desc">Attaque officielle</div>
+            <div class="kpi-graphic-icon" title="Buts Inscrits">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 34C11 31 16 31 20 33" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+                <path d="M10 39C14 37 18 37 21 39" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+                <circle cx="28" cy="22" r="14" fill="#FFFFFF" stroke="#0F172A" stroke-width="2.2"/>
+                <polygon points="28 16 23 20 25 25 31 25 33 20" fill="#0F172A"/>
+                <line x1="28" y1="8" x2="28" y2="16" stroke="#0F172A" stroke-width="1.8"/>
+                <line x1="16" y1="17" x2="23" y2="20" stroke="#0F172A" stroke-width="1.8"/>
+                <line x1="20" y1="32" x2="25" y2="25" stroke="#0F172A" stroke-width="1.8"/>
+                <line x1="36" y1="32" x2="31" y2="25" stroke="#0F172A" stroke-width="1.8"/>
+                <line x1="40" y1="17" x2="33" y2="20" stroke="#0F172A" stroke-width="1.8"/>
+              </svg>
+            </div>
           </div>
           <div class="kpi-box green">
             <div class="kpi-title">Clean Sheets</div>
             <div class="kpi-value" id="kpiCleanSheets">--</div>
             <div class="kpi-desc">Matchs sans encaisser</div>
+            <div class="kpi-graphic-icon" title="Clean Sheets">
+              <svg viewBox="0 0 52 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Gant Gauche (pouce vers l'intérieur à droite) -->
+                <g transform="translate(2, 6) rotate(-10 13 18)">
+                  <rect x="4" y="24" width="15" height="7" rx="2" fill="#16A34A" stroke="#0F172A" stroke-width="1.8"/>
+                  <line x1="6" y1="27.5" x2="17" y2="27.5" stroke="#FEF08A" stroke-width="1.3" stroke-linecap="round"/>
+                  <path d="M4 24V14C4 12.8 5 11.8 6.2 11.8C7.4 11.8 8.4 12.8 8.4 14V10.5C8.4 9.3 9.4 8.3 10.6 8.3C11.8 8.3 12.8 9.3 12.8 10.5V9.5C12.8 8.3 13.8 7.3 15 7.3C16.2 7.3 17.2 8.3 17.2 9.5V12C17.2 10.8 18.2 9.8 19.4 9.8C20.6 9.8 21.6 10.8 21.6 12V18C21.6 22.5 19 24 16 24H4Z" fill="#FDE047" stroke="#0F172A" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M20 18C22.5 18 24 19.4 24 21C24 22.6 22 23.6 19 23.6" fill="#FDE047" stroke="#0F172A" stroke-width="1.8"/>
+                  <path d="M7 18C10 20 14 20 17 18" stroke="#CA8A04" stroke-width="1.3" stroke-linecap="round"/>
+                </g>
+                <!-- Gant Droit (pouce vers l'intérieur à gauche) -->
+                <g transform="translate(26, 6) rotate(10 13 18)">
+                  <rect x="5" y="24" width="15" height="7" rx="2" fill="#22C55E" stroke="#0F172A" stroke-width="1.8"/>
+                  <line x1="7" y1="27.5" x2="18" y2="27.5" stroke="#FEF08A" stroke-width="1.3" stroke-linecap="round"/>
+                  <path d="M20 24V14C20 12.8 19 11.8 17.8 11.8C16.6 11.8 15.6 12.8 15.6 14V10.5C15.6 9.3 14.6 8.3 13.4 8.3C12.2 8.3 11.2 9.3 11.2 10.5V9.5C11.2 8.3 10.2 7.3 9 7.3C7.8 7.3 6.8 8.3 6.8 9.5V12C6.8 10.8 5.8 9.8 4.6 9.8C3.4 9.8 2.4 10.8 2.4 12V18C2.4 22.5 5 24 8 24H20Z" fill="#FBBF24" stroke="#0F172A" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M4 18C1.5 18 0 19.4 0 21C0 22.6 2 23.6 5 23.6" fill="#FBBF24" stroke="#0F172A" stroke-width="1.8"/>
+                  <path d="M17 18C14 20 10 20 7 18" stroke="#B45309" stroke-width="1.3" stroke-linecap="round"/>
+                </g>
+              </svg>
+            </div>
           </div>
           <div class="kpi-box">
             <div class="kpi-title">Temps de Jeu</div>
             <div class="kpi-value" id="kpiTotalMinutes">--</div>
             <div class="kpi-desc">Minutes cumulées</div>
+            <div class="kpi-graphic-icon" title="Temps de Jeu">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="22" y="3" width="4" height="5" rx="1" fill="#475569" stroke="#0F172A" stroke-width="1.8"/>
+                <path d="M19 6C19 3.5 21 2 24 2C27 2 29 3.5 29 6" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
+                <line x1="34" y1="8" x2="37" y2="11" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="24" cy="27" r="16" fill="#FFFFFF" stroke="#0F172A" stroke-width="2.2"/>
+                <path d="M24 27L24 15A12 12 0 0 1 36 27Z" fill="#F59E0B" fill-opacity="0.35"/>
+                <circle cx="24" cy="27" r="2.5" fill="#0F172A"/>
+                <line x1="24" y1="27" x2="31" y2="20" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
+                <line x1="24" y1="13" x2="24" y2="16" stroke="#94A3B8" stroke-width="1.8" stroke-linecap="round"/>
+                <line x1="38" y1="27" x2="35" y2="27" stroke="#94A3B8" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
           </div>
           <div class="kpi-box gold">
             <div class="kpi-title">Discipline</div>
             <div class="kpi-value" id="kpiCardsSummary">--</div>
             <div class="kpi-desc">Cartons J. / R.</div>
+            <div class="kpi-graphic-icon" title="Discipline">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="18" y="12" width="18" height="26" rx="3.5" transform="rotate(14 27 25)" fill="#EF4444" stroke="#0F172A" stroke-width="2"/>
+                <rect x="10" y="13" width="18" height="26" rx="3.5" transform="rotate(-12 19 26)" fill="#FBBF24" stroke="#0F172A" stroke-width="2"/>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
@@ -173,12 +225,12 @@
           <div style="font-size: 11px; text-transform: uppercase; color: #93c5fd; font-weight: 700; letter-spacing: 0.5px;" id="nextMatchComp">--</div>
           <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin: 8px 0;">
             <div style="text-align: center; flex: 1;">
-              <img id="nextHomeLogo" class="matchup-team-logo" src="./logos/logo_genech.png" alt="Logo" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover; display: inline-block; margin-bottom: 3px; border: 2px solid rgba(255,255,255,0.4); box-shadow: 0 2px 6px rgba(0,0,0,0.3); background: #ffffff;">
+              <img id="nextHomeLogo" class="matchup-team-logo" src="./logos/logo_genech.png" alt="Logo" style="width: 38px; height: 38px; border-radius: 50%; object-fit: contain; padding: 2px; display: inline-block; margin-bottom: 3px; border: 2px solid rgba(255,255,255,0.4); box-shadow: 0 2px 6px rgba(0,0,0,0.3); background: #ffffff;">
               <div id="nextHomeName" style="font-size: 13.5px; font-weight: 800; color: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,0.4);">--</div>
             </div>
             <div style="font-size: 11px; font-weight: 900; color: #93c5fd; background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.25); padding: 4px 9px; border-radius: 6px; letter-spacing: 0.5px;">VS</div>
             <div style="text-align: center; flex: 1;">
-              <img id="nextAwayLogo" class="matchup-team-logo" src="./logos/logo_aniche.png" alt="Logo" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover; display: inline-block; margin-bottom: 3px; border: 2px solid rgba(255,255,255,0.4); box-shadow: 0 2px 6px rgba(0,0,0,0.3); background: #ffffff;">
+              <img id="nextAwayLogo" class="matchup-team-logo" src="./logos/logo_aniche.png" alt="Logo" style="width: 38px; height: 38px; border-radius: 50%; object-fit: contain; padding: 2px; display: inline-block; margin-bottom: 3px; border: 2px solid rgba(255,255,255,0.4); box-shadow: 0 2px 6px rgba(0,0,0,0.3); background: #ffffff;">
               <div id="nextAwayName" style="font-size: 13.5px; font-weight: 800; color: #ffffff; text-shadow: 0 1px 2px rgba(0,0,0,0.4);">--</div>
             </div>
           </div>
@@ -364,13 +416,13 @@
             <div style="font-size: 28px; font-weight: 900; font-family: var(--font-mono);" id="govPpm">
               1.80 <span style="font-size: 13px; font-weight: 600;">PPM</span>
             </div>
-            <div style="font-size: 10.5px; color: #bfdbfe;">Cadence championnat R3</div>
+            <div style="font-size: 10.5px; color: #bfdbfe;" id="govPpmSubtitle">Cadence championnat R3</div>
           </div>
-          <div style="text-align: right;">
+          <div style="text-align: right;" id="govMonteCarloBox">
             <div style="font-size: 24px; font-weight: 900; color: #4ade80; font-family: var(--font-mono);" id="govMonteCarlo">
-              63.8%
+              74.2%
             </div>
-            <div style="font-size: 10.5px; color: #bfdbfe;">Probabilité Montée R2</div>
+            <div style="font-size: 10.5px; color: #bfdbfe;" id="govMonteCarloLabel">Probabilité Montée R2</div>
           </div>
         </div>
       </div>
@@ -397,19 +449,19 @@
       <!-- Métriques de Solidité & Invincibilité -->
       <div class="card">
         <div class="card-header-bar">
-          <span class="card-title">Solidité Globale (Toutes Compétitions)</span>
-          <span class="card-meta">9 matchs officiels</span>
+          <span class="card-title" id="govSoliditeTitle">Solidité & Invincibilité</span>
+          <span class="card-meta" id="govSoliditeMeta">5 matchs officiels</span>
         </div>
         <div class="kpi-grid">
           <div class="kpi-box green">
-            <div class="kpi-title">Taux d'Invincibilité</div>
-            <div class="kpi-value" id="govInvincibilite">77.8%</div>
-            <div class="kpi-desc">7 matchs sans défaite sur 9</div>
+            <div class="kpi-title" id="govInvincibiliteTitle">Taux d'Invincibilité</div>
+            <div class="kpi-value" id="govInvincibilite">100%</div>
+            <div class="kpi-desc" id="govInvincibiliteDesc">5 matchs sans défaite sur 5</div>
           </div>
           <div class="kpi-box green">
-            <div class="kpi-title">Clean Sheets Ratio</div>
+            <div class="kpi-title" id="govCleanSheetTitle">Clean Sheets Ratio</div>
             <div class="kpi-value" id="govCleanSheetRatio">55.6%</div>
-            <div class="kpi-desc">5 matchs sur 9 sans but pris</div>
+            <div class="kpi-desc" id="govCleanSheetDesc">5 matchs sur 9 sans but pris</div>
           </div>
           <div class="kpi-box">
             <div class="kpi-title">Moyenne Encaissée</div>
@@ -419,7 +471,7 @@
           <div class="kpi-box">
             <div class="kpi-title">Projection Saison</div>
             <div class="kpi-value" style="font-size: 16px;" id="govPointsPrevus">44.0 pts</div>
-            <div class="kpi-desc">Objectif podium atteint</div>
+            <div class="kpi-desc" id="govPointsPrevusDesc">Objectif podium atteint</div>
           </div>
         </div>
       </div>
@@ -472,11 +524,77 @@
         </div>
       </div>
 
-      <!-- Bilan Comptable Global -->
+      <!-- Bilan Championnat R3 (Séparé & Certifié Invaincu) -->
       <div class="card">
         <div class="card-header-bar">
-          <span class="card-title">Bilan Comptable Cumulé</span>
-          <span class="card-meta">Senior A</span>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="card-title" id="govChampTitle">Championnat Régional 3</span>
+            <span class="tactical-role-pill" id="govChampBadge" style="background: #DCFCE7; color: #15803D; font-weight: 800; border: none; font-size: 9px; padding: 2px 8px;">🏆 100% INVAINCU</span>
+          </div>
+          <span class="card-meta" id="govChampMeta">5 matchs officiels</span>
+        </div>
+        <div style="display: flex; justify-content: space-around; text-align: center; padding: 10px 4px; background: #F8FAFC; border-radius: 14px; margin-bottom: 10px;">
+          <div>
+            <div style="font-size: 20px; font-weight: 900; color: #15803D; font-family: var(--font-display);" id="govChampVictoires">2</div>
+            <div style="font-size: 9.5px; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Victoires</div>
+          </div>
+          <div>
+            <div style="font-size: 20px; font-weight: 900; color: #B45309; font-family: var(--font-display);" id="govChampNuls">3</div>
+            <div style="font-size: 9.5px; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Nuls</div>
+          </div>
+          <div>
+            <div style="font-size: 20px; font-weight: 900; color: #15803D; font-family: var(--font-display);" id="govChampDefaites">0</div>
+            <div style="font-size: 9.5px; color: #15803D; text-transform: uppercase; font-weight: 800;">0 Défaite</div>
+          </div>
+          <div>
+            <div style="font-size: 20px; font-weight: 900; color: var(--color-primary); font-family: var(--font-display);" id="govChampDiff">+3</div>
+            <div style="font-size: 9.5px; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Différence</div>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px; padding: 0 4px; color: var(--text-muted);">
+          <span>Points officiels : <strong style="color: var(--color-primary);" id="govChampPoints">9 pts</strong> (1.80 PPM)</span>
+          <span id="govChampBilanLabel">Bilan R3 : <strong style="color: #15803D;">0 défaite en 5 matchs</strong></span>
+        </div>
+      </div>
+
+      <!-- Bilan Coupe de France (Séparé) -->
+      <div class="card">
+        <div class="card-header-bar">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="card-title">Coupe de France</span>
+            <span class="tactical-role-pill" style="background: #E0F2FE; color: #0369A1; font-weight: 800; border: none; font-size: 9px; padding: 2px 8px;">🇫🇷 Épopée 6e Tour</span>
+          </div>
+          <span class="card-meta" id="govCdfMeta">5 tours disputés</span>
+        </div>
+        <div style="display: flex; justify-content: space-around; text-align: center; padding: 10px 4px; background: #F8FAFC; border-radius: 14px; margin-bottom: 10px;">
+          <div>
+            <div style="font-size: 20px; font-weight: 900; color: #15803D; font-family: var(--font-display);" id="govCdfVictoires">4</div>
+            <div style="font-size: 9.5px; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Qualif.</div>
+          </div>
+          <div>
+            <div style="font-size: 20px; font-weight: 900; color: #64748B; font-family: var(--font-display);" id="govCdfNuls">0</div>
+            <div style="font-size: 9.5px; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Nuls</div>
+          </div>
+          <div>
+            <div style="font-size: 20px; font-weight: 900; color: #B91C1C; font-family: var(--font-display);" id="govCdfDefaites">1</div>
+            <div style="font-size: 9.5px; color: #B91C1C; text-transform: uppercase; font-weight: 700;">Élimination</div>
+          </div>
+          <div>
+            <div style="font-size: 20px; font-weight: 900; color: var(--color-primary); font-family: var(--font-display);" id="govCdfDiff">+2</div>
+            <div style="font-size: 9.5px; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Différence</div>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px; padding: 0 4px; color: var(--text-muted);">
+          <span>Parcours : <strong>Tours 2, 3, 4, 5 remportés</strong></span>
+          <span style="color: #64748B;">Défaite unique au 6e tour vs St-Martin</span>
+        </div>
+      </div>
+
+      <!-- Bilan Cumulé Toutes Compétitions (TCC) -->
+      <div class="card">
+        <div class="card-header-bar">
+          <span class="card-title">Bilan Comptable Cumulé (TCC)</span>
+          <span class="card-meta">10 matchs toutes compétitions</span>
         </div>
         <div style="display: flex; justify-content: space-around; text-align: center; padding: 6px 0;">
           <div>
@@ -489,7 +607,7 @@
           </div>
           <div>
             <div style="font-size: 18px; font-weight: 800; color: var(--color-red);" id="govDefaites">1</div>
-            <div style="font-size: 10px; color: var(--text-light); text-transform: uppercase;">Défaites</div>
+            <div style="font-size: 10px; color: var(--text-light); text-transform: uppercase;">Défaite (CDF)</div>
           </div>
           <div>
             <div style="font-size: 18px; font-weight: 800; color: var(--color-primary);" id="govDiffButs">+5</div>
@@ -1069,27 +1187,66 @@
   <!-- Barre de Navigation Basse Institutionnelle (6 Onglets) -->
   <nav class="bottom-nav">
     <div class="nav-item active" onclick="switchTab('tabMatch', this)">
-      <span class="nav-icon">⚽</span>
+      <span class="nav-icon">
+        <svg class="bottom-nav-svg" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"/>
+          <polygon points="12 8 8 11 9.5 15.5 14.5 15.5 16 11" fill="currentColor" fill-opacity="0.2"/>
+          <line x1="12" y1="2" x2="12" y2="8"/>
+          <line x1="4.5" y1="8" x2="8" y2="11"/>
+          <line x1="6.5" y1="18" x2="9.5" y2="15.5"/>
+          <line x1="17.5" y1="18" x2="14.5" y2="15.5"/>
+          <line x1="19.5" y1="8" x2="16" y2="11"/>
+        </svg>
+      </span>
       <span>Match</span>
     </div>
     <div class="nav-item" onclick="switchTab('tabHistory', this)">
-      <span class="nav-icon">📅</span>
+      <span class="nav-icon">
+        <svg class="bottom-nav-svg" viewBox="0 0 24 24">
+          <path d="M6 9H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3"/>
+          <path d="M18 9h3a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-3"/>
+          <path d="M4 3h16v6a8 8 0 0 1-16 0V3z"/>
+          <path d="M12 17v4"/>
+          <path d="M8 21h8"/>
+        </svg>
+      </span>
       <span>Résultats</span>
     </div>
     <div class="nav-item" onclick="switchTab('tabPlayers', this)">
-      <span class="nav-icon">👤</span>
+      <span class="nav-icon">
+        <svg class="bottom-nav-svg" viewBox="0 0 24 24">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+      </span>
       <span>Effectif</span>
     </div>
     <div class="nav-item" onclick="switchTab('tabDiscipline', this)">
-      <span class="nav-icon">⚖️</span>
+      <span class="nav-icon">
+        <svg class="bottom-nav-svg" viewBox="0 0 24 24">
+          <rect x="6" y="3" width="12" height="18" rx="3" ry="3"/>
+        </svg>
+      </span>
       <span>Discipline</span>
     </div>
     <div class="nav-item" onclick="switchTab('tabGovernance', this)">
-      <span class="nav-icon">📊</span>
+      <span class="nav-icon">
+        <svg class="bottom-nav-svg" viewBox="0 0 24 24">
+          <path d="M20 17H4M4 17l4-4M4 17l4 4M4 7h16M20 7l-4-4M20 7l-4 4"/>
+        </svg>
+      </span>
       <span>Direction</span>
     </div>
     <div class="nav-item" onclick="switchTab('tabStandings', this)">
-      <span class="nav-icon">🏆</span>
+      <span class="nav-icon">
+        <svg class="bottom-nav-svg" viewBox="0 0 24 24">
+          <path d="M8 21h8M12 17v4M6 4h12v5a6 6 0 0 1-12 0V4z"/>
+          <path d="M6 6H3a2 2 0 0 0-2 2v1a3 3 0 0 0 3 3h2"/>
+          <path d="M18 6h3a2 2 0 0 1 2 2v1a3 3 0 0 1-3 3h-2"/>
+        </svg>
+      </span>
       <span>Classement</span>
     </div>
   </nav>

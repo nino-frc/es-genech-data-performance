@@ -123,7 +123,7 @@ function switchTab(tabId, navElement) {
 
   const target = document.getElementById(tabId);
   if (target) {
-    target.style.display = 'block';
+    target.style.display = 'flex';
     target.classList.add('active');
   }
 
@@ -1723,60 +1723,116 @@ function renderInterface(data) {
 
   if (cardsEl) {
     if (currentTeamId === 'SENIOR_M1') {
-      cardsEl.innerHTML = `12 J. / 1 R. <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(19 J. / 2 R. TCC)</span>`;
+      cardsEl.textContent = '12 J. / 1 R.';
       const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
-      if (desc) desc.textContent = "12 J / 1 R en R3 • 7 J / 1 R en Coupe";
+      if (desc) desc.textContent = "12 J / 1 R en R3 • 19 J / 2 R TCC";
     } else if (currentTeamId === 'U18_M1') {
-      cardsEl.innerHTML = `8 J. / 1 R.`;
+      cardsEl.textContent = '8 J. / 1 R.';
       const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
       if (desc) desc.textContent = "8 Jaunes • 1 Rouge en D1/Gambardella";
     } else if (currentTeamId === 'SENIOR_M3') {
-      cardsEl.innerHTML = `0 J. / 0 R.`;
+      cardsEl.textContent = '0 J. / 0 R.';
       const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
       if (desc) desc.textContent = "Discipline exemplaire en D2";
     } else if (currentTeamId === 'SENIOR_F2') {
-      cardsEl.innerHTML = `0 J. / 0 R.`;
+      cardsEl.textContent = '0 J. / 0 R.';
       const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
       if (desc) desc.textContent = "Zéro carton reçu en championnat";
     } else if (currentTeamId === '500934_SENIOR_M1' || currentTeamId === 'SECLIN_SENIOR_M1') {
-      cardsEl.innerHTML = `15 J. / 0 R. <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(20 J. TCC)</span>`;
+      cardsEl.textContent = '15 J. / 0 R.';
       const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
-      if (desc) desc.textContent = "15 J en R2 • 5 J en Coupe";
+      if (desc) desc.textContent = "15 J en R2 • 20 J TCC";
     } else if (currentTeamId === '500426_SENIOR_M1' || currentTeamId === 'LESQUIN_SENIOR_M1') {
-      cardsEl.innerHTML = `8 J. / 0 R. <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(15 J. TCC)</span>`;
+      cardsEl.textContent = '8 J. / 0 R.';
       const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
-      if (desc) desc.textContent = "8 J en R2 • 7 J en Coupe";
+      if (desc) desc.textContent = "8 J en R2 • 15 J TCC";
     } else if (currentTeamId === '521813_SENIOR_M1' || currentTeamId === 'ESQUELBECQ_SENIOR_M1') {
-      cardsEl.innerHTML = `14 J. / 1 R. <span style="font-size: 13px; font-weight: 600; opacity: 0.85;">(20 J. / 1 R. TCC)</span>`;
+      cardsEl.textContent = '14 J. / 1 R.';
       const desc = cardsEl.parentElement ? cardsEl.parentElement.querySelector('.kpi-desc') : null;
-      if (desc) desc.textContent = "14 J / 1 R en R2 • 6 J en Coupe";
+      if (desc) desc.textContent = "14 J / 1 R en R2 • 20 J / 1 R TCC";
     } else {
       cardsEl.textContent = `${kpis.cartons_jaunes ?? 0} J. / ${kpis.cartons_rouges ?? 0} R.`;
     }
   }
 
-  // D. Chronologie Dernier Match
+  // D. Chronologie Dernier Match (Vertical Timeline FMI)
   const timelineContainer = document.getElementById('matchEventsTimeline');
   const events = data.evenements_dernier_match || [];
   if (timelineContainer) {
     if (events.length > 0) {
-      let eventsHtml = '';
+      const homeName = (match.domicile || '').toUpperCase().trim();
+      let eventsHtml = `<div class="timeline-v2">`;
+      
       events.forEach(ev => {
-        const icon = ev.type === 'BUT' ? '⚽' : (ev.type === 'AVERTISSEMENT' ? '🟨' : (ev.type === 'EXPULSION' ? '🟥' : '🔄'));
-        eventsHtml += `
-          <div style="display: flex; justify-content: space-between; padding: 7px 0; border-bottom: 1px solid var(--border-light); font-size: 12px;">
-            <div>
-              <strong>${ev.minute}'</strong> ${icon} <span style="font-weight: 600;">${ev.acteur}</span>
-              <span style="color: var(--text-light); font-size: 11px;">(${ev.equipe})</span>
+        const evTeam = (ev.equipe || '').toUpperCase().trim();
+        const isHome = homeName && (evTeam.includes(homeName) || homeName.includes(evTeam));
+        
+        let nodeClass = 'tl-node';
+        let nodeContent = '';
+        let badgeHtml = '';
+        
+        if (ev.type === 'BUT') {
+          nodeClass += ' tl-node-goal';
+          nodeContent = `<svg viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polygon points="12 8 8 11 9.5 15.5 14.5 15.5 16 11" fill="#0F172A"/></svg>`;
+          badgeHtml = `<span class="tl-goal-badge" title="But">⚽</span>`;
+        } else if (ev.type === 'AVERTISSEMENT') {
+          nodeClass += ' tl-node-card-yellow';
+          nodeContent = `<svg viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><polygon points="12 8 9 10 10 14 14 14 15 10" fill="#0F172A"/></svg>`;
+          badgeHtml = `<span class="tl-card-badge yellow" title="Carton jaune"></span>`;
+        } else if (ev.type === 'EXPULSION') {
+          nodeClass += ' tl-node-card-red';
+          nodeContent = `<svg viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><polygon points="12 8 9 10 10 14 14 14 15 10" fill="#EF4444"/></svg>`;
+          badgeHtml = `<span class="tl-card-badge red" title="Carton rouge"></span>`;
+        } else if (ev.type === 'CHANGEMENT') {
+          nodeClass += ' tl-node-sub';
+          nodeContent = `<svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9h11M13 6l3 3-3 3" stroke="#16A34A"/><path d="M19 15H8M11 18l-3-3 3-3" stroke="#EF4444"/></svg>`;
+          badgeHtml = `<span class="tl-sub-arrows" title="Remplacement">⇄</span>`;
+        } else {
+          nodeContent = `<span style="font-size: 10px;">•</span>`;
+        }
+        
+        const isSub = ev.type === 'CHANGEMENT';
+        const playerName = isSub ? 'Changement' : (ev.acteur || 'Joueur');
+        const subDetail = isSub ? (ev.detail || ev.acteur) : '';
+        
+        if (isHome) {
+          // Événement Domicile (Gauche du fil conducteur)
+          eventsHtml += `
+            <div class="tl-item">
+              <div class="tl-content-left">
+                <span class="tl-minute">${ev.minute}'</span>
+                <div class="tl-info">
+                  <span class="tl-player">${playerName}</span>
+                  ${subDetail ? `<span class="tl-subtext">${subDetail}</span>` : ''}
+                </div>
+                ${badgeHtml}
+              </div>
+              <div class="${nodeClass}">${nodeContent}</div>
             </div>
-            <div style="color: var(--text-muted); font-size: 11px;">${ev.detail}</div>
-          </div>
-        `;
+          `;
+        } else {
+          // Événement Extérieur (Droite du fil conducteur)
+          eventsHtml += `
+            <div class="tl-item">
+              <div class="${nodeClass}">${nodeContent}</div>
+              <div class="tl-content-right">
+                ${badgeHtml}
+                <div class="tl-info">
+                  <span class="tl-player">${playerName}</span>
+                  ${subDetail ? `<span class="tl-subtext">${subDetail}</span>` : ''}
+                </div>
+                <span class="tl-minute">${ev.minute}'</span>
+              </div>
+            </div>
+          `;
+        }
       });
+      
+      eventsHtml += `</div>`;
       timelineContainer.innerHTML = eventsHtml;
       timelineContainer.classList.remove('skeleton');
     } else {
-      timelineContainer.innerHTML = "<div style='color: var(--text-light); font-size: 11px; text-align: center; padding: 8px;'>Aucun événement officiel renseigné.</div>";
+      timelineContainer.innerHTML = "<div style='color: var(--text-light); font-size: 11px; text-align: center; padding: 14px;'>Aucun événement officiel renseigné.</div>";
       timelineContainer.classList.remove('skeleton');
     }
   }
@@ -2137,22 +2193,185 @@ function renderInterface(data) {
     }
   }
 
-  // H. Onglet Gouvernance Exécutive
+  // H. Onglet Gouvernance Exécutive (Séparation Championnat & CDF)
   const gov = data.gouvernance || {};
   if (gov.ppm_championnat !== undefined) {
     document.getElementById('govPpm').innerHTML = `${gov.ppm_championnat} <span style="font-size: 13px; font-weight: 600;">PPM</span>`;
-    document.getElementById('govMonteCarlo').textContent = `${gov.probabilite_montee_pct}%`;
-    document.getElementById('govInvincibilite').textContent = `${gov.taux_invincibilite}%`;
+    
+    // Probabilité de montée : uniquement pour l'équipe fanion (Séniors A)
+    const isSeniorA = (currentTeamId === 'SENIOR_M1' || currentTeamId === '500934_SENIOR_M1' || currentTeamId === '500426_SENIOR_M1' || currentTeamId === '521813_SENIOR_M1' || (currentTeam.nom && currentTeam.nom.toLowerCase().includes('séniors a')) || (currentTeam.nom_affiche && currentTeam.nom_affiche.toLowerCase().includes('séniors a')));
+    const mcBox = document.getElementById('govMonteCarloBox');
+    const mcLabel = document.getElementById('govMonteCarloLabel');
+    const ppmSub = document.getElementById('govPpmSubtitle');
+
+    if (isSeniorA) {
+      if (mcBox) mcBox.style.display = 'block';
+      const mcVal = document.getElementById('govMonteCarlo');
+      if (mcVal) mcVal.textContent = `${gov.probabilite_montee_pct || 74.2}%`;
+      if (mcLabel) {
+        const isR2 = (currentTeam.categorie && currentTeam.categorie.includes('R2')) || (currentTeamId.includes('SECLIN') || currentTeamId.includes('LESQUIN') || currentTeamId.includes('ESQUELBECQ'));
+        mcLabel.textContent = isR2 ? 'Probabilité Montée R1' : 'Probabilité Montée R2';
+      }
+      if (ppmSub) ppmSub.textContent = `Cadence ${currentTeam.categorie || 'Séniors A (R3)'}`;
+    } else {
+      // Pour les autres équipes (U18, Féminines, B), on masque la proba de montée conformément à la demande
+      if (mcBox) mcBox.style.display = 'none';
+      if (ppmSub) ppmSub.textContent = `Cadence ${currentTeam.categorie || currentTeam.nom || 'Championnat'}`;
+    }
+
     document.getElementById('govCleanSheetRatio').textContent = `${gov.ratio_clean_sheet_pct}%`;
     document.getElementById('govMoyEncaisses').textContent = `${gov.moyenne_buts_encaisses}`;
     document.getElementById('govPointsPrevus').textContent = `${gov.projection_saison.points_prevus} pts`;
 
+    // Calcul dynamique de la séparation Championnat vs Coupe de France
+    const historyList = data.historique_matchs || [];
+    let champStats = { matchs: 0, v: 0, n: 0, d: 0, bp: 0, bc: 0 };
+    let cdfStats = { matchs: 0, v: 0, n: 0, d: 0, bp: 0, bc: 0 };
+
+    historyList.forEach(m => {
+      const isCdf = m.comp_type === 'CDF' || (m.competition && m.competition.toLowerCase().includes('coupe'));
+      const target = isCdf ? cdfStats : champStats;
+      target.matchs++;
+      const res = (m.resultat_label || '').toLowerCase();
+      if (res.includes('victoire') || res.includes('qualif')) {
+        target.v++;
+      } else if (res.includes('nul')) {
+        target.n++;
+      } else if (res.includes('défaite') || res.includes('defaite')) {
+        target.d++;
+      }
+      if (m.score_domicile !== undefined && m.score_exterieur !== undefined) {
+        const isGenechClub = (m.domicile && m.domicile.toUpperCase().includes('GENECH')) || 
+                             (m.domicile && m.domicile.toUpperCase().includes('SECLIN')) || 
+                             (m.domicile && m.domicile.toUpperCase().includes('LESQUIN')) || 
+                             (m.domicile && m.domicile.toUpperCase().includes('ESQUELBECQ'));
+        const scored = isGenechClub ? m.score_domicile : m.score_exterieur;
+        const conceded = isGenechClub ? m.score_exterieur : m.score_domicile;
+        target.bp += (Number(scored) || 0);
+        target.bc += (Number(conceded) || 0);
+      }
+    });
+
+    const teamCatInfo = (function() {
+      const raw = [currentTeamId, currentTeam.nom_affiche, currentTeam.categorie, currentTeam.poule, currentTeam.nom]
+        .filter(Boolean)
+        .join(' ')
+        .toLowerCase();
+      
+      let short = 'Champ.';
+      let long = 'Championnat';
+
+      if (raw.includes('régional 3') || raw.includes('regional 3') || raw.includes('r3')) {
+        short = 'R3';
+        long = 'Championnat Régional 3';
+      } else if (raw.includes('régional 2') || raw.includes('regional 2') || raw.includes('r2')) {
+        short = 'R2';
+        long = 'Championnat Régional 2';
+      } else if (raw.includes('u18') || raw.includes('u19') || raw.includes('formation')) {
+        short = 'U18 (D1)';
+        long = 'Championnat U18 D1 District';
+      } else if (raw.includes('féminin') || raw.includes('feminin') || raw.includes('interdistrict') || raw.includes('senior_f')) {
+        short = 'Fém.';
+        long = 'Championnat Féminin Interdistricts';
+      } else if (raw.includes('d2') || raw.includes('district 2') || raw.includes('réserve') || raw.includes('senior_m3')) {
+        short = 'D2';
+        long = 'Championnat Seniors D2';
+      } else if (raw.includes('d1') || raw.includes('district 1')) {
+        short = 'D1';
+        long = 'Championnat Seniors D1';
+      }
+      return { short, long };
+    })();
+
+    const catShort = teamCatInfo.short;
+    const catLong = teamCatInfo.long;
+
+    // Mise à jour de l'en-tête Solidité & Invincibilité
+    const solTitle = document.getElementById('govSoliditeTitle');
+    if (solTitle) solTitle.textContent = `Solidité & Invincibilité (${catShort})`;
+    const solMeta = document.getElementById('govSoliditeMeta');
+    if (solMeta) solMeta.textContent = `${champStats.matchs} matchs officiels (${catShort})`;
+
+    // 1. Remplissage Championnat (Certifié Invaincu si 0 défaite)
+    const champTitleEl = document.getElementById('govChampTitle');
+    if (champTitleEl) champTitleEl.textContent = catLong;
+
+    const champBadge = document.getElementById('govChampBadge');
+    if (champBadge) {
+      if (champStats.d === 0 && champStats.matchs > 0) {
+        champBadge.textContent = `🏆 100% INVAINCU (${catShort})`;
+        champBadge.style.background = '#DCFCE7';
+        champBadge.style.color = '#15803D';
+      } else {
+        champBadge.textContent = `Bilan ${catShort}`;
+        champBadge.style.background = '#F1F5F9';
+        champBadge.style.color = '#64748B';
+      }
+    }
+
+    const champV = document.getElementById('govChampVictoires');
+    if (champV) {
+      champV.textContent = champStats.v;
+      document.getElementById('govChampNuls').textContent = champStats.n;
+      document.getElementById('govChampDefaites').textContent = champStats.d;
+      const cDiff = champStats.bp - champStats.bc;
+      document.getElementById('govChampDiff').textContent = cDiff > 0 ? `+${cDiff}` : cDiff;
+      const pts = (champStats.v * 3) + (champStats.n * 1);
+      const ppm = champStats.matchs > 0 ? (pts / champStats.matchs).toFixed(2) : '0.00';
+      const ptsEl = document.getElementById('govChampPoints');
+      if (ptsEl) ptsEl.textContent = `${pts} pts (${ppm} PPM)`;
+      const metaEl = document.getElementById('govChampMeta');
+      if (metaEl) metaEl.textContent = `${champStats.matchs} matchs • ${champStats.d === 0 ? '0 défaite (Invaincu)' : `${champStats.d} défaite${champStats.d > 1 ? 's' : ''}`}`;
+      const bilanLabel = document.getElementById('govChampBilanLabel');
+      if (bilanLabel) bilanLabel.innerHTML = `Bilan ${catShort} : <strong style="color: ${champStats.d === 0 ? '#15803D' : '#0F172A'};">${champStats.d === 0 ? `0 défaite en ${champStats.matchs} matchs` : `${champStats.v}V, ${champStats.n}N, ${champStats.d}D`}</strong>`;
+    }
+
+    // 2. Remplissage Coupe de France
+    const cdfV = document.getElementById('govCdfVictoires');
+    if (cdfV) {
+      cdfV.textContent = cdfStats.v;
+      document.getElementById('govCdfNuls').textContent = cdfStats.n;
+      document.getElementById('govCdfDefaites').textContent = cdfStats.d;
+      const cdfDiff = cdfStats.bp - cdfStats.bc;
+      document.getElementById('govCdfDiff').textContent = cdfDiff > 0 ? `+${cdfDiff}` : cdfDiff;
+      const cdfMeta = document.getElementById('govCdfMeta');
+      if (cdfMeta) cdfMeta.textContent = `${cdfStats.matchs} tours disputés`;
+    }
+
+    // 3. Taux d'Invincibilité dynamique avec catégorie
+    const invTitle = document.getElementById('govInvincibiliteTitle');
+    if (invTitle) invTitle.textContent = `Taux d'Invincibilité (${catShort})`;
+
+    const invEl = document.getElementById('govInvincibilite');
+    if (invEl) {
+      const invPct = champStats.matchs > 0 ? Math.round(((champStats.matchs - champStats.d) / champStats.matchs) * 1000) / 10 : (gov.taux_invincibilite || 100);
+      invEl.innerHTML = `${invPct}% <span style="font-size: 11px; font-weight: 600; opacity: 0.85;">(${catShort})</span>`;
+      const desc = document.getElementById('govInvincibiliteDesc') || (invEl.parentElement ? invEl.parentElement.querySelector('.kpi-desc') : null);
+      if (desc) {
+        if (champStats.d === 0) {
+          desc.textContent = `${champStats.matchs} matchs sans défaite sur ${champStats.matchs} en ${catShort}`;
+        } else {
+          desc.textContent = `${champStats.matchs - champStats.d} matchs sans défaite sur ${champStats.matchs} en ${catShort}`;
+        }
+      }
+    }
+
+    const csDesc = document.getElementById('govCleanSheetDesc');
+    if (csDesc) {
+      const csVal = data.kpis_saison?.clean_sheets ?? 1;
+      csDesc.textContent = `${csVal} match${csVal > 1 ? 's' : ''} sans but pris en ${catShort}`;
+    }
+
+    // 4. Remplissage Synthèse TCC
     const bilan = gov.bilan_global || {};
-    document.getElementById('govVictoires').textContent = bilan.victoires ?? 0;
-    document.getElementById('govNuls').textContent = bilan.nuls ?? 0;
-    document.getElementById('govDefaites').textContent = bilan.defaites ?? 0;
-    const diff = (bilan.difference !== undefined) ? bilan.difference : ((bilan.buts_pour ?? 0) - (bilan.buts_contre ?? 0));
-    document.getElementById('govDiffButs').textContent = diff > 0 ? `+${diff}` : diff;
+    const tccV = document.getElementById('govVictoires');
+    if (tccV) {
+      tccV.textContent = bilan.victoires ?? (champStats.v + cdfStats.v);
+      document.getElementById('govNuls').textContent = bilan.nuls ?? (champStats.n + cdfStats.n);
+      document.getElementById('govDefaites').textContent = bilan.defaites ?? (champStats.d + cdfStats.d);
+      const diff = (bilan.difference !== undefined) ? bilan.difference : ((champStats.bp + cdfStats.bp) - (champStats.bc + cdfStats.bc));
+      document.getElementById('govDiffButs').textContent = diff > 0 ? `+${diff}` : diff;
+    }
 
     // H bis. Matrice des Quarts d'Heure (Temps Forts / Faibles)
     const matrixContainer = document.getElementById('timeMatrixRowsContainer');
@@ -2240,7 +2459,7 @@ function renderInterface(data) {
                 <th style="text-align: center; width: 32px;">BP</th>
                 <th style="text-align: center; width: 32px;">BC</th>
                 <th style="text-align: center; width: 38px;">DIFF</th>
-                <th style="text-align: center; width: 95px;">FORME</th>
+                <th style="text-align: center; width: 115px;">FORME</th>
               </tr>
             </thead>
             <tbody>
@@ -2258,10 +2477,24 @@ function renderInterface(data) {
         const diffVal = st.diff !== undefined ? st.diff : (st.difference !== undefined ? st.difference : (bp - bc));
         const diffDisplay = diffVal > 0 ? `+${diffVal}` : `${diffVal}`;
         
-        // Forme Badges
-        const formList = Array.isArray(st.forme) && st.forme.length > 0 
-          ? st.forme 
-          : (["V"].concat(Array(Math.max(0, g-1)).fill("V"), Array(n).fill("N"), Array(p).fill("D"))).slice(0, 4);
+        // Forme Badges (5 derniers matchs)
+        let formList = [];
+        if (isClub && Array.isArray(data.historique_matchs)) {
+          const champMatches = data.historique_matchs.filter(m => m.comp_type !== 'CDF' && !(m.competition || '').toLowerCase().includes('coupe'));
+          if (champMatches.length > 0) {
+            formList = champMatches.slice(0, 5).map(m => {
+              const res = (m.resultat_label || '').toLowerCase();
+              if (res.includes('victoire') || res.includes('qualif')) return 'V';
+              if (res.includes('nul')) return 'N';
+              return 'D';
+            });
+          }
+        }
+        if (formList.length === 0) {
+          formList = Array.isArray(st.forme) && st.forme.length > 0 
+            ? st.forme.slice(0, 5) 
+            : (["V"].concat(Array(Math.max(0, g-1)).fill("V"), Array(n).fill("N"), Array(p).fill("D"))).slice(0, 5);
+        }
         
         let formBadgesHtml = '';
         formList.forEach(res => {

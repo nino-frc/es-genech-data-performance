@@ -8,7 +8,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "05/11/2026 à 11:53"
+      "derniere_maj": "06/11/2026 à 08:47"
     },
     "dernier_match": {
       "id": "r3_j5_aniche_genech",
@@ -116,7 +116,7 @@ window.MATCHDAY_TEAMS = {
     "prochain_match": {
       "competition": "Seniors Régional 3 • Journée 6",
       "date_heure": "Dimanche 08 Novembre 2026 à 14h30",
-      "lieu": "Stade Léo Lagrange (Genech)",
+      "lieu": "Parc des Sports (Genech)",
       "domicile": "ES GENECH",
       "exterieur": "BAVAY US",
       "comparatif": {
@@ -3148,13 +3148,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 31.1,
           "volume_max": 35,
-          "defense": 30.0,
+          "defense": 30,
           "defense_max": 30,
-          "attaque": 28.0,
+          "attaque": 28,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 8.0
+          "malus_discipline": 8
         }
       },
       {
@@ -3170,17 +3170,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 75.0,
+        "esg_score": 75,
         "sous_scores": {
-          "volume": 35.0,
+          "volume": 35,
           "volume_max": 35,
-          "defense": 30.0,
+          "defense": 30,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -3200,13 +3200,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 31.5,
           "volume_max": 35,
-          "defense": 30.0,
+          "defense": 30,
           "defense_max": 30,
-          "attaque": 14.0,
+          "attaque": 14,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 12.0
+          "malus_discipline": 12
         }
       },
       {
@@ -3222,17 +3222,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 72.0,
+        "esg_score": 72,
         "sous_scores": {
-          "volume": 32.0,
+          "volume": 32,
           "volume_max": 35,
-          "defense": 30.0,
+          "defense": 30,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -3252,13 +3252,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 25.4,
           "volume_max": 35,
-          "defense": 24.0,
+          "defense": 24,
           "defense_max": 30,
-          "attaque": 14.0,
+          "attaque": 14,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 4.0
+          "malus_discipline": 4
         }
       },
       {
@@ -3274,17 +3274,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "sous_scores": {
-          "volume": 35.0,
+          "volume": 35,
           "volume_max": 35,
-          "defense": 30.0,
+          "defense": 30,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 8.0
+          "malus_discipline": 8
         }
       },
       {
@@ -3304,13 +3304,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 23.1,
           "volume_max": 35,
-          "defense": 24.0,
+          "defense": 24,
           "defense_max": 30,
-          "attaque": 14.0,
+          "attaque": 14,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 8.0
+          "malus_discipline": 8
         }
       },
       {
@@ -3330,13 +3330,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 20.3,
           "volume_max": 35,
-          "defense": 30.0,
+          "defense": 30,
           "defense_max": 30,
-          "attaque": 28.0,
+          "attaque": 28,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 28.0
+          "malus_discipline": 28
         }
       },
       {
@@ -3356,13 +3356,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 26.3,
           "volume_max": 35,
-          "defense": 24.0,
+          "defense": 24,
           "defense_max": 30,
-          "attaque": 14.0,
+          "attaque": 14,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 16.0
+          "malus_discipline": 16
         }
       },
       {
@@ -3382,13 +3382,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 24.9,
           "volume_max": 35,
-          "defense": 18.0,
+          "defense": 18,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -3408,13 +3408,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 28.6,
           "volume_max": 35,
-          "defense": 18.0,
+          "defense": 18,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 4.0
+          "malus_discipline": 4
         }
       },
       {
@@ -3430,17 +3430,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 45.0,
+        "esg_score": 45,
         "sous_scores": {
-          "volume": 21.0,
+          "volume": 21,
           "volume_max": 35,
-          "defense": 18.0,
+          "defense": 18,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 4.0
+          "malus_discipline": 4
         }
       },
       {
@@ -3460,13 +3460,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 11.1,
           "volume_max": 35,
-          "defense": 12.0,
+          "defense": 12,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -3486,13 +3486,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 10.7,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -3512,13 +3512,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 7.7,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -3538,13 +3538,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 0.6,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 14.0,
+          "attaque": 14,
           "attaque_max": 35,
           "presence": 2.5,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -3564,13 +3564,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 5.5,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -3586,17 +3586,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 12.0,
+        "esg_score": 12,
         "sous_scores": {
           "volume": 3.5,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
           "presence": 2.5,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -3612,17 +3612,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 10.0,
+        "esg_score": 10,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -3642,13 +3642,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 4.9,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
           "presence": 7.5,
           "presence_max": 10,
-          "malus_discipline": 4.0
+          "malus_discipline": 4
         }
       },
       {
@@ -3668,13 +3668,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 0.3,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
           "presence": 2.5,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -3690,25 +3690,25 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 2,
         "cartons_r": 1,
-        "esg_score": 0.0,
+        "esg_score": 0,
         "sous_scores": {
           "volume": 7.4,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
           "presence": 7.5,
           "presence_max": 10,
-          "malus_discipline": 20.0
+          "malus_discipline": 20
         }
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 2.0,
+      "ppm_championnat": 2,
       "probabilite_montee_pct": 74.2,
       "probabilite_maintien_pct": 99.1,
-      "taux_invincibilite": 90.0,
+      "taux_invincibilite": 90,
       "bilan_global": {
         "matchs": 10,
         "victoires": 6,
@@ -3727,12 +3727,12 @@ window.MATCHDAY_TEAMS = {
         "buts_pour": 6,
         "buts_contre": 3,
         "difference": 3,
-        "ppm": 2.0
+        "ppm": 2
       },
-      "ratio_clean_sheet_pct": 50.0,
+      "ratio_clean_sheet_pct": 50,
       "moyenne_buts_encaisses": 0.6,
       "projection_saison": {
-        "points_prevus": 44.0,
+        "points_prevus": 44,
         "rang_final_estime": "2e (Accession Régional 2)"
       },
       "matrice_quarts_heure": [
@@ -3774,7 +3774,7 @@ window.MATCHDAY_TEAMS = {
         }
       ],
       "analyse_temporelle": {
-        "buts_2nde_mi_temps_pct": 75.0,
+        "buts_2nde_mi_temps_pct": 75,
         "buts_money_time_pct": 37.5,
         "clean_premiere_demi_heure": "0 but concédé (0-30')",
         "point_vigilance": "75% des buts concédés entre la 31e et 45e min"
@@ -3795,6 +3795,7 @@ window.MATCHDAY_TEAMS = {
         "diff": 0,
         "difference": 0,
         "forme": [
+          "V",
           "N",
           "D",
           "V",
@@ -3816,9 +3817,10 @@ window.MATCHDAY_TEAMS = {
         "difference": 0,
         "forme": [
           "V",
+          "V",
           "N",
           "V",
-          "V"
+          "D"
         ]
       },
       {
@@ -3838,6 +3840,7 @@ window.MATCHDAY_TEAMS = {
           "N",
           "N",
           "N",
+          "V",
           "V"
         ]
       },
@@ -3858,7 +3861,8 @@ window.MATCHDAY_TEAMS = {
           "N",
           "V",
           "N",
-          "V"
+          "V",
+          "N"
         ]
       },
       {
@@ -3875,6 +3879,7 @@ window.MATCHDAY_TEAMS = {
         "diff": 0,
         "difference": 0,
         "forme": [
+          "N",
           "N",
           "N",
           "V",
@@ -3898,6 +3903,7 @@ window.MATCHDAY_TEAMS = {
           "V",
           "V",
           "D",
+          "V",
           "D"
         ]
       },
@@ -3918,7 +3924,8 @@ window.MATCHDAY_TEAMS = {
           "V",
           "D",
           "V",
-          "D"
+          "D",
+          "V"
         ]
       },
       {
@@ -3938,7 +3945,8 @@ window.MATCHDAY_TEAMS = {
           "N",
           "N",
           "D",
-          "V"
+          "V",
+          "N"
         ]
       },
       {
@@ -3955,9 +3963,10 @@ window.MATCHDAY_TEAMS = {
         "diff": 0,
         "difference": 0,
         "forme": [
+          "D",
           "N",
-          "N",
-          "N",
+          "D",
+          "V",
           "D"
         ]
       },
@@ -3978,6 +3987,7 @@ window.MATCHDAY_TEAMS = {
           "D",
           "N",
           "N",
+          "D",
           "D"
         ]
       },
@@ -3998,6 +4008,7 @@ window.MATCHDAY_TEAMS = {
           "D",
           "N",
           "D",
+          "D",
           "D"
         ]
       },
@@ -4016,7 +4027,8 @@ window.MATCHDAY_TEAMS = {
         "difference": 0,
         "forme": [
           "D",
-          "N",
+          "D",
+          "D",
           "D",
           "D"
         ]
@@ -4032,7 +4044,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "05/11/2026 à 11:53"
+      "derniere_maj": "06/11/2026 à 08:47"
     },
     "dernier_match": {
       "id": "m_u18_m1_79496282-et-c-anstai",
@@ -4105,7 +4117,7 @@ window.MATCHDAY_TEAMS = {
     "arbitre_prochain_match": {
       "nom_arbitre": "Arbitre Officiel District (D1 U18)",
       "severite": "VIGILANCE ENGAGEMENT (3.0 jaunes / match)",
-      "moyenne_jaunes": 3.0,
+      "moyenne_jaunes": 3,
       "badge_color": "#d97706",
       "consigne_coach": "Atmosphère derby. Garder la maîtrise émotionnelle et s'appuyer sur la vitesse des transitions."
     },
@@ -4861,7 +4873,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 85.0,
+        "esg_score": 85,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -4883,7 +4895,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 85.0,
+        "esg_score": 85,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -4905,7 +4917,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 85.0,
+        "esg_score": 85,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -4927,7 +4939,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 85.0,
+        "esg_score": 85,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -4949,7 +4961,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 85.0,
+        "esg_score": 85,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -4971,7 +4983,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 78.0,
+        "esg_score": 78,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -4993,7 +5005,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 78.0,
+        "esg_score": 78,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -5015,7 +5027,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 71.0,
+        "esg_score": 71,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -5037,7 +5049,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 71.0,
+        "esg_score": 71,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -5059,7 +5071,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 71.0,
+        "esg_score": 71,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -5081,7 +5093,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 71.0,
+        "esg_score": 71,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -5103,7 +5115,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 68.0,
+        "esg_score": 68,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 25,
@@ -5125,7 +5137,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 66.0,
+        "esg_score": 66,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 25,
@@ -5147,7 +5159,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 64.0,
+        "esg_score": 64,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 25,
@@ -5169,7 +5181,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 64.0,
+        "esg_score": 64,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 25,
@@ -5191,7 +5203,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 59.0,
+        "esg_score": 59,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 25,
@@ -5213,7 +5225,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 25,
@@ -5235,7 +5247,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 56.0,
+        "esg_score": 56,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 25,
@@ -5257,7 +5269,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 56.0,
+        "esg_score": 56,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 25,
@@ -5279,7 +5291,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 54.0,
+        "esg_score": 54,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 25,
@@ -5301,7 +5313,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 54.0,
+        "esg_score": 54,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 25,
@@ -5315,10 +5327,10 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 3.0,
-      "probabilite_montee_pct": 75.0,
-      "probabilite_maintien_pct": 98.0,
-      "taux_invincibilite": 100.0,
+      "ppm_championnat": 3,
+      "probabilite_montee_pct": 75,
+      "probabilite_maintien_pct": 98,
+      "taux_invincibilite": 100,
       "bilan_global": {
         "matchs": 6,
         "victoires": 5,
@@ -5334,12 +5346,12 @@ window.MATCHDAY_TEAMS = {
         "nuls": 0,
         "defaites": 0,
         "points": 15,
-        "ppm": 3.0
+        "ppm": 3
       },
       "ratio_clean_sheet_pct": 33.3,
       "moyenne_buts_encaisses": 1.33,
       "projection_saison": {
-        "points_prevus": 66.0,
+        "points_prevus": 66,
         "rang_final_estime": "Haut de tableau"
       },
       "matrice_quarts_heure": [
@@ -5375,8 +5387,8 @@ window.MATCHDAY_TEAMS = {
         }
       ],
       "analyse_temporelle": {
-        "buts_2nde_mi_temps_pct": 60.0,
-        "buts_money_time_pct": 30.0,
+        "buts_2nde_mi_temps_pct": 60,
+        "buts_money_time_pct": 30,
         "clean_premiere_demi_heure": "2 clean sheets",
         "point_vigilance": "Régularité sur les fins de mi-temps"
       }
@@ -5393,7 +5405,14 @@ window.MATCHDAY_TEAMS = {
         "perdus": 0,
         "buts_pour": 29,
         "buts_contre": 7,
-        "difference": 22
+        "difference": 22,
+        "forme": [
+          "V",
+          "V",
+          "V",
+          "V",
+          "V"
+        ]
       },
       {
         "rang": 2,
@@ -5523,7 +5542,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "05/11/2026 à 11:53"
+      "derniere_maj": "06/11/2026 à 08:47"
     },
     "dernier_match": {
       "id": "m_senior_f2_78809066-lille-e-s-l",
@@ -5540,7 +5559,7 @@ window.MATCHDAY_TEAMS = {
     "prochain_match": {
       "competition": "Interdistricts Féminin • Journée 5",
       "date_heure": "08/11/2026 à 10:30",
-      "lieu": "Stade Léo Lagrange (Genech)",
+      "lieu": "Parc des Sports (Genech)",
       "domicile": "ES GENECH",
       "exterieur": "FEIGNIES AULNOYE EFA",
       "comparatif": {
@@ -5957,7 +5976,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 71.0,
+        "esg_score": 71,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -5979,7 +5998,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 71.0,
+        "esg_score": 71,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -6001,7 +6020,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 71.0,
+        "esg_score": 71,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -6023,7 +6042,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 71.0,
+        "esg_score": 71,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -6045,7 +6064,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 71.0,
+        "esg_score": 71,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -6067,7 +6086,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 71.0,
+        "esg_score": 71,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -6089,7 +6108,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 71.0,
+        "esg_score": 71,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -6111,7 +6130,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 71.0,
+        "esg_score": 71,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -6133,7 +6152,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 71.0,
+        "esg_score": 71,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 25,
@@ -6155,7 +6174,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 64.0,
+        "esg_score": 64,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 25,
@@ -6177,7 +6196,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 64.0,
+        "esg_score": 64,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 25,
@@ -6199,7 +6218,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 64.0,
+        "esg_score": 64,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 25,
@@ -6221,7 +6240,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 64.0,
+        "esg_score": 64,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 25,
@@ -6243,7 +6262,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 25,
@@ -6265,7 +6284,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 25,
@@ -6280,9 +6299,9 @@ window.MATCHDAY_TEAMS = {
     ],
     "gouvernance": {
       "ppm_championnat": 1.5,
-      "probabilite_montee_pct": 45.0,
-      "probabilite_maintien_pct": 98.0,
-      "taux_invincibilite": 50.0,
+      "probabilite_montee_pct": 45,
+      "probabilite_maintien_pct": 98,
+      "taux_invincibilite": 50,
       "bilan_global": {
         "matchs": 4,
         "victoires": 2,
@@ -6300,10 +6319,10 @@ window.MATCHDAY_TEAMS = {
         "points": 6,
         "ppm": 1.5
       },
-      "ratio_clean_sheet_pct": 25.0,
+      "ratio_clean_sheet_pct": 25,
       "moyenne_buts_encaisses": 2.75,
       "projection_saison": {
-        "points_prevus": 33.0,
+        "points_prevus": 33,
         "rang_final_estime": "Milieu de tableau"
       },
       "matrice_quarts_heure": [
@@ -6339,8 +6358,8 @@ window.MATCHDAY_TEAMS = {
         }
       ],
       "analyse_temporelle": {
-        "buts_2nde_mi_temps_pct": 60.0,
-        "buts_money_time_pct": 30.0,
+        "buts_2nde_mi_temps_pct": 60,
+        "buts_money_time_pct": 30,
         "clean_premiere_demi_heure": "1 clean sheets",
         "point_vigilance": "Régularité sur les fins de mi-temps"
       }
@@ -6422,7 +6441,13 @@ window.MATCHDAY_TEAMS = {
         "perdus": 2,
         "buts_pour": 10,
         "buts_contre": 11,
-        "difference": -1
+        "difference": -1,
+        "forme": [
+          "V",
+          "V",
+          "D",
+          "D"
+        ]
       },
       {
         "rang": 7,
@@ -6487,7 +6512,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "05/11/2026 à 11:53"
+      "derniere_maj": "06/11/2026 à 08:47"
     },
     "dernier_match": {
       "id": "m_senior_b_j5_roubaix",
@@ -6904,7 +6929,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 25,
@@ -6926,7 +6951,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 25,
@@ -6948,7 +6973,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 25,
@@ -6970,7 +6995,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 25,
@@ -6992,7 +7017,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 25,
@@ -7014,7 +7039,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 25,
@@ -7036,7 +7061,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 25,
@@ -7058,7 +7083,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 25,
@@ -7080,7 +7105,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 25,
@@ -7102,7 +7127,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 25,
@@ -7124,7 +7149,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 25,
@@ -7146,7 +7171,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 52.0,
+        "esg_score": 52,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 25,
@@ -7168,7 +7193,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 52.0,
+        "esg_score": 52,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 25,
@@ -7190,7 +7215,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 52.0,
+        "esg_score": 52,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 25,
@@ -7205,8 +7230,8 @@ window.MATCHDAY_TEAMS = {
     ],
     "gouvernance": {
       "ppm_championnat": 1.4,
-      "probabilite_montee_pct": 45.0,
-      "probabilite_maintien_pct": 98.0,
+      "probabilite_montee_pct": 45,
+      "probabilite_maintien_pct": 98,
       "taux_invincibilite": 57.1,
       "bilan_global": {
         "matchs": 7,
@@ -7264,8 +7289,8 @@ window.MATCHDAY_TEAMS = {
         }
       ],
       "analyse_temporelle": {
-        "buts_2nde_mi_temps_pct": 60.0,
-        "buts_money_time_pct": 30.0,
+        "buts_2nde_mi_temps_pct": 60,
+        "buts_money_time_pct": 30,
         "clean_premiere_demi_heure": "1 clean sheets",
         "point_vigilance": "Régularité sur les fins de mi-temps"
       }
@@ -7373,7 +7398,14 @@ window.MATCHDAY_TEAMS = {
         "perdus": 2,
         "buts_pour": 10,
         "buts_contre": 12,
-        "difference": -2
+        "difference": -2,
+        "forme": [
+          "V",
+          "N",
+          "D",
+          "D",
+          "V"
+        ]
       },
       {
         "rang": 9,
@@ -7438,7 +7470,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "05/11/2026 à 11:53"
+      "derniere_maj": "06/11/2026 à 08:47"
     },
     "dernier_match": {
       "id": "seclin_56215870",
@@ -10198,7 +10230,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -10220,7 +10252,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -10242,7 +10274,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -10264,7 +10296,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -10286,7 +10318,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -10308,7 +10340,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -10330,7 +10362,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -10352,7 +10384,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -10374,7 +10406,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -10396,7 +10428,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -10418,7 +10450,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 94.0,
+        "esg_score": 94,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -10440,7 +10472,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 87.0,
+        "esg_score": 87,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -10462,7 +10494,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 85.0,
+        "esg_score": 85,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -10484,7 +10516,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 80.0,
+        "esg_score": 80,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -10506,7 +10538,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 69.0,
+        "esg_score": 69,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 28,
@@ -10528,7 +10560,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10550,7 +10582,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10572,7 +10604,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10594,7 +10626,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10616,7 +10648,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10638,7 +10670,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10660,7 +10692,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10682,7 +10714,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10704,7 +10736,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10726,7 +10758,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10748,7 +10780,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10770,7 +10802,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10792,7 +10824,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10814,7 +10846,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10836,7 +10868,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10858,7 +10890,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10880,7 +10912,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10902,7 +10934,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10924,7 +10956,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10946,7 +10978,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10968,7 +11000,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -10990,7 +11022,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11012,7 +11044,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 66.0,
+        "esg_score": 66,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 28,
@@ -11034,7 +11066,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11056,7 +11088,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11078,7 +11110,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11100,7 +11132,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11122,7 +11154,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11144,7 +11176,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11166,7 +11198,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11188,7 +11220,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11210,7 +11242,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11232,7 +11264,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11254,7 +11286,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11276,7 +11308,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11298,7 +11330,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11320,7 +11352,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11342,7 +11374,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11364,7 +11396,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11386,7 +11418,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11408,7 +11440,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11430,7 +11462,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11452,7 +11484,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11474,7 +11506,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11496,7 +11528,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11518,7 +11550,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11540,7 +11572,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 63.0,
+        "esg_score": 63,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 28,
@@ -11562,7 +11594,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11584,7 +11616,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11606,7 +11638,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11628,7 +11660,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11650,7 +11682,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11672,7 +11704,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11694,7 +11726,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11716,7 +11748,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11738,7 +11770,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11760,7 +11792,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11782,7 +11814,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11804,7 +11836,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11826,7 +11858,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11848,7 +11880,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11870,7 +11902,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11892,7 +11924,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -11906,10 +11938,10 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 2.0,
-      "probabilite_montee_pct": 78.0,
-      "probabilite_maintien_pct": 99.0,
-      "taux_invincibilite": 90.0,
+      "ppm_championnat": 2,
+      "probabilite_montee_pct": 78,
+      "probabilite_maintien_pct": 99,
+      "taux_invincibilite": 90,
       "bilan_global": {
         "matchs": 10,
         "victoires": 3,
@@ -11928,12 +11960,12 @@ window.MATCHDAY_TEAMS = {
         "buts_pour": 16,
         "buts_contre": 3,
         "difference": 13,
-        "ppm": 2.0
+        "ppm": 2
       },
-      "ratio_clean_sheet_pct": 40.0,
+      "ratio_clean_sheet_pct": 40,
       "moyenne_buts_encaisses": 1.3,
       "projection_saison": {
-        "points_prevus": 44.0,
+        "points_prevus": 44,
         "rang_final_estime": "Top 2 Régional 2 (Course à la montée en R1)"
       },
       "matrice_quarts_heure": [
@@ -11969,8 +12001,8 @@ window.MATCHDAY_TEAMS = {
         }
       ],
       "analyse_temporelle": {
-        "buts_2nde_mi_temps_pct": 57.0,
-        "buts_money_time_pct": 28.0,
+        "buts_2nde_mi_temps_pct": 57,
+        "buts_money_time_pct": 28,
         "clean_premiere_demi_heure": "4 clean sheets",
         "point_vigilance": "Excellente efficacité offensive (12-0 vs Montigny)"
       }
@@ -12227,7 +12259,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "05/11/2026 à 11:53"
+      "derniere_maj": "06/11/2026 à 08:47"
     },
     "dernier_match": {
       "id": "seclin_56215870",
@@ -14987,7 +15019,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -15009,7 +15041,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -15031,7 +15063,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -15053,7 +15085,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -15075,7 +15107,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -15097,7 +15129,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -15119,7 +15151,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -15141,7 +15173,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -15163,7 +15195,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -15185,7 +15217,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 96.0,
+        "esg_score": 96,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -15207,7 +15239,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 94.0,
+        "esg_score": 94,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -15229,7 +15261,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 87.0,
+        "esg_score": 87,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -15251,7 +15283,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 85.0,
+        "esg_score": 85,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -15273,7 +15305,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 80.0,
+        "esg_score": 80,
         "badge": "⭐ Cadre Titulaire",
         "sous_scores": {
           "volume": 28,
@@ -15295,7 +15327,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 69.0,
+        "esg_score": 69,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 28,
@@ -15317,7 +15349,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15339,7 +15371,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15361,7 +15393,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15383,7 +15415,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15405,7 +15437,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15427,7 +15459,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15449,7 +15481,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15471,7 +15503,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15493,7 +15525,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15515,7 +15547,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15537,7 +15569,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15559,7 +15591,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15581,7 +15613,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15603,7 +15635,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15625,7 +15657,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15647,7 +15679,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15669,7 +15701,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15691,7 +15723,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15713,7 +15745,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15735,7 +15767,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15757,7 +15789,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15779,7 +15811,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 67.0,
+        "esg_score": 67,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15801,7 +15833,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 66.0,
+        "esg_score": 66,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 28,
@@ -15823,7 +15855,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15845,7 +15877,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15867,7 +15899,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15889,7 +15921,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15911,7 +15943,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15933,7 +15965,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15955,7 +15987,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15977,7 +16009,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -15999,7 +16031,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16021,7 +16053,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16043,7 +16075,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16065,7 +16097,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16087,7 +16119,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16109,7 +16141,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16131,7 +16163,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16153,7 +16185,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16175,7 +16207,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16197,7 +16229,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16219,7 +16251,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16241,7 +16273,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16263,7 +16295,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16285,7 +16317,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16307,7 +16339,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 4,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.0,
+        "esg_score": 62,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16329,7 +16361,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 63.0,
+        "esg_score": 63,
         "badge": "⚡ Rotation Effectif",
         "sous_scores": {
           "volume": 28,
@@ -16351,7 +16383,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16373,7 +16405,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16395,7 +16427,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16417,7 +16449,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16439,7 +16471,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16461,7 +16493,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16483,7 +16515,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16505,7 +16537,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16527,7 +16559,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16549,7 +16581,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16571,7 +16603,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16593,7 +16625,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16615,7 +16647,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16637,7 +16669,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16659,7 +16691,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16681,7 +16713,7 @@ window.MATCHDAY_TEAMS = {
         "clean_sheets": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 57.0,
+        "esg_score": 57,
         "badge": "🔄 Remplaçant",
         "sous_scores": {
           "volume": 28,
@@ -16695,10 +16727,10 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 2.0,
-      "probabilite_montee_pct": 78.0,
-      "probabilite_maintien_pct": 99.0,
-      "taux_invincibilite": 90.0,
+      "ppm_championnat": 2,
+      "probabilite_montee_pct": 78,
+      "probabilite_maintien_pct": 99,
+      "taux_invincibilite": 90,
       "bilan_global": {
         "matchs": 10,
         "victoires": 3,
@@ -16717,12 +16749,12 @@ window.MATCHDAY_TEAMS = {
         "buts_pour": 16,
         "buts_contre": 3,
         "difference": 13,
-        "ppm": 2.0
+        "ppm": 2
       },
-      "ratio_clean_sheet_pct": 40.0,
+      "ratio_clean_sheet_pct": 40,
       "moyenne_buts_encaisses": 1.3,
       "projection_saison": {
-        "points_prevus": 44.0,
+        "points_prevus": 44,
         "rang_final_estime": "Top 2 Régional 2 (Course à la montée en R1)"
       },
       "matrice_quarts_heure": [
@@ -16758,8 +16790,8 @@ window.MATCHDAY_TEAMS = {
         }
       ],
       "analyse_temporelle": {
-        "buts_2nde_mi_temps_pct": 57.0,
-        "buts_money_time_pct": 28.0,
+        "buts_2nde_mi_temps_pct": 57,
+        "buts_money_time_pct": 28,
         "clean_premiere_demi_heure": "4 clean sheets",
         "point_vigilance": "Excellente efficacité offensive (12-0 vs Montigny)"
       }
@@ -17016,7 +17048,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "05/11/2026 à 11:53"
+      "derniere_maj": "06/11/2026 à 08:47"
     },
     "dernier_match": {
       "id": "lesquin_56215867",
@@ -19975,13 +20007,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 15.9,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 35.0,
+          "attaque": 35,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -20001,13 +20033,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 19.9,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 35.0,
+          "attaque": 35,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 6
         }
       },
       {
@@ -20027,13 +20059,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 20.6,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 24.0,
+          "attaque": 24,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -20049,17 +20081,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 68.0,
+        "esg_score": 68,
         "sous_scores": {
-          "volume": 23.0,
+          "volume": 23,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -20079,13 +20111,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 12.6,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 35.0,
+          "attaque": 35,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -20105,13 +20137,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 20.6,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 6
         }
       },
       {
@@ -20131,13 +20163,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 23.9,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 6
         }
       },
       {
@@ -20157,13 +20189,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 16.8,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -20183,13 +20215,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 9.6,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 35.0,
+          "attaque": 35,
           "attaque_max": 35,
-          "presence": 8.0,
+          "presence": 8,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -20209,13 +20241,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 21.5,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 6
         }
       },
       {
@@ -20235,13 +20267,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 20.6,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -20261,13 +20293,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 14.2,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -20287,13 +20319,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 12.6,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 24.0,
+          "attaque": 24,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 12.0
+          "malus_discipline": 12
         }
       },
       {
@@ -20313,13 +20345,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 16.8,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -20339,13 +20371,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 13.5,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -20365,13 +20397,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 9.4,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -20391,13 +20423,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 4.6,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 8.0,
+          "presence": 8,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -20417,13 +20449,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 7.9,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 8.0,
+          "presence": 8,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -20443,13 +20475,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 2.4,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 2.0,
+          "presence": 2,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -20465,17 +20497,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 32.0,
+        "esg_score": 32,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -20491,17 +20523,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
           "volume": 2.2,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 6.0,
+          "presence": 6,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -20517,17 +20549,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
           "volume": 1.5,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 4.0,
+          "presence": 4,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -20543,17 +20575,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
           "volume": 0.7,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 2.0,
+          "presence": 2,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -20569,17 +20601,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
           "volume": 0.7,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 2.0,
+          "presence": 2,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -20595,17 +20627,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
           "volume": 0.7,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 2.0,
+          "presence": 2,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -20621,24 +20653,24 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
           "volume": 0.7,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 2.0,
+          "presence": 2,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       }
     ],
     "gouvernance": {
       "ppm_championnat": 0.6,
-      "probabilite_montee_pct": 12.0,
-      "probabilite_maintien_pct": 74.0,
+      "probabilite_montee_pct": 12,
+      "probabilite_maintien_pct": 74,
       "taux_invincibilite": 76.9,
       "bilan_global": {
         "matchs": 13,
@@ -20663,7 +20695,7 @@ window.MATCHDAY_TEAMS = {
       "ratio_clean_sheet_pct": 7.7,
       "moyenne_buts_encaisses": 1.46,
       "projection_saison": {
-        "points_prevus": 26.0,
+        "points_prevus": 26,
         "rang_final_estime": "Milieu de tableau Régional 2 (Objectif maintien consolidé)"
       },
       "matrice_quarts_heure": [
@@ -20700,7 +20732,7 @@ window.MATCHDAY_TEAMS = {
       ],
       "analyse_temporelle": {
         "buts_2nde_mi_temps_pct": 60.5,
-        "buts_money_time_pct": 21.0,
+        "buts_money_time_pct": 21,
         "clean_premiere_demi_heure": "1 clean sheets",
         "point_vigilance": "Gérer la fin de match pour concrétiser les nuls en victoires"
       }
@@ -20957,7 +20989,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "05/11/2026 à 11:53"
+      "derniere_maj": "06/11/2026 à 08:47"
     },
     "dernier_match": {
       "id": "lesquin_56215867",
@@ -23916,13 +23948,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 15.9,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 35.0,
+          "attaque": 35,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -23942,13 +23974,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 19.9,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 35.0,
+          "attaque": 35,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 6
         }
       },
       {
@@ -23968,13 +24000,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 20.6,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 24.0,
+          "attaque": 24,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -23990,17 +24022,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 68.0,
+        "esg_score": 68,
         "sous_scores": {
-          "volume": 23.0,
+          "volume": 23,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -24020,13 +24052,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 12.6,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 35.0,
+          "attaque": 35,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -24046,13 +24078,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 20.6,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 6
         }
       },
       {
@@ -24072,13 +24104,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 23.9,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 6
         }
       },
       {
@@ -24098,13 +24130,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 16.8,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -24124,13 +24156,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 9.6,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 35.0,
+          "attaque": 35,
           "attaque_max": 35,
-          "presence": 8.0,
+          "presence": 8,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -24150,13 +24182,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 21.5,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 6
         }
       },
       {
@@ -24176,13 +24208,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 20.6,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -24202,13 +24234,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 14.2,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -24228,13 +24260,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 12.6,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 24.0,
+          "attaque": 24,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 12.0
+          "malus_discipline": 12
         }
       },
       {
@@ -24254,13 +24286,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 16.8,
           "volume_max": 35,
-          "defense": 6.0,
+          "defense": 6,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -24280,13 +24312,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 13.5,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -24306,13 +24338,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 9.4,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 10.0,
+          "presence": 10,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -24332,13 +24364,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 4.6,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 8.0,
+          "presence": 8,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -24358,13 +24390,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 7.9,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 8.0,
+          "presence": 8,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -24384,13 +24416,13 @@ window.MATCHDAY_TEAMS = {
         "sous_scores": {
           "volume": 2.4,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 2.0,
+          "presence": 2,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -24406,17 +24438,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 32.0,
+        "esg_score": 32,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -24432,17 +24464,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
           "volume": 2.2,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 6.0,
+          "presence": 6,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -24458,17 +24490,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
           "volume": 1.5,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 4.0,
+          "presence": 4,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -24484,17 +24516,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
           "volume": 0.7,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 2.0,
+          "presence": 2,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -24510,17 +24542,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
           "volume": 0.7,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 2.0,
+          "presence": 2,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -24536,17 +24568,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
           "volume": 0.7,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 2.0,
+          "presence": 2,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -24562,24 +24594,24 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
           "volume": 0.7,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 2.0,
+          "presence": 2,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       }
     ],
     "gouvernance": {
       "ppm_championnat": 0.6,
-      "probabilite_montee_pct": 12.0,
-      "probabilite_maintien_pct": 74.0,
+      "probabilite_montee_pct": 12,
+      "probabilite_maintien_pct": 74,
       "taux_invincibilite": 76.9,
       "bilan_global": {
         "matchs": 13,
@@ -24604,7 +24636,7 @@ window.MATCHDAY_TEAMS = {
       "ratio_clean_sheet_pct": 7.7,
       "moyenne_buts_encaisses": 1.46,
       "projection_saison": {
-        "points_prevus": 26.0,
+        "points_prevus": 26,
         "rang_final_estime": "Milieu de tableau Régional 2 (Objectif maintien consolidé)"
       },
       "matrice_quarts_heure": [
@@ -24641,7 +24673,7 @@ window.MATCHDAY_TEAMS = {
       ],
       "analyse_temporelle": {
         "buts_2nde_mi_temps_pct": 60.5,
-        "buts_money_time_pct": 21.0,
+        "buts_money_time_pct": 21,
         "clean_premiere_demi_heure": "1 clean sheets",
         "point_vigilance": "Gérer la fin de match pour concrétiser les nuls en victoires"
       }
@@ -24898,7 +24930,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "05/11/2026 à 11:53"
+      "derniere_maj": "06/11/2026 à 08:47"
     },
     "dernier_match": {
       "id": "esquelbecq_56216133",
@@ -26596,17 +26628,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 4,
         "cartons_j": 3,
         "cartons_r": 0,
-        "esg_score": 46.0,
+        "esg_score": 46,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 35.0,
+          "attaque": 35,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 9.0
+          "malus_discipline": 9
         }
       },
       {
@@ -26622,17 +26654,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 2,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 38.0,
+        "esg_score": 38,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 24.0,
+          "attaque": 24,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 6
         }
       },
       {
@@ -26648,17 +26680,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 2,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 38.0,
+        "esg_score": 38,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 24.0,
+          "attaque": 24,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 6
         }
       },
       {
@@ -26674,17 +26706,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 32.0,
+        "esg_score": 32,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -26700,17 +26732,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 32.0,
+        "esg_score": 32,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -26726,17 +26758,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -26752,17 +26784,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -26778,17 +26810,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 6
         }
       },
       {
@@ -26804,17 +26836,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 1,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 10.0
+          "malus_discipline": 10
         }
       },
       {
@@ -26830,17 +26862,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -26856,17 +26888,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -26882,17 +26914,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -26908,17 +26940,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -26934,17 +26966,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -26960,17 +26992,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -26986,17 +27018,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -27012,17 +27044,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 6
         }
       },
       {
@@ -27038,25 +27070,25 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 6
         }
       }
     ],
     "gouvernance": {
       "ppm_championnat": 1.2,
-      "probabilite_montee_pct": 10.0,
-      "probabilite_maintien_pct": 78.0,
-      "taux_invincibilite": 50.0,
+      "probabilite_montee_pct": 10,
+      "probabilite_maintien_pct": 78,
+      "taux_invincibilite": 50,
       "bilan_global": {
         "matchs": 8,
         "victoires": 4,
@@ -27077,10 +27109,10 @@ window.MATCHDAY_TEAMS = {
         "difference": -4,
         "ppm": 1.2
       },
-      "ratio_clean_sheet_pct": 25.0,
+      "ratio_clean_sheet_pct": 25,
       "moyenne_buts_encaisses": 1.38,
       "projection_saison": {
-        "points_prevus": 28.0,
+        "points_prevus": 28,
         "rang_final_estime": "Milieu de tableau Régional 2 Poule A (Objectif maintien)"
       },
       "matrice_quarts_heure": [
@@ -27116,8 +27148,8 @@ window.MATCHDAY_TEAMS = {
         }
       ],
       "analyse_temporelle": {
-        "buts_2nde_mi_temps_pct": 58.0,
-        "buts_money_time_pct": 26.0,
+        "buts_2nde_mi_temps_pct": 58,
+        "buts_money_time_pct": 26,
         "clean_premiere_demi_heure": "2 clean sheets",
         "point_vigilance": "Solidité défensive en début de match et gestion de la discipline"
       }
@@ -27374,7 +27406,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "05/11/2026 à 11:53"
+      "derniere_maj": "06/11/2026 à 08:47"
     },
     "dernier_match": {
       "id": "esquelbecq_56216133",
@@ -29072,17 +29104,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 4,
         "cartons_j": 3,
         "cartons_r": 0,
-        "esg_score": 46.0,
+        "esg_score": 46,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 35.0,
+          "attaque": 35,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 9.0
+          "malus_discipline": 9
         }
       },
       {
@@ -29098,17 +29130,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 2,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 38.0,
+        "esg_score": 38,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 24.0,
+          "attaque": 24,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 6
         }
       },
       {
@@ -29124,17 +29156,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 2,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 38.0,
+        "esg_score": 38,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 24.0,
+          "attaque": 24,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 6
         }
       },
       {
@@ -29150,17 +29182,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 32.0,
+        "esg_score": 32,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -29176,17 +29208,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 32.0,
+        "esg_score": 32,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 0.0
+          "malus_discipline": 0
         }
       },
       {
@@ -29202,17 +29234,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -29228,17 +29260,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -29254,17 +29286,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 12.0,
+          "attaque": 12,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 6
         }
       },
       {
@@ -29280,17 +29312,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 1,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 10.0
+          "malus_discipline": 10
         }
       },
       {
@@ -29306,17 +29338,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -29332,17 +29364,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -29358,17 +29390,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -29384,17 +29416,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -29410,17 +29442,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -29436,17 +29468,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -29462,17 +29494,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 3.0
+          "malus_discipline": 3
         }
       },
       {
@@ -29488,17 +29520,17 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 6
         }
       },
       {
@@ -29514,25 +29546,25 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 30.0,
+        "esg_score": 30,
         "sous_scores": {
-          "volume": 0.0,
+          "volume": 0,
           "volume_max": 35,
-          "defense": 0.0,
+          "defense": 0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 0,
           "attaque_max": 35,
-          "presence": 0.0,
+          "presence": 0,
           "presence_max": 10,
-          "malus_discipline": 6.0
+          "malus_discipline": 6
         }
       }
     ],
     "gouvernance": {
       "ppm_championnat": 1.2,
-      "probabilite_montee_pct": 10.0,
-      "probabilite_maintien_pct": 78.0,
-      "taux_invincibilite": 50.0,
+      "probabilite_montee_pct": 10,
+      "probabilite_maintien_pct": 78,
+      "taux_invincibilite": 50,
       "bilan_global": {
         "matchs": 8,
         "victoires": 4,
@@ -29553,10 +29585,10 @@ window.MATCHDAY_TEAMS = {
         "difference": -4,
         "ppm": 1.2
       },
-      "ratio_clean_sheet_pct": 25.0,
+      "ratio_clean_sheet_pct": 25,
       "moyenne_buts_encaisses": 1.38,
       "projection_saison": {
-        "points_prevus": 28.0,
+        "points_prevus": 28,
         "rang_final_estime": "Milieu de tableau Régional 2 Poule A (Objectif maintien)"
       },
       "matrice_quarts_heure": [
@@ -29592,8 +29624,8 @@ window.MATCHDAY_TEAMS = {
         }
       ],
       "analyse_temporelle": {
-        "buts_2nde_mi_temps_pct": 58.0,
-        "buts_money_time_pct": 26.0,
+        "buts_2nde_mi_temps_pct": 58,
+        "buts_money_time_pct": 26,
         "clean_premiere_demi_heure": "2 clean sheets",
         "point_vigilance": "Solidité défensive en début de match et gestion de la discipline"
       }
