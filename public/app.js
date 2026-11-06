@@ -898,9 +898,15 @@ function authenticateClub(key, declaredRole, isFormSubmit) {
       roleBadge.textContent = 'SUPER ADMIN';
       roleBadge.style.background = '#b45309';
     }
-    if (masterContainer) masterContainer.style.display = 'flex';
+    if (masterContainer) {
+      masterContainer.classList.add('active-master');
+      masterContainer.style.setProperty('display', 'inline-flex', 'important');
+    }
   } else {
-    if (masterContainer) masterContainer.style.display = 'none';
+    if (masterContainer) {
+      masterContainer.classList.remove('active-master');
+      masterContainer.style.setProperty('display', 'none', 'important');
+    }
     if (headerLogo && activeClub.logo_url) {
       headerLogo.src = activeClub.logo_url;
       headerLogo.style.display = 'block';
@@ -1349,7 +1355,10 @@ function logoutClub(silent) {
   const roleBadge = document.getElementById('appRoleBadge');
   const masterContainer = document.getElementById('masterClubContainer');
 
-  if (masterContainer) masterContainer.style.display = 'none';
+  if (masterContainer) {
+    masterContainer.classList.remove('active-master');
+    masterContainer.style.setProperty('display', 'none', 'important');
+  }
   if (headerLogo) headerLogo.style.display = 'none';
   if (headerDiv) headerDiv.style.display = 'none';
   if (roleBadge) {
