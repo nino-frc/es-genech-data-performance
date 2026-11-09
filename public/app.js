@@ -1623,12 +1623,12 @@ function renderInterface(data) {
 
   // C. 4 KPIs de Saison - 100% Dynamiques & Automatisés (R3, R2, D1, D2, Fém)
   const kpis = data.kpis_saison || {};
-  const historyList = data.historique_matchs || [];
+  const kpiHistoryList = data.historique_matchs || [];
 
   let dynChampGoals = 0, dynCupGoals = 0;
   let dynChampCS = 0, dynCupCS = 0;
 
-  historyList.forEach(m => {
+  kpiHistoryList.forEach(m => {
     const isCup = m.comp_type === 'CDF' || (m.competition && (m.competition.toLowerCase().includes('coupe') || m.competition.toLowerCase().includes('gambardella')));
     const isClubDom = (m.domicile && (m.domicile.toUpperCase().includes('GENECH') || m.domicile.toUpperCase().includes('SECLIN') || m.domicile.toUpperCase().includes('LESQUIN') || m.domicile.toUpperCase().includes('ESQUELBECQ')));
     const scored = isClubDom ? Number(m.score_domicile ?? 0) : Number(m.score_exterieur ?? 0);
@@ -1647,7 +1647,7 @@ function renderInterface(data) {
   const totalCS = kpis.clean_sheets ?? (dynChampCS + dynCupCS);
   const totalCardsJ = kpis.cartons_jaunes ?? 0;
   const totalCardsR = kpis.cartons_rouges ?? 0;
-  const totalMatches = historyList.length || 1;
+  const totalMatches = kpiHistoryList.length || 1;
   const totalMinutes = kpis.minutes_cumulees || (totalMatches * 990);
 
   let champCardsJ = totalCardsJ;
