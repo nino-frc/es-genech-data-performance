@@ -1622,6 +1622,15 @@ function renderInterface(data) {
   }
 
   // C. 4 KPIs de Saison - 100% Dynamiques & Automatisés (R3, R2, D1, D2, Fém)
+  const catShort = (function() {
+    const raw = (currentTeamId || '').toUpperCase();
+    if (raw.includes('U18') || raw.includes('U19')) return 'U18 R2';
+    if (raw.includes('F2') || raw.includes('FEM')) return 'Fém.';
+    if (raw.includes('M3') || raw.includes('D2')) return 'D2';
+    if (raw.includes('D1')) return 'D1';
+    return 'R3';
+  })();
+
   const kpis = data.kpis_saison || {};
   const kpiHistoryList = data.historique_matchs || [];
 
