@@ -266,7 +266,7 @@ def build_secondary_team_data(team_id: str, conn: sqlite3.Connection):
         next_match = {
             "competition": comp_next,
             "date_heure": nm_row["date_heure"],
-            "lieu": "Stade Léo Lagrange (Genech)" if "GENECH" in str(nm_row["equipe_domicile"]).upper() else "Terrain adverse",
+            "lieu": "Parc des Sports (Genech)" if "GENECH" in str(nm_row["equipe_domicile"]).upper() else "Terrain adverse",
             "domicile": nm_row["equipe_domicile"],
             "exterieur": nm_row["equipe_exterieur"],
             "comparatif": comp_obj,
@@ -301,7 +301,7 @@ def build_secondary_team_data(team_id: str, conn: sqlite3.Connection):
             next_match = {
                 "competition": "Interdistricts Féminin • Journée 5",
                 "date_heure": "08/11/2026 à 10:30",
-                "lieu": "Stade Léo Lagrange (Genech)",
+                "lieu": "Parc des Sports (Genech)",
                 "domicile": "ES GENECH",
                 "exterieur": "FEIGNIES AULNOYE EFA",
                 "comparatif": comp_obj,
@@ -311,7 +311,7 @@ def build_secondary_team_data(team_id: str, conn: sqlite3.Connection):
             next_match = {
                 "competition": f"{team_meta['poule']}",
                 "date_heure": "Prochaine journée FFF en cours de planification",
-                "lieu": "Stade Léo Lagrange (Genech)",
+                "lieu": "Parc des Sports (Genech)",
                 "domicile": "ES GENECH",
                 "exterieur": "ADVERSAIRE",
                 "comparatif": {
@@ -1941,7 +1941,7 @@ def export_real_pwa_feed():
     next_match = {
         "competition": "Seniors Régional 3 • Journée 6",
         "date_heure": "Dimanche 08 Novembre 2026 à 14h30",
-        "lieu": "Stade Léo Lagrange (Genech)",
+        "lieu": "Parc des Sports (Genech)",
         "domicile": "ES GENECH",
         "exterieur": "BAVAY US",
         "comparatif": {
