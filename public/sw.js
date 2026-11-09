@@ -1,5 +1,5 @@
 // Service Worker - MatchDay PWA (Notifications Push & Mode Autonome)
-const CACHE_NAME = 'matchday-cache-v26';
+const CACHE_NAME = 'matchday-cache-v27';
 
 self.addEventListener('install', (e) => {
   self.skipWaiting();

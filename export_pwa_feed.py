@@ -1937,30 +1937,30 @@ def export_real_pwa_feed():
                 "detail": ev["detail"]
             })
 
-    # 3. Prochain Match : VALENCIENNES SUMMER vs ES GENECH (J7, 22/11 à 14h30)
+    # 3. Prochain Match : ES BULLY-LES-MINES vs ES GENECH (Coupe Hauts-de-France • 4e Tour, 15/11 à 14h30)
     next_match = {
-        "competition": "Seniors Régional 3 • Journée 7",
-        "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
-        "lieu": "Stade Municipal (Valenciennes)",
-        "domicile": "VALENCIENNES SUMMER",
+        "competition": "Coupe des Hauts-de-France • 4ème Tour",
+        "date_heure": "Dimanche 15 Novembre 2026 à 14h30",
+        "lieu": "Stade René Corbelle (Bully-les-Mines)",
+        "domicile": "ES BULLY-LES-MINES",
         "exterieur": "ES GENECH",
         "comparatif": {
-            "titre": "Seniors Régional 3 • Journée 7 (Poule D)",
-            "adversaire_nom": "Valenciennes Summer",
-            "adversaire_rang": "6e",
-            "adversaire_pts": 10,
-            "adversaire_buts_pour": 8,
-            "adversaire_buts_contre": 7,
+            "titre": "Coupe des Hauts-de-France • 4ème Tour",
+            "adversaire_nom": "ES Bully-les-Mines",
+            "adversaire_rang": "Régional 2",
+            "adversaire_pts": "-",
+            "adversaire_buts_pour": "-",
+            "adversaire_buts_contre": "-",
             "club_nom": "ES Genech",
-            "club_rang": "2e",
+            "club_rang": "2e (R3)",
             "club_pts": 12,
             "club_buts_pour": 13,
             "club_buts_contre": 4
         },
         "alertes": [
-            "Déplacement à Valenciennes Summer (6e, 10 pts) : choc de haut de tableau pour Genech (2e, 12 pts, toujours invaincu).",
-            "Genech reste sur une victoire éclatante 6-0 contre Bavay et possède la meilleure attaque de la poule (13 buts).",
-            "Valenciennes Summer est solide à domicile mais a concédé 2 défaites sur les 4 dernières journées."
+            "Déplacement au 4ème tour de Coupe des Hauts-de-France à l'ES Bully-les-Mines (Régional 2), division supérieure.",
+            "Genech arrive en pleine confiance : invaincu en championnat (12 pts, 13 buts marqués) et qualifié après son épopée au 6e tour de Coupe de France.",
+            "Match à élimination directe : tirs au but directs en cas d'égalité à la 90e minute (pas de prolongations)."
         ],
         "stats_comparatives": {
             "genech": {
@@ -1971,19 +1971,19 @@ def export_real_pwa_feed():
                 "diff": "+9",
                 "forme": ["N", "N", "V", "V"]
             },
-            "valenciennes": {
-                "rang": 6,
-                "points": 10,
-                "buts_marques": 8,
-                "buts_encaisses": 7,
-                "diff": "+1",
-                "forme": ["V", "D", "V", "D"]
+            "bully": {
+                "rang": "R2",
+                "points": "-",
+                "buts_marques": "-",
+                "buts_encaisses": "-",
+                "diff": "-",
+                "forme": ["V", "N", "V", "D"]
             }
         },
         "adversaire_alertes": [
-            "Déplacement à Valenciennes Summer (6e, 10 pts) : choc de haut de tableau pour Genech (2e, 12 pts, toujours invaincu).",
-            "Genech reste sur une victoire éclatante 6-0 contre Bavay et possède la meilleure attaque de la poule (13 buts).",
-            "Valenciennes Summer est solide à domicile mais a concédé 2 défaites sur les 4 dernières journées."
+            "Déplacement au 4ème tour de Coupe des Hauts-de-France à l'ES Bully-les-Mines (Régional 2), division supérieure.",
+            "Genech arrive en pleine confiance : invaincu en championnat (12 pts, 13 buts marqués) et qualifié après son épopée au 6e tour de Coupe de France.",
+            "Match à élimination directe : tirs au but directs en cas d'égalité à la 90e minute (pas de prolongations)."
         ]
     }
 
@@ -1995,8 +1995,8 @@ def export_real_pwa_feed():
         "moyenne_jaunes": "En attente",
         "severite": "EN ATTENTE",
         "badge_color": "#64748b",
-        "style": "Désignation en cours de publication par la CRA des Hauts-de-France pour la Journée 7.",
-        "consigne_coach": "Désignation d'arbitre en attente de publication par la CRA (généralement jeudi précédant la rencontre). Maintenir une discipline exemplaire."
+        "style": "Désignation pour le 4ème tour de Coupe des Hauts-de-France en attente de publication par la CRA (jeudi).",
+        "consigne_coach": "Format Coupe à élimination directe face à une R2 : intensité maximale dès le coup d'envoi et discipline exemplaire."
     }
 
     # 4. Traducteur Financier de Trésorerie (Barème officiel Ligue LFHF)
