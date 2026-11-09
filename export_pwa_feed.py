@@ -1937,66 +1937,66 @@ def export_real_pwa_feed():
                 "detail": ev["detail"]
             })
 
-    # 3. Prochain Match : ES GENECH vs BAVAY US (J6, 08/11 à 14h30)
+    # 3. Prochain Match : VALENCIENNES SUMMER vs ES GENECH (J7, 22/11 à 14h30)
     next_match = {
-        "competition": "Seniors Régional 3 • Journée 6",
-        "date_heure": "Dimanche 08 Novembre 2026 à 14h30",
-        "lieu": "Parc des Sports (Genech)",
-        "domicile": "ES GENECH",
-        "exterieur": "BAVAY US",
+        "competition": "Seniors Régional 3 • Journée 7",
+        "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+        "lieu": "Stade Municipal (Valenciennes)",
+        "domicile": "VALENCIENNES SUMMER",
+        "exterieur": "ES GENECH",
         "comparatif": {
-            "titre": "Seniors Régional 3 • Journée 6 (Poule D)",
-            "adversaire_nom": "Bavay US",
-            "adversaire_rang": "9e",
-            "adversaire_pts": 3,
-            "adversaire_buts_pour": 5,
-            "adversaire_buts_contre": 9,
+            "titre": "Seniors Régional 3 • Journée 7 (Poule D)",
+            "adversaire_nom": "Valenciennes Summer",
+            "adversaire_rang": "6e",
+            "adversaire_pts": 10,
+            "adversaire_buts_pour": 8,
+            "adversaire_buts_contre": 7,
             "club_nom": "ES Genech",
-            "club_rang": "5e",
-            "club_pts": 9,
-            "club_buts_pour": 7,
+            "club_rang": "2e",
+            "club_pts": 12,
+            "club_buts_pour": 13,
             "club_buts_contre": 4
         },
         "alertes": [
-            "Réception de Bavay US (9e, 3 pts) : l'occasion idéale pour Genech (5e, 9 pts, invaincu) de renouer avec la victoire à domicile.",
-            "Bavay reste sur une défaite 3-0 à Valenciennes Summer le week-end dernier (1 seule victoire en 5 journées).",
-            "Genech est l'une des 2 seules formations encore invaincues de la poule (2 victoires, 3 nuls)."
+            "Déplacement à Valenciennes Summer (6e, 10 pts) : choc de haut de tableau pour Genech (2e, 12 pts, toujours invaincu).",
+            "Genech reste sur une victoire éclatante 6-0 contre Bavay et possède la meilleure attaque de la poule (13 buts).",
+            "Valenciennes Summer est solide à domicile mais a concédé 2 défaites sur les 4 dernières journées."
         ],
         "stats_comparatives": {
             "genech": {
-                "rang": 5,
-                "points": 9,
-                "buts_marques": 7,
+                "rang": 2,
+                "points": 12,
+                "buts_marques": 13,
                 "buts_encaisses": 4,
-                "diff": "+3",
-                "forme": ["N", "N", "N", "V", "V"]
+                "diff": "+9",
+                "forme": ["N", "N", "V", "V"]
             },
-            "bavay": {
-                "rang": 9,
-                "points": 3,
-                "buts_marques": 5,
-                "buts_encaisses": 9,
-                "diff": "-4",
-                "forme": ["D", "N", "D", "V", "D"]
+            "valenciennes": {
+                "rang": 6,
+                "points": 10,
+                "buts_marques": 8,
+                "buts_encaisses": 7,
+                "diff": "+1",
+                "forme": ["V", "D", "V", "D"]
             }
         },
         "adversaire_alertes": [
-            "Réception de Bavay US (9e, 3 pts) : l'occasion idéale pour Genech (5e, 9 pts, invaincu) de renouer avec la victoire à domicile.",
-            "Bavay reste sur une défaite 3-0 à Valenciennes Summer le week-end dernier (1 seule victoire en 5 journées).",
-            "Genech est l'une des 2 seules formations encore invaincues de la poule (2 victoires, 3 nuls)."
+            "Déplacement à Valenciennes Summer (6e, 10 pts) : choc de haut de tableau pour Genech (2e, 12 pts, toujours invaincu).",
+            "Genech reste sur une victoire éclatante 6-0 contre Bavay et possède la meilleure attaque de la poule (13 buts).",
+            "Valenciennes Summer est solide à domicile mais a concédé 2 défaites sur les 4 dernières journées."
         ]
     }
 
-    # Arbitre prochain match : Désignation officielle CRA LFHF (Jeudi 05/11)
+    # Arbitre prochain match : En attente désignation officielle CRA LFHF
     arbitre_info = {
-        "nom_arbitre": "Gwenael BLERVACQ",
+        "nom_arbitre": "Désignation en attente (CRA)",
         "district": "Ligue de Football des Hauts-de-France (CRA)",
-        "niveau": "Arbitre Régional R3 Officiel",
-        "moyenne_jaunes": "3.8 / match",
-        "severite": "MODÉRÉE",
-        "badge_color": "#d97706",
-        "style": "Arbitre d'expérience, dialogue constructif mais très ferme sur les contestations orales et tirages de maillot.",
-        "consigne_coach": "Gwenael BLERVACQ désigné par la CRA ce jeudi 05/11. Consigne coach : canaliser toute protestation, seul le capitaine communique avec le corps arbitral pour préserver la discipline."
+        "niveau": "Commission Régionale de l'Arbitrage",
+        "moyenne_jaunes": "En attente",
+        "severite": "EN ATTENTE",
+        "badge_color": "#64748b",
+        "style": "Désignation en cours de publication par la CRA des Hauts-de-France pour la Journée 7.",
+        "consigne_coach": "Désignation d'arbitre en attente de publication par la CRA (généralement jeudi précédant la rencontre). Maintenir une discipline exemplaire."
     }
 
     # 4. Traducteur Financier de Trésorerie (Barème officiel Ligue LFHF)

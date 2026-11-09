@@ -2946,7 +2946,26 @@ body {
 .kpi-box .kpi-title,
 .kpi-box .kpi-value,
 .kpi-box .kpi-desc {
-  max-width: calc(100% - 38px) !important;
+  max-width: 100% !important;
+  word-break: break-word !important;
+  box-sizing: border-box !important;
+}
+
+.kpi-box:has(.kpi-graphic-icon) .kpi-title,
+.kpi-box:has(.kpi-graphic-icon) .kpi-value,
+.kpi-box:has(.kpi-graphic-icon) .kpi-desc {
+  max-width: calc(100% - 36px) !important;
+}
+
+#govInvincibilite {
+  font-size: 20px !important;
+  white-space: nowrap !important;
+  letter-spacing: -0.5px !important;
+}
+
+#govInvincibiliteTitle {
+  font-size: 10px !important;
+  line-height: 1.2 !important;
 }
 
 .kpi-box .kpi-graphic-icon {

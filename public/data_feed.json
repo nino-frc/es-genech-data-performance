@@ -8,7 +8,7 @@
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "09/11/2026 à 18:16"
+      "derniere_maj": "09/11/2026 à 18:34"
     },
     "dernier_match": {
       "id": "r3_j6_genech_bavay",
@@ -40,7 +40,7 @@
         "type": "CHANGEMENT",
         "equipe": "GENECH ES",
         "acteur": "Dany D.",
-        "detail": "DANY D. remplace JEAN PAUL B."
+        "detail": "Dany D. entre en jeu (remplacement à la mi-temps)"
       },
       {
         "minute": 53,
@@ -135,53 +135,51 @@
       }
     ],
     "prochain_match": {
-      "competition": "Seniors Régional 3 • Journée 6",
-      "date_heure": "Dimanche 08 Novembre 2026 à 14h30",
-      "lieu": "Parc des Sports (Genech)",
-      "domicile": "ES GENECH",
-      "exterieur": "BAVAY US",
+      "competition": "Seniors Régional 3 • Journée 7",
+      "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+      "lieu": "Stade Municipal (Valenciennes)",
+      "domicile": "VALENCIENNES SUMMER",
+      "exterieur": "ES GENECH",
       "comparatif": {
-        "titre": "Seniors Régional 3 • Journée 6 (Poule D)",
-        "adversaire_nom": "Bavay US",
-        "adversaire_rang": "9e",
-        "adversaire_pts": 3,
-        "adversaire_buts_pour": 5,
-        "adversaire_buts_contre": 9,
+        "titre": "Seniors Régional 3 • Journée 7 (Poule D)",
+        "adversaire_nom": "Valenciennes Summer",
+        "adversaire_rang": "6e",
+        "adversaire_pts": 10,
+        "adversaire_buts_pour": 8,
+        "adversaire_buts_contre": 7,
         "club_nom": "ES Genech",
-        "club_rang": "5e",
-        "club_pts": 9,
-        "club_buts_pour": 7,
+        "club_rang": "2e",
+        "club_pts": 12,
+        "club_buts_pour": 13,
         "club_buts_contre": 4
       },
       "alertes": [
-        "Réception de Bavay US (9e, 3 pts) : l'occasion idéale pour Genech (5e, 9 pts, invaincu) de renouer avec la victoire à domicile.",
-        "Bavay reste sur une défaite 3-0 à Valenciennes Summer le week-end dernier (1 seule victoire en 5 journées).",
-        "Genech est l'une des 2 seules formations encore invaincues de la poule (2 victoires, 3 nuls)."
+        "Déplacement à Valenciennes Summer (6e, 10 pts) : choc de haut de tableau pour Genech (2e, 12 pts, toujours invaincu).",
+        "Genech reste sur une victoire éclatante 6-0 contre Bavay et possède la meilleure attaque de la poule (13 buts).",
+        "Valenciennes Summer est solide à domicile mais a concédé 2 défaites sur les 4 dernières journées."
       ],
       "stats_comparatives": {
         "genech": {
-          "rang": 5,
-          "points": 9,
-          "buts_marques": 7,
+          "rang": 2,
+          "points": 12,
+          "buts_marques": 13,
           "buts_encaisses": 4,
-          "diff": "+3",
+          "diff": "+9",
           "forme": [
-            "N",
             "N",
             "N",
             "V",
             "V"
           ]
         },
-        "bavay": {
-          "rang": 9,
-          "points": 3,
-          "buts_marques": 5,
-          "buts_encaisses": 9,
-          "diff": "-4",
+        "valenciennes": {
+          "rang": 6,
+          "points": 10,
+          "buts_marques": 8,
+          "buts_encaisses": 7,
+          "diff": "+1",
           "forme": [
-            "D",
-            "N",
+            "V",
             "D",
             "V",
             "D"
@@ -189,9 +187,9 @@
         }
       },
       "adversaire_alertes": [
-        "Réception de Bavay US (9e, 3 pts) : l'occasion idéale pour Genech (5e, 9 pts, invaincu) de renouer avec la victoire à domicile.",
-        "Bavay reste sur une défaite 3-0 à Valenciennes Summer le week-end dernier (1 seule victoire en 5 journées).",
-        "Genech est l'une des 2 seules formations encore invaincues de la poule (2 victoires, 3 nuls)."
+        "Déplacement à Valenciennes Summer (6e, 10 pts) : choc de haut de tableau pour Genech (2e, 12 pts, toujours invaincu).",
+        "Genech reste sur une victoire éclatante 6-0 contre Bavay et possède la meilleure attaque de la poule (13 buts).",
+        "Valenciennes Summer est solide à domicile mais a concédé 2 défaites sur les 4 dernières journées."
       ]
     },
     "meteo_prochain_match": {
@@ -204,14 +202,14 @@
       "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle sèche et rapide."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Gwenael BLERVACQ",
+      "nom_arbitre": "Désignation en attente (CRA)",
       "district": "Ligue de Football des Hauts-de-France (CRA)",
-      "niveau": "Arbitre Régional R3 Officiel",
-      "moyenne_jaunes": "3.8 / match",
-      "severite": "MODÉRÉE",
-      "badge_color": "#d97706",
-      "style": "Arbitre d'expérience, dialogue constructif mais très ferme sur les contestations orales et tirages de maillot.",
-      "consigne_coach": "Gwenael BLERVACQ désigné par la CRA ce jeudi 05/11. Consigne coach : canaliser toute protestation, seul le capitaine communique avec le corps arbitral pour préserver la discipline."
+      "niveau": "Commission Régionale de l'Arbitrage",
+      "moyenne_jaunes": "En attente",
+      "severite": "EN ATTENTE",
+      "badge_color": "#64748b",
+      "style": "Désignation en cours de publication par la CRA des Hauts-de-France pour la Journée 7.",
+      "consigne_coach": "Désignation d'arbitre en attente de publication par la CRA (généralement jeudi précédant la rencontre). Maintenir une discipline exemplaire."
     },
     "historique_matchs": [
       {
@@ -250,8 +248,8 @@
             "type": "CHANGEMENT",
             "equipe": "GENECH ES",
             "acteur": "Dany D.",
-            "acteur_secondaire": "Jean-paul B.",
-            "detail": "DANY D. remplace JEAN PAUL B."
+            "acteur_secondaire": "",
+            "detail": "Dany D. entre en jeu (remplacement à la mi-temps)"
           },
           {
             "minute": 53,
@@ -3372,7 +3370,7 @@
       "buts_marques": 17,
       "buts_encaisses": 6,
       "clean_sheets": 6,
-      "minutes_cumulees": 10911,
+      "minutes_cumulees": 10955,
       "cartons_jaunes": 21,
       "cartons_rouges": 3
     },
@@ -3656,14 +3654,14 @@
         "matchs": 10,
         "titularisations": 8,
         "remplacements": 2,
-        "minutes": 587,
+        "minutes": 631,
         "clean_sheets": 4,
         "buts": 1,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 64.8,
+        "esg_score": 66.3,
         "sous_scores": {
-          "volume": 20.8,
+          "volume": 22.3,
           "volume_max": 35,
           "defense": 24.0,
           "defense_max": 30,
@@ -4341,7 +4339,7 @@
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "09/11/2026 à 18:16"
+      "derniere_maj": "09/11/2026 à 18:34"
     },
     "dernier_match": {
       "id": "m_u18_m1_79496282-et-c-anstai",
@@ -5832,7 +5830,7 @@
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "09/11/2026 à 18:16"
+      "derniere_maj": "09/11/2026 à 18:34"
     },
     "dernier_match": {
       "id": "m_senior_f2_78809066-lille-e-s-l",
@@ -6796,7 +6794,7 @@
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "09/11/2026 à 18:16"
+      "derniere_maj": "09/11/2026 à 18:34"
     },
     "dernier_match": {
       "id": "m_senior_b_j5_roubaix",
@@ -7747,7 +7745,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "09/11/2026 à 18:16"
+      "derniere_maj": "09/11/2026 à 18:34"
     },
     "dernier_match": {
       "id": "seclin_56215870",
@@ -12536,7 +12534,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "09/11/2026 à 18:16"
+      "derniere_maj": "09/11/2026 à 18:34"
     },
     "dernier_match": {
       "id": "seclin_56215870",
@@ -17325,7 +17323,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "09/11/2026 à 18:16"
+      "derniere_maj": "09/11/2026 à 18:34"
     },
     "dernier_match": {
       "id": "lesquin_56215867",
@@ -21266,7 +21264,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "09/11/2026 à 18:16"
+      "derniere_maj": "09/11/2026 à 18:34"
     },
     "dernier_match": {
       "id": "lesquin_56215867",
@@ -25207,7 +25205,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "09/11/2026 à 18:16"
+      "derniere_maj": "09/11/2026 à 18:34"
     },
     "dernier_match": {
       "id": "esquelbecq_56216133",
@@ -27683,7 +27681,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "09/11/2026 à 18:16"
+      "derniere_maj": "09/11/2026 à 18:34"
     },
     "dernier_match": {
       "id": "esquelbecq_56216133",
