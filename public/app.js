@@ -1840,6 +1840,60 @@ function renderInterface(data) {
     `;
   }
 
+  // D ter. Scénarios & Résilience Mentale FMI
+  const resData = data.scenarios_resilience;
+  const resCard = document.getElementById('matchdayResilienceCard');
+  if (resCard) {
+    if (resData) {
+      resCard.style.display = 'block';
+      const ptsEl = document.getElementById('resiliencePtsTrailing');
+      if (ptsEl) ptsEl.textContent = `${resData.points_after_trailing} pts`;
+      const trEl = document.getElementById('resilienceTrailedCount');
+      if (trEl) trEl.textContent = `sauvés (${resData.trailed_count} fois mené)`;
+      const winEl = document.getElementById('resilienceWinRate');
+      if (winEl) winEl.textContent = resData.win_rate_after_leading;
+      const winsCountEl = document.getElementById('resilienceWinsCount');
+      if (winsCountEl) winsCountEl.textContent = `${resData.wins_after_leading} vict. / ${resData.led_count} fois`;
+      const mtDiffEl = document.getElementById('resilienceMoneyTimeDiff');
+      if (mtDiffEl) mtDiffEl.textContent = resData.money_time_diff;
+      const mtGoalsEl = document.getElementById('resilienceMoneyTimeGoals');
+      if (mtGoalsEl) mtGoalsEl.textContent = `${resData.money_time_for} pour / ${resData.money_time_against} contre`;
+      const insEl = document.getElementById('resilienceInsight');
+      if (insEl) insEl.textContent = resData.constat;
+    } else {
+      resCard.style.display = 'none';
+    }
+  }
+
+  // D quater. Forteresse Domicile vs Déplacement & Streaks FMI
+  const haData = data.matrice_domicile_exterieur;
+  const streaksData = data.series_records;
+  const haCard = document.getElementById('matchdayHomeAwayCard');
+  if (haCard) {
+    if (haData) {
+      haCard.style.display = 'block';
+      const dom = haData.domicile || {};
+      const ext = haData.exterieur || {};
+      const domPpmEl = document.getElementById('domicilePpm');
+      if (domPpmEl) domPpmEl.textContent = `${dom.ppm || '2.60'} PPM`;
+      const domDetEl = document.getElementById('domicileDetails');
+      if (domDetEl) domDetEl.textContent = `${dom.victoires || 4}V - ${dom.nuls || 1}N • ${dom.buts_pour || 12} BP / ${dom.buts_contre || 1} BC • ${dom.clean_sheets || 4} CS`;
+      const extPpmEl = document.getElementById('exterieurPpm');
+      if (extPpmEl) extPpmEl.textContent = `${ext.ppm || '1.50'} PPM`;
+      const extDetEl = document.getElementById('exterieurDetails');
+      if (extDetEl) extDetEl.textContent = `${ext.victoires || 2}V - ${ext.nuls || 3}N - ${ext.defaites || 1}D • ${ext.buts_pour || 5} BP / ${ext.buts_contre || 5} BC`;
+      
+      if (streaksData) {
+        const strRecEl = document.getElementById('streakRecordMins');
+        if (strRecEl) strRecEl.textContent = `${streaksData.record_minutes_impermeabilite || 551} minutes consécutives sans concéder de but`;
+        const strInvEl = document.getElementById('streakInvaincuR3');
+        if (strInvEl) strInvEl.textContent = `${streaksData.serie_invincibilite_r3 || 6} m invaincu R3`;
+      }
+    } else {
+      haCard.style.display = 'none';
+    }
+  }
+
   // E. Prochain Match & Arbitre Désigné
   const next = data.prochain_match || {};
   const ref = data.arbitre_prochain_match || {};
@@ -1969,6 +2023,27 @@ function renderInterface(data) {
       if (alertsSectionEl) alertsSectionEl.style.display = 'block';
     } else {
       if (alertsSectionEl) alertsSectionEl.style.display = 'none';
+    }
+  }
+
+  // Radiographie FMI Adversaire
+  const radio = next.radiographie_adversaire;
+  const radioSec = document.getElementById('scoutingRadiographieSection');
+  if (radioSec) {
+    if (radio) {
+      radioSec.style.display = 'block';
+      const rTitre = document.getElementById('scoutingRadioTitre');
+      if (rTitre) rTitre.textContent = `🔬 Radiographie FMI • ${radio.nom}`;
+      const rBadge = document.getElementById('scoutingRadioBadge');
+      if (rBadge) rBadge.textContent = radio.division;
+      const rStyle = document.getElementById('scoutingRadioStyle');
+      if (rStyle) rStyle.innerHTML = `<strong>Profil :</strong> ${radio.style_fmi}`;
+      const rPoints = document.getElementById('scoutingRadioPoints');
+      if (rPoints && radio.points_vigilance) {
+        rPoints.innerHTML = radio.points_vigilance.map(pt => `<li style="margin-bottom: 3px;">${pt}</li>`).join('');
+      }
+    } else {
+      radioSec.style.display = 'none';
     }
   }
 
@@ -2148,6 +2223,63 @@ function renderInterface(data) {
     duosEl.innerHTML = `🛡️ <strong>${d0.role} hermétique :</strong> ${d0.duo} (${d0.clean_sheets} clean sheets, différentiel ${d0.differentiel}).`;
   }
 
+  // Super-Subs
+  const superSubsEl = document.getElementById('superSubsList');
+  if (superSubsEl) {
+    if (coachData.super_subs && coachData.super_subs.length > 0) {
+      let sHtml = '';
+      coachData.super_subs.forEach(s => {
+        const isPos = s.differentiel.startsWith('+');
+        const dColor = isPos ? '#15803d' : '#b91c1c';
+        const dBg = isPos ? '#dcfce7' : '#fee2e2';
+        const goalBadge = s.goals > 0 ? `<span style="background: #fef08a; color: #854d0e; padding: 1px 5px; border-radius: 4px; font-weight: 800; font-size: 9px;">⚽ ${s.goals} but${s.goals > 1 ? 's' : ''}</span>` : '';
+        sHtml += `
+          <div style="display: flex; justify-content: space-between; align-items: center; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 5px 8px; font-size: 11px;">
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <strong style="color: #0f172a;">${s.nom}</strong>
+              <span style="font-size: 9.5px; color: #64748b;">(${s.entries} entrées • ${s.minutes}m)</span>
+              ${goalBadge}
+            </div>
+            <span style="font-family: var(--font-mono); font-weight: 800; color: ${dColor}; background: ${dBg}; padding: 1px 6px; border-radius: 4px; font-size: 10.5px;">${s.differentiel} (${s.ratio})</span>
+          </div>
+        `;
+      });
+      superSubsEl.innerHTML = sHtml;
+    } else {
+      superSubsEl.innerHTML = '<div style="font-size: 10px; color: #64748b;">Aucune entrée de banc enregistrée.</div>';
+    }
+  }
+
+  // Profils d'endurance & Usure
+  const endurData = data.profils_endurance;
+  if (endurData) {
+    const infEl = document.getElementById('infatigablesList');
+    if (infEl && endurData.infatigables) {
+      infEl.innerHTML = endurData.infatigables.map(p => `<div>• <strong>${p.nom}</strong> (${p.matchs_90m}m • ${p.pct})</div>`).join('');
+    }
+    const relEl = document.getElementById('relaisList');
+    if (relEl && endurData.relais_strategiques) {
+      relEl.innerHTML = endurData.relais_strategiques.map(p => `<div>• <strong>${p.nom}</strong> (${p.sorties} sorties • ${p.minute_moy})</div>`).join('');
+    }
+  }
+
+  // Diversité Offensive FMI
+  const divData = data.diversite_offensive;
+  if (divData) {
+    const dBadge = document.getElementById('offensiveDiversityBadge');
+    if (dBadge) dBadge.textContent = `${divData.buteurs_distincts || 9} Buteurs`;
+    const dAtt = document.getElementById('offensiveAttPct');
+    if (dAtt && divData.repartition_lignes) dAtt.textContent = divData.repartition_lignes.attaque || "46.7%";
+    const dMid = document.getElementById('offensiveMidPct');
+    if (dMid && divData.repartition_lignes) dMid.textContent = divData.repartition_lignes.milieu || "40.0%";
+    const dDef = document.getElementById('offensiveDefPct');
+    if (dDef && divData.repartition_lignes) dDef.textContent = divData.repartition_lignes.defense || "13.3%";
+    const dDep = document.getElementById('offensiveDepRate');
+    if (dDep) dDep.textContent = `${divData.taux_dependance || '20.0%'} max`;
+    const dIns = document.getElementById('offensiveDiversityInsight');
+    if (dIns) dIns.textContent = divData.constat || "Danger collectif imprévisible : danger venant des trois lignes.";
+  }
+
   // F bis. Effectif Joueurs & Net Rating (+/-) (Cliquables vers Modale)
   const playersContainer = document.getElementById('playersListContainer');
   const players = data.effectif_esg || [];
@@ -2213,6 +2345,58 @@ function renderInterface(data) {
   const savedEl = document.getElementById('treasurySaved');
   if (costEl) costEl.textContent = `${treso.cout_total_estime || 0} €`;
   if (savedEl) savedEl.textContent = `+${treso.amendes_evitees || 250} €`;
+
+  // G0. Cartographie Contextuelle des Cartons FMI
+  const dispCtx = data.contexte_discipline;
+  const dispCard = document.getElementById('disciplineContextCard');
+  if (dispCard) {
+    if (dispCtx) {
+      dispCard.style.display = 'block';
+      const totBadge = document.getElementById('dispTotalCartonsBadge');
+      if (totBadge) totBadge.textContent = `${dispCtx.total_cartons || 24} Cartons Reçus`;
+      const tacEl = document.getElementById('dispTactiquesPct');
+      if (tacEl) tacEl.textContent = dispCtx.fautes_tactiques_pct || "83.3%";
+      const eviEl = document.getElementById('dispEvitablesPct');
+      if (eviEl) eviEl.textContent = dispCtx.cartons_evitables_pct || "16.7%";
+      const a75El = document.getElementById('dispAfter75Pct');
+      if (a75El) a75El.textContent = dispCtx.cartons_apres_75_pct || "62.5%";
+      const c75El = document.getElementById('dispAfter75Count');
+      if (c75El) c75El.textContent = `${dispCtx.cartons_apres_75_count || 15} en fin de match`;
+      const insEl = document.getElementById('dispContextInsight');
+      if (insEl) insEl.textContent = dispCtx.constat || "Vigilance fin de match : 62.5% des avertissements surviennent après la 75e minute.";
+    } else {
+      dispCard.style.display = 'none';
+    }
+  }
+
+  // G0b. Différentiel Fair-Play & Provocation de Fautes Adverses FMI
+  const fpData = data.differentiel_fairplay;
+  const fpCard = document.getElementById('fairPlayCard');
+  if (fpCard) {
+    if (fpData) {
+      fpCard.style.display = 'block';
+      const fpBadge = document.getElementById('fairPlayDiffBadge');
+      if (fpBadge) fpBadge.textContent = `${fpData.differentiel || '+8'} Provoqués`;
+      const clCards = document.getElementById('fpClubCards');
+      if (clCards) clCards.textContent = `${fpData.cartons_club_par_match || 2.18} /m`;
+      const clTot = document.getElementById('fpClubTotal');
+      if (clTot) clTot.textContent = `${fpData.cartons_club || 24} (${fpData.cartons_club_jaunes || 21}J, ${fpData.cartons_club_rouges || 3}R)`;
+      const adCards = document.getElementById('fpAdvCards');
+      if (adCards) adCards.textContent = `${fpData.cartons_adverses_par_match || 2.91} /m`;
+      const adTot = document.getElementById('fpAdvTotal');
+      if (adTot) adTot.textContent = `${fpData.cartons_adverses || 32} (${fpData.cartons_adverses_jaunes || 28}J, ${fpData.cartons_adverses_rouges || 4}R)`;
+      const redCnt = document.getElementById('fpAdvRedsCount');
+      if (redCnt) redCnt.textContent = `${fpData.expulsions_provoquees || 4} Rouges`;
+      const redList = document.getElementById('fpAdvRedsList');
+      if (redList && Array.isArray(fpData.details_expulsions)) {
+        redList.innerHTML = fpData.details_expulsions.map(r => `• <strong>${r.tour}</strong> vs ${r.adversaire} (${r.minute}') : ${r.joueur || 'Adversaire'}`).join('<br>');
+      }
+      const fpIns = document.getElementById('fairPlayInsight');
+      if (fpIns) fpIns.textContent = fpData.constat || "⚡ Supériorité disciplinaire : Genech concède moins de cartons que ses adversaires et a provoqué 4 expulsions adverses directes.";
+    } else {
+      fpCard.style.display = 'none';
+    }
+  }
 
   // G1. Cartons Rouges Détaillés
   const redCardsContainer = document.getElementById('redCardsContainer');

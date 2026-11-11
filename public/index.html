@@ -13,7 +13,7 @@
   <link rel="apple-touch-icon" href="./logo.png">
   <link rel="icon" type="image/png" href="./logo.png">
 
-  <link rel="stylesheet" href="./styles.css?v=20261111_v32">
+  <link rel="stylesheet" href="./styles.css?v=20261111_v35">
 </head>
 <body>
 
@@ -237,6 +237,77 @@
         </div>
       </div>
 
+      <!-- MATRICE DE SCÉNARIOS & RÉSILIENCE MENTALE FMI -->
+      <div class="card" id="matchdayResilienceCard" style="margin-top: 14px;">
+        <div class="card-header-bar">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="card-title">🛡️ Scénarios de Match & Résilience</span>
+            <span class="tactical-role-pill" style="background: #ecfdf5; color: #059669; font-weight: 800; border: none; font-size: 9px; padding: 2px 7px;">FMI Scénarios</span>
+          </div>
+          <span class="card-meta">Saison 2026-2027</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: center; margin: 10px 0 8px 0;">
+          <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 8px 4px;">
+            <div style="font-size: 8.5px; font-weight: 700; color: #64748B; text-transform: uppercase;">Mené au Score</div>
+            <div style="font-size: 15px; font-weight: 900; color: #15803D; margin-top: 2px;" id="resiliencePtsTrailing">4 pts</div>
+            <div style="font-size: 9px; color: #64748B;" id="resilienceTrailedCount">sauvés (3 fois)</div>
+          </div>
+          <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 8px 4px;">
+            <div style="font-size: 8.5px; font-weight: 700; color: #64748B; text-transform: uppercase;">Ouverture Score</div>
+            <div style="font-size: 15px; font-weight: 900; color: #0284C7; margin-top: 2px;" id="resilienceWinRate">80.0%</div>
+            <div style="font-size: 9px; color: #64748B;" id="resilienceWinsCount">victoires préservées</div>
+          </div>
+          <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 8px 4px;">
+            <div style="font-size: 8.5px; font-weight: 700; color: #64748B; text-transform: uppercase;">Money Time 80'+</div>
+            <div style="font-size: 15px; font-weight: 900; color: #16A34A; margin-top: 2px;" id="resilienceMoneyTimeDiff">+1</div>
+            <div style="font-size: 9px; color: #64748B;" id="resilienceMoneyTimeGoals">3 pour / 2 contre</div>
+          </div>
+        </div>
+        <div id="resilienceInsight" style="padding: 8px 10px; background: #F8FAFC; border-left: 3px solid #16A34A; border-radius: 6px; font-size: 11px; color: var(--text-muted); line-height: 1.4;">
+          ⚡ Mental de guerrier : 4 points sauvés après avoir été mené et 80% de victoires conservées en ouvrant la marque.
+        </div>
+      </div>
+
+      <!-- FORTERESSE DOMICILE VS DÉPLACEMENT & STREAKS FMI -->
+      <div class="card" id="matchdayHomeAwayCard" style="margin-top: 14px;">
+        <div class="card-header-bar">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="card-title">🏟️ Domicile vs Déplacement & Records</span>
+            <span class="tactical-role-pill" style="background: #E0F2FE; color: #0284C7; font-weight: 800; border: none; font-size: 9px; padding: 2px 7px;">FMI Streaks</span>
+          </div>
+          <span class="card-meta">Saison 2026-2027</span>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 10px 0 8px 0;">
+          <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+              <span style="font-size: 10px; font-weight: 800; text-transform: uppercase; color: #15803D;">🏰 Forteresse Domicile</span>
+              <span class="tactical-role-pill" style="background: #DCFCE7; color: #15803D; font-weight: 800; font-size: 8.5px; border: none;" id="domicileInvaincuBadge">INVAINCU</span>
+            </div>
+            <div style="font-size: 18px; font-weight: 900; font-family: var(--font-mono); color: #0F172A;" id="domicilePpm">2.60 PPM</div>
+            <div style="font-size: 10px; color: #64748B; margin-top: 2px;" id="domicileDetails">4V - 1N • 12 BP / 1 BC • 4 CS</div>
+          </div>
+
+          <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+              <span style="font-size: 10px; font-weight: 800; text-transform: uppercase; color: #0284C7;">🚌 En Déplacement</span>
+              <span class="tactical-role-pill" style="background: #E0F2FE; color: #0284C7; font-weight: 800; font-size: 8.5px; border: none;">SOLIDE</span>
+            </div>
+            <div style="font-size: 18px; font-weight: 900; font-family: var(--font-mono); color: #0F172A;" id="exterieurPpm">1.50 PPM</div>
+            <div style="font-size: 10px; color: #64748B; margin-top: 2px;" id="exterieurDetails">2V - 3N - 1D • 5 BP / 5 BC</div>
+          </div>
+        </div>
+
+        <!-- Record d'imperméabilité (Streak) -->
+        <div style="background: #F0FDF4; border: 1px solid #BBF7D0; border-radius: 8px; padding: 8px 10px; display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <div style="font-size: 9.5px; font-weight: 800; text-transform: uppercase; color: #166534;">🛡️ Record d'Imperméabilité Défensive</div>
+            <div style="font-size: 11px; color: #166534; font-weight: 600;" id="streakRecordMins">326 minutes consécutives sans concéder de but</div>
+          </div>
+          <div style="font-size: 14px; font-weight: 900; color: #15803D; font-family: var(--font-mono);" id="streakInvaincuR3">6 m invaincu R3</div>
+        </div>
+      </div>
+
       <!-- PROCHAIN MATCH : SCOUTING ADVERSAIRE & ARBITRE DÉSIGNÉ -->
       <div class="card">
         <div class="card-header-bar">
@@ -269,6 +340,18 @@
         <div id="scoutingAlertsSection" style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px; padding: 8px 10px; margin-top: 10px; font-size: 11.5px; color: #92400e;">
           <strong>⚠️ Alertes Adversaire :</strong>
           <ul style="margin-left: 18px; margin-top: 4px;" id="opponentAlertsList">
+            <!-- Injecté dynamiquement -->
+          </ul>
+        </div>
+
+        <!-- Radiographie FMI Adversaire (Coupe / R2) -->
+        <div id="scoutingRadiographieSection" style="display: none; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 10px 12px; margin-top: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <span style="font-size: 11px; font-weight: 800; color: #0F172A;" id="scoutingRadioTitre">🔬 Radiographie FMI • Bully-les-Mines (R2)</span>
+            <span class="tactical-role-pill" style="background: #E0E7FF; color: #4338CA; font-weight: 800; border: none; font-size: 8.5px;" id="scoutingRadioBadge">Division Supérieure</span>
+          </div>
+          <div style="font-size: 11px; color: #475569; margin-bottom: 6px;" id="scoutingRadioStyle">--</div>
+          <ul style="margin: 0 0 0 16px; padding: 0; font-size: 10.5px; color: #334155; line-height: 1.45;" id="scoutingRadioPoints">
             <!-- Injecté dynamiquement -->
           </ul>
         </div>
@@ -431,7 +514,63 @@
 
         <!-- Top Associations Charnière / Binômes -->
         <div id="topDuosContainer" style="margin-top: 10px; padding: 8px 10px; background: #fffbeb; border: 1px solid #fef3c7; border-radius: 6px; font-size: 11px; color: #92400e;">
-          🛡️ <strong>Charnière imperméable :</strong> Tim L. & Maxime P. (6 clean sheets en 11 matchs, +10 de différentiel).
+          🛡️ <strong>Charnière imperméable :</strong> Tim L. & Maxime P. (7 clean sheets en 11 matchs, +10 de différentiel).
+        </div>
+
+        <!-- Classement des Super-Subs (Jokers de Luxe) -->
+        <div id="superSubsSection" style="margin-top: 12px; border-top: 1px dashed #e2e8f0; padding-top: 10px;">
+          <div style="font-size: 10.5px; font-weight: 800; text-transform: uppercase; color: #475569; margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center;">
+            <span>⚡ Indice "Super-Subs" (Top Entrants)</span>
+            <span style="font-size: 9px; font-weight: 700; color: #64748B;">Différentiel post-entrée</span>
+          </div>
+          <div id="superSubsList" style="display: flex; flex-direction: column; gap: 5px;"></div>
+        </div>
+
+        <!-- Chronobiologie : Infatigables vs Zones de Relais -->
+        <div id="enduranceProfilesSection" style="margin-top: 12px; border-top: 1px dashed #e2e8f0; padding-top: 10px;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+            <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 6px; padding: 8px;">
+              <div style="font-size: 9px; font-weight: 800; color: #16A34A; text-transform: uppercase; margin-bottom: 4px;">⏱️ Les Infatigables (100% 90m)</div>
+              <div id="infatigablesList" style="font-size: 10px; color: #334155; line-height: 1.4;"></div>
+            </div>
+            <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 6px; padding: 8px;">
+              <div style="font-size: 9px; font-weight: 800; color: #D97706; text-transform: uppercase; margin-bottom: 4px;">🔄 Zones de Relais (Sorties)</div>
+              <div id="relaisList" style="font-size: 10px; color: #334155; line-height: 1.4;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Indice de Diversité Offensive & Danger Multi-Zones -->
+        <div id="offensiveDiversitySection" style="margin-top: 12px; border-top: 1px dashed #e2e8f0; padding-top: 10px;">
+          <div style="font-size: 10.5px; font-weight: 800; text-transform: uppercase; color: #475569; margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center;">
+            <span>🎯 Diversité Offensive (Danger Multi-Zones)</span>
+            <span style="font-size: 9px; font-weight: 700; color: #15803D;" id="offensiveDiversityBadge">9 Buteurs</span>
+          </div>
+          <div style="display: flex; gap: 6px; margin-bottom: 8px;">
+            <div style="flex: 1; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 6px; padding: 6px 8px; text-align: center;">
+              <div style="font-size: 8.5px; font-weight: 700; color: #64748B; text-transform: uppercase;">Ligne Attaque</div>
+              <div style="font-size: 12.5px; font-weight: 900; color: #0F172A;" id="offensiveAttPct">46.7%</div>
+              <div style="font-size: 8.5px; color: #64748B;">7 buts</div>
+            </div>
+            <div style="flex: 1; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 6px; padding: 6px 8px; text-align: center;">
+              <div style="font-size: 8.5px; font-weight: 700; color: #64748B; text-transform: uppercase;">Axe Médian</div>
+              <div style="font-size: 12.5px; font-weight: 900; color: #0F172A;" id="offensiveMidPct">40.0%</div>
+              <div style="font-size: 8.5px; color: #64748B;">6 buts</div>
+            </div>
+            <div style="flex: 1; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 6px; padding: 6px 8px; text-align: center;">
+              <div style="font-size: 8.5px; font-weight: 700; color: #64748B; text-transform: uppercase;">Défense</div>
+              <div style="font-size: 12.5px; font-weight: 900; color: #0F172A;" id="offensiveDefPct">13.3%</div>
+              <div style="font-size: 8.5px; color: #64748B;">2 buts</div>
+            </div>
+            <div style="flex: 1.2; background: #ECFDF5; border: 1px solid #BBF7D0; border-radius: 6px; padding: 6px 8px; text-align: center;">
+              <div style="font-size: 8.5px; font-weight: 700; color: #166534; text-transform: uppercase;">Dépendance</div>
+              <div style="font-size: 12.5px; font-weight: 900; color: #15803D;" id="offensiveDepRate">20.0% max</div>
+              <div style="font-size: 8.5px; color: #166534;">danger diffus</div>
+            </div>
+          </div>
+          <div id="offensiveDiversityInsight" style="font-size: 10.5px; color: #475569; background: #F8FAFC; border-radius: 6px; padding: 6px 8px; line-height: 1.35;">
+            ⚡ Danger collectif imprévisible : 9 buteurs distincts et seulement 20% de dépendance au meilleur réalisateur.
+          </div>
         </div>
       </div>
 
@@ -469,6 +608,79 @@
         </div>
         <div style="font-size: 10px; color: #94a3b8; font-style: italic; margin-top: 4px;">
           La purge rigoureuse des suspensions évite le match perdu par pénalité (~250€ et retrait de points).
+        </div>
+      </div>
+
+      <!-- CARTOGRAPHIE CONTEXTUELLE DES SANCTIONS FMI -->
+      <div class="card" id="disciplineContextCard" style="margin-top: 12px;">
+        <div class="card-header-bar">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="card-title">⚖️ Contexte & Frustration (Cartons FMI)</span>
+            <span class="tactical-role-pill" style="background: #FEF3C7; color: #B45309; font-weight: 800; border: none; font-size: 9px; padding: 2px 7px;">FMI Discipline</span>
+          </div>
+          <span class="card-meta" id="dispTotalCartonsBadge">24 Cartons Reçus</span>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; text-align: center; margin: 10px 0 8px 0;">
+          <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 8px 4px;">
+            <div style="font-size: 8.5px; font-weight: 700; color: #64748B; text-transform: uppercase;">Fautes Tactiques</div>
+            <div style="font-size: 15px; font-weight: 900; color: #0284C7; margin-top: 2px;" id="dispTactiquesPct">83.3%</div>
+            <div style="font-size: 9px; color: #64748B;">score serré / mené</div>
+          </div>
+          <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 8px 4px;">
+            <div style="font-size: 8.5px; font-weight: 700; color: #64748B; text-transform: uppercase;">Cartons Évitables</div>
+            <div style="font-size: 15px; font-weight: 900; color: #DC2626; margin-top: 2px;" id="dispEvitablesPct">16.7%</div>
+            <div style="font-size: 9px; color: #64748B;">en menant au score</div>
+          </div>
+          <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 8px 4px;">
+            <div style="font-size: 8.5px; font-weight: 700; color: #64748B; text-transform: uppercase;">Effet 75'+</div>
+            <div style="font-size: 15px; font-weight: 900; color: #D97706; margin-top: 2px;" id="dispAfter75Pct">62.5%</div>
+            <div style="font-size: 9px; color: #64748B;" id="dispAfter75Count">15 en fin de match</div>
+          </div>
+        </div>
+
+        <div id="dispContextInsight" style="padding: 8px 10px; background: #FFFBEB; border-left: 3px solid #D97706; border-radius: 6px; font-size: 11px; color: #92400E; line-height: 1.4;">
+          ⚠️ Vigilance fin de match : 62.5% des avertissements surviennent après la 75e minute sous l'effet de l'usure physique.
+        </div>
+      </div>
+
+      <!-- DIFFÉRENTIEL FAIR-PLAY & PROVOCATION DE FAUTES FMI -->
+      <div class="card" id="fairPlayCard" style="margin-top: 12px;">
+        <div class="card-header-bar">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="card-title">⚖️ Différentiel Fair-Play & Provocation</span>
+            <span class="tactical-role-pill" style="background: #DCFCE7; color: #15803D; font-weight: 800; border: none; font-size: 9px; padding: 2px 7px;" id="fairPlayDiffBadge">+8 Provoqués</span>
+          </div>
+          <span class="card-meta">Saison 2026-2027</span>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; text-align: center; margin: 10px 0 8px 0;">
+          <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 8px 4px;">
+            <div style="font-size: 8.5px; font-weight: 700; color: #64748B; text-transform: uppercase;">Reçus (Genech)</div>
+            <div style="font-size: 15px; font-weight: 900; color: #15803D; margin-top: 2px;" id="fpClubCards">2.18 /m</div>
+            <div style="font-size: 9px; color: #64748B;" id="fpClubTotal">24 (21J, 3R)</div>
+          </div>
+          <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 8px 4px;">
+            <div style="font-size: 8.5px; font-weight: 700; color: #64748B; text-transform: uppercase;">Provoqués (Adv.)</div>
+            <div style="font-size: 15px; font-weight: 900; color: #DC2626; margin-top: 2px;" id="fpAdvCards">2.91 /m</div>
+            <div style="font-size: 9px; color: #64748B;" id="fpAdvTotal">32 (28J, 4R)</div>
+          </div>
+          <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 8px 4px;">
+            <div style="font-size: 8.5px; font-weight: 700; color: #64748B; text-transform: uppercase;">Rouges Adv.</div>
+            <div style="font-size: 15px; font-weight: 900; color: #B91C1C; margin-top: 2px;" id="fpAdvRedsCount">4 Rouges</div>
+            <div style="font-size: 9px; color: #64748B;">provoqués</div>
+          </div>
+        </div>
+
+        <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 6px; padding: 6px 10px; margin-bottom: 8px;">
+          <div style="font-size: 9px; font-weight: 800; text-transform: uppercase; color: #64748B; margin-bottom: 3px;">Expulsions adverses provoquées :</div>
+          <div id="fpAdvRedsList" style="font-size: 10px; color: #334155; line-height: 1.4;">
+            • Tour 2 vs Lys (90') • J1 vs Bondues (65') • Tour 3 vs Sainghin (64') • J6 vs Bavay (63')
+          </div>
+        </div>
+
+        <div id="fairPlayInsight" style="padding: 8px 10px; background: #F0FDF4; border-left: 3px solid #16A34A; border-radius: 6px; font-size: 11px; color: #166534; line-height: 1.4;">
+          ⚡ Supériorité disciplinaire : Genech concède 25% moins de cartons que ses adversaires (+8 provoqués, dont 4 expulsions directes subies par l'adversaire).
         </div>
       </div>
 
@@ -1348,8 +1560,8 @@
   </nav>
 
   <!-- Scripts avec Cache-Busting Garanti -->
-  <script src="./licenses_registry.js?v=20261111_v32"></script>
-  <script src="./data.js?v=20261111_v32"></script>
-  <script src="./app.js?v=20261111_v32"></script>
+  <script src="./licenses_registry.js?v=20261111_v35"></script>
+  <script src="./data.js?v=20261111_v35"></script>
+  <script src="./app.js?v=20261111_v35"></script>
 </body>
 </html>

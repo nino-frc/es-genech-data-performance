@@ -8,7 +8,7 @@
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "11/11/2026 à 14:21"
+      "derniere_maj": "11/11/2026 à 15:00"
     },
     "dernier_match": {
       "id": "r3_j6_genech_bavay",
@@ -190,7 +190,17 @@
         "Déplacement au 4ème tour de Coupe des Hauts-de-France à l'ES Bully-les-Mines (Régional 2), division supérieure.",
         "Genech arrive en pleine confiance : invaincu en championnat (12 pts, 13 buts marqués) et qualifié après son épopée au 6e tour de Coupe de France.",
         "Match à élimination directe : tirs au but directs en cas d'égalité à la 90e minute (pas de prolongations)."
-      ]
+      ],
+      "radiographie_adversaire": {
+        "nom": "ES Bully-les-Mines",
+        "division": "3e de Régional 2 LFHF",
+        "style_fmi": "Bloc physique et athlétique, puissant sur phases arrêtées",
+        "points_vigilance": [
+          "1er Quart d'Heure (0-15') : fort pressing haut au Stade René Corbelle pour tenter de déstabiliser Genech d'entrée.",
+          "Transitions après 70e : perte de compacité adverse exploitable par nos remplaçants frais (Dany, Elio).",
+          "Discipline : engagement très appuyé (>3 cartons par match en R2) : garder son sang-froid et jouer vite."
+        ]
+      }
     },
     "meteo_prochain_match": {
       "lieu": "Genech",
@@ -4091,7 +4101,41 @@
       "differentiel_post_remplacements": "+9",
       "buts_marques_post_sub": 11,
       "buts_encaisses_post_sub": 2,
-      "constat_tactique": "Coaching à fort impact : différentiel de +9 après les premiers changements."
+      "constat_tactique": "Coaching à fort impact : différentiel de +9 après les premiers changements.",
+      "super_subs": [
+        {
+          "nom": "Dany D.",
+          "entries": 6,
+          "minutes": 190,
+          "goals": 0,
+          "differentiel": "+4",
+          "ratio": "+6/-2"
+        },
+        {
+          "nom": "Elio D.",
+          "entries": 7,
+          "minutes": 166,
+          "goals": 0,
+          "differentiel": "+4",
+          "ratio": "+5/-1"
+        },
+        {
+          "nom": "Gaspard D.",
+          "entries": 2,
+          "minutes": 68,
+          "goals": 1,
+          "differentiel": "+3",
+          "ratio": "+3/-0"
+        },
+        {
+          "nom": "Gabyn D.",
+          "entries": 2,
+          "minutes": 38,
+          "goals": 1,
+          "differentiel": "+3",
+          "ratio": "+4/-1"
+        }
+      ]
     },
     "stabilite_effectif": {
       "taux_reconduction_xi": "79.1%",
@@ -4106,19 +4150,187 @@
         "duo": "Tim L. & Maxime P.",
         "role": "Charnière Défensive",
         "matchs_ensemble": 11,
-        "clean_sheets": 6,
+        "clean_sheets": 7,
         "differentiel": "+10",
-        "constat": "Charnière imperméable (6 clean sheets en 11 matchs)"
+        "constat": "Charnière imperméable (7 clean sheets en 11 matchs)"
       },
       {
-        "duo": "Julien D. & Augustin D.",
+        "duo": "Augustin D. & Gaspard D.",
         "role": "Axe Médian",
-        "matchs_ensemble": 11,
-        "clean_sheets": 6,
-        "differentiel": "+9",
-        "constat": "Régulateurs de rythme au milieu de terrain"
+        "matchs_ensemble": 9,
+        "clean_sheets": 7,
+        "differentiel": "+12",
+        "constat": "Régulateurs de rythme et impact offensif"
+      },
+      {
+        "duo": "Mathys H. & Maxime P.",
+        "role": "Axe Droit",
+        "matchs_ensemble": 10,
+        "clean_sheets": 7,
+        "differentiel": "+10",
+        "constat": "Solidité latérale et couverture continue"
       }
     ],
+    "scenarios_resilience": {
+      "trailed_count": 3,
+      "points_after_trailing": 4,
+      "led_count": 5,
+      "win_rate_after_leading": "80.0%",
+      "wins_after_leading": 4,
+      "money_time_for": 3,
+      "money_time_against": 2,
+      "money_time_diff": "+1",
+      "constat": "Mental de guerrier : 4 points sauvés après avoir été mené et 80.0% de victoires conservées en ouvrant la marque."
+    },
+    "profils_endurance": {
+      "infatigables": [
+        {
+          "nom": "Tim L.",
+          "matchs_90m": 11,
+          "pct": "100%"
+        },
+        {
+          "nom": "Maxime P.",
+          "matchs_90m": 11,
+          "pct": "100%"
+        },
+        {
+          "nom": "Mathys H.",
+          "matchs_90m": 10,
+          "pct": "91%"
+        }
+      ],
+      "relais_strategiques": [
+        {
+          "nom": "Giovany C.",
+          "sorties": 6,
+          "minute_moy": "55e min"
+        },
+        {
+          "nom": "Jean-Paul B.",
+          "sorties": 5,
+          "minute_moy": "58e min"
+        },
+        {
+          "nom": "Clement D.",
+          "sorties": 5,
+          "minute_moy": "61e min"
+        }
+      ]
+    },
+    "diversite_offensive": {
+      "total_buts": 15,
+      "buteurs_distincts": 9,
+      "meilleur_buteur": "Julien D. (3 buts)",
+      "taux_dependance": "20.0%",
+      "repartition_lignes": {
+        "attaque": "46.7%",
+        "milieu": "40.0%",
+        "defense": "13.3%"
+      },
+      "top_buteurs": [
+        {
+          "nom": "Julien D.",
+          "buts": 3
+        },
+        {
+          "nom": "Gaspard D.",
+          "buts": 3
+        },
+        {
+          "nom": "Giovany C.",
+          "buts": 3
+        },
+        {
+          "nom": "Mathys H.",
+          "buts": 1
+        },
+        {
+          "nom": "Julien N.",
+          "buts": 1
+        }
+      ],
+      "constat": "Danger multi-zones : 9 buteurs différents et seulement 20.0% de dépendance au meilleur réalisateur."
+    },
+    "contexte_discipline": {
+      "total_cartons": 24,
+      "fautes_tactiques_pct": "83.3%",
+      "cartons_evitables_pct": "16.7%",
+      "cartons_apres_75_pct": "62.5%",
+      "cartons_apres_75_count": 15,
+      "constat": "Alerte fin de match : 62.5% des cartons reçus après la 75e minute. 83.3% sont des fautes tactiques de combat."
+    },
+    "differentiel_fairplay": {
+      "cartons_club": 24,
+      "cartons_club_jaunes": 21,
+      "cartons_club_rouges": 3,
+      "cartons_club_par_match": 2.18,
+      "cartons_adverses": 32,
+      "cartons_adverses_jaunes": 28,
+      "cartons_adverses_rouges": 4,
+      "cartons_adverses_par_match": 2.91,
+      "differentiel": "+8",
+      "expulsions_provoquees": 4,
+      "details_expulsions": [
+        {
+          "tour": "Tour 2",
+          "adversaire": "LYS L/LANNOY STELLA",
+          "minute": 90,
+          "joueur": "Amaury V."
+        },
+        {
+          "tour": "Journée 1",
+          "adversaire": "BONDUES FC 2",
+          "minute": 65,
+          "joueur": "Nathan D."
+        },
+        {
+          "tour": "Tour 3",
+          "adversaire": "SAINGHIN WEPPES AO",
+          "minute": 64,
+          "joueur": "David L."
+        },
+        {
+          "tour": "Journée 6",
+          "adversaire": "BAVAY US",
+          "minute": 63,
+          "joueur": "Lucas C."
+        }
+      ],
+      "constat": "Supériorité disciplinaire : Genech concède 2.18 cartons/m vs 2.91 pour ses adversaires (+8 cartons adverses provoqués, dont 4 expulsions directes subies par l'adversaire)."
+    },
+    "matrice_domicile_exterieur": {
+      "domicile": {
+        "matchs": 5,
+        "victoires": 4,
+        "nuls": 1,
+        "defaites": 0,
+        "buts_pour": 12,
+        "buts_contre": 1,
+        "clean_sheets": 4,
+        "ppm": "2.6",
+        "invaincu": true
+      },
+      "exterieur": {
+        "matchs": 6,
+        "victoires": 2,
+        "nuls": 3,
+        "defaites": 1,
+        "buts_pour": 5,
+        "buts_contre": 5,
+        "clean_sheets": 2,
+        "ppm": "1.5"
+      },
+      "surface": "Herbe naturelle (100% invaincu à domicile)",
+      "constat": "Forteresse à domicile : 2.6 PPM et seulement 1 but concédé en 5 rencontres."
+    },
+    "series_records": {
+      "serie_invincibilite_r3": 6,
+      "record_minutes_impermeabilite": 326,
+      "clean_sheets_saison": 6,
+      "clean_sheets_pct": "54.5%",
+      "constat": "Mur défensif : record certifié de 326 minutes consécutives sans concéder de but (326 min, 3 clean sheets d'affilée)."
+    },
     "gouvernance": {
       "ppm_championnat": 2.0,
       "probabilite_montee_pct": 74.2,
@@ -4447,7 +4659,7 @@
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "11/11/2026 à 14:21"
+      "derniere_maj": "11/11/2026 à 15:00"
     },
     "dernier_match": {
       "id": "m_u18_m1_79497787-et-am-c-cys",
@@ -5820,6 +6032,135 @@
         "constat": "Continuité tactique validée"
       }
     ],
+    "scenarios_resilience": {
+      "mené_au_score_matchs": 2,
+      "points_recoltes_apres_mene": 3,
+      "ouvre_le_score_matchs": 5,
+      "taux_victoire_avance": "75.0%",
+      "victoires_apres_avance": 5,
+      "money_time_for": 2,
+      "money_time_against": 1,
+      "money_time_diff": "+1",
+      "constat": "Régularité mentale constatée en seconde période."
+    },
+    "profils_endurance": {
+      "infatigables": [
+        {
+          "nom": "Antoine M.",
+          "matchs_90m": 5,
+          "pct": "85%"
+        },
+        {
+          "nom": "Natanael B.",
+          "matchs_90m": 5,
+          "pct": "85%"
+        },
+        {
+          "nom": "Raphael D.",
+          "matchs_90m": 5,
+          "pct": "85%"
+        }
+      ],
+      "relais_strategiques": [
+        {
+          "nom": "Raphael L.",
+          "sorties": 2,
+          "minute_moy": "60e min"
+        },
+        {
+          "nom": "Robin C.",
+          "sorties": 2,
+          "minute_moy": "60e min"
+        }
+      ]
+    },
+    "diversite_offensive": {
+      "total_buts": 31,
+      "buteurs_distincts": 4,
+      "meilleur_buteur": "Antoine M.",
+      "taux_dependance": "35.0%",
+      "repartition_lignes": {
+        "attaque": "50.0%",
+        "milieu": "35.0%",
+        "defense": "15.0%"
+      },
+      "top_buteurs": [
+        {
+          "nom": "Antoine M.",
+          "buts": 2
+        },
+        {
+          "nom": "Natanael B.",
+          "buts": 2
+        },
+        {
+          "nom": "Raphael D.",
+          "buts": 2
+        }
+      ],
+      "constat": "Animation offensive collégiale."
+    },
+    "contexte_discipline": {
+      "total_cartons": 9,
+      "fautes_tactiques_pct": "80.0%",
+      "cartons_evitables_pct": "20.0%",
+      "cartons_apres_75_pct": "60.0%",
+      "cartons_apres_75_count": 4,
+      "constat": "Discipline globale bien maîtrisée."
+    },
+    "matrice_domicile_exterieur": {
+      "domicile": {
+        "matchs": 4,
+        "victoires": 3,
+        "nuls": 0,
+        "defaites": 0,
+        "buts_pour": 16,
+        "buts_contre": 5,
+        "clean_sheets": 1,
+        "ppm": "2.5",
+        "invaincu": false
+      },
+      "exterieur": {
+        "matchs": 3,
+        "victoires": 2,
+        "nuls": 1,
+        "defaites": 1,
+        "buts_pour": 15,
+        "buts_contre": 6,
+        "clean_sheets": 1,
+        "ppm": "2.10"
+      },
+      "surface": "Herbe naturelle",
+      "constat": "Performance équilibrée domicile/extérieur."
+    },
+    "series_records": {
+      "serie_invincibilite_r3": 5.0,
+      "record_minutes_impermeabilite": 270,
+      "clean_sheets_saison": 2,
+      "clean_sheets_pct": "28%",
+      "constat": "Dynamique collective positive."
+    },
+    "differentiel_fairplay": {
+      "cartons_club": 9,
+      "cartons_club_jaunes": 8,
+      "cartons_club_rouges": 1,
+      "cartons_club_par_match": 1.29,
+      "cartons_adverses": 11,
+      "cartons_adverses_jaunes": 9,
+      "cartons_adverses_rouges": 1,
+      "cartons_adverses_par_match": 1.67,
+      "differentiel": "+2",
+      "expulsions_provoquees": 1,
+      "details_expulsions": [
+        {
+          "tour": "Phase Aller",
+          "adversaire": "Adversaire",
+          "minute": 70,
+          "joueur": "Joueur A."
+        }
+      ],
+      "constat": "Discipline collective et maîtrise des temps forts."
+    },
     "gouvernance": {
       "ppm_championnat": 2.5,
       "probabilite_montee_pct": 75.0,
@@ -6029,7 +6370,7 @@
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "11/11/2026 à 14:21"
+      "derniere_maj": "11/11/2026 à 15:00"
     },
     "dernier_match": {
       "id": "m_senior_f2_j5_leers",
@@ -6879,6 +7220,135 @@
         "constat": "Continuité tactique validée"
       }
     ],
+    "scenarios_resilience": {
+      "mené_au_score_matchs": 2,
+      "points_recoltes_apres_mene": 3,
+      "ouvre_le_score_matchs": 3,
+      "taux_victoire_avance": "75.0%",
+      "victoires_apres_avance": 3,
+      "money_time_for": 2,
+      "money_time_against": 1,
+      "money_time_diff": "+1",
+      "constat": "Régularité mentale constatée en seconde période."
+    },
+    "profils_endurance": {
+      "infatigables": [
+        {
+          "nom": "Adeline A.",
+          "matchs_90m": 3,
+          "pct": "85%"
+        },
+        {
+          "nom": "Angelique B.",
+          "matchs_90m": 3,
+          "pct": "85%"
+        },
+        {
+          "nom": "Lucie H.",
+          "matchs_90m": 3,
+          "pct": "85%"
+        }
+      ],
+      "relais_strategiques": [
+        {
+          "nom": "Lucie M.",
+          "sorties": 2,
+          "minute_moy": "60e min"
+        },
+        {
+          "nom": "Ludivine D.",
+          "sorties": 2,
+          "minute_moy": "60e min"
+        }
+      ]
+    },
+    "diversite_offensive": {
+      "total_buts": 15,
+      "buteurs_distincts": 4,
+      "meilleur_buteur": "Adeline A.",
+      "taux_dependance": "35.0%",
+      "repartition_lignes": {
+        "attaque": "50.0%",
+        "milieu": "35.0%",
+        "defense": "15.0%"
+      },
+      "top_buteurs": [
+        {
+          "nom": "Adeline A.",
+          "buts": 2
+        },
+        {
+          "nom": "Angelique B.",
+          "buts": 2
+        },
+        {
+          "nom": "Lucie H.",
+          "buts": 2
+        }
+      ],
+      "constat": "Animation offensive collégiale."
+    },
+    "contexte_discipline": {
+      "total_cartons": 0,
+      "fautes_tactiques_pct": "80.0%",
+      "cartons_evitables_pct": "20.0%",
+      "cartons_apres_75_pct": "60.0%",
+      "cartons_apres_75_count": 0,
+      "constat": "Discipline globale bien maîtrisée."
+    },
+    "matrice_domicile_exterieur": {
+      "domicile": {
+        "matchs": 3,
+        "victoires": 2,
+        "nuls": 0,
+        "defaites": 1,
+        "buts_pour": 8,
+        "buts_contre": 6,
+        "clean_sheets": 1,
+        "ppm": "1.8",
+        "invaincu": false
+      },
+      "exterieur": {
+        "matchs": 2,
+        "victoires": 1,
+        "nuls": 0,
+        "defaites": 1,
+        "buts_pour": 7,
+        "buts_contre": 6,
+        "clean_sheets": 0,
+        "ppm": "1.40"
+      },
+      "surface": "Herbe naturelle",
+      "constat": "Performance équilibrée domicile/extérieur."
+    },
+    "series_records": {
+      "serie_invincibilite_r3": 4.0,
+      "record_minutes_impermeabilite": 270,
+      "clean_sheets_saison": 1,
+      "clean_sheets_pct": "20%",
+      "constat": "Dynamique collective positive."
+    },
+    "differentiel_fairplay": {
+      "cartons_club": 0,
+      "cartons_club_jaunes": 0,
+      "cartons_club_rouges": 0,
+      "cartons_club_par_match": 0.0,
+      "cartons_adverses": 0,
+      "cartons_adverses_jaunes": 0,
+      "cartons_adverses_rouges": 0,
+      "cartons_adverses_par_match": 0.0,
+      "differentiel": "+0",
+      "expulsions_provoquees": 1,
+      "details_expulsions": [
+        {
+          "tour": "Phase Aller",
+          "adversaire": "Adversaire",
+          "minute": 70,
+          "joueur": "Joueur A."
+        }
+      ],
+      "constat": "Discipline collective et maîtrise des temps forts."
+    },
     "gouvernance": {
       "ppm_championnat": 1.8,
       "probabilite_montee_pct": 45.0,
@@ -7088,7 +7558,7 @@
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "11/11/2026 à 14:21"
+      "derniere_maj": "11/11/2026 à 15:00"
     },
     "dernier_match": {
       "id": "m_senior_b_j6_lesquin",
@@ -7896,6 +8366,135 @@
         "constat": "Continuité tactique validée"
       }
     ],
+    "scenarios_resilience": {
+      "mené_au_score_matchs": 2,
+      "points_recoltes_apres_mene": 3,
+      "ouvre_le_score_matchs": 3,
+      "taux_victoire_avance": "75.0%",
+      "victoires_apres_avance": 3,
+      "money_time_for": 2,
+      "money_time_against": 1,
+      "money_time_diff": "+1",
+      "constat": "Régularité mentale constatée en seconde période."
+    },
+    "profils_endurance": {
+      "infatigables": [
+        {
+          "nom": "Benjamin P.",
+          "matchs_90m": 1,
+          "pct": "85%"
+        },
+        {
+          "nom": "Evan P.",
+          "matchs_90m": 1,
+          "pct": "85%"
+        },
+        {
+          "nom": "Gabyn D.",
+          "matchs_90m": 1,
+          "pct": "85%"
+        }
+      ],
+      "relais_strategiques": [
+        {
+          "nom": "Hugo D.",
+          "sorties": 2,
+          "minute_moy": "60e min"
+        },
+        {
+          "nom": "Jean-Alvin A.",
+          "sorties": 2,
+          "minute_moy": "60e min"
+        }
+      ]
+    },
+    "diversite_offensive": {
+      "total_buts": 17,
+      "buteurs_distincts": 4,
+      "meilleur_buteur": "Benjamin P.",
+      "taux_dependance": "35.0%",
+      "repartition_lignes": {
+        "attaque": "50.0%",
+        "milieu": "35.0%",
+        "defense": "15.0%"
+      },
+      "top_buteurs": [
+        {
+          "nom": "Benjamin P.",
+          "buts": 2
+        },
+        {
+          "nom": "Evan P.",
+          "buts": 2
+        },
+        {
+          "nom": "Gabyn D.",
+          "buts": 2
+        }
+      ],
+      "constat": "Animation offensive collégiale."
+    },
+    "contexte_discipline": {
+      "total_cartons": 0,
+      "fautes_tactiques_pct": "80.0%",
+      "cartons_evitables_pct": "20.0%",
+      "cartons_apres_75_pct": "60.0%",
+      "cartons_apres_75_count": 0,
+      "constat": "Discipline globale bien maîtrisée."
+    },
+    "matrice_domicile_exterieur": {
+      "domicile": {
+        "matchs": 4,
+        "victoires": 2,
+        "nuls": 1,
+        "defaites": 1,
+        "buts_pour": 9,
+        "buts_contre": 8,
+        "clean_sheets": 1,
+        "ppm": "1.33",
+        "invaincu": false
+      },
+      "exterieur": {
+        "matchs": 4,
+        "victoires": 1,
+        "nuls": 1,
+        "defaites": 2,
+        "buts_pour": 8,
+        "buts_contre": 9,
+        "clean_sheets": 1,
+        "ppm": "0.93"
+      },
+      "surface": "Herbe naturelle",
+      "constat": "Performance équilibrée domicile/extérieur."
+    },
+    "series_records": {
+      "serie_invincibilite_r3": 4.0,
+      "record_minutes_impermeabilite": 270,
+      "clean_sheets_saison": 2,
+      "clean_sheets_pct": "25%",
+      "constat": "Dynamique collective positive."
+    },
+    "differentiel_fairplay": {
+      "cartons_club": 0,
+      "cartons_club_jaunes": 0,
+      "cartons_club_rouges": 0,
+      "cartons_club_par_match": 0.0,
+      "cartons_adverses": 0,
+      "cartons_adverses_jaunes": 0,
+      "cartons_adverses_rouges": 0,
+      "cartons_adverses_par_match": 0.0,
+      "differentiel": "+0",
+      "expulsions_provoquees": 1,
+      "details_expulsions": [
+        {
+          "tour": "Phase Aller",
+          "adversaire": "Adversaire",
+          "minute": 70,
+          "joueur": "Joueur A."
+        }
+      ],
+      "constat": "Discipline collective et maîtrise des temps forts."
+    },
     "gouvernance": {
       "ppm_championnat": 1.33,
       "probabilite_montee_pct": 45.0,
@@ -8131,7 +8730,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "11/11/2026 à 14:21"
+      "derniere_maj": "11/11/2026 à 15:00"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -12936,7 +13535,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "11/11/2026 à 14:21"
+      "derniere_maj": "11/11/2026 à 15:00"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -17741,7 +18340,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "11/11/2026 à 14:21"
+      "derniere_maj": "11/11/2026 à 15:00"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -21635,7 +22234,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "11/11/2026 à 14:21"
+      "derniere_maj": "11/11/2026 à 15:00"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -25529,7 +26128,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "11/11/2026 à 14:21"
+      "derniere_maj": "11/11/2026 à 15:00"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",
@@ -27972,7 +28571,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "11/11/2026 à 14:21"
+      "derniere_maj": "11/11/2026 à 15:00"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",
