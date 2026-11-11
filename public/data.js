@@ -8,7 +8,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "11/11/2026 à 14:02"
+      "derniere_maj": "11/11/2026 à 14:21"
     },
     "dernier_match": {
       "id": "r3_j6_genech_bavay",
@@ -210,6 +210,7 @@ window.MATCHDAY_TEAMS = {
       "badge_color": "#64748b",
       "style": "Désignation pour le 4ème tour de Coupe des Hauts-de-France en attente de publication par la CRA (jeudi).",
       "consigne_coach": "Format Coupe à élimination directe face à une R2 : intensité maximale dès le coup d'envoi et discipline exemplaire.",
+      "est_designe": false,
       "radar_fmi": {
         "minute_premier_jaune": "38e min",
         "ratio_fautes_dom_ext": "48% Dom. / 52% Ext.",
@@ -4446,7 +4447,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "11/11/2026 à 14:02"
+      "derniere_maj": "11/11/2026 à 14:21"
     },
     "dernier_match": {
       "id": "m_u18_m1_79497787-et-am-c-cys",
@@ -6028,7 +6029,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "11/11/2026 à 14:02"
+      "derniere_maj": "11/11/2026 à 14:21"
     },
     "dernier_match": {
       "id": "m_senior_f2_j5_leers",
@@ -7087,7 +7088,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "11/11/2026 à 14:02"
+      "derniere_maj": "11/11/2026 à 14:21"
     },
     "dernier_match": {
       "id": "m_senior_b_j6_lesquin",
@@ -8130,7 +8131,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "11/11/2026 à 14:02"
+      "derniere_maj": "11/11/2026 à 14:21"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -12935,7 +12936,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "11/11/2026 à 14:02"
+      "derniere_maj": "11/11/2026 à 14:21"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -17740,7 +17741,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "11/11/2026 à 14:02"
+      "derniere_maj": "11/11/2026 à 14:21"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -21634,7 +21635,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "11/11/2026 à 14:02"
+      "derniere_maj": "11/11/2026 à 14:21"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -25528,7 +25529,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "11/11/2026 à 14:02"
+      "derniere_maj": "11/11/2026 à 14:21"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",
@@ -27971,7 +27972,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "11/11/2026 à 14:02"
+      "derniere_maj": "11/11/2026 à 14:21"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",

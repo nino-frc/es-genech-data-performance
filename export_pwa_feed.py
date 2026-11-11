@@ -2154,7 +2154,8 @@ def export_real_pwa_feed():
         "severite": "EN ATTENTE",
         "badge_color": "#64748b",
         "style": "Désignation pour le 4ème tour de Coupe des Hauts-de-France en attente de publication par la CRA (jeudi).",
-        "consigne_coach": "Format Coupe à élimination directe face à une R2 : intensité maximale dès le coup d'envoi et discipline exemplaire."
+        "consigne_coach": "Format Coupe à élimination directe face à une R2 : intensité maximale dès le coup d'envoi et discipline exemplaire.",
+        "est_designe": False
     }
 
     # 4. Traducteur Financier de Trésorerie (Barème officiel Ligue LFHF)

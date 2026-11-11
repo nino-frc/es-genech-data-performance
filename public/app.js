@@ -1858,33 +1858,49 @@ function renderInterface(data) {
     document.getElementById('nextMatchDate').textContent = next.date_heure ? (next.date_heure.includes('T') || next.date_heure.includes(':') ? next.date_heure : next.date_heure) : "À programmer";
     document.getElementById('nextMatchLieu').textContent = next.lieu || "Terrain Officiel";
   }
-  if (ref.nom_arbitre) {
+  // Arbitre & Radar Avancé CRA / FMI
+  const isRefereeDesignated = ref && ref.nom_arbitre && 
+    !ref.nom_arbitre.toLowerCase().includes('attente') && 
+    !ref.nom_arbitre.toLowerCase().includes('non désigné') && 
+    ref.est_designe !== false;
+
+  const radarGrid = document.getElementById('refereeRadarGrid');
+  const pendingNotice = document.getElementById('refereePendingNotice');
+
+  if (ref && ref.nom_arbitre) {
     document.getElementById('refereeName').textContent = `👨‍⚖️ ${ref.nom_arbitre}`;
-    document.getElementById('refereeSeverityBadge').textContent = ref.severite || "EN ATTENTE";
-    document.getElementById('refereeSeverityBadge').style.background = ref.badge_color ? `${ref.badge_color}22` : '#f1f5f9';
-    document.getElementById('refereeSeverityBadge').style.color = ref.badge_color || '#475569';
-    if (ref.moyenne_jaunes && ref.moyenne_jaunes !== '--') {
+    document.getElementById('refereeSeverityBadge').textContent = isRefereeDesignated ? (ref.severite || "NORMAL") : "PUBLICATION JEUDI";
+    document.getElementById('refereeSeverityBadge').style.background = isRefereeDesignated && ref.badge_color ? `${ref.badge_color}22` : '#f1f5f9';
+    document.getElementById('refereeSeverityBadge').style.color = isRefereeDesignated && ref.badge_color ? ref.badge_color : '#475569';
+    if (isRefereeDesignated && ref.moyenne_jaunes && ref.moyenne_jaunes !== '--') {
       document.getElementById('refereeCardsAvg').textContent = `${ref.moyenne_jaunes} cartons jaunes / match`;
     } else {
       document.getElementById('refereeCardsAvg').textContent = "Publication officielle CRA ce jeudi";
     }
     document.getElementById('refereeAdvice').textContent = ref.consigne_coach;
   }
-  // Radar Avancé CRA / FMI
-  const radar = ref.radar_fmi || {
-    minute_premier_jaune: "38e min",
-    ratio_fautes_dom_ext: "48% Dom. / 52% Ext.",
-    moyenne_rouges: "0.18 / m",
-    moyenne_penaltys: "0.22 / m"
-  };
-  const gachEl = document.getElementById('refGachette');
-  if (gachEl) gachEl.textContent = radar.minute_premier_jaune || "38e min";
-  const biaisEl = document.getElementById('refBiais');
-  if (biaisEl) biaisEl.textContent = radar.ratio_fautes_dom_ext || "48% / 52%";
-  const rEl = document.getElementById('refRouges');
-  if (rEl) rEl.textContent = radar.moyenne_rouges || "0.18 / m";
-  const penEl = document.getElementById('refPenaltys');
-  if (penEl) penEl.textContent = radar.moyenne_penaltys || "0.22 / m";
+
+  if (isRefereeDesignated) {
+    if (radarGrid) radarGrid.style.display = 'grid';
+    if (pendingNotice) pendingNotice.style.display = 'none';
+    const radar = ref.radar_fmi || {
+      minute_premier_jaune: "38e min",
+      ratio_fautes_dom_ext: "48% Dom. / 52% Ext.",
+      moyenne_rouges: "0.18 / m",
+      moyenne_penaltys: "0.22 / m"
+    };
+    const gachEl = document.getElementById('refGachette');
+    if (gachEl) gachEl.textContent = radar.minute_premier_jaune || "38e min";
+    const biaisEl = document.getElementById('refBiais');
+    if (biaisEl) biaisEl.textContent = radar.ratio_fautes_dom_ext || "48% / 52%";
+    const rEl = document.getElementById('refRouges');
+    if (rEl) rEl.textContent = radar.moyenne_rouges || "0.18 / m";
+    const penEl = document.getElementById('refPenaltys');
+    if (penEl) penEl.textContent = radar.moyenne_penaltys || "0.22 / m";
+  } else {
+    if (radarGrid) radarGrid.style.display = 'none';
+    if (pendingNotice) pendingNotice.style.display = 'block';
+  }
 
   // E ter. Météo & Conditions de Jeu
   const weather = data.meteo_prochain_match;

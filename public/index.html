@@ -13,7 +13,7 @@
   <link rel="apple-touch-icon" href="./logo.png">
   <link rel="icon" type="image/png" href="./logo.png">
 
-  <link rel="stylesheet" href="./styles.css?v=20261111_v31">
+  <link rel="stylesheet" href="./styles.css?v=20261111_v32">
 </head>
 <body>
 
@@ -286,6 +286,11 @@
           <div style="font-size: 11px; color: var(--text-muted); line-height: 1.4;">
             <strong>Moyenne :</strong> <span id="refereeCardsAvg">4.5 cartons jaunes / match</span>.<br>
             <strong>Consigne Staff :</strong> <span id="refereeAdvice">Arbitre qui cartonne très vite sur les gestes d'humeur. Seul le capitaine doit lui adresser la parole.</span>
+          </div>
+
+          <!-- Notice d'attente si l'arbitre n'est pas encore désigné (Publication CRA le jeudi) -->
+          <div id="refereePendingNotice" style="display: none; margin-top: 10px; padding: 10px 12px; background: #F8FAFC; border: 1px dashed #CBD5E1; border-radius: 8px; font-size: 11px; color: var(--text-muted); text-align: center; line-height: 1.4;">
+            📅 <strong>Radar CRA & Statistiques Arbitre :</strong> Publication officielle de la désignation par la CRA ce jeudi. Le radar sera activé automatiquement dès nomination de l'arbitre.
           </div>
 
           <!-- Radar Avancé CRA / FMI (Gâchette, Biais Dom/Ext, Pénaltys) -->
@@ -804,25 +809,25 @@
       </div>
 
       <!-- Statistiques Complètes de Matchs & Net Rating -->
-      <div style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: var(--text-muted); margin-bottom: 6px;">
+      <div style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: #64748B; margin-bottom: 6px;">
         Statistiques Individuelles & Net Rating (+/-)
       </div>
       <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; text-align: center; font-size: 11px;">
-        <div style="background: var(--bg-subtle); padding: 7px 4px; border-radius: 6px; border: 1px solid var(--border-light);">
-          <div style="font-size: 8.5px; color: var(--text-light); text-transform: uppercase;">Temps Jeu</div>
-          <strong style="font-size: 13px; font-family: var(--font-mono);" id="modalMinutes">--m</strong>
+        <div style="background: #F8FAFC; padding: 7px 4px; border-radius: 6px; border: 1px solid #E2E8F0;">
+          <div style="font-size: 8.5px; color: #64748B; text-transform: uppercase; font-weight: 700;">Temps Jeu</div>
+          <strong style="font-size: 13px; font-family: var(--font-mono); color: #0F172A;" id="modalMinutes">--m</strong>
         </div>
-        <div style="background: var(--bg-subtle); padding: 7px 4px; border-radius: 6px; border: 1px solid var(--border-light);">
-          <div style="font-size: 8.5px; color: var(--text-light); text-transform: uppercase;">Titul.</div>
-          <strong style="font-size: 13px; font-family: var(--font-mono);" id="modalStarts">--</strong>
+        <div style="background: #F8FAFC; padding: 7px 4px; border-radius: 6px; border: 1px solid #E2E8F0;">
+          <div style="font-size: 8.5px; color: #64748B; text-transform: uppercase; font-weight: 700;">Titul.</div>
+          <strong style="font-size: 13px; font-family: var(--font-mono); color: #0F172A;" id="modalStarts">--</strong>
         </div>
-        <div style="background: var(--bg-subtle); padding: 7px 4px; border-radius: 6px; border: 1px solid var(--border-light);">
-          <div style="font-size: 8.5px; color: var(--text-light); text-transform: uppercase;">Clean Sheets</div>
-          <strong style="font-size: 13px; font-family: var(--font-mono);" id="modalCleanSheets">--</strong>
+        <div style="background: #F8FAFC; padding: 7px 4px; border-radius: 6px; border: 1px solid #E2E8F0;">
+          <div style="font-size: 8.5px; color: #64748B; text-transform: uppercase; font-weight: 700;">Clean Sheets</div>
+          <strong style="font-size: 13px; font-family: var(--font-mono); color: #0F172A;" id="modalCleanSheets">--</strong>
         </div>
-        <div style="background: #f0fdf4; padding: 7px 4px; border-radius: 6px; border: 1px solid #bbf7d0;">
+        <div style="background: #F0FDF4; padding: 7px 4px; border-radius: 6px; border: 1px solid #BBF7D0;">
           <div style="font-size: 8.5px; color: #166534; text-transform: uppercase; font-weight: 700;">Net (+/-)</div>
-          <strong style="font-size: 13px; font-family: var(--font-mono); color: #15803d;" id="modalNetRating">--</strong>
+          <strong style="font-size: 13px; font-family: var(--font-mono); color: #15803D;" id="modalNetRating">--</strong>
         </div>
       </div>
 
@@ -1343,8 +1348,8 @@
   </nav>
 
   <!-- Scripts avec Cache-Busting Garanti -->
-  <script src="./licenses_registry.js?v=20261111_v31"></script>
-  <script src="./data.js?v=20261111_v31"></script>
-  <script src="./app.js?v=20261111_v31"></script>
+  <script src="./licenses_registry.js?v=20261111_v32"></script>
+  <script src="./data.js?v=20261111_v32"></script>
+  <script src="./app.js?v=20261111_v32"></script>
 </body>
 </html>
