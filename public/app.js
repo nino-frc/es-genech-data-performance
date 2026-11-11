@@ -73,6 +73,7 @@ function getClubLogo(teamName) {
   if (up.includes('AUBY')) return './logos/logo_auby.png';
   if (up.includes('BONDUES')) return './logos/logo_bondues.png';
   if (up.includes('CYSOING')) return './logos/logo_cysoing.png';
+  if (up.includes('BULLY')) return './logos/logo_bully.png';
   if (up.includes('ESCAUDAIN')) return './logos/logo_escaudain.png';
   if (up.includes('HEM')) return './logos/logo_hem.png';
   if (up.includes('HENIN')) return './logos/logo_henin.png';

@@ -8,7 +8,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "09/11/2026 à 18:57"
+      "derniere_maj": "11/11/2026 à 11:00"
     },
     "dernier_match": {
       "id": "r3_j6_genech_bavay",
@@ -195,11 +195,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "7.6 °C",
-      "vent": "Modéré (27.3 km/h)",
-      "pluie": "Sec (5 %)",
+      "temperature": "12.3 °C",
+      "vent": "Modéré (19.5 km/h)",
+      "pluie": "Averses possibles (49 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle sèche et rapide."
+      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Désignation en attente (CRA)",
@@ -4339,48 +4339,26 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "09/11/2026 à 18:57"
+      "derniere_maj": "11/11/2026 à 11:00"
     },
     "dernier_match": {
-      "id": "m_u18_m1_79496282-et-c-anstai",
-      "competition": "D1 Poule Unique • Journée 5",
-      "domicile": "ANSTAING CHERENG EC",
-      "exterieur": "GENECH ES",
-      "score_domicile": 2,
-      "score_exterieur": 6,
-      "score_display": "2 - 6",
-      "date_heure": "2026-10-10 14:30",
-      "statut": "TERMINE"
-    },
-    "evenements_dernier_match": [
-      {
-        "minute": 66,
-        "type": "AVERTISSEMENT",
-        "equipe": "ANSTAING CHERENG EC",
-        "acteur": "Eliot D.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 69,
-        "type": "AVERTISSEMENT",
-        "equipe": "ANSTAING CHERENG EC",
-        "acteur": "Jules D.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 69,
-        "type": "AVERTISSEMENT",
-        "equipe": "GENECH ES",
-        "acteur": "Robin C.",
-        "detail": "Carton jaune"
-      }
-    ],
-    "prochain_match": {
+      "id": "m_u18_m1_79497787-et-am-c-cys",
       "competition": "D1 Poule Unique • Journée 6",
-      "date_heure": "2026-11-07 17:30",
-      "lieu": "Terrain adverse",
       "domicile": "CYSOING WB EAC",
       "exterieur": "GENECH ES",
+      "score_domicile": 3,
+      "score_exterieur": 1,
+      "score_display": "3 - 1",
+      "date_heure": "2026-11-07 17:30",
+      "statut": "TERMINE"
+    },
+    "evenements_dernier_match": [],
+    "prochain_match": {
+      "competition": "D1 Poule Unique • Journée 7",
+      "date_heure": "2026-11-21 17:15",
+      "lieu": "Parc des Sports (Genech)",
+      "domicile": "GENECH ES",
+      "exterieur": "RONCHIN US",
       "comparatif": {
         "titre": "Comparatif de Performance (18 19 D1 District)",
         "adversaire_nom": "Cysoing WB EAC",
@@ -4403,11 +4381,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "7.6 °C",
-      "vent": "Modéré (27.3 km/h)",
-      "pluie": "Sec (5 %)",
+      "temperature": "12.3 °C",
+      "vent": "Modéré (19.5 km/h)",
+      "pluie": "Averses possibles (49 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle sèche et rapide."
+      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Arbitre Officiel District (D1 U18)",
@@ -4417,6 +4395,32 @@ window.MATCHDAY_TEAMS = {
       "consigne_coach": "Atmosphère derby. Garder la maîtrise émotionnelle et s'appuyer sur la vitesse des transitions."
     },
     "historique_matchs": [
+      {
+        "id": "m_u18_m1_79497787-et-am-c-cys",
+        "competition": "18 19 D1 • Journée 6",
+        "comp_type": "CHAMPIONNAT",
+        "date": "07/11/2026",
+        "date_heure": "2026-11-07 17:30",
+        "domicile": "CYSOING WB EAC",
+        "exterieur": "GENECH ES",
+        "score_domicile": 3,
+        "score_exterieur": 1,
+        "score_display": "3 - 1",
+        "is_domicile": false,
+        "resultat": "D",
+        "resultat_label": "Défaite",
+        "evenements": [],
+        "compositions": {
+          "genech": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "CYSOING WB EAC",
+            "titulaires": []
+          }
+        }
+      },
       {
         "id": "m_u18_m1_79496282-et-c-anstai",
         "competition": "18 19 D1 • Journée 5",
@@ -5137,10 +5141,10 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "kpis_saison": {
-      "buts_marques": 30,
-      "buts_encaisses": 8,
+      "buts_marques": 31,
+      "buts_encaisses": 11,
       "clean_sheets": 2,
-      "minutes_cumulees": 5400,
+      "minutes_cumulees": 6300,
       "cartons_jaunes": 8,
       "cartons_rouges": 1
     },
@@ -5622,31 +5626,31 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 3.0,
+      "ppm_championnat": 2.5,
       "probabilite_montee_pct": 75.0,
       "probabilite_maintien_pct": 98.0,
-      "taux_invincibilite": 100.0,
+      "taux_invincibilite": 85.7,
       "bilan_global": {
-        "matchs": 6,
+        "matchs": 7,
         "victoires": 5,
         "nuls": 1,
-        "defaites": 0,
-        "buts_pour": 30,
-        "buts_contre": 8,
-        "difference": 22
+        "defaites": 1,
+        "buts_pour": 31,
+        "buts_contre": 11,
+        "difference": 20
       },
       "bilan_championnat": {
-        "matchs": 5,
+        "matchs": 6,
         "victoires": 5,
         "nuls": 0,
-        "defaites": 0,
+        "defaites": 1,
         "points": 15,
-        "ppm": 3.0
+        "ppm": 2.5
       },
-      "ratio_clean_sheet_pct": 33.3,
-      "moyenne_buts_encaisses": 1.33,
+      "ratio_clean_sheet_pct": 28.6,
+      "moyenne_buts_encaisses": 1.57,
       "projection_saison": {
-        "points_prevus": 66.0,
+        "points_prevus": 55.0,
         "rang_final_estime": "Haut de tableau"
       },
       "matrice_quarts_heure": [
@@ -5830,26 +5834,26 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "09/11/2026 à 18:57"
+      "derniere_maj": "11/11/2026 à 11:00"
     },
     "dernier_match": {
-      "id": "m_senior_f2_78809066-lille-e-s-l",
-      "competition": "Interdistricts Poule C • Championnat",
-      "domicile": "LILLE LOUVIERE ESP",
-      "exterieur": "GENECH ES",
-      "score_domicile": 0,
-      "score_exterieur": 3,
-      "score_display": "0 - 3",
-      "date_heure": "2026-10-25 13:00",
+      "id": "m_senior_f2_j5_leers",
+      "competition": "Interdistricts Poule C • Journée 5",
+      "domicile": "GENECH ES",
+      "exterieur": "LEERS OS",
+      "score_domicile": 5,
+      "score_exterieur": 1,
+      "score_display": "5 - 1",
+      "date_heure": "2026-11-08 10:30",
       "statut": "TERMINE"
     },
     "evenements_dernier_match": [],
     "prochain_match": {
-      "competition": "Interdistricts Féminin • Journée 5",
-      "date_heure": "08/11/2026 à 10:30",
-      "lieu": "Parc des Sports (Genech)",
-      "domicile": "ES GENECH",
-      "exterieur": "FEIGNIES AULNOYE EFA",
+      "competition": "Interdistricts Poule C • Journée 6",
+      "date_heure": "2026-11-22 10:30",
+      "lieu": "Terrain adverse",
+      "domicile": "FEIGNIES AULNOYE EFA",
+      "exterieur": "GENECH ES",
       "comparatif": {
         "titre": "Comparatif de Performance (Interdistricts Féminin)",
         "adversaire_nom": "Feignies Aulnoye EFA",
@@ -5871,11 +5875,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "7.6 °C",
-      "vent": "Modéré (27.3 km/h)",
-      "pluie": "Sec (5 %)",
+      "temperature": "12.3 °C",
+      "vent": "Modéré (19.5 km/h)",
+      "pluie": "Averses possibles (49 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle sèche et rapide."
+      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Arbitre Officiel Ligue Interdistricts (LFHF)",
@@ -5885,6 +5889,32 @@ window.MATCHDAY_TEAMS = {
       "consigne_coach": "Arbitre pédagogue favorisant la fluidité et le jeu propre."
     },
     "historique_matchs": [
+      {
+        "id": "m_senior_f2_j5_leers",
+        "competition": "Interdistricts Féminin • Journée 5",
+        "comp_type": "CHAMPIONNAT",
+        "date": "08/11/2026",
+        "date_heure": "2026-11-08 10:30",
+        "domicile": "GENECH ES",
+        "exterieur": "LEERS OS",
+        "score_domicile": 5,
+        "score_exterieur": 1,
+        "score_display": "5 - 1",
+        "is_domicile": true,
+        "resultat": "V",
+        "resultat_label": "Victoire",
+        "evenements": [],
+        "compositions": {
+          "genech": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "LEERS OS",
+            "titulaires": []
+          }
+        }
+      },
       {
         "id": "m_senior_f2_78809066-lille-e-s-l",
         "competition": "Interdistricts Féminin • Championnat",
@@ -6233,10 +6263,10 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "kpis_saison": {
-      "buts_marques": 10,
-      "buts_encaisses": 11,
+      "buts_marques": 15,
+      "buts_encaisses": 12,
       "clean_sheets": 1,
-      "minutes_cumulees": 3600,
+      "minutes_cumulees": 4500,
       "cartons_jaunes": 0,
       "cartons_rouges": 0
     },
@@ -6586,31 +6616,31 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 1.5,
+      "ppm_championnat": 1.8,
       "probabilite_montee_pct": 45.0,
       "probabilite_maintien_pct": 98.0,
-      "taux_invincibilite": 50.0,
+      "taux_invincibilite": 60.0,
       "bilan_global": {
-        "matchs": 4,
-        "victoires": 2,
+        "matchs": 5,
+        "victoires": 3,
         "nuls": 0,
         "defaites": 2,
-        "buts_pour": 10,
-        "buts_contre": 11,
-        "difference": -1
+        "buts_pour": 15,
+        "buts_contre": 12,
+        "difference": 3
       },
       "bilan_championnat": {
-        "matchs": 4,
-        "victoires": 2,
+        "matchs": 5,
+        "victoires": 3,
         "nuls": 0,
         "defaites": 2,
-        "points": 6,
-        "ppm": 1.5
+        "points": 9,
+        "ppm": 1.8
       },
-      "ratio_clean_sheet_pct": 25.0,
-      "moyenne_buts_encaisses": 2.75,
+      "ratio_clean_sheet_pct": 20.0,
+      "moyenne_buts_encaisses": 2.4,
       "projection_saison": {
-        "points_prevus": 33.0,
+        "points_prevus": 39.6,
         "rang_final_estime": "Milieu de tableau"
       },
       "matrice_quarts_heure": [
@@ -6794,26 +6824,26 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "09/11/2026 à 18:57"
+      "derniere_maj": "11/11/2026 à 11:00"
     },
     "dernier_match": {
-      "id": "m_senior_b_j5_roubaix",
-      "competition": "D2 Poule C • Journée 5",
-      "domicile": "GENECH ES 2",
-      "exterieur": "ROUBAIX RC 2",
-      "score_domicile": 3,
-      "score_exterieur": 1,
-      "score_display": "3 - 1",
-      "date_heure": "2026-11-01 14:30",
+      "id": "m_senior_b_j6_lesquin",
+      "competition": "D2 Poule C • Journée 6",
+      "domicile": "LESQUIN US 3",
+      "exterieur": "GENECH ES 2",
+      "score_domicile": 0,
+      "score_exterieur": 0,
+      "score_display": "0 - 0",
+      "date_heure": "2026-11-08 16:30",
       "statut": "TERMINE"
     },
     "evenements_dernier_match": [],
     "prochain_match": {
-      "competition": "D2 Poule C • Journée 6",
-      "date_heure": "2026-11-08 16:30",
-      "lieu": "Terrain adverse",
-      "domicile": "LESQUIN US 3",
-      "exterieur": "GENECH ES 2",
+      "competition": "D2 Poule C • Journée 7",
+      "date_heure": "2026-11-22 14:30",
+      "lieu": "Parc des Sports (Genech)",
+      "domicile": "GENECH ES 2",
+      "exterieur": "ROUBAIX SC 2",
       "comparatif": {
         "titre": "Comparatif de Performance (D2 Poule C)",
         "adversaire_nom": "Roubaix RC 2",
@@ -6835,11 +6865,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "7.6 °C",
-      "vent": "Modéré (27.3 km/h)",
-      "pluie": "Sec (5 %)",
+      "temperature": "12.3 °C",
+      "vent": "Modéré (19.5 km/h)",
+      "pluie": "Averses possibles (49 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle sèche et rapide."
+      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Arbitre Officiel District (Désignation Flandres)",
@@ -6849,6 +6879,32 @@ window.MATCHDAY_TEAMS = {
       "consigne_coach": "Arbitre officiel de District. Veiller au calme dans les duels et laisser le capitaine dialoguer."
     },
     "historique_matchs": [
+      {
+        "id": "m_senior_b_j6_lesquin",
+        "competition": "Seniors D2 • Journée 6",
+        "comp_type": "CHAMPIONNAT",
+        "date": "08/11/2026",
+        "date_heure": "2026-11-08 16:30",
+        "domicile": "LESQUIN US 3",
+        "exterieur": "GENECH ES 2",
+        "score_domicile": 0,
+        "score_exterieur": 0,
+        "score_display": "0 - 0",
+        "is_domicile": false,
+        "resultat": "N",
+        "resultat_label": "Match Nul",
+        "evenements": [],
+        "compositions": {
+          "genech": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "LESQUIN US 3",
+            "titulaires": []
+          }
+        }
+      },
       {
         "id": "m_senior_b_j5_roubaix",
         "competition": "Seniors D2 • Journée 5",
@@ -7182,8 +7238,8 @@ window.MATCHDAY_TEAMS = {
     "kpis_saison": {
       "buts_marques": 17,
       "buts_encaisses": 17,
-      "clean_sheets": 1,
-      "minutes_cumulees": 6300,
+      "clean_sheets": 2,
+      "minutes_cumulees": 7200,
       "cartons_jaunes": 0,
       "cartons_rouges": 0
     },
@@ -7208,7 +7264,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 1,
+        "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -7230,7 +7286,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 1,
+        "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -7252,7 +7308,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 1,
+        "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -7274,7 +7330,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 1,
+        "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -7296,7 +7352,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 1,
+        "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -7318,7 +7374,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 1,
+        "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -7340,7 +7396,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 1,
+        "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -7362,7 +7418,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 1,
+        "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -7384,7 +7440,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 1,
+        "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -7406,7 +7462,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 1,
+        "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -7428,7 +7484,7 @@ window.MATCHDAY_TEAMS = {
         "titularisations": 1,
         "minutes": 80,
         "buts": 0,
-        "clean_sheets": 1,
+        "clean_sheets": 2,
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 57.0,
@@ -7511,31 +7567,31 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 1.4,
+      "ppm_championnat": 1.33,
       "probabilite_montee_pct": 45.0,
       "probabilite_maintien_pct": 98.0,
-      "taux_invincibilite": 57.1,
+      "taux_invincibilite": 62.5,
       "bilan_global": {
-        "matchs": 7,
+        "matchs": 8,
         "victoires": 3,
-        "nuls": 1,
+        "nuls": 2,
         "defaites": 3,
         "buts_pour": 17,
         "buts_contre": 17,
         "difference": 0
       },
       "bilan_championnat": {
-        "matchs": 5,
+        "matchs": 6,
         "victoires": 2,
-        "nuls": 1,
+        "nuls": 2,
         "defaites": 2,
-        "points": 7,
-        "ppm": 1.4
+        "points": 8,
+        "ppm": 1.33
       },
-      "ratio_clean_sheet_pct": 14.3,
-      "moyenne_buts_encaisses": 2.43,
+      "ratio_clean_sheet_pct": 25.0,
+      "moyenne_buts_encaisses": 2.12,
       "projection_saison": {
-        "points_prevus": 30.8,
+        "points_prevus": 29.3,
         "rang_final_estime": "Milieu de tableau"
       },
       "matrice_quarts_heure": [
@@ -7573,7 +7629,7 @@ window.MATCHDAY_TEAMS = {
       "analyse_temporelle": {
         "buts_2nde_mi_temps_pct": 60.0,
         "buts_money_time_pct": 30.0,
-        "clean_premiere_demi_heure": "1 clean sheets",
+        "clean_premiere_demi_heure": "2 clean sheets",
         "point_vigilance": "Régularité sur les fins de mi-temps"
       }
     },
@@ -7745,67 +7801,53 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "09/11/2026 à 18:57"
+      "derniere_maj": "11/11/2026 à 11:00"
     },
     "dernier_match": {
-      "id": "seclin_56215870",
+      "id": "seclin_56215874",
       "competition": "Régional 2 (Poule B) • Journée",
-      "domicile": "CROIX FIC 2",
-      "exterieur": "SECLIN FC",
-      "score_domicile": 0,
-      "score_exterieur": 0,
-      "score_display": "0 - 0",
-      "date_heure": "2026-11-01 14:30",
-      "statut": "TERMINE"
-    },
-    "evenements_dernier_match": [
-      {
-        "minute": 49,
-        "type": "AVERTISSEMENT",
-        "equipe": "SECLIN FC",
-        "acteur": "Lenny M.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 78,
-        "type": "AVERTISSEMENT",
-        "equipe": "SECLIN FC",
-        "acteur": "Amadou S.",
-        "detail": "Carton jaune"
-      }
-    ],
-    "prochain_match": {
-      "competition": "Régional 2 (Poule B) • Journée 6",
-      "date_heure": "08/11/2026 à 14:30",
-      "lieu": "Stade Henri Seigneur (Seclin)",
       "domicile": "SECLIN FC",
       "exterieur": "BIACHE ST VAAST US",
+      "score_domicile": 1,
+      "score_exterieur": 2,
+      "score_display": "1 - 2",
+      "date_heure": "2026-11-08 14:30",
+      "statut": "TERMINE"
+    },
+    "evenements_dernier_match": [],
+    "prochain_match": {
+      "competition": "Régional 2 (Poule B) • Journée 7",
+      "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+      "lieu": "Stade Léo Lagrange (Noyelles-sous-Lens)",
+      "domicile": "NOYELLES S/LENS US",
+      "exterieur": "SECLIN FC",
       "comparatif": {
         "titre": "Comparatif de Performance (R2 Poule B)",
-        "adversaire_nom": "Biache St Vaast US",
-        "adversaire_rang": "8e",
-        "adversaire_pts": 6,
-        "adversaire_buts_pour": 14,
-        "adversaire_buts_contre": 7,
+        "adversaire_nom": "Noyelles s/Lens US",
+        "adversaire_rang": "9e",
+        "adversaire_pts": 7,
+        "adversaire_buts_pour": 8,
+        "adversaire_buts_contre": 12,
         "club_nom": "FC Seclin",
-        "club_rang": "2e",
+        "club_rang": "3e",
         "club_pts": 9,
-        "club_buts_pour": 16,
-        "club_buts_contre": 3
+        "club_buts_pour": 17,
+        "club_buts_contre": 5
       },
       "alertes": [
-        "Seclin toujours invaincu en R2 après son nul héroïque 0-0 chez le leader Croix (9 pts, 16 BP, 3 BC).",
-        "Meilleure défense de la poule : seulement 3 buts concédés en 5 journées (3e clean sheet de rang)."
+        "Déplacement à Noyelles-sous-Lens pour rebondir après le revers concédé face à Biache (1-2).",
+        "Seclin (3e, 9 pts) reste solidement ancré sur le podium de R2 Poule B.",
+        "Noyelles reste sur une défaite à domicile et concède en moyenne 2 buts par rencontre."
       ]
     },
     "meteo_prochain_match": {
       "lieu": "Seclin (Stade Henri Jooris)",
       "surface": "Pelouse naturelle",
-      "temperature": "7.5 °C",
-      "vent": "Modéré (25.8 km/h)",
-      "pluie": "Sec (4 %)",
+      "temperature": "12.4 °C",
+      "vent": "Faible (15.3 km/h)",
+      "pluie": "Risque Élevé (51 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle sèche et rapide."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Roman ROSSINI",
@@ -7818,6 +7860,36 @@ window.MATCHDAY_TEAMS = {
       "consigne_coach": "Roman ROSSINI désigné par la CRA ce jeudi 05/11 pour la réception de Biache. Attention accrue lors des transitions défensives."
     },
     "historique_matchs": [
+      {
+        "id": "seclin_56215874",
+        "competition": "R2 • Journée",
+        "comp_type": "CHAMPIONNAT",
+        "date": "08/11/2026",
+        "date_heure": "2026-11-08 14:30",
+        "domicile": "SECLIN FC",
+        "exterieur": "BIACHE ST VAAST US",
+        "score_domicile": 1,
+        "score_exterieur": 2,
+        "score_display": "1 - 2",
+        "is_domicile": true,
+        "resultat": "D",
+        "resultat_label": "Défaite",
+        "evenements": [],
+        "compositions": {
+          "club": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "seclin": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "BIACHE ST VAAST US",
+            "titulaires": []
+          }
+        }
+      },
       {
         "id": "seclin_56215870",
         "competition": "R2 • Journée",
@@ -10474,10 +10546,10 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "kpis_saison": {
-      "buts_marques": 26,
-      "buts_encaisses": 13,
+      "buts_marques": 27,
+      "buts_encaisses": 15,
       "clean_sheets": 4,
-      "minutes_cumulees": 9000,
+      "minutes_cumulees": 9900,
       "cartons_jaunes": 11,
       "cartons_rouges": 0
     },
@@ -12216,15 +12288,15 @@ window.MATCHDAY_TEAMS = {
       "ppm_championnat": 2.0,
       "probabilite_montee_pct": 78.0,
       "probabilite_maintien_pct": 99.0,
-      "taux_invincibilite": 90.0,
+      "taux_invincibilite": 81.8,
       "bilan_global": {
-        "matchs": 10,
+        "matchs": 11,
         "victoires": 3,
         "nuls": 6,
-        "defaites": 1,
-        "buts_pour": 26,
-        "buts_contre": 13,
-        "difference": 13
+        "defaites": 2,
+        "buts_pour": 27,
+        "buts_contre": 15,
+        "difference": 12
       },
       "bilan_championnat": {
         "matchs": 4,
@@ -12237,8 +12309,8 @@ window.MATCHDAY_TEAMS = {
         "difference": 13,
         "ppm": 2.0
       },
-      "ratio_clean_sheet_pct": 40.0,
-      "moyenne_buts_encaisses": 1.3,
+      "ratio_clean_sheet_pct": 36.4,
+      "moyenne_buts_encaisses": 1.36,
       "projection_saison": {
         "points_prevus": 44.0,
         "rang_final_estime": "Top 2 Régional 2 (Course à la montée en R1)"
@@ -12534,67 +12606,53 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "09/11/2026 à 18:57"
+      "derniere_maj": "11/11/2026 à 11:00"
     },
     "dernier_match": {
-      "id": "seclin_56215870",
+      "id": "seclin_56215874",
       "competition": "Régional 2 (Poule B) • Journée",
-      "domicile": "CROIX FIC 2",
-      "exterieur": "SECLIN FC",
-      "score_domicile": 0,
-      "score_exterieur": 0,
-      "score_display": "0 - 0",
-      "date_heure": "2026-11-01 14:30",
-      "statut": "TERMINE"
-    },
-    "evenements_dernier_match": [
-      {
-        "minute": 49,
-        "type": "AVERTISSEMENT",
-        "equipe": "SECLIN FC",
-        "acteur": "Lenny M.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 78,
-        "type": "AVERTISSEMENT",
-        "equipe": "SECLIN FC",
-        "acteur": "Amadou S.",
-        "detail": "Carton jaune"
-      }
-    ],
-    "prochain_match": {
-      "competition": "Régional 2 (Poule B) • Journée 6",
-      "date_heure": "08/11/2026 à 14:30",
-      "lieu": "Stade Henri Seigneur (Seclin)",
       "domicile": "SECLIN FC",
       "exterieur": "BIACHE ST VAAST US",
+      "score_domicile": 1,
+      "score_exterieur": 2,
+      "score_display": "1 - 2",
+      "date_heure": "2026-11-08 14:30",
+      "statut": "TERMINE"
+    },
+    "evenements_dernier_match": [],
+    "prochain_match": {
+      "competition": "Régional 2 (Poule B) • Journée 7",
+      "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+      "lieu": "Stade Léo Lagrange (Noyelles-sous-Lens)",
+      "domicile": "NOYELLES S/LENS US",
+      "exterieur": "SECLIN FC",
       "comparatif": {
         "titre": "Comparatif de Performance (R2 Poule B)",
-        "adversaire_nom": "Biache St Vaast US",
-        "adversaire_rang": "8e",
-        "adversaire_pts": 6,
-        "adversaire_buts_pour": 14,
-        "adversaire_buts_contre": 7,
+        "adversaire_nom": "Noyelles s/Lens US",
+        "adversaire_rang": "9e",
+        "adversaire_pts": 7,
+        "adversaire_buts_pour": 8,
+        "adversaire_buts_contre": 12,
         "club_nom": "FC Seclin",
-        "club_rang": "2e",
+        "club_rang": "3e",
         "club_pts": 9,
-        "club_buts_pour": 16,
-        "club_buts_contre": 3
+        "club_buts_pour": 17,
+        "club_buts_contre": 5
       },
       "alertes": [
-        "Seclin toujours invaincu en R2 après son nul héroïque 0-0 chez le leader Croix (9 pts, 16 BP, 3 BC).",
-        "Meilleure défense de la poule : seulement 3 buts concédés en 5 journées (3e clean sheet de rang)."
+        "Déplacement à Noyelles-sous-Lens pour rebondir après le revers concédé face à Biache (1-2).",
+        "Seclin (3e, 9 pts) reste solidement ancré sur le podium de R2 Poule B.",
+        "Noyelles reste sur une défaite à domicile et concède en moyenne 2 buts par rencontre."
       ]
     },
     "meteo_prochain_match": {
       "lieu": "Seclin (Stade Henri Jooris)",
       "surface": "Pelouse naturelle",
-      "temperature": "7.5 °C",
-      "vent": "Modéré (25.8 km/h)",
-      "pluie": "Sec (4 %)",
+      "temperature": "12.4 °C",
+      "vent": "Faible (15.3 km/h)",
+      "pluie": "Risque Élevé (51 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle sèche et rapide."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Roman ROSSINI",
@@ -12607,6 +12665,36 @@ window.MATCHDAY_TEAMS = {
       "consigne_coach": "Roman ROSSINI désigné par la CRA ce jeudi 05/11 pour la réception de Biache. Attention accrue lors des transitions défensives."
     },
     "historique_matchs": [
+      {
+        "id": "seclin_56215874",
+        "competition": "R2 • Journée",
+        "comp_type": "CHAMPIONNAT",
+        "date": "08/11/2026",
+        "date_heure": "2026-11-08 14:30",
+        "domicile": "SECLIN FC",
+        "exterieur": "BIACHE ST VAAST US",
+        "score_domicile": 1,
+        "score_exterieur": 2,
+        "score_display": "1 - 2",
+        "is_domicile": true,
+        "resultat": "D",
+        "resultat_label": "Défaite",
+        "evenements": [],
+        "compositions": {
+          "club": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "seclin": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "BIACHE ST VAAST US",
+            "titulaires": []
+          }
+        }
+      },
       {
         "id": "seclin_56215870",
         "competition": "R2 • Journée",
@@ -15263,10 +15351,10 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "kpis_saison": {
-      "buts_marques": 26,
-      "buts_encaisses": 13,
+      "buts_marques": 27,
+      "buts_encaisses": 15,
       "clean_sheets": 4,
-      "minutes_cumulees": 9000,
+      "minutes_cumulees": 9900,
       "cartons_jaunes": 11,
       "cartons_rouges": 0
     },
@@ -17005,15 +17093,15 @@ window.MATCHDAY_TEAMS = {
       "ppm_championnat": 2.0,
       "probabilite_montee_pct": 78.0,
       "probabilite_maintien_pct": 99.0,
-      "taux_invincibilite": 90.0,
+      "taux_invincibilite": 81.8,
       "bilan_global": {
-        "matchs": 10,
+        "matchs": 11,
         "victoires": 3,
         "nuls": 6,
-        "defaites": 1,
-        "buts_pour": 26,
-        "buts_contre": 13,
-        "difference": 13
+        "defaites": 2,
+        "buts_pour": 27,
+        "buts_contre": 15,
+        "difference": 12
       },
       "bilan_championnat": {
         "matchs": 4,
@@ -17026,8 +17114,8 @@ window.MATCHDAY_TEAMS = {
         "difference": 13,
         "ppm": 2.0
       },
-      "ratio_clean_sheet_pct": 40.0,
-      "moyenne_buts_encaisses": 1.3,
+      "ratio_clean_sheet_pct": 36.4,
+      "moyenne_buts_encaisses": 1.36,
       "projection_saison": {
         "points_prevus": 44.0,
         "rang_final_estime": "Top 2 Régional 2 (Course à la montée en R1)"
@@ -17323,130 +17411,53 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "09/11/2026 à 18:57"
+      "derniere_maj": "11/11/2026 à 11:00"
     },
     "dernier_match": {
-      "id": "lesquin_56215867",
-      "competition": "Régional 2 (Poule B) • Senior Journée 5",
-      "domicile": "COURCELLES US",
-      "exterieur": "LESQUIN US",
-      "score_domicile": 2,
+      "id": "lesquin_56215877",
+      "competition": "Régional 2 (Poule B) • Senior Journée 6",
+      "domicile": "LESQUIN US",
+      "exterieur": "ESCAUDAIN USF",
+      "score_domicile": 0,
       "score_exterieur": 2,
-      "score_display": "2 - 2",
-      "date_heure": "2026-11-01 14:30",
+      "score_display": "0 - 2",
+      "date_heure": "2026-11-08 14:30",
       "statut": "TERMINE"
     },
-    "evenements_dernier_match": [
-      {
-        "minute": 25,
-        "type": "AVERTISSEMENT",
-        "equipe": "LESQUIN US",
-        "acteur": "Antonin L.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 28,
-        "type": "BUT",
-        "equipe": "LESQUIN US",
-        "acteur": "Antoine M.",
-        "detail": "But FFF"
-      },
-      {
-        "minute": 31,
-        "type": "AVERTISSEMENT",
-        "equipe": "COURCELLES US",
-        "acteur": "Chemssedine D.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 58,
-        "type": "AVERTISSEMENT",
-        "equipe": "LESQUIN US",
-        "acteur": "Mahery N.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 61,
-        "type": "AVERTISSEMENT",
-        "equipe": "COURCELLES US",
-        "acteur": "Brahim T.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 62,
-        "type": "BUT",
-        "equipe": "COURCELLES US",
-        "acteur": "Ismael B.",
-        "detail": "But FFF"
-      },
-      {
-        "minute": 84,
-        "type": "AVERTISSEMENT",
-        "equipe": "COURCELLES US",
-        "acteur": "Mohamed E.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 86,
-        "type": "AVERTISSEMENT",
-        "equipe": "LESQUIN US",
-        "acteur": "Sergio J.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 88,
-        "type": "BUT",
-        "equipe": "LESQUIN US",
-        "acteur": "Pierre C.",
-        "detail": "But FFF"
-      },
-      {
-        "minute": 90,
-        "type": "BUT",
-        "equipe": "COURCELLES US",
-        "acteur": "Lorenzo P.",
-        "detail": "But FFF"
-      },
-      {
-        "minute": 90,
-        "type": "AVERTISSEMENT",
-        "equipe": "COURCELLES US",
-        "acteur": "Lorenzo P.",
-        "detail": "Carton jaune"
-      }
-    ],
+    "evenements_dernier_match": [],
     "prochain_match": {
-      "competition": "Régional 2 (Poule B) • Journée 6",
-      "date_heure": "08/11/2026 à 14:30",
-      "lieu": "Stade Jean-Pierre Papin (Lesquin)",
-      "domicile": "US LESQUIN",
-      "exterieur": "ESCAUDAIN USF",
+      "competition": "Régional 2 (Poule B) • Journée 7",
+      "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+      "lieu": "Stade Municipal (Montigny-en-Gohelle)",
+      "domicile": "MONTIGNY GOHELLE FC",
+      "exterieur": "US LESQUIN",
       "comparatif": {
         "titre": "Comparatif de Performance (R2 Poule B)",
-        "adversaire_nom": "Escaudain USF",
-        "adversaire_rang": "3e",
-        "adversaire_pts": 9,
-        "adversaire_buts_pour": 11,
-        "adversaire_buts_contre": 8,
+        "adversaire_nom": "Montigny Gohelle FC",
+        "adversaire_rang": "11e",
+        "adversaire_pts": 4,
+        "adversaire_buts_pour": 6,
+        "adversaire_buts_contre": 13,
         "club_nom": "US Lesquin",
         "club_rang": "10e",
         "club_pts": 3,
         "club_buts_pour": 8,
-        "club_buts_contre": 11
+        "club_buts_contre": 13
       },
       "alertes": [
-        "Lesquin prend un point précieux à Courcelles (2-2) et accueille le 3e Escaudain (9 pts).",
-        "Objectif décrocher la première victoire de la saison à domicile."
+        "Choc direct pour le maintien : Lesquin (10e, 3 pts) se déplace chez le 11e Montigny-en-Gohelle (4 pts).",
+        "Objectif impératif : décrocher la première victoire de la saison pour s'extirper de la zone rouge.",
+        "Défense à resserrer après le revers 0-2 face à Escaudain."
       ]
     },
     "meteo_prochain_match": {
       "lieu": "Lesquin (Stade Jean-Pierre Papin)",
       "surface": "Terrain synthétique",
-      "temperature": "7.5 °C",
-      "vent": "Modéré (26.5 km/h)",
-      "pluie": "Sec (4 %)",
+      "temperature": "12.1 °C",
+      "vent": "Modéré (18.7 km/h)",
+      "pluie": "Risque Élevé (51 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Terrain synthétique sèche et rapide."
+      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Terrain synthétique glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Benoit BRUNEAU",
@@ -17459,6 +17470,36 @@ window.MATCHDAY_TEAMS = {
       "consigne_coach": "Benoit BRUNEAU désigné par la CRA ce jeudi 05/11 pour le duel face à Escaudain. Jouer simple en première intention."
     },
     "historique_matchs": [
+      {
+        "id": "lesquin_56215877",
+        "competition": "R2 • Senior Journée 6",
+        "comp_type": "CHAMPIONNAT",
+        "date": "08/11/2026",
+        "date_heure": "2026-11-08 14:30",
+        "domicile": "LESQUIN US",
+        "exterieur": "ESCAUDAIN USF",
+        "score_domicile": 0,
+        "score_exterieur": 2,
+        "score_display": "0 - 2",
+        "is_domicile": true,
+        "resultat": "D",
+        "resultat_label": "Défaite",
+        "evenements": [],
+        "compositions": {
+          "club": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "lesquin": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "ESCAUDAIN USF",
+            "titulaires": []
+          }
+        }
+      },
       {
         "id": "lesquin_56215867",
         "competition": "R2 • Senior Journée 5",
@@ -20217,7 +20258,7 @@ window.MATCHDAY_TEAMS = {
     ],
     "kpis_saison": {
       "buts_marques": 40,
-      "buts_encaisses": 19,
+      "buts_encaisses": 21,
       "clean_sheets": 1,
       "minutes_cumulees": 9800,
       "cartons_jaunes": 18,
@@ -20278,9 +20319,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 6,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 77.9,
+        "esg_score": 76.7,
         "sous_scores": {
-          "volume": 15.9,
+          "volume": 14.7,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -20304,9 +20345,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 4,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 84.9,
+        "esg_score": 83.5,
         "sous_scores": {
-          "volume": 19.9,
+          "volume": 18.5,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -20330,9 +20371,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 80.6,
+        "esg_score": 79.2,
         "sous_scores": {
-          "volume": 20.6,
+          "volume": 19.2,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -20356,9 +20397,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 68.0,
+        "esg_score": 66.4,
         "sous_scores": {
-          "volume": 23.0,
+          "volume": 21.4,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -20382,9 +20423,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 3,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 80.6,
+        "esg_score": 79.7,
         "sous_scores": {
-          "volume": 12.6,
+          "volume": 11.7,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -20408,9 +20449,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 62.6,
+        "esg_score": 61.2,
         "sous_scores": {
-          "volume": 20.6,
+          "volume": 19.2,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -20434,9 +20475,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 53.9,
+        "esg_score": 52.2,
         "sous_scores": {
-          "volume": 23.9,
+          "volume": 22.2,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -20460,9 +20501,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 64.8,
+        "esg_score": 63.6,
         "sous_scores": {
-          "volume": 16.8,
+          "volume": 15.6,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -20486,9 +20527,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 3,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 72.6,
+        "esg_score": 71.9,
         "sous_scores": {
-          "volume": 9.6,
+          "volume": 8.9,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -20512,9 +20553,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 51.5,
+        "esg_score": 50.0,
         "sous_scores": {
-          "volume": 21.5,
+          "volume": 20.0,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -20538,9 +20579,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 47.6,
+        "esg_score": 46.2,
         "sous_scores": {
-          "volume": 20.6,
+          "volume": 19.2,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -20564,9 +20605,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.2,
+        "esg_score": 61.2,
         "sous_scores": {
-          "volume": 14.2,
+          "volume": 13.2,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -20590,9 +20631,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 2,
         "cartons_j": 4,
         "cartons_r": 0,
-        "esg_score": 60.6,
+        "esg_score": 59.7,
         "sous_scores": {
-          "volume": 12.6,
+          "volume": 11.7,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -20616,9 +20657,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 52.8,
+        "esg_score": 51.6,
         "sous_scores": {
-          "volume": 16.8,
+          "volume": 15.6,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -20642,9 +20683,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 40.5,
+        "esg_score": 39.5,
         "sous_scores": {
-          "volume": 13.5,
+          "volume": 12.5,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -20668,9 +20709,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 39.4,
+        "esg_score": 38.8,
         "sous_scores": {
-          "volume": 9.4,
+          "volume": 8.8,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -20694,9 +20735,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 44.6,
+        "esg_score": 44.3,
         "sous_scores": {
-          "volume": 4.6,
+          "volume": 4.3,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -20720,9 +20761,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 35.9,
+        "esg_score": 35.4,
         "sous_scores": {
-          "volume": 7.9,
+          "volume": 7.4,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -20746,9 +20787,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 36.4,
+        "esg_score": 36.2,
         "sous_scores": {
-          "volume": 2.4,
+          "volume": 2.2,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -20800,7 +20841,7 @@ window.MATCHDAY_TEAMS = {
         "cartons_r": 0,
         "esg_score": 30.0,
         "sous_scores": {
-          "volume": 2.2,
+          "volume": 2.1,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -20826,7 +20867,7 @@ window.MATCHDAY_TEAMS = {
         "cartons_r": 0,
         "esg_score": 30.0,
         "sous_scores": {
-          "volume": 1.5,
+          "volume": 1.4,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -20943,18 +20984,18 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 0.6,
+      "ppm_championnat": 0.5,
       "probabilite_montee_pct": 12.0,
       "probabilite_maintien_pct": 74.0,
-      "taux_invincibilite": 76.9,
+      "taux_invincibilite": 71.4,
       "bilan_global": {
-        "matchs": 13,
+        "matchs": 14,
         "victoires": 6,
         "nuls": 4,
-        "defaites": 3,
+        "defaites": 4,
         "buts_pour": 40,
-        "buts_contre": 19,
-        "difference": 21
+        "buts_contre": 21,
+        "difference": 19
       },
       "bilan_championnat": {
         "matchs": 4,
@@ -20967,8 +21008,8 @@ window.MATCHDAY_TEAMS = {
         "difference": -3,
         "ppm": 0.5
       },
-      "ratio_clean_sheet_pct": 7.7,
-      "moyenne_buts_encaisses": 1.46,
+      "ratio_clean_sheet_pct": 7.1,
+      "moyenne_buts_encaisses": 1.5,
       "projection_saison": {
         "points_prevus": 26.0,
         "rang_final_estime": "Milieu de tableau Régional 2 (Objectif maintien consolidé)"
@@ -21264,130 +21305,53 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "09/11/2026 à 18:57"
+      "derniere_maj": "11/11/2026 à 11:00"
     },
     "dernier_match": {
-      "id": "lesquin_56215867",
-      "competition": "Régional 2 (Poule B) • Senior Journée 5",
-      "domicile": "COURCELLES US",
-      "exterieur": "LESQUIN US",
-      "score_domicile": 2,
+      "id": "lesquin_56215877",
+      "competition": "Régional 2 (Poule B) • Senior Journée 6",
+      "domicile": "LESQUIN US",
+      "exterieur": "ESCAUDAIN USF",
+      "score_domicile": 0,
       "score_exterieur": 2,
-      "score_display": "2 - 2",
-      "date_heure": "2026-11-01 14:30",
+      "score_display": "0 - 2",
+      "date_heure": "2026-11-08 14:30",
       "statut": "TERMINE"
     },
-    "evenements_dernier_match": [
-      {
-        "minute": 25,
-        "type": "AVERTISSEMENT",
-        "equipe": "LESQUIN US",
-        "acteur": "Antonin L.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 28,
-        "type": "BUT",
-        "equipe": "LESQUIN US",
-        "acteur": "Antoine M.",
-        "detail": "But FFF"
-      },
-      {
-        "minute": 31,
-        "type": "AVERTISSEMENT",
-        "equipe": "COURCELLES US",
-        "acteur": "Chemssedine D.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 58,
-        "type": "AVERTISSEMENT",
-        "equipe": "LESQUIN US",
-        "acteur": "Mahery N.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 61,
-        "type": "AVERTISSEMENT",
-        "equipe": "COURCELLES US",
-        "acteur": "Brahim T.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 62,
-        "type": "BUT",
-        "equipe": "COURCELLES US",
-        "acteur": "Ismael B.",
-        "detail": "But FFF"
-      },
-      {
-        "minute": 84,
-        "type": "AVERTISSEMENT",
-        "equipe": "COURCELLES US",
-        "acteur": "Mohamed E.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 86,
-        "type": "AVERTISSEMENT",
-        "equipe": "LESQUIN US",
-        "acteur": "Sergio J.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 88,
-        "type": "BUT",
-        "equipe": "LESQUIN US",
-        "acteur": "Pierre C.",
-        "detail": "But FFF"
-      },
-      {
-        "minute": 90,
-        "type": "BUT",
-        "equipe": "COURCELLES US",
-        "acteur": "Lorenzo P.",
-        "detail": "But FFF"
-      },
-      {
-        "minute": 90,
-        "type": "AVERTISSEMENT",
-        "equipe": "COURCELLES US",
-        "acteur": "Lorenzo P.",
-        "detail": "Carton jaune"
-      }
-    ],
+    "evenements_dernier_match": [],
     "prochain_match": {
-      "competition": "Régional 2 (Poule B) • Journée 6",
-      "date_heure": "08/11/2026 à 14:30",
-      "lieu": "Stade Jean-Pierre Papin (Lesquin)",
-      "domicile": "US LESQUIN",
-      "exterieur": "ESCAUDAIN USF",
+      "competition": "Régional 2 (Poule B) • Journée 7",
+      "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+      "lieu": "Stade Municipal (Montigny-en-Gohelle)",
+      "domicile": "MONTIGNY GOHELLE FC",
+      "exterieur": "US LESQUIN",
       "comparatif": {
         "titre": "Comparatif de Performance (R2 Poule B)",
-        "adversaire_nom": "Escaudain USF",
-        "adversaire_rang": "3e",
-        "adversaire_pts": 9,
-        "adversaire_buts_pour": 11,
-        "adversaire_buts_contre": 8,
+        "adversaire_nom": "Montigny Gohelle FC",
+        "adversaire_rang": "11e",
+        "adversaire_pts": 4,
+        "adversaire_buts_pour": 6,
+        "adversaire_buts_contre": 13,
         "club_nom": "US Lesquin",
         "club_rang": "10e",
         "club_pts": 3,
         "club_buts_pour": 8,
-        "club_buts_contre": 11
+        "club_buts_contre": 13
       },
       "alertes": [
-        "Lesquin prend un point précieux à Courcelles (2-2) et accueille le 3e Escaudain (9 pts).",
-        "Objectif décrocher la première victoire de la saison à domicile."
+        "Choc direct pour le maintien : Lesquin (10e, 3 pts) se déplace chez le 11e Montigny-en-Gohelle (4 pts).",
+        "Objectif impératif : décrocher la première victoire de la saison pour s'extirper de la zone rouge.",
+        "Défense à resserrer après le revers 0-2 face à Escaudain."
       ]
     },
     "meteo_prochain_match": {
       "lieu": "Lesquin (Stade Jean-Pierre Papin)",
       "surface": "Terrain synthétique",
-      "temperature": "7.5 °C",
-      "vent": "Modéré (26.5 km/h)",
-      "pluie": "Sec (4 %)",
+      "temperature": "12.1 °C",
+      "vent": "Modéré (18.7 km/h)",
+      "pluie": "Risque Élevé (51 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Terrain synthétique sèche et rapide."
+      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Terrain synthétique glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Benoit BRUNEAU",
@@ -21400,6 +21364,36 @@ window.MATCHDAY_TEAMS = {
       "consigne_coach": "Benoit BRUNEAU désigné par la CRA ce jeudi 05/11 pour le duel face à Escaudain. Jouer simple en première intention."
     },
     "historique_matchs": [
+      {
+        "id": "lesquin_56215877",
+        "competition": "R2 • Senior Journée 6",
+        "comp_type": "CHAMPIONNAT",
+        "date": "08/11/2026",
+        "date_heure": "2026-11-08 14:30",
+        "domicile": "LESQUIN US",
+        "exterieur": "ESCAUDAIN USF",
+        "score_domicile": 0,
+        "score_exterieur": 2,
+        "score_display": "0 - 2",
+        "is_domicile": true,
+        "resultat": "D",
+        "resultat_label": "Défaite",
+        "evenements": [],
+        "compositions": {
+          "club": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "lesquin": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "ESCAUDAIN USF",
+            "titulaires": []
+          }
+        }
+      },
       {
         "id": "lesquin_56215867",
         "competition": "R2 • Senior Journée 5",
@@ -24158,7 +24152,7 @@ window.MATCHDAY_TEAMS = {
     ],
     "kpis_saison": {
       "buts_marques": 40,
-      "buts_encaisses": 19,
+      "buts_encaisses": 21,
       "clean_sheets": 1,
       "minutes_cumulees": 9800,
       "cartons_jaunes": 18,
@@ -24219,9 +24213,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 6,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 77.9,
+        "esg_score": 76.7,
         "sous_scores": {
-          "volume": 15.9,
+          "volume": 14.7,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -24245,9 +24239,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 4,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 84.9,
+        "esg_score": 83.5,
         "sous_scores": {
-          "volume": 19.9,
+          "volume": 18.5,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -24271,9 +24265,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 2,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 80.6,
+        "esg_score": 79.2,
         "sous_scores": {
-          "volume": 20.6,
+          "volume": 19.2,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -24297,9 +24291,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 68.0,
+        "esg_score": 66.4,
         "sous_scores": {
-          "volume": 23.0,
+          "volume": 21.4,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -24323,9 +24317,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 3,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 80.6,
+        "esg_score": 79.7,
         "sous_scores": {
-          "volume": 12.6,
+          "volume": 11.7,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -24349,9 +24343,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 62.6,
+        "esg_score": 61.2,
         "sous_scores": {
-          "volume": 20.6,
+          "volume": 19.2,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -24375,9 +24369,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 53.9,
+        "esg_score": 52.2,
         "sous_scores": {
-          "volume": 23.9,
+          "volume": 22.2,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -24401,9 +24395,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 64.8,
+        "esg_score": 63.6,
         "sous_scores": {
-          "volume": 16.8,
+          "volume": 15.6,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -24427,9 +24421,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 3,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 72.6,
+        "esg_score": 71.9,
         "sous_scores": {
-          "volume": 9.6,
+          "volume": 8.9,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -24453,9 +24447,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 51.5,
+        "esg_score": 50.0,
         "sous_scores": {
-          "volume": 21.5,
+          "volume": 20.0,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -24479,9 +24473,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 47.6,
+        "esg_score": 46.2,
         "sous_scores": {
-          "volume": 20.6,
+          "volume": 19.2,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -24505,9 +24499,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 62.2,
+        "esg_score": 61.2,
         "sous_scores": {
-          "volume": 14.2,
+          "volume": 13.2,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -24531,9 +24525,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 2,
         "cartons_j": 4,
         "cartons_r": 0,
-        "esg_score": 60.6,
+        "esg_score": 59.7,
         "sous_scores": {
-          "volume": 12.6,
+          "volume": 11.7,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -24557,9 +24551,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 52.8,
+        "esg_score": 51.6,
         "sous_scores": {
-          "volume": 16.8,
+          "volume": 15.6,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -24583,9 +24577,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 40.5,
+        "esg_score": 39.5,
         "sous_scores": {
-          "volume": 13.5,
+          "volume": 12.5,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -24609,9 +24603,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 39.4,
+        "esg_score": 38.8,
         "sous_scores": {
-          "volume": 9.4,
+          "volume": 8.8,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -24635,9 +24629,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 44.6,
+        "esg_score": 44.3,
         "sous_scores": {
-          "volume": 4.6,
+          "volume": 4.3,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -24661,9 +24655,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 0,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 35.9,
+        "esg_score": 35.4,
         "sous_scores": {
-          "volume": 7.9,
+          "volume": 7.4,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -24687,9 +24681,9 @@ window.MATCHDAY_TEAMS = {
         "buts": 1,
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 36.4,
+        "esg_score": 36.2,
         "sous_scores": {
-          "volume": 2.4,
+          "volume": 2.2,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -24741,7 +24735,7 @@ window.MATCHDAY_TEAMS = {
         "cartons_r": 0,
         "esg_score": 30.0,
         "sous_scores": {
-          "volume": 2.2,
+          "volume": 2.1,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -24767,7 +24761,7 @@ window.MATCHDAY_TEAMS = {
         "cartons_r": 0,
         "esg_score": 30.0,
         "sous_scores": {
-          "volume": 1.5,
+          "volume": 1.4,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -24884,18 +24878,18 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 0.6,
+      "ppm_championnat": 0.5,
       "probabilite_montee_pct": 12.0,
       "probabilite_maintien_pct": 74.0,
-      "taux_invincibilite": 76.9,
+      "taux_invincibilite": 71.4,
       "bilan_global": {
-        "matchs": 13,
+        "matchs": 14,
         "victoires": 6,
         "nuls": 4,
-        "defaites": 3,
+        "defaites": 4,
         "buts_pour": 40,
-        "buts_contre": 19,
-        "difference": 21
+        "buts_contre": 21,
+        "difference": 19
       },
       "bilan_championnat": {
         "matchs": 4,
@@ -24908,8 +24902,8 @@ window.MATCHDAY_TEAMS = {
         "difference": -3,
         "ppm": 0.5
       },
-      "ratio_clean_sheet_pct": 7.7,
-      "moyenne_buts_encaisses": 1.46,
+      "ratio_clean_sheet_pct": 7.1,
+      "moyenne_buts_encaisses": 1.5,
       "projection_saison": {
         "points_prevus": 26.0,
         "rang_final_estime": "Milieu de tableau Régional 2 (Objectif maintien consolidé)"
@@ -25205,116 +25199,53 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "09/11/2026 à 18:57"
+      "derniere_maj": "11/11/2026 à 11:00"
     },
     "dernier_match": {
-      "id": "esquelbecq_56216133",
-      "competition": "Régional 2 (Poule A) • Journée 5",
-      "domicile": "DUNKERQUE MALO FC",
-      "exterieur": "ESQUELBECQ US",
-      "score_domicile": 2,
-      "score_exterieur": 0,
-      "score_display": "2 - 0",
-      "date_heure": "2026-11-01 14:30",
-      "statut": "TERMINE"
-    },
-    "evenements_dernier_match": [
-      {
-        "minute": 38,
-        "type": "AVERTISSEMENT",
-        "equipe": "ESQUELBECQ US",
-        "acteur": "Neji Z.",
-        "detail": "Carton Jaune"
-      },
-      {
-        "minute": 44,
-        "type": "BUT",
-        "equipe": "DUNKERQUE MALO FC",
-        "acteur": "Samy F.",
-        "detail": "But FFF"
-      },
-      {
-        "minute": 49,
-        "type": "AVERTISSEMENT",
-        "equipe": "ESQUELBECQ US",
-        "acteur": "Mateus N.",
-        "detail": "Carton Jaune"
-      },
-      {
-        "minute": 62,
-        "type": "BUT",
-        "equipe": "DUNKERQUE MALO FC",
-        "acteur": "Gabin D.",
-        "detail": "But FFF"
-      },
-      {
-        "minute": 78,
-        "type": "AVERTISSEMENT",
-        "equipe": "DUNKERQUE MALO FC",
-        "acteur": "Loic V.",
-        "detail": "Carton Jaune"
-      },
-      {
-        "minute": 78,
-        "type": "AVERTISSEMENT",
-        "equipe": "ESQUELBECQ US",
-        "acteur": "Charly B.",
-        "detail": "Carton Jaune"
-      },
-      {
-        "minute": 82,
-        "type": "AVERTISSEMENT",
-        "equipe": "DUNKERQUE MALO FC",
-        "acteur": "Jefferson L.",
-        "detail": "Carton Jaune"
-      },
-      {
-        "minute": 88,
-        "type": "AVERTISSEMENT",
-        "equipe": "ESQUELBECQ US",
-        "acteur": "Raphael B.",
-        "detail": "Carton Jaune"
-      },
-      {
-        "minute": 89,
-        "type": "AVERTISSEMENT",
-        "equipe": "ESQUELBECQ US",
-        "acteur": "Laurent P.",
-        "detail": "Carton Jaune"
-      }
-    ],
-    "prochain_match": {
+      "id": "esquelbecq_56216137",
       "competition": "Régional 2 (Poule A) • Journée 6",
-      "date_heure": "08/11/2026 à 14:30",
-      "lieu": "Complexe Sportif J.M. Vaesken 2 - Terrain J.P. Papin (Esquelbecq)",
       "domicile": "ESQUELBECQ US",
       "exterieur": "NEUVILLE FERRAIN FAN",
+      "score_domicile": 1,
+      "score_exterieur": 1,
+      "score_display": "1 - 1",
+      "date_heure": "2026-11-08 14:30",
+      "statut": "TERMINE"
+    },
+    "evenements_dernier_match": [],
+    "prochain_match": {
+      "competition": "Régional 2 (Poule A) • Journée 7",
+      "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+      "lieu": "Stade Municipal (Coquelles)",
+      "domicile": "COQUELLES SC",
+      "exterieur": "ESQUELBECQ US",
       "comparatif": {
         "titre": "Comparatif de Performance (R2 Poule A)",
-        "adversaire_nom": "Neuville Ferrain FAN",
-        "adversaire_rang": "9e",
-        "adversaire_pts": 6,
-        "adversaire_buts_pour": 9,
-        "adversaire_buts_contre": 7,
+        "adversaire_nom": "Coquelles SC",
+        "adversaire_rang": "7e",
+        "adversaire_pts": 8,
+        "adversaire_buts_pour": 10,
+        "adversaire_buts_contre": 9,
         "club_nom": "US Esquelbecq",
         "club_rang": "8e",
-        "club_pts": 6,
-        "club_buts_pour": 4,
-        "club_buts_contre": 8
+        "club_pts": 7,
+        "club_buts_pour": 5,
+        "club_buts_contre": 9
       },
       "alertes": [
-        "Duel direct du milieu de tableau R2 Poule A : Esquelbecq (8e, 6 pts) reçoit Neuville Ferrain (9e, 6 pts).",
-        "Arbitrage officiel désigné par la CRA ce jeudi 05/11 : Aubin VANDENBILCKE assisté de C. Coppin et F. Leroy."
+        "Déplacement à Coquelles (7e, 8 pts) après le bon point du nul arraché contre Neuville Ferrain (1-1).",
+        "Esquelbecq (8e, 7 pts) peut doubler son adversaire direct en cas de victoire à l'extérieur.",
+        "Secteur offensif en quête d'efficacité hors de ses bases."
       ]
     },
     "meteo_prochain_match": {
       "lieu": "Esquelbecq (Complexe J.M. Vaesken 2)",
       "surface": "Terrain synthétique",
-      "temperature": "7.8 °C",
-      "vent": "Modéré (28.8 km/h)",
-      "pluie": "Sec (6 %)",
+      "temperature": "12.3 °C",
+      "vent": "Modéré (26.6 km/h)",
+      "pluie": "Risque Élevé (51 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Terrain synthétique sèche et rapide."
+      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Terrain synthétique glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Aubin VANDENBILCKE",
@@ -25327,6 +25258,36 @@ window.MATCHDAY_TEAMS = {
       "consigne_coach": "Aubin VANDENBILCKE désigné par la CRA (assisté de C. Coppin et F. Leroy). Rester irréprochable dans l'engagement."
     },
     "historique_matchs": [
+      {
+        "id": "esquelbecq_56216137",
+        "competition": "R2 • Journée 6",
+        "comp_type": "CHAMPIONNAT",
+        "date": "08/11/2026",
+        "date_heure": "2026-11-08 14:30",
+        "domicile": "ESQUELBECQ US",
+        "exterieur": "NEUVILLE FERRAIN FAN",
+        "score_domicile": 1,
+        "score_exterieur": 1,
+        "score_display": "1 - 1",
+        "is_domicile": true,
+        "resultat": "N",
+        "resultat_label": "Match Nul",
+        "evenements": [],
+        "compositions": {
+          "club": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "esquelbecq": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "NEUVILLE FERRAIN FAN",
+            "titulaires": []
+          }
+        }
+      },
       {
         "id": "esquelbecq_56216133",
         "competition": "R2 • Journée 5",
@@ -26814,8 +26775,8 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "kpis_saison": {
-      "buts_marques": 14,
-      "buts_encaisses": 11,
+      "buts_marques": 15,
+      "buts_encaisses": 12,
       "clean_sheets": 2,
       "minutes_cumulees": 0,
       "cartons_jaunes": 22,
@@ -27360,17 +27321,17 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 1.2,
+      "ppm_championnat": 1.17,
       "probabilite_montee_pct": 10.0,
       "probabilite_maintien_pct": 78.0,
-      "taux_invincibilite": 50.0,
+      "taux_invincibilite": 55.6,
       "bilan_global": {
-        "matchs": 8,
+        "matchs": 9,
         "victoires": 4,
-        "nuls": 0,
+        "nuls": 1,
         "defaites": 4,
-        "buts_pour": 14,
-        "buts_contre": 11,
+        "buts_pour": 15,
+        "buts_contre": 12,
         "difference": 3
       },
       "bilan_championnat": {
@@ -27384,8 +27345,8 @@ window.MATCHDAY_TEAMS = {
         "difference": -4,
         "ppm": 1.2
       },
-      "ratio_clean_sheet_pct": 25.0,
-      "moyenne_buts_encaisses": 1.38,
+      "ratio_clean_sheet_pct": 22.2,
+      "moyenne_buts_encaisses": 1.33,
       "projection_saison": {
         "points_prevus": 28.0,
         "rang_final_estime": "Milieu de tableau Régional 2 Poule A (Objectif maintien)"
@@ -27681,116 +27642,53 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "09/11/2026 à 18:57"
+      "derniere_maj": "11/11/2026 à 11:00"
     },
     "dernier_match": {
-      "id": "esquelbecq_56216133",
-      "competition": "Régional 2 (Poule A) • Journée 5",
-      "domicile": "DUNKERQUE MALO FC",
-      "exterieur": "ESQUELBECQ US",
-      "score_domicile": 2,
-      "score_exterieur": 0,
-      "score_display": "2 - 0",
-      "date_heure": "2026-11-01 14:30",
-      "statut": "TERMINE"
-    },
-    "evenements_dernier_match": [
-      {
-        "minute": 38,
-        "type": "AVERTISSEMENT",
-        "equipe": "ESQUELBECQ US",
-        "acteur": "Neji Z.",
-        "detail": "Carton Jaune"
-      },
-      {
-        "minute": 44,
-        "type": "BUT",
-        "equipe": "DUNKERQUE MALO FC",
-        "acteur": "Samy F.",
-        "detail": "But FFF"
-      },
-      {
-        "minute": 49,
-        "type": "AVERTISSEMENT",
-        "equipe": "ESQUELBECQ US",
-        "acteur": "Mateus N.",
-        "detail": "Carton Jaune"
-      },
-      {
-        "minute": 62,
-        "type": "BUT",
-        "equipe": "DUNKERQUE MALO FC",
-        "acteur": "Gabin D.",
-        "detail": "But FFF"
-      },
-      {
-        "minute": 78,
-        "type": "AVERTISSEMENT",
-        "equipe": "DUNKERQUE MALO FC",
-        "acteur": "Loic V.",
-        "detail": "Carton Jaune"
-      },
-      {
-        "minute": 78,
-        "type": "AVERTISSEMENT",
-        "equipe": "ESQUELBECQ US",
-        "acteur": "Charly B.",
-        "detail": "Carton Jaune"
-      },
-      {
-        "minute": 82,
-        "type": "AVERTISSEMENT",
-        "equipe": "DUNKERQUE MALO FC",
-        "acteur": "Jefferson L.",
-        "detail": "Carton Jaune"
-      },
-      {
-        "minute": 88,
-        "type": "AVERTISSEMENT",
-        "equipe": "ESQUELBECQ US",
-        "acteur": "Raphael B.",
-        "detail": "Carton Jaune"
-      },
-      {
-        "minute": 89,
-        "type": "AVERTISSEMENT",
-        "equipe": "ESQUELBECQ US",
-        "acteur": "Laurent P.",
-        "detail": "Carton Jaune"
-      }
-    ],
-    "prochain_match": {
+      "id": "esquelbecq_56216137",
       "competition": "Régional 2 (Poule A) • Journée 6",
-      "date_heure": "08/11/2026 à 14:30",
-      "lieu": "Complexe Sportif J.M. Vaesken 2 - Terrain J.P. Papin (Esquelbecq)",
       "domicile": "ESQUELBECQ US",
       "exterieur": "NEUVILLE FERRAIN FAN",
+      "score_domicile": 1,
+      "score_exterieur": 1,
+      "score_display": "1 - 1",
+      "date_heure": "2026-11-08 14:30",
+      "statut": "TERMINE"
+    },
+    "evenements_dernier_match": [],
+    "prochain_match": {
+      "competition": "Régional 2 (Poule A) • Journée 7",
+      "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+      "lieu": "Stade Municipal (Coquelles)",
+      "domicile": "COQUELLES SC",
+      "exterieur": "ESQUELBECQ US",
       "comparatif": {
         "titre": "Comparatif de Performance (R2 Poule A)",
-        "adversaire_nom": "Neuville Ferrain FAN",
-        "adversaire_rang": "9e",
-        "adversaire_pts": 6,
-        "adversaire_buts_pour": 9,
-        "adversaire_buts_contre": 7,
+        "adversaire_nom": "Coquelles SC",
+        "adversaire_rang": "7e",
+        "adversaire_pts": 8,
+        "adversaire_buts_pour": 10,
+        "adversaire_buts_contre": 9,
         "club_nom": "US Esquelbecq",
         "club_rang": "8e",
-        "club_pts": 6,
-        "club_buts_pour": 4,
-        "club_buts_contre": 8
+        "club_pts": 7,
+        "club_buts_pour": 5,
+        "club_buts_contre": 9
       },
       "alertes": [
-        "Duel direct du milieu de tableau R2 Poule A : Esquelbecq (8e, 6 pts) reçoit Neuville Ferrain (9e, 6 pts).",
-        "Arbitrage officiel désigné par la CRA ce jeudi 05/11 : Aubin VANDENBILCKE assisté de C. Coppin et F. Leroy."
+        "Déplacement à Coquelles (7e, 8 pts) après le bon point du nul arraché contre Neuville Ferrain (1-1).",
+        "Esquelbecq (8e, 7 pts) peut doubler son adversaire direct en cas de victoire à l'extérieur.",
+        "Secteur offensif en quête d'efficacité hors de ses bases."
       ]
     },
     "meteo_prochain_match": {
       "lieu": "Esquelbecq (Complexe J.M. Vaesken 2)",
       "surface": "Terrain synthétique",
-      "temperature": "7.8 °C",
-      "vent": "Modéré (28.8 km/h)",
-      "pluie": "Sec (6 %)",
+      "temperature": "12.3 °C",
+      "vent": "Modéré (26.6 km/h)",
+      "pluie": "Risque Élevé (51 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Terrain synthétique sèche et rapide."
+      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Terrain synthétique glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Aubin VANDENBILCKE",
@@ -27803,6 +27701,36 @@ window.MATCHDAY_TEAMS = {
       "consigne_coach": "Aubin VANDENBILCKE désigné par la CRA (assisté de C. Coppin et F. Leroy). Rester irréprochable dans l'engagement."
     },
     "historique_matchs": [
+      {
+        "id": "esquelbecq_56216137",
+        "competition": "R2 • Journée 6",
+        "comp_type": "CHAMPIONNAT",
+        "date": "08/11/2026",
+        "date_heure": "2026-11-08 14:30",
+        "domicile": "ESQUELBECQ US",
+        "exterieur": "NEUVILLE FERRAIN FAN",
+        "score_domicile": 1,
+        "score_exterieur": 1,
+        "score_display": "1 - 1",
+        "is_domicile": true,
+        "resultat": "N",
+        "resultat_label": "Match Nul",
+        "evenements": [],
+        "compositions": {
+          "club": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "esquelbecq": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "NEUVILLE FERRAIN FAN",
+            "titulaires": []
+          }
+        }
+      },
       {
         "id": "esquelbecq_56216133",
         "competition": "R2 • Journée 5",
@@ -29290,8 +29218,8 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "kpis_saison": {
-      "buts_marques": 14,
-      "buts_encaisses": 11,
+      "buts_marques": 15,
+      "buts_encaisses": 12,
       "clean_sheets": 2,
       "minutes_cumulees": 0,
       "cartons_jaunes": 22,
@@ -29836,17 +29764,17 @@ window.MATCHDAY_TEAMS = {
       }
     ],
     "gouvernance": {
-      "ppm_championnat": 1.2,
+      "ppm_championnat": 1.17,
       "probabilite_montee_pct": 10.0,
       "probabilite_maintien_pct": 78.0,
-      "taux_invincibilite": 50.0,
+      "taux_invincibilite": 55.6,
       "bilan_global": {
-        "matchs": 8,
+        "matchs": 9,
         "victoires": 4,
-        "nuls": 0,
+        "nuls": 1,
         "defaites": 4,
-        "buts_pour": 14,
-        "buts_contre": 11,
+        "buts_pour": 15,
+        "buts_contre": 12,
         "difference": 3
       },
       "bilan_championnat": {
@@ -29860,8 +29788,8 @@ window.MATCHDAY_TEAMS = {
         "difference": -4,
         "ppm": 1.2
       },
-      "ratio_clean_sheet_pct": 25.0,
-      "moyenne_buts_encaisses": 1.38,
+      "ratio_clean_sheet_pct": 22.2,
+      "moyenne_buts_encaisses": 1.33,
       "projection_saison": {
         "points_prevus": 28.0,
         "rang_final_estime": "Milieu de tableau Régional 2 Poule A (Objectif maintien)"

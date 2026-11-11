@@ -689,27 +689,28 @@ def build_seclin_pwa_payload(base_dir: str):
             })
 
     next_match = {
-        "competition": "Régional 2 (Poule B) • Journée 6",
-        "date_heure": "08/11/2026 à 14:30",
-        "lieu": "Stade Henri Seigneur (Seclin)",
-        "domicile": "SECLIN FC",
-        "exterieur": "BIACHE ST VAAST US",
+        "competition": "Régional 2 (Poule B) • Journée 7",
+        "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+        "lieu": "Stade Léo Lagrange (Noyelles-sous-Lens)",
+        "domicile": "NOYELLES S/LENS US",
+        "exterieur": "SECLIN FC",
         "comparatif": {
             "titre": "Comparatif de Performance (R2 Poule B)",
-            "adversaire_nom": "Biache St Vaast US",
-            "adversaire_rang": "8e",
-            "adversaire_pts": 6,
-            "adversaire_buts_pour": 14,
-            "adversaire_buts_contre": 7,
+            "adversaire_nom": "Noyelles s/Lens US",
+            "adversaire_rang": "9e",
+            "adversaire_pts": 7,
+            "adversaire_buts_pour": 8,
+            "adversaire_buts_contre": 12,
             "club_nom": "FC Seclin",
-            "club_rang": "2e",
+            "club_rang": "3e",
             "club_pts": 9,
-            "club_buts_pour": 16,
-            "club_buts_contre": 3
+            "club_buts_pour": 17,
+            "club_buts_contre": 5
         },
         "alertes": [
-            "Seclin toujours invaincu en R2 après son nul héroïque 0-0 chez le leader Croix (9 pts, 16 BP, 3 BC).",
-            "Meilleure défense de la poule : seulement 3 buts concédés en 5 journées (3e clean sheet de rang)."
+            "Déplacement à Noyelles-sous-Lens pour rebondir après le revers concédé face à Biache (1-2).",
+            "Seclin (3e, 9 pts) reste solidement ancré sur le podium de R2 Poule B.",
+            "Noyelles reste sur une défaite à domicile et concède en moyenne 2 buts par rencontre."
         ]
     }
 
@@ -1019,27 +1020,28 @@ def build_lesquin_pwa_payload(base_dir: str):
             })
 
     next_match = {
-        "competition": "Régional 2 (Poule B) • Journée 6",
-        "date_heure": "08/11/2026 à 14:30",
-        "lieu": "Stade Jean-Pierre Papin (Lesquin)",
-        "domicile": "US LESQUIN",
-        "exterieur": "ESCAUDAIN USF",
+        "competition": "Régional 2 (Poule B) • Journée 7",
+        "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+        "lieu": "Stade Municipal (Montigny-en-Gohelle)",
+        "domicile": "MONTIGNY GOHELLE FC",
+        "exterieur": "US LESQUIN",
         "comparatif": {
             "titre": "Comparatif de Performance (R2 Poule B)",
-            "adversaire_nom": "Escaudain USF",
-            "adversaire_rang": "3e",
-            "adversaire_pts": 9,
-            "adversaire_buts_pour": 11,
-            "adversaire_buts_contre": 8,
+            "adversaire_nom": "Montigny Gohelle FC",
+            "adversaire_rang": "11e",
+            "adversaire_pts": 4,
+            "adversaire_buts_pour": 6,
+            "adversaire_buts_contre": 13,
             "club_nom": "US Lesquin",
             "club_rang": "10e",
             "club_pts": 3,
             "club_buts_pour": 8,
-            "club_buts_contre": 11
+            "club_buts_contre": 13
         },
         "alertes": [
-            "Lesquin prend un point précieux à Courcelles (2-2) et accueille le 3e Escaudain (9 pts).",
-            "Objectif décrocher la première victoire de la saison à domicile."
+            "Choc direct pour le maintien : Lesquin (10e, 3 pts) se déplace chez le 11e Montigny-en-Gohelle (4 pts).",
+            "Objectif impératif : décrocher la première victoire de la saison pour s'extirper de la zone rouge.",
+            "Défense à resserrer après le revers 0-2 face à Escaudain."
         ]
     }
 
@@ -1466,27 +1468,28 @@ def build_esquelbecq_pwa_payload(base_dir: str):
             })
 
     next_match = {
-        "competition": "Régional 2 (Poule A) • Journée 6",
-        "date_heure": "08/11/2026 à 14:30",
-        "lieu": "Complexe Sportif J.M. Vaesken 2 - Terrain J.P. Papin (Esquelbecq)",
-        "domicile": "ESQUELBECQ US",
-        "exterieur": "NEUVILLE FERRAIN FAN",
+        "competition": "Régional 2 (Poule A) • Journée 7",
+        "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+        "lieu": "Stade Municipal (Coquelles)",
+        "domicile": "COQUELLES SC",
+        "exterieur": "ESQUELBECQ US",
         "comparatif": {
             "titre": "Comparatif de Performance (R2 Poule A)",
-            "adversaire_nom": "Neuville Ferrain FAN",
-            "adversaire_rang": "9e",
-            "adversaire_pts": 6,
-            "adversaire_buts_pour": 9,
-            "adversaire_buts_contre": 7,
+            "adversaire_nom": "Coquelles SC",
+            "adversaire_rang": "7e",
+            "adversaire_pts": 8,
+            "adversaire_buts_pour": 10,
+            "adversaire_buts_contre": 9,
             "club_nom": "US Esquelbecq",
             "club_rang": "8e",
-            "club_pts": 6,
-            "club_buts_pour": 4,
-            "club_buts_contre": 8
+            "club_pts": 7,
+            "club_buts_pour": 5,
+            "club_buts_contre": 9
         },
         "alertes": [
-            "Duel direct du milieu de tableau R2 Poule A : Esquelbecq (8e, 6 pts) reçoit Neuville Ferrain (9e, 6 pts).",
-            "Arbitrage officiel désigné par la CRA ce jeudi 05/11 : Aubin VANDENBILCKE assisté de C. Coppin et F. Leroy."
+            "Déplacement à Coquelles (7e, 8 pts) après le bon point du nul arraché contre Neuville Ferrain (1-1).",
+            "Esquelbecq (8e, 7 pts) peut doubler son adversaire direct en cas de victoire à l'extérieur.",
+            "Secteur offensif en quête d'efficacité hors de ses bases."
         ]
     }
 
