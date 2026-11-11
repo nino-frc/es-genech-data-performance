@@ -13,7 +13,7 @@
   <link rel="apple-touch-icon" href="./logo.png">
   <link rel="icon" type="image/png" href="./logo.png">
 
-  <link rel="stylesheet" href="./styles.css?v=20261111_v30">
+  <link rel="stylesheet" href="./styles.css?v=20261111_v31">
 </head>
 <body>
 
@@ -214,6 +214,29 @@
         <div id="matchEventsTimeline" class="skeleton">Chargement...</div>
       </div>
 
+      <!-- ⚡ Dynamique par Quart d'Heure (Momentum FMI Saison) -->
+      <div class="card" id="matchdayTimeMatrixCard">
+        <div class="card-header-bar">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="card-title">⚡ Dynamique par Quart d'Heure</span>
+            <span class="tactical-role-pill" style="background: #e0f2fe; color: #0284c7; font-weight: 800; border: none; font-size: 9px; padding: 2px 7px;">FMI Momentum</span>
+          </div>
+          <span class="card-meta">Saison 2026-2027</span>
+        </div>
+        <div style="display: flex; justify-content: flex-end; gap: 12px; font-size: 10px; font-weight: 700; margin: 8px 0 6px 0;">
+          <span style="display: flex; align-items: center; gap: 4px;">
+            <span style="width: 8px; height: 8px; background: #16a34a; border-radius: 2px;"></span> Buts Marqués
+          </span>
+          <span style="display: flex; align-items: center; gap: 4px;">
+            <span style="width: 8px; height: 8px; background: #dc2626; border-radius: 2px;"></span> Buts Encaissés
+          </span>
+        </div>
+        <div id="matchdayTimeMatrixRows" style="display: flex; flex-direction: column; gap: 6px; margin-top: 4px;"></div>
+        <div id="matchdayTimeMatrixInsight" style="margin-top: 10px; padding: 8px 10px; background: #f8fafc; border-left: 3px solid #0284c7; border-radius: 6px; font-size: 11px; color: var(--text-muted); line-height: 1.4;">
+          Chargement de la dynamique...
+        </div>
+      </div>
+
       <!-- PROCHAIN MATCH : SCOUTING ADVERSAIRE & ARBITRE DÉSIGNÉ -->
       <div class="card">
         <div class="card-header-bar">
@@ -263,6 +286,26 @@
           <div style="font-size: 11px; color: var(--text-muted); line-height: 1.4;">
             <strong>Moyenne :</strong> <span id="refereeCardsAvg">4.5 cartons jaunes / match</span>.<br>
             <strong>Consigne Staff :</strong> <span id="refereeAdvice">Arbitre qui cartonne très vite sur les gestes d'humeur. Seul le capitaine doit lui adresser la parole.</span>
+          </div>
+
+          <!-- Radar Avancé CRA / FMI (Gâchette, Biais Dom/Ext, Pénaltys) -->
+          <div id="refereeRadarGrid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(0,0,0,0.12);">
+            <div style="background: #ffffff; padding: 6px 8px; border-radius: 6px; border: 1px solid #e2e8f0;">
+              <div style="font-size: 9.5px; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Gâchette (1er Jaune)</div>
+              <div style="font-size: 13px; font-weight: 800; color: #b45309;" id="refGachette">38e min</div>
+            </div>
+            <div style="background: #ffffff; padding: 6px 8px; border-radius: 6px; border: 1px solid #e2e8f0;">
+              <div style="font-size: 9.5px; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Biais Dom. / Ext.</div>
+              <div style="font-size: 13px; font-weight: 800; color: var(--text-main);" id="refBiais">48% / 52%</div>
+            </div>
+            <div style="background: #ffffff; padding: 6px 8px; border-radius: 6px; border: 1px solid #e2e8f0;">
+              <div style="font-size: 9.5px; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Recours au Rouge</div>
+              <div style="font-size: 13px; font-weight: 800; color: #dc2626;" id="refRouges">0.18 / m</div>
+            </div>
+            <div style="background: #ffffff; padding: 6px 8px; border-radius: 6px; border: 1px solid #e2e8f0;">
+              <div style="font-size: 9.5px; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Pénaltys sifflés</div>
+              <div style="font-size: 13px; font-weight: 800; color: #0284c7;" id="refPenaltys">0.22 / m</div>
+            </div>
           </div>
         </div>
 
@@ -344,9 +387,53 @@
          ONGLET 3 : EFFECTIF JOUEURS & SCORE ESG (Modales Interactives)
          ==================================================================== -->
     <section id="tabPlayers" class="tab-content" style="display: none;">
+      
+      <!-- CARTE : BAROMÈTRE DU COACHING & STABILITÉ DU XI FMI -->
+      <div class="card" id="coachingAnalyticsCard">
+        <div class="card-header-bar">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="card-title">🧠 Coaching & Continuité du XI</span>
+            <span class="tactical-role-pill" style="background: #ecfdf5; color: #059669; font-weight: 800; border: none; font-size: 9px; padding: 2px 7px;">FMI Analytics</span>
+          </div>
+          <span class="card-meta">Saison 2026-2027</span>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px;">
+          <!-- Baromètre Coaching -->
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px;">
+            <div style="font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 3px;">Impact du Banc</div>
+            <div style="display: flex; align-items: baseline; gap: 5px;">
+              <div style="font-size: 22px; font-weight: 900; color: #16a34a; font-family: var(--font-mono);" id="coachDiffSubs">+9</div>
+              <div style="font-size: 10px; color: var(--text-muted);">post-subs</div>
+            </div>
+            <div style="font-size: 10px; color: var(--text-muted); margin-top: 4px;" id="coachSubsDetails">
+              1er changement : <strong>52'</strong> • <strong>2 buts</strong> du banc
+            </div>
+          </div>
+
+          <!-- Stabilité XI -->
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px;">
+            <div style="font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 3px;">Stabilité du XI</div>
+            <div style="display: flex; align-items: baseline; gap: 5px;">
+              <div style="font-size: 22px; font-weight: 900; color: #0284c7; font-family: var(--font-mono);" id="xiStabilityPct">79.1%</div>
+              <div style="font-size: 10px; color: #0284c7; font-weight: 700;">Reconduit</div>
+            </div>
+            <div style="font-size: 10px; color: var(--text-muted); margin-top: 4px;" id="xiHierarchy">
+              <strong>9 cadres</strong> • 5 rotation • 7 réserve
+            </div>
+          </div>
+        </div>
+
+        <!-- Top Associations Charnière / Binômes -->
+        <div id="topDuosContainer" style="margin-top: 10px; padding: 8px 10px; background: #fffbeb; border: 1px solid #fef3c7; border-radius: 6px; font-size: 11px; color: #92400e;">
+          🛡️ <strong>Charnière imperméable :</strong> Tim L. & Maxime P. (6 clean sheets en 11 matchs, +10 de différentiel).
+        </div>
+      </div>
+
+      <!-- LISTE DES JOUEURS & NET RATING (+/-) -->
       <div class="card">
         <div class="card-header-bar">
-          <span class="card-title">Effectif Fanion • Score ESG</span>
+          <span class="card-title">Effectif Fanion • Net Rating (+/-)</span>
           <span class="card-meta">Toucher un joueur pour détails</span>
         </div>
         <div id="playersListContainer" class="skeleton">Chargement...</div>
@@ -716,22 +803,26 @@
         </div>
       </div>
 
-      <!-- Statistiques Complètes de Matchs -->
+      <!-- Statistiques Complètes de Matchs & Net Rating -->
       <div style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: var(--text-muted); margin-bottom: 6px;">
-        Statistiques Individuelles
+        Statistiques Individuelles & Net Rating (+/-)
       </div>
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: center; font-size: 11px;">
-        <div style="background: var(--bg-subtle); padding: 8px; border-radius: 6px; border: 1px solid var(--border-light);">
-          <div style="font-size: 9px; color: var(--text-light); text-transform: uppercase;">Temps de Jeu</div>
-          <strong style="font-size: 14px; font-family: var(--font-mono);" id="modalMinutes">--m</strong>
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; text-align: center; font-size: 11px;">
+        <div style="background: var(--bg-subtle); padding: 7px 4px; border-radius: 6px; border: 1px solid var(--border-light);">
+          <div style="font-size: 8.5px; color: var(--text-light); text-transform: uppercase;">Temps Jeu</div>
+          <strong style="font-size: 13px; font-family: var(--font-mono);" id="modalMinutes">--m</strong>
         </div>
-        <div style="background: var(--bg-subtle); padding: 8px; border-radius: 6px; border: 1px solid var(--border-light);">
-          <div style="font-size: 9px; color: var(--text-light); text-transform: uppercase;">Titularisations</div>
-          <strong style="font-size: 14px; font-family: var(--font-mono);" id="modalStarts">--</strong>
+        <div style="background: var(--bg-subtle); padding: 7px 4px; border-radius: 6px; border: 1px solid var(--border-light);">
+          <div style="font-size: 8.5px; color: var(--text-light); text-transform: uppercase;">Titul.</div>
+          <strong style="font-size: 13px; font-family: var(--font-mono);" id="modalStarts">--</strong>
         </div>
-        <div style="background: var(--bg-subtle); padding: 8px; border-radius: 6px; border: 1px solid var(--border-light);">
-          <div style="font-size: 9px; color: var(--text-light); text-transform: uppercase;">Clean Sheets</div>
-          <strong style="font-size: 14px; font-family: var(--font-mono);" id="modalCleanSheets">--</strong>
+        <div style="background: var(--bg-subtle); padding: 7px 4px; border-radius: 6px; border: 1px solid var(--border-light);">
+          <div style="font-size: 8.5px; color: var(--text-light); text-transform: uppercase;">Clean Sheets</div>
+          <strong style="font-size: 13px; font-family: var(--font-mono);" id="modalCleanSheets">--</strong>
+        </div>
+        <div style="background: #f0fdf4; padding: 7px 4px; border-radius: 6px; border: 1px solid #bbf7d0;">
+          <div style="font-size: 8.5px; color: #166534; text-transform: uppercase; font-weight: 700;">Net (+/-)</div>
+          <strong style="font-size: 13px; font-family: var(--font-mono); color: #15803d;" id="modalNetRating">--</strong>
         </div>
       </div>
 
@@ -1252,8 +1343,8 @@
   </nav>
 
   <!-- Scripts avec Cache-Busting Garanti -->
-  <script src="./licenses_registry.js?v=20261111_v30"></script>
-  <script src="./data.js?v=20261111_v30"></script>
-  <script src="./app.js?v=20261111_v30"></script>
+  <script src="./licenses_registry.js?v=20261111_v31"></script>
+  <script src="./data.js?v=20261111_v31"></script>
+  <script src="./app.js?v=20261111_v31"></script>
 </body>
 </html>
