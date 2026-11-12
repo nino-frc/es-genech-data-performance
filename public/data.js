@@ -8,7 +8,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "12/11/2026 à 15:15"
+      "derniere_maj": "12/11/2026 à 15:33"
     },
     "dernier_match": {
       "id": "r3_j6_genech_bavay",
@@ -220,14 +220,7 @@ window.MATCHDAY_TEAMS = {
       "badge_color": "#d97706",
       "style": "Arbitrage rigoureux et pédagogique, dialogue avec les capitaines mais sanctionne rapidement les fautes tactiques d'antijeu et les contestations.",
       "consigne_coach": "Benjamin DUTRIAUX désigné par la CRA ce jeudi 12/11 pour le 4e Tour à Bully-les-Mines (R2). Consigne staff : intensité élevée dans les duels propres, zéro contestation auprès du corps arbitral pour éviter tout carton bête en match couperet.",
-      "est_designe": true,
-      "radar_fmi": {
-        "minute_premier_jaune": "38e min",
-        "ratio_fautes_dom_ext": "48% Dom. / 52% Ext.",
-        "moyenne_penaltys": "0.22 / m",
-        "moyenne_rouges": "0.18 / m",
-        "recommandation_fmi": "Les arbitres CRA en Coupe sanctionnent rapidement les retards d'intervention : zéro contestation dès la 1ère faute."
-      }
+      "est_designe": true
     },
     "historique_matchs": [
       {
@@ -4185,12 +4178,12 @@ window.MATCHDAY_TEAMS = {
     "profils_endurance": {
       "infatigables": [
         {
-          "nom": "Maxime P.",
+          "nom": "Tim L.",
           "matchs_90m": 11,
           "pct": "100%"
         },
         {
-          "nom": "Tim L.",
+          "nom": "Maxime P.",
           "matchs_90m": 11,
           "pct": "100%"
         },
@@ -4659,7 +4652,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "12/11/2026 à 15:15"
+      "derniere_maj": "12/11/2026 à 15:33"
     },
     "dernier_match": {
       "id": "m_u18_m1_79497787-et-am-c-cys",
@@ -6370,7 +6363,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "12/11/2026 à 15:15"
+      "derniere_maj": "12/11/2026 à 15:33"
     },
     "dernier_match": {
       "id": "m_senior_f2_j5_leers",
@@ -7558,7 +7551,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "12/11/2026 à 15:15"
+      "derniere_maj": "12/11/2026 à 15:33"
     },
     "dernier_match": {
       "id": "m_senior_b_j6_lesquin",
@@ -8730,7 +8723,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "12/11/2026 à 15:15"
+      "derniere_maj": "12/11/2026 à 15:33"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -13535,7 +13528,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "12/11/2026 à 15:15"
+      "derniere_maj": "12/11/2026 à 15:33"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -18340,7 +18333,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "12/11/2026 à 15:15"
+      "derniere_maj": "12/11/2026 à 15:33"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -22234,7 +22227,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "12/11/2026 à 15:15"
+      "derniere_maj": "12/11/2026 à 15:33"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -26128,7 +26121,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "12/11/2026 à 15:15"
+      "derniere_maj": "12/11/2026 à 15:33"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",
@@ -28571,7 +28564,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "12/11/2026 à 15:15"
+      "derniere_maj": "12/11/2026 à 15:33"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",

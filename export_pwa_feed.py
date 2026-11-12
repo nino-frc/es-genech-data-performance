@@ -256,13 +256,7 @@ def compute_team_fmi_analytics(conn, team_id="SENIOR_M1", club_pattern="GENECH")
         {"duo": "Mathys H. & Maxime P.", "role": "Axe Droit", "matchs_ensemble": min(total_matches, 10), "clean_sheets": 7, "differentiel": "+10", "constat": "Solidité latérale et couverture continue"}
     ]
 
-    radar_arbitre = {
-        "minute_premier_jaune": "38e min",
-        "ratio_fautes_dom_ext": "48% Dom. / 52% Ext.",
-        "moyenne_penaltys": "0.22 / m",
-        "moyenne_rouges": "0.18 / m",
-        "recommandation_fmi": "Les arbitres CRA en Coupe sanctionnent rapidement les retards d'intervention : zéro contestation dès la 1ère faute."
-    }
+    radar_arbitre = {}
 
     win_rate_lead = round((match_scenarios["wins_after_leading"] / match_scenarios["led_count"] * 100), 1) if match_scenarios["led_count"] > 0 else 80.0
     money_diff = match_scenarios["money_time_for"] - match_scenarios["money_time_against"]
@@ -2625,7 +2619,7 @@ def export_real_pwa_feed():
 
         # 7. Effectif Joueurs, Net Ratings (+/-) & Analytics FMI
     net_ratings_m1, barometre_coaching_m1, stabilite_effectif_m1, top_associations_m1, radar_arbitre_m1, scenarios_resilience_m1, profils_endurance_m1, diversite_offensive_m1, contexte_discipline_m1, matrice_domicile_exterieur_m1, series_records_m1, differentiel_fairplay_m1 = compute_team_fmi_analytics(conn, 'SENIOR_M1', 'GENECH')
-    arbitre_info["radar_fmi"] = radar_arbitre_m1
+    # Pas de radar arbitre factice non certifié FMI
     # 7. Effectif Joueurs & Sous-Scores ESG pour Modales
     df_ratings = calculate_player_ratings()
     players_list = []

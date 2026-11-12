@@ -13,7 +13,7 @@
   <link rel="apple-touch-icon" href="./logo.png">
   <link rel="icon" type="image/png" href="./logo.png">
 
-  <link rel="stylesheet" href="./styles.css?v=20261112_v36">
+  <link rel="stylesheet" href="./styles.css?v=20261112_v37">
 </head>
 <body>
 
@@ -357,43 +357,18 @@
         </div>
 
         <!-- Profil & Sévérité de l'Arbitre Désigné -->
-        <div class="referee-box">
+        <div class="referee-box" id="matchRefereeBox">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
             <div style="font-size: 12px; font-weight: 800; color: var(--text-main);" id="refereeName">
-              👨‍⚖️ LOUIS LAURENT (Régional R3)
+              👨‍⚖️ Benjamin DUTRIAUX (Régional R2)
             </div>
-            <span class="severity-pill" style="background: #fee2e2; color: #b91c1c;" id="refereeSeverityBadge">
-              SÉVÉRITÉ TRÈS ÉLEVÉE
+            <span class="severity-pill" style="background: #fef3c7; color: #b45309;" id="refereeSeverityBadge">
+              MODÉRÉE
             </span>
           </div>
           <div style="font-size: 11px; color: var(--text-muted); line-height: 1.4;">
-            <strong>Moyenne :</strong> <span id="refereeCardsAvg">4.5 cartons jaunes / match</span>.<br>
-            <strong>Consigne Staff :</strong> <span id="refereeAdvice">Arbitre qui cartonne très vite sur les gestes d'humeur. Seul le capitaine doit lui adresser la parole.</span>
-          </div>
-
-          <!-- Notice d'attente si l'arbitre n'est pas encore désigné (Publication CRA le jeudi) -->
-          <div id="refereePendingNotice" style="display: none; margin-top: 10px; padding: 10px 12px; background: #F8FAFC; border: 1px dashed #CBD5E1; border-radius: 8px; font-size: 11px; color: var(--text-muted); text-align: center; line-height: 1.4;">
-            📅 <strong>Radar CRA & Statistiques Arbitre :</strong> Publication officielle de la désignation par la CRA ce jeudi. Le radar sera activé automatiquement dès nomination de l'arbitre.
-          </div>
-
-          <!-- Radar Avancé CRA / FMI (Gâchette, Biais Dom/Ext, Pénaltys) -->
-          <div id="refereeRadarGrid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(0,0,0,0.12);">
-            <div style="background: #ffffff; padding: 6px 8px; border-radius: 6px; border: 1px solid #e2e8f0;">
-              <div style="font-size: 9.5px; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Gâchette (1er Jaune)</div>
-              <div style="font-size: 13px; font-weight: 800; color: #b45309;" id="refGachette">38e min</div>
-            </div>
-            <div style="background: #ffffff; padding: 6px 8px; border-radius: 6px; border: 1px solid #e2e8f0;">
-              <div style="font-size: 9.5px; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Biais Dom. / Ext.</div>
-              <div style="font-size: 13px; font-weight: 800; color: var(--text-main);" id="refBiais">48% / 52%</div>
-            </div>
-            <div style="background: #ffffff; padding: 6px 8px; border-radius: 6px; border: 1px solid #e2e8f0;">
-              <div style="font-size: 9.5px; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Recours au Rouge</div>
-              <div style="font-size: 13px; font-weight: 800; color: #dc2626;" id="refRouges">0.18 / m</div>
-            </div>
-            <div style="background: #ffffff; padding: 6px 8px; border-radius: 6px; border: 1px solid #e2e8f0;">
-              <div style="font-size: 9.5px; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Pénaltys sifflés</div>
-              <div style="font-size: 13px; font-weight: 800; color: #0284c7;" id="refPenaltys">0.22 / m</div>
-            </div>
+            <strong>Moyenne :</strong> <span id="refereeCardsAvg">3.6 cartons jaunes / match</span>.<br>
+            <strong>Consigne Staff :</strong> <span id="refereeAdvice">Arbitrage rigoureux et cadré face à une équipe de division supérieure (R2). Éviter tout carton d'antijeu ou contestation.</span>
           </div>
         </div>
 
@@ -1560,8 +1535,8 @@
   </nav>
 
   <!-- Scripts avec Cache-Busting Garanti -->
-  <script src="./licenses_registry.js?v=20261112_v36"></script>
-  <script src="./data.js?v=20261112_v36"></script>
-  <script src="./app.js?v=20261112_v36"></script>
+  <script src="./licenses_registry.js?v=20261112_v37"></script>
+  <script src="./data.js?v=20261112_v37"></script>
+  <script src="./app.js?v=20261112_v37"></script>
 </body>
 </html>

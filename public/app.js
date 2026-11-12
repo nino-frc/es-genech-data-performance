@@ -1912,49 +1912,32 @@ function renderInterface(data) {
     document.getElementById('nextMatchDate').textContent = next.date_heure ? (next.date_heure.includes('T') || next.date_heure.includes(':') ? next.date_heure : next.date_heure) : "À programmer";
     document.getElementById('nextMatchLieu').textContent = next.lieu || "Terrain Officiel";
   }
-  // Arbitre & Radar Avancé CRA / FMI
+  // Arbitre Officiel FFF / CRA
   const isRefereeDesignated = ref && ref.nom_arbitre && 
     !ref.nom_arbitre.toLowerCase().includes('attente') && 
     !ref.nom_arbitre.toLowerCase().includes('non désigné') && 
     ref.est_designe !== false;
 
-  const radarGrid = document.getElementById('refereeRadarGrid');
-  const pendingNotice = document.getElementById('refereePendingNotice');
-
   if (ref && ref.nom_arbitre) {
-    document.getElementById('refereeName').textContent = `👨‍⚖️ ${ref.nom_arbitre}`;
-    document.getElementById('refereeSeverityBadge').textContent = isRefereeDesignated ? (ref.severite || "NORMAL") : "PUBLICATION JEUDI";
-    document.getElementById('refereeSeverityBadge').style.background = isRefereeDesignated && ref.badge_color ? `${ref.badge_color}22` : '#f1f5f9';
-    document.getElementById('refereeSeverityBadge').style.color = isRefereeDesignated && ref.badge_color ? ref.badge_color : '#475569';
-    if (isRefereeDesignated && ref.moyenne_jaunes && ref.moyenne_jaunes !== '--') {
-      const avgStr = String(ref.moyenne_jaunes);
-      document.getElementById('refereeCardsAvg').textContent = avgStr.includes('carton') ? avgStr : `${avgStr.replace('/ match', '').trim()} cartons jaunes / match`;
-    } else {
-      document.getElementById('refereeCardsAvg').textContent = "Publication officielle CRA ce jeudi";
+    const refNameEl = document.getElementById('refereeName');
+    if (refNameEl) refNameEl.textContent = `👨‍⚖️ ${ref.nom_arbitre} ${ref.niveau ? `(${ref.niveau})` : ''}`.trim();
+    const sevBadge = document.getElementById('refereeSeverityBadge');
+    if (sevBadge) {
+      sevBadge.textContent = isRefereeDesignated ? (ref.severite || "NORMAL") : "DÉSIGNATION EN COURS";
+      sevBadge.style.background = isRefereeDesignated && ref.badge_color ? `${ref.badge_color}22` : '#f1f5f9';
+      sevBadge.style.color = isRefereeDesignated && ref.badge_color ? ref.badge_color : '#475569';
     }
-    document.getElementById('refereeAdvice').textContent = ref.consigne_coach;
-  }
-
-  if (isRefereeDesignated) {
-    if (radarGrid) radarGrid.style.display = 'grid';
-    if (pendingNotice) pendingNotice.style.display = 'none';
-    const radar = ref.radar_fmi || {
-      minute_premier_jaune: "38e min",
-      ratio_fautes_dom_ext: "48% Dom. / 52% Ext.",
-      moyenne_rouges: "0.18 / m",
-      moyenne_penaltys: "0.22 / m"
-    };
-    const gachEl = document.getElementById('refGachette');
-    if (gachEl) gachEl.textContent = radar.minute_premier_jaune || "38e min";
-    const biaisEl = document.getElementById('refBiais');
-    if (biaisEl) biaisEl.textContent = radar.ratio_fautes_dom_ext || "48% / 52%";
-    const rEl = document.getElementById('refRouges');
-    if (rEl) rEl.textContent = radar.moyenne_rouges || "0.18 / m";
-    const penEl = document.getElementById('refPenaltys');
-    if (penEl) penEl.textContent = radar.moyenne_penaltys || "0.22 / m";
-  } else {
-    if (radarGrid) radarGrid.style.display = 'none';
-    if (pendingNotice) pendingNotice.style.display = 'block';
+    const cardsAvgEl = document.getElementById('refereeCardsAvg');
+    if (cardsAvgEl) {
+      if (isRefereeDesignated && ref.moyenne_jaunes && ref.moyenne_jaunes !== '--') {
+        const avgStr = String(ref.moyenne_jaunes);
+        cardsAvgEl.textContent = avgStr.includes('carton') ? avgStr : `${avgStr.replace('/ match', '').trim()} cartons jaunes / match`;
+      } else {
+        cardsAvgEl.textContent = ref.style || "Arbitre Régional Officiel";
+      }
+    }
+    const adviceEl = document.getElementById('refereeAdvice');
+    if (adviceEl) adviceEl.textContent = ref.consigne_coach || "Maintenir une discipline irréprochable et ne contester aucune décision arbitrale.";
   }
 
   // E ter. Météo & Conditions de Jeu
