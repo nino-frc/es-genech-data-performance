@@ -1927,7 +1927,8 @@ function renderInterface(data) {
     document.getElementById('refereeSeverityBadge').style.background = isRefereeDesignated && ref.badge_color ? `${ref.badge_color}22` : '#f1f5f9';
     document.getElementById('refereeSeverityBadge').style.color = isRefereeDesignated && ref.badge_color ? ref.badge_color : '#475569';
     if (isRefereeDesignated && ref.moyenne_jaunes && ref.moyenne_jaunes !== '--') {
-      document.getElementById('refereeCardsAvg').textContent = `${ref.moyenne_jaunes} cartons jaunes / match`;
+      const avgStr = String(ref.moyenne_jaunes);
+      document.getElementById('refereeCardsAvg').textContent = avgStr.includes('carton') ? avgStr : `${avgStr.replace('/ match', '').trim()} cartons jaunes / match`;
     } else {
       document.getElementById('refereeCardsAvg').textContent = "Publication officielle CRA ce jeudi";
     }

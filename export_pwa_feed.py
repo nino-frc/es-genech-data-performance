@@ -2540,17 +2540,17 @@ def export_real_pwa_feed():
         }
     }
 
-    # Arbitre prochain match : En attente désignation officielle CRA LFHF
+    # Arbitre prochain match : Désignation officielle CRA LFHF (Jeudi 12/11)
     arbitre_info = {
-        "nom_arbitre": "Désignation en attente (CRA)",
+        "nom_arbitre": "Benjamin DUTRIAUX",
         "district": "Ligue de Football des Hauts-de-France (CRA)",
-        "niveau": "Commission Régionale de l'Arbitrage",
-        "moyenne_jaunes": "En attente",
-        "severite": "EN ATTENTE",
-        "badge_color": "#64748b",
-        "style": "Désignation pour le 4ème tour de Coupe des Hauts-de-France en attente de publication par la CRA (jeudi).",
-        "consigne_coach": "Format Coupe à élimination directe face à une R2 : intensité maximale dès le coup d'envoi et discipline exemplaire.",
-        "est_designe": False
+        "niveau": "Arbitre Régional R2 Officiel",
+        "moyenne_jaunes": "3.6",
+        "severite": "MODÉRÉE",
+        "badge_color": "#d97706",
+        "style": "Arbitrage rigoureux et pédagogique, dialogue avec les capitaines mais sanctionne rapidement les fautes tactiques d'antijeu et les contestations.",
+        "consigne_coach": "Benjamin DUTRIAUX désigné par la CRA ce jeudi 12/11 pour le 4e Tour à Bully-les-Mines (R2). Consigne staff : intensité élevée dans les duels propres, zéro contestation auprès du corps arbitral pour éviter tout carton bête en match couperet.",
+        "est_designe": True
     }
 
     # 4. Traducteur Financier de Trésorerie (Barème officiel Ligue LFHF)

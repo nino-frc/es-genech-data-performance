@@ -8,7 +8,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "11/11/2026 à 15:00"
+      "derniere_maj": "12/11/2026 à 15:15"
     },
     "dernier_match": {
       "id": "r3_j6_genech_bavay",
@@ -205,22 +205,22 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "12.3 °C",
-      "vent": "Modéré (19.5 km/h)",
+      "temperature": "4.4 °C",
+      "vent": "Faible (4.3 km/h)",
       "pluie": "Risque Élevé (50 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Désignation en attente (CRA)",
+      "nom_arbitre": "Benjamin DUTRIAUX",
       "district": "Ligue de Football des Hauts-de-France (CRA)",
-      "niveau": "Commission Régionale de l'Arbitrage",
-      "moyenne_jaunes": "En attente",
-      "severite": "EN ATTENTE",
-      "badge_color": "#64748b",
-      "style": "Désignation pour le 4ème tour de Coupe des Hauts-de-France en attente de publication par la CRA (jeudi).",
-      "consigne_coach": "Format Coupe à élimination directe face à une R2 : intensité maximale dès le coup d'envoi et discipline exemplaire.",
-      "est_designe": false,
+      "niveau": "Arbitre Régional R2 Officiel",
+      "moyenne_jaunes": "3.6",
+      "severite": "MODÉRÉE",
+      "badge_color": "#d97706",
+      "style": "Arbitrage rigoureux et pédagogique, dialogue avec les capitaines mais sanctionne rapidement les fautes tactiques d'antijeu et les contestations.",
+      "consigne_coach": "Benjamin DUTRIAUX désigné par la CRA ce jeudi 12/11 pour le 4e Tour à Bully-les-Mines (R2). Consigne staff : intensité élevée dans les duels propres, zéro contestation auprès du corps arbitral pour éviter tout carton bête en match couperet.",
+      "est_designe": true,
       "radar_fmi": {
         "minute_premier_jaune": "38e min",
         "ratio_fautes_dom_ext": "48% Dom. / 52% Ext.",
@@ -4185,12 +4185,12 @@ window.MATCHDAY_TEAMS = {
     "profils_endurance": {
       "infatigables": [
         {
-          "nom": "Tim L.",
+          "nom": "Maxime P.",
           "matchs_90m": 11,
           "pct": "100%"
         },
         {
-          "nom": "Maxime P.",
+          "nom": "Tim L.",
           "matchs_90m": 11,
           "pct": "100%"
         },
@@ -4659,7 +4659,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "11/11/2026 à 15:00"
+      "derniere_maj": "12/11/2026 à 15:15"
     },
     "dernier_match": {
       "id": "m_u18_m1_79497787-et-am-c-cys",
@@ -4701,11 +4701,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "12.3 °C",
-      "vent": "Modéré (19.5 km/h)",
+      "temperature": "4.4 °C",
+      "vent": "Faible (4.3 km/h)",
       "pluie": "Risque Élevé (50 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Arbitre Officiel District (D1 U18)",
@@ -6370,7 +6370,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "11/11/2026 à 15:00"
+      "derniere_maj": "12/11/2026 à 15:15"
     },
     "dernier_match": {
       "id": "m_senior_f2_j5_leers",
@@ -6411,11 +6411,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "12.3 °C",
-      "vent": "Modéré (19.5 km/h)",
+      "temperature": "4.4 °C",
+      "vent": "Faible (4.3 km/h)",
       "pluie": "Risque Élevé (50 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Arbitre Officiel Ligue Interdistricts (LFHF)",
@@ -7558,7 +7558,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "11/11/2026 à 15:00"
+      "derniere_maj": "12/11/2026 à 15:15"
     },
     "dernier_match": {
       "id": "m_senior_b_j6_lesquin",
@@ -7599,11 +7599,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "12.3 °C",
-      "vent": "Modéré (19.5 km/h)",
+      "temperature": "4.4 °C",
+      "vent": "Faible (4.3 km/h)",
       "pluie": "Risque Élevé (50 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Arbitre Officiel District (Désignation Flandres)",
@@ -8730,7 +8730,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "11/11/2026 à 15:00"
+      "derniere_maj": "12/11/2026 à 15:15"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -8772,11 +8772,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Seclin (Stade Henri Jooris)",
       "surface": "Pelouse naturelle",
-      "temperature": "12.4 °C",
-      "vent": "Faible (15.3 km/h)",
-      "pluie": "Averses possibles (49 %)",
+      "temperature": "4.6 °C",
+      "vent": "Faible (2.7 km/h)",
+      "pluie": "Risque Élevé (50 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Roman ROSSINI",
@@ -13535,7 +13535,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "11/11/2026 à 15:00"
+      "derniere_maj": "12/11/2026 à 15:15"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -13577,11 +13577,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Seclin (Stade Henri Jooris)",
       "surface": "Pelouse naturelle",
-      "temperature": "12.4 °C",
-      "vent": "Faible (15.3 km/h)",
-      "pluie": "Averses possibles (49 %)",
+      "temperature": "4.6 °C",
+      "vent": "Faible (2.7 km/h)",
+      "pluie": "Risque Élevé (50 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Roman ROSSINI",
@@ -18340,7 +18340,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "11/11/2026 à 15:00"
+      "derniere_maj": "12/11/2026 à 15:15"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -18382,11 +18382,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Lesquin (Stade Jean-Pierre Papin)",
       "surface": "Terrain synthétique",
-      "temperature": "12.1 °C",
-      "vent": "Modéré (18.7 km/h)",
-      "pluie": "Averses possibles (49 %)",
+      "temperature": "4.5 °C",
+      "vent": "Faible (2.9 km/h)",
+      "pluie": "Risque Élevé (50 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Benoit BRUNEAU",
@@ -22234,7 +22234,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "11/11/2026 à 15:00"
+      "derniere_maj": "12/11/2026 à 15:15"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -22276,11 +22276,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Lesquin (Stade Jean-Pierre Papin)",
       "surface": "Terrain synthétique",
-      "temperature": "12.1 °C",
-      "vent": "Modéré (18.7 km/h)",
-      "pluie": "Averses possibles (49 %)",
+      "temperature": "4.5 °C",
+      "vent": "Faible (2.9 km/h)",
+      "pluie": "Risque Élevé (50 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Benoit BRUNEAU",
@@ -26128,7 +26128,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "11/11/2026 à 15:00"
+      "derniere_maj": "12/11/2026 à 15:15"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",
@@ -26170,11 +26170,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Esquelbecq (Complexe J.M. Vaesken 2)",
       "surface": "Terrain synthétique",
-      "temperature": "12.3 °C",
-      "vent": "Modéré (26.6 km/h)",
-      "pluie": "Risque Élevé (50 %)",
+      "temperature": "5.2 °C",
+      "vent": "Faible (4.0 km/h)",
+      "pluie": "Averses possibles (41 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Terrain synthétique glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Aubin VANDENBILCKE",
@@ -28571,7 +28571,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "11/11/2026 à 15:00"
+      "derniere_maj": "12/11/2026 à 15:15"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",
@@ -28613,11 +28613,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Esquelbecq (Complexe J.M. Vaesken 2)",
       "surface": "Terrain synthétique",
-      "temperature": "12.3 °C",
-      "vent": "Modéré (26.6 km/h)",
-      "pluie": "Risque Élevé (50 %)",
+      "temperature": "5.2 °C",
+      "vent": "Faible (4.0 km/h)",
+      "pluie": "Averses possibles (41 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Terrain synthétique glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Aubin VANDENBILCKE",

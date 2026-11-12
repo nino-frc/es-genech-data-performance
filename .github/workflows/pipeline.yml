@@ -120,16 +120,7 @@ jobs:
         run: |
           python export_pwa_feed.py
 
-      # --- 5. ENVOI E-MAIL LIVRABLES ---
-      - name: 📧 14. Envoi automatique des livrables par e-mail
-        env:
-          GMAIL_USER: ${{ secrets.GMAIL_USER }}
-          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
-        run: |
-          python send_email_report.py
-        continue-on-error: true
-
+      # --- 5. ARCHIVAGE DES LIVRABLES (E-MAIL DÉSACTIVÉ) ---
       - name: 📤 15. Archivage sécurisé des livrables (Artifacts GitHub)
         uses: actions/upload-artifact@v4
         with:
@@ -151,5 +142,5 @@ jobs:
           git config user.email "bot@matchday-app.fr"
           git pull --rebase origin main
           git add genech_performance.db seclin_performance.db lesquin_performance.db esquelbecq_performance.db public/data.js public/data_feed.json exports_powerbi/ briefings_coach/
-          git diff-index --quiet HEAD || git commit -m "chore(auto): mise à jour hebdomadaire multi-clubs FFF (Genech, Seclin, Lesquin, Esquelbecq) [skip ci]"
+          git diff-index --quiet HEAD || git commit -m "chore(auto): mise à jour hebdomadaire multi-clubs FFF (Genech, Seclin, Lesquin, Esquelbecq)"
           git push origin main
