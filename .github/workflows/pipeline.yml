@@ -5,9 +5,13 @@ on:
   repository_dispatch:
     types: [matchday_update, webhook]
   schedule:
-    # Lundi matin : Déclenchement à 05h45 UTC (06h45 heure de Paris) pour arrivée garantie avant 07h20
+    # Lundi matin : Premier passage à 05h00 UTC (06h00 heure de Paris)
+    - cron: '0 5 * * 1'
+    # Lundi matin : Second passage à 05h45 UTC (06h45 heure de Paris)
     - cron: '45 5 * * 1'
-    # Jeudi matin : Déclenchement à 05h45 UTC (06h45 heure de Paris)
+    # Jeudi matin : Premier passage à 05h00 UTC (06h00 heure de Paris)
+    - cron: '0 5 * * 4'
+    # Jeudi matin : Second passage à 05h45 UTC (06h45 heure de Paris)
     - cron: '45 5 * * 4'
 
 jobs:
@@ -140,7 +144,7 @@ jobs:
         run: |
           git config user.name "MatchDay Analytics Bot"
           git config user.email "bot@matchday-app.fr"
-          git pull --rebase origin main
           git add genech_performance.db seclin_performance.db lesquin_performance.db esquelbecq_performance.db public/data.js public/data_feed.json exports_powerbi/ briefings_coach/
           git diff-index --quiet HEAD || git commit -m "chore(auto): mise à jour hebdomadaire multi-clubs FFF (Genech, Seclin, Lesquin, Esquelbecq)"
+          git pull --rebase origin main
           git push origin main

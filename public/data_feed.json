@@ -8,145 +8,90 @@
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "12/11/2026 à 15:33"
+      "derniere_maj": "16/11/2026 à 10:19"
     },
     "dernier_match": {
-      "id": "r3_j6_genech_bavay",
-      "competition": "Seniors Régional 3",
-      "domicile": "GENECH ES",
-      "exterieur": "BAVAY US",
-      "score_domicile": 6,
+      "id": "chdf_t4_bully_genech",
+      "competition": "Coupe des Hauts-de-France (4e Tour)",
+      "domicile": "ES BULLY-LES-MINES",
+      "exterieur": "ES GENECH",
+      "score_domicile": 0,
       "score_exterieur": 0,
-      "date_heure": "2026-11-08 14:30",
+      "score_display": "0 - 0 (TAB 5 - 6)",
+      "date_heure": "2026-11-15 14:30",
       "statut": "TERMINE"
     },
     "evenements_dernier_match": [
       {
-        "minute": 9,
-        "type": "BUT",
-        "equipe": "GENECH ES",
-        "acteur": "Gaspard D.",
-        "detail": "But inscrit par GASPARD D."
-      },
-      {
-        "minute": 12,
-        "type": "BUT",
-        "equipe": "GENECH ES",
-        "acteur": "Augustin D.",
-        "detail": "But inscrit par AUGUSTIN D."
-      },
-      {
         "minute": 46,
         "type": "CHANGEMENT",
         "equipe": "GENECH ES",
-        "acteur": "Dany D.",
-        "detail": "Dany D. entre en jeu (remplacement à la mi-temps)"
-      },
-      {
-        "minute": 53,
-        "type": "CHANGEMENT",
-        "equipe": "BAVAY US",
-        "acteur": "Rayane W.",
-        "detail": "RAYANE W. remplace FAICAL O."
-      },
-      {
-        "minute": 56,
-        "type": "AVERTISSEMENT",
-        "equipe": "BAVAY US",
-        "acteur": "Lucas C.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 58,
-        "type": "BUT",
-        "equipe": "GENECH ES",
-        "acteur": "Julien D.",
-        "detail": "But inscrit par JULIEN D."
-      },
-      {
-        "minute": 58,
-        "type": "CHANGEMENT",
-        "equipe": "BAVAY US",
-        "acteur": "Basile C.",
-        "detail": "BASILE C. remplace AXEL P."
-      },
-      {
-        "minute": 60,
-        "type": "AVERTISSEMENT",
-        "equipe": "GENECH ES",
         "acteur": "Giovany C.",
-        "detail": "Carton jaune"
+        "detail": "GIOVANY C. remplace JEAN PAUL B."
       },
       {
-        "minute": 60,
-        "type": "AVERTISSEMENT",
-        "equipe": "BAVAY US",
-        "acteur": "Aurelien V.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 63,
-        "type": "AVERTISSEMENT",
-        "equipe": "BAVAY US",
-        "acteur": "Lucas C.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 63,
-        "type": "EXPULSION",
-        "equipe": "BAVAY US",
-        "acteur": "Lucas C.",
-        "detail": "Carton rouge"
-      },
-      {
-        "minute": 67,
+        "minute": 57,
         "type": "CHANGEMENT",
-        "equipe": "GENECH ES",
-        "acteur": "Elio D.",
-        "detail": "ELIO D. remplace CLEMENT D."
+        "equipe": "ES BULLY-LES-MINES",
+        "acteur": "Thomas C.",
+        "detail": "THOMAS C. remplace MATHIS B."
       },
       {
-        "minute": 67,
+        "minute": 57,
+        "type": "CHANGEMENT",
+        "equipe": "ES BULLY-LES-MINES",
+        "acteur": "Tom F.",
+        "detail": "TOM F. remplace ALEXIS G."
+      },
+      {
+        "minute": 57,
+        "type": "CHANGEMENT",
+        "equipe": "ES BULLY-LES-MINES",
+        "acteur": "Aurelien K.",
+        "detail": "AURELIEN K. remplace CORENTIN D."
+      },
+      {
+        "minute": 66,
         "type": "CHANGEMENT",
         "equipe": "GENECH ES",
         "acteur": "Gabyn D.",
-        "detail": "GABYN D. remplace JULES D."
+        "detail": "GABYN D. remplace ARTHUR C."
       },
       {
-        "minute": 71,
-        "type": "BUT",
-        "equipe": "GENECH ES",
-        "acteur": "Giovany C.",
-        "detail": "But inscrit par GIOVANY C."
+        "minute": 70,
+        "type": "AVERTISSEMENT",
+        "equipe": "ES BULLY-LES-MINES",
+        "acteur": "Aboubakar D.",
+        "detail": "Carton jaune"
       },
       {
-        "minute": 78,
-        "type": "BUT",
+        "minute": 77,
+        "type": "CHANGEMENT",
         "equipe": "GENECH ES",
-        "acteur": "Jean-paul B.",
-        "detail": "But inscrit par JEAN PAUL B."
+        "acteur": "Marceau U.",
+        "detail": "MARCEAU U. remplace JULES D."
       },
       {
         "minute": 90,
         "type": "BUT",
         "equipe": "GENECH ES",
-        "acteur": "Giovany C.",
-        "detail": "But inscrit par GIOVANY C."
+        "acteur": "Tim L.",
+        "detail": "Qualification aux tirs au but : 5 - 6 TAB"
       }
     ],
     "prochain_match": {
-      "competition": "Coupe des Hauts-de-France • 4ème Tour",
-      "date_heure": "Dimanche 15 Novembre 2026 à 14h30",
-      "lieu": "Stade René Corbelle (Bully-les-Mines)",
-      "domicile": "ES BULLY-LES-MINES",
+      "competition": "Seniors Régional 3 • Poule D (Journée 7)",
+      "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+      "lieu": "Stade des Tertiales (Valenciennes)",
+      "domicile": "VALENCIENNES SUMMER",
       "exterieur": "ES GENECH",
       "comparatif": {
-        "titre": "Coupe des Hauts-de-France • 4ème Tour",
-        "adversaire_nom": "ES Bully-les-Mines",
-        "adversaire_rang": "Régional 2",
-        "adversaire_pts": "-",
-        "adversaire_buts_pour": "-",
-        "adversaire_buts_contre": "-",
+        "titre": "Seniors Régional 3 • Journée 7",
+        "adversaire_nom": "Valenciennes Summer",
+        "adversaire_rang": "6e (R3)",
+        "adversaire_pts": 10,
+        "adversaire_buts_pour": 9,
+        "adversaire_buts_contre": 8,
         "club_nom": "ES Genech",
         "club_rang": "2e (R3)",
         "club_pts": 12,
@@ -154,9 +99,9 @@
         "club_buts_contre": 4
       },
       "alertes": [
-        "Déplacement au 4ème tour de Coupe des Hauts-de-France à l'ES Bully-les-Mines (Régional 2), division supérieure.",
-        "Genech arrive en pleine confiance : invaincu en championnat (12 pts, 13 buts marqués) et qualifié après son épopée au 6e tour de Coupe de France.",
-        "Match à élimination directe : tirs au but directs en cas d'égalité à la 90e minute (pas de prolongations)."
+        "Déplacement chez le 6ème (Valenciennes Summer, 10 pts), équipe accrocheuse sur terrain synthétique.",
+        "Genech arrive avec le statut de dauphin invaincu (2e, 12 pts, meilleure défense du groupe avec 4 buts concédés) et qualifié en Coupe après son exploit à Bully (R2).",
+        "Enjeu capital : victoire impérative pour maintenir la pression sur le leader Hénin-Beaumont (13 pts) dans la course à la montée en R2."
       ],
       "stats_comparatives": {
         "genech": {
@@ -167,62 +112,226 @@
           "diff": "+9",
           "forme": [
             "N",
-            "N",
+            "V",
             "V",
             "V"
           ]
         },
-        "bully": {
-          "rang": "R2",
-          "points": "-",
-          "buts_marques": "-",
-          "buts_encaisses": "-",
-          "diff": "-",
+        "valenciennes": {
+          "rang": 6,
+          "points": 10,
+          "buts_marques": 9,
+          "buts_encaisses": 8,
+          "diff": "+1",
           "forme": [
             "V",
+            "D",
             "N",
-            "V",
-            "D"
+            "V"
           ]
         }
       },
       "adversaire_alertes": [
-        "Déplacement au 4ème tour de Coupe des Hauts-de-France à l'ES Bully-les-Mines (Régional 2), division supérieure.",
-        "Genech arrive en pleine confiance : invaincu en championnat (12 pts, 13 buts marqués) et qualifié après son épopée au 6e tour de Coupe de France.",
-        "Match à élimination directe : tirs au but directs en cas d'égalité à la 90e minute (pas de prolongations)."
+        "Valenciennes Summer pratique un jeu de transition très direct sur sa pelouse synthétique.",
+        "Genech reste imperméable derrière : 7 clean sheets toutes compétitions confondues avec Tim L.",
+        "Intensité requise dès le coup d'envoi pour couper leurs montées rapides sur les ailes."
       ],
       "radiographie_adversaire": {
-        "nom": "ES Bully-les-Mines",
-        "division": "3e de Régional 2 LFHF",
-        "style_fmi": "Bloc physique et athlétique, puissant sur phases arrêtées",
+        "nom": "Valenciennes Summer",
+        "division": "6e de Régional 3 LFHF (Poule D)",
+        "style_fmi": "Bloc médian combatif, jeu direct et projections tranchantes",
         "points_vigilance": [
-          "1er Quart d'Heure (0-15') : fort pressing haut au Stade René Corbelle pour tenter de déstabiliser Genech d'entrée.",
-          "Transitions après 70e : perte de compacité adverse exploitable par nos remplaçants frais (Dany, Elio).",
-          "Discipline : engagement très appuyé (>3 cartons par match en R2) : garder son sang-froid et jouer vite."
+          "1er Quart d'Heure (0-15') : fort pressing adverse pour nous faire déjouer sur synthétique rapide.",
+          "Surface synthétique : adapter les appuis et privilégier le jeu en passes courtes au sol.",
+          "Discipline : zéro carton bête pour conserver tous les cadres disponibles pour la suite de la saison."
         ]
       }
     },
     "meteo_prochain_match": {
-      "lieu": "Genech",
-      "surface": "Pelouse naturelle",
-      "temperature": "4.4 °C",
-      "vent": "Faible (4.3 km/h)",
-      "pluie": "Risque Élevé (50 %)",
+      "lieu": "Valenciennes",
+      "surface": "Terrain synthétique",
+      "temperature": "5.5 °C",
+      "vent": "Faible (5.4 km/h)",
+      "pluie": "Averses possibles (25 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Benjamin DUTRIAUX",
+      "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
       "district": "Ligue de Football des Hauts-de-France (CRA)",
-      "niveau": "Arbitre Régional R2 Officiel",
-      "moyenne_jaunes": "3.6",
-      "severite": "MODÉRÉE",
-      "badge_color": "#d97706",
-      "style": "Arbitrage rigoureux et pédagogique, dialogue avec les capitaines mais sanctionne rapidement les fautes tactiques d'antijeu et les contestations.",
-      "consigne_coach": "Benjamin DUTRIAUX désigné par la CRA ce jeudi 12/11 pour le 4e Tour à Bully-les-Mines (R2). Consigne staff : intensité élevée dans les duels propres, zéro contestation auprès du corps arbitral pour éviter tout carton bête en match couperet.",
-      "est_designe": true
+      "niveau": "Arbitre Régional Officiel LFHF",
+      "moyenne_jaunes": "--",
+      "severite": "DÉSIGNATION EN COURS",
+      "badge_color": "#64748b",
+      "style": "Arbitre Officiel Ligue des Hauts-de-France",
+      "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11. Veille disciplinaire : zéro carton évitable pour préserver l'effectif dans la course à la montée en R2.",
+      "est_designe": false
     },
     "historique_matchs": [
+      {
+        "id": "chdf_t4_bully_genech",
+        "competition": "Régional 3 • 4ème Tour",
+        "comp_type": "R3",
+        "date": "15/11/2026",
+        "date_heure": "2026-11-15 14:30",
+        "domicile": "ES BULLY-LES-MINES",
+        "exterieur": "ES GENECH",
+        "score_domicile": 0,
+        "score_exterieur": 0,
+        "score_display": "0 - 0",
+        "is_domicile": false,
+        "resultat": "N",
+        "resultat_label": "Match Nul",
+        "evenements": [
+          {
+            "minute": 46,
+            "type": "CHANGEMENT",
+            "equipe": "GENECH ES",
+            "acteur": "Giovany C.",
+            "acteur_secondaire": "Jean-Paul B.",
+            "detail": "GIOVANY C. remplace JEAN PAUL B."
+          },
+          {
+            "minute": 57,
+            "type": "CHANGEMENT",
+            "equipe": "ES BULLY-LES-MINES",
+            "acteur": "Thomas C.",
+            "acteur_secondaire": "Mathis B.",
+            "detail": "THOMAS C. remplace MATHIS B."
+          },
+          {
+            "minute": 57,
+            "type": "CHANGEMENT",
+            "equipe": "ES BULLY-LES-MINES",
+            "acteur": "Tom F.",
+            "acteur_secondaire": "Alexis G.",
+            "detail": "TOM F. remplace ALEXIS G."
+          },
+          {
+            "minute": 57,
+            "type": "CHANGEMENT",
+            "equipe": "ES BULLY-LES-MINES",
+            "acteur": "Aurelien K.",
+            "acteur_secondaire": "Corentin D.",
+            "detail": "AURELIEN K. remplace CORENTIN D."
+          },
+          {
+            "minute": 66,
+            "type": "CHANGEMENT",
+            "equipe": "GENECH ES",
+            "acteur": "Gabyn D.",
+            "acteur_secondaire": "Arthur C.",
+            "detail": "GABYN D. remplace ARTHUR C."
+          },
+          {
+            "minute": 70,
+            "type": "AVERTISSEMENT",
+            "equipe": "ES BULLY-LES-MINES",
+            "acteur": "Aboubakar D.",
+            "acteur_secondaire": "",
+            "detail": "Carton jaune"
+          },
+          {
+            "minute": 77,
+            "type": "CHANGEMENT",
+            "equipe": "GENECH ES",
+            "acteur": "Marceau U.",
+            "acteur_secondaire": "Jules D.",
+            "detail": "MARCEAU U. remplace JULES D."
+          },
+          {
+            "minute": 90,
+            "type": "BUT",
+            "equipe": "GENECH ES",
+            "acteur": "Tim L.",
+            "acteur_secondaire": "",
+            "detail": "Qualification aux tirs au but : 5 - 6 TAB"
+          }
+        ],
+        "compositions": {
+          "genech": {
+            "titulaires": [
+              {
+                "numero": 1,
+                "nom": "Tim L.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 2,
+                "nom": "Mateo S.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 3,
+                "nom": "Clement D.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 4,
+                "nom": "Julien D.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 5,
+                "nom": "Arthur C.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 6,
+                "nom": "Jules D.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 7,
+                "nom": "Gaspard D.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 8,
+                "nom": "Mathys H.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 9,
+                "nom": "Jean-paul B.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 10,
+                "nom": "Augustin D.",
+                "role": "TITULAIRE"
+              },
+              {
+                "numero": 11,
+                "nom": "Elio D.",
+                "role": "TITULAIRE"
+              }
+            ],
+            "remplacants": [
+              {
+                "numero": 12,
+                "nom": "Giovany C.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 13,
+                "nom": "Gabyn D.",
+                "role": "REMPLACANT"
+              },
+              {
+                "numero": 14,
+                "nom": "Marceau U.",
+                "role": "REMPLACANT"
+              }
+            ]
+          },
+          "adversaire": {
+            "equipe": "ES BULLY-LES-MINES",
+            "titulaires": [],
+            "remplacants": []
+          }
+        }
+      },
       {
         "id": "r3_j6_genech_bavay",
         "competition": "Régional 3 • Journée 6",
@@ -259,8 +368,8 @@
             "type": "CHANGEMENT",
             "equipe": "GENECH ES",
             "acteur": "Dany D.",
-            "acteur_secondaire": "",
-            "detail": "Dany D. entre en jeu (remplacement à la mi-temps)"
+            "acteur_secondaire": "Jean-paul B.",
+            "detail": "DANY D. remplace JEAN PAUL B."
           },
           {
             "minute": 53,
@@ -3380,8 +3489,8 @@
     "kpis_saison": {
       "buts_marques": 17,
       "buts_encaisses": 6,
-      "clean_sheets": 6,
-      "minutes_cumulees": 10955,
+      "clean_sheets": 7,
+      "minutes_cumulees": 11945,
       "cartons_jaunes": 21,
       "cartons_rouges": 3
     },
@@ -3454,20 +3563,20 @@
         "rang": 1,
         "nom": "Julien D.",
         "badge": "⭐ MVP / Cadre Incontournable",
-        "matchs": 11,
-        "titularisations": 10,
+        "matchs": 12,
+        "titularisations": 11,
         "remplacements": 1,
-        "minutes": 890,
-        "clean_sheets": 6,
+        "minutes": 980,
+        "clean_sheets": 7,
         "buts": 3,
-        "net_rating": 10,
-        "net_rating_display": "+10",
-        "net_rating_per_90": "+1.01",
+        "net_rating": 1,
+        "net_rating_display": "+1",
+        "net_rating_per_90": "+1.0",
         "cartons_j": 2,
         "cartons_r": 0,
-        "esg_score": 98.5,
+        "esg_score": 98.8,
         "sous_scores": {
-          "volume": 31.5,
+          "volume": 31.8,
           "volume_max": 35,
           "defense": 30.0,
           "defense_max": 30,
@@ -3481,51 +3590,22 @@
       {
         "id": "p_2",
         "rang": 2,
-        "nom": "Giovany C.",
+        "nom": "Tim L.",
         "badge": "⭐ MVP / Cadre Incontournable",
-        "matchs": 11,
-        "titularisations": 9,
-        "remplacements": 2,
-        "minutes": 683,
-        "clean_sheets": 5,
-        "buts": 3,
-        "net_rating": 8,
-        "net_rating_display": "+8",
-        "net_rating_per_90": "+1.05",
-        "cartons_j": 3,
-        "cartons_r": 0,
-        "esg_score": 87.1,
-        "sous_scores": {
-          "volume": 24.1,
-          "volume_max": 35,
-          "defense": 30.0,
-          "defense_max": 30,
-          "attaque": 35.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 12.0
-        }
-      },
-      {
-        "id": "p_3",
-        "rang": 3,
-        "nom": "Augustin D.",
-        "badge": "⭐ MVP / Cadre Incontournable",
-        "matchs": 11,
-        "titularisations": 11,
+        "matchs": 12,
+        "titularisations": 12,
         "remplacements": 0,
-        "minutes": 914,
-        "clean_sheets": 6,
+        "minutes": 1080,
+        "clean_sheets": 7,
         "buts": 1,
-        "net_rating": 9,
-        "net_rating_display": "+9",
-        "net_rating_per_90": "+0.89",
+        "net_rating": 1,
+        "net_rating_display": "+1",
+        "net_rating_per_90": "+1.0",
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 86.3,
+        "esg_score": 89.0,
         "sous_scores": {
-          "volume": 32.3,
+          "volume": 35.0,
           "volume_max": 35,
           "defense": 30.0,
           "defense_max": 30,
@@ -3537,28 +3617,57 @@
         }
       },
       {
-        "id": "p_4",
-        "rang": 4,
-        "nom": "Tim L.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 11,
-        "titularisations": 11,
-        "remplacements": 0,
-        "minutes": 990,
-        "clean_sheets": 6,
-        "buts": 0,
-        "net_rating": 10,
-        "net_rating_display": "+10",
-        "net_rating_per_90": "+0.91",
-        "cartons_j": 0,
+        "id": "p_3",
+        "rang": 3,
+        "nom": "Giovany C.",
+        "badge": "⭐ MVP / Cadre Incontournable",
+        "matchs": 12,
+        "titularisations": 9,
+        "remplacements": 3,
+        "minutes": 727,
+        "clean_sheets": 5,
+        "buts": 3,
+        "net_rating": 8,
+        "net_rating_display": "+8",
+        "net_rating_per_90": "+1.05",
+        "cartons_j": 3,
         "cartons_r": 0,
-        "esg_score": 75.0,
+        "esg_score": 86.6,
         "sous_scores": {
-          "volume": 35.0,
+          "volume": 23.6,
           "volume_max": 35,
           "defense": 30.0,
           "defense_max": 30,
-          "attaque": 0.0,
+          "attaque": 35.0,
+          "attaque_max": 35,
+          "presence": 10.0,
+          "presence_max": 10,
+          "malus_discipline": 12.0
+        }
+      },
+      {
+        "id": "p_4",
+        "rang": 4,
+        "nom": "Augustin D.",
+        "badge": "⭐ MVP / Cadre Incontournable",
+        "matchs": 12,
+        "titularisations": 12,
+        "remplacements": 0,
+        "minutes": 1004,
+        "clean_sheets": 7,
+        "buts": 1,
+        "net_rating": 1,
+        "net_rating_display": "+1",
+        "net_rating_per_90": "+1.0",
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 86.5,
+        "sous_scores": {
+          "volume": 32.5,
+          "volume_max": 35,
+          "defense": 30.0,
+          "defense_max": 30,
+          "attaque": 14.0,
           "attaque_max": 35,
           "presence": 10.0,
           "presence_max": 10,
@@ -3570,20 +3679,20 @@
         "rang": 5,
         "nom": "Mathys H.",
         "badge": "🛡️ Roc Défensif",
-        "matchs": 10,
-        "titularisations": 10,
+        "matchs": 11,
+        "titularisations": 11,
         "remplacements": 0,
-        "minutes": 900,
-        "clean_sheets": 6,
+        "minutes": 990,
+        "clean_sheets": 7,
         "buts": 1,
-        "net_rating": 10,
-        "net_rating_display": "+10",
+        "net_rating": 1,
+        "net_rating_display": "+1",
         "net_rating_per_90": "+1.0",
         "cartons_j": 3,
         "cartons_r": 0,
-        "esg_score": 73.8,
+        "esg_score": 74.1,
         "sous_scores": {
-          "volume": 31.8,
+          "volume": 32.1,
           "volume_max": 35,
           "defense": 30.0,
           "defense_max": 30,
@@ -3597,22 +3706,51 @@
       {
         "id": "p_6",
         "rang": 6,
+        "nom": "Jean-paul B.",
+        "badge": "🛡️ Roc Défensif",
+        "matchs": 11,
+        "titularisations": 9,
+        "remplacements": 2,
+        "minutes": 677,
+        "clean_sheets": 5,
+        "buts": 1,
+        "net_rating": 1,
+        "net_rating_display": "+1",
+        "net_rating_per_90": "+1.0",
+        "cartons_j": 1,
+        "cartons_r": 0,
+        "esg_score": 71.9,
+        "sous_scores": {
+          "volume": 21.9,
+          "volume_max": 35,
+          "defense": 30.0,
+          "defense_max": 30,
+          "attaque": 14.0,
+          "attaque_max": 35,
+          "presence": 10.0,
+          "presence_max": 10,
+          "malus_discipline": 4.0
+        }
+      },
+      {
+        "id": "p_7",
+        "rang": 7,
         "nom": "Gaspard D.",
         "badge": "🎯 Buteur d'Élite",
-        "matchs": 9,
-        "titularisations": 7,
+        "matchs": 10,
+        "titularisations": 8,
         "remplacements": 2,
-        "minutes": 613,
-        "clean_sheets": 6,
+        "minutes": 703,
+        "clean_sheets": 7,
         "buts": 3,
-        "net_rating": 13,
-        "net_rating_display": "+13",
-        "net_rating_per_90": "+1.91",
+        "net_rating": 1,
+        "net_rating_display": "+1",
+        "net_rating_per_90": "+1.0",
         "cartons_j": 4,
         "cartons_r": 1,
-        "esg_score": 68.7,
+        "esg_score": 69.8,
         "sous_scores": {
-          "volume": 21.7,
+          "volume": 22.8,
           "volume_max": 35,
           "defense": 30.0,
           "defense_max": 30,
@@ -3624,8 +3762,37 @@
         }
       },
       {
-        "id": "p_7",
-        "rang": 7,
+        "id": "p_8",
+        "rang": 8,
+        "nom": "Clement D.",
+        "badge": "🛡️ Roc Défensif",
+        "matchs": 11,
+        "titularisations": 10,
+        "remplacements": 1,
+        "minutes": 797,
+        "clean_sheets": 5,
+        "buts": 0,
+        "net_rating": 1,
+        "net_rating_display": "+1",
+        "net_rating_per_90": "+1.0",
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 65.8,
+        "sous_scores": {
+          "volume": 25.8,
+          "volume_max": 35,
+          "defense": 30.0,
+          "defense_max": 30,
+          "attaque": 0.0,
+          "attaque_max": 35,
+          "presence": 10.0,
+          "presence_max": 10,
+          "malus_discipline": 0.0
+        }
+      },
+      {
+        "id": "p_9",
+        "rang": 9,
         "nom": "Julien N.",
         "badge": "🛡️ Roc Défensif",
         "matchs": 9,
@@ -3639,67 +3806,9 @@
         "net_rating_per_90": "+0.69",
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 67.1,
+        "esg_score": 65.1,
         "sous_scores": {
-          "volume": 23.1,
-          "volume_max": 35,
-          "defense": 24.0,
-          "defense_max": 30,
-          "attaque": 14.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 4.0
-        }
-      },
-      {
-        "id": "p_8",
-        "rang": 8,
-        "nom": "Maxime P.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 11,
-        "titularisations": 11,
-        "remplacements": 0,
-        "minutes": 990,
-        "clean_sheets": 6,
-        "buts": 0,
-        "net_rating": 10,
-        "net_rating_display": "+10",
-        "net_rating_per_90": "+0.91",
-        "cartons_j": 2,
-        "cartons_r": 0,
-        "esg_score": 67.0,
-        "sous_scores": {
-          "volume": 35.0,
-          "volume_max": 35,
-          "defense": 30.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 8.0
-        }
-      },
-      {
-        "id": "p_9",
-        "rang": 9,
-        "nom": "Jean-paul B.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 10,
-        "titularisations": 8,
-        "remplacements": 2,
-        "minutes": 631,
-        "clean_sheets": 4,
-        "buts": 1,
-        "net_rating": 0,
-        "net_rating_display": "0",
-        "net_rating_per_90": "0.0",
-        "cartons_j": 1,
-        "cartons_r": 0,
-        "esg_score": 66.3,
-        "sous_scores": {
-          "volume": 22.3,
+          "volume": 21.1,
           "volume_max": 35,
           "defense": 24.0,
           "defense_max": 30,
@@ -3713,6 +3822,35 @@
       {
         "id": "p_10",
         "rang": 10,
+        "nom": "Maxime P.",
+        "badge": "🛡️ Roc Défensif",
+        "matchs": 11,
+        "titularisations": 11,
+        "remplacements": 0,
+        "minutes": 990,
+        "clean_sheets": 6,
+        "buts": 0,
+        "net_rating": 10,
+        "net_rating_display": "+10",
+        "net_rating_per_90": "+0.91",
+        "cartons_j": 2,
+        "cartons_r": 0,
+        "esg_score": 64.1,
+        "sous_scores": {
+          "volume": 32.1,
+          "volume_max": 35,
+          "defense": 30.0,
+          "defense_max": 30,
+          "attaque": 0.0,
+          "attaque_max": 35,
+          "presence": 10.0,
+          "presence_max": 10,
+          "malus_discipline": 8.0
+        }
+      },
+      {
+        "id": "p_11",
+        "rang": 11,
         "nom": "Remi D.",
         "badge": "🛡️ Roc Défensif",
         "matchs": 11,
@@ -3726,9 +3864,9 @@
         "net_rating_per_90": "+0.87",
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 59.2,
+        "esg_score": 56.7,
         "sous_scores": {
-          "volume": 29.2,
+          "volume": 26.7,
           "volume_max": 35,
           "defense": 24.0,
           "defense_max": 30,
@@ -3737,35 +3875,6 @@
           "presence": 10.0,
           "presence_max": 10,
           "malus_discipline": 4.0
-        }
-      },
-      {
-        "id": "p_11",
-        "rang": 11,
-        "nom": "Clement D.",
-        "badge": "🛡️ Roc Défensif",
-        "matchs": 10,
-        "titularisations": 9,
-        "remplacements": 1,
-        "minutes": 707,
-        "clean_sheets": 4,
-        "buts": 0,
-        "net_rating": 4,
-        "net_rating_display": "+4",
-        "net_rating_per_90": "+0.51",
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 59.0,
-        "sous_scores": {
-          "volume": 25.0,
-          "volume_max": 35,
-          "defense": 24.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 0.0
         }
       },
       {
@@ -3784,9 +3893,9 @@
         "net_rating_per_90": "+0.58",
         "cartons_j": 1,
         "cartons_r": 1,
-        "esg_score": 55.9,
+        "esg_score": 53.9,
         "sous_scores": {
-          "volume": 23.9,
+          "volume": 21.9,
           "volume_max": 35,
           "defense": 24.0,
           "defense_max": 30,
@@ -3813,9 +3922,9 @@
         "net_rating_per_90": "+1.57",
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 32.1,
+        "esg_score": 31.3,
         "sous_scores": {
-          "volume": 10.1,
+          "volume": 9.3,
           "volume_max": 35,
           "defense": 12.0,
           "defense_max": 30,
@@ -3842,9 +3951,9 @@
         "net_rating_per_90": "+1.82",
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 26.5,
+        "esg_score": 25.6,
         "sous_scores": {
-          "volume": 10.5,
+          "volume": 9.6,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -3871,9 +3980,9 @@
         "net_rating_per_90": "+0.87",
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 23.4,
+        "esg_score": 22.7,
         "sous_scores": {
-          "volume": 7.4,
+          "volume": 6.7,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -3895,14 +4004,14 @@
         "minutes": 38,
         "clean_sheets": 0,
         "buts": 1,
-        "net_rating": 3,
-        "net_rating_display": "+3",
-        "net_rating_per_90": "+3.0",
+        "net_rating": 1,
+        "net_rating_display": "+1",
+        "net_rating_per_90": "+1.0",
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 20.3,
+        "esg_score": 20.2,
         "sous_scores": {
-          "volume": 1.3,
+          "volume": 1.2,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -3929,9 +4038,9 @@
         "net_rating_per_90": "+1.12",
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 18.6,
+        "esg_score": 17.8,
         "sous_scores": {
-          "volume": 8.6,
+          "volume": 7.8,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -3958,9 +4067,9 @@
         "net_rating_per_90": "0.0",
         "cartons_j": 0,
         "cartons_r": 0,
-        "esg_score": 11.7,
+        "esg_score": 11.4,
         "sous_scores": {
-          "volume": 3.2,
+          "volume": 2.9,
           "volume_max": 35,
           "defense": 6.0,
           "defense_max": 30,
@@ -3974,6 +4083,93 @@
       {
         "id": "p_19",
         "rang": 19,
+        "nom": "Arthur C.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 1,
+        "titularisations": 1,
+        "remplacements": 0,
+        "minutes": 90,
+        "clean_sheets": 1,
+        "buts": 0,
+        "net_rating": 1,
+        "net_rating_display": "+1",
+        "net_rating_per_90": "+1.0",
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 11.4,
+        "sous_scores": {
+          "volume": 2.9,
+          "volume_max": 35,
+          "defense": 6.0,
+          "defense_max": 30,
+          "attaque": 0.0,
+          "attaque_max": 35,
+          "presence": 2.5,
+          "presence_max": 10,
+          "malus_discipline": 0.0
+        }
+      },
+      {
+        "id": "p_20",
+        "rang": 20,
+        "nom": "Elio D.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 1,
+        "titularisations": 1,
+        "remplacements": 0,
+        "minutes": 90,
+        "clean_sheets": 1,
+        "buts": 0,
+        "net_rating": 1,
+        "net_rating_display": "+1",
+        "net_rating_per_90": "+1.0",
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 11.4,
+        "sous_scores": {
+          "volume": 2.9,
+          "volume_max": 35,
+          "defense": 6.0,
+          "defense_max": 30,
+          "attaque": 0.0,
+          "attaque_max": 35,
+          "presence": 2.5,
+          "presence_max": 10,
+          "malus_discipline": 0.0
+        }
+      },
+      {
+        "id": "p_21",
+        "rang": 21,
+        "nom": "Jules D.",
+        "badge": "🔄 Rotation Effectif",
+        "matchs": 1,
+        "titularisations": 1,
+        "remplacements": 0,
+        "minutes": 90,
+        "clean_sheets": 1,
+        "buts": 0,
+        "net_rating": 1,
+        "net_rating_display": "+1",
+        "net_rating_per_90": "+1.0",
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 11.4,
+        "sous_scores": {
+          "volume": 2.9,
+          "volume_max": 35,
+          "defense": 6.0,
+          "defense_max": 30,
+          "attaque": 0.0,
+          "attaque_max": 35,
+          "presence": 2.5,
+          "presence_max": 10,
+          "malus_discipline": 0.0
+        }
+      },
+      {
+        "id": "p_22",
+        "rang": 22,
         "nom": "Romain R.",
         "badge": "🔄 Rotation Effectif",
         "matchs": 4,
@@ -4001,8 +4197,8 @@
         }
       },
       {
-        "id": "p_20",
-        "rang": 20,
+        "id": "p_23",
+        "rang": 23,
         "nom": "Thomas L.",
         "badge": "⚡ Super-Sub / Impact Player",
         "matchs": 3,
@@ -4016,9 +4212,9 @@
         "net_rating_per_90": "-0.87",
         "cartons_j": 1,
         "cartons_r": 0,
-        "esg_score": 7.9,
+        "esg_score": 7.6,
         "sous_scores": {
-          "volume": 4.4,
+          "volume": 4.1,
           "volume_max": 35,
           "defense": 0.0,
           "defense_max": 30,
@@ -4030,8 +4226,37 @@
         }
       },
       {
-        "id": "p_21",
-        "rang": 21,
+        "id": "p_24",
+        "rang": 24,
+        "nom": "Mateo S.",
+        "badge": "⚙️ Régulateur / Titulaire Cadre",
+        "matchs": 4,
+        "titularisations": 3,
+        "remplacements": 1,
+        "minutes": 280,
+        "clean_sheets": 1,
+        "buts": 0,
+        "net_rating": 1,
+        "net_rating_display": "+1",
+        "net_rating_per_90": "+1.0",
+        "cartons_j": 2,
+        "cartons_r": 1,
+        "esg_score": 5.1,
+        "sous_scores": {
+          "volume": 9.1,
+          "volume_max": 35,
+          "defense": 6.0,
+          "defense_max": 30,
+          "attaque": 0.0,
+          "attaque_max": 35,
+          "presence": 10.0,
+          "presence_max": 10,
+          "malus_discipline": 20.0
+        }
+      },
+      {
+        "id": "p_25",
+        "rang": 25,
         "nom": "Evan P.",
         "badge": "🔄 Rotation Effectif",
         "matchs": 1,
@@ -4057,44 +4282,15 @@
           "presence_max": 10,
           "malus_discipline": 0.0
         }
-      },
-      {
-        "id": "p_22",
-        "rang": 22,
-        "nom": "Mateo S.",
-        "badge": "🔄 Rotation Effectif",
-        "matchs": 3,
-        "titularisations": 2,
-        "remplacements": 1,
-        "minutes": 190,
-        "clean_sheets": 0,
-        "buts": 0,
-        "net_rating": 0,
-        "net_rating_display": "0",
-        "net_rating_per_90": "0.0",
-        "cartons_j": 2,
-        "cartons_r": 1,
-        "esg_score": 0.0,
-        "sous_scores": {
-          "volume": 6.7,
-          "volume_max": 35,
-          "defense": 0.0,
-          "defense_max": 30,
-          "attaque": 0.0,
-          "attaque_max": 35,
-          "presence": 7.5,
-          "presence_max": 10,
-          "malus_discipline": 20.0
-        }
       }
     ],
     "barometre_coaching": {
-      "minute_premier_changement": "52e min",
+      "minute_premier_changement": "51e min",
       "buts_issus_du_banc": 2,
-      "differentiel_post_remplacements": "+9",
-      "buts_marques_post_sub": 11,
+      "differentiel_post_remplacements": "+10",
+      "buts_marques_post_sub": 12,
       "buts_encaisses_post_sub": 2,
-      "constat_tactique": "Coaching à fort impact : différentiel de +9 après les premiers changements.",
+      "constat_tactique": "Coaching à fort impact : différentiel de +10 après les premiers changements.",
       "super_subs": [
         {
           "nom": "Dany D.",
@@ -4131,12 +4327,12 @@
       ]
     },
     "stabilite_effectif": {
-      "taux_reconduction_xi": "79.1%",
-      "statut": "CONTINUITÉ FORTE",
-      "cadres_incontournables": 9,
-      "joueurs_rotation": 5,
-      "joueurs_appoint": 7,
-      "constat": "Ossature stable avec 9 cadres disputant plus des deux tiers des minutes."
+      "taux_reconduction_xi": "71.9%",
+      "statut": "ROTATION ÉLEVÉE",
+      "cadres_incontournables": 7,
+      "joueurs_rotation": 7,
+      "joueurs_appoint": 21,
+      "constat": "Ossature stable avec 7 cadres disputant plus des deux tiers des minutes."
     },
     "top_associations": [
       {
@@ -4167,42 +4363,42 @@
     "scenarios_resilience": {
       "trailed_count": 3,
       "points_after_trailing": 4,
-      "led_count": 5,
-      "win_rate_after_leading": "80.0%",
-      "wins_after_leading": 4,
-      "money_time_for": 3,
+      "led_count": 6,
+      "win_rate_after_leading": "83.3%",
+      "wins_after_leading": 5,
+      "money_time_for": 4,
       "money_time_against": 2,
-      "money_time_diff": "+1",
-      "constat": "Mental de guerrier : 4 points sauvés après avoir été mené et 80.0% de victoires conservées en ouvrant la marque."
+      "money_time_diff": "+2",
+      "constat": "Mental de guerrier : 4 points sauvés après avoir été mené et 83.3% de victoires conservées en ouvrant la marque."
     },
     "profils_endurance": {
       "infatigables": [
         {
           "nom": "Tim L.",
           "matchs_90m": 11,
-          "pct": "100%"
+          "pct": "92%"
         },
         {
           "nom": "Maxime P.",
           "matchs_90m": 11,
-          "pct": "100%"
+          "pct": "92%"
         },
         {
           "nom": "Mathys H.",
           "matchs_90m": 10,
-          "pct": "91%"
+          "pct": "83%"
         }
       ],
       "relais_strategiques": [
         {
+          "nom": "Jean-Paul B.",
+          "sorties": 6,
+          "minute_moy": "56e min"
+        },
+        {
           "nom": "Giovany C.",
           "sorties": 6,
           "minute_moy": "55e min"
-        },
-        {
-          "nom": "Jean-Paul B.",
-          "sorties": 5,
-          "minute_moy": "58e min"
         },
         {
           "nom": "Clement D.",
@@ -4212,10 +4408,10 @@
       ]
     },
     "diversite_offensive": {
-      "total_buts": 15,
-      "buteurs_distincts": 9,
+      "total_buts": 16,
+      "buteurs_distincts": 10,
       "meilleur_buteur": "Julien D. (3 buts)",
-      "taux_dependance": "20.0%",
+      "taux_dependance": "18.8%",
       "repartition_lignes": {
         "attaque": "46.7%",
         "milieu": "40.0%",
@@ -4243,7 +4439,7 @@
           "buts": 1
         }
       ],
-      "constat": "Danger multi-zones : 9 buteurs différents et seulement 20.0% de dépendance au meilleur réalisateur."
+      "constat": "Danger multi-zones : 10 buteurs différents et seulement 18.8% de dépendance au meilleur réalisateur."
     },
     "contexte_discipline": {
       "total_cartons": 24,
@@ -4257,12 +4453,12 @@
       "cartons_club": 24,
       "cartons_club_jaunes": 21,
       "cartons_club_rouges": 3,
-      "cartons_club_par_match": 2.18,
-      "cartons_adverses": 32,
-      "cartons_adverses_jaunes": 28,
+      "cartons_club_par_match": 2.0,
+      "cartons_adverses": 33,
+      "cartons_adverses_jaunes": 29,
       "cartons_adverses_rouges": 4,
-      "cartons_adverses_par_match": 2.91,
-      "differentiel": "+8",
+      "cartons_adverses_par_match": 2.75,
+      "differentiel": "+9",
       "expulsions_provoquees": 4,
       "details_expulsions": [
         {
@@ -4290,7 +4486,7 @@
           "joueur": "Lucas C."
         }
       ],
-      "constat": "Supériorité disciplinaire : Genech concède 2.18 cartons/m vs 2.91 pour ses adversaires (+8 cartons adverses provoqués, dont 4 expulsions directes subies par l'adversaire)."
+      "constat": "Supériorité disciplinaire : Genech concède 2.0 cartons/m vs 2.75 pour ses adversaires (+9 cartons adverses provoqués, dont 4 expulsions directes subies par l'adversaire)."
     },
     "matrice_domicile_exterieur": {
       "domicile": {
@@ -4305,14 +4501,14 @@
         "invaincu": true
       },
       "exterieur": {
-        "matchs": 6,
+        "matchs": 7,
         "victoires": 2,
-        "nuls": 3,
+        "nuls": 4,
         "defaites": 1,
         "buts_pour": 5,
         "buts_contre": 5,
-        "clean_sheets": 2,
-        "ppm": "1.5"
+        "clean_sheets": 3,
+        "ppm": "1.43"
       },
       "surface": "Herbe naturelle (100% invaincu à domicile)",
       "constat": "Forteresse à domicile : 2.6 PPM et seulement 1 but concédé en 5 rencontres."
@@ -4320,19 +4516,19 @@
     "series_records": {
       "serie_invincibilite_r3": 6,
       "record_minutes_impermeabilite": 326,
-      "clean_sheets_saison": 6,
-      "clean_sheets_pct": "54.5%",
+      "clean_sheets_saison": 7,
+      "clean_sheets_pct": "58.3%",
       "constat": "Mur défensif : record certifié de 326 minutes consécutives sans concéder de but (326 min, 3 clean sheets d'affilée)."
     },
     "gouvernance": {
       "ppm_championnat": 2.0,
       "probabilite_montee_pct": 74.2,
       "probabilite_maintien_pct": 99.1,
-      "taux_invincibilite": 90.9,
+      "taux_invincibilite": 91.7,
       "bilan_global": {
-        "matchs": 11,
+        "matchs": 12,
         "victoires": 7,
-        "nuls": 3,
+        "nuls": 4,
         "defaites": 1,
         "buts_pour": 17,
         "buts_contre": 6,
@@ -4349,8 +4545,8 @@
         "difference": 3,
         "ppm": 2.0
       },
-      "ratio_clean_sheet_pct": 54.5,
-      "moyenne_buts_encaisses": 0.55,
+      "ratio_clean_sheet_pct": 58.3,
+      "moyenne_buts_encaisses": 0.5,
       "projection_saison": {
         "points_prevus": 44.0,
         "rang_final_estime": "2e (Accession Régional 2)"
@@ -4389,7 +4585,7 @@
         {
           "tranche": "76-90+'",
           "label": "76 - 90+ min",
-          "marques": 6,
+          "marques": 7,
           "encaisses": 2
         }
       ],
@@ -4652,7 +4848,7 @@
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "12/11/2026 à 15:33"
+      "derniere_maj": "16/11/2026 à 10:19"
     },
     "dernier_match": {
       "id": "m_u18_m1_79497787-et-am-c-cys",
@@ -4694,11 +4890,11 @@
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "4.4 °C",
-      "vent": "Faible (4.3 km/h)",
-      "pluie": "Risque Élevé (50 %)",
+      "temperature": "4.8 °C",
+      "vent": "Faible (6.2 km/h)",
+      "pluie": "Averses possibles (31 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Arbitre Officiel District (D1 U18)",
@@ -6363,17 +6559,17 @@
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "12/11/2026 à 15:33"
+      "derniere_maj": "16/11/2026 à 10:19"
     },
     "dernier_match": {
-      "id": "m_senior_f2_j5_leers",
-      "competition": "Interdistricts Poule C • Journée 5",
-      "domicile": "GENECH ES",
-      "exterieur": "LEERS OS",
-      "score_domicile": 5,
+      "id": "m_senior_f2_j6_stamand",
+      "competition": "Interdistricts Poule C • Journée 6",
+      "domicile": "ST AMAND FC",
+      "exterieur": "GENECH ES",
+      "score_domicile": 6,
       "score_exterieur": 1,
-      "score_display": "5 - 1",
-      "date_heure": "2026-11-08 10:30",
+      "score_display": "6 - 1",
+      "date_heure": "2026-11-15 14:30",
       "statut": "TERMINE"
     },
     "evenements_dernier_match": [],
@@ -6404,11 +6600,11 @@
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "4.4 °C",
-      "vent": "Faible (4.3 km/h)",
-      "pluie": "Risque Élevé (50 %)",
+      "temperature": "4.8 °C",
+      "vent": "Faible (6.2 km/h)",
+      "pluie": "Averses possibles (31 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Arbitre Officiel Ligue Interdistricts (LFHF)",
@@ -6418,6 +6614,32 @@
       "consigne_coach": "Arbitre pédagogue favorisant la fluidité et le jeu propre."
     },
     "historique_matchs": [
+      {
+        "id": "m_senior_f2_j6_stamand",
+        "competition": "Interdistricts Féminin • Journée 6",
+        "comp_type": "CHAMPIONNAT",
+        "date": "15/11/2026",
+        "date_heure": "2026-11-15 14:30",
+        "domicile": "ST AMAND FC",
+        "exterieur": "GENECH ES",
+        "score_domicile": 6,
+        "score_exterieur": 1,
+        "score_display": "6 - 1",
+        "is_domicile": false,
+        "resultat": "D",
+        "resultat_label": "Défaite",
+        "evenements": [],
+        "compositions": {
+          "genech": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "ST AMAND FC",
+            "titulaires": []
+          }
+        }
+      },
       {
         "id": "m_senior_f2_j5_leers",
         "competition": "Interdistricts Féminin • Journée 5",
@@ -6792,10 +7014,10 @@
       }
     ],
     "kpis_saison": {
-      "buts_marques": 15,
-      "buts_encaisses": 12,
+      "buts_marques": 16,
+      "buts_encaisses": 18,
       "clean_sheets": 1,
-      "minutes_cumulees": 4500,
+      "minutes_cumulees": 5400,
       "cartons_jaunes": 0,
       "cartons_rouges": 0
     },
@@ -6821,9 +7043,9 @@
         "minutes": 240,
         "buts": 0,
         "clean_sheets": 1,
-        "net_rating": 4,
-        "net_rating_display": "+4",
-        "net_rating_per_90": "+1.5",
+        "net_rating": 3,
+        "net_rating_display": "+3",
+        "net_rating_per_90": "+1.12",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 71.0,
@@ -6846,9 +7068,9 @@
         "minutes": 240,
         "buts": 0,
         "clean_sheets": 1,
-        "net_rating": 4,
-        "net_rating_display": "+4",
-        "net_rating_per_90": "+1.5",
+        "net_rating": 3,
+        "net_rating_display": "+3",
+        "net_rating_per_90": "+1.12",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 71.0,
@@ -6871,9 +7093,9 @@
         "minutes": 240,
         "buts": 0,
         "clean_sheets": 1,
-        "net_rating": 4,
-        "net_rating_display": "+4",
-        "net_rating_per_90": "+1.5",
+        "net_rating": 3,
+        "net_rating_display": "+3",
+        "net_rating_per_90": "+1.12",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 71.0,
@@ -6896,9 +7118,9 @@
         "minutes": 240,
         "buts": 0,
         "clean_sheets": 1,
-        "net_rating": 4,
-        "net_rating_display": "+4",
-        "net_rating_per_90": "+1.5",
+        "net_rating": 3,
+        "net_rating_display": "+3",
+        "net_rating_per_90": "+1.12",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 71.0,
@@ -6921,9 +7143,9 @@
         "minutes": 240,
         "buts": 0,
         "clean_sheets": 1,
-        "net_rating": 4,
-        "net_rating_display": "+4",
-        "net_rating_per_90": "+1.5",
+        "net_rating": 3,
+        "net_rating_display": "+3",
+        "net_rating_per_90": "+1.12",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 71.0,
@@ -6946,9 +7168,9 @@
         "minutes": 240,
         "buts": 0,
         "clean_sheets": 1,
-        "net_rating": 4,
-        "net_rating_display": "+4",
-        "net_rating_per_90": "+1.5",
+        "net_rating": 3,
+        "net_rating_display": "+3",
+        "net_rating_per_90": "+1.12",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 71.0,
@@ -6971,9 +7193,9 @@
         "minutes": 240,
         "buts": 0,
         "clean_sheets": 1,
-        "net_rating": 4,
-        "net_rating_display": "+4",
-        "net_rating_per_90": "+1.5",
+        "net_rating": 3,
+        "net_rating_display": "+3",
+        "net_rating_per_90": "+1.12",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 71.0,
@@ -6996,9 +7218,9 @@
         "minutes": 240,
         "buts": 0,
         "clean_sheets": 1,
-        "net_rating": 4,
-        "net_rating_display": "+4",
-        "net_rating_per_90": "+1.5",
+        "net_rating": 3,
+        "net_rating_display": "+3",
+        "net_rating_per_90": "+1.12",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 71.0,
@@ -7021,9 +7243,9 @@
         "minutes": 240,
         "buts": 0,
         "clean_sheets": 1,
-        "net_rating": 4,
-        "net_rating_display": "+4",
-        "net_rating_per_90": "+1.5",
+        "net_rating": 3,
+        "net_rating_display": "+3",
+        "net_rating_per_90": "+1.12",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 71.0,
@@ -7046,9 +7268,9 @@
         "minutes": 160,
         "buts": 0,
         "clean_sheets": 1,
-        "net_rating": 1,
-        "net_rating_display": "+1",
-        "net_rating_per_90": "+0.56",
+        "net_rating": 0,
+        "net_rating_display": "0",
+        "net_rating_per_90": "0.0",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 64.0,
@@ -7071,9 +7293,9 @@
         "minutes": 160,
         "buts": 0,
         "clean_sheets": 1,
-        "net_rating": 1,
-        "net_rating_display": "+1",
-        "net_rating_per_90": "+0.56",
+        "net_rating": 0,
+        "net_rating_display": "0",
+        "net_rating_per_90": "0.0",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 64.0,
@@ -7096,9 +7318,9 @@
         "minutes": 160,
         "buts": 0,
         "clean_sheets": 1,
-        "net_rating": 1,
-        "net_rating_display": "+1",
-        "net_rating_per_90": "+0.56",
+        "net_rating": 0,
+        "net_rating_display": "0",
+        "net_rating_per_90": "0.0",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 64.0,
@@ -7121,9 +7343,9 @@
         "minutes": 160,
         "buts": 0,
         "clean_sheets": 1,
-        "net_rating": 1,
-        "net_rating_display": "+1",
-        "net_rating_per_90": "+0.56",
+        "net_rating": 0,
+        "net_rating_display": "0",
+        "net_rating_per_90": "0.0",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 64.0,
@@ -7146,8 +7368,8 @@
         "minutes": 80,
         "buts": 0,
         "clean_sheets": 1,
-        "net_rating": -2,
-        "net_rating_display": "-2",
+        "net_rating": -3,
+        "net_rating_display": "-3",
         "net_rating_per_90": "0.0",
         "cartons_j": 0,
         "cartons_r": 0,
@@ -7171,8 +7393,8 @@
         "minutes": 80,
         "buts": 0,
         "clean_sheets": 1,
-        "net_rating": -2,
-        "net_rating_display": "-2",
+        "net_rating": -3,
+        "net_rating_display": "-3",
         "net_rating_per_90": "0.0",
         "cartons_j": 0,
         "cartons_r": 0,
@@ -7207,9 +7429,9 @@
       {
         "duo": "Axe Principal",
         "role": "Stabilité Collective",
-        "matchs_ensemble": 5,
+        "matchs_ensemble": 6,
         "clean_sheets": 1,
-        "differentiel": "+3",
+        "differentiel": "+0",
         "constat": "Continuité tactique validée"
       }
     ],
@@ -7256,7 +7478,7 @@
       ]
     },
     "diversite_offensive": {
-      "total_buts": 15,
+      "total_buts": 16,
       "buteurs_distincts": 4,
       "meilleur_buteur": "Adeline A.",
       "taux_dependance": "35.0%",
@@ -7296,29 +7518,29 @@
         "nuls": 0,
         "defaites": 1,
         "buts_pour": 8,
-        "buts_contre": 6,
+        "buts_contre": 9,
         "clean_sheets": 1,
-        "ppm": "1.8",
+        "ppm": "1.5",
         "invaincu": false
       },
       "exterieur": {
-        "matchs": 2,
+        "matchs": 3,
         "victoires": 1,
         "nuls": 0,
-        "defaites": 1,
-        "buts_pour": 7,
-        "buts_contre": 6,
+        "defaites": 2,
+        "buts_pour": 8,
+        "buts_contre": 9,
         "clean_sheets": 0,
-        "ppm": "1.40"
+        "ppm": "1.10"
       },
       "surface": "Herbe naturelle",
       "constat": "Performance équilibrée domicile/extérieur."
     },
     "series_records": {
-      "serie_invincibilite_r3": 4.0,
+      "serie_invincibilite_r3": 3.0,
       "record_minutes_impermeabilite": 270,
       "clean_sheets_saison": 1,
-      "clean_sheets_pct": "20%",
+      "clean_sheets_pct": "16%",
       "constat": "Dynamique collective positive."
     },
     "differentiel_fairplay": {
@@ -7343,31 +7565,31 @@
       "constat": "Discipline collective et maîtrise des temps forts."
     },
     "gouvernance": {
-      "ppm_championnat": 1.8,
+      "ppm_championnat": 1.5,
       "probabilite_montee_pct": 45.0,
       "probabilite_maintien_pct": 98.0,
-      "taux_invincibilite": 60.0,
+      "taux_invincibilite": 50.0,
       "bilan_global": {
-        "matchs": 5,
+        "matchs": 6,
         "victoires": 3,
         "nuls": 0,
-        "defaites": 2,
-        "buts_pour": 15,
-        "buts_contre": 12,
-        "difference": 3
+        "defaites": 3,
+        "buts_pour": 16,
+        "buts_contre": 18,
+        "difference": -2
       },
       "bilan_championnat": {
-        "matchs": 5,
+        "matchs": 6,
         "victoires": 3,
         "nuls": 0,
-        "defaites": 2,
+        "defaites": 3,
         "points": 9,
-        "ppm": 1.8
+        "ppm": 1.5
       },
-      "ratio_clean_sheet_pct": 20.0,
-      "moyenne_buts_encaisses": 2.4,
+      "ratio_clean_sheet_pct": 16.7,
+      "moyenne_buts_encaisses": 3.0,
       "projection_saison": {
-        "points_prevus": 39.6,
+        "points_prevus": 33.0,
         "rang_final_estime": "Milieu de tableau"
       },
       "matrice_quarts_heure": [
@@ -7551,7 +7773,7 @@
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "12/11/2026 à 15:33"
+      "derniere_maj": "16/11/2026 à 10:19"
     },
     "dernier_match": {
       "id": "m_senior_b_j6_lesquin",
@@ -7592,11 +7814,11 @@
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "4.4 °C",
-      "vent": "Faible (4.3 km/h)",
-      "pluie": "Risque Élevé (50 %)",
+      "temperature": "4.8 °C",
+      "vent": "Faible (6.2 km/h)",
+      "pluie": "Averses possibles (31 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Arbitre Officiel District (Désignation Flandres)",
@@ -8723,7 +8945,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "12/11/2026 à 15:33"
+      "derniere_maj": "16/11/2026 à 10:19"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -8765,21 +8987,22 @@
     "meteo_prochain_match": {
       "lieu": "Seclin (Stade Henri Jooris)",
       "surface": "Pelouse naturelle",
-      "temperature": "4.6 °C",
-      "vent": "Faible (2.7 km/h)",
-      "pluie": "Risque Élevé (50 %)",
+      "temperature": "4.7 °C",
+      "vent": "Faible (6.7 km/h)",
+      "pluie": "Averses possibles (27 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Roman ROSSINI",
+      "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
       "district": "Ligue de Football des Hauts-de-France (CRA)",
       "niveau": "Arbitre Régional R2 Officiel",
-      "moyenne_jaunes": "4.1 / match",
-      "severite": "STRICTE",
-      "badge_color": "#dc2626",
-      "style": "Arbitrage très rigoureux sur les contacts avec retard et les gestes d'humeur.",
-      "consigne_coach": "Roman ROSSINI désigné par la CRA ce jeudi 05/11 pour la réception de Biache. Attention accrue lors des transitions défensives."
+      "moyenne_jaunes": "--",
+      "severite": "DÉSIGNATION EN COURS",
+      "badge_color": "#64748b",
+      "style": "Arbitre Officiel Ligue des Hauts-de-France (CRA)",
+      "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11 pour le déplacement à Noyelles s/Lens.",
+      "est_designe": false
     },
     "historique_matchs": [
       {
@@ -13528,7 +13751,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "12/11/2026 à 15:33"
+      "derniere_maj": "16/11/2026 à 10:19"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -13570,21 +13793,22 @@
     "meteo_prochain_match": {
       "lieu": "Seclin (Stade Henri Jooris)",
       "surface": "Pelouse naturelle",
-      "temperature": "4.6 °C",
-      "vent": "Faible (2.7 km/h)",
-      "pluie": "Risque Élevé (50 %)",
+      "temperature": "4.7 °C",
+      "vent": "Faible (6.7 km/h)",
+      "pluie": "Averses possibles (27 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Roman ROSSINI",
+      "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
       "district": "Ligue de Football des Hauts-de-France (CRA)",
       "niveau": "Arbitre Régional R2 Officiel",
-      "moyenne_jaunes": "4.1 / match",
-      "severite": "STRICTE",
-      "badge_color": "#dc2626",
-      "style": "Arbitrage très rigoureux sur les contacts avec retard et les gestes d'humeur.",
-      "consigne_coach": "Roman ROSSINI désigné par la CRA ce jeudi 05/11 pour la réception de Biache. Attention accrue lors des transitions défensives."
+      "moyenne_jaunes": "--",
+      "severite": "DÉSIGNATION EN COURS",
+      "badge_color": "#64748b",
+      "style": "Arbitre Officiel Ligue des Hauts-de-France (CRA)",
+      "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11 pour le déplacement à Noyelles s/Lens.",
+      "est_designe": false
     },
     "historique_matchs": [
       {
@@ -18333,7 +18557,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "12/11/2026 à 15:33"
+      "derniere_maj": "16/11/2026 à 10:19"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -18375,21 +18599,22 @@
     "meteo_prochain_match": {
       "lieu": "Lesquin (Stade Jean-Pierre Papin)",
       "surface": "Terrain synthétique",
-      "temperature": "4.5 °C",
-      "vent": "Faible (2.9 km/h)",
-      "pluie": "Risque Élevé (50 %)",
+      "temperature": "4.8 °C",
+      "vent": "Faible (6.3 km/h)",
+      "pluie": "Averses possibles (27 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Benoit BRUNEAU",
+      "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
       "district": "Ligue de Football des Hauts-de-France (CRA)",
       "niveau": "Arbitre Régional R2 Officiel",
-      "moyenne_jaunes": "3.4 / match",
-      "severite": "MODÉRÉE",
-      "badge_color": "#d97706",
-      "style": "Arbitre pédagogue, favorise la continuité du jeu mais siffle vite les fautes tactiques d'antijeu.",
-      "consigne_coach": "Benoit BRUNEAU désigné par la CRA ce jeudi 05/11 pour le duel face à Escaudain. Jouer simple en première intention."
+      "moyenne_jaunes": "--",
+      "severite": "DÉSIGNATION EN COURS",
+      "badge_color": "#64748b",
+      "style": "Arbitre Officiel Ligue des Hauts-de-France (CRA)",
+      "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11 pour le déplacement à Montigny Gohelle.",
+      "est_designe": false
     },
     "historique_matchs": [
       {
@@ -22227,7 +22452,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "12/11/2026 à 15:33"
+      "derniere_maj": "16/11/2026 à 10:19"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -22269,21 +22494,22 @@
     "meteo_prochain_match": {
       "lieu": "Lesquin (Stade Jean-Pierre Papin)",
       "surface": "Terrain synthétique",
-      "temperature": "4.5 °C",
-      "vent": "Faible (2.9 km/h)",
-      "pluie": "Risque Élevé (50 %)",
+      "temperature": "4.8 °C",
+      "vent": "Faible (6.3 km/h)",
+      "pluie": "Averses possibles (27 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique glissante : encourager les frappes lointaines cadrées et la pression sur les contrôles adverses."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Benoit BRUNEAU",
+      "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
       "district": "Ligue de Football des Hauts-de-France (CRA)",
       "niveau": "Arbitre Régional R2 Officiel",
-      "moyenne_jaunes": "3.4 / match",
-      "severite": "MODÉRÉE",
-      "badge_color": "#d97706",
-      "style": "Arbitre pédagogue, favorise la continuité du jeu mais siffle vite les fautes tactiques d'antijeu.",
-      "consigne_coach": "Benoit BRUNEAU désigné par la CRA ce jeudi 05/11 pour le duel face à Escaudain. Jouer simple en première intention."
+      "moyenne_jaunes": "--",
+      "severite": "DÉSIGNATION EN COURS",
+      "badge_color": "#64748b",
+      "style": "Arbitre Officiel Ligue des Hauts-de-France (CRA)",
+      "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11 pour le déplacement à Montigny Gohelle.",
+      "est_designe": false
     },
     "historique_matchs": [
       {
@@ -26121,7 +26347,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "12/11/2026 à 15:33"
+      "derniere_maj": "16/11/2026 à 10:19"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",
@@ -26163,21 +26389,22 @@
     "meteo_prochain_match": {
       "lieu": "Esquelbecq (Complexe J.M. Vaesken 2)",
       "surface": "Terrain synthétique",
-      "temperature": "5.2 °C",
-      "vent": "Faible (4.0 km/h)",
-      "pluie": "Averses possibles (41 %)",
+      "temperature": "4.3 °C",
+      "vent": "Faible (9.2 km/h)",
+      "pluie": "Averses possibles (30 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Aubin VANDENBILCKE",
+      "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
       "district": "Ligue de Football des Hauts-de-France (CRA)",
       "niveau": "Arbitre Régional R2 Officiel",
-      "moyenne_jaunes": "3.2 / match",
-      "severite": "MODÉRÉE",
-      "badge_color": "#d97706",
-      "style": "Arbitre pédagogue, dialogue et autorité naturelle. Veille au respect des zones techniques.",
-      "consigne_coach": "Aubin VANDENBILCKE désigné par la CRA (assisté de C. Coppin et F. Leroy). Rester irréprochable dans l'engagement."
+      "moyenne_jaunes": "--",
+      "severite": "DÉSIGNATION EN COURS",
+      "badge_color": "#64748b",
+      "style": "Arbitre Officiel Ligue des Hauts-de-France (CRA)",
+      "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11 pour le déplacement à Coquelles.",
+      "est_designe": false
     },
     "historique_matchs": [
       {
@@ -28564,7 +28791,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "12/11/2026 à 15:33"
+      "derniere_maj": "16/11/2026 à 10:19"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",
@@ -28606,21 +28833,22 @@
     "meteo_prochain_match": {
       "lieu": "Esquelbecq (Complexe J.M. Vaesken 2)",
       "surface": "Terrain synthétique",
-      "temperature": "5.2 °C",
-      "vent": "Faible (4.0 km/h)",
-      "pluie": "Averses possibles (41 %)",
+      "temperature": "4.3 °C",
+      "vent": "Faible (9.2 km/h)",
+      "pluie": "Averses possibles (30 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Aubin VANDENBILCKE",
+      "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
       "district": "Ligue de Football des Hauts-de-France (CRA)",
       "niveau": "Arbitre Régional R2 Officiel",
-      "moyenne_jaunes": "3.2 / match",
-      "severite": "MODÉRÉE",
-      "badge_color": "#d97706",
-      "style": "Arbitre pédagogue, dialogue et autorité naturelle. Veille au respect des zones techniques.",
-      "consigne_coach": "Aubin VANDENBILCKE désigné par la CRA (assisté de C. Coppin et F. Leroy). Rester irréprochable dans l'engagement."
+      "moyenne_jaunes": "--",
+      "severite": "DÉSIGNATION EN COURS",
+      "badge_color": "#64748b",
+      "style": "Arbitre Officiel Ligue des Hauts-de-France (CRA)",
+      "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11 pour le déplacement à Coquelles.",
+      "est_designe": false
     },
     "historique_matchs": [
       {

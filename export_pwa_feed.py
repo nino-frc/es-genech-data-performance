@@ -1395,16 +1395,17 @@ def build_seclin_pwa_payload(base_dir: str):
         "dernier_match": last_match,
         "evenements_dernier_match": last_events,
         "prochain_match": next_match,
-        "meteo_prochain_match": get_match_weather("SECLIN", "2026-11-08"),
+        "meteo_prochain_match": get_match_weather("SECLIN", "2026-11-22"),
         "arbitre_prochain_match": {
-            "nom_arbitre": "Roman ROSSINI",
+            "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
             "district": "Ligue de Football des Hauts-de-France (CRA)",
             "niveau": "Arbitre Régional R2 Officiel",
-            "moyenne_jaunes": "4.1 / match",
-            "severite": "STRICTE",
-            "badge_color": "#dc2626",
-            "style": "Arbitrage très rigoureux sur les contacts avec retard et les gestes d'humeur.",
-            "consigne_coach": "Roman ROSSINI désigné par la CRA ce jeudi 05/11 pour la réception de Biache. Attention accrue lors des transitions défensives."
+            "moyenne_jaunes": "--",
+            "severite": "DÉSIGNATION EN COURS",
+            "badge_color": "#64748b",
+            "style": "Arbitre Officiel Ligue des Hauts-de-France (CRA)",
+            "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11 pour le déplacement à Noyelles s/Lens.",
+            "est_designe": False
         },
         "historique_matchs": historique_matchs,
         "kpis_saison": {
@@ -1851,16 +1852,17 @@ def build_lesquin_pwa_payload(base_dir: str):
         "dernier_match": last_match,
         "evenements_dernier_match": last_events,
         "prochain_match": next_match,
-        "meteo_prochain_match": get_match_weather("LESQUIN", "2026-11-08"),
+        "meteo_prochain_match": get_match_weather("LESQUIN", "2026-11-22"),
         "arbitre_prochain_match": {
-            "nom_arbitre": "Benoit BRUNEAU",
+            "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
             "district": "Ligue de Football des Hauts-de-France (CRA)",
             "niveau": "Arbitre Régional R2 Officiel",
-            "moyenne_jaunes": "3.4 / match",
-            "severite": "MODÉRÉE",
-            "badge_color": "#d97706",
-            "style": "Arbitre pédagogue, favorise la continuité du jeu mais siffle vite les fautes tactiques d'antijeu.",
-            "consigne_coach": "Benoit BRUNEAU désigné par la CRA ce jeudi 05/11 pour le duel face à Escaudain. Jouer simple en première intention."
+            "moyenne_jaunes": "--",
+            "severite": "DÉSIGNATION EN COURS",
+            "badge_color": "#64748b",
+            "style": "Arbitre Officiel Ligue des Hauts-de-France (CRA)",
+            "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11 pour le déplacement à Montigny Gohelle.",
+            "est_designe": False
         },
         "historique_matchs": historique_matchs,
         "kpis_saison": {
@@ -2326,16 +2328,17 @@ def build_esquelbecq_pwa_payload(base_dir: str):
         "dernier_match": last_match,
         "evenements_dernier_match": last_events,
         "prochain_match": next_match,
-        "meteo_prochain_match": get_match_weather("ESQUELBECQ", "2026-11-08"),
+        "meteo_prochain_match": get_match_weather("ESQUELBECQ", "2026-11-22"),
         "arbitre_prochain_match": {
-            "nom_arbitre": "Aubin VANDENBILCKE",
+            "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
             "district": "Ligue de Football des Hauts-de-France (CRA)",
             "niveau": "Arbitre Régional R2 Officiel",
-            "moyenne_jaunes": "3.2 / match",
-            "severite": "MODÉRÉE",
-            "badge_color": "#d97706",
-            "style": "Arbitre pédagogue, dialogue et autorité naturelle. Veille au respect des zones techniques.",
-            "consigne_coach": "Aubin VANDENBILCKE désigné par la CRA (assisté de C. Coppin et F. Leroy). Rester irréprochable dans l'engagement."
+            "moyenne_jaunes": "--",
+            "severite": "DÉSIGNATION EN COURS",
+            "badge_color": "#64748b",
+            "style": "Arbitre Officiel Ligue des Hauts-de-France (CRA)",
+            "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11 pour le déplacement à Coquelles.",
+            "est_designe": False
         },
         "historique_matchs": historique_matchs,
         "kpis_saison": {
@@ -2451,13 +2454,27 @@ def export_real_pwa_feed():
 
     last_match = {}
     if last_match_row:
+        comp_label = "Seniors Régional 3"
+        c_id = str(last_match_row["competition_id"]).lower()
+        if "chdf" in c_id:
+            comp_label = "Coupe des Hauts-de-France (4e Tour)"
+        elif "cdf" in c_id:
+            comp_label = "Coupe de France"
+
+        s_dom = last_match_row["score_domicile"]
+        s_ext = last_match_row["score_exterieur"]
+        score_disp = f"{s_dom} - {s_ext}"
+        if last_match_row["id"] == "chdf_t4_bully_genech":
+            score_disp = "0 - 0 (TAB 5 - 6)"
+
         last_match = {
             "id": last_match_row["id"],
-            "competition": "Coupe de France (Tour 6)" if "cdf" in last_match_row["competition_id"] else "Seniors Régional 3",
+            "competition": comp_label,
             "domicile": last_match_row["equipe_domicile"],
             "exterieur": last_match_row["equipe_exterieur"],
-            "score_domicile": last_match_row["score_domicile"],
-            "score_exterieur": last_match_row["score_exterieur"],
+            "score_domicile": s_dom,
+            "score_exterieur": s_ext,
+            "score_display": score_disp,
             "date_heure": last_match_row["date_heure"],
             "statut": last_match_row["statut"]
         }
@@ -2474,20 +2491,20 @@ def export_real_pwa_feed():
                 "detail": ev["detail"]
             })
 
-    # 3. Prochain Match : ES BULLY-LES-MINES vs ES GENECH (Coupe Hauts-de-France • 4e Tour, 15/11 à 14h30)
+    # 3. Prochain Match : VALENCIENNES SUMMER vs ES GENECH (Seniors R3 • Journée 7, Dimanche 22/11 à 14h30)
     next_match = {
-        "competition": "Coupe des Hauts-de-France • 4ème Tour",
-        "date_heure": "Dimanche 15 Novembre 2026 à 14h30",
-        "lieu": "Stade René Corbelle (Bully-les-Mines)",
-        "domicile": "ES BULLY-LES-MINES",
+        "competition": "Seniors Régional 3 • Poule D (Journée 7)",
+        "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+        "lieu": "Stade des Tertiales (Valenciennes)",
+        "domicile": "VALENCIENNES SUMMER",
         "exterieur": "ES GENECH",
         "comparatif": {
-            "titre": "Coupe des Hauts-de-France • 4ème Tour",
-            "adversaire_nom": "ES Bully-les-Mines",
-            "adversaire_rang": "Régional 2",
-            "adversaire_pts": "-",
-            "adversaire_buts_pour": "-",
-            "adversaire_buts_contre": "-",
+            "titre": "Seniors Régional 3 • Journée 7",
+            "adversaire_nom": "Valenciennes Summer",
+            "adversaire_rang": "6e (R3)",
+            "adversaire_pts": 10,
+            "adversaire_buts_pour": 9,
+            "adversaire_buts_contre": 8,
             "club_nom": "ES Genech",
             "club_rang": "2e (R3)",
             "club_pts": 12,
@@ -2495,9 +2512,9 @@ def export_real_pwa_feed():
             "club_buts_contre": 4
         },
         "alertes": [
-            "Déplacement au 4ème tour de Coupe des Hauts-de-France à l'ES Bully-les-Mines (Régional 2), division supérieure.",
-            "Genech arrive en pleine confiance : invaincu en championnat (12 pts, 13 buts marqués) et qualifié après son épopée au 6e tour de Coupe de France.",
-            "Match à élimination directe : tirs au but directs en cas d'égalité à la 90e minute (pas de prolongations)."
+            "Déplacement chez le 6ème (Valenciennes Summer, 10 pts), équipe accrocheuse sur terrain synthétique.",
+            "Genech arrive avec le statut de dauphin invaincu (2e, 12 pts, meilleure défense du groupe avec 4 buts concédés) et qualifié en Coupe après son exploit à Bully (R2).",
+            "Enjeu capital : victoire impérative pour maintenir la pression sur le leader Hénin-Beaumont (13 pts) dans la course à la montée en R2."
         ],
         "stats_comparatives": {
             "genech": {
@@ -2506,45 +2523,45 @@ def export_real_pwa_feed():
                 "buts_marques": 13,
                 "buts_encaisses": 4,
                 "diff": "+9",
-                "forme": ["N", "N", "V", "V"]
+                "forme": ["N", "V", "V", "V"]
             },
-            "bully": {
-                "rang": "R2",
-                "points": "-",
-                "buts_marques": "-",
-                "buts_encaisses": "-",
-                "diff": "-",
-                "forme": ["V", "N", "V", "D"]
+            "valenciennes": {
+                "rang": 6,
+                "points": 10,
+                "buts_marques": 9,
+                "buts_encaisses": 8,
+                "diff": "+1",
+                "forme": ["V", "D", "N", "V"]
             }
         },
         "adversaire_alertes": [
-            "Déplacement au 4ème tour de Coupe des Hauts-de-France à l'ES Bully-les-Mines (Régional 2), division supérieure.",
-            "Genech arrive en pleine confiance : invaincu en championnat (12 pts, 13 buts marqués) et qualifié après son épopée au 6e tour de Coupe de France.",
-            "Match à élimination directe : tirs au but directs en cas d'égalité à la 90e minute (pas de prolongations)."
+            "Valenciennes Summer pratique un jeu de transition très direct sur sa pelouse synthétique.",
+            "Genech reste imperméable derrière : 7 clean sheets toutes compétitions confondues avec Tim L.",
+            "Intensité requise dès le coup d'envoi pour couper leurs montées rapides sur les ailes."
         ],
         "radiographie_adversaire": {
-            "nom": "ES Bully-les-Mines",
-            "division": "3e de Régional 2 LFHF",
-            "style_fmi": "Bloc physique et athlétique, puissant sur phases arrêtées",
+            "nom": "Valenciennes Summer",
+            "division": "6e de Régional 3 LFHF (Poule D)",
+            "style_fmi": "Bloc médian combatif, jeu direct et projections tranchantes",
             "points_vigilance": [
-                "1er Quart d'Heure (0-15') : fort pressing haut au Stade René Corbelle pour tenter de déstabiliser Genech d'entrée.",
-                "Transitions après 70e : perte de compacité adverse exploitable par nos remplaçants frais (Dany, Elio).",
-                "Discipline : engagement très appuyé (>3 cartons par match en R2) : garder son sang-froid et jouer vite."
+                "1er Quart d'Heure (0-15') : fort pressing adverse pour nous faire déjouer sur synthétique rapide.",
+                "Surface synthétique : adapter les appuis et privilégier le jeu en passes courtes au sol.",
+                "Discipline : zéro carton bête pour conserver tous les cadres disponibles pour la suite de la saison."
             ]
         }
     }
 
-    # Arbitre prochain match : Désignation officielle CRA LFHF (Jeudi 12/11)
+    # Arbitre prochain match : En attente de désignation CRA LFHF (Jeudi 19/11)
     arbitre_info = {
-        "nom_arbitre": "Benjamin DUTRIAUX",
+        "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
         "district": "Ligue de Football des Hauts-de-France (CRA)",
-        "niveau": "Arbitre Régional R2 Officiel",
-        "moyenne_jaunes": "3.6",
-        "severite": "MODÉRÉE",
-        "badge_color": "#d97706",
-        "style": "Arbitrage rigoureux et pédagogique, dialogue avec les capitaines mais sanctionne rapidement les fautes tactiques d'antijeu et les contestations.",
-        "consigne_coach": "Benjamin DUTRIAUX désigné par la CRA ce jeudi 12/11 pour le 4e Tour à Bully-les-Mines (R2). Consigne staff : intensité élevée dans les duels propres, zéro contestation auprès du corps arbitral pour éviter tout carton bête en match couperet.",
-        "est_designe": True
+        "niveau": "Arbitre Régional Officiel LFHF",
+        "moyenne_jaunes": "--",
+        "severite": "DÉSIGNATION EN COURS",
+        "badge_color": "#64748b",
+        "style": "Arbitre Officiel Ligue des Hauts-de-France",
+        "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11. Veille disciplinaire : zéro carton évitable pour préserver l'effectif dans la course à la montée en R2.",
+        "est_designe": False
     }
 
     # 4. Traducteur Financier de Trésorerie (Barème officiel Ligue LFHF)
@@ -2925,7 +2942,7 @@ def export_real_pwa_feed():
         "dernier_match": last_match,
         "evenements_dernier_match": events_rows,
         "prochain_match": next_match,
-        "meteo_prochain_match": get_match_weather("GENECH", "2026-11-08"),
+        "meteo_prochain_match": get_match_weather("VALENCIENNES", "2026-11-22"),
         "arbitre_prochain_match": arbitre_info,
         "historique_matchs": historique_matchs,
         "kpis_saison": {
