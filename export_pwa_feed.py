@@ -2433,7 +2433,7 @@ def export_real_pwa_feed():
             if s_g > s_opp:
                 victoires += 1
             elif s_g == s_opp:
-                if "cdf" in mid:  # Qualification aux tirs au but en Coupe
+                if "cdf" in mid or "chdf" in mid or "coupe" in mid:  # Qualification aux tirs au but en Coupe
                     victoires += 1
                 else:
                     nuls += 1
@@ -2487,7 +2487,7 @@ def export_real_pwa_feed():
                 "minute": ev["minute"],
                 "type": ev["type_event"],
                 "equipe": ev["equipe"],
-                "acteur": anonymize_player_name(ev["acteur_principal"]),
+                "acteur": anonymize_player_name(ev["acteur_principal"]) if ev["acteur_principal"] else "",
                 "detail": ev["detail"]
             })
 
@@ -2749,14 +2749,14 @@ def export_real_pwa_feed():
             "difference": total_buts_marques - total_buts_encaisses
         },
         "bilan_championnat": {
-            "matchs": 4,
-            "victoires": 2,
-            "nuls": 2,
+            "matchs": 6,
+            "victoires": 3,
+            "nuls": 3,
             "defaites": 0,
-            "points": 8,
-            "buts_pour": 6,
-            "buts_contre": 3,
-            "difference": 3,
+            "points": 12,
+            "buts_pour": 13,
+            "buts_contre": 4,
+            "difference": 9,
             "ppm": 2.00
         },
         "ratio_clean_sheet_pct": round((total_clean_sheets / total_matches * 100), 1) if total_matches > 0 else 0,
@@ -2828,6 +2828,10 @@ def export_real_pwa_feed():
             resultat = "V"
             resultat_label = "Qualif. (TAB 3-4)"
             score_disp_val = f"{m['score_domicile']} - {m['score_exterieur']} (TAB 3-4)"
+        elif m_id == 'chdf_t4_bully_genech':
+            resultat = "V"
+            resultat_label = "Qualif. (TAB 5-6)"
+            score_disp_val = "0 - 0 (TAB 5-6)"
         elif m_id == 'm_u18_m1_56697624-ent-s-de-ge':
             resultat = "D"
             resultat_label = "Élim. (TAB 2-4)"
@@ -2843,9 +2847,12 @@ def export_real_pwa_feed():
             resultat_label = "Défaite"
 
         comp_id = m["competition_id"]
-        if "cdf" in comp_id:
+        if "chdf" in comp_id:
+            comp_name = f"Coupe Hauts-de-France • {m['tour_ou_journee']}"
+            comp_type = "COUPE"
+        elif "cdf" in comp_id:
             comp_name = f"Coupe de France • {m['tour_ou_journee']}"
-            comp_type = "CDF"
+            comp_type = "COUPE"
         else:
             comp_name = f"Régional 3 • {m['tour_ou_journee']}"
             comp_type = "R3"

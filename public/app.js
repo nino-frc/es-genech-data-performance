@@ -386,7 +386,8 @@ function filterMatchHistory(filterType, btnElement) {
   const cards = document.querySelectorAll('.match-history-card');
   cards.forEach(card => {
     const comp = card.getAttribute('data-comp-type');
-    if (filterType === 'ALL' || comp === filterType) {
+    const isCoupe = comp === 'COUPE' || comp === 'CDF' || comp === 'CHDF' || comp === 'GAMBARDELLA';
+    if (filterType === 'ALL' || comp === filterType || (filterType === 'COUPE' && isCoupe)) {
       card.style.display = 'flex';
     } else {
       card.style.display = 'none';
@@ -440,10 +441,15 @@ function openMatchDetailModal(matchIndex) {
       } else if (ev.type === 'REMPLACEMENT' || ev.type === 'CHANGEMENT') {
         icon = '🔄';
         title = 'Remplacement';
+      } else if (ev.type === 'TAB') {
+        icon = '🧤';
+        title = 'Tirs au But';
       }
 
       let desc = ev.acteur;
-      if (ev.acteur_secondaire) {
+      if (ev.type === 'TAB') {
+        desc = `<strong>Séance de Tirs au But</strong>`;
+      } else if (ev.acteur_secondaire) {
         desc = `<strong>${ev.acteur}</strong> ⬅️ <em>${ev.acteur_secondaire}</em>`;
       } else if (ev.acteur) {
         desc = `<strong>${ev.acteur}</strong>`;
@@ -1746,13 +1752,18 @@ function renderInterface(data) {
           nodeClass += ' tl-node-sub';
           nodeContent = `<svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9h11M13 6l3 3-3 3" stroke="#16A34A"/><path d="M19 15H8M11 18l-3-3 3-3" stroke="#EF4444"/></svg>`;
           badgeHtml = `<span class="tl-sub-arrows" title="Remplacement">⇄</span>`;
+        } else if (ev.type === 'TAB') {
+          nodeClass += ' tl-node-sub';
+          nodeContent = `<span style="font-size: 11px;">🧤</span>`;
+          badgeHtml = `<span class="tl-goal-badge" style="background: #10B981;" title="Tirs au But">🧤</span>`;
         } else {
           nodeContent = `<span style="font-size: 10px;">•</span>`;
         }
         
         const isSub = ev.type === 'CHANGEMENT';
-        const playerName = isSub ? 'Changement' : (ev.acteur || 'Joueur');
-        const subDetail = isSub ? (ev.detail || ev.acteur) : '';
+        const isTab = ev.type === 'TAB';
+        const playerName = isSub ? 'Changement' : (isTab ? 'Séance Tirs au But' : (ev.acteur || 'Joueur'));
+        const subDetail = isSub ? (ev.detail || ev.acteur) : (isTab ? (ev.detail || 'Qualification 5-6 TAB') : '');
         
         if (isHome) {
           // Événement Domicile (Gauche du fil conducteur)
@@ -2075,10 +2086,12 @@ function renderInterface(data) {
   const filterBar = document.querySelector('.history-filter-bar');
   if (filterBar) {
     if (currentTeamId === 'SENIOR_M1') {
+      const r3Count = historyList.filter(m => m.comp_type === 'R3').length;
+      const coupeCount = historyList.filter(m => m.comp_type === 'COUPE' || m.comp_type === 'CDF' || m.comp_type === 'CHDF').length;
       filterBar.innerHTML = `
         <button class="history-filter-btn active" onclick="filterMatchHistory('ALL', this)">Tous (${historyList.length})</button>
-        <button class="history-filter-btn" onclick="filterMatchHistory('R3', this)">Régional 3 (4)</button>
-        <button class="history-filter-btn" onclick="filterMatchHistory('CDF', this)">Coupe de France (5)</button>
+        <button class="history-filter-btn" onclick="filterMatchHistory('R3', this)">Régional 3 (${r3Count})</button>
+        <button class="history-filter-btn" onclick="filterMatchHistory('COUPE', this)">Coupes (${coupeCount})</button>
       `;
     } else if (currentTeamId === 'U18_M1') {
       filterBar.innerHTML = `

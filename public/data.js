@@ -8,7 +8,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "16/11/2026 à 10:19"
+      "derniere_maj": "16/11/2026 à 18:14"
     },
     "dernier_match": {
       "id": "chdf_t4_bully_genech",
@@ -73,10 +73,10 @@ window.MATCHDAY_TEAMS = {
       },
       {
         "minute": 90,
-        "type": "BUT",
+        "type": "TAB",
         "equipe": "GENECH ES",
-        "acteur": "Tim L.",
-        "detail": "Qualification aux tirs au but : 5 - 6 TAB"
+        "acteur": "",
+        "detail": "Qualification aux tirs au but (5 - 6 TAB)"
       }
     ],
     "prochain_match": {
@@ -152,7 +152,7 @@ window.MATCHDAY_TEAMS = {
       "surface": "Terrain synthétique",
       "temperature": "5.5 °C",
       "vent": "Faible (5.4 km/h)",
-      "pluie": "Averses possibles (25 %)",
+      "pluie": "Averses possibles (42 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -170,18 +170,18 @@ window.MATCHDAY_TEAMS = {
     "historique_matchs": [
       {
         "id": "chdf_t4_bully_genech",
-        "competition": "Régional 3 • 4ème Tour",
-        "comp_type": "R3",
+        "competition": "Coupe Hauts-de-France • 4ème Tour",
+        "comp_type": "COUPE",
         "date": "15/11/2026",
         "date_heure": "2026-11-15 14:30",
         "domicile": "ES BULLY-LES-MINES",
         "exterieur": "ES GENECH",
         "score_domicile": 0,
         "score_exterieur": 0,
-        "score_display": "0 - 0",
+        "score_display": "0 - 0 (TAB 5-6)",
         "is_domicile": false,
-        "resultat": "N",
-        "resultat_label": "Match Nul",
+        "resultat": "V",
+        "resultat_label": "Qualif. (TAB 5-6)",
         "evenements": [
           {
             "minute": 46,
@@ -241,11 +241,11 @@ window.MATCHDAY_TEAMS = {
           },
           {
             "minute": 90,
-            "type": "BUT",
+            "type": "TAB",
             "equipe": "GENECH ES",
-            "acteur": "Tim L.",
+            "acteur": "",
             "acteur_secondaire": "",
-            "detail": "Qualification aux tirs au but : 5 - 6 TAB"
+            "detail": "Qualification aux tirs au but (5 - 6 TAB)"
           }
         ],
         "compositions": {
@@ -906,7 +906,7 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "cdf_t6_tatinghem_genech",
         "competition": "Coupe de France • Tour 6",
-        "comp_type": "CDF",
+        "comp_type": "COUPE",
         "date": "25/10/2026",
         "date_heure": "2026-10-25 15:00",
         "domicile": "ST MARTIN TATINGHEM",
@@ -1497,7 +1497,7 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "cdf_t5_genech_chantilly",
         "competition": "Coupe de France • Tour 5",
-        "comp_type": "CDF",
+        "comp_type": "COUPE",
         "date": "11/10/2026",
         "date_heure": "2026-10-11 15:00",
         "domicile": "GENECH ES",
@@ -2053,7 +2053,7 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "cdf_t4_genech_dunkerque",
         "competition": "Coupe de France • Tour 4",
-        "comp_type": "CDF",
+        "comp_type": "COUPE",
         "date": "27/09/2026",
         "date_heure": "2026-09-27 15:00",
         "domicile": "GENECH ES",
@@ -2593,7 +2593,7 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "cdf_t3_sainghin_genech",
         "competition": "Coupe de France • Tour 3",
-        "comp_type": "CDF",
+        "comp_type": "COUPE",
         "date": "13/09/2026",
         "date_heure": "2026-09-13 15:00",
         "domicile": "SAINGHIN WEPPES AO",
@@ -3192,7 +3192,7 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "cdf_t2_lys_genech",
         "competition": "Coupe de France • Tour 2",
-        "comp_type": "CDF",
+        "comp_type": "COUPE",
         "date": "30/08/2026",
         "date_heure": "2026-08-30 15:00",
         "domicile": "LYS L/LANNOY STELLA",
@@ -3569,9 +3569,9 @@ window.MATCHDAY_TEAMS = {
         "minutes": 980,
         "clean_sheets": 7,
         "buts": 3,
-        "net_rating": 1,
-        "net_rating_display": "+1",
-        "net_rating_per_90": "+1.0",
+        "net_rating": 10,
+        "net_rating_display": "+10",
+        "net_rating_per_90": "+1.01",
         "cartons_j": 2,
         "cartons_r": 0,
         "esg_score": 98.8,
@@ -3590,35 +3590,6 @@ window.MATCHDAY_TEAMS = {
       {
         "id": "p_2",
         "rang": 2,
-        "nom": "Tim L.",
-        "badge": "⭐ MVP / Cadre Incontournable",
-        "matchs": 12,
-        "titularisations": 12,
-        "remplacements": 0,
-        "minutes": 1080,
-        "clean_sheets": 7,
-        "buts": 1,
-        "net_rating": 1,
-        "net_rating_display": "+1",
-        "net_rating_per_90": "+1.0",
-        "cartons_j": 0,
-        "cartons_r": 0,
-        "esg_score": 89.0,
-        "sous_scores": {
-          "volume": 35.0,
-          "volume_max": 35,
-          "defense": 30.0,
-          "defense_max": 30,
-          "attaque": 14.0,
-          "attaque_max": 35,
-          "presence": 10.0,
-          "presence_max": 10,
-          "malus_discipline": 0.0
-        }
-      },
-      {
-        "id": "p_3",
-        "rang": 3,
         "nom": "Giovany C.",
         "badge": "⭐ MVP / Cadre Incontournable",
         "matchs": 12,
@@ -3646,8 +3617,8 @@ window.MATCHDAY_TEAMS = {
         }
       },
       {
-        "id": "p_4",
-        "rang": 4,
+        "id": "p_3",
+        "rang": 3,
         "nom": "Augustin D.",
         "badge": "⭐ MVP / Cadre Incontournable",
         "matchs": 12,
@@ -3656,9 +3627,9 @@ window.MATCHDAY_TEAMS = {
         "minutes": 1004,
         "clean_sheets": 7,
         "buts": 1,
-        "net_rating": 1,
-        "net_rating_display": "+1",
-        "net_rating_per_90": "+1.0",
+        "net_rating": 9,
+        "net_rating_display": "+9",
+        "net_rating_per_90": "+0.89",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 86.5,
@@ -3668,6 +3639,35 @@ window.MATCHDAY_TEAMS = {
           "defense": 30.0,
           "defense_max": 30,
           "attaque": 14.0,
+          "attaque_max": 35,
+          "presence": 10.0,
+          "presence_max": 10,
+          "malus_discipline": 0.0
+        }
+      },
+      {
+        "id": "p_4",
+        "rang": 4,
+        "nom": "Tim L.",
+        "badge": "🛡️ Roc Défensif",
+        "matchs": 12,
+        "titularisations": 12,
+        "remplacements": 0,
+        "minutes": 1080,
+        "clean_sheets": 7,
+        "buts": 0,
+        "net_rating": 10,
+        "net_rating_display": "+10",
+        "net_rating_per_90": "+0.91",
+        "cartons_j": 0,
+        "cartons_r": 0,
+        "esg_score": 75.0,
+        "sous_scores": {
+          "volume": 35.0,
+          "volume_max": 35,
+          "defense": 30.0,
+          "defense_max": 30,
+          "attaque": 0.0,
           "attaque_max": 35,
           "presence": 10.0,
           "presence_max": 10,
@@ -3685,8 +3685,8 @@ window.MATCHDAY_TEAMS = {
         "minutes": 990,
         "clean_sheets": 7,
         "buts": 1,
-        "net_rating": 1,
-        "net_rating_display": "+1",
+        "net_rating": 10,
+        "net_rating_display": "+10",
         "net_rating_per_90": "+1.0",
         "cartons_j": 3,
         "cartons_r": 0,
@@ -3714,9 +3714,9 @@ window.MATCHDAY_TEAMS = {
         "minutes": 677,
         "clean_sheets": 5,
         "buts": 1,
-        "net_rating": 1,
-        "net_rating_display": "+1",
-        "net_rating_per_90": "+1.0",
+        "net_rating": 0,
+        "net_rating_display": "0",
+        "net_rating_per_90": "0.0",
         "cartons_j": 1,
         "cartons_r": 0,
         "esg_score": 71.9,
@@ -3743,9 +3743,9 @@ window.MATCHDAY_TEAMS = {
         "minutes": 703,
         "clean_sheets": 7,
         "buts": 3,
-        "net_rating": 1,
-        "net_rating_display": "+1",
-        "net_rating_per_90": "+1.0",
+        "net_rating": 13,
+        "net_rating_display": "+13",
+        "net_rating_per_90": "+1.91",
         "cartons_j": 4,
         "cartons_r": 1,
         "esg_score": 69.8,
@@ -3772,9 +3772,9 @@ window.MATCHDAY_TEAMS = {
         "minutes": 797,
         "clean_sheets": 5,
         "buts": 0,
-        "net_rating": 1,
-        "net_rating_display": "+1",
-        "net_rating_per_90": "+1.0",
+        "net_rating": 4,
+        "net_rating_display": "+4",
+        "net_rating_per_90": "+0.51",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 65.8,
@@ -4004,9 +4004,9 @@ window.MATCHDAY_TEAMS = {
         "minutes": 38,
         "clean_sheets": 0,
         "buts": 1,
-        "net_rating": 1,
-        "net_rating_display": "+1",
-        "net_rating_per_90": "+1.0",
+        "net_rating": 3,
+        "net_rating_display": "+3",
+        "net_rating_per_90": "+3.0",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 20.2,
@@ -4091,9 +4091,9 @@ window.MATCHDAY_TEAMS = {
         "minutes": 90,
         "clean_sheets": 1,
         "buts": 0,
-        "net_rating": 1,
-        "net_rating_display": "+1",
-        "net_rating_per_90": "+1.0",
+        "net_rating": 5,
+        "net_rating_display": "+5",
+        "net_rating_per_90": "+1.57",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 11.4,
@@ -4120,9 +4120,9 @@ window.MATCHDAY_TEAMS = {
         "minutes": 90,
         "clean_sheets": 1,
         "buts": 0,
-        "net_rating": 1,
-        "net_rating_display": "+1",
-        "net_rating_per_90": "+1.0",
+        "net_rating": 6,
+        "net_rating_display": "+6",
+        "net_rating_per_90": "+1.82",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 11.4,
@@ -4149,9 +4149,9 @@ window.MATCHDAY_TEAMS = {
         "minutes": 90,
         "clean_sheets": 1,
         "buts": 0,
-        "net_rating": 1,
-        "net_rating_display": "+1",
-        "net_rating_per_90": "+1.0",
+        "net_rating": 2,
+        "net_rating_display": "+2",
+        "net_rating_per_90": "+0.87",
         "cartons_j": 0,
         "cartons_r": 0,
         "esg_score": 11.4,
@@ -4236,9 +4236,9 @@ window.MATCHDAY_TEAMS = {
         "minutes": 280,
         "clean_sheets": 1,
         "buts": 0,
-        "net_rating": 1,
-        "net_rating_display": "+1",
-        "net_rating_per_90": "+1.0",
+        "net_rating": 0,
+        "net_rating_display": "0",
+        "net_rating_per_90": "0.0",
         "cartons_j": 2,
         "cartons_r": 1,
         "esg_score": 5.1,
@@ -4287,10 +4287,10 @@ window.MATCHDAY_TEAMS = {
     "barometre_coaching": {
       "minute_premier_changement": "51e min",
       "buts_issus_du_banc": 2,
-      "differentiel_post_remplacements": "+10",
-      "buts_marques_post_sub": 12,
+      "differentiel_post_remplacements": "+9",
+      "buts_marques_post_sub": 11,
       "buts_encaisses_post_sub": 2,
-      "constat_tactique": "Coaching à fort impact : différentiel de +10 après les premiers changements.",
+      "constat_tactique": "Coaching à fort impact : différentiel de +9 après les premiers changements.",
       "super_subs": [
         {
           "nom": "Dany D.",
@@ -4363,13 +4363,13 @@ window.MATCHDAY_TEAMS = {
     "scenarios_resilience": {
       "trailed_count": 3,
       "points_after_trailing": 4,
-      "led_count": 6,
-      "win_rate_after_leading": "83.3%",
-      "wins_after_leading": 5,
-      "money_time_for": 4,
+      "led_count": 5,
+      "win_rate_after_leading": "80.0%",
+      "wins_after_leading": 4,
+      "money_time_for": 3,
       "money_time_against": 2,
-      "money_time_diff": "+2",
-      "constat": "Mental de guerrier : 4 points sauvés après avoir été mené et 83.3% de victoires conservées en ouvrant la marque."
+      "money_time_diff": "+1",
+      "constat": "Mental de guerrier : 4 points sauvés après avoir été mené et 80.0% de victoires conservées en ouvrant la marque."
     },
     "profils_endurance": {
       "infatigables": [
@@ -4408,10 +4408,10 @@ window.MATCHDAY_TEAMS = {
       ]
     },
     "diversite_offensive": {
-      "total_buts": 16,
-      "buteurs_distincts": 10,
+      "total_buts": 15,
+      "buteurs_distincts": 9,
       "meilleur_buteur": "Julien D. (3 buts)",
-      "taux_dependance": "18.8%",
+      "taux_dependance": "20.0%",
       "repartition_lignes": {
         "attaque": "46.7%",
         "milieu": "40.0%",
@@ -4439,7 +4439,7 @@ window.MATCHDAY_TEAMS = {
           "buts": 1
         }
       ],
-      "constat": "Danger multi-zones : 10 buteurs différents et seulement 18.8% de dépendance au meilleur réalisateur."
+      "constat": "Danger multi-zones : 9 buteurs différents et seulement 20.0% de dépendance au meilleur réalisateur."
     },
     "contexte_discipline": {
       "total_cartons": 24,
@@ -4527,22 +4527,22 @@ window.MATCHDAY_TEAMS = {
       "taux_invincibilite": 91.7,
       "bilan_global": {
         "matchs": 12,
-        "victoires": 7,
-        "nuls": 4,
+        "victoires": 8,
+        "nuls": 3,
         "defaites": 1,
         "buts_pour": 17,
         "buts_contre": 6,
         "difference": 11
       },
       "bilan_championnat": {
-        "matchs": 4,
-        "victoires": 2,
-        "nuls": 2,
+        "matchs": 6,
+        "victoires": 3,
+        "nuls": 3,
         "defaites": 0,
-        "points": 8,
-        "buts_pour": 6,
-        "buts_contre": 3,
-        "difference": 3,
+        "points": 12,
+        "buts_pour": 13,
+        "buts_contre": 4,
+        "difference": 9,
         "ppm": 2.0
       },
       "ratio_clean_sheet_pct": 58.3,
@@ -4585,7 +4585,7 @@ window.MATCHDAY_TEAMS = {
         {
           "tranche": "76-90+'",
           "label": "76 - 90+ min",
-          "marques": 7,
+          "marques": 6,
           "encaisses": 2
         }
       ],
@@ -4848,7 +4848,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "16/11/2026 à 10:19"
+      "derniere_maj": "16/11/2026 à 18:14"
     },
     "dernier_match": {
       "id": "m_u18_m1_79497787-et-am-c-cys",
@@ -4892,7 +4892,7 @@ window.MATCHDAY_TEAMS = {
       "surface": "Pelouse naturelle",
       "temperature": "4.8 °C",
       "vent": "Faible (6.2 km/h)",
-      "pluie": "Averses possibles (31 %)",
+      "pluie": "Averses possibles (35 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -6559,7 +6559,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "16/11/2026 à 10:19"
+      "derniere_maj": "16/11/2026 à 18:14"
     },
     "dernier_match": {
       "id": "m_senior_f2_j6_stamand",
@@ -6602,7 +6602,7 @@ window.MATCHDAY_TEAMS = {
       "surface": "Pelouse naturelle",
       "temperature": "4.8 °C",
       "vent": "Faible (6.2 km/h)",
-      "pluie": "Averses possibles (31 %)",
+      "pluie": "Averses possibles (35 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -7773,7 +7773,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "16/11/2026 à 10:19"
+      "derniere_maj": "16/11/2026 à 18:14"
     },
     "dernier_match": {
       "id": "m_senior_b_j6_lesquin",
@@ -7816,7 +7816,7 @@ window.MATCHDAY_TEAMS = {
       "surface": "Pelouse naturelle",
       "temperature": "4.8 °C",
       "vent": "Faible (6.2 km/h)",
-      "pluie": "Averses possibles (31 %)",
+      "pluie": "Averses possibles (35 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -8945,7 +8945,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "16/11/2026 à 10:19"
+      "derniere_maj": "16/11/2026 à 18:14"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -8989,7 +8989,7 @@ window.MATCHDAY_TEAMS = {
       "surface": "Pelouse naturelle",
       "temperature": "4.7 °C",
       "vent": "Faible (6.7 km/h)",
-      "pluie": "Averses possibles (27 %)",
+      "pluie": "Averses possibles (39 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -13751,7 +13751,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "16/11/2026 à 10:19"
+      "derniere_maj": "16/11/2026 à 18:14"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -13795,7 +13795,7 @@ window.MATCHDAY_TEAMS = {
       "surface": "Pelouse naturelle",
       "temperature": "4.7 °C",
       "vent": "Faible (6.7 km/h)",
-      "pluie": "Averses possibles (27 %)",
+      "pluie": "Averses possibles (39 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -18557,7 +18557,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "16/11/2026 à 10:19"
+      "derniere_maj": "16/11/2026 à 18:14"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -18601,7 +18601,7 @@ window.MATCHDAY_TEAMS = {
       "surface": "Terrain synthétique",
       "temperature": "4.8 °C",
       "vent": "Faible (6.3 km/h)",
-      "pluie": "Averses possibles (27 %)",
+      "pluie": "Averses possibles (39 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -22452,7 +22452,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "16/11/2026 à 10:19"
+      "derniere_maj": "16/11/2026 à 18:14"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -22496,7 +22496,7 @@ window.MATCHDAY_TEAMS = {
       "surface": "Terrain synthétique",
       "temperature": "4.8 °C",
       "vent": "Faible (6.3 km/h)",
-      "pluie": "Averses possibles (27 %)",
+      "pluie": "Averses possibles (39 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -26347,7 +26347,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "16/11/2026 à 10:19"
+      "derniere_maj": "16/11/2026 à 18:14"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",
@@ -26391,7 +26391,7 @@ window.MATCHDAY_TEAMS = {
       "surface": "Terrain synthétique",
       "temperature": "4.3 °C",
       "vent": "Faible (9.2 km/h)",
-      "pluie": "Averses possibles (30 %)",
+      "pluie": "Averses possibles (33 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -28791,7 +28791,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "16/11/2026 à 10:19"
+      "derniere_maj": "16/11/2026 à 18:14"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",
@@ -28835,7 +28835,7 @@ window.MATCHDAY_TEAMS = {
       "surface": "Terrain synthétique",
       "temperature": "4.3 °C",
       "vent": "Faible (9.2 km/h)",
-      "pluie": "Averses possibles (30 %)",
+      "pluie": "Averses possibles (33 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
