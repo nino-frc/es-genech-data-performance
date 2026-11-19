@@ -8,7 +8,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "16/11/2026 à 18:14"
+      "derniere_maj": "19/11/2026 à 15:49"
     },
     "dernier_match": {
       "id": "chdf_t4_bully_genech",
@@ -82,7 +82,7 @@ window.MATCHDAY_TEAMS = {
     "prochain_match": {
       "competition": "Seniors Régional 3 • Poule D (Journée 7)",
       "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
-      "lieu": "Stade des Tertiales (Valenciennes)",
+      "lieu": "Stade de la Longue Chasse (Valenciennes)",
       "domicile": "VALENCIENNES SUMMER",
       "exterieur": "ES GENECH",
       "comparatif": {
@@ -150,22 +150,22 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Valenciennes",
       "surface": "Terrain synthétique",
-      "temperature": "5.5 °C",
-      "vent": "Faible (5.4 km/h)",
-      "pluie": "Averses possibles (42 %)",
+      "temperature": "3.2 °C",
+      "vent": "Faible (5.2 km/h)",
+      "pluie": "Averses possibles (33 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
+      "nom_arbitre": "Corps Arbitral Ligue LFHF (CRA)",
       "district": "Ligue de Football des Hauts-de-France (CRA)",
-      "niveau": "Arbitre Régional Officiel LFHF",
-      "moyenne_jaunes": "--",
-      "severite": "DÉSIGNATION EN COURS",
-      "badge_color": "#64748b",
-      "style": "Arbitre Officiel Ligue des Hauts-de-France",
-      "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11. Veille disciplinaire : zéro carton évitable pour préserver l'effectif dans la course à la montée en R2.",
-      "est_designe": false
+      "niveau": "Arbitre Régional R3 Officiel",
+      "moyenne_jaunes": "3.4",
+      "severite": "MODÉRÉE",
+      "badge_color": "#d97706",
+      "style": "Trio officiel CRA LFHF (assisté de N. Louvet & E. Canneson). Arbitrage cadré, favorise la fluidité sur synthétique.",
+      "consigne_coach": "Désignation officielle CRA ce jeudi 19/11 (assistants : Nathan LOUVET et Esteban CANNESON). Terrain synthétique au Stade de la Longue Chasse : circulation propre, éviter les contestations et laisser le capitaine échanger avec l'arbitre.",
+      "est_designe": true
     },
     "historique_matchs": [
       {
@@ -4374,12 +4374,12 @@ window.MATCHDAY_TEAMS = {
     "profils_endurance": {
       "infatigables": [
         {
-          "nom": "Tim L.",
+          "nom": "Maxime P.",
           "matchs_90m": 11,
           "pct": "92%"
         },
         {
-          "nom": "Maxime P.",
+          "nom": "Tim L.",
           "matchs_90m": 11,
           "pct": "92%"
         },
@@ -4848,7 +4848,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "16/11/2026 à 18:14"
+      "derniere_maj": "19/11/2026 à 15:49"
     },
     "dernier_match": {
       "id": "m_u18_m1_79497787-et-am-c-cys",
@@ -4890,9 +4890,9 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "4.8 °C",
-      "vent": "Faible (6.2 km/h)",
-      "pluie": "Averses possibles (35 %)",
+      "temperature": "1.9 °C",
+      "vent": "Faible (7.3 km/h)",
+      "pluie": "Averses possibles (33 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -6559,7 +6559,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "16/11/2026 à 18:14"
+      "derniere_maj": "19/11/2026 à 15:49"
     },
     "dernier_match": {
       "id": "m_senior_f2_j6_stamand",
@@ -6600,9 +6600,9 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "4.8 °C",
-      "vent": "Faible (6.2 km/h)",
-      "pluie": "Averses possibles (35 %)",
+      "temperature": "1.9 °C",
+      "vent": "Faible (7.3 km/h)",
+      "pluie": "Averses possibles (33 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -7773,7 +7773,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "16/11/2026 à 18:14"
+      "derniere_maj": "19/11/2026 à 15:49"
     },
     "dernier_match": {
       "id": "m_senior_b_j6_lesquin",
@@ -7814,9 +7814,9 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "4.8 °C",
-      "vent": "Faible (6.2 km/h)",
-      "pluie": "Averses possibles (35 %)",
+      "temperature": "1.9 °C",
+      "vent": "Faible (7.3 km/h)",
+      "pluie": "Averses possibles (33 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -8945,7 +8945,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "16/11/2026 à 18:14"
+      "derniere_maj": "19/11/2026 à 15:49"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -8987,22 +8987,22 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Seclin (Stade Henri Jooris)",
       "surface": "Pelouse naturelle",
-      "temperature": "4.7 °C",
-      "vent": "Faible (6.7 km/h)",
-      "pluie": "Averses possibles (39 %)",
+      "temperature": "1.9 °C",
+      "vent": "Faible (7.2 km/h)",
+      "pluie": "Averses possibles (35 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
+      "nom_arbitre": "Thomas DUTHOIT",
       "district": "Ligue de Football des Hauts-de-France (CRA)",
       "niveau": "Arbitre Régional R2 Officiel",
-      "moyenne_jaunes": "--",
-      "severite": "DÉSIGNATION EN COURS",
-      "badge_color": "#64748b",
-      "style": "Arbitre Officiel Ligue des Hauts-de-France (CRA)",
-      "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11 pour le déplacement à Noyelles s/Lens.",
-      "est_designe": false
+      "moyenne_jaunes": "3.5",
+      "severite": "MODÉRÉE",
+      "badge_color": "#d97706",
+      "style": "Arbitre Régional R2 officiel (assisté de J. Clement & M. Petit). Pédagogue mais rigoureux sur les contestations.",
+      "consigne_coach": "Thomas DUTHOIT désigné par la CRA ce jeudi 19/11 pour le déplacement à Noyelles s/Lens. Rigueur tactique et discipline stricte dans les duels.",
+      "est_designe": true
     },
     "historique_matchs": [
       {
@@ -13751,7 +13751,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "16/11/2026 à 18:14"
+      "derniere_maj": "19/11/2026 à 15:49"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -13793,22 +13793,22 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Seclin (Stade Henri Jooris)",
       "surface": "Pelouse naturelle",
-      "temperature": "4.7 °C",
-      "vent": "Faible (6.7 km/h)",
-      "pluie": "Averses possibles (39 %)",
+      "temperature": "1.9 °C",
+      "vent": "Faible (7.2 km/h)",
+      "pluie": "Averses possibles (35 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
+      "nom_arbitre": "Thomas DUTHOIT",
       "district": "Ligue de Football des Hauts-de-France (CRA)",
       "niveau": "Arbitre Régional R2 Officiel",
-      "moyenne_jaunes": "--",
-      "severite": "DÉSIGNATION EN COURS",
-      "badge_color": "#64748b",
-      "style": "Arbitre Officiel Ligue des Hauts-de-France (CRA)",
-      "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11 pour le déplacement à Noyelles s/Lens.",
-      "est_designe": false
+      "moyenne_jaunes": "3.5",
+      "severite": "MODÉRÉE",
+      "badge_color": "#d97706",
+      "style": "Arbitre Régional R2 officiel (assisté de J. Clement & M. Petit). Pédagogue mais rigoureux sur les contestations.",
+      "consigne_coach": "Thomas DUTHOIT désigné par la CRA ce jeudi 19/11 pour le déplacement à Noyelles s/Lens. Rigueur tactique et discipline stricte dans les duels.",
+      "est_designe": true
     },
     "historique_matchs": [
       {
@@ -18557,7 +18557,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "16/11/2026 à 18:14"
+      "derniere_maj": "19/11/2026 à 15:49"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -18599,22 +18599,22 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Lesquin (Stade Jean-Pierre Papin)",
       "surface": "Terrain synthétique",
-      "temperature": "4.8 °C",
-      "vent": "Faible (6.3 km/h)",
-      "pluie": "Averses possibles (39 %)",
+      "temperature": "1.9 °C",
+      "vent": "Faible (7.6 km/h)",
+      "pluie": "Averses possibles (35 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
+      "nom_arbitre": "Benoit BRUNEAU",
       "district": "Ligue de Football des Hauts-de-France (CRA)",
       "niveau": "Arbitre Régional R2 Officiel",
-      "moyenne_jaunes": "--",
-      "severite": "DÉSIGNATION EN COURS",
-      "badge_color": "#64748b",
-      "style": "Arbitre Officiel Ligue des Hauts-de-France (CRA)",
-      "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11 pour le déplacement à Montigny Gohelle.",
-      "est_designe": false
+      "moyenne_jaunes": "3.4",
+      "severite": "MODÉRÉE",
+      "badge_color": "#d97706",
+      "style": "Arbitre Régional R2 officiel (assisté de A. Benmimouna & J.B. Boursaud). Dialogue constructif avec les capitaines mais siffle vite les fautes tactiques.",
+      "consigne_coach": "Benoit BRUNEAU désigné par la CRA ce jeudi 19/11 pour le déplacement à Montigny Gohelle. Jouer propre et éviter toute faute d'antijeu.",
+      "est_designe": true
     },
     "historique_matchs": [
       {
@@ -22452,7 +22452,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "16/11/2026 à 18:14"
+      "derniere_maj": "19/11/2026 à 15:49"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -22494,22 +22494,22 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Lesquin (Stade Jean-Pierre Papin)",
       "surface": "Terrain synthétique",
-      "temperature": "4.8 °C",
-      "vent": "Faible (6.3 km/h)",
-      "pluie": "Averses possibles (39 %)",
+      "temperature": "1.9 °C",
+      "vent": "Faible (7.6 km/h)",
+      "pluie": "Averses possibles (35 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
+      "nom_arbitre": "Benoit BRUNEAU",
       "district": "Ligue de Football des Hauts-de-France (CRA)",
       "niveau": "Arbitre Régional R2 Officiel",
-      "moyenne_jaunes": "--",
-      "severite": "DÉSIGNATION EN COURS",
-      "badge_color": "#64748b",
-      "style": "Arbitre Officiel Ligue des Hauts-de-France (CRA)",
-      "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11 pour le déplacement à Montigny Gohelle.",
-      "est_designe": false
+      "moyenne_jaunes": "3.4",
+      "severite": "MODÉRÉE",
+      "badge_color": "#d97706",
+      "style": "Arbitre Régional R2 officiel (assisté de A. Benmimouna & J.B. Boursaud). Dialogue constructif avec les capitaines mais siffle vite les fautes tactiques.",
+      "consigne_coach": "Benoit BRUNEAU désigné par la CRA ce jeudi 19/11 pour le déplacement à Montigny Gohelle. Jouer propre et éviter toute faute d'antijeu.",
+      "est_designe": true
     },
     "historique_matchs": [
       {
@@ -26347,7 +26347,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "16/11/2026 à 18:14"
+      "derniere_maj": "19/11/2026 à 15:49"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",
@@ -26389,9 +26389,9 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Esquelbecq (Complexe J.M. Vaesken 2)",
       "surface": "Terrain synthétique",
-      "temperature": "4.3 °C",
-      "vent": "Faible (9.2 km/h)",
-      "pluie": "Averses possibles (33 %)",
+      "temperature": "1.4 °C",
+      "vent": "Faible (7.7 km/h)",
+      "pluie": "Averses possibles (27 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -28791,7 +28791,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "16/11/2026 à 18:14"
+      "derniere_maj": "19/11/2026 à 15:49"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",
@@ -28833,9 +28833,9 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Esquelbecq (Complexe J.M. Vaesken 2)",
       "surface": "Terrain synthétique",
-      "temperature": "4.3 °C",
-      "vent": "Faible (9.2 km/h)",
-      "pluie": "Averses possibles (33 %)",
+      "temperature": "1.4 °C",
+      "vent": "Faible (7.7 km/h)",
+      "pluie": "Averses possibles (27 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },

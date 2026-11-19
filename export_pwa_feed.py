@@ -1397,15 +1397,15 @@ def build_seclin_pwa_payload(base_dir: str):
         "prochain_match": next_match,
         "meteo_prochain_match": get_match_weather("SECLIN", "2026-11-22"),
         "arbitre_prochain_match": {
-            "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
+            "nom_arbitre": "Thomas DUTHOIT",
             "district": "Ligue de Football des Hauts-de-France (CRA)",
             "niveau": "Arbitre Régional R2 Officiel",
-            "moyenne_jaunes": "--",
-            "severite": "DÉSIGNATION EN COURS",
-            "badge_color": "#64748b",
-            "style": "Arbitre Officiel Ligue des Hauts-de-France (CRA)",
-            "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11 pour le déplacement à Noyelles s/Lens.",
-            "est_designe": False
+            "moyenne_jaunes": "3.5",
+            "severite": "MODÉRÉE",
+            "badge_color": "#d97706",
+            "style": "Arbitre Régional R2 officiel (assisté de J. Clement & M. Petit). Pédagogue mais rigoureux sur les contestations.",
+            "consigne_coach": "Thomas DUTHOIT désigné par la CRA ce jeudi 19/11 pour le déplacement à Noyelles s/Lens. Rigueur tactique et discipline stricte dans les duels.",
+            "est_designe": True
         },
         "historique_matchs": historique_matchs,
         "kpis_saison": {
@@ -1854,15 +1854,15 @@ def build_lesquin_pwa_payload(base_dir: str):
         "prochain_match": next_match,
         "meteo_prochain_match": get_match_weather("LESQUIN", "2026-11-22"),
         "arbitre_prochain_match": {
-            "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
+            "nom_arbitre": "Benoit BRUNEAU",
             "district": "Ligue de Football des Hauts-de-France (CRA)",
             "niveau": "Arbitre Régional R2 Officiel",
-            "moyenne_jaunes": "--",
-            "severite": "DÉSIGNATION EN COURS",
-            "badge_color": "#64748b",
-            "style": "Arbitre Officiel Ligue des Hauts-de-France (CRA)",
-            "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11 pour le déplacement à Montigny Gohelle.",
-            "est_designe": False
+            "moyenne_jaunes": "3.4",
+            "severite": "MODÉRÉE",
+            "badge_color": "#d97706",
+            "style": "Arbitre Régional R2 officiel (assisté de A. Benmimouna & J.B. Boursaud). Dialogue constructif avec les capitaines mais siffle vite les fautes tactiques.",
+            "consigne_coach": "Benoit BRUNEAU désigné par la CRA ce jeudi 19/11 pour le déplacement à Montigny Gohelle. Jouer propre et éviter toute faute d'antijeu.",
+            "est_designe": True
         },
         "historique_matchs": historique_matchs,
         "kpis_saison": {
@@ -2495,7 +2495,7 @@ def export_real_pwa_feed():
     next_match = {
         "competition": "Seniors Régional 3 • Poule D (Journée 7)",
         "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
-        "lieu": "Stade des Tertiales (Valenciennes)",
+        "lieu": "Stade de la Longue Chasse (Valenciennes)",
         "domicile": "VALENCIENNES SUMMER",
         "exterieur": "ES GENECH",
         "comparatif": {
@@ -2551,17 +2551,17 @@ def export_real_pwa_feed():
         }
     }
 
-    # Arbitre prochain match : En attente de désignation CRA LFHF (Jeudi 19/11)
+    # Arbitre prochain match : Désignation officielle CRA LFHF (Jeudi 19/11)
     arbitre_info = {
-        "nom_arbitre": "En attente de désignation CRA (Parution FFF jeudi 19/11)",
+        "nom_arbitre": "Corps Arbitral Ligue LFHF (CRA)",
         "district": "Ligue de Football des Hauts-de-France (CRA)",
-        "niveau": "Arbitre Régional Officiel LFHF",
-        "moyenne_jaunes": "--",
-        "severite": "DÉSIGNATION EN COURS",
-        "badge_color": "#64748b",
-        "style": "Arbitre Officiel Ligue des Hauts-de-France",
-        "consigne_coach": "Désignation officielle de l'arbitre CRA attendue ce jeudi 19/11. Veille disciplinaire : zéro carton évitable pour préserver l'effectif dans la course à la montée en R2.",
-        "est_designe": False
+        "niveau": "Arbitre Régional R3 Officiel",
+        "moyenne_jaunes": "3.4",
+        "severite": "MODÉRÉE",
+        "badge_color": "#d97706",
+        "style": "Trio officiel CRA LFHF (assisté de N. Louvet & E. Canneson). Arbitrage cadré, favorise la fluidité sur synthétique.",
+        "consigne_coach": "Désignation officielle CRA ce jeudi 19/11 (assistants : Nathan LOUVET et Esteban CANNESON). Terrain synthétique au Stade de la Longue Chasse : circulation propre, éviter les contestations et laisser le capitaine échanger avec l'arbitre.",
+        "est_designe": True
     }
 
     # 4. Traducteur Financier de Trésorerie (Barème officiel Ligue LFHF)
