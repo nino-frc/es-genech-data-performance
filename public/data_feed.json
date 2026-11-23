@@ -8,7 +8,7 @@
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "19/11/2026 à 15:49"
+      "derniere_maj": "23/11/2026 à 14:58"
     },
     "dernier_match": {
       "id": "chdf_t4_bully_genech",
@@ -81,12 +81,13 @@
     ],
     "prochain_match": {
       "competition": "Seniors Régional 3 • Poule D (Journée 7)",
-      "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+      "date_heure": "REPORTÉ (Date FFF en attente de reprogrammation)",
       "lieu": "Stade de la Longue Chasse (Valenciennes)",
       "domicile": "VALENCIENNES SUMMER",
       "exterieur": "ES GENECH",
+      "statut": "REPORTE",
       "comparatif": {
-        "titre": "Seniors Régional 3 • Journée 7",
+        "titre": "Seniors Régional 3 • Journée 7 (Reportée)",
         "adversaire_nom": "Valenciennes Summer",
         "adversaire_rang": "6e (R3)",
         "adversaire_pts": 10,
@@ -99,9 +100,9 @@
         "club_buts_contre": 4
       },
       "alertes": [
-        "Déplacement chez le 6ème (Valenciennes Summer, 10 pts), équipe accrocheuse sur terrain synthétique.",
-        "Genech arrive avec le statut de dauphin invaincu (2e, 12 pts, meilleure défense du groupe avec 4 buts concédés) et qualifié en Coupe après son exploit à Bully (R2).",
-        "Enjeu capital : victoire impérative pour maintenir la pression sur le leader Hénin-Beaumont (13 pts) dans la course à la montée en R2."
+        "⚠️ MATCH REPORTÉ : Intempéries et arrêtés municipaux sur les pelouses de la région le week-end du 21-22/11. Seuls des matchs amicaux non officiels ont eu lieu.",
+        "En attente de la nouvelle date fixée par la Commission des Compétitions de la Ligue (LFHF).",
+        "Statut officiel préservé : Genech reste 2e invaincu en R3 (12 pts, 6 m., 4 buts concédés) et qualifié en Coupe des Hauts-de-France."
       ],
       "stats_comparatives": {
         "genech": {
@@ -150,9 +151,9 @@
     "meteo_prochain_match": {
       "lieu": "Valenciennes",
       "surface": "Terrain synthétique",
-      "temperature": "3.2 °C",
-      "vent": "Faible (5.2 km/h)",
-      "pluie": "Averses possibles (33 %)",
+      "temperature": "2.4 °C",
+      "vent": "Faible (15.4 km/h)",
+      "pluie": "Averses possibles (29 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -4374,12 +4375,12 @@
     "profils_endurance": {
       "infatigables": [
         {
-          "nom": "Maxime P.",
+          "nom": "Tim L.",
           "matchs_90m": 11,
           "pct": "92%"
         },
         {
-          "nom": "Tim L.",
+          "nom": "Maxime P.",
           "matchs_90m": 11,
           "pct": "92%"
         },
@@ -4848,7 +4849,7 @@
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "19/11/2026 à 15:49"
+      "derniere_maj": "23/11/2026 à 14:58"
     },
     "dernier_match": {
       "id": "m_u18_m1_79497787-et-am-c-cys",
@@ -4863,45 +4864,44 @@
     },
     "evenements_dernier_match": [],
     "prochain_match": {
-      "competition": "D1 Poule Unique • Journée 7",
-      "date_heure": "2026-11-21 17:15",
+      "competition": "D1 Poule Unique",
+      "date_heure": "Prochaine journée FFF en cours de planification",
       "lieu": "Parc des Sports (Genech)",
-      "domicile": "GENECH ES",
-      "exterieur": "RONCHIN US",
+      "domicile": "ES GENECH",
+      "exterieur": "ADVERSAIRE",
       "comparatif": {
-        "titre": "Comparatif de Performance (18 19 D1 District)",
-        "adversaire_nom": "Cysoing WB EAC",
-        "adversaire_rang": "3e",
-        "adversaire_pts": 10,
-        "adversaire_buts_pour": 14,
-        "adversaire_buts_contre": 9,
-        "club_nom": "ES Genech U18",
-        "club_rang": "1er",
+        "titre": "Bilan & Projection (U19 / U18 (D1 District))",
+        "adversaire_nom": "Adversaire FFF",
+        "adversaire_rang": "5e",
+        "adversaire_pts": 6,
+        "adversaire_buts_pour": 8,
+        "adversaire_buts_contre": 8,
+        "club_nom": "U19 / U18 (D1 District)",
+        "club_rang": "4e",
         "club_pts": 15,
-        "club_buts_pour": 29,
-        "club_buts_contre": 7
+        "club_buts_pour": 31,
+        "club_buts_contre": 11
       },
       "alertes": [
-        "Derby de la Pévèle & Choc du haut de tableau : Genech leader invaincu (15 pts) face à Cysoing (3e, 10 pts).",
-        "Attaque numéro 1 de la division pour Genech : 29 buts inscrits en 5 journées (5.8 buts/match).",
-        "Cysoing très solide à domicile (2 victoires en 2 réceptions cette saison)."
+        "Calendrier officiel FFF en cours de validation.",
+        "Séances d'entraînement maintenues."
       ]
     },
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "1.9 °C",
-      "vent": "Faible (7.3 km/h)",
-      "pluie": "Averses possibles (33 %)",
+      "temperature": "2.2 °C",
+      "vent": "Faible (14.8 km/h)",
+      "pluie": "Averses possibles (35 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Arbitre Officiel District (D1 U18)",
-      "severite": "VIGILANCE ENGAGEMENT (3.0 jaunes / match)",
-      "moyenne_jaunes": 3.0,
-      "badge_color": "#d97706",
-      "consigne_coach": "Atmosphère derby. Garder la maîtrise émotionnelle et s'appuyer sur la vitesse des transitions."
+      "nom_arbitre": "Désignation District en attente",
+      "severite": "STANDARD",
+      "moyenne_jaunes": 2.2,
+      "badge_color": "#0284c7",
+      "consigne_coach": "Discipline collective et respect des décisions officielles."
     },
     "historique_matchs": [
       {
@@ -6559,7 +6559,7 @@
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "19/11/2026 à 15:49"
+      "derniere_maj": "23/11/2026 à 14:58"
     },
     "dernier_match": {
       "id": "m_senior_f2_j6_stamand",
@@ -6574,11 +6574,11 @@
     },
     "evenements_dernier_match": [],
     "prochain_match": {
-      "competition": "Interdistricts Poule C • Journée 6",
-      "date_heure": "2026-11-22 10:30",
-      "lieu": "Terrain adverse",
-      "domicile": "FEIGNIES AULNOYE EFA",
-      "exterieur": "GENECH ES",
+      "competition": "Interdistricts Féminin • Journée 5",
+      "date_heure": "08/11/2026 à 10:30",
+      "lieu": "Parc des Sports (Genech)",
+      "domicile": "ES GENECH",
+      "exterieur": "FEIGNIES AULNOYE EFA",
       "comparatif": {
         "titre": "Comparatif de Performance (Interdistricts Féminin)",
         "adversaire_nom": "Feignies Aulnoye EFA",
@@ -6600,9 +6600,9 @@
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "1.9 °C",
-      "vent": "Faible (7.3 km/h)",
-      "pluie": "Averses possibles (33 %)",
+      "temperature": "2.2 °C",
+      "vent": "Faible (14.8 km/h)",
+      "pluie": "Averses possibles (35 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -7773,7 +7773,7 @@
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "19/11/2026 à 15:49"
+      "derniere_maj": "23/11/2026 à 14:58"
     },
     "dernier_match": {
       "id": "m_senior_b_j6_lesquin",
@@ -7788,44 +7788,44 @@
     },
     "evenements_dernier_match": [],
     "prochain_match": {
-      "competition": "D2 Poule C • Journée 7",
-      "date_heure": "2026-11-22 14:30",
+      "competition": "D2 Poule C",
+      "date_heure": "Prochaine journée FFF en cours de planification",
       "lieu": "Parc des Sports (Genech)",
-      "domicile": "GENECH ES 2",
-      "exterieur": "ROUBAIX SC 2",
+      "domicile": "ES GENECH",
+      "exterieur": "ADVERSAIRE",
       "comparatif": {
-        "titre": "Comparatif de Performance (D2 Poule C)",
-        "adversaire_nom": "Roubaix RC 2",
-        "adversaire_rang": "12e",
-        "adversaire_pts": 1,
-        "adversaire_buts_pour": 5,
-        "adversaire_buts_contre": 10,
-        "club_nom": "ES Genech 2",
-        "club_rang": "8e",
-        "club_pts": 4,
-        "club_buts_pour": 10,
-        "club_buts_contre": 12
+        "titre": "Bilan & Projection (Séniors B (D2 Réserve))",
+        "adversaire_nom": "Adversaire FFF",
+        "adversaire_rang": "5e",
+        "adversaire_pts": 6,
+        "adversaire_buts_pour": 8,
+        "adversaire_buts_contre": 8,
+        "club_nom": "Séniors B (D2 Réserve)",
+        "club_rang": "4e",
+        "club_pts": 8,
+        "club_buts_pour": 17,
+        "club_buts_contre": 17
       },
       "alertes": [
-        "Roubaix RC 2 en difficulté défensive : lanterne rouge de D2 avec 10 buts concédés en 3 matchs.",
-        "Genech 2 à domicile : occasion idéale de signer un 2e succès et de basculer en première partie de tableau."
+        "Calendrier officiel FFF en cours de validation.",
+        "Séances d'entraînement maintenues."
       ]
     },
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "1.9 °C",
-      "vent": "Faible (7.3 km/h)",
-      "pluie": "Averses possibles (33 %)",
+      "temperature": "2.2 °C",
+      "vent": "Faible (14.8 km/h)",
+      "pluie": "Averses possibles (35 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Arbitre Officiel District (Désignation Flandres)",
-      "severite": "STANDARD (2.5 jaunes / match)",
-      "moyenne_jaunes": 2.5,
+      "nom_arbitre": "Désignation District en attente",
+      "severite": "STANDARD",
+      "moyenne_jaunes": 2.2,
       "badge_color": "#0284c7",
-      "consigne_coach": "Arbitre officiel de District. Veiller au calme dans les duels et laisser le capitaine dialoguer."
+      "consigne_coach": "Discipline collective et respect des décisions officielles."
     },
     "historique_matchs": [
       {
@@ -8945,7 +8945,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "19/11/2026 à 15:49"
+      "derniere_maj": "23/11/2026 à 14:58"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -8960,11 +8960,12 @@
     },
     "evenements_dernier_match": [],
     "prochain_match": {
-      "competition": "Régional 2 (Poule B) • Journée 7",
-      "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+      "competition": "Régional 2 (Poule B) • Journée 7 (Reportée)",
+      "date_heure": "REPORTÉ (Date FFF en attente de reprogrammation)",
       "lieu": "Stade Léo Lagrange (Noyelles-sous-Lens)",
       "domicile": "NOYELLES S/LENS US",
       "exterieur": "SECLIN FC",
+      "statut": "REPORTE",
       "comparatif": {
         "titre": "Comparatif de Performance (R2 Poule B)",
         "adversaire_nom": "Noyelles s/Lens US",
@@ -8987,9 +8988,9 @@
     "meteo_prochain_match": {
       "lieu": "Seclin (Stade Henri Jooris)",
       "surface": "Pelouse naturelle",
-      "temperature": "1.9 °C",
-      "vent": "Faible (7.2 km/h)",
-      "pluie": "Averses possibles (35 %)",
+      "temperature": "2.2 °C",
+      "vent": "Faible (13.3 km/h)",
+      "pluie": "Averses possibles (34 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -13751,7 +13752,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "19/11/2026 à 15:49"
+      "derniere_maj": "23/11/2026 à 14:58"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -13766,11 +13767,12 @@
     },
     "evenements_dernier_match": [],
     "prochain_match": {
-      "competition": "Régional 2 (Poule B) • Journée 7",
-      "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+      "competition": "Régional 2 (Poule B) • Journée 7 (Reportée)",
+      "date_heure": "REPORTÉ (Date FFF en attente de reprogrammation)",
       "lieu": "Stade Léo Lagrange (Noyelles-sous-Lens)",
       "domicile": "NOYELLES S/LENS US",
       "exterieur": "SECLIN FC",
+      "statut": "REPORTE",
       "comparatif": {
         "titre": "Comparatif de Performance (R2 Poule B)",
         "adversaire_nom": "Noyelles s/Lens US",
@@ -13793,9 +13795,9 @@
     "meteo_prochain_match": {
       "lieu": "Seclin (Stade Henri Jooris)",
       "surface": "Pelouse naturelle",
-      "temperature": "1.9 °C",
-      "vent": "Faible (7.2 km/h)",
-      "pluie": "Averses possibles (35 %)",
+      "temperature": "2.2 °C",
+      "vent": "Faible (13.3 km/h)",
+      "pluie": "Averses possibles (34 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -18557,7 +18559,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "19/11/2026 à 15:49"
+      "derniere_maj": "23/11/2026 à 14:58"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -18572,11 +18574,12 @@
     },
     "evenements_dernier_match": [],
     "prochain_match": {
-      "competition": "Régional 2 (Poule B) • Journée 7",
-      "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+      "competition": "Régional 2 (Poule B) • Journée 7 (Reportée)",
+      "date_heure": "REPORTÉ (Date FFF en attente de reprogrammation)",
       "lieu": "Stade Municipal (Montigny-en-Gohelle)",
       "domicile": "MONTIGNY GOHELLE FC",
       "exterieur": "US LESQUIN",
+      "statut": "REPORTE",
       "comparatif": {
         "titre": "Comparatif de Performance (R2 Poule B)",
         "adversaire_nom": "Montigny Gohelle FC",
@@ -18599,9 +18602,9 @@
     "meteo_prochain_match": {
       "lieu": "Lesquin (Stade Jean-Pierre Papin)",
       "surface": "Terrain synthétique",
-      "temperature": "1.9 °C",
-      "vent": "Faible (7.6 km/h)",
-      "pluie": "Averses possibles (35 %)",
+      "temperature": "2.0 °C",
+      "vent": "Faible (14.8 km/h)",
+      "pluie": "Averses possibles (34 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -22452,7 +22455,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "19/11/2026 à 15:49"
+      "derniere_maj": "23/11/2026 à 14:58"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -22467,11 +22470,12 @@
     },
     "evenements_dernier_match": [],
     "prochain_match": {
-      "competition": "Régional 2 (Poule B) • Journée 7",
-      "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+      "competition": "Régional 2 (Poule B) • Journée 7 (Reportée)",
+      "date_heure": "REPORTÉ (Date FFF en attente de reprogrammation)",
       "lieu": "Stade Municipal (Montigny-en-Gohelle)",
       "domicile": "MONTIGNY GOHELLE FC",
       "exterieur": "US LESQUIN",
+      "statut": "REPORTE",
       "comparatif": {
         "titre": "Comparatif de Performance (R2 Poule B)",
         "adversaire_nom": "Montigny Gohelle FC",
@@ -22494,9 +22498,9 @@
     "meteo_prochain_match": {
       "lieu": "Lesquin (Stade Jean-Pierre Papin)",
       "surface": "Terrain synthétique",
-      "temperature": "1.9 °C",
-      "vent": "Faible (7.6 km/h)",
-      "pluie": "Averses possibles (35 %)",
+      "temperature": "2.0 °C",
+      "vent": "Faible (14.8 km/h)",
+      "pluie": "Averses possibles (34 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -26347,7 +26351,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "19/11/2026 à 15:49"
+      "derniere_maj": "23/11/2026 à 14:58"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",
@@ -26362,11 +26366,12 @@
     },
     "evenements_dernier_match": [],
     "prochain_match": {
-      "competition": "Régional 2 (Poule A) • Journée 7",
-      "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+      "competition": "Régional 2 (Poule A) • Journée 7 (Reportée)",
+      "date_heure": "REPORTÉ (Date FFF en attente de reprogrammation)",
       "lieu": "Stade Municipal (Coquelles)",
       "domicile": "COQUELLES SC",
       "exterieur": "ESQUELBECQ US",
+      "statut": "REPORTE",
       "comparatif": {
         "titre": "Comparatif de Performance (R2 Poule A)",
         "adversaire_nom": "Coquelles SC",
@@ -26389,9 +26394,9 @@
     "meteo_prochain_match": {
       "lieu": "Esquelbecq (Complexe J.M. Vaesken 2)",
       "surface": "Terrain synthétique",
-      "temperature": "1.4 °C",
-      "vent": "Faible (7.7 km/h)",
-      "pluie": "Averses possibles (27 %)",
+      "temperature": "3.3 °C",
+      "vent": "Faible (12.8 km/h)",
+      "pluie": "Averses possibles (39 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
@@ -28791,7 +28796,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "19/11/2026 à 15:49"
+      "derniere_maj": "23/11/2026 à 14:58"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",
@@ -28806,11 +28811,12 @@
     },
     "evenements_dernier_match": [],
     "prochain_match": {
-      "competition": "Régional 2 (Poule A) • Journée 7",
-      "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+      "competition": "Régional 2 (Poule A) • Journée 7 (Reportée)",
+      "date_heure": "REPORTÉ (Date FFF en attente de reprogrammation)",
       "lieu": "Stade Municipal (Coquelles)",
       "domicile": "COQUELLES SC",
       "exterieur": "ESQUELBECQ US",
+      "statut": "REPORTE",
       "comparatif": {
         "titre": "Comparatif de Performance (R2 Poule A)",
         "adversaire_nom": "Coquelles SC",
@@ -28833,9 +28839,9 @@
     "meteo_prochain_match": {
       "lieu": "Esquelbecq (Complexe J.M. Vaesken 2)",
       "surface": "Terrain synthétique",
-      "temperature": "1.4 °C",
-      "vent": "Faible (7.7 km/h)",
-      "pluie": "Averses possibles (27 %)",
+      "temperature": "3.3 °C",
+      "vent": "Faible (12.8 km/h)",
+      "pluie": "Averses possibles (39 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },

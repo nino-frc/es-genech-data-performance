@@ -1223,11 +1223,12 @@ def build_seclin_pwa_payload(base_dir: str):
             })
 
     next_match = {
-        "competition": "Régional 2 (Poule B) • Journée 7",
-        "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+        "competition": "Régional 2 (Poule B) • Journée 7 (Reportée)",
+        "date_heure": "REPORTÉ (Date FFF en attente de reprogrammation)",
         "lieu": "Stade Léo Lagrange (Noyelles-sous-Lens)",
         "domicile": "NOYELLES S/LENS US",
         "exterieur": "SECLIN FC",
+        "statut": "REPORTE",
         "comparatif": {
             "titre": "Comparatif de Performance (R2 Poule B)",
             "adversaire_nom": "Noyelles s/Lens US",
@@ -1555,11 +1556,12 @@ def build_lesquin_pwa_payload(base_dir: str):
             })
 
     next_match = {
-        "competition": "Régional 2 (Poule B) • Journée 7",
-        "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+        "competition": "Régional 2 (Poule B) • Journée 7 (Reportée)",
+        "date_heure": "REPORTÉ (Date FFF en attente de reprogrammation)",
         "lieu": "Stade Municipal (Montigny-en-Gohelle)",
         "domicile": "MONTIGNY GOHELLE FC",
         "exterieur": "US LESQUIN",
+        "statut": "REPORTE",
         "comparatif": {
             "titre": "Comparatif de Performance (R2 Poule B)",
             "adversaire_nom": "Montigny Gohelle FC",
@@ -2004,11 +2006,12 @@ def build_esquelbecq_pwa_payload(base_dir: str):
             })
 
     next_match = {
-        "competition": "Régional 2 (Poule A) • Journée 7",
-        "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+        "competition": "Régional 2 (Poule A) • Journée 7 (Reportée)",
+        "date_heure": "REPORTÉ (Date FFF en attente de reprogrammation)",
         "lieu": "Stade Municipal (Coquelles)",
         "domicile": "COQUELLES SC",
         "exterieur": "ESQUELBECQ US",
+        "statut": "REPORTE",
         "comparatif": {
             "titre": "Comparatif de Performance (R2 Poule A)",
             "adversaire_nom": "Coquelles SC",
@@ -2491,15 +2494,16 @@ def export_real_pwa_feed():
                 "detail": ev["detail"]
             })
 
-    # 3. Prochain Match : VALENCIENNES SUMMER vs ES GENECH (Seniors R3 • Journée 7, Dimanche 22/11 à 14h30)
+    # 3. Prochain Match : VALENCIENNES SUMMER vs ES GENECH (Seniors R3 • Journée 7, Initialement prévue le 22/11, REPORTÉ)
     next_match = {
         "competition": "Seniors Régional 3 • Poule D (Journée 7)",
-        "date_heure": "Dimanche 22 Novembre 2026 à 14h30",
+        "date_heure": "REPORTÉ (Date FFF en attente de reprogrammation)",
         "lieu": "Stade de la Longue Chasse (Valenciennes)",
         "domicile": "VALENCIENNES SUMMER",
         "exterieur": "ES GENECH",
+        "statut": "REPORTE",
         "comparatif": {
-            "titre": "Seniors Régional 3 • Journée 7",
+            "titre": "Seniors Régional 3 • Journée 7 (Reportée)",
             "adversaire_nom": "Valenciennes Summer",
             "adversaire_rang": "6e (R3)",
             "adversaire_pts": 10,
@@ -2512,9 +2516,9 @@ def export_real_pwa_feed():
             "club_buts_contre": 4
         },
         "alertes": [
-            "Déplacement chez le 6ème (Valenciennes Summer, 10 pts), équipe accrocheuse sur terrain synthétique.",
-            "Genech arrive avec le statut de dauphin invaincu (2e, 12 pts, meilleure défense du groupe avec 4 buts concédés) et qualifié en Coupe après son exploit à Bully (R2).",
-            "Enjeu capital : victoire impérative pour maintenir la pression sur le leader Hénin-Beaumont (13 pts) dans la course à la montée en R2."
+            "⚠️ MATCH REPORTÉ : Intempéries et arrêtés municipaux sur les pelouses de la région le week-end du 21-22/11. Seuls des matchs amicaux non officiels ont eu lieu.",
+            "En attente de la nouvelle date fixée par la Commission des Compétitions de la Ligue (LFHF).",
+            "Statut officiel préservé : Genech reste 2e invaincu en R3 (12 pts, 6 m., 4 buts concédés) et qualifié en Coupe des Hauts-de-France."
         ],
         "stats_comparatives": {
             "genech": {
