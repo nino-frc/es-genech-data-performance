@@ -408,7 +408,10 @@ function openMatchDetailModal(matchIndex) {
   document.getElementById('detailModalScoreDisplay').textContent = m.score_display;
 
   const badgeEl = document.getElementById('detailModalResultBadge');
-  if (m.resultat === 'V') {
+  if (m.resultat === 'R' || m.statut === 'REPORTE') {
+    badgeEl.textContent = m.resultat_label || 'Reporté';
+    badgeEl.className = 'match-detail-result-badge score-pill-postponed';
+  } else if (m.resultat === 'V') {
     badgeEl.textContent = m.resultat_label || 'Victoire';
     badgeEl.className = 'match-detail-result-badge score-pill-win';
   } else if (m.resultat === 'N') {
@@ -1617,6 +1620,7 @@ function renderInterface(data) {
   const awayEl = document.getElementById('awayTeamName');
   const scoreEl = document.getElementById('matchScoreDisplay');
   const metaEl = document.getElementById('matchMetaInfo');
+  const statusBadge = document.getElementById('matchStatusBadge');
 
   if (homeEl) {
     homeEl.innerHTML = match.domicile && match.domicile.toUpperCase().includes('GENECH') ? `<strong>${match.domicile}</strong>` : (match.domicile || '--');
@@ -1628,8 +1632,51 @@ function renderInterface(data) {
   const awayLogoEl = document.getElementById('awayTeamLogo');
   if (homeLogoEl) homeLogoEl.src = getClubLogo(match.domicile);
   if (awayLogoEl) awayLogoEl.src = getClubLogo(match.exterieur);
-  if (scoreEl && match.score_domicile !== undefined && match.score_exterieur !== undefined) {
-    scoreEl.textContent = match.score_display || `${match.score_domicile} - ${match.score_exterieur}`;
+
+  if (statusBadge) {
+    if (match.statut === 'REPORTE' || match.score_display === 'REPORTÉ' || (match.score_display && match.score_display.toUpperCase().includes('REPORT'))) {
+      statusBadge.textContent = 'DERNIER MATCH • REPORTÉ (INTEMPÉRIES)';
+      statusBadge.style.background = '#fef3c7';
+      statusBadge.style.color = '#b45309';
+      statusBadge.style.borderColor = '#fde68a';
+    } else {
+      statusBadge.textContent = 'DERNIER RÉSULTAT OFFICIEL';
+      statusBadge.style.background = '';
+      statusBadge.style.color = '';
+      statusBadge.style.borderColor = '';
+    }
+  }
+
+  if (scoreEl) {
+    if (match.statut === 'REPORTE' || match.score_display === 'REPORTÉ' || (match.score_display && match.score_display.toUpperCase().includes('REPORT'))) {
+      scoreEl.textContent = 'REPORTÉ';
+      scoreEl.style.fontSize = '17px';
+      scoreEl.style.letterSpacing = '1px';
+      scoreEl.style.padding = '5px 16px';
+      scoreEl.style.borderColor = '#f59e0b';
+      scoreEl.style.color = '#fef08a';
+    } else if (match.score_display) {
+      scoreEl.textContent = match.score_display;
+      scoreEl.style.fontSize = '';
+      scoreEl.style.letterSpacing = '';
+      scoreEl.style.padding = '';
+      scoreEl.style.borderColor = '';
+      scoreEl.style.color = '';
+    } else if (match.score_domicile !== undefined && match.score_domicile !== null && match.score_exterieur !== undefined && match.score_exterieur !== null) {
+      scoreEl.textContent = `${match.score_domicile} - ${match.score_exterieur}`;
+      scoreEl.style.fontSize = '';
+      scoreEl.style.letterSpacing = '';
+      scoreEl.style.padding = '';
+      scoreEl.style.borderColor = '';
+      scoreEl.style.color = '';
+    } else {
+      scoreEl.textContent = 'REPORTÉ';
+      scoreEl.style.fontSize = '17px';
+      scoreEl.style.letterSpacing = '1px';
+      scoreEl.style.padding = '5px 16px';
+      scoreEl.style.borderColor = '#f59e0b';
+      scoreEl.style.color = '#fef08a';
+    }
   }
   if (metaEl) {
     metaEl.textContent = `${match.competition || ''} • ${match.date_heure || ''}`;
@@ -1652,6 +1699,7 @@ function renderInterface(data) {
   let dynChampCS = 0, dynCupCS = 0;
 
   kpiHistoryList.forEach(m => {
+    if (m.statut === 'REPORTE' || m.resultat === 'R' || m.score_display === 'REPORTÉ') return;
     const isCup = m.comp_type === 'CDF' || (m.competition && (m.competition.toLowerCase().includes('coupe') || m.competition.toLowerCase().includes('gambardella')));
     const isClubDom = (m.domicile && (m.domicile.toUpperCase().includes('GENECH') || m.domicile.toUpperCase().includes('SECLIN') || m.domicile.toUpperCase().includes('LESQUIN') || m.domicile.toUpperCase().includes('ESQUELBECQ')));
     const scored = isClubDom ? Number(m.score_domicile ?? 0) : Number(m.score_exterieur ?? 0);
@@ -1802,7 +1850,11 @@ function renderInterface(data) {
       timelineContainer.innerHTML = eventsHtml;
       timelineContainer.classList.remove('skeleton');
     } else {
-      timelineContainer.innerHTML = "<div style='color: var(--text-light); font-size: 11px; text-align: center; padding: 14px;'>Aucun événement officiel renseigné.</div>";
+      if (match.statut === 'REPORTE' || match.score_display === 'REPORTÉ') {
+        timelineContainer.innerHTML = "<div style='color: #b45309; background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; font-size: 11.5px; text-align: center; padding: 14px 10px; margin: 4px 0;'><strong>⚠️ Rencontre non disputée :</strong> Match officiellement reporté (intempéries / arrêtés municipaux). Aucun événement FMI enregistré.</div>";
+      } else {
+        timelineContainer.innerHTML = "<div style='color: var(--text-light); font-size: 11px; text-align: center; padding: 14px;'>Aucun événement officiel renseigné.</div>";
+      }
       timelineContainer.classList.remove('skeleton');
     }
   }
@@ -2127,7 +2179,10 @@ function renderInterface(data) {
       displayMatches.forEach((m, idx) => {
         let pillClass = 'score-pill-win';
         let tagClass = 'win';
-        if (m.resultat === 'N') {
+        if (m.resultat === 'R' || m.statut === 'REPORTE') {
+          pillClass = 'score-pill-postponed';
+          tagClass = 'postponed';
+        } else if (m.resultat === 'N') {
           pillClass = 'score-pill-draw';
           tagClass = 'draw';
         } else if (m.resultat === 'D') {

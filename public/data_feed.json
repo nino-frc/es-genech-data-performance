@@ -8,101 +8,44 @@
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "23/11/2026 à 14:58"
+      "derniere_maj": "23/11/2026 à 15:12"
     },
     "dernier_match": {
-      "id": "chdf_t4_bully_genech",
-      "competition": "Coupe des Hauts-de-France (4e Tour)",
-      "domicile": "ES BULLY-LES-MINES",
-      "exterieur": "ES GENECH",
-      "score_domicile": 0,
-      "score_exterieur": 0,
-      "score_display": "0 - 0 (TAB 5 - 6)",
-      "date_heure": "2026-11-15 14:30",
-      "statut": "TERMINE"
-    },
-    "evenements_dernier_match": [
-      {
-        "minute": 46,
-        "type": "CHANGEMENT",
-        "equipe": "GENECH ES",
-        "acteur": "Giovany C.",
-        "detail": "GIOVANY C. remplace JEAN PAUL B."
-      },
-      {
-        "minute": 57,
-        "type": "CHANGEMENT",
-        "equipe": "ES BULLY-LES-MINES",
-        "acteur": "Thomas C.",
-        "detail": "THOMAS C. remplace MATHIS B."
-      },
-      {
-        "minute": 57,
-        "type": "CHANGEMENT",
-        "equipe": "ES BULLY-LES-MINES",
-        "acteur": "Tom F.",
-        "detail": "TOM F. remplace ALEXIS G."
-      },
-      {
-        "minute": 57,
-        "type": "CHANGEMENT",
-        "equipe": "ES BULLY-LES-MINES",
-        "acteur": "Aurelien K.",
-        "detail": "AURELIEN K. remplace CORENTIN D."
-      },
-      {
-        "minute": 66,
-        "type": "CHANGEMENT",
-        "equipe": "GENECH ES",
-        "acteur": "Gabyn D.",
-        "detail": "GABYN D. remplace ARTHUR C."
-      },
-      {
-        "minute": 70,
-        "type": "AVERTISSEMENT",
-        "equipe": "ES BULLY-LES-MINES",
-        "acteur": "Aboubakar D.",
-        "detail": "Carton jaune"
-      },
-      {
-        "minute": 77,
-        "type": "CHANGEMENT",
-        "equipe": "GENECH ES",
-        "acteur": "Marceau U.",
-        "detail": "MARCEAU U. remplace JULES D."
-      },
-      {
-        "minute": 90,
-        "type": "TAB",
-        "equipe": "GENECH ES",
-        "acteur": "",
-        "detail": "Qualification aux tirs au but (5 - 6 TAB)"
-      }
-    ],
-    "prochain_match": {
-      "competition": "Seniors Régional 3 • Poule D (Journée 7)",
-      "date_heure": "REPORTÉ (Date FFF en attente de reprogrammation)",
-      "lieu": "Stade de la Longue Chasse (Valenciennes)",
+      "id": "r3_j7_valenciennes_genech",
+      "competition": "Seniors Régional 3 • Journée 7",
       "domicile": "VALENCIENNES SUMMER",
-      "exterieur": "ES GENECH",
-      "statut": "REPORTE",
+      "exterieur": "GENECH ES",
+      "score_domicile": null,
+      "score_exterieur": null,
+      "score_display": "REPORTÉ",
+      "date_heure": "2026-11-22 14:30",
+      "statut": "REPORTE"
+    },
+    "evenements_dernier_match": [],
+    "prochain_match": {
+      "competition": "Coupe des Hauts-de-France (5ème Tour)",
+      "date_heure": "Dimanche 29 Novembre 2026 à 14h30",
+      "lieu": "Stade Municipal (Genech)",
+      "domicile": "ES GENECH",
+      "exterieur": "US LESQUIN",
+      "statut": "A_VENIR",
       "comparatif": {
-        "titre": "Seniors Régional 3 • Journée 7 (Reportée)",
-        "adversaire_nom": "Valenciennes Summer",
-        "adversaire_rang": "6e (R3)",
-        "adversaire_pts": 10,
-        "adversaire_buts_pour": 9,
-        "adversaire_buts_contre": 8,
+        "titre": "Coupe des Hauts-de-France • 5ème Tour",
+        "adversaire_nom": "US Lesquin",
+        "adversaire_rang": "5e (Régional 2)",
+        "adversaire_pts": 8,
+        "adversaire_buts_pour": 7,
+        "adversaire_buts_contre": 6,
         "club_nom": "ES Genech",
-        "club_rang": "2e (R3)",
+        "club_rang": "2e (Régional 3)",
         "club_pts": 12,
         "club_buts_pour": 13,
         "club_buts_contre": 4
       },
       "alertes": [
-        "⚠️ MATCH REPORTÉ : Intempéries et arrêtés municipaux sur les pelouses de la région le week-end du 21-22/11. Seuls des matchs amicaux non officiels ont eu lieu.",
-        "En attente de la nouvelle date fixée par la Commission des Compétitions de la Ligue (LFHF).",
-        "Statut officiel préservé : Genech reste 2e invaincu en R3 (12 pts, 6 m., 4 buts concédés) et qualifié en Coupe des Hauts-de-France."
+        "🏆 CHOC DE COUPE : Réception de l'US Lesquin (R2, division supérieure) à Genech pour le 5ème Tour de la Coupe des Hauts-de-France.",
+        "Avantage du terrain pour Genech (pelouse naturelle) face à un pensionnaire aguerri de Régional 2.",
+        "Confiance maximale : Genech reste sur un exploit majeur en éliminant Bully-les-Mines (R2) au tour précédent (0-0 TAB 5-6) avec 7 clean sheets de Tim L. toutes compétitions confondues."
       ],
       "stats_comparatives": {
         "genech": {
@@ -118,57 +61,84 @@
             "V"
           ]
         },
-        "valenciennes": {
-          "rang": 6,
-          "points": 10,
-          "buts_marques": 9,
-          "buts_encaisses": 8,
+        "lesquin": {
+          "rang": 5,
+          "points": 8,
+          "buts_marques": 7,
+          "buts_encaisses": 6,
           "diff": "+1",
           "forme": [
             "V",
-            "D",
             "N",
+            "D",
             "V"
           ]
         }
       },
       "adversaire_alertes": [
-        "Valenciennes Summer pratique un jeu de transition très direct sur sa pelouse synthétique.",
-        "Genech reste imperméable derrière : 7 clean sheets toutes compétitions confondues avec Tim L.",
-        "Intensité requise dès le coup d'envoi pour couper leurs montées rapides sur les ailes."
+        "US Lesquin évolue un échelon au-dessus (R2) avec un bloc athlétique et une forte expérience des matchs à élimination directe.",
+        "Discipline impérative : nos 3 cadres sous sursis (Maxime P., Gaspard D., Julien D.) doivent éviter tout avertissement pour rester disponibles.",
+        "Solidité défensive : réitérer la prestation héroïque de Bully avec une charnière hermétique et un bloc compact."
       ],
       "radiographie_adversaire": {
-        "nom": "Valenciennes Summer",
-        "division": "6e de Régional 3 LFHF (Poule D)",
-        "style_fmi": "Bloc médian combatif, jeu direct et projections tranchantes",
+        "nom": "US Lesquin",
+        "division": "5e de Régional 2 LFHF (Poule B)",
+        "style_fmi": "Bloc compact, transitions rapides et impact physique de R2",
         "points_vigilance": [
-          "1er Quart d'Heure (0-15') : fort pressing adverse pour nous faire déjouer sur synthétique rapide.",
-          "Surface synthétique : adapter les appuis et privilégier le jeu en passes courtes au sol.",
-          "Discipline : zéro carton bête pour conserver tous les cadres disponibles pour la suite de la saison."
+          "1ère Demi-Heure : résister à l'intensité physique initiale imposée par l'échelon supérieur.",
+          "Jeu de possession : faire courir l'adversaire sur notre pelouse naturelle et exploiter la largeur.",
+          "Coups de pied arrêtés : vigilance absolue sur le jeu de tête et les seconds ballons."
         ]
       }
     },
     "meteo_prochain_match": {
-      "lieu": "Valenciennes",
-      "surface": "Terrain synthétique",
-      "temperature": "2.4 °C",
-      "vent": "Faible (15.4 km/h)",
-      "pluie": "Averses possibles (29 %)",
+      "lieu": "Genech",
+      "surface": "Pelouse naturelle",
+      "temperature": "2.2 °C",
+      "vent": "Faible (14.8 km/h)",
+      "pluie": "Averses possibles (35 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
+      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
-      "nom_arbitre": "Corps Arbitral Ligue LFHF (CRA)",
+      "nom_arbitre": "En attente de désignation CRA LFHF",
       "district": "Ligue de Football des Hauts-de-France (CRA)",
-      "niveau": "Arbitre Régional R3 Officiel",
-      "moyenne_jaunes": "3.4",
+      "niveau": "Arbitre Régional Officiel",
+      "moyenne_jaunes": "--",
       "severite": "MODÉRÉE",
       "badge_color": "#d97706",
-      "style": "Trio officiel CRA LFHF (assisté de N. Louvet & E. Canneson). Arbitrage cadré, favorise la fluidité sur synthétique.",
-      "consigne_coach": "Désignation officielle CRA ce jeudi 19/11 (assistants : Nathan LOUVET et Esteban CANNESON). Terrain synthétique au Stade de la Longue Chasse : circulation propre, éviter les contestations et laisser le capitaine échanger avec l'arbitre.",
-      "est_designe": true
+      "style": "Désignation officielle de la Commission Régionale d'Arbitrage (CRA) attendue ce jeudi 26/11 sur le portail LFHF.",
+      "consigne_coach": "Publication officielle CRA jeudi 26/11 à 14h. Rigueur tactique et aucune contestation pour préserver nos cadres sous sursis.",
+      "est_designe": false
     },
     "historique_matchs": [
+      {
+        "id": "r3_j7_valenciennes_genech",
+        "competition": "Régional 3 • Journée 7",
+        "comp_type": "R3",
+        "date": "22/11/2026",
+        "date_heure": "2026-11-22 14:30",
+        "domicile": "VALENCIENNES SUMMER",
+        "exterieur": "GENECH ES",
+        "score_domicile": null,
+        "score_exterieur": null,
+        "score_display": "REPORTÉ",
+        "is_domicile": false,
+        "resultat": "R",
+        "resultat_label": "Reporté",
+        "evenements": [],
+        "compositions": {
+          "genech": {
+            "titulaires": [],
+            "remplacants": []
+          },
+          "adversaire": {
+            "equipe": "VALENCIENNES SUMMER",
+            "titulaires": [],
+            "remplacants": []
+          }
+        }
+      },
       {
         "id": "chdf_t4_bully_genech",
         "competition": "Coupe Hauts-de-France • 4ème Tour",
@@ -4849,7 +4819,7 @@
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "23/11/2026 à 14:58"
+      "derniere_maj": "23/11/2026 à 15:12"
     },
     "dernier_match": {
       "id": "m_u18_m1_79497787-et-am-c-cys",
@@ -6559,7 +6529,7 @@
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "23/11/2026 à 14:58"
+      "derniere_maj": "23/11/2026 à 15:12"
     },
     "dernier_match": {
       "id": "m_senior_f2_j6_stamand",
@@ -7773,7 +7743,7 @@
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "23/11/2026 à 14:58"
+      "derniere_maj": "23/11/2026 à 15:12"
     },
     "dernier_match": {
       "id": "m_senior_b_j6_lesquin",
@@ -8945,7 +8915,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "23/11/2026 à 14:58"
+      "derniere_maj": "23/11/2026 à 15:12"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -13752,7 +13722,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "23/11/2026 à 14:58"
+      "derniere_maj": "23/11/2026 à 15:12"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -18559,7 +18529,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "23/11/2026 à 14:58"
+      "derniere_maj": "23/11/2026 à 15:12"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -22455,7 +22425,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "23/11/2026 à 14:58"
+      "derniere_maj": "23/11/2026 à 15:12"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -26351,7 +26321,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "23/11/2026 à 14:58"
+      "derniere_maj": "23/11/2026 à 15:12"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",
@@ -28796,7 +28766,7 @@
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "23/11/2026 à 14:58"
+      "derniere_maj": "23/11/2026 à 15:12"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",

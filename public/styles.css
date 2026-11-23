@@ -1167,6 +1167,12 @@ body {
   border: 1px solid #fca5a5;
 }
 
+.score-pill-postponed {
+  background-color: #fef3c7 !important;
+  color: #b45309 !important;
+  border: 1px solid #fde68a !important;
+}
+
 .match-history-res-tag {
   font-size: 9px;
   font-weight: 800;
@@ -1177,6 +1183,7 @@ body {
 .match-history-res-tag.win { color: #15803d; }
 .match-history-res-tag.draw { color: #b45309; }
 .match-history-res-tag.loss { color: #b91c1c; }
+.match-history-res-tag.postponed { color: #b45309; }
 
 /* --------------------------------------------------------------------------
    Modale Détail Match (Chronologie & Lineup)

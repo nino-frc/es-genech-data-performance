@@ -2448,10 +2448,10 @@ def export_real_pwa_feed():
     invincibilite_pct = round(((victoires + nuls) / total_matches * 100), 1) if total_matches > 0 else 0
     ppm = round(9 / 5, 2)  # 9 points en 5 journées R3 = 1.80 PPM
 
-    # 2. Dernier match officiel de l'Équipe Fanion
+    # 2. Dernier match officiel de l'Équipe Fanion (Match J7 reporté ce 22/11)
     last_match_row = conn.execute("""
         SELECT * FROM matchs 
-        WHERE statut = 'TERMINE' AND equipe_club_id = 'SENIOR_M1'
+        WHERE (statut = 'TERMINE' OR statut = 'REPORTE') AND equipe_club_id = 'SENIOR_M1'
         ORDER BY date_heure DESC LIMIT 1;
     """).fetchone()
 
@@ -2463,12 +2463,18 @@ def export_real_pwa_feed():
             comp_label = "Coupe des Hauts-de-France (4e Tour)"
         elif "cdf" in c_id:
             comp_label = "Coupe de France"
+        elif "r3" in c_id:
+            comp_label = f"Seniors Régional 3 • {last_match_row['tour_ou_journee']}"
 
         s_dom = last_match_row["score_domicile"]
         s_ext = last_match_row["score_exterieur"]
-        score_disp = f"{s_dom} - {s_ext}"
-        if last_match_row["id"] == "chdf_t4_bully_genech":
+        
+        if last_match_row["statut"] == "REPORTE":
+            score_disp = "REPORTÉ"
+        elif last_match_row["id"] == "chdf_t4_bully_genech":
             score_disp = "0 - 0 (TAB 5 - 6)"
+        else:
+            score_disp = f"{s_dom} - {s_ext}"
 
         last_match = {
             "id": last_match_row["id"],
@@ -2484,7 +2490,7 @@ def export_real_pwa_feed():
 
     # Événements du dernier match
     events_rows = []
-    if last_match:
+    if last_match and last_match.get("statut") != "REPORTE":
         for ev in conn.execute("SELECT minute, type_event, equipe, acteur_principal, detail FROM match_events WHERE match_id = ? ORDER BY minute ASC", (last_match["id"],)).fetchall():
             events_rows.append({
                 "minute": ev["minute"],
@@ -2494,31 +2500,31 @@ def export_real_pwa_feed():
                 "detail": ev["detail"]
             })
 
-    # 3. Prochain Match : VALENCIENNES SUMMER vs ES GENECH (Seniors R3 • Journée 7, Initialement prévue le 22/11, REPORTÉ)
+    # 3. Prochain Match : ES GENECH vs US LESQUIN (Coupe des Hauts-de-France • 5ème Tour, Dimanche 29/11 à 14h30)
     next_match = {
-        "competition": "Seniors Régional 3 • Poule D (Journée 7)",
-        "date_heure": "REPORTÉ (Date FFF en attente de reprogrammation)",
-        "lieu": "Stade de la Longue Chasse (Valenciennes)",
-        "domicile": "VALENCIENNES SUMMER",
-        "exterieur": "ES GENECH",
-        "statut": "REPORTE",
+        "competition": "Coupe des Hauts-de-France (5ème Tour)",
+        "date_heure": "Dimanche 29 Novembre 2026 à 14h30",
+        "lieu": "Stade Municipal (Genech)",
+        "domicile": "ES GENECH",
+        "exterieur": "US LESQUIN",
+        "statut": "A_VENIR",
         "comparatif": {
-            "titre": "Seniors Régional 3 • Journée 7 (Reportée)",
-            "adversaire_nom": "Valenciennes Summer",
-            "adversaire_rang": "6e (R3)",
-            "adversaire_pts": 10,
-            "adversaire_buts_pour": 9,
-            "adversaire_buts_contre": 8,
+            "titre": "Coupe des Hauts-de-France • 5ème Tour",
+            "adversaire_nom": "US Lesquin",
+            "adversaire_rang": "5e (Régional 2)",
+            "adversaire_pts": 8,
+            "adversaire_buts_pour": 7,
+            "adversaire_buts_contre": 6,
             "club_nom": "ES Genech",
-            "club_rang": "2e (R3)",
+            "club_rang": "2e (Régional 3)",
             "club_pts": 12,
             "club_buts_pour": 13,
             "club_buts_contre": 4
         },
         "alertes": [
-            "⚠️ MATCH REPORTÉ : Intempéries et arrêtés municipaux sur les pelouses de la région le week-end du 21-22/11. Seuls des matchs amicaux non officiels ont eu lieu.",
-            "En attente de la nouvelle date fixée par la Commission des Compétitions de la Ligue (LFHF).",
-            "Statut officiel préservé : Genech reste 2e invaincu en R3 (12 pts, 6 m., 4 buts concédés) et qualifié en Coupe des Hauts-de-France."
+            "🏆 CHOC DE COUPE : Réception de l'US Lesquin (R2, division supérieure) à Genech pour le 5ème Tour de la Coupe des Hauts-de-France.",
+            "Avantage du terrain pour Genech (pelouse naturelle) face à un pensionnaire aguerri de Régional 2.",
+            "Confiance maximale : Genech reste sur un exploit majeur en éliminant Bully-les-Mines (R2) au tour précédent (0-0 TAB 5-6) avec 7 clean sheets de Tim L. toutes compétitions confondues."
         ],
         "stats_comparatives": {
             "genech": {
@@ -2529,43 +2535,43 @@ def export_real_pwa_feed():
                 "diff": "+9",
                 "forme": ["N", "V", "V", "V"]
             },
-            "valenciennes": {
-                "rang": 6,
-                "points": 10,
-                "buts_marques": 9,
-                "buts_encaisses": 8,
+            "lesquin": {
+                "rang": 5,
+                "points": 8,
+                "buts_marques": 7,
+                "buts_encaisses": 6,
                 "diff": "+1",
-                "forme": ["V", "D", "N", "V"]
+                "forme": ["V", "N", "D", "V"]
             }
         },
         "adversaire_alertes": [
-            "Valenciennes Summer pratique un jeu de transition très direct sur sa pelouse synthétique.",
-            "Genech reste imperméable derrière : 7 clean sheets toutes compétitions confondues avec Tim L.",
-            "Intensité requise dès le coup d'envoi pour couper leurs montées rapides sur les ailes."
+            "US Lesquin évolue un échelon au-dessus (R2) avec un bloc athlétique et une forte expérience des matchs à élimination directe.",
+            "Discipline impérative : nos 3 cadres sous sursis (Maxime P., Gaspard D., Julien D.) doivent éviter tout avertissement pour rester disponibles.",
+            "Solidité défensive : réitérer la prestation héroïque de Bully avec une charnière hermétique et un bloc compact."
         ],
         "radiographie_adversaire": {
-            "nom": "Valenciennes Summer",
-            "division": "6e de Régional 3 LFHF (Poule D)",
-            "style_fmi": "Bloc médian combatif, jeu direct et projections tranchantes",
+            "nom": "US Lesquin",
+            "division": "5e de Régional 2 LFHF (Poule B)",
+            "style_fmi": "Bloc compact, transitions rapides et impact physique de R2",
             "points_vigilance": [
-                "1er Quart d'Heure (0-15') : fort pressing adverse pour nous faire déjouer sur synthétique rapide.",
-                "Surface synthétique : adapter les appuis et privilégier le jeu en passes courtes au sol.",
-                "Discipline : zéro carton bête pour conserver tous les cadres disponibles pour la suite de la saison."
+                "1ère Demi-Heure : résister à l'intensité physique initiale imposée par l'échelon supérieur.",
+                "Jeu de possession : faire courir l'adversaire sur notre pelouse naturelle et exploiter la largeur.",
+                "Coups de pied arrêtés : vigilance absolue sur le jeu de tête et les seconds ballons."
             ]
         }
     }
 
-    # Arbitre prochain match : Désignation officielle CRA LFHF (Jeudi 19/11)
+    # Arbitre prochain match : En attente désignation officielle CRA LFHF (Publication le Jeudi 26/11)
     arbitre_info = {
-        "nom_arbitre": "Corps Arbitral Ligue LFHF (CRA)",
+        "nom_arbitre": "En attente de désignation CRA LFHF",
         "district": "Ligue de Football des Hauts-de-France (CRA)",
-        "niveau": "Arbitre Régional R3 Officiel",
-        "moyenne_jaunes": "3.4",
+        "niveau": "Arbitre Régional Officiel",
+        "moyenne_jaunes": "--",
         "severite": "MODÉRÉE",
         "badge_color": "#d97706",
-        "style": "Trio officiel CRA LFHF (assisté de N. Louvet & E. Canneson). Arbitrage cadré, favorise la fluidité sur synthétique.",
-        "consigne_coach": "Désignation officielle CRA ce jeudi 19/11 (assistants : Nathan LOUVET et Esteban CANNESON). Terrain synthétique au Stade de la Longue Chasse : circulation propre, éviter les contestations et laisser le capitaine échanger avec l'arbitre.",
-        "est_designe": True
+        "style": "Désignation officielle de la Commission Régionale d'Arbitrage (CRA) attendue ce jeudi 26/11 sur le portail LFHF.",
+        "consigne_coach": "Publication officielle CRA jeudi 26/11 à 14h. Rigueur tactique et aucune contestation pour préserver nos cadres sous sursis.",
+        "est_designe": False
     }
 
     # 4. Traducteur Financier de Trésorerie (Barème officiel Ligue LFHF)
@@ -2817,7 +2823,7 @@ def export_real_pwa_feed():
     # 10. Historique exhaustif des matchs passés (Saison 2026-2027)
     query_history = """
         SELECT * FROM matchs 
-        WHERE statut = 'TERMINE' AND equipe_club_id = 'SENIOR_M1'
+        WHERE (statut = 'TERMINE' OR statut = 'REPORTE') AND equipe_club_id = 'SENIOR_M1'
         ORDER BY date_heure DESC
     """
     historique_matchs = []
@@ -2827,8 +2833,11 @@ def export_real_pwa_feed():
         s_g = m["score_domicile"] if is_dom else m["score_exterieur"]
         s_opp = m["score_exterieur"] if is_dom else m["score_domicile"]
 
-        score_disp_val = f"{m['score_domicile']} - {m['score_exterieur']}"
-        if m_id in ['cdf_t2_lys_genech', 'cdf_t3_sainghin_genech']:
+        if m["statut"] == "REPORTE":
+            resultat = "R"
+            resultat_label = "Reporté"
+            score_disp_val = "REPORTÉ"
+        elif m_id in ['cdf_t2_lys_genech', 'cdf_t3_sainghin_genech']:
             resultat = "V"
             resultat_label = "Qualif. (TAB 3-4)"
             score_disp_val = f"{m['score_domicile']} - {m['score_exterieur']} (TAB 3-4)"
@@ -2840,15 +2849,18 @@ def export_real_pwa_feed():
             resultat = "D"
             resultat_label = "Élim. (TAB 2-4)"
             score_disp_val = f"{m['score_domicile']} - {m['score_exterieur']} (TAB 2-4)"
-        elif s_g > s_opp:
+        elif s_g is not None and s_opp is not None and s_g > s_opp:
             resultat = "V"
             resultat_label = "Victoire"
-        elif s_g == s_opp:
+            score_disp_val = f"{m['score_domicile']} - {m['score_exterieur']}"
+        elif s_g is not None and s_opp is not None and s_g == s_opp:
             resultat = "N"
             resultat_label = "Match Nul"
+            score_disp_val = f"{m['score_domicile']} - {m['score_exterieur']}"
         else:
             resultat = "D"
             resultat_label = "Défaite"
+            score_disp_val = f"{m['score_domicile']} - {m['score_exterieur']}"
 
         comp_id = m["competition_id"]
         if "chdf" in comp_id:
@@ -2953,7 +2965,7 @@ def export_real_pwa_feed():
         "dernier_match": last_match,
         "evenements_dernier_match": events_rows,
         "prochain_match": next_match,
-        "meteo_prochain_match": get_match_weather("VALENCIENNES", "2026-11-22"),
+        "meteo_prochain_match": get_match_weather("GENECH", "2026-11-29"),
         "arbitre_prochain_match": arbitre_info,
         "historique_matchs": historique_matchs,
         "kpis_saison": {
