@@ -8,7 +8,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Régional 3",
       "poule": "Poule D",
       "badge_color": "#15803d",
-      "derniere_maj": "26/11/2026 à 20:30"
+      "derniere_maj": "26/11/2026 à 22:57"
     },
     "dernier_match": {
       "id": "r3_j7_valenciennes_genech",
@@ -94,11 +94,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "8.1 °C",
-      "vent": "Faible (15.3 km/h)",
+      "temperature": "6.7 °C",
+      "vent": "Modéré (19.1 km/h)",
       "pluie": "Averses possibles (42 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
+      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "En attente de désignation CRA LFHF",
@@ -4819,7 +4819,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Formation U18/U19",
       "poule": "D1 Poule Unique",
       "badge_color": "#d97706",
-      "derniere_maj": "26/11/2026 à 20:30"
+      "derniere_maj": "26/11/2026 à 22:57"
     },
     "dernier_match": {
       "id": "m_u18_m1_79497787-et-am-c-cys",
@@ -4860,11 +4860,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "8.1 °C",
-      "vent": "Faible (15.3 km/h)",
+      "temperature": "6.7 °C",
+      "vent": "Modéré (19.1 km/h)",
       "pluie": "Averses possibles (42 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
+      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Désignation District en attente",
@@ -6529,7 +6529,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Pôle Féminin",
       "poule": "Interdistricts Poule C",
       "badge_color": "#7c3aed",
-      "derniere_maj": "26/11/2026 à 20:30"
+      "derniere_maj": "26/11/2026 à 22:57"
     },
     "dernier_match": {
       "id": "m_senior_f2_j6_stamand",
@@ -6570,11 +6570,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "8.1 °C",
-      "vent": "Faible (15.3 km/h)",
+      "temperature": "6.7 °C",
+      "vent": "Modéré (19.1 km/h)",
       "pluie": "Averses possibles (42 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
+      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Arbitre Officiel Ligue Interdistricts (LFHF)",
@@ -7743,7 +7743,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors Masculins B",
       "poule": "D2 Poule C",
       "badge_color": "#0284c7",
-      "derniere_maj": "26/11/2026 à 20:30"
+      "derniere_maj": "26/11/2026 à 22:57"
     },
     "dernier_match": {
       "id": "m_senior_b_j6_lesquin",
@@ -7784,11 +7784,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Genech",
       "surface": "Pelouse naturelle",
-      "temperature": "8.1 °C",
-      "vent": "Faible (15.3 km/h)",
+      "temperature": "6.7 °C",
+      "vent": "Modéré (19.1 km/h)",
       "pluie": "Averses possibles (42 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
+      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Désignation District en attente",
@@ -8915,7 +8915,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "26/11/2026 à 20:30"
+      "derniere_maj": "26/11/2026 à 22:57"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -8958,11 +8958,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Seclin (Stade Henri Jooris)",
       "surface": "Pelouse naturelle",
-      "temperature": "8.6 °C",
-      "vent": "Faible (15.9 km/h)",
-      "pluie": "Averses possibles (42 %)",
+      "temperature": "13.0 °C",
+      "vent": "Modéré (18.0 km/h)",
+      "pluie": "Sec (20 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
+      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle sèche et rapide."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Thomas DUTHOIT",
@@ -13722,7 +13722,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#0284c7",
-      "derniere_maj": "26/11/2026 à 20:30"
+      "derniere_maj": "26/11/2026 à 22:57"
     },
     "dernier_match": {
       "id": "seclin_56215874",
@@ -13765,11 +13765,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Seclin (Stade Henri Jooris)",
       "surface": "Pelouse naturelle",
-      "temperature": "8.6 °C",
-      "vent": "Faible (15.9 km/h)",
-      "pluie": "Averses possibles (42 %)",
+      "temperature": "13.0 °C",
+      "vent": "Modéré (18.0 km/h)",
+      "pluie": "Sec (20 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Pelouse naturelle : bonne adhérence, crampons semi-vissés préconisés."
+      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Pelouse naturelle sèche et rapide."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Thomas DUTHOIT",
@@ -18529,7 +18529,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "26/11/2026 à 20:30"
+      "derniere_maj": "26/11/2026 à 22:57"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -18572,11 +18572,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Lesquin (Stade Jean-Pierre Papin)",
       "surface": "Terrain synthétique",
-      "temperature": "8.2 °C",
-      "vent": "Faible (16.2 km/h)",
+      "temperature": "6.8 °C",
+      "vent": "Modéré (19.2 km/h)",
       "pluie": "Averses possibles (42 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
+      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Benoit BRUNEAU",
@@ -22425,7 +22425,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule B",
       "badge_color": "#059669",
-      "derniere_maj": "26/11/2026 à 20:30"
+      "derniere_maj": "26/11/2026 à 22:57"
     },
     "dernier_match": {
       "id": "lesquin_56215877",
@@ -22468,11 +22468,11 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Lesquin (Stade Jean-Pierre Papin)",
       "surface": "Terrain synthétique",
-      "temperature": "8.2 °C",
-      "vent": "Faible (16.2 km/h)",
+      "temperature": "6.8 °C",
+      "vent": "Modéré (19.2 km/h)",
       "pluie": "Averses possibles (42 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
-      "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
+      "consigne_tactique": "Vent présent : gestion prudente des dégagements aériens. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
     },
     "arbitre_prochain_match": {
       "nom_arbitre": "Benoit BRUNEAU",
@@ -26321,7 +26321,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "26/11/2026 à 20:30"
+      "derniere_maj": "26/11/2026 à 22:57"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",
@@ -26364,8 +26364,8 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Esquelbecq (Complexe J.M. Vaesken 2)",
       "surface": "Terrain synthétique",
-      "temperature": "10.3 °C",
-      "vent": "Faible (6.8 km/h)",
+      "temperature": "9.0 °C",
+      "vent": "Faible (10.5 km/h)",
       "pluie": "Averses possibles (44 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
@@ -28766,7 +28766,7 @@ window.MATCHDAY_TEAMS = {
       "categorie": "Seniors R2",
       "poule": "Poule A",
       "badge_color": "#eab308",
-      "derniere_maj": "26/11/2026 à 20:30"
+      "derniere_maj": "26/11/2026 à 22:57"
     },
     "dernier_match": {
       "id": "esquelbecq_56216137",
@@ -28809,8 +28809,8 @@ window.MATCHDAY_TEAMS = {
     "meteo_prochain_match": {
       "lieu": "Esquelbecq (Complexe J.M. Vaesken 2)",
       "surface": "Terrain synthétique",
-      "temperature": "10.3 °C",
-      "vent": "Faible (6.8 km/h)",
+      "temperature": "9.0 °C",
+      "vent": "Faible (10.5 km/h)",
       "pluie": "Averses possibles (44 %)",
       "creneau": "Dimanche à l'heure du match (15h00)",
       "consigne_tactique": "Vent calme : conditions idéales pour un jeu de possession maîtrisé. Terrain synthétique : bonne adhérence, crampons semi-vissés préconisés."
